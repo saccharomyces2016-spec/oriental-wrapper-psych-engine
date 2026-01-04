@@ -1,0 +1,26 @@
+# CHANGELOG
+
+## Unreleased
+- Changed: ADR_0003 + ADR_0004 status -> Accepted (approvedAt: 2026-01-04)
+- Added: ADR_0004 AI advisory roles system + GEM protocol
+- Added: docs/governance/AI_ADVISORY_ROLES.md (roles + responsibilities)
+- Added: docs/gem/ (profiles + run archive) and prompts/gem/ (GEM templates)
+- Added: AI_PARTNERSHIP_PROTOCOL to upgrade AI role to accountable professional partner with mandatory proactive checks and hard-stop authority
+- Added: BOOT_RULE (single mandatory task entry gate)
+- Added: AUTONOMOUS_STOP_PROTOCOL (hard stop on missing text)
+- Added: ADR_0003 world-class quality + bilingual (CN/EN) global-market readiness
+- Changed: prototype now loads compiled facet (no hardcoded scoring ranges) + npm dev ready styling
+- Added: PREWRITE_STATE_CONFIRMATION governance rule (stop + confirm state before any write)
+- Added: extensible MVP skeleton (domain externalization, schema versioning, golden tests, build compiler)
+- Changed: memory/index/INDEX.md de-duplicated ADR headings
+- Added: MASTER_SYNC_PACKET as single-file synchronization anchor
+- Added: MASTER Sync Protocol for real-time alignment and long-term memory
+- Changed: Workflow now supports deterministic AI state recovery via MASTER
+- Added: MASTER_SYNC_PACKET single-file snapshot for deterministic AI alignment (read-only; SSOT remains original files)
+- Added: MASTER sync workflow to prevent context drift and enable state recovery per chat
+
+- Added: Absolute Auto-Log sync mode enabled
+  - Shell hook active (bash/zsh)
+  - LAST_COMMAND_STATUS auto-written per command
+  - Sync verified via live command execution
+

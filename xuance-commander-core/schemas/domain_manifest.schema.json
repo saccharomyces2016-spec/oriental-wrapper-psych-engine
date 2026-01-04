@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Domain Manifest Schema",
+  "type": "object",
+  "required": ["domainVersion", "facetId", "sources"],
+  "properties": {
+    "domainVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+$" },
+    "facetId": { "type": "string" },
+    "sources": {
+      "type": "object",
+      "required": ["questions", "scoring", "recommendations", "narratives", "riskchains"],
+      "properties": {
+        "questions": { "type": "string" },
+        "scoring": { "type": "string" },
+        "recommendations": { "type": "string" },
+        "narratives": { "type": "string" },
+        "riskchains": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

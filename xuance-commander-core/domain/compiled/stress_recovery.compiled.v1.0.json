@@ -1,0 +1,125 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "stress_recovery",
+  "questions": [
+    {
+      "id": "sr_q1",
+      "text": "最近 7 天，你覺得自己大多時候是在「撐著」嗎？",
+      "type": "likert_5",
+      "scale": [
+        "完全沒有",
+        "很少",
+        "有時",
+        "常常",
+        "幾乎一直"
+      ]
+    },
+    {
+      "id": "sr_q2",
+      "text": "最近 7 天，你的睡眠恢復感如何？",
+      "type": "likert_5",
+      "scale": [
+        "很好",
+        "還不錯",
+        "普通",
+        "偏差",
+        "很差"
+      ]
+    }
+  ],
+  "scoring": {
+    "model": "weighted_sum",
+    "inputs": [
+      {
+        "questionId": "sr_q1",
+        "weight": 1.0,
+        "direction": "higher_is_worse"
+      },
+      {
+        "questionId": "sr_q2",
+        "weight": 1.0,
+        "direction": "higher_is_worse"
+      }
+    ],
+    "bands": [
+      {
+        "band": "low",
+        "min": 0.0,
+        "max": 0.33
+      },
+      {
+        "band": "mid",
+        "min": 0.33,
+        "max": 0.66
+      },
+      {
+        "band": "high",
+        "min": 0.66,
+        "max": 1.01
+      }
+    ],
+    "notes": "這是 MVP 範例；分數 0~1 之間，視為低/中/高三段。"
+  },
+  "recommendations": {
+    "low": [
+      {
+        "id": "sr_low_1",
+        "title": "維持節奏",
+        "steps": [
+          "每天固定一個 10 分鐘放鬆段落",
+          "睡前 30 分鐘不做高刺激內容"
+        ]
+      }
+    ],
+    "mid": [
+      {
+        "id": "sr_mid_1",
+        "title": "先把恢復拉回來",
+        "steps": [
+          "連續 3 天，固定起床時間",
+          "下午兩點後避免含咖啡因飲品",
+          "每天 15 分鐘輕度走路"
+        ]
+      }
+    ],
+    "high": [
+      {
+        "id": "sr_high_1",
+        "title": "先止血再談提升",
+        "steps": [
+          "把今天要做的事砍到 3 件",
+          "晚上只做低耗能活動",
+          "明天安排一段可被打斷也沒關係的休息"
+        ]
+      }
+    ]
+  },
+  "narratives": {
+    "low": {
+      "opening": "你現在的氣場比較穩，像是五行之中「土」有根。",
+      "explain": "土穩代表你有基本節奏，身心不容易被外界帶著跑。"
+    },
+    "mid": {
+      "opening": "你最近像是「木」被風拉扯，能長但也容易累。",
+      "explain": "木主伸展，代表你在撐著往前，但恢復沒跟上。"
+    },
+    "high": {
+      "opening": "你目前像是「火」過旺，亮但消耗很快。",
+      "explain": "火旺常見於壓力堆疊，短期能衝，長期容易透支。"
+    }
+  },
+  "riskchains": {
+    "mid": {
+      "if_not_improve": [
+        "專注力下降 → 決策品質變差",
+        "情緒耐受度下降 → 口氣變衝、關係摩擦增加"
+      ]
+    },
+    "high": {
+      "if_not_improve": [
+        "睡眠品質持續變差 → 白天更累 → 晚上更難睡（惡性循環）",
+        "小事就爆 → 自責增加 → 更不想處理事情 → 壓力再上升"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-01-04T21:06:46",
+  "mustRead": [
+    "charter/CHARTER.md",
+    "roadmap/ROADMAP.md",
+    "memory/briefs/CURRENT.md",
+    "docs/governance/TEXT_ONLY_EXECUTION_RULES.md",
+    "memory/index/COMMANDER_ENTRYPOINTS.md",
+    "docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md"
+  ]
+}

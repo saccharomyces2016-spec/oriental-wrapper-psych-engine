@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Compiled Facet Schema",
+  "type": "object",
+  "required": ["domainVersion", "facetId", "questions", "scoring", "recommendations", "narratives", "riskchains"],
+  "properties": {
+    "domainVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+$" },
+    "facetId": { "type": "string" },
+    "questions": { "type": "array" },
+    "scoring": { "type": "object" },
+    "recommendations": { "type": "object" },
+    "narratives": { "type": "object" },
+    "riskchains": { "type": "object" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+STATUS_FILE="$ROOT_DIR/memory/briefs/LAST_COMMAND_STATUS.md"
+MASTER_GEN="$ROOT_DIR/tools/build_master_sync_packet.sh"
+
+if [[ $# -lt 1 ]]; then
+  echo "Usage: tools/xc <command...>"
+  exit 2
+fi
+
+TS="$(date -Iseconds)"
+CMD="$*"
+
+OUT=$(mktemp)
+ERR=$(mktemp)
+
+set +e
+"$@" >"$OUT" 2>"$ERR"
+EC=$?
+set -e
+
+STDOUT_TAIL="$(tail -n 120 "$OUT" 2>/dev/null || true)"
+STDERR_TAIL="$(tail -n 120 "$ERR" 2>/dev/null || true)"
+
+mkdir -p "$(dirname "$STATUS_FILE")"
+cat > "$STATUS_FILE" <<EOF
+# LAST_COMMAND_STATUS（xc 捕捉）
+updatedAt: ${TS}
+command: ${CMD}
+exitCode: ${EC}
+success: $([[ $EC -eq 0 ]] && echo true || echo false)
+
+## STDOUT
+\`\`\`
+${STDOUT_TAIL}
+\`\`\`
+
+## STDERR
+\`\`\`
+${STDERR_TAIL}
+\`\`\`
