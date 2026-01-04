@@ -6,3 +6,8 @@ dist/
 *.log
 .env
 .env.*
+
+# Xuance auto-sync artifacts (generated; keep out of git history)
+xuance-commander-core/memory/briefs/MASTER_SYNC_PACKET.md
+xuance-commander-core/memory/briefs/LAST_COMMAND_STATUS.md
+xuance-commander-core/memory/briefs/REPO_STATUS.md
