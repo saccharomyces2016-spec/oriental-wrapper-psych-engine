@@ -1,5 +1,5 @@
 # MASTER_SYNC_PACKET（單檔同步包｜唯一對話錨點｜FULL）
-generatedAt: 2026-01-04T21:05:09+08:00
+generatedAt: 2026-01-04T22:18:42+08:00
 sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core
 
 ## NOTE
@@ -123,10 +123,23 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 
 ---
 
-## 補充：即時同步（MASTER）成果（已建立）
-- 已建立：單檔同步快照 MASTER_SYNC_PACKET.md（只讀，供每次對齊用）
-- 原則：SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 與原檔衝突以原檔為準，需重新生成 MASTER
-- 使用習慣：每次新任務／重要決策前，優先貼 MASTER（必要時再補 CHAT_PACKET）
+## 補充：即時同步（MASTER）成果（已達成）
+
+已達成：
+- ✅ 已建立「即時同步」機制：用 `LAST_COMMAND_STATUS` 作為執行證據，並由 hook（或 tools）觸發重建 `MASTER_SYNC_PACKET.md`。
+- ✅ 已形成固定做法（不靠人工複製貼上）：
+  1) 任何關鍵指令 → 讓系統自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) 立即重建 `memory/briefs/MASTER_SYNC_PACKET.md`
+  3) 後續對齊一律貼 MASTER（必要時再補 CHAT_PACKET）
+
+驗收（可檢查）：
+- 跑一條指令後，`LAST_COMMAND_STATUS.md` 的 `updatedAt` 會更新。
+- 同一輪操作後，`MASTER_SYNC_PACKET.md` 的 `generatedAt` 會更新。
+- MASTER 內能看得到最新的 `LAST_COMMAND_STATUS`（必要時含 `REPO_STATUS`）。
+
+注意：
+- SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 只是同步快照。
+- 若 hook 失效：不得宣稱「已同步」，需改用既有工具（如 tools/xc / tools/xuance_run.sh）跑關鍵指令。
 
 ---
 【狀態更新｜2026-01-04】
@@ -145,6 +158,8 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 
 ## Unreleased
 
+
+- Added: Realtime MASTER sync marked as achieved (LAST_COMMAND_STATUS as evidence + hook/tool-triggered MASTER rebuild + verifiable checks documented in CURRENT)
 - Added: REPO_STATUS auto snapshot (git status/remote/last commit) -> `memory/briefs/REPO_STATUS.md`, included in MASTER for deterministic repo alignment
 - Changed: Commander may proactively propose best-path workflow (Cursor diagnosis -> Codex one-shot fix) under controlled limits (see ROLE_XUANCE_COMMANDER R6; COMMANDER_AUTOPILOT_PROTOCOL Cursor/Codex section)
 
@@ -517,8 +532,9 @@ AI 必須明確提出反對意見與理由。
 ## 指揮官責任（你要我做到的「合夥人掌管」）
 1) 我必須知道有哪些角色可用（本文件為準）。
 2) 我必須知道每個角色的任務、輸入、輸出、禁區、驗收。
-3) 我必須要求保存每次顧問輸出到 docs/gem/runs/。
-4) 我必須在任何「要直接寫題目/文案進 domain」之前，先觸發顧問流程與審核。
+3) 我必須主動判斷是否需要顧問角色；只要有需要的可能性，就必須提出（不得等待使用者要求）。
+4) 我可以依需要啟動任意多個顧問角色（可並行），以追求最高產品品質；顧問輸出一律視為建議稿，需審核後才可寫入正式 domain。
+5) 所有顧問輸出必須存檔到 `docs/gem/runs/`（包含：任務、輸入、輸出、採納/拒絕/修改決策摘要），可追溯。
 
 ---
 ## FILE: docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md
@@ -637,6 +653,8 @@ AI 必須明確提出反對意見與理由。
 - 必須安裝 shell hook（bash/zsh），讓「每一條指令」都自動把 (command + exitCode) 寫入 `memory/briefs/LAST_COMMAND_STATUS.md`。
 - 每次寫入後必須自動重新生成 `MASTER_SYNC_PACKET.md`，確保同步模式下 MASTER 永遠最新。
 - 若 shell hook 未安裝或失效：不得宣稱「已同步」，需改用 `tools/xc <cmd...>` 或 `tools/xuance_run.sh <cmd...>` 執行關鍵指令。
+- 若 shell hook 已啟用且正常運作：每次終端機指令都會自動寫入 `LAST_COMMAND_STATUS`，並嘗試自動重建 `MASTER_SYNC_PACKET.md`（以 `tools/build_master_sync_packet_full.sh` 為優先）。
+- 因此「自動寫入 MASTER」的可行方案就是：確保 hook 可用（或使用 `tools/xc` / `tools/xuance_run.sh` 執行關鍵指令），然後由 hook 觸發 MASTER 重建；不再依賴人工複製貼上。
 
 ---
 ## FILE: docs/roles/ROLE_XUANCE_COMMANDER.md
@@ -647,12 +665,14 @@ AI 必須明確提出反對意見與理由。
 你是「總控/翻譯/仲裁」：對使用者白話回報，對專家型 AI 專業交付；把所有結論落盤並能產出可執行的 Codex 指令包。
 
 ## 對使用者的回報風格（必須遵守）
-- 只用白話、短句、直白，避免術語；必要術語要加一句人話解釋
-- 回報格式固定為四段：
-  1) 我們現在要做什麼
-  2) 為什麼要做（原因/價值）
-  3) 風險是什麼（最重要 1~3 點）
-  4) 你要怎麼驗收（看哪些結果算成功）
+- 像對小學生解釋：用更簡單的詞、一步一步、避免術語
+- 必要術語：只留「最少」且要立刻用一句更白話的比喻/例子解釋
+- 不必固定四段格式；但內容仍必須涵蓋：
+  - 我們要做什麼
+  - 為什麼要做
+  - 風險是什麼（最重要 1~3 點）
+  - 你要怎麼驗收（看哪些結果算成功）
+- 可以用清單、分段、或問答式呈現；以「你能聽懂」為第一優先
 
 ## 對其他 AI/專家的交付風格（可專業）
 - 可使用專業術語、嚴謹規格、可測試條件
@@ -717,9 +737,9 @@ AI 必須明確提出反對意見與理由。
 4) 涉及安全或高風險（遵守 rules/safety_rules.md）。
 
 主動補充格式限制（硬性）：
-- 最多 5 行。
-- 必須以「【建議】」開頭。
-- 必須可驗收（提供可執行的檢查/指令）。
+- 必須可驗收：提供可執行的檢查/指令/或可觀察結果（至少一種）
+- 必須區分「事實」與「建議」：事實要可回溯證據；建議要說明目的
+- 避免冗長：以不增加理解負擔為準（可用清單拆解）
 
 
 ## 【新增】權責關係聲明（Authority Relationship）
@@ -958,15 +978,40 @@ Accepted (approved by user)
 ## FILE: memory/briefs/REPO_STATUS.md
 
 # REPO_STATUS（Repo 狀態快照｜自動）
-updatedAt: 2026-01-04T21:05:09+08:00
+updatedAt: 2026-01-04T22:18:42+08:00
 repoRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine
-note: not a git worktree (no .git found); skipping
+branch: main
+head: ae31e57
+
+## git status -sb
+## main
+ M xuance-commander-core/docs/governance/AI_ADVISORY_ROLES.md
+ M xuance-commander-core/docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md
+ M xuance-commander-core/docs/roles/ROLE_XUANCE_COMMANDER.md
+ M xuance-commander-core/memory/briefs/CURRENT.md
+ M xuance-commander-core/memory/briefs/LAST_COMMAND_STATUS.md
+ M xuance-commander-core/memory/briefs/MASTER_SYNC_PACKET.md
+ M xuance-commander-core/memory/briefs/REPO_STATUS.md
+ M xuance-commander-core/memory/changes/CHANGELOG.md
+
+## git remote -v
+origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (fetch)
+origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (push)
+
+## last commit
+commit ae31e57e32e0da9ec86f1a7dc38b47c6afe99766
+Author:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
+AuthorDate: Sun Jan 4 21:29:36 2026 +0800
+Commit:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
+CommitDate: Sun Jan 4 21:29:36 2026 +0800
+
+    chore: init repo snapshot (xuance commander + mvp skeleton)
 
 ---
 ## FILE: memory/briefs/LAST_COMMAND_STATUS.md
 
 # LAST_COMMAND_STATUS（最新一次指令結果｜自動）
-updatedAt: 2026-01-04T21:05:09+08:00
+updatedAt: 2026-01-04T22:18:42+08:00
 command: (unknown)
 exitCode: 0
 success: true

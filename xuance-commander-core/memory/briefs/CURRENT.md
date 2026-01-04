@@ -23,10 +23,23 @@
 
 ---
 
-## 補充：即時同步（MASTER）成果（已建立）
-- 已建立：單檔同步快照 MASTER_SYNC_PACKET.md（只讀，供每次對齊用）
-- 原則：SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 與原檔衝突以原檔為準，需重新生成 MASTER
-- 使用習慣：每次新任務／重要決策前，優先貼 MASTER（必要時再補 CHAT_PACKET）
+## 補充：即時同步（MASTER）成果（已達成）
+
+已達成：
+- ✅ 已建立「即時同步」機制：用 `LAST_COMMAND_STATUS` 作為執行證據，並由 hook（或 tools）觸發重建 `MASTER_SYNC_PACKET.md`。
+- ✅ 已形成固定做法（不靠人工複製貼上）：
+  1) 任何關鍵指令 → 讓系統自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) 立即重建 `memory/briefs/MASTER_SYNC_PACKET.md`
+  3) 後續對齊一律貼 MASTER（必要時再補 CHAT_PACKET）
+
+驗收（可檢查）：
+- 跑一條指令後，`LAST_COMMAND_STATUS.md` 的 `updatedAt` 會更新。
+- 同一輪操作後，`MASTER_SYNC_PACKET.md` 的 `generatedAt` 會更新。
+- MASTER 內能看得到最新的 `LAST_COMMAND_STATUS`（必要時含 `REPO_STATUS`）。
+
+注意：
+- SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 只是同步快照。
+- 若 hook 失效：不得宣稱「已同步」，需改用既有工具（如 tools/xc / tools/xuance_run.sh）跑關鍵指令。
 
 ---
 【狀態更新｜2026-01-04】
