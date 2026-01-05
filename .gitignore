@@ -11,3 +11,5 @@ dist/
 xuance-commander-core/memory/briefs/MASTER_SYNC_PACKET.md
 xuance-commander-core/memory/briefs/LAST_COMMAND_STATUS.md
 xuance-commander-core/memory/briefs/REPO_STATUS.md
+# Legacy raw zips (store locally only; too large for git)
+xuance-commander-core/docs/legacy/*/import/raw/*.zip

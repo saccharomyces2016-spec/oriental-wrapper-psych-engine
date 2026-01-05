@@ -281,3 +281,13 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: 645967b9bdc9f31cbd71a7da6f986f261d3cedba
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: legacy vault imported (115_1_3_my-first-app_failed) + inventory + brief pointers
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 4fed2a38373d1c4f419d661bd886e461713df856

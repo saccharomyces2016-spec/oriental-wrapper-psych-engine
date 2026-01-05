@@ -7,3 +7,5 @@
   - This is a **read-only legacy vault**.
   - Do not copy/paste legacy text into user-visible outputs directly.
   - Any reuse must go through: Research -> Brief -> Advisor -> Domain gate.
+- storage:
+  - Raw zip is kept outside git due to size limits (see SHA256SUMS.txt for checksum and filename).

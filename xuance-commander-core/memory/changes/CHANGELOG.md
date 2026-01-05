@@ -84,3 +84,5 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T15:15:31+0800, msg=MILESTONE: failure cases recorded (version drift + rules deadlock) + advisory constraints brief, branch=main, head=eefb589c79dc4952c1b0fdda8d88010d8dcb9e11, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T16:32:13+0800, msg=MILESTONE: legacy project analyzed (my-first-app) + research signals preserved, branch=main, head=645967b9bdc9f31cbd71a7da6f986f261d3cedba, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T17:21:40+0800, msg=MILESTONE: legacy vault imported (115_1_3_my-first-app_failed) + inventory + brief pointers, branch=main, head=4fed2a38373d1c4f419d661bd886e461713df856, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
