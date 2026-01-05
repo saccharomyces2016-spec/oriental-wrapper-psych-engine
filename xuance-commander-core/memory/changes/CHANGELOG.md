@@ -32,3 +32,5 @@
   - Shell hook active (bash/zsh)
   - LAST_COMMAND_STATUS auto-written per command
   - Sync verified via live command execution
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T09:28:00+0800, msg="MILESTONE: 路徑表與提醒規則已完成", branch=main, head=bd398057c290f1eb2ac507cf152a903db27aa4f4, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
