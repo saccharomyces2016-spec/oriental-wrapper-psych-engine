@@ -291,3 +291,39 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: 4fed2a38373d1c4f419d661bd886e461713df856
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: legacy vault routing layer added (ROUTER/CAPABILITY/UI/REUSE/FAIL) + legacy consult rule
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: b906b27ecb1882771dbb48b2c245208e04014a0d
+
+---
+### 【臨時目標完成｜Legacy Vault 可調用層封板】
+
+已完成：
+- Legacy 專案（115_1_3_my-first-app_failed）已完成「可調用層」整理
+- 已建立以下導覽與判斷文件：
+  - ROUTER.md（從需求導向 legacy）
+  - CAPABILITY_MAP.md（能做什麼）
+  - REUSABLE_ASSETS.md（哪些值得重用）
+  - UI_FLOW_REFERENCES.md（互動與流程參考）
+  - FAILURE_PATTERNS.md（禁止重犯）
+
+刻意未做：
+- ❌ 段落級解析
+- ❌ 細粒度語義索引
+
+停止理由：
+- 避免 MASTER 語義膨脹
+- 避免過早鎖死解讀角度
+- 保留在「實際主線需要時」再精讀的彈性
+
+重新開啟條件（任一成立）：
+1. 主線（如 P0-2）實作卡關，且明確需要 legacy 對照
+2. 顧問輸出出現歧義，需以 legacy 作裁決依據
+3. 決定正式納入 legacy 方法為新系統的一部分
