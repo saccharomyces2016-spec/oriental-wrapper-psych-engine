@@ -52,3 +52,5 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T12:26:26+0800, msg=MILESTONE: sync hook stable (command capture verified) + evidence updated, branch=main, head=7ec63de4f11b3128ac8da5178205fe2e1acc4d63, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T12:30:09+0800, msg=MILESTONE: sync hook stable - evidence sealed, branch=main, head=49a7a95a543720fb995539a080b915ea17779d5a, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T12:35:48+0800, msg=MILESTONE: sync hook stable - evidence sealed (final), branch=main, head=6ec5eb7f1fef27450b1acc3614068d548ce7786c, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
