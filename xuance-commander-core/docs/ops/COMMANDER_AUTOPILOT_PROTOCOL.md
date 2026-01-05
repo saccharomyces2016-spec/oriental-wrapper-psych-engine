@@ -104,20 +104,52 @@
 2) 重新生成 MASTER（沿用既有生成流程）
 3) 貼 MASTER（或用三角形插件同步 MASTER）即可完成對齊
 
-## MASTER 壓力監控與自動收斂責任（Mandatory）
+## MASTER 壓力監控與分層同步（Tiered Sync｜Mandatory）
 
+目標：
+- 不改變既有工作習慣（仍以文本為準、仍有 LAST_COMMAND_STATUS + MASTER）
+- 同時避免 MASTER 無限制膨脹造成對齊失真與上下文爆量
+- 把「規範」與「工程證據」分層：規範永遠必帶；證據按需引用
+
+### 分層輸出（固定名詞）
+- MASTER_SYNC_PACKET（FULL）：全量快照（只在必要時生成）
+- MASTER_MIN_SYNC_PACKET（MIN）：小快照（每次都生成，作為日常對齊）
+- VERIFICATION_PACK：工程證據包（按需生成；保存測試/狀態/差異）
+
+### MIN 必帶內容（永不省略）
+- CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
+- LAST_COMMAND_STATUS
+- REPO_STATUS（若存在）
+- LATEST_VERIFICATION_PACK 指標（若存在）
+
+### FULL 的自動觸發條件（任一成立即 FULL）
+1) 距離上次 FULL ≥ 7 天（週期保底）
+2) 變更觸及關鍵路徑：
+   - charter/ roadmap/ docs/governance/ docs/adr/ domain/ schema/ src/engine/
+3) 產生里程碑：commit message 含 `MILESTONE:`
+4) 驗證失敗：VERIFICATION_PACK exitCode ≠ 0
+5) ROADMAP 主線推進（P0-? 狀態變更）
+
+### VERIFICATION_PACK 的產生時機（任一成立即產生）
+- 進行「會造成重大返工」的修復（Hook/環境/路徑/權限/同步問題）
+- 修改 domain/schema/engine 或跑 golden tests 前後
+- 任何你覺得「要證明改對了」的時刻
+
+### MASTER 膨脹閾值（監控）
 觸發條件（任一成立）：
 - MASTER_SYNC_PACKET.md > 1800 行 或 > 300KB
 - 出現大量可由 SSOT 推導的重複內容
-- 包含過多歷史完成且不再變動的段落
+- 包含過多已封板且不再變動的歷史全文
 
 指揮官義務：
-- 必須主動提出「MASTER 收斂指令包」
-- 不得繼續新增內容到 MASTER
-- 收斂原則：
-  - 歷史內容 → 保留索引，不保留全文
-  - 穩定規範 → 只保留來源路徑
-  - 動態狀態 → 保留 CURRENT / LAST_COMMAND_STATUS
+- 必須主動提出「收斂指令包」
+- 不得繼續把歷史全文堆進 MASTER
+- 歷史內容 → 轉移到 docs/ops/ 或 docs/governance/ 的專檔 + 保留索引/指標
+
+### 智慧同步（Smart Sync）定義（固定用詞）
+- 「智慧同步」= 以 AUTO 方式決定 MIN 或 FULL，並在需要時生成 VERIFICATION_PACK 作證據。
+- 目標：永遠不漏規範、永遠可驗證、但不把全文塞爆。
+
 
 ## 絕對同步（Absolute Auto-Log）
 

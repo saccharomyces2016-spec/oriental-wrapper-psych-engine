@@ -263,7 +263,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -273,7 +273,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: eefb589c79dc4952c1b0fdda8d88010d8dcb9e11
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -283,7 +283,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: 645967b9bdc9f31cbd71a7da6f986f261d3cedba
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -293,7 +293,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: 4fed2a38373d1c4f419d661bd886e461713df856
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -329,7 +329,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 3. 決定正式納入 legacy 方法為新系統的一部分
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -351,7 +351,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - M03 → M04
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -363,6 +363,24 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 ---
 【主線推進｜P0-2 Kickoff｜2026-01-05T18:20:32+0800】
 
+---
+【施工方式升級｜Smart Sync Tiered Workflow｜2026-01-05】
+
+決策（已啟用或即將啟用）：
+- 由「單一 FULL MASTER」升級為「分層同步」：MIN（每次必帶）+ FULL（條件觸發）+ VERIFICATION_PACK（工程證據）。
+- 目的：不漏任何規範（roles/治理/主線），但避免 MASTER 因歷史全文膨脹而降低可靠性。
+
+影響：
+- 日常你只要貼 MIN；遇到里程碑/關鍵改動/失敗診斷才需要 FULL + 證據包。
+
+驗收：
+- 存在：MASTER_MIN_SYNC_PACKET.md（每次生成）
+- 存在：VERIFICATION_PACK（有需要時生成），並有 LATEST 指標
+- AUTO 能依規則決定 MIN/FULL（或至少保留可手動切換）
+---
+
+
+
 已建立顧問輸入 Brief（高階藍圖，不是題庫全文）：
 - R1 題目藍圖：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md
 - R4 風險鏈框架：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md
@@ -371,3 +389,29 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - 必查 legacy router（ROUTER/CAPABILITY/REUSE/UI/FAIL）
 - 必查 research 層（不得外露原文到使用者層）
 - 必查 lessons learned（避免版本漂移/規則卡死）
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: P0-2 kickoff briefs staged for income_expansion_pressure (R1/R4) with legacy+research+lessons mandatory refs
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 8d5ab106241d3df036d5ac00fe0e51deedeb9831
+
+---
+
+---
+
+---
+
+---
+[MILESTONE|2026-01-05T19:17:04+0800]
+
+已完成：
+- ✅ 雲端備份（commit + push）預備執行
+  - message: MILESTONE: checkpoint flow reorder test
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head(before): 89343ec4b15ec29a7ea321b75311d73e9ea479d6

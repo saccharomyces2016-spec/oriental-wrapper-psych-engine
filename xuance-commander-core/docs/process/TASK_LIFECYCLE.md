@@ -50,9 +50,18 @@
 - 若無對應成功紀錄，任務視為未完成
 
 ## 4. 狀態對齊（Sync）
-- 執行 `tools/build_master_sync_packet.sh`
-- 更新 `MASTER_SYNC_PACKET.md` 作為對話快照
-- MASTER 為只讀，不可手改
+
+- 生成同步快照（優先 AUTO）：
+  - `bash xuance-commander-core/tools/build_master_sync_packet_auto.sh`（若存在）
+  - 否則沿用：`bash tools/build_master_sync_packet_full.sh`
+
+- 日常對齊（推薦）：貼 MIN 快照（MASTER_MIN_SYNC_PACKET.md）。
+- 需要深度對齊或觸發 FULL 條件時：貼 FULL 快照（MASTER_SYNC_PACKET.md）。
+
+### 工程證據（Verification）
+當任務涉及「改碼是否改對」「測試是否通過」「環境/Hook 是否修好」：
+- 必須生成 VERIFICATION_PACK（若工具存在）並在文本中留下路徑指標。
+
 
 ## 5. 里程碑備份（Checkpoint｜雲端留存）
 
