@@ -140,29 +140,35 @@ unset -f _xc_precmd _xc_preexec 2>/dev/null || true
 # --- zsh hooks (capture command + write status) ---
 _xc_zsh_preexec() {
   # $1 is the full command line about to be executed
-  _xc_zsh_last_cmd="$1"
+  # Keep it as a global so precmd can read it.
+  _xc_last_cmd="$1"
 }
 
 _xc_zsh_precmd() {
-  local ec="$?"
-  local cmd="${_xc_zsh_last_cmd:-"(unknown)"}"
+  local ec=$?
+  local cmd="${_xc_last_cmd:-"(unknown)"}"
   _xc_write_status "$cmd" "$ec"
 }
 
 # Register zsh hooks (avoid duplicates)
-if typeset -p preexec_functions >/dev/null 2>&1; then
-  preexec_functions=(${preexec_functions:#_xc_zsh_preexec})
-  preexec_functions+=( _xc_zsh_preexec )
-fi
-if typeset -p precmd_functions >/dev/null 2>&1; then
-  precmd_functions=(${precmd_functions:#_xc_zsh_precmd})
-  precmd_functions+=( _xc_zsh_precmd )
-fi
+# Some zsh environments do not predefine these arrays; ensure they exist.
+typeset -ga precmd_functions 2>/dev/null || true
+typeset -ga preexec_functions 2>/dev/null || true
 
-if type add-zsh-hook >/dev/null 2>&1; then
-  add-zsh-hook -d preexec _xc_zsh_preexec 2>/dev/null || true
-  add-zsh-hook -d precmd _xc_zsh_precmd 2>/dev/null || true
-  add-zsh-hook preexec _xc_zsh_preexec
-  add-zsh-hook precmd _xc_zsh_precmd
-fi
+# Remove duplicates then append
+preexec_functions=(${preexec_functions:#_xc_zsh_preexec})
+preexec_functions+=( _xc_zsh_preexec )
+
+precmd_functions=(${precmd_functions:#_xc_zsh_precmd})
+precmd_functions+=( _xc_zsh_precmd )
+
+# Fallback: also install standard hooks if function-arrays are not honored.
+# These names are special in zsh and will be called automatically.
+preexec() {
+  _xc_zsh_preexec "$1"
+}
+precmd() {
+  _xc_zsh_precmd
+}
+
 # XUANCE_ZSH_CMD_CAPTURE_END
