@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## Unreleased
+- Added: Sync system stabilized + milestone sealed (ts=2026-01-05T11:01:02+0800, branch=main, head=54982618a5f6dc8fa2dbc432845adc0d29199346) <!-- XUANCE_CHANGELOG_SYNC_STABLE -->
 - Added: GitHub cloud sync verified (local HEAD can be matched to origin/main); documented the safety caveat that only committed+pushed changes are protected
 - Added: Legacy zsh hook `_xc_precmd` auto-cleanup in tools/sync_mode_hooks.sh to stop prompt errors and keep Absolute Auto-Log stable
 - Added: Milestone checkpoint workflow (xc_checkpoint.sh) required in Task Lifecycle/Autopilot with MASTER rebuild + CURRENT/CHANGELOG evidence
@@ -39,3 +40,5 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T10:12:13+0800, msg=MILESTONE: checkpoint TS/locale fix probe, branch=main, head=a3b273ba9e61344807874219225361310ee7596e, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T10:21:27+0800, msg=MILESTONE: cleanup mojibake evidence (CURRENT/CHANGELOG) verified, branch=main, head=b2fd185984ea15b73d1e8a01515d918080f5a48a, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T10:25:38+0800, msg=MILESTONE: sync system stable (evidence clean), branch=main, head=54982618a5f6dc8fa2dbc432845adc0d29199346, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)

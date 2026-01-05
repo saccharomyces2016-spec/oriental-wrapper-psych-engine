@@ -132,7 +132,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -142,7 +142,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: a3b273ba9e61344807874219225361310ee7596e
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -150,3 +150,36 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: b2fd185984ea15b73d1e8a01515d918080f5a48a
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: sync system stable (evidence clean)
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 54982618a5f6dc8fa2dbc432845adc0d29199346
+
+<!-- XUANCE_MILESTONE_SYNC_STABLE_BEGIN -->
+---
+【里程碑封板｜2026-01-05T11:01:02+0800】
+
+已驗收完成（封板）：
+- ✅ LAST_COMMAND_STATUS 不再出現 (unknown)，可記錄實際指令
+- ✅ Checkpoint 可用：可 commit + push + 留證 + 重建 MASTER
+- ✅ GitHub 雲端同步可用：main / 54982618a5f6dc8fa2dbc432845adc0d29199346
+- ✅ 即時同步（MASTER）可用：指令 → LAST_COMMAND_STATUS → MASTER 重建
+- ✅ 終端噪音 _xc_precmd:8 已清除（新 terminal 不應再出現）
+
+驗收方式（最簡單）：
+1) 跑任一無害指令，例如：echo __probe__
+2) 檢查：memory/briefs/LAST_COMMAND_STATUS.md 的 command/updatedAt 變新
+3) 檢查：memory/briefs/MASTER_SYNC_PACKET.md 的 generatedAt 變新
+4) 宣告封板時，一律用 checkpoint：
+   bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <名稱> 已驗收完成"
+
+注意：
+- 雲端保留前提仍是 commit + push；未提交檔案只在本機。
+<!-- XUANCE_MILESTONE_SYNC_STABLE_END -->
+
