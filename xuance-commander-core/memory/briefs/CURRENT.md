@@ -179,7 +179,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 ---
 
 ---
-【里程碑備份｜��
+【里程碑備份｜
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -189,7 +189,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: dd90747261b1cccc0058ba226242394f8dd2adcc
 
 ---
-【里程碑備份｜��
+【里程碑備份｜
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -199,7 +199,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: be6ef3e1f1e8ebc5fb7f00d133d524bb27c36995
 
 ---
-【里程碑備份｜��
+【里程碑備份｜
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -229,3 +229,16 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 
 下一步（主線）：
 - P0-1：選定第一個 facet（單一構面）
+
+<!-- XUANCE_CURRENT_MAINLINE_BEGIN -->
+## 主線狀態（Phase 0 / MVP）
+
+已決定：
+- P0-1 第一個 facet：income_expansion_pressure（薪資增速 vs 家庭開銷 + 第二收入驅動）
+
+下一步（主線待做）：
+- P0-2：為 income_expansion_pressure 建立：
+  - questions / scoring / recommendations / narratives / riskchains
+  - 並走 Research → Brief → Advisor → Domain gate
+- P0-3：補齊 golden tests（固定輸入輸出）
+<!-- XUANCE_CURRENT_MAINLINE_END -->

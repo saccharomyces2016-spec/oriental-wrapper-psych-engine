@@ -1,6 +1,11 @@
 # CHANGELOG
 
 ## Unreleased
+
+- Added: USER_OVERRIDE_PROTOCOL (fatigue-safe final override + rollback-by-checkpoint)
+- Added: ADR_0005 (Proposed) user override + fatigue rollback protocol
+- Changed: ROADMAP P0-1 marked done; selected first facet income_expansion_pressure with seed Q1
+- Changed: CURRENT updated to reflect mainline transition to P0-2 for income_expansion_pressure
 - Added: Sync system stabilized + milestone sealed (ts=2026-01-05T11:01:02+0800, branch=main, head=54982618a5f6dc8fa2dbc432845adc0d29199346) <!-- XUANCE_CHANGELOG_SYNC_STABLE -->
 - Added: GitHub cloud sync verified (local HEAD can be matched to origin/main); documented the safety caveat that only committed+pushed changes are protected
 - Added: Legacy zsh hook `_xc_precmd` auto-cleanup in tools/sync_mode_hooks.sh to stop prompt errors and keep Absolute Auto-Log stable
