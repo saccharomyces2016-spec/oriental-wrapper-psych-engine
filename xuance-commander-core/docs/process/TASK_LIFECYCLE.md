@@ -11,6 +11,31 @@
 - 所有終端機指令由自動同步機制記錄
 - 每一次指令執行結果，必須寫入：`memory/briefs/LAST_COMMAND_STATUS.md`
 
+<!-- XUANCE_RESEARCH_GATE_BEGIN -->
+
+## 2.2 Research → Brief → Advisor → Domain Gate（新增｜硬規則）
+
+觸發條件（任一成立即必做）：
+- 要新增/修改 facet 的 questions / scoring / narratives / recommendations / riskchains
+- 要啟動顧問角色（R1/R2/R3/R4/R5）產出內容
+
+必做流程（不可跳過）：
+1) Research（內部推導）：
+   - 只能讀 docs/research/ 的研究筆記做推導，不得直接外露
+2) Brief（顧問輸入）：
+   - 把 research 萃取成短輸入，存到 docs/gem/briefs/BRIEF_*.md
+3) Advisor Runs（顧問建議稿）：
+   - 顧問輸出存到 docs/gem/runs/（只算建議稿）
+4) Commander 審核：
+   - 指揮官做採納/拒絕/修改決策摘要後，才可落盤到 domain/
+5) Golden Tests：
+   - 跑 tests/run_golden.sh（或專案既定測試腳本）確保輸入輸出穩定
+
+驗收：
+- 能在 repo 中找到：brief + runs + domain 變更 + 測試結果（或至少可重跑的驗證指令）
+
+<!-- XUANCE_RESEARCH_GATE_END -->
+
 ## 2.5 診斷（Diagnosis）
 
 當問題屬於環境/殼層/Hook/路徑等「不先定位就可能改錯」的類型：

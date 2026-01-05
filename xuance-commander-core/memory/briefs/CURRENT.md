@@ -187,3 +187,13 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: dd90747261b1cccc0058ba226242394f8dd2adcc
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: evidence drift sealed (post-readable-cleanup)
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: be6ef3e1f1e8ebc5fb7f00d133d524bb27c36995
