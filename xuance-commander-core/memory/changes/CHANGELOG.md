@@ -33,4 +33,5 @@
   - LAST_COMMAND_STATUS auto-written per command
   - Sync verified via live command execution
 
-- Added: milestone checkpoint pushed (ts=2026-01-05T09:28:00+0800, msg="MILESTONE: 路徑表與提醒規則已完成", branch=main, head=bd398057c290f1eb2ac507cf152a903db27aa4f4, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T09:56:10, msg="MILESTONE: Checkpoint script TS bug fixed", branch=main, head=f22bddf54e52048e19aff1a71dbfae9a6bd7b901, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)

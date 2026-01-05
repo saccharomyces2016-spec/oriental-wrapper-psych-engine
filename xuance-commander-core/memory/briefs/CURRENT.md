@@ -119,3 +119,14 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 ---
 
 ---
+
+---
+【里程碑備份｜2026-01-05T09:56:10】
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: Checkpoint script TS bug fixed
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: f22bddf54e52048e19aff1a71dbfae9a6bd7b901
+

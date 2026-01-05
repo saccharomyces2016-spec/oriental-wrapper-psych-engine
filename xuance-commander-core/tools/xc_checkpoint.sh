@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+# Normalize locale to avoid mojibake in logs/commits
+export LC_ALL="en_US.UTF-8" LANG="en_US.UTF-8"
+
 REPO_ROOT="/Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine"
 CORE="$REPO_ROOT/xuance-commander-core"
 CURRENT="$CORE/memory/briefs/CURRENT.md"
