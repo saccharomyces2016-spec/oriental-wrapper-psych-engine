@@ -98,3 +98,7 @@
 - Added: Governance CODEBOOK (high-density rules)
 - Added: MODE_SWITCHES (auto workflow modes)
 - Added: Legacy routing layer sealed as completed temporary goal
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T18:16:15+0800, msg=MILESTONE: completion-record rule + codebook + mode switches + legacy routing sealed, branch=main, head=3d59b138c642f23f2cbf2bd11d81229964d35ad5, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: P0-2 kickoff briefs for income_expansion_pressure (R1 blueprint + R4 riskchains), with mandatory legacy/research/lessons references

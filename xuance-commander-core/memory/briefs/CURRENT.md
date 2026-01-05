@@ -349,3 +349,25 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 套用規範代碼：
 - G01 G03 G04
 - M03 → M04
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: completion-record rule + codebook + mode switches + legacy routing sealed
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 3d59b138c642f23f2cbf2bd11d81229964d35ad5
+
+---
+【主線推進｜P0-2 Kickoff｜2026-01-05T18:20:32+0800】
+
+已建立顧問輸入 Brief（高階藍圖，不是題庫全文）：
+- R1 題目藍圖：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md
+- R4 風險鏈框架：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md
+
+引用規則：
+- 必查 legacy router（ROUTER/CAPABILITY/REUSE/UI/FAIL）
+- 必查 research 層（不得外露原文到使用者層）
+- 必查 lessons learned（避免版本漂移/規則卡死）
