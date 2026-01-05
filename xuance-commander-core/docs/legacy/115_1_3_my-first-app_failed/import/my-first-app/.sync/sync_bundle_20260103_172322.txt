@@ -1,0 +1,47 @@
+=== SYNC BUNDLE v1 ===
+Generated_at: 2026-01-03 17:23:22 +0800
+Host: Darwin MacBookAir.home 25.1.0 Darwin Kernel Version 25.1.0: Mon Oct 20 19:32:47 PDT 2025; root:xnu-12377.41.6~2/RELEASE_ARM64_T8103 arm64
+PWD: /Users/yujunwei/Projects/my-first-app
+
+## A) Git status
+## gov/cleanup-legacy-20260101-170835
+ M docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+ M docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+ M docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+?? .sync/
+
+## B) Git HEAD + last 20 commits
+89894fbb17433c47364042f23da9faa5cea63e46
+89894fb (HEAD -> gov/cleanup-legacy-20260101-170835) governance: persist commander focus guard + single-block copy/paste rule
+6a7f222 governance: checkpoint verify SLICE_001 semantic firewall
+f44b3d9 slice: implement semantic firewall denylist tests + validate gate
+32021db governance: run first checkpoint and align project state pointers
+4ff9ccb governance: finalize system master progress map (audit-compliant MVE)
+8751449 architecture: lock daily & diagnostic mode protocols (signal-only, authority-decay)
+2b58c8f architecture: lock daily and diagnostic mode protocols (audited, zero-authority, hard-cap)
+335f1dc architecture: formalize three-layer system (detection / structure / consequence)
+d0c1eae governance: finalize commander co-founder mode as binding standard
+e2ba020 governance: adopt work-mode discovery protocol + persist deputy daily-mode discussion brief
+65344e2 governance: enforce professional contradiction duty (non-deference rule)
+f5b9284 governance: add deputy escalation + communication style protocols (hard rules + gates)
+520b4b6 governance: enforce deputy involvement gate for strategic multi-round topics
+f8b77ed governance: add data request protocol (hard rule) + assistant sync request template
+2ff9ae0 governance: harden permanent work memory (role SSoT + role deliverable reporting + sync coverage)
+ccb4281 governance: enforce mandatory mission brief for all assignments (permanent memory gate)
+0c464ab chore: ignore temp drive upload directory
+3e2d269 governance: enforce assistant sync report (hard rule) + add one-command generator
+6bbf7c9 governance: formalize deterministic project sync protocol (hard rule)
+fa5059f slice: SLICE_001 semantic firewall (denylist + tests + validate integration)
+
+## C) Remotes (sanitized)
+
+## D) Working tree diff stats
+ docs/metaphysics/ELEMENT_PRIOR_SPEC.md             | 146 +++++++++++++++------
+ docs/metaphysics/NARRATIVE_BINDING_SPEC.md         |  47 ++++---
+ .../metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md |  47 +++----
+ 3 files changed, 150 insertions(+), 90 deletions(-)
+
+## E) Tracked files (git ls-files) count
+     461
+
+## F) Full file tree (excluding heavy dirs)

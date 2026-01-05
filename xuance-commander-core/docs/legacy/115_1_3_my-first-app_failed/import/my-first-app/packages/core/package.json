@@ -1,0 +1,16 @@
+{
+  "name": "@packages/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@packages/data": "workspace:*"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "madge": "madge --circular --extensions ts src",
+    "smoke": "tsx scripts/smoke_reading.ts"
+  }
+}

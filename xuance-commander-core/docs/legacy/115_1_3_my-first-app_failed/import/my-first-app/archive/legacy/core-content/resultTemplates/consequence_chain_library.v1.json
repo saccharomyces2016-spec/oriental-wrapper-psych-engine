@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "後果連鎖庫：描述行為模式的可能發展路徑",
+    "note": "Frozen - do not edit, only extend"
+  },
+  "items": [
+    {
+      "id": "chain_chronic_stress",
+      "label": "長期壓力連鎖",
+      "confidence": "high",
+      "uncertainty_note": "壓力反應因人而異，此為一般性描述",
+      "do_not_say": [
+        "你一定會生病",
+        "你註定會崩潰",
+        "這是不可逆的",
+        "你已經沒救了",
+        "你注定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "長期壓力確實會影響身心狀態",
+        "guide": "同時，及早調整可以改變發展方向",
+        "action": "試著找出一個壓力源，思考如何減輕或調整應對方式"
+      }
+    },
+    {
+      "id": "chain_avoidance_loop",
+      "label": "逃避迴圈連鎖",
+      "confidence": "high",
+      "uncertainty_note": "逃避模式可能因情境而異，非絕對",
+      "do_not_say": [
+        "你永遠無法改變",
+        "你註定會重複這個模式",
+        "這是你的宿命",
+        "你已經定型了"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "逃避模式確實容易形成迴圈",
+        "guide": "同時，每個當下都可以選擇不同的回應方式",
+        "action": "試著在下一次想逃避時，先停下來，思考一個最小可行行動"
+      }
+    },
+    {
+      "id": "chain_relationship_pattern",
+      "label": "關係模式連鎖",
+      "confidence": "medium",
+      "uncertainty_note": "關係發展受多因素影響，此為可能性描述",
+      "do_not_say": [
+        "你註定會重複這個關係模式",
+        "你永遠找不到對的人",
+        "你註定會失敗",
+        "這是你的宿命"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "關係模式確實可能重複",
+        "guide": "同時，覺察和調整可以改變互動方式",
+        "action": "試著回顧一個關係模式，思考下次可以用什麼不同方式回應"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+

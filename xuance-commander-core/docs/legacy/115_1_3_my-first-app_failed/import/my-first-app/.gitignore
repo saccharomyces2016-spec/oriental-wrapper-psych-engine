@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# artifacts (generated / imported / audit outputs)
+artifacts/tmp/
+artifacts/**/.DS_Store
+artifacts/**/*.zip
+artifacts/**/*.7z
+artifacts/**/*.tar
+artifacts/**/*.tar.gz
+artifacts/**/*.tgz
+.tmp.driveupload/

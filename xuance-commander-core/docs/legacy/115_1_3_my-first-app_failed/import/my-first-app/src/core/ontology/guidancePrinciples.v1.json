@@ -1,0 +1,97 @@
+{
+  "_schema": "items[]: {motherThemeId, principles[]}",
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "items": [
+    {
+      "motherThemeId": "chronic_depletion",
+      "principles": [
+        "reduce load to protect core energy",
+        "restore recovery signals and follow them",
+        "reclaim boundaries on time and output",
+        "schedule predictable recovery blocks"
+      ]
+    },
+    {
+      "motherThemeId": "loss_of_agency",
+      "principles": [
+        "surface real options before saying yes",
+        "practice small renegotiations",
+        "track and celebrate self-directed choices",
+        "set default pauses before commitments"
+      ]
+    },
+    {
+      "motherThemeId": "hyper_responsibility",
+      "principles": [
+        "redistribute load and co-own outcomes",
+        "allow shared imperfection",
+        "set stop rules for what is mine vs theirs",
+        "ask for support before overload"
+      ]
+    },
+    {
+      "motherThemeId": "fear_based_stability",
+      "principles": [
+        "run safe experiments with guardrails",
+        "clarify worst-case and cushions",
+        "stack small wins toward change",
+        "separate real risk from imagined collapse"
+      ]
+    },
+    {
+      "motherThemeId": "identity_diffusion",
+      "principles": [
+        "name what matters before deciding",
+        "test-fit choices against values",
+        "record moments that feel like me",
+        "reduce decisions driven only by others"
+      ]
+    },
+    {
+      "motherThemeId": "suppressed_needs",
+      "principles": [
+        "voice small needs early",
+        "set minimum self-care that does not move",
+        "practice clean asks instead of hints",
+        "create opt-out rules when capacity is low"
+      ]
+    },
+    {
+      "motherThemeId": "chronic_alertness",
+      "principles": [
+        "scan once, then settle the body",
+        "plant safety cues in daily spaces",
+        "schedule off-alert windows",
+        "practice flexible responses to change"
+      ]
+    },
+    {
+      "motherThemeId": "unprocessed_loss",
+      "principles": [
+        "create gentle rituals for what was lost",
+        "set short windows to feel without flooding",
+        "share one thread of the story with someone safe",
+        "notice when old loss is steering new choices"
+      ]
+    },
+    {
+      "motherThemeId": "meaning_vacuum",
+      "principles": [
+        "anchor daily tasks to a small why",
+        "swap one hollow task for a meaningful one",
+        "track moments that feel worthwhile",
+        "name a near-term outcome that matters"
+      ]
+    },
+    {
+      "motherThemeId": "self_erosion",
+      "principles": [
+        "restate personal preferences out loud",
+        "limit compromises that drain identity",
+        "take one decision that trusts your own read",
+        "protect energy from default yes-es"
+      ]
+    }
+  ]
+}

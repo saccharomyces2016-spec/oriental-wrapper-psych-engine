@@ -1,0 +1,2189 @@
+{
+  "_schema": "items[]: {theme_id, theme_enLabel, theme_zhLabel, questions[]: {question_text, choices[], pattern_tags[], confidence_weight}}",
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "items": [
+    {
+      "theme_id": "chronic_depletion",
+      "theme_enLabel": "Chronic Depletion",
+      "theme_zhLabel": "慢性耗竭",
+      "questions": [
+        {
+          "question_text": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？",
+          "choices": [
+            "覺得身體沉重，想躲回被窩",
+            "立刻列出清單，強迫自己開機",
+            "緊盯手機，擔心有突發狀況",
+            "希望能有人接手這一切"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "body_signals",
+            "routine"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "覺得身體沉重，想躲回被窩",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "立刻列出清單，強迫自己開機",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "緊盯手機，擔心有突發狀況",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "希望能有人接手這一切",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        },
+        {
+          "question_text": "面對職場的競爭與無止盡的加班要求，你的身體通常如何反應？",
+          "choices": [
+            "忽視疲勞，靠咖啡硬撐",
+            "麻木地繼續做，像機器人一樣",
+            "忍著頭痛上班，不敢請假",
+            "躲進廁所，爭取片刻安靜"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "body_signals",
+            "pace"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "忽視疲勞，靠咖啡硬撐",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "麻木地繼續做，像機器人一樣",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "忍著頭痛上班，不敢請假",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "躲進廁所，爭取片刻安靜",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "當長期的照護責任讓你感到體力透支時，你如何看待「休息」這件事？",
+          "choices": [
+            "充滿罪惡感，不敢停下來",
+            "覺得必須生病了才有理由休息",
+            "期待別人主動發現我累了",
+            "計算著還能撐多久才崩潰"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "recovery",
+            "planning"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "充滿罪惡感，不敢停下來",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "覺得必須生病了才有理由休息",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "期待別人主動發現我累了",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "計算著還能撐多久才崩潰",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "數位時代的資訊轟炸讓你感到大腦過載時，你會採取什麼行動？",
+          "choices": [
+            "滑手機到深夜，雖累但停不下",
+            "強制斷網，優先保護心理健康",
+            "向身邊的人抱怨，發洩情緒",
+            "徹底放空，什麼訊息都不回"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "pace",
+            "routine"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "滑手機到深夜，雖累但停不下",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "強制斷網，優先保護心理健康",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "向身邊的人抱怨，發洩情緒",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "徹底放空，什麼訊息都不回",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "經歷更年期或身心機能顯著衰退時，你對這種「失去活力」的感覺是？",
+          "choices": [
+            "假裝沒事，維持過往強度",
+            "哀傷，躲起來覺得自己沒用了",
+            "積極尋找各種補品試圖改善",
+            "順其自然，觀察身體變化"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "body_signals",
+            "recovery"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "假裝沒事，維持過往強度",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "哀傷，躲起來覺得自己沒用了",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "積極尋找各種補品試圖改善",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "順其自然，觀察身體變化",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "在長時間的通勤或塞車中，你通常處於什麼樣的情緒？",
+          "choices": [
+            "強迫自己聽Podcast學習",
+            "放空大腦，讓自己休眠一下",
+            "滑社群媒體，轉移注意力",
+            "觀察路況，預想待會行程"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "pace",
+            "planning"
+          ],
+          "confidence_weight": 1,
+          "choice_meta": [
+            {
+              "choice": "強迫自己聽Podcast學習",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "放空大腦，讓自己休眠一下",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "滑社群媒體，轉移注意力",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "觀察路況，預想待會行程",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "每當週末或假期結束，想到明天要面對的一切，你的反應是？",
+          "choices": [
+            "腦中不斷預演明天的災難",
+            "熬夜追劇，不想面對明天",
+            "提早設鬧鐘，規劃明天進度",
+            "躲在被窩，感到絕望無力"
+          ],
+          "pattern_tags": [
+            "overextension",
+            "planning",
+            "routine"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "腦中不斷預演明天的災難",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "熬夜追劇，不想面對明天",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "提早設鬧鐘，規劃明天進度",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "躲在被窩，感到絕望無力",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "hyper responsibility",
+      "theme_enLabel": "Hyper-Responsibility",
+      "theme_zhLabel": "過度責任",
+      "questions": [
+        {
+          "question_text": "在團隊合作中，當別人進度落後時，你通常會？",
+          "choices": [
+            "把工作攬過來自己做，確保品質",
+            "焦慮地催促，但不敢接手",
+            "私下抱怨，但還是幫忙收尾",
+            "坐視不管，讓他們承擔後果（雖然心裡不安）"
+          ],
+          "pattern_tags": [
+            "eldest_daughter_syndrome",
+            "caregiver_guilt",
+            "pleasure_denial"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "把工作攬過來自己做，確保品質",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "焦慮地催促，但不敢接手",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "私下抱怨，但還是幫忙收尾",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "坐視不管，讓他們承擔後果（雖然心裡不安）",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "當有人向你訴苦時，你會傾向於？",
+          "choices": [
+            "立刻想辦法幫他解決問題",
+            "跟著他一起難過，甚至比他還累",
+            "聽著很煩，但不敢打斷",
+            "轉移話題，不想承擔情緒"
+          ],
+          "pattern_tags": [
+            "fixer_mentality",
+            "emotional_contagion",
+            "boundary_leak"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "立刻想辦法幫他解決問題",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "跟著他一起難過，甚至比他還累",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "聽著很煩，但不敢打斷",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "轉移話題，不想承擔情緒",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "對於「說不」這件事，你的困難點在於？",
+          "choices": [
+            "怕對方失望或生氣",
+            "怕錯失機會，以後不會再來",
+            "覺得自己應該能做到，不想承認不行",
+            "不知道怎麼拒絕，只好答應"
+          ],
+          "pattern_tags": [
+            "refusal_difficulty",
+            "approval_seeking",
+            "fomo"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "怕對方失望或生氣",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "怕錯失機會，以後不會再來",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "覺得自己應該能做到，不想承認不行",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "不知道怎麼拒絕，只好答應",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "對於承諾，你的態度是？",
+          "choices": [
+            "說到一定要做到，死都要守信",
+            "輕易答應，然後後悔",
+            "不敢輕易承諾，怕做不到",
+            "先答應下來，再想辦法推掉"
+          ],
+          "pattern_tags": [
+            "commitment_weight",
+            "integrity_anxiety",
+            "over_promising"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "說到一定要做到，死都要守信",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "輕易答應，然後後悔",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "不敢輕易承諾，怕做不到",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "先答應下來，再想辦法推掉",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "當你在工作上取得成就時，你會？",
+          "choices": [
+            "覺得是運氣好，下次可能就不行了",
+            "不敢太高興，怕招人嫉妒",
+            "立刻設定下一個更高的目標",
+            "希望能得到更多人的認可"
+          ],
+          "pattern_tags": [
+            "imposter_syndrome",
+            "tall_poppy_syndrome",
+            "hedonic_treadmill"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "覺得是運氣好，下次可能就不行了",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "不敢太高興，怕招人嫉妒",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "立刻設定下一個更高的目標",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "希望能得到更多人的認可",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "fear based stability",
+      "theme_enLabel": "Fear-Based Stability",
+      "theme_zhLabel": "恐懼驅動的穩定",
+      "questions": [
+        {
+          "question_text": "對於投資理財，你的風格傾向於？",
+          "choices": [
+            "極度保守，只存定存或現金",
+            "跟風買熱門股，怕錯過賺錢機會",
+            "過度分散風險，導致沒什麼收益",
+            "完全不敢碰，覺得都是騙局"
+          ],
+          "pattern_tags": [
+            "investment_fear",
+            "loss_aversion",
+            "herd_behavior"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "極度保守，只存定存或現金",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "跟風買熱門股，怕錯過賺錢機會",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "過度分散風險，導致沒什麼收益",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "完全不敢碰，覺得都是騙局",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "在社交場合中，你通常會選擇？",
+          "choices": [
+            "待在熟人旁邊，不跟陌生人說話",
+            "主動社交，怕被冷落",
+            "躲在角落滑手機",
+            "觀察別人在做什麼，模仿他們"
+          ],
+          "pattern_tags": [
+            "social_anxiety",
+            "safety_behavior",
+            "conformity"
+          ],
+          "confidence_weight": 1,
+          "choice_meta": [
+            {
+              "choice": "待在熟人旁邊，不跟陌生人說話",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "主動社交，怕被冷落",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "躲在角落滑手機",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "觀察別人在做什麼，模仿他們",
+              "behavior_facet": "follow_momentum"
+            }
+          ]
+        },
+        {
+          "question_text": "當你有一個創新的想法時，你會？",
+          "choices": [
+            "擔心不可行，自己先否定掉",
+            "到處問人意見，直到信心被磨光",
+            "默默做，不敢告訴別人",
+            "覺得太麻煩，懶得執行"
+          ],
+          "pattern_tags": [
+            "innovation_fear",
+            "self_censorship",
+            "execution_gap"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "擔心不可行，自己先否定掉",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "到處問人意見，直到信心被磨光",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "默默做，不敢告訴別人",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "覺得太麻煩，懶得執行",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "loss_of_agency",
+      "theme_enLabel": "Loss of Agency",
+      "theme_zhLabel": "主控感流失",
+      "questions": [
+        {
+          "question_text": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？",
+          "choices": [
+            "徹底躺平，放棄無謂掙扎",
+            "加倍兼職，試圖對抗命運",
+            "隨波逐流，過一天算一天",
+            "憤世嫉俗，抱怨社會不公"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "徹底躺平，放棄無謂掙扎",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "加倍兼職，試圖對抗命運",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "隨波逐流，過一天算一天",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "憤世嫉俗，抱怨社會不公",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "隨著年齡增長，若必須繳回駕照或依賴輔具行動，你的第一反應更像？",
+          "choices": [
+            "憤怒，覺得自由被剝奪",
+            "恐慌，害怕從此依賴他人",
+            "認命，接受老了就是這樣",
+            "隱瞞實情，硬著頭皮繼續做"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.4,
+          "choice_meta": [
+            {
+              "choice": "憤怒，覺得自由被剝奪",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "恐慌，害怕從此依賴他人",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "認命，接受老了就是這樣",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "隱瞞實情，硬著頭皮繼續做",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "面對複雜的數位科技（如網銀、掛號 App）讓你卡住時，你通常會？",
+          "choices": [
+            "感到挫折，覺得被時代拋棄",
+            "依賴晚輩，雖然不想麻煩人",
+            "拒絕使用，堅持臨櫃辦理",
+            "焦慮地學習，深怕按錯鍵"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "initiative"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "感到挫折，覺得被時代拋棄",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "依賴晚輩，雖然不想麻煩人",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "拒絕使用，堅持臨櫃辦理",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "焦慮地學習，深怕按錯鍵",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "在職場上，決策權完全握在上級手中、你的專業意見常被無視時，你會？",
+          "choices": [
+            "只做表面，不求有功",
+            "揣摩上意，做他們想看的",
+            "照單全收，停止思考",
+            "想離職但不敢，覺得被困住"
+          ],
+          "pattern_tags": [
+            "voice",
+            "negotiation",
+            "assertion"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "只做表面，不求有功",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "揣摩上意，做他們想看的",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "照單全收，停止思考",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "想離職但不敢，覺得被困住",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "當你被診斷出慢性病，生活必須受藥物與回診節奏影響時，你對身體的感覺更像？",
+          "choices": [
+            "嚴格控管，不容許數值波動",
+            "偶爾故意漏吃，證明自主權",
+            "感到沮喪，身體不再屬自己",
+            "隱瞞病情，不想被當病人"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "嚴格控管，不容許數值波動",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "偶爾故意漏吃，證明自主權",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "感到沮喪，身體不再屬自己",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "隱瞞病情，不想被當病人",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "面對全球性危機（如疫情、戰爭）讓你覺得個人很渺小、很難左右局勢時，你會？",
+          "choices": [
+            "過度關注新聞，隨時準備避難",
+            "忽視資訊，專注自己的小日子",
+            "感到絕望，覺得做什麼都沒用",
+            "積極參與社群，尋求掌控感"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "過度關注新聞，隨時準備避難",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "忽視資訊，專注自己的小日子",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "感到絕望，覺得做什麼都沒用",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "積極參與社群，尋求掌控感",
+              "behavior_facet": "push_through"
+            }
+          ]
+        },
+        {
+          "question_text": "在家庭重大決策（如裝修、搬家）中，若你的聲音長期被忽略，你通常會？",
+          "choices": [
+            "放棄表達，讓他們自己決定",
+            "消極抵抗，故意拖延配合",
+            "大吵一架，試圖奪回主導權",
+            "在小事上計較，尋求補償"
+          ],
+          "pattern_tags": [
+            "voice",
+            "negotiation",
+            "assertion"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "放棄表達，讓他們自己決定",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "消極抵抗，故意拖延配合",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "大吵一架，試圖奪回主導權",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "在小事上計較，尋求補償",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "social_comparison",
+      "theme_enLabel": "Social Comparison",
+      "theme_zhLabel": "社會比較壓力",
+      "questions": [
+        {
+          "question_text": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？",
+          "choices": [
+            "感到自卑或煩躁，乾脆關掉不看",
+            "被激起競爭心，逼自己加速追趕",
+            "跟著點讚留言，讓自己融入氣氛",
+            "先冷靜觀察，提醒自己那只是片段"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "感到自卑或煩躁，乾脆關掉不看",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "被激起競爭心，逼自己加速追趕",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "跟著點讚留言，讓自己融入氣氛",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "先冷靜觀察，提醒自己那只是片段",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "參加同學會或聚餐時，發現同齡人多已買房或結婚生子，而自己像還在原地，你會？",
+          "choices": [
+            "覺得尷尬想逃，之後盡量不參加",
+            "主動請教他們怎麼做到，看看能否學到方法",
+            "轉移話題聊別的，避免自己被問太多",
+            "重新盤點自己的路線，調整下一步計畫"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "goal_setting"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "覺得尷尬想逃，之後盡量不參加",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "主動請教他們怎麼做到，看看能否學到方法",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "轉移話題聊別的，避免自己被問太多",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "重新盤點自己的路線，調整下一步計畫",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "當同事拿到你很想要的機會或獎項，而你落選時，你更接近？",
+          "choices": [
+            "表面祝福，但私下拉開距離保護自己",
+            "把挫敗轉成燃料，決定下次一定要贏",
+            "先停一下觀察局勢，等更適合的時機再出手",
+            "回到自身需求，確認我真正要的是什麼"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "表面祝福，但私下拉開距離保護自己",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "把挫敗轉成燃料，決定下次一定要贏",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "先停一下觀察局勢，等更適合的時機再出手",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "回到自身需求，確認我真正要的是什麼",
+              "behavior_facet": "self_prioritize"
+            }
+          ]
+        },
+        {
+          "question_text": "身邊的人都在討論某個熱門投資或流行趨勢，你怕不跟進就落伍時，你會？",
+          "choices": [
+            "先跟著加入，不想在群體裡顯得格格不入",
+            "先把資源留給更重要的事，按自己的步調走",
+            "焦慮地查很多資料，怕錯過關鍵訊息",
+            "找懂的人聊聊，確認這是不是我真的需要"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "initiative",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "先跟著加入，不想在群體裡顯得格格不入",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "先把資源留給更重要的事，按自己的步調走",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "焦慮地查很多資料，怕錯過關鍵訊息",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "找懂的人聊聊，確認這是不是我真的需要",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        },
+        {
+          "question_text": "當你的生活選擇（如單身、不生小孩、斜槓）被長輩或旁人拿來比較、質疑時，你會？",
+          "choices": [
+            "為了少惹麻煩，表面附和但不想多談",
+            "直接反駁，試圖證明自己的選擇沒錯",
+            "不太解釋，專注把自己的日子過好",
+            "換個說法溝通，讓對方比較能理解"
+          ],
+          "pattern_tags": [
+            "voice",
+            "negotiation",
+            "assertion"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "為了少惹麻煩，表面附和但不想多談",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "直接反駁，試圖證明自己的選擇沒錯",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "不太解釋，專注把自己的日子過好",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "換個說法溝通，讓對方比較能理解",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "看到比自己年輕很多的人取得巨大成功，讓你出現年齡焦慮時，你會？",
+          "choices": [
+            "立刻制定更嚴格的計畫，逼自己加速",
+            "覺得沮喪，降低接觸這類資訊",
+            "找前輩或導師聊聊，調整心態與節奏",
+            "分析對方路徑，先觀察再決定要不要跟"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "goal_setting",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "立刻制定更嚴格的計畫，逼自己加速",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "覺得沮喪，降低接觸這類資訊",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "找前輩或導師聊聊，調整心態與節奏",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "分析對方路徑，先觀察再決定要不要跟",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "當你在某個群體中覺得自己「不如別人」或「格格不入」時，你通常會？",
+          "choices": [
+            "努力模仿大家的樣子，讓自己看起來合群",
+            "默默退到邊緣，能不被注意就好",
+            "把注意力放回自己的強項，不跟著比較",
+            "找信任的人聊聊，確認是不是自己想太多"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "initiative"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "努力模仿大家的樣子，讓自己看起來合群",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "默默退到邊緣，能不被注意就好",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "把注意力放回自己的強項，不跟著比較",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "找信任的人聊聊，確認是不是自己想太多",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "suppressed_needs",
+      "theme_enLabel": "Suppressed Needs",
+      "theme_zhLabel": "需求壓抑",
+      "questions": [
+        {
+          "question_text": "當你有想要的東西或想做的事，但家人強烈反對時，你會？",
+          "choices": [
+            "立刻放棄，不想讓他們生氣",
+            "偷偷做，但心裡不踏實",
+            "試圖溝通，尋求折衷方案",
+            "堅持己見，爆發爭吵也不怕"
+          ],
+          "pattern_tags": [
+            "voice",
+            "assertion",
+            "negotiation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "立刻放棄，不想讓他們生氣",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "偷偷做，但心裡不踏實",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "試圖溝通，尋求折衷方案",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "堅持己見，爆發爭吵也不怕",
+              "behavior_facet": "push_through"
+            }
+          ]
+        },
+        {
+          "question_text": "在職場上，當同事請求你幫忙但你已經忙不過來時，你會？",
+          "choices": [
+            "硬著頭皮答應，加班做完",
+            "委婉拒絕，說明自己困難",
+            "裝作沒看到訊息，冷處理",
+            "先答應下來，再看狀況"
+          ],
+          "pattern_tags": [
+            "assertion",
+            "negotiation",
+            "adaptation"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "硬著頭皮答應，加班做完",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "委婉拒絕，說明自己困難",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "裝作沒看到訊息，冷處理",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "先答應下來，再看狀況",
+              "behavior_facet": "follow_momentum"
+            }
+          ]
+        },
+        {
+          "question_text": "朋友聚餐時，大家想吃的餐廳你不喜歡，你會？",
+          "choices": [
+            "說「隨便」，配合大家",
+            "提出自己想吃的選項",
+            "默默忍受，還是出席",
+            "找藉口不參加這次聚會"
+          ],
+          "pattern_tags": [
+            "voice",
+            "assertion",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "說「隨便」，配合大家",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "提出自己想吃的選項",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "默默忍受，還是出席",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "找藉口不參加這次聚會",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "當你身體不舒服，但還有工作或家務沒做完時，你會？",
+          "choices": [
+            "忍著不適做完，不敢休息",
+            "向家人或同事請求支援",
+            "放下工作，先去睡覺休息",
+            "邊做邊抱怨，覺得很委屈"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "initiative",
+            "voice"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "忍著不適做完，不敢休息",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "向家人或同事請求支援",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "放下工作，先去睡覺休息",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "邊做邊抱怨，覺得很委屈",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        },
+        {
+          "question_text": "對於「拒絕別人」這件事，你的真實感受是？",
+          "choices": [
+            "非常困難，怕對方失望",
+            "理直氣壯，不行就是不行",
+            "會編造藉口，不敢直說",
+            "看對方是誰，看狀況決定"
+          ],
+          "pattern_tags": [
+            "assertion",
+            "negotiation",
+            "voice"
+          ],
+          "confidence_weight": 1.4,
+          "choice_meta": [
+            {
+              "choice": "非常困難，怕對方失望",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "理直氣壯，不行就是不行",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "會編造藉口，不敢直說",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "看對方是誰，看狀況決定",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "在親密關係中，若你不想要親密接觸，你會？",
+          "choices": [
+            "勉強配合，怕破壞氣氛",
+            "直接說累了，拒絕接觸",
+            "身體僵硬，希望能快結束",
+            "試圖轉移話題或做別的事"
+          ],
+          "pattern_tags": [
+            "voice",
+            "assertion",
+            "adaptation"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "勉強配合，怕破壞氣氛",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "直接說累了，拒絕接觸",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "身體僵硬，希望能快結束",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "試圖轉移話題或做別的事",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "當團體中大家的意見與你不同時，你會？",
+          "choices": [
+            "懷疑自己，最後附和大家",
+            "堅持表達自己的看法",
+            "保持沈默，不發表意見",
+            "觀察風向，說些中立的話"
+          ],
+          "pattern_tags": [
+            "voice",
+            "initiative",
+            "negotiation"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "懷疑自己，最後附和大家",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "堅持表達自己的看法",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "保持沈默，不發表意見",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "觀察風向，說些中立的話",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "identity_diffusion",
+      "theme_enLabel": "Identity Diffusion",
+      "theme_zhLabel": "自我模糊",
+      "questions": [
+        {
+          "question_text": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？",
+          "choices": [
+            "腦袋空白，答不出來",
+            "焦慮，覺得自己很空洞",
+            "列舉興趣，但覺得很表面",
+            "反問對方，迴避問題"
+          ],
+          "pattern_tags": [
+            "voice",
+            "goal_setting",
+            "initiative"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "腦袋空白，答不出來",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "焦慮，覺得自己很空洞",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "列舉興趣，但覺得很表面",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "反問對方，迴避問題",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "在社群媒體上看到別人的精彩生活，你會覺得？",
+          "choices": [
+            "嫉妒，覺得自己生活乏味",
+            "模仿他們，試圖獲得認同",
+            "關掉程式，眼不見為淨",
+            "冷靜分析他們在經營形象"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "change_readiness",
+            "goal_setting"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "嫉妒，覺得自己生活乏味",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "模仿他們，試圖獲得認同",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "關掉程式，眼不見為淨",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "冷靜分析他們在經營形象",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "當孩子離家獨立或你需要照顧孫輩時，你對自己角色的感覺是？",
+          "choices": [
+            "空虛，不知道重心在哪",
+            "變成免費保母，失去自由",
+            "努力找事做，怕被說沒用",
+            "終於解脫，規劃自己生活"
+          ],
+          "pattern_tags": [
+            "change_readiness",
+            "goal_setting",
+            "adaptation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "空虛，不知道重心在哪",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "變成免費保母，失去自由",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "努力找事做，怕被說沒用",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "終於解脫，規劃自己生活",
+              "behavior_facet": "self_prioritize"
+            }
+          ]
+        },
+        {
+          "question_text": "面對「中年危機」或事業瓶頸，你對未來的圖像是？",
+          "choices": [
+            "一片模糊，看不到方向",
+            "恐慌，覺得時間不夠了",
+            "想換跑道，但不知道換啥",
+            "嘗試各種副業，尋找可能"
+          ],
+          "pattern_tags": [
+            "goal_setting",
+            "decision_making",
+            "initiative"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "一片模糊，看不到方向",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "恐慌，覺得時間不夠了",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "想換跑道，但不知道換啥",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "嘗試各種副業，尋找可能",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "當你為了伴侶或家庭犧牲了職涯（如陪讀、隨任），你會？",
+          "choices": [
+            "感到迷失，像個附屬品",
+            "努力進修，怕跟社會脫節",
+            "把成就感寄託在伴侶身上",
+            "發展個人興趣，建立圈子"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "goal_setting"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "感到迷失，像個附屬品",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "努力進修，怕跟社會脫節",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "把成就感寄託在伴侶身上",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "發展個人興趣，建立圈子",
+              "behavior_facet": "self_prioritize"
+            }
+          ]
+        },
+        {
+          "question_text": "獨處時，若沒有手機或網路，你會感到？",
+          "choices": [
+            "極度焦慮，不知如何是好",
+            "無聊發慌，找事填滿時間",
+            "平靜自在，享受安靜時刻",
+            "開始胡思亂想，負面思考"
+          ],
+          "pattern_tags": [
+            "initiative",
+            "adaptation",
+            "voice"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "極度焦慮，不知如何是好",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "無聊發慌，找事填滿時間",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "平靜自在，享受安靜時刻",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "開始胡思亂想，負面思考",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "在團體中，當你需要自我介紹時，你通常會？",
+          "choices": [
+            "只講職稱或身分，很制式",
+            "觀察別人怎麼講，模仿之",
+            "擔心講不好，盡量簡短",
+            "大方分享興趣，展現特色"
+          ],
+          "pattern_tags": [
+            "voice",
+            "assertion",
+            "adaptation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "只講職稱或身分，很制式",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "觀察別人怎麼講，模仿之",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "擔心講不好，盡量簡短",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "大方分享興趣，展現特色",
+              "behavior_facet": "self_prioritize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "hyper_responsibility",
+      "theme_enLabel": "Hyper-Responsibility",
+      "theme_zhLabel": "過度責任",
+      "questions": [
+        {
+          "question_text": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？",
+          "choices": [
+            "把他的工作一併攬過來做，確保不開天窗",
+            "私下提醒他進度，並向主管回報狀況",
+            "雖然焦慮，但決定放手讓他自己承擔後果",
+            "為了團隊和諧不說破，默默幫忙收尾"
+          ],
+          "pattern_tags": [
+            "initiative",
+            "decision_making",
+            "adaptation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "把他的工作一併攬過來做，確保不開天窗",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "私下提醒他進度，並向主管回報狀況",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "雖然焦慮，但決定放手讓他自己承擔後果",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "為了團隊和諧不說破，默默幫忙收尾",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "作為家中長子/長女或主要照顧者，面對父母過度的依賴與情緒勒索，你的反應是？",
+          "choices": [
+            "感到窒息，但還是隨傳隨到，不敢拒絕",
+            "試圖溝通設立界線，表明自己也有極限",
+            "找兄弟姊妹或外部資源分攤，不再獨扛",
+            "選擇物理性逃避，減少回家的次數"
+          ],
+          "pattern_tags": [
+            "negotiation",
+            "voice",
+            "adaptation"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "感到窒息，但還是隨傳隨到，不敢拒絕",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "試圖溝通設立界線，表明自己也有極限",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "找兄弟姊妹或外部資源分攤，不再獨扛",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "選擇物理性逃避，減少回家的次數",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "好友把你當情緒垃圾桶，不分晝夜打電話訴苦，讓你感到疲憊不堪時，你會？",
+          "choices": [
+            "即使很累還是接聽，怕對方想不開",
+            "委婉告知現在不方便，約定通話時間",
+            "暫時不讀不回，先照顧自己的情緒",
+            "邊聽邊做別的事，敷衍應付過去"
+          ],
+          "pattern_tags": [
+            "voice",
+            "decision_making",
+            "assertion"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "即使很累還是接聽，怕對方想不開",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "委婉告知現在不方便，約定通話時間",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "暫時不讀不回，先照顧自己的情緒",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "邊聽邊做別的事，敷衍應付過去",
+              "behavior_facet": "follow_momentum"
+            }
+          ]
+        },
+        {
+          "question_text": "發現部門流程有個潛在的大漏洞，但提出來可能會得罪資深同事，你會？",
+          "choices": [
+            "默默把漏洞補起來，不張揚也不居功",
+            "觀察一陣子，確認真的有問題再說",
+            "擔心引發衝突，選擇保持沈默",
+            "提出具體的改善計畫，並爭取主導權"
+          ],
+          "pattern_tags": [
+            "initiative",
+            "decision_making",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "默默把漏洞補起來，不張揚也不居功",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "觀察一陣子，確認真的有問題再說",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "擔心引發衝突，選擇保持沈默",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "提出具體的改善計畫，並爭取主導權",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "在親密關係或共同生活中，你是否常覺得「如果我不做，就沒人會做」？",
+          "choices": [
+            "是，所以我會一邊生氣一邊把家事全包了",
+            "會試著擺爛幾天，看對方會不會動手",
+            "會嚴肅地跟對方談判，重新分配責任",
+            "為了耳根清淨，順手做完比較快"
+          ],
+          "pattern_tags": [
+            "negotiation",
+            "assertion",
+            "goal_setting"
+          ],
+          "confidence_weight": 1.4,
+          "choice_meta": [
+            {
+              "choice": "是，所以我會一邊生氣一邊把家事全包了",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "會試著擺爛幾天，看對方會不會動手",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "會嚴肅地跟對方談判，重新分配責任",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "為了耳根清淨，順手做完比較快",
+              "behavior_facet": "follow_momentum"
+            }
+          ]
+        },
+        {
+          "question_text": "當團隊發生失誤，雖然責任不完全在你，但氣氛很僵時，你會？",
+          "choices": [
+            "習慣性先道歉，把責任攬在自己身上",
+            "冷靜釐清責任歸屬，不隨意承擔",
+            "保持沈默，等待其他人打破僵局",
+            "跳出來主導收尾工作，解決問題優先"
+          ],
+          "pattern_tags": [
+            "initiative",
+            "decision_making",
+            "voice"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "習慣性先道歉，把責任攬在自己身上",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "冷靜釐清責任歸屬，不隨意承擔",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "保持沈默，等待其他人打破僵局",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "跳出來主導收尾工作，解決問題優先",
+              "behavior_facet": "push_through"
+            }
+          ]
+        },
+        {
+          "question_text": "你已經排定好週末要休息，但朋友臨時請求你幫忙搬家或處理急事，你會？",
+          "choices": [
+            "二話不說答應，犧牲自己的假期",
+            "堅定拒絕，表明自己已經有安排",
+            "幫忙找搬家公司資訊給他，但不出席",
+            "找藉口說身體不舒服，逃避請求"
+          ],
+          "pattern_tags": [
+            "goal_setting",
+            "assertion",
+            "negotiation"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "二話不說答應，犧牲自己的假期",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "堅定拒絕，表明自己已經有安排",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "幫忙找搬家公司資訊給他，但不出席",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "找藉口說身體不舒服，逃避請求",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "emotional_permeability",
+      "theme_enLabel": "Emotional Permeability",
+      "theme_zhLabel": "情緒滲透",
+      "questions": [
+        {
+          "question_text": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？",
+          "choices": [
+            "立刻檢討自己是否做錯事，試圖安撫對方",
+            "雖然擔心，但告訴自己這是他的情緒課題",
+            "默默離開現場或戴上耳機，以免被颱風尾掃到",
+            "堅持問出原因，想盡辦法要幫他解決問題"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "negotiation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "立刻檢討自己是否做錯事，試圖安撫對方",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "雖然擔心，但告訴自己這是他的情緒課題",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "默默離開現場或戴上耳機，以免被颱風尾掃到",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "堅持問出原因，想盡辦法要幫他解決問題",
+              "behavior_facet": "push_through"
+            }
+          ]
+        },
+        {
+          "question_text": "朋友打電話來抱怨生活，話題無限鬼打牆，讓你感到能量耗竭，你會？",
+          "choices": [
+            "不知不覺聽了很久，掛斷後覺得自己也被吸乾了",
+            "設定時間限制，委婉告訴對方等下有事要忙",
+            "雖然很煩，但覺得聽他說是朋友的義務，硬撐著聽",
+            "找個理由說訊號不好或沒電，趕快結束通話"
+          ],
+          "pattern_tags": [
+            "voice",
+            "negotiation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "不知不覺聽了很久，掛斷後覺得自己也被吸乾了",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "設定時間限制，委婉告訴對方等下有事要忙",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "雖然很煩，但覺得聽他說是朋友的義務，硬撐著聽",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "找個理由說訊號不好或沒電，趕快結束通話",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "辦公室裡主管剛罵完人，空氣中瀰漫著低氣壓，即使不關你的事，你會怎麼做？",
+          "choices": [
+            "戴上耳機專注工作，在此刻劃出心理界線",
+            "變得小心翼翼，深怕下一個被罵的是自己",
+            "觀察主管臉色，等待氣氛緩和再行動",
+            "主動找主管確認工作狀況，想確認自己是安全的"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "change_readiness",
+            "initiative"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "戴上耳機專注工作，在此刻劃出心理界線",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "變得小心翼翼，深怕下一個被罵的是自己",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "觀察主管臉色，等待氣氛緩和再行動",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "主動找主管確認工作狀況，想確認自己是安全的",
+              "behavior_facet": "seek_support"
+            }
+          ]
+        },
+        {
+          "question_text": "看到災難新聞或社會悲劇的報導，讓你感到強烈的不舒服與共感，你會？",
+          "choices": [
+            "這幾天完全不看新聞或網路，隔絕資訊",
+            "忍不住一直滑相關訊息，越看越焦慮",
+            "限制閱讀時間，只看重點摘要就好",
+            "逼自己看完細節，覺得不能對世界的苦難漠不關心"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "decision_making",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "這幾天完全不看新聞或網路，隔絕資訊",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "忍不住一直滑相關訊息，越看越焦慮",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "限制閱讀時間，只看重點摘要就好",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "逼自己看完細節，覺得不能對世界的苦難漠不關心",
+              "behavior_facet": "push_through"
+            }
+          ]
+        },
+        {
+          "question_text": "當伴侶或家人興致勃勃地幫你規劃了一個你其實不喜歡的行程，你會？",
+          "choices": [
+            "覺得配合他是我的責任，就算不喜歡也照做",
+            "明確表達我不喜歡這個安排，提出我想去的",
+            "先答應下來，之後再找機會微調行程",
+            "為了不破壞他的興致，把不滿吞下去"
+          ],
+          "pattern_tags": [
+            "voice",
+            "negotiation",
+            "assertion"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "覺得配合他是我的責任，就算不喜歡也照做",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "明確表達我不喜歡這個安排，提出我想去的",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "先答應下來，之後再找機會微調行程",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "為了不破壞他的興致，把不滿吞下去",
+              "behavior_facet": "avoid_conflict"
+            }
+          ]
+        },
+        {
+          "question_text": "看到朋友陷入低潮哭泣，你會產生什麼樣的衝動？",
+          "choices": [
+            "想盡辦法逗他笑或提供建議，一定要讓他好起來",
+            "靜靜陪在一旁，觀察他需要什麼再行動",
+            "介紹專業諮商師或書籍給他，尋求外部協助",
+            "覺得他的負能量太強，想先保持距離保護自己"
+          ],
+          "pattern_tags": [
+            "initiative",
+            "adaptation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "想盡辦法逗他笑或提供建議，一定要讓他好起來",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "靜靜陪在一旁，觀察他需要什麼再行動",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "介紹專業諮商師或書籍給他，尋求外部協助",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "覺得他的負能量太強，想先保持距離保護自己",
+              "behavior_facet": "withdraw_and_protect"
+            }
+          ]
+        },
+        {
+          "question_text": "長輩用嘆氣或暗示的方式表達對你的生活方式不滿，但沒有明說，你會？",
+          "choices": [
+            "馬上懷疑自己是不是做錯了，試圖修正",
+            "假裝沒聽懂，繼續做自己的事，心裡築起高牆",
+            "直接問清楚他們到底不滿意什麼，把話講開",
+            "告訴自己「這是他的觀點」，盡量不受影響"
+          ],
+          "pattern_tags": [
+            "voice",
+            "assertion",
+            "negotiation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "馬上懷疑自己是不是做錯了，試圖修正",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "假裝沒聽懂，繼續做自己的事，心裡築起高牆",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "直接問清楚他們到底不滿意什麼，把話講開",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "告訴自己「這是他的觀點」，盡量不受影響",
+              "behavior_facet": "self_prioritize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "avoidance_coping",
+      "theme_enLabel": "Avoidance Coping",
+      "theme_zhLabel": "逃避型因應",
+      "questions": [
+        {
+          "question_text": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？",
+          "choices": [
+            "吃止痛藥或保健品壓下去，告訴自己過幾天就好",
+            "馬上預約掛號，不管多忙先處理再說",
+            "問問身邊朋友有沒有類似經驗，聽聽他們怎麼說",
+            "先觀察幾天，如果變嚴重了再決定要不要看醫生"
+          ],
+          "pattern_tags": [
+            "adaptation",
+            "decision_making",
+            "initiative"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "吃止痛藥或保健品壓下去，告訴自己過幾天就好",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "馬上預約掛號，不管多忙先處理再說",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "問問身邊朋友有沒有類似經驗，聽聽他們怎麼說",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "先觀察幾天，如果變嚴重了再決定要不要看醫生",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "收到信用卡帳單或必須處理財務報表時，看著那個數字讓你感到焦慮，你會？",
+          "choices": [
+            "先擱在一旁不打開，專心追劇或打掃房間",
+            "立刻打開記帳軟體，一筆筆核對並制定還款計畫",
+            "跟家人或伴侶討論，看看能不能一起分擔或理清",
+            "到繳費期限最後一刻才匆忙打開去繳"
+          ],
+          "pattern_tags": [
+            "decision_making",
+            "goal_setting",
+            "adaptation"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "先擱在一旁不打開，專心追劇或打掃房間",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "立刻打開記帳軟體，一筆筆核對並制定還款計畫",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "跟家人或伴侶討論，看看能不能一起分擔或理清",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "到繳費期限最後一刻才匆忙打開去繳",
+              "behavior_facet": "follow_momentum"
+            }
+          ]
+        },
+        {
+          "question_text": "明知這段關係（伴侶或朋友）已經出現裂痕，需要坐下來好好談談，你會？",
+          "choices": [
+            "假裝沒事發生，照常過日子，期待問題自己消失",
+            "找個適當的時機，主動約對方把心裡話講開",
+            "問共同朋友的看法，確認是不是自己想太多",
+            "保持距離冷處理，等對方先開口再說"
+          ],
+          "pattern_tags": [
+            "negotiation",
+            "voice",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "假裝沒事發生，照常過日子，期待問題自己消失",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "找個適當的時機，主動約對方把心裡話講開",
+              "behavior_facet": "adjust_strategy"
+            },
+            {
+              "choice": "問共同朋友的看法，確認是不是自己想太多",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "保持距離冷處理，等對方先開口再說",
+              "behavior_facet": "observe_and_wait"
+            }
+          ]
+        },
+        {
+          "question_text": "手上有一個複雜且具挑戰性的專案要開始，但完全沒有頭緒，你會？",
+          "choices": [
+            "先去整理桌面、回無關緊要的Email，做些簡單的事",
+            "硬著頭皮先寫出大綱，不管好壞先動起來再說",
+            "找有經驗的前輩請教，看有沒有範本可以參考",
+            "先把時程表排出來，拆解成小步驟慢慢做"
+          ],
+          "pattern_tags": [
+            "goal_setting",
+            "initiative",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "先去整理桌面、回無關緊要的Email，做些簡單的事",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "硬著頭皮先寫出大綱，不管好壞先動起來再說",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "找有經驗的前輩請教，看有沒有範本可以參考",
+              "behavior_facet": "seek_support"
+            },
+            {
+              "choice": "先把時程表排出來，拆解成小步驟慢慢做",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "制定了運動計畫，但下班回家覺得好累，心裡出現「明天再做」的聲音，你會？",
+          "choices": [
+            "順從這個聲音，躺在沙發上滑手機放鬆",
+            "告訴自己「只做10分鐘也好」，換上衣服直接開始",
+            "看看別人在社群上打卡的動態，激勵自己跟上",
+            "調整計畫，改成週末再做高強度運動"
+          ],
+          "pattern_tags": [
+            "goal_setting",
+            "initiative",
+            "change_readiness"
+          ],
+          "confidence_weight": 1.2,
+          "choice_meta": [
+            {
+              "choice": "順從這個聲音，躺在沙發上滑手機放鬆",
+              "behavior_facet": "self_prioritize"
+            },
+            {
+              "choice": "告訴自己「只做10分鐘也好」，換上衣服直接開始",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "看看別人在社群上打卡的動態，激勵自己跟上",
+              "behavior_facet": "follow_momentum"
+            },
+            {
+              "choice": "調整計畫，改成週末再做高強度運動",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "收到一則需要花心力回覆的重要訊息（如主管質問或長輩關切），當下不想處理，你會？",
+          "choices": [
+            "不讀不回把手機丟到一邊，假裝沒看到",
+            "立刻回覆，不想讓這件事掛在心上",
+            "複製貼上官方說法，先簡單應付過去",
+            "設個鬧鐘提醒自己晚點回，現在先做別的事"
+          ],
+          "pattern_tags": [
+            "voice",
+            "adaptation",
+            "decision_making"
+          ],
+          "confidence_weight": 1.1,
+          "choice_meta": [
+            {
+              "choice": "不讀不回把手機丟到一邊，假裝沒看到",
+              "behavior_facet": "withdraw_and_protect"
+            },
+            {
+              "choice": "立刻回覆，不想讓這件事掛在心上",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "複製貼上官方說法，先簡單應付過去",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "設個鬧鐘提醒自己晚點回，現在先做別的事",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        },
+        {
+          "question_text": "心裡一直有個想嘗試的夢想（如轉職、留學、創業），但充滿不確定性，你會？",
+          "choices": [
+            "告訴自己現在這樣也很好，不要冒險比較安全",
+            "報名相關課程或活動，強迫自己跨出第一步",
+            "上網爬文看別人的失敗案例，證明不動是對的",
+            "列出優缺點分析，評估現在是不是最好的時機"
+          ],
+          "pattern_tags": [
+            "change_readiness",
+            "goal_setting",
+            "initiative"
+          ],
+          "confidence_weight": 1.3,
+          "choice_meta": [
+            {
+              "choice": "告訴自己現在這樣也很好，不要冒險比較安全",
+              "behavior_facet": "avoid_conflict"
+            },
+            {
+              "choice": "報名相關課程或活動，強迫自己跨出第一步",
+              "behavior_facet": "push_through"
+            },
+            {
+              "choice": "上網爬文看別人的失敗案例，證明不動是對的",
+              "behavior_facet": "observe_and_wait"
+            },
+            {
+              "choice": "列出優缺點分析，評估現在是不是最好的時機",
+              "behavior_facet": "adjust_strategy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

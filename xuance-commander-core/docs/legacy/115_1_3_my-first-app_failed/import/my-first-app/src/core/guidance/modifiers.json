@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "version": "m3b-1",
+    "note": "Modifiers adjust intensity and framing, not core psychology."
+  },
+
+  "byTheme": {
+    "control_need": {
+      "age": {
+        "18-25": {
+          "intensity": 0.8,
+          "note": "探索期，控制感不足容易轉為焦慮"
+        },
+        "26-40": {
+          "intensity": 1.0,
+          "note": "責任期，控制需求達高峰"
+        },
+        "41-60": {
+          "intensity": 0.9,
+          "note": "穩定期，控制轉為守成"
+        },
+        "60+": {
+          "intensity": 0.6,
+          "note": "回收期，控制需求下降"
+        }
+      },
+      "gender": {
+        "male": {
+          "bias": 1.0,
+          "framing": "行動與責任"
+        },
+        "female": {
+          "bias": 0.9,
+          "framing": "安全與關係"
+        },
+        "any": {
+          "bias": 1.0
+        }
+      }
+    },
+
+    "attachment_insecurity": {
+      "age": {
+        "18-25": { "intensity": 1.0 },
+        "26-40": { "intensity": 1.1 },
+        "41-60": { "intensity": 0.8 },
+        "60+": { "intensity": 0.6 }
+      },
+      "gender": {
+        "male": {
+          "bias": 0.9,
+          "framing": "自我界線"
+        },
+        "female": {
+          "bias": 1.1,
+          "framing": "情感連結"
+        }
+      }
+    },
+
+    "burnout_overload": {
+      "age": {
+        "18-25": { "intensity": 0.7 },
+        "26-40": { "intensity": 1.2 },
+        "41-60": { "intensity": 1.0 },
+        "60+": { "intensity": 0.8 }
+      },
+      "gender": {
+        "male": { "bias": 1.0 },
+        "female": { "bias": 1.0 }
+      }
+    }
+  }
+}

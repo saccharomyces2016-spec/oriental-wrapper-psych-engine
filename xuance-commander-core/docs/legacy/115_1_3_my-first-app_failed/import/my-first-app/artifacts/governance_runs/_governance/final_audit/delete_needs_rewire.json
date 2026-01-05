@@ -1,0 +1,28 @@
+[
+  {
+    "path": "src/core/ontology/questionBank.v1.json",
+    "refs": [
+      "scripts/validate/validate-questionbank.mjs",
+      "scripts/validate/validate-questionbank.mjs",
+      "scripts/validate/validate-ontology-consistency.mjs",
+      "scripts/fixQuestionBankJSON.mjs",
+      "scripts/fixQuestionBankJSON.mjs",
+      "scripts/fixQuestionBankJSON4.mjs",
+      "scripts/fixQuestionBankJSON4.mjs",
+      "scripts/fixQuestionBankJSON2.mjs",
+      "scripts/fixQuestionBankJSON2.mjs",
+      "scripts/fixQuestionBankJSON3.mjs",
+      "scripts/fixQuestionBankJSON3.mjs",
+      "scripts/fixQuestionBankJSONFinal.mjs",
+      "scripts/fixQuestionBankJSONFinal.mjs",
+      "scripts/doctorPaths.mjs",
+      "scripts/fixChoiceMeta.mjs",
+      "scripts/fixChoiceMeta.mjs",
+      "scripts/auditPatternTags.mjs",
+      "scripts/auditPatternTags.mjs",
+      "scripts/analyticsReport.mjs",
+      "scripts/analyticsReport.mjs"
+    ],
+    "suggested_fix": "All scripts already have guard/skip logic. File can be safely deleted or scripts can be updated to skip gracefully."
+  }
+]

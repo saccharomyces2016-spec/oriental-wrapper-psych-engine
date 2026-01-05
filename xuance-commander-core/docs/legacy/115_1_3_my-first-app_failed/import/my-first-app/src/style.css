@@ -1,0 +1,32 @@
+/* Google Fonts 引入 */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@300;500;700&display=swap');
+
+:root {
+  font-family: 'Noto Serif TC', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f1012;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 關鍵：不要用 flex 把整個 app 置中，也不要鎖住捲動 */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;  /* 只防橫向溢出 */
+  overflow-y: auto;    /* 允許直向捲動 */
+  background: #0f1012;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;   /* 用 min-height 才能讓內容超出時繼續長 */
+  margin: 0;
+  text-align: center;
+}

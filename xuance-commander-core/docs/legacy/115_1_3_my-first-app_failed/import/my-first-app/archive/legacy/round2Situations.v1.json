@@ -1,0 +1,792 @@
+{
+  "version": "v1",
+  "id": "round2Situations.v1",
+  "title_zh": "第二卦｜此刻你落在什麼局？",
+  "title_en": "Round 2｜Where are you right now?",
+  "instruction_zh": "以下沒有對錯，也不是在問你「問題是什麼」。請選出最近半年最貼近你狀態的一個選項即可。",
+  "instruction_en": "No right or wrong. Pick the one option that best matches your last 6 months.",
+  "questions": [
+    {
+      "situation_id": "r2_s01_body_new_change",
+      "prompt_zh": "你的身體正在「換季」：不是小毛病，而是明顯感覺到狀態變了（懷孕、復原期、長牙、成長痛、慢性症狀、體力下滑）時，你更像哪一種？",
+      "prompt_en": "When your body is clearly changing (pregnancy, recovery, growth, chronic symptoms, declining stamina), which fits you most?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "先忍著撐住，等忙完或等它自己過去",
+          "text_en": "I endure it and hope it passes after I'm less busy.",
+          "choice_meta": {
+            "signal_key": "overload",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_depletion"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會立刻處理：預約、檢查、把風險先壓下來",
+          "text_en": "I act immediately (book, check, reduce risk now).",
+          "choice_meta": {
+            "signal_key": "agency",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["loss_of_agency"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會一直想：到底是不是嚴重？查很多資料但更不安",
+          "text_en": "I overthink it, research a lot, and get more anxious.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會先找懂的人問清楚：醫師/前輩/有經驗的人",
+          "text_en": "I ask someone experienced (doctor/mentor) to clarify.",
+          "choice_meta": {
+            "signal_key": "validation",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["identity_diffusion"]
+          }
+        }
+      ],
+      "tags": ["身", "變"]
+    },
+    {
+      "situation_id": "r2_s02_money_pressure",
+      "prompt_zh": "一談到錢（帳單、房租、貸款、育兒費、投資、家用），你心裡會先冒出哪種感覺？",
+      "prompt_en": "When money comes up (bills, rent, loans, family costs, investing), what comes first?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我不太想看，先做別的事讓腦袋安靜",
+          "text_en": "I avoid looking and distract myself.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會立刻盤點、算清楚、把計畫排出來",
+          "text_en": "I calculate, organize, and plan immediately.",
+          "choice_meta": {
+            "signal_key": "control",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會問家人/伴侶/懂的人：一起扛或一起決定",
+          "text_en": "I consult partner/family/experts to decide together.",
+          "choice_meta": {
+            "signal_key": "responsibility",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會拖到最後一刻才處理，處理完就不再想",
+          "text_en": "I delay to the last moment, then shut it out.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        }
+      ],
+      "tags": ["財", "運"]
+    },
+    {
+      "situation_id": "r2_s03_relationship_fog",
+      "prompt_zh": "你和某個重要的人（伴侶/家人/朋友/同事）之間，像是有一層霧：不爆炸，但也不清楚。你更像？",
+      "prompt_en": "With someone important, there's a fog (not exploding, but unclear). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "先維持表面和平，別把話講破",
+          "text_en": "Keep surface peace; don't break it open.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會找時機把話講開，寧可痛一次",
+          "text_en": "I initiate a real talk even if it hurts once.",
+          "choice_meta": {
+            "signal_key": "agency",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["loss_of_agency"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會冷處理拉開距離，等對方先動",
+          "text_en": "I distance myself and wait for them to move first.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會找第三方/共同朋友/前輩幫忙看局",
+          "text_en": "I involve a third party to read the situation.",
+          "choice_meta": {
+            "signal_key": "help_seeking",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["suppressed_needs"]
+          }
+        }
+      ],
+      "tags": ["情", "家"]
+    },
+    {
+      "situation_id": "r2_s04_role_burden",
+      "prompt_zh": "你像被某個身分綁住：家中長子長女、主要照顧者、主管/骨幹、大家都靠你。你更接近？",
+      "prompt_en": "You're bound by a role (caregiver, key person, everyone depends on you). You are more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會一肩扛起，先把洞補起來再說",
+          "text_en": "I carry it and patch the holes first.",
+          "choice_meta": {
+            "signal_key": "responsibility",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會談規則和界線：分工、時段、責任要清楚",
+          "text_en": "I negotiate rules/boundaries and clarify responsibilities.",
+          "choice_meta": {
+            "signal_key": "control",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會找資源分擔：家人、外包、制度、社福",
+          "text_en": "I seek resources to share the load (people/system/services).",
+          "choice_meta": {
+            "signal_key": "resourcefulness",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會想逃：降低接觸、晚回訊息、先保命",
+          "text_en": "I withdraw to protect myself (less contact, slower replies).",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        }
+      ],
+      "tags": ["家", "業"]
+    },
+    {
+      "situation_id": "r2_s05_work_stuck",
+      "prompt_zh": "你在工作/學業上像卡在一段：努力也不見得動、動了也不見得對。你更像？",
+      "prompt_en": "In work/study, you're stuck: effort doesn't move things, and action may be wrong. You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會硬推：加速、加碼、熬夜也要突破",
+          "text_en": "I force through: speed up, push harder, grind.",
+          "choice_meta": {
+            "signal_key": "momentum",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_alertness"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會先停一下看局勢：等訊號明確再出手",
+          "text_en": "I pause and observe until signals are clear.",
+          "choice_meta": {
+            "signal_key": "stability",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會換打法：拆解、改順序、找更有效的路徑",
+          "text_en": "I change strategy: break down, reorder, find a better path.",
+          "choice_meta": {
+            "signal_key": "planning",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["self_erosion", "loss_of_agency"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會先保底：不冒險、先顧穩定再說",
+          "text_en": "I protect the baseline: avoid risk, keep stability.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        }
+      ],
+      "tags": ["業", "運"]
+    },
+    {
+      "situation_id": "r2_s06_direction_crossroad",
+      "prompt_zh": "你站在一個「要不要轉彎」的路口：換工作、搬家、分手、創業、讀書、重大選擇。你更像？",
+      "prompt_en": "You're at a crossroads (job change, move, breakup, startup, study, major choice). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會列出利弊、算到最細，結果更難選",
+          "text_en": "I analyze pros/cons deeply and get stuck.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會先選一個能走的：走了再修正",
+          "text_en": "I pick a workable route and adjust later.",
+          "choice_meta": {
+            "signal_key": "experiment",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["meaning_vacuum"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會問人：找懂行的人給我一句準話",
+          "text_en": "I seek advice: someone competent to give a clear call.",
+          "choice_meta": {
+            "signal_key": "validation",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["identity_diffusion"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會拖：等外力推我，或等局勢自己明朗",
+          "text_en": "I delay and wait for external push or clarity.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        }
+      ],
+      "tags": ["路", "變"]
+    },
+    {
+      "situation_id": "r2_s07_parenting_stage",
+      "prompt_zh": "你正在面對「照顧與成長」的課題（懷孕、育兒、孩子學校、人際、青春期、長輩照護）。你此刻最像？",
+      "prompt_en": "You're dealing with caregiving/growth (pregnancy, parenting, school, puberty, elder care). You're most like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會很怕做錯，想把每一步都做對",
+          "text_en": "I'm afraid of mistakes; I want every step correct.",
+          "choice_meta": {
+            "signal_key": "responsibility",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會找權威或專業：醫師、老師、資源系統",
+          "text_en": "I seek authority/pros: doctors, teachers, systems.",
+          "choice_meta": {
+            "signal_key": "help_seeking",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["suppressed_needs"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會先顧今天能撐住就好，別再加壓",
+          "text_en": "I focus on surviving today without extra pressure.",
+          "choice_meta": {
+            "signal_key": "overload",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_depletion"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會覺得被掏空，想暫時躲開人事物",
+          "text_en": "I feel drained and want to withdraw for a while.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        }
+      ],
+      "tags": ["家", "身"]
+    },
+    {
+      "situation_id": "r2_s08_social_mismatch",
+      "prompt_zh": "你和世界有點不同步：社交很耗、規則很難、融入感不足（包含自閉特質/高敏/社交疲憊）。你更像？",
+      "prompt_en": "You're out of sync with the social world (social drain, hard rules, low belonging). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會努力模仿大家的節奏，讓自己看起來正常",
+          "text_en": "I imitate others to appear 'normal'.",
+          "choice_meta": {
+            "signal_key": "alignment",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["meaning_vacuum"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會降低互動，保留能量不勉強",
+          "text_en": "I reduce interactions to preserve energy.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會找能理解的人或社群，讓自己有落腳處",
+          "text_en": "I find understanding people/communities to belong.",
+          "choice_meta": {
+            "signal_key": "bridge_building",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["suppressed_needs", "identity_diffusion"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會先觀察規則：看懂玩法再決定要不要進",
+          "text_en": "I observe rules first, then decide whether to join.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        }
+      ],
+      "tags": ["心", "情"]
+    },
+    {
+      "situation_id": "r2_s09_emotion_invasion",
+      "prompt_zh": "你常被別人的情緒牽動：對方一低氣壓，你就被捲進去（伴侶沈默、主管發火、長輩暗示）。你更像？",
+      "prompt_en": "Others' emotions pull you in (silent partner, angry boss, hinted criticism). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "我會先安撫或修補：讓氣氛好起來比較重要",
+          "text_en": "I soothe/repair first; atmosphere matters most.",
+          "choice_meta": {
+            "signal_key": "responsibility",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會切割：那是他的情緒，不必進我身上",
+          "text_en": "I separate: it's their emotion, not mine.",
+          "choice_meta": {
+            "signal_key": "stability",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會閃開：先離場、戴耳機、降低感受",
+          "text_en": "I step away to reduce exposure.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會問到底：把原因挖出來、把問題解掉",
+          "text_en": "I push for the root cause and fix it.",
+          "choice_meta": {
+            "signal_key": "agency",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["loss_of_agency"]
+          }
+        }
+      ],
+      "tags": ["心", "家"]
+    },
+    {
+      "situation_id": "r2_s10_decision_overload",
+      "prompt_zh": "你被選擇淹沒：買東西、規劃行程、寫信、投資、做決定都像在過載。你更像？",
+      "prompt_en": "Choices overload you (buying, planning, writing, investing). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "資訊越看越亂，最後乾脆先不做",
+          "text_en": "More info makes it worse; I end up doing nothing.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "我會直接跟著最多人選的：安全省事",
+          "text_en": "I follow the crowd: safer and easier.",
+          "choice_meta": {
+            "signal_key": "validation",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["identity_diffusion"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會列規格/列表格比到極致，還是不敢按下去",
+          "text_en": "I compare endlessly and still can't commit.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會找人一句話定生死：你幫我選",
+          "text_en": "I ask someone to decide for me.",
+          "choice_meta": {
+            "signal_key": "help_seeking",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["suppressed_needs"]
+          }
+        }
+      ],
+      "tags": ["心", "路"]
+    },
+    {
+      "situation_id": "r2_s11_escape_delay",
+      "prompt_zh": "有些事你知道得面對，但總會拖：回訊息、看帳單、看醫生、開口談、開始專案。你更像？",
+      "prompt_en": "You know you must face it, but you delay (reply, bills, doctor, hard talk, projects). You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "先做些小事（整理、追劇、滑手機）讓心安定",
+          "text_en": "I do small distractions to calm down first.",
+          "choice_meta": {
+            "signal_key": "avoidance",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["unprocessed_loss"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "逼自己先動：只做一點也要開始",
+          "text_en": "I force a start even if it's tiny.",
+          "choice_meta": {
+            "signal_key": "agency",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["loss_of_agency"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "用「官方回覆/表面處理」先頂一下",
+          "text_en": "I give a surface/official response to get by.",
+          "choice_meta": {
+            "signal_key": "resourcefulness",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["hyper_responsibility"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "拖到期限來推我：不撞牆不動",
+          "text_en": "Deadlines push me; I won't move until then.",
+          "choice_meta": {
+            "signal_key": "momentum",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_alertness"]
+          }
+        }
+      ],
+      "tags": ["運", "心"]
+    },
+    {
+      "situation_id": "r2_s12_identity_blur",
+      "prompt_zh": "你有時會說不清自己到底要什麼：不是沒努力，是像少了一塊「主心骨」。你更像？",
+      "prompt_en": "Sometimes you can't tell what you want. Not laziness—more like missing an inner anchor. You're more like?",
+      "options": [
+        {
+          "key": "A",
+          "text_zh": "腦袋一片空白，想了很久也沒有答案",
+          "text_en": "My mind goes blank; no clear answer.",
+          "choice_meta": {
+            "signal_key": "risk_aversion",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["fear_based_stability"]
+          }
+        },
+        {
+          "key": "B",
+          "text_zh": "很焦慮，怕自己一直這樣下去",
+          "text_en": "I feel anxious and fear staying this way.",
+          "choice_meta": {
+            "signal_key": "overload",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_depletion"]
+          }
+        },
+        {
+          "key": "C",
+          "text_zh": "我會去找參考：看別人怎麼活，借一條路走",
+          "text_en": "I seek models: borrow a path from others.",
+          "choice_meta": {
+            "signal_key": "validation",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["identity_diffusion"]
+          }
+        },
+        {
+          "key": "D",
+          "text_zh": "我會先把自己顧好：先穩住，再慢慢找",
+          "text_en": "I stabilize myself first, then search slowly.",
+          "choice_meta": {
+            "signal_key": "recovery",
+            "confidence_weight": 0.4,
+            "pattern_tags": ["chronic_depletion"]
+          }
+        }
+      ],
+      "tags": ["心", "路"]
+    }
+  ],
+  "items": [
+    {
+      "id": "r2_s01_body_new_change",
+      "question_text": "你的身體正在「換季」：不是小毛病，而是明顯感覺到狀態變了（懷孕、復原期、長牙、成長痛、慢性症狀、體力下滑）時，你更像哪一種？",
+      "choices": [
+        "先忍著撐住，等忙完或等它自己過去",
+        "我會立刻處理：預約、檢查、把風險先壓下來",
+        "我會一直想：到底是不是嚴重？查很多資料但更不安",
+        "我會先找懂的人問清楚：醫師/前輩/有經驗的人"
+      ],
+      "choice_meta": [
+        { "choice": "先忍著撐住，等忙完或等它自己過去", "signal_key": "overload" },
+        { "choice": "我會立刻處理：預約、檢查、把風險先壓下來", "signal_key": "agency" },
+        { "choice": "我會一直想：到底是不是嚴重？查很多資料但更不安", "signal_key": "risk_aversion" },
+        { "choice": "我會先找懂的人問清楚：醫師/前輩/有經驗的人", "signal_key": "validation" }
+      ],
+      "domain_keys": ["body", "health"]
+    },
+    {
+      "id": "r2_s02_money_pressure",
+      "question_text": "一談到錢（帳單、房租、貸款、育兒費、投資、家用），你心裡會先冒出哪種感覺？",
+      "choices": [
+        "我不太想看，先做別的事讓腦袋安靜",
+        "我會立刻盤點、算清楚、把計畫排出來",
+        "我會問家人/伴侶/懂的人：一起扛或一起決定",
+        "我會拖到最後一刻才處理，處理完就不再想"
+      ],
+      "choice_meta": [
+        { "choice": "我不太想看，先做別的事讓腦袋安靜", "signal_key": "avoidance" },
+        { "choice": "我會立刻盤點、算清楚、把計畫排出來", "signal_key": "control" },
+        { "choice": "我會問家人/伴侶/懂的人：一起扛或一起決定", "signal_key": "responsibility" },
+        { "choice": "我會拖到最後一刻才處理，處理完就不再想", "signal_key": "risk_aversion" }
+      ],
+      "domain_keys": ["money", "home"]
+    },
+    {
+      "id": "r2_s03_relationship_fog",
+      "question_text": "你和某個重要的人（伴侶/家人/朋友/同事）之間，像是有一層霧：不爆炸，但也不清楚。你更像？",
+      "choices": [
+        "先維持表面和平，別把話講破",
+        "我會找時機把話講開，寧可痛一次",
+        "我會冷處理拉開距離，等對方先動",
+        "我會找第三方/共同朋友/前輩幫忙看局"
+      ],
+      "choice_meta": [
+        { "choice": "先維持表面和平，別把話講破", "signal_key": "avoidance" },
+        { "choice": "我會找時機把話講開，寧可痛一次", "signal_key": "agency" },
+        { "choice": "我會冷處理拉開距離，等對方先動", "signal_key": "risk_aversion" },
+        { "choice": "我會找第三方/共同朋友/前輩幫忙看局", "signal_key": "help_seeking" }
+      ],
+      "domain_keys": ["love", "home"]
+    },
+    {
+      "id": "r2_s04_role_burden",
+      "question_text": "你像被某個身分綁住：家中長子長女、主要照顧者、主管/骨幹、大家都靠你。你更接近？",
+      "choices": [
+        "我會一肩扛起，先把洞補起來再說",
+        "我會談規則和界線：分工、時段、責任要清楚",
+        "我會找資源分擔：家人、外包、制度、社福",
+        "我會想逃：降低接觸、晚回訊息、先保命"
+      ],
+      "choice_meta": [
+        { "choice": "我會一肩扛起，先把洞補起來再說", "signal_key": "responsibility" },
+        { "choice": "我會談規則和界線：分工、時段、責任要清楚", "signal_key": "control" },
+        { "choice": "我會找資源分擔：家人、外包、制度、社福", "signal_key": "resourcefulness" },
+        { "choice": "我會想逃：降低接觸、晚回訊息、先保命", "signal_key": "avoidance" }
+      ],
+      "domain_keys": ["home", "career"]
+    },
+    {
+      "id": "r2_s05_work_stuck",
+      "question_text": "你在工作/學業上像卡在一段：努力也不見得動、動了也不見得對。你更像？",
+      "choices": [
+        "我會硬推：加速、加碼、熬夜也要突破",
+        "我會先停一下看局勢：等訊號明確再出手",
+        "我會換打法：拆解、改順序、找更有效的路徑",
+        "我會先保底：不冒險、先顧穩定再說"
+      ],
+      "choice_meta": [
+        { "choice": "我會硬推：加速、加碼、熬夜也要突破", "signal_key": "momentum" },
+        { "choice": "我會先停一下看局勢：等訊號明確再出手", "signal_key": "stability" },
+        { "choice": "我會換打法：拆解、改順序、找更有效的路徑", "signal_key": "planning" },
+        { "choice": "我會先保底：不冒險、先顧穩定再說", "signal_key": "risk_aversion" }
+      ],
+      "domain_keys": ["career", "study"]
+    },
+    {
+      "id": "r2_s06_direction_crossroad",
+      "question_text": "你站在一個「要不要轉彎」的路口：換工作、搬家、分手、創業、讀書、重大選擇。你更像？",
+      "choices": [
+        "我會列出利弊、算到最細，結果更難選",
+        "我會先選一個能走的：走了再修正",
+        "我會問人：找懂行的人給我一句準話",
+        "我會拖：等外力推我，或等局勢自己明朗"
+      ],
+      "choice_meta": [
+        { "choice": "我會列出利弊、算到最細，結果更難選", "signal_key": "risk_aversion" },
+        { "choice": "我會先選一個能走的：走了再修正", "signal_key": "experiment" },
+        { "choice": "我會問人：找懂行的人給我一句準話", "signal_key": "validation" },
+        { "choice": "我會拖：等外力推我，或等局勢自己明朗", "signal_key": "avoidance" }
+      ],
+      "domain_keys": ["path", "career"]
+    },
+    {
+      "id": "r2_s07_parenting_stage",
+      "question_text": "你正在面對「照顧與成長」的課題（懷孕、育兒、孩子學校、人際、青春期、長輩照護）。你此刻最像？",
+      "choices": [
+        "我會很怕做錯，想把每一步都做對",
+        "我會找權威或專業：醫師、老師、資源系統",
+        "我會先顧今天能撐住就好，別再加壓",
+        "我會覺得被掏空，想暫時躲開人事物"
+      ],
+      "choice_meta": [
+        { "choice": "我會很怕做錯，想把每一步都做對", "signal_key": "responsibility" },
+        { "choice": "我會找權威或專業：醫師、老師、資源系統", "signal_key": "help_seeking" },
+        { "choice": "我會先顧今天能撐住就好，別再加壓", "signal_key": "overload" },
+        { "choice": "我會覺得被掏空，想暫時躲開人事物", "signal_key": "avoidance" }
+      ],
+      "domain_keys": ["home", "body"]
+    },
+    {
+      "id": "r2_s08_social_mismatch",
+      "question_text": "你和世界有點不同步：社交很耗、規則很難、融入感不足（包含自閉特質/高敏/社交疲憊）。你更像？",
+      "choices": [
+        "我會努力模仿大家的節奏，讓自己看起來正常",
+        "我會降低互動，保留能量不勉強",
+        "我會找能理解的人或社群，讓自己有落腳處",
+        "我會先觀察規則：看懂玩法再決定要不要進"
+      ],
+      "choice_meta": [
+        { "choice": "我會努力模仿大家的節奏，讓自己看起來正常", "signal_key": "alignment" },
+        { "choice": "我會降低互動，保留能量不勉強", "signal_key": "avoidance" },
+        { "choice": "我會找能理解的人或社群，讓自己有落腳處", "signal_key": "bridge_building" },
+        { "choice": "我會先觀察規則：看懂玩法再決定要不要進", "signal_key": "risk_aversion" }
+      ],
+      "domain_keys": ["mind", "love"]
+    },
+    {
+      "id": "r2_s09_emotion_invasion",
+      "question_text": "你常被別人的情緒牽動：對方一低氣壓，你就被捲進去（伴侶沈默、主管發火、長輩暗示）。你更像？",
+      "choices": [
+        "我會先安撫或修補：讓氣氛好起來比較重要",
+        "我會切割：那是他的情緒，不必進我身上",
+        "我會閃開：先離場、戴耳機、降低感受",
+        "我會問到底：把原因挖出來、把問題解掉"
+      ],
+      "choice_meta": [
+        { "choice": "我會先安撫或修補：讓氣氛好起來比較重要", "signal_key": "responsibility" },
+        { "choice": "我會切割：那是他的情緒，不必進我身上", "signal_key": "stability" },
+        { "choice": "我會閃開：先離場、戴耳機、降低感受", "signal_key": "avoidance" },
+        { "choice": "我會問到底：把原因挖出來、把問題解掉", "signal_key": "agency" }
+      ],
+      "domain_keys": ["mind", "home"]
+    },
+    {
+      "id": "r2_s10_decision_overload",
+      "question_text": "你被選擇淹沒：買東西、規劃行程、寫信、投資、做決定都像在過載。你更像？",
+      "choices": [
+        "資訊越看越亂，最後乾脆先不做",
+        "我會直接跟著最多人選的：安全省事",
+        "我會列規格/列表格比到極致，還是不敢按下去",
+        "我會找人一句話定生死：你幫我選"
+      ],
+      "choice_meta": [
+        { "choice": "資訊越看越亂，最後乾脆先不做", "signal_key": "avoidance" },
+        { "choice": "我會直接跟著最多人選的：安全省事", "signal_key": "validation" },
+        { "choice": "我會列規格/列表格比到極致，還是不敢按下去", "signal_key": "risk_aversion" },
+        { "choice": "我會找人一句話定生死：你幫我選", "signal_key": "help_seeking" }
+      ],
+      "domain_keys": ["mind", "path"]
+    },
+    {
+      "id": "r2_s11_escape_delay",
+      "question_text": "有些事你知道得面對，但總會拖：回訊息、看帳單、看醫生、開口談、開始專案。你更像？",
+      "choices": [
+        "先做些小事（整理、追劇、滑手機）讓心安定",
+        "逼自己先動：只做一點也要開始",
+        "用「官方回覆/表面處理」先頂一下",
+        "拖到期限來推我：不撞牆不動"
+      ],
+      "choice_meta": [
+        { "choice": "先做些小事（整理、追劇、滑手機）讓心安定", "signal_key": "avoidance" },
+        { "choice": "逼自己先動：只做一點也要開始", "signal_key": "agency" },
+        { "choice": "用「官方回覆/表面處理」先頂一下", "signal_key": "resourcefulness" },
+        { "choice": "拖到期限來推我：不撞牆不動", "signal_key": "momentum" }
+      ],
+      "domain_keys": ["path", "career"]
+    },
+    {
+      "id": "r2_s12_identity_blur",
+      "question_text": "你有時會說不清自己到底要什麼：不是沒努力，是像少了一塊「主心骨」。你更像？",
+      "choices": [
+        "腦袋一片空白，想了很久也沒有答案",
+        "很焦慮，怕自己一直這樣下去",
+        "我會去找參考：看別人怎麼活，借一條路走",
+        "我會先把自己顧好：先穩住，再慢慢找"
+      ],
+      "choice_meta": [
+        { "choice": "腦袋一片空白，想了很久也沒有答案", "signal_key": "risk_aversion" },
+        { "choice": "很焦慮，怕自己一直這樣下去", "signal_key": "overload" },
+        { "choice": "我會去找參考：看別人怎麼活，借一條路走", "signal_key": "validation" },
+        { "choice": "我會先把自己顧好：先穩住，再慢慢找", "signal_key": "recovery" }
+      ],
+      "domain_keys": ["mind", "path"]
+    }
+  ]
+}

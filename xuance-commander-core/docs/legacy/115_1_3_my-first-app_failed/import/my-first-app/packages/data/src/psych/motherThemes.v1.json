@@ -1,0 +1,77 @@
+{
+  "_schema": "items[]: {id, enLabel, zhLabel, description, synonyms?}",
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "items": [
+    {
+      "id": "chronic_depletion",
+      "enLabel": "Chronic Depletion",
+      "zhLabel": "長期耗竭",
+      "description": "A pattern of prolonged physical, mental, or emotional exhaustion caused by overextension, pressure, or lack of recovery.",
+      "synonyms": []
+    },
+    {
+      "id": "loss_of_agency",
+      "enLabel": "Loss of Agency",
+      "zhLabel": "主控感流失",
+      "description": "Feeling unable to influence one’s life direction, decisions, or outcomes despite effort.",
+      "synonyms": []
+    },
+    {
+      "id": "hyper_responsibility",
+      "enLabel": "Hyper-Responsibility",
+      "zhLabel": "過度承擔",
+      "description": "Taking excessive responsibility for others, systems, or outcomes at the cost of self-needs.",
+      "synonyms": []
+    },
+    {
+      "id": "fear_based_stability",
+      "enLabel": "Fear-Based Stability",
+      "zhLabel": "恐懼型求穩",
+      "description": "Avoiding change or risk primarily due to fear of loss, failure, or collapse.",
+      "synonyms": []
+    },
+    {
+      "id": "identity_diffusion",
+      "enLabel": "Identity Diffusion",
+      "zhLabel": "自我模糊",
+      "description": "Unclear sense of self, values, or direction, often shaped by external expectations.",
+      "synonyms": []
+    },
+    {
+      "id": "suppressed_needs",
+      "enLabel": "Suppressed Needs",
+      "zhLabel": "需求壓抑",
+      "description": "Habitually minimizing or ignoring personal needs to maintain harmony or function.",
+      "synonyms": []
+    },
+    {
+      "id": "chronic_alertness",
+      "enLabel": "Chronic Alertness",
+      "zhLabel": "長期警戒",
+      "description": "Persistent tension or vigilance even when no immediate threat is present.",
+      "synonyms": []
+    },
+    {
+      "id": "unprocessed_loss",
+      "enLabel": "Unprocessed Loss",
+      "zhLabel": "未處理的失落",
+      "description": "Past losses or endings that continue to affect present behavior or emotions.",
+      "synonyms": []
+    },
+    {
+      "id": "meaning_vacuum",
+      "enLabel": "Meaning Vacuum",
+      "zhLabel": "意義真空",
+      "description": "A sense that life actions lack purpose or internal justification.",
+      "synonyms": []
+    },
+    {
+      "id": "self_erosion",
+      "enLabel": "Self-Erosion",
+      "zhLabel": "自我耗損",
+      "description": "Gradual loss of vitality, confidence, or identity through repeated compromise.",
+      "synonyms": []
+    }
+  ]
+}

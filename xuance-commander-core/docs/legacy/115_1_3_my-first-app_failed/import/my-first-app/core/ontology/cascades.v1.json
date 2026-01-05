@@ -1,0 +1,6 @@
+{
+  "_schema": "items[]: {trigger_theme_id, downstream_risks[], time_horizons[]}",
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "items": []
+}

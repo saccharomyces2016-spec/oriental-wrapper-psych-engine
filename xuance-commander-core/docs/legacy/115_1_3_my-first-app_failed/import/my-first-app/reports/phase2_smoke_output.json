@@ -1,0 +1,29 @@
+
+> @packages/core@0.0.1 smoke /Users/yujunwei/Desktop/my-first-app/packages/core
+> tsx scripts/smoke_reading.ts
+
+{
+  "status": "success",
+  "preview": {
+    "domainKeysCount": 4,
+    "firstDomainKey": "_schema"
+  },
+  "result": {
+    "readingResult": {
+      "input": {
+        "userProfile": {
+          "birthYear": 1990,
+          "gender": "male"
+        },
+        "choices": {
+          "q1_domain": "career"
+        }
+      },
+      "scores": {
+        "fire": 42,
+        "water": 58
+      }
+    },
+    "narrative": "narrative_for_career"
+  }
+}

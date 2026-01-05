@@ -1,0 +1,54 @@
+# Phase 3 Cleanup Plan: DEAD & DEV_TOOLING (0 Risk)
+
+## 目標
+刪除已確認無 runtime 依賴的檔案與目錄，風險為 0。
+
+## 刪除清單
+
+### 1. Archive 目錄（已歸檔，不影響 runtime）
+- archive/legacy/core-content/ContentDB_*.js
+- archive/legacy/questionBank/*.js
+- archive/legacy_question_bank/2025-12-31/src/_deprecated/core/**
+
+**驗證**: 這些檔案已在 archive 目錄，不影響 src 下的 runtime。
+
+### 2. Scripts 中的 Legacy 引用（僅工具腳本）
+- scripts/deprecateUnused.mjs 中的 `src/_deprecated` 路徑引用（僅註解或字串）
+
+**修改前**: 確認 scripts/deprecateUnused.mjs 是否仍在使用
+**修改**: 如果不再使用，可刪除；如果仍使用，更新路徑引用為 archive 路徑
+
+### 3. Cleanup Phase 報告（歷史記錄，可保留或刪除）
+- _governance/cleanup_phase2/**（保留作為歷史記錄）
+- _governance/cleanup_phase3/**（保留作為歷史記錄）
+
+**建議**: 保留作為歷史記錄，不刪除。
+
+## 驗證指令
+
+```bash
+# 1. 確認 archive 目錄不影響 build
+npm run build
+
+# 2. 確認沒有 runtime 引用 archive
+grep -r "archive/legacy" src --include="*.js" --include="*.ts" --include="*.vue" || echo "No references"
+
+# 3. 確認 scripts 仍可執行（如果保留）
+npm run validate:all
+```
+
+## 回滾方式
+
+```bash
+# Archive 已存在，無需回滾（刪除 archive 不影響 runtime）
+# 如果誤刪，可從 git history 恢復
+git log --all --full-history -- archive/
+```
+
+## 風險評估
+
+**風險**: 0（archive 目錄不影響 runtime）
+**影響範圍**: 無（僅清理已歸檔檔案）
+**回滾難度**: 低（可從 git 恢復）
+
+

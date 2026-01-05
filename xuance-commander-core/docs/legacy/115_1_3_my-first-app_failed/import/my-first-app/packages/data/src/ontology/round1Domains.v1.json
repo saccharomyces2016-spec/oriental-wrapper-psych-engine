@@ -1,0 +1,15 @@
+{
+  "_schema": "items[]: {domain_id, internal_key?, short_label, zhLabel, description?}",
+  "note": "Round1 domain anchors – canonical domain_* ids only",
+  "version": 2,
+  "items": [
+    { "domain_id": "domain_yuan", "internal_key": "relationship", "short_label": "情", "zhLabel": "感情／關係", "description": "情緣之結｜情之所牽" },
+    { "domain_id": "domain_cai", "internal_key": "money", "short_label": "財", "zhLabel": "金錢／資源", "description": "財氣之流｜財之所動" },
+    { "domain_id": "domain_ye", "internal_key": "career", "short_label": "業", "zhLabel": "工作／事業", "description": "業途之局｜事之所繫" },
+    { "domain_id": "domain_shen", "internal_key": "health", "short_label": "身", "zhLabel": "身體／健康", "description": "形神之耗｜身心所感" },
+    { "domain_id": "domain_jia", "internal_key": "family", "short_label": "家", "zhLabel": "家庭／居所", "description": "家脈之承｜根之所繫" },
+    { "domain_id": "domain_ju", "internal_key": "study", "short_label": "界", "zhLabel": "邊界／學習", "description": "文運之關｜學之所試" },
+    { "domain_id": "domain_ming", "internal_key": "social", "short_label": "命", "zhLabel": "社交／運勢", "description": "交感之網｜人之所連" },
+    { "domain_id": "domain_xin", "internal_key": "self", "short_label": "心", "zhLabel": "心智／成長", "description": "心志之向｜意之所指" }
+  ]
+}

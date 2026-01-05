@@ -1,0 +1,1469 @@
+{
+  "meta": {
+    "generatedAt": "2025-12-29T13:10:00.032Z",
+    "totalSamples": 30,
+    "note": "This is a sampling report for manual review. Check for: similarity, vagueness, forbidden words, over-assertiveness."
+  },
+  "samples": [
+    {
+      "sampleId": 1,
+      "seed": 1000,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分享。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.62,
+          "control": 0.98,
+          "stabilityNeed": 0.53,
+          "sensitivity": 0.68,
+          "riskAversion": 0.85,
+          "innerTension": 0.33
+        },
+        "axes": {
+          "move": 0.38,
+          "inward": 0.79,
+          "heat": 0.22,
+          "damp": 0.03,
+          "boundary": 0.52
+        }
+      },
+      "extractedStateTags": [
+        "high_control",
+        "avoidance",
+        "social_withdrawal",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 2,
+      "seed": 1001,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以延後。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.62,
+          "control": 0.07,
+          "stabilityNeed": 0.21,
+          "sensitivity": 0.72,
+          "riskAversion": 0.52,
+          "innerTension": 0.08
+        },
+        "axes": {
+          "move": 0.81,
+          "inward": 0.71,
+          "heat": 0.73,
+          "damp": 0.09,
+          "boundary": 0.98
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_control",
+        "avoidance",
+        "people_pleasing",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 3,
+      "seed": 1002,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.62,
+          "control": 0.16,
+          "stabilityNeed": 0.9,
+          "sensitivity": 0.76,
+          "riskAversion": 0.18,
+          "innerTension": 0.83
+        },
+        "axes": {
+          "move": 0.24,
+          "inward": 0.63,
+          "heat": 0.24,
+          "damp": 0.15,
+          "boundary": 0.43
+        }
+      },
+      "extractedStateTags": [
+        "low_arousal",
+        "low_control",
+        "people_pleasing",
+        "sleep_debt",
+        "anxiety",
+        "neglected_needs",
+        "external_validation"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 4,
+      "seed": 1003,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_07",
+        "label": "長期承擔後的氣力外洩（變體7）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.62,
+          "control": 0.25,
+          "stabilityNeed": 0.58,
+          "sensitivity": 0.8,
+          "riskAversion": 0.85,
+          "innerTension": 0.58
+        },
+        "axes": {
+          "move": 0.67,
+          "inward": 0.54,
+          "heat": 0.75,
+          "damp": 0.2,
+          "boundary": 0.88
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_control",
+        "avoidance",
+        "emotional_suppression",
+        "people_pleasing",
+        "uncertainty"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 5,
+      "seed": 1004,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.35,
+          "stabilityNeed": 0.27,
+          "sensitivity": 0.83,
+          "riskAversion": 0.52,
+          "innerTension": 0.32
+        },
+        "axes": {
+          "move": 0.1,
+          "inward": 0.46,
+          "heat": 0.26,
+          "damp": 0.26,
+          "boundary": 0.34
+        }
+      },
+      "extractedStateTags": [
+        "low_arousal",
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 6,
+      "seed": 1005,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分享。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.44,
+          "stabilityNeed": 0.95,
+          "sensitivity": 0.87,
+          "riskAversion": 0.18,
+          "innerTension": 0.07
+        },
+        "axes": {
+          "move": 0.54,
+          "inward": 0.37,
+          "heat": 0.77,
+          "damp": 0.32,
+          "boundary": 0.79
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 7,
+      "seed": 1006,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.53,
+          "stabilityNeed": 0.64,
+          "sensitivity": 0.91,
+          "riskAversion": 0.85,
+          "innerTension": 0.82
+        },
+        "axes": {
+          "move": 0.97,
+          "inward": 0.29,
+          "heat": 0.28,
+          "damp": 0.37,
+          "boundary": 0.24
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "avoidance",
+        "emotional_suppression",
+        "people_pleasing",
+        "anxiety"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 8,
+      "seed": 1007,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.62,
+          "stabilityNeed": 0.32,
+          "sensitivity": 0.94,
+          "riskAversion": 0.52,
+          "innerTension": 0.57
+        },
+        "axes": {
+          "move": 0.4,
+          "inward": 0.21,
+          "heat": 0.78,
+          "damp": 0.43,
+          "boundary": 0.7
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 9,
+      "seed": 1008,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.71,
+          "stabilityNeed": 0.01,
+          "sensitivity": 0.98,
+          "riskAversion": 0.18,
+          "innerTension": 0.31
+        },
+        "axes": {
+          "move": 0.83,
+          "inward": 0.12,
+          "heat": 0.29,
+          "damp": 0.49,
+          "boundary": 0.15
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "high_control",
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 10,
+      "seed": 1009,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以延後。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.8,
+          "stabilityNeed": 0.69,
+          "sensitivity": 0.02,
+          "riskAversion": 0.85,
+          "innerTension": 0.06
+        },
+        "axes": {
+          "move": 0.26,
+          "inward": 0.04,
+          "heat": 0.8,
+          "damp": 0.55,
+          "boundary": 0.61
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_arousal",
+        "high_control",
+        "avoidance"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 11,
+      "seed": 1010,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用理。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.89,
+          "stabilityNeed": 0.37,
+          "sensitivity": 0.05,
+          "riskAversion": 0.51,
+          "innerTension": 0.81
+        },
+        "axes": {
+          "move": 0.69,
+          "inward": 0.95,
+          "heat": 0.31,
+          "damp": 0.6,
+          "boundary": 0.06
+        }
+      },
+      "extractedStateTags": [
+        "high_control",
+        "over_control",
+        "avoidance",
+        "overthinking",
+        "anxiety",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 12,
+      "seed": 1011,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_10",
+        "label": "長期承擔後的氣力外洩（變體10）",
+        "text": "你習慣把所有事都做好，但沒有人告訴你，有些事其實可以不用理。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.98,
+          "stabilityNeed": 0.06,
+          "sensitivity": 0.09,
+          "riskAversion": 0.18,
+          "innerTension": 0.56
+        },
+        "axes": {
+          "move": 0.12,
+          "inward": 0.87,
+          "heat": 0.82,
+          "damp": 0.66,
+          "boundary": 0.51
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_arousal",
+        "high_control",
+        "avoidance",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 13,
+      "seed": 1012,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分享。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.07,
+          "stabilityNeed": 0.74,
+          "sensitivity": 0.13,
+          "riskAversion": 0.85,
+          "innerTension": 0.31
+        },
+        "axes": {
+          "move": 0.55,
+          "inward": 0.79,
+          "heat": 0.33,
+          "damp": 0.72,
+          "boundary": 0.97
+        }
+      },
+      "extractedStateTags": [
+        "low_control",
+        "avoidance",
+        "social_withdrawal",
+        "uncertainty",
+        "external_validation",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 14,
+      "seed": 1013,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_07",
+        "label": "長期承擔後的氣力外洩（變體7）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用理。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.16,
+          "stabilityNeed": 0.43,
+          "sensitivity": 0.17,
+          "riskAversion": 0.51,
+          "innerTension": 0.05
+        },
+        "axes": {
+          "move": 0.98,
+          "inward": 0.7,
+          "heat": 0.84,
+          "damp": 0.78,
+          "boundary": 0.42
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_control",
+        "avoidance",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 15,
+      "seed": 1014,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分享。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.25,
+          "stabilityNeed": 0.11,
+          "sensitivity": 0.2,
+          "riskAversion": 0.18,
+          "innerTension": 0.8
+        },
+        "axes": {
+          "move": 0.42,
+          "inward": 0.62,
+          "heat": 0.34,
+          "damp": 0.83,
+          "boundary": 0.87
+        }
+      },
+      "extractedStateTags": [
+        "low_control",
+        "anxiety"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 16,
+      "seed": 1015,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_06",
+        "label": "長期承擔後的氣力外洩（變體6）",
+        "text": "你習慣把所有事都做好，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.34,
+          "stabilityNeed": 0.8,
+          "sensitivity": 0.24,
+          "riskAversion": 0.85,
+          "innerTension": 0.55
+        },
+        "axes": {
+          "move": 0.85,
+          "inward": 0.54,
+          "heat": 0.85,
+          "damp": 0.89,
+          "boundary": 0.33
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "avoidance",
+        "uncertainty",
+        "external_validation"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 17,
+      "seed": 1016,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_09",
+        "label": "長期承擔後的氣力外洩（變體9）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.43,
+          "stabilityNeed": 0.48,
+          "sensitivity": 0.28,
+          "riskAversion": 0.51,
+          "innerTension": 0.3
+        },
+        "axes": {
+          "move": 0.28,
+          "inward": 0.45,
+          "heat": 0.36,
+          "damp": 0.95,
+          "boundary": 0.78
+        }
+      },
+      "extractedStateTags": [
+        "low_arousal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 18,
+      "seed": 1017,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.52,
+          "stabilityNeed": 0.17,
+          "sensitivity": 0.31,
+          "riskAversion": 0.18,
+          "innerTension": 0.04
+        },
+        "axes": {
+          "move": 0.71,
+          "inward": 0.37,
+          "heat": 0.87,
+          "damp": 0.01,
+          "boundary": 0.24
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 19,
+      "seed": 1018,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.61,
+          "stabilityNeed": 0.85,
+          "sensitivity": 0.35,
+          "riskAversion": 0.85,
+          "innerTension": 0.79
+        },
+        "axes": {
+          "move": 0.14,
+          "inward": 0.28,
+          "heat": 0.38,
+          "damp": 0.06,
+          "boundary": 0.69
+        }
+      },
+      "extractedStateTags": [
+        "low_arousal",
+        "avoidance",
+        "high_obligation",
+        "over_responsibility",
+        "overthinking",
+        "sleep_debt",
+        "anxiety",
+        "neglected_needs"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 20,
+      "seed": 1019,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以暫停。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.71,
+          "stabilityNeed": 0.54,
+          "sensitivity": 0.39,
+          "riskAversion": 0.51,
+          "innerTension": 0.54
+        },
+        "axes": {
+          "move": 0.57,
+          "inward": 0.2,
+          "heat": 0.89,
+          "damp": 0.12,
+          "boundary": 0.14
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "high_control"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 21,
+      "seed": 1020,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.8,
+          "stabilityNeed": 0.22,
+          "sensitivity": 0.42,
+          "riskAversion": 0.18,
+          "innerTension": 0.29
+        },
+        "axes": {
+          "move": 0,
+          "inward": 0.12,
+          "heat": 0.4,
+          "damp": 0.18,
+          "boundary": 0.6
+        }
+      },
+      "extractedStateTags": [
+        "low_arousal",
+        "high_control"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 22,
+      "seed": 1021,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_08",
+        "label": "長期承擔後的氣力外洩（變體8）",
+        "text": "你習慣把所有事都做好，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.89,
+          "stabilityNeed": 0.91,
+          "sensitivity": 0.46,
+          "riskAversion": 0.85,
+          "innerTension": 0.03
+        },
+        "axes": {
+          "move": 0.43,
+          "inward": 0.03,
+          "heat": 0.91,
+          "damp": 0.24,
+          "boundary": 0.05
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "high_control",
+        "avoidance",
+        "high_obligation",
+        "over_responsibility"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 23,
+      "seed": 1022,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.98,
+          "stabilityNeed": 0.59,
+          "sensitivity": 0.5,
+          "riskAversion": 0.51,
+          "innerTension": 0.78
+        },
+        "axes": {
+          "move": 0.86,
+          "inward": 0.95,
+          "heat": 0.41,
+          "damp": 0.29,
+          "boundary": 0.5
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "high_control",
+        "over_control",
+        "avoidance",
+        "overthinking",
+        "anxiety",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 24,
+      "seed": 1023,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_02",
+        "label": "長期承擔後的氣力外洩（變體2）",
+        "text": "你習慣把所有責任都扛起來，但沒有人告訴你，有些責任其實可以分享。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "high_obligation"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.07,
+          "stabilityNeed": 0.28,
+          "sensitivity": 0.54,
+          "riskAversion": 0.18,
+          "innerTension": 0.53
+        },
+        "axes": {
+          "move": 0.29,
+          "inward": 0.86,
+          "heat": 0.92,
+          "damp": 0.35,
+          "boundary": 0.96
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_arousal",
+        "low_control",
+        "avoidance",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 25,
+      "seed": 1024,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以暫停。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.16,
+          "stabilityNeed": 0.96,
+          "sensitivity": 0.57,
+          "riskAversion": 0.85,
+          "innerTension": 0.28
+        },
+        "axes": {
+          "move": 0.73,
+          "inward": 0.78,
+          "heat": 0.43,
+          "damp": 0.41,
+          "boundary": 0.41
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_control",
+        "avoidance",
+        "social_withdrawal",
+        "uncertainty",
+        "external_validation",
+        "withdrawal"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 26,
+      "seed": 1025,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_01",
+        "label": "長期承擔後的氣力外洩",
+        "text": "你習慣把局面扛在己身，但沒有人告訴你，有些責任其實可以分擔。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.25,
+          "stabilityNeed": 0.65,
+          "sensitivity": 0.61,
+          "riskAversion": 0.51,
+          "innerTension": 0.03
+        },
+        "axes": {
+          "move": 0.16,
+          "inward": 0.7,
+          "heat": 0.94,
+          "damp": 0.47,
+          "boundary": 0.87
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_arousal",
+        "low_control"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 27,
+      "seed": 1026,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以暫停。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.34,
+          "stabilityNeed": 0.33,
+          "sensitivity": 0.65,
+          "riskAversion": 0.18,
+          "innerTension": 0.77
+        },
+        "axes": {
+          "move": 0.59,
+          "inward": 0.61,
+          "heat": 0.45,
+          "damp": 0.52,
+          "boundary": 0.32
+        }
+      },
+      "extractedStateTags": [
+        "anxiety"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 28,
+      "seed": 1027,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_03",
+        "label": "長期承擔後的氣力外洩（變體3）",
+        "text": "你習慣把所有事都處理好，但沒有人告訴你，有些事其實可以延後。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.43,
+          "stabilityNeed": 0.01,
+          "sensitivity": 0.68,
+          "riskAversion": 0.84,
+          "innerTension": 0.52
+        },
+        "axes": {
+          "move": 0.02,
+          "inward": 0.53,
+          "heat": 0.96,
+          "damp": 0.58,
+          "boundary": 0.77
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "low_arousal",
+        "avoidance",
+        "uncertainty"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 29,
+      "seed": 1028,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用管。",
+        "variantKey": "variant_0",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.52,
+          "stabilityNeed": 0.7,
+          "sensitivity": 0.72,
+          "riskAversion": 0.51,
+          "innerTension": 0.27
+        },
+        "axes": {
+          "move": 0.45,
+          "inward": 0.45,
+          "heat": 0.47,
+          "damp": 0.64,
+          "boundary": 0.23
+        }
+      },
+      "extractedStateTags": [
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    },
+    {
+      "sampleId": 30,
+      "seed": 1029,
+      "anchor": {
+        "id": "ANCHOR_DEPLETION_05",
+        "label": "長期承擔後的氣力外洩（變體5）",
+        "text": "你習慣把所有事都處理完，但沒有人告訴你，有些事其實可以不用理。",
+        "variantKey": "variant_1",
+        "mother_theme": "chronic_depletion",
+        "state_tags": [
+          "exhaustion",
+          "over_responsibility",
+          "neglected_needs",
+          "sleep_debt"
+        ],
+        "confidence": "high",
+        "do_not_say": [
+          "你太累了",
+          "你應該休息",
+          "你已經不行了"
+        ]
+      },
+      "psych": {
+        "traits": {
+          "drive": 0.63,
+          "control": 0.61,
+          "stabilityNeed": 0.38,
+          "sensitivity": 0.76,
+          "riskAversion": 0.18,
+          "innerTension": 0.02
+        },
+        "axes": {
+          "move": 0.88,
+          "inward": 0.36,
+          "heat": 0.98,
+          "damp": 0.7,
+          "boundary": 0.68
+        }
+      },
+      "extractedStateTags": [
+        "high_arousal",
+        "people_pleasing"
+      ],
+      "motherThemes": [
+        "chronic_depletion"
+      ]
+    }
+  ]
+}

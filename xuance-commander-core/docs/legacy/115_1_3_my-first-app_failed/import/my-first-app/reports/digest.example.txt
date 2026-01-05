@@ -1,0 +1,26 @@
+# Analytics Digest
+Generated at: 2025-12-29T03:30:00.000Z
+
+## 1. System Health
+Errors: 5 (parse errors: 2)
+Total events: 1250
+⚠️  Parse error rate high: 0.002
+
+## 2. Funnel
+Views: 45, Clicks: 12, Checkouts: 3, Purchases: 1
+Conversion rates: click/view=0.267, checkout/click=0.250, success/checkout=0.333
+⚠️  資料不足：views (45) < 門檻 (50)
+
+## 3. Top 5 Pending Proposals
+[CONF=HIGH] Q:<q-theme1-0> theme:<theme1> action:<split> why:<長停留且猶豫率偏高，疑似題幹或選項資訊量過重...> metrics:<events:45,dwell:15200ms,hesitant:0.42,change:1.8>
+[CONF=HIGH] Q:<q-theme2-1> theme:<theme2> action:<rewrite> why:<改選次數偏高且選項分布極端，疑似措辭模糊...> metrics:<events:38,dwell:9800ms,hesitant:0.28,change:2.1>
+[CONF=MEDIUM] Q:<q-theme3-2> theme:<theme3> action:<split> why:<長停留且猶豫率偏高，疑似題幹或選項資訊量過重...> metrics:<events:22,dwell:13500ms,hesitant:0.38,change:1.5>
+[CONF=MEDIUM] T:<theme4> theme:<theme4> action:<rebalance> why:<同一主題有多題同時出現負荷或歧義跡象...> metrics:<events:67,dwell:11200ms,hesitant:0.35,change:1.9>
+[CONF=LOW] Q:<q-theme5-0> theme:<theme5> action:<rewrite> why:<改選次數偏高且選項分布極端，疑似措辭模糊...> metrics:<events:15,dwell:8900ms,hesitant:0.31,change:1.7>
+
+## 4. Summary
+Total proposals: 8 (high: 2, medium: 3, low: 3)
+Questions with enough data: 62.5%
+Warnings:
+  - 超過半數題目資料量不足 (5/8 達標)
+

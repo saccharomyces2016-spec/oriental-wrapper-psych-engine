@@ -1,0 +1,108 @@
+# Phase 4 Cleanup Plan: RUNTIME_SOFT & Legacy References (Medium Risk)
+
+## 目標
+移除 runtime 中的軟依賴與 legacy 引用，需先修改 import/feature flag。
+
+## 刪除前必須完成的修改
+
+### 1. Dashboard 的 readingEngine 引用（RUNTIME_SOFT）
+
+**現況**:
+- `src/views/05_Dashboard.vue:556` import readingEngine
+- `src/views/05_Dashboard.vue:985` 調用 `readingEngine(payload)`
+- readingEngine 是 stub，返回最小結構
+- 實際資料來自 `props.data`（從 SoulArchitect 來）
+
+**修改**:
+1. 移除 `import readingEngine from '../core/flow/readingEngine.v1.js'`
+2. 移除或註解 `readingEngine(payload)` 調用（line 985）
+3. 確認 `readingResult` 的資料來源改為 `props.data` 或 `SoulArchitect` 輸出
+4. 保留內聯的 `buildReadingOutputV2` 和 `extractStateTags` stub（已存在）
+
+**驗證**:
+```bash
+# 確認 Dashboard 仍可正常顯示
+npm run build
+# 手動測試 Dashboard 頁面
+```
+
+### 2. App.vue 的 anchorSelector 動態 import（RUNTIME_SOFT）
+
+**現況**:
+- `src/App.vue:82` 動態 import `anchorSelector.js`
+- 檔案不存在，但 import 有 try-catch，不會 crash
+
+**修改**:
+1. 確認 `markCurrentAnchorAsUsed` 是否仍需要
+2. 如果不需要，移除動態 import
+3. 如果需要，確認 anchorSelector.js 的位置或重新實作
+
+**驗證**:
+```bash
+# 確認 App 仍可正常運行
+npm run build
+```
+
+### 3. Scripts 中的 questionBank.v1.json 引用（DEV_TOOLING）
+
+**現況**:
+- 多個 scripts 引用 `questionBank.v1.json`
+- 檔案不存在，但 scripts 可能仍嘗試讀取
+
+**修改**:
+1. 檢查每個引用 questionBank.v1.json 的 script：
+   - scripts/fixQuestionBankJSON*.mjs
+   - scripts/validate/validate-questionbank.mjs
+   - scripts/analyticsReport.mjs
+2. 如果 scripts 不再需要，標記為 deprecated 或刪除
+3. 如果需要，確認 questionBank.v1.json 是否應存在或改用其他資料源
+
+**驗證**:
+```bash
+# 確認 scripts 仍可執行（如果保留）
+npm run validate:all
+```
+
+## 刪除清單（修改完成後）
+
+### 1. readingEngine.v1.js（如果 Dashboard 不再需要）
+- `src/core/flow/readingEngine.v1.js`
+
+**條件**: Dashboard 修改完成，不再引用
+
+### 2. Legacy 引用清理
+- 移除 scripts 中對不存在檔案的引用
+- 更新 cleanup phase3 的 blocked_by_keep.txt（如果 questionBank.v1.json 確定不需要）
+
+## 驗證指令
+
+```bash
+# 1. Build 測試
+npm run build
+
+# 2. 確認沒有 broken imports
+grep -r "readingEngine\|ContentDB_\|questionBank" src --include="*.js" --include="*.ts" --include="*.vue" | grep -v "//\|/\*"
+
+# 3. Runtime 測試
+npm run dev
+# 手動測試完整流程：Origin → Input → Resonance → Computation → Dashboard
+```
+
+## 回滾方式
+
+```bash
+# 從 git 恢復被刪除的檔案
+git restore src/core/flow/readingEngine.v1.js
+
+# 恢復修改的檔案
+git restore src/views/05_Dashboard.vue
+git restore src/App.vue
+```
+
+## 風險評估
+
+**風險**: 中（需修改 runtime 檔案）
+**影響範圍**: Dashboard 顯示、App 初始化
+**回滾難度**: 低（可從 git 恢復）
+
+

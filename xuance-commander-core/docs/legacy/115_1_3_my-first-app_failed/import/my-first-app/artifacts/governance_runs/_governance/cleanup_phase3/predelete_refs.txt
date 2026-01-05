@@ -1,0 +1,597 @@
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB.js:1:// ContentDB.js
+./_governance/cleanup_phase2/git_status_before.txt:12: D src/_deprecated/core/ContentDB.js
+./_governance/cleanup_phase2/git_diff_stat.txt:12: src/_deprecated/core/ContentDB.js                  |   18 -
+./_governance/cleanup_phase2/git_status_after.txt:12: D src/_deprecated/core/ContentDB.js
+./_governance/cleanup_phase2/delete_paths.txt:3:src/_deprecated/core/ContentDB.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:1:src/_deprecated/core/ContentDB.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:1:src/_deprecated/core/ContentDB.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:3:src/_deprecated/core/ContentDB.js	2025-12-28T21:15:27+08:00	
+./_governance/cleanup_report/file_times.tsv:27:src/_deprecated/core/ContentDB.js	2025-12-28T21:15:27+08:00	
+./_governance/cleanup_report/all_files.txt:26:src/_deprecated/core/ContentDB.js
+./_governance/cleanup_phase2/git_status_before.txt:13: D src/_deprecated/core/ContentDB_03.js
+./_governance/cleanup_phase2/git_diff_stat.txt:13: src/_deprecated/core/ContentDB_03.js               |   14 -
+./_governance/cleanup_phase2/delete_paths.txt:15:src/_deprecated/core/ContentDB_03.js
+./_governance/cleanup_phase2/git_status_after.txt:13: D src/_deprecated/core/ContentDB_03.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:2:src/_deprecated/core/ContentDB_03.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:2:src/_deprecated/core/ContentDB_03.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:15:src/_deprecated/core/ContentDB_03.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:28:src/_deprecated/core/ContentDB_03.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:27:src/_deprecated/core/ContentDB_03.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03.js:1:// src/core/ContentDB_03.js
+./_governance/cleanup_phase2/git_status_before.txt:14: D src/_deprecated/core/ContentDB_03_finance.js
+./_governance/cleanup_phase2/git_diff_stat.txt:14: src/_deprecated/core/ContentDB_03_finance.js       |  148 --
+./_governance/cleanup_phase2/delete_paths.txt:16:src/_deprecated/core/ContentDB_03_finance.js
+./_governance/cleanup_phase2/git_status_after.txt:14: D src/_deprecated/core/ContentDB_03_finance.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:3:src/_deprecated/core/ContentDB_03_finance.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:3:src/_deprecated/core/ContentDB_03_finance.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:16:src/_deprecated/core/ContentDB_03_finance.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:29:src/_deprecated/core/ContentDB_03_finance.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:28:src/_deprecated/core/ContentDB_03_finance.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03.js:2:import * as FIN from './ContentDB_03_finance.js'
+./_governance/cleanup_phase2/git_status_before.txt:15: D src/_deprecated/core/ContentDB_03_love.js
+./_governance/cleanup_phase2/git_diff_stat.txt:15: src/_deprecated/core/ContentDB_03_love.js          |  148 --
+./_governance/cleanup_phase2/delete_paths.txt:17:src/_deprecated/core/ContentDB_03_love.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03.js:3:import * as LOVE from './ContentDB_03_love.js'
+./_governance/cleanup_phase2/git_status_after.txt:15: D src/_deprecated/core/ContentDB_03_love.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:4:src/_deprecated/core/ContentDB_03_love.js
+./_governance/cleanup_report/file_times.tsv:30:src/_deprecated/core/ContentDB_03_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:29:src/_deprecated/core/ContentDB_03_love.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:17:src/_deprecated/core/ContentDB_03_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:4:src/_deprecated/core/ContentDB_03_love.js
+./_governance/cleanup_phase2/git_status_before.txt:16: D src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase2/git_status_before.txt:38: D src/core/content/ContentDB_career.js
+./archive/legacy/core-content/ContentDB_index.js:5:import { ROUND2 as R2_career, ROUND3 as R3_career } from './ContentDB_career.js'
+./_governance/cleanup_phase2/git_diff_stat.txt:16: src/_deprecated/core/ContentDB_career.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:38: src/core/content/ContentDB_career.js               |   14 -
+./archive/legacy/core-content/index.js:5:import * as Career from './ContentDB_career.js'
+./_governance/cleanup_phase2/git_status_after.txt:16: D src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase2/git_status_after.txt:38: D src/core/content/ContentDB_career.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_career.js:1:// ContentDB_career.js — 第一輪命理化調教
+./_governance/cleanup_phase2/delete_paths.txt:4:src/core/content/ContentDB_career.js
+./_governance/cleanup_phase2/delete_paths.txt:18:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:5:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:15:src/core/content/ContentDB_career.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:4:src/core/content/ContentDB_career.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:18:src/_deprecated/core/ContentDB_career.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:5:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:15:src/core/content/ContentDB_career.js
+./_governance/cleanup_report/file_times.tsv:31:src/_deprecated/core/ContentDB_career.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:62:src/core/content/ContentDB_career.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/all_files.txt:30:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_report/all_files.txt:61:src/core/content/ContentDB_career.js
+./archive/legacy/core-content/ContentDB_index.js:8:import { ROUND2 as R2_family, ROUND3 as R3_family } from './ContentDB_family.js'
+./_governance/cleanup_phase2/git_status_before.txt:17: D src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_before.txt:39: D src/core/content/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_after.txt:17: D src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_after.txt:39: D src/core/content/ContentDB_family.js
+./_governance/cleanup_phase2/git_diff_stat.txt:17: src/_deprecated/core/ContentDB_family.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:39: src/core/content/ContentDB_family.js               |   14 -
+./_governance/cleanup_phase3/delete_paths.raw.txt:6:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:16:src/core/content/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:6:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:16:src/core/content/ContentDB_family.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:5:src/core/content/ContentDB_family.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:19:src/_deprecated/core/ContentDB_family.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:5:src/core/content/ContentDB_family.js
+./_governance/cleanup_phase2/delete_paths.txt:19:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_report/file_times.tsv:32:src/_deprecated/core/ContentDB_family.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:63:src/core/content/ContentDB_family.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/all_files.txt:31:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_report/all_files.txt:62:src/core/content/ContentDB_family.js
+./archive/legacy/core-content/index.js:7:import * as Family from './ContentDB_family.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_family.js:1:// ContentDB_family.js — 第一輪命理化調教
+./_governance/cleanup_phase2/git_status_before.txt:18: D src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_before.txt:40: D src/core/content/ContentDB_finance.js
+./_governance/cleanup_phase2/git_diff_stat.txt:18: src/_deprecated/core/ContentDB_finance.js          |  121 -
+./_governance/cleanup_phase2/git_diff_stat.txt:40: src/core/content/ContentDB_finance.js              |   13 -
+./_governance/cleanup_phase2/delete_paths.txt:6:src/core/content/ContentDB_finance.js
+./_governance/cleanup_phase2/delete_paths.txt:20:src/_deprecated/core/ContentDB_finance.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_finance.js:1:// ContentDB_finance.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:6:src/core/content/ContentDB_finance.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:20:src/_deprecated/core/ContentDB_finance.js	2025-12-28T20:53:35+08:00	
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03_finance.js:1:// src/core/ContentDB_finance.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:7:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:17:src/core/content/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_after.txt:18: D src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_after.txt:40: D src/core/content/ContentDB_finance.js
+./_governance/cleanup_report/file_times.tsv:33:src/_deprecated/core/ContentDB_finance.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:64:src/core/content/ContentDB_finance.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:7:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:17:src/core/content/ContentDB_finance.js
+./_governance/cleanup_report/all_files.txt:32:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_report/all_files.txt:63:src/core/content/ContentDB_finance.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_health.js:1:// ContentDB_health.js — 第一輪命理化調教
+./archive/legacy/core-content/index.js:6:import * as Health from './ContentDB_health.js'
+./archive/legacy/core-content/ContentDB_index.js:9:import { ROUND2 as R2_health, ROUND3 as R3_health } from './ContentDB_health.js'
+./_governance/cleanup_phase3/delete_paths.raw.txt:8:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:18:src/core/content/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:8:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:18:src/core/content/ContentDB_health.js
+./_governance/cleanup_report/all_files.txt:33:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_report/all_files.txt:64:src/core/content/ContentDB_health.js
+./_governance/cleanup_report/file_times.tsv:34:src/_deprecated/core/ContentDB_health.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:65:src/core/content/ContentDB_health.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/git_status_after.txt:19: D src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase2/git_status_after.txt:41: D src/core/content/ContentDB_health.js
+./_governance/cleanup_phase2/delete_paths.txt:7:src/core/content/ContentDB_health.js
+./_governance/cleanup_phase2/delete_paths.txt:21:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase2/git_diff_stat.txt:19: src/_deprecated/core/ContentDB_health.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:41: src/core/content/ContentDB_health.js               |   14 -
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:7:src/core/content/ContentDB_health.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:21:src/_deprecated/core/ContentDB_health.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase2/git_status_before.txt:19: D src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase2/git_status_before.txt:41: D src/core/content/ContentDB_health.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:9:src/core/content/ContentDB_love.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:22:src/_deprecated/core/ContentDB_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:35:src/_deprecated/core/ContentDB_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:67:src/core/content/ContentDB_love.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/all_files.txt:34:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_report/all_files.txt:66:src/core/content/ContentDB_love.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03_love.js:1:// src/core/ContentDB_love.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_love.js:1:// ContentDB_love.js
+./_governance/cleanup_phase2/git_status_after.txt:20: D src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_after.txt:43: D src/core/content/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:9:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:20:src/core/content/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_before.txt:20: D src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_before.txt:43: D src/core/content/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:9:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:20:src/core/content/ContentDB_love.js
+./_governance/cleanup_phase2/delete_paths.txt:9:src/core/content/ContentDB_love.js
+./_governance/cleanup_phase2/delete_paths.txt:22:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_diff_stat.txt:20: src/_deprecated/core/ContentDB_love.js             |  120 -
+./_governance/cleanup_phase2/git_diff_stat.txt:43: src/core/content/ContentDB_love.js                 |   13 -
+./archive/legacy/core-content/ContentDB_index.js:2:import { ROUND2 as R2_money, ROUND3 as R3_money } from './ContentDB_money.js'
+./archive/legacy/core-content/ContentDB_money.js:1:// src/core/content/ContentDB_money.js
+./archive/legacy/core-content/index.js:3:import * as Money from './ContentDB_money.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_money.js:1:// ContentDB_money.js — 第一輪命理化調教（不改 id / weights / axes）
+./_governance/cleanup_phase2/git_status_before.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_before.txt:44: D src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/git_diff_stat.txt:21: src/_deprecated/core/ContentDB_money.js            |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:44: src/core/content/ContentDB_money.js                |   50 -
+./_governance/cleanup_phase2/delete_paths.txt:10:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/delete_paths.txt:23:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_after.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_after.txt:44: D src/core/content/ContentDB_money.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:10:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:23:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:35:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_report/all_files.txt:67:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:21:src/core/content/ContentDB_money.js
+./_governance/cleanup_report/file_times.tsv:36:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:68:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:21:src/core/content/ContentDB_money.js
+./archive/legacy/core-content/ContentDB_index.js:3:import { ROUND2 as R2_relationship, ROUND3 as R3_relationship } from './ContentDB_relationship.js'
+./archive/legacy/core-content/ContentDB_relationship.js:1:// src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:45: D src/core/content/ContentDB_relationship.js
+./archive/legacy/core-content/index.js:4:import * as Relationship from './ContentDB_relationship.js'
+./_governance/cleanup_phase2/git_diff_stat.txt:22: src/_deprecated/core/ContentDB_relationship.js     |   21 -
+./_governance/cleanup_phase2/git_diff_stat.txt:45: src/core/content/ContentDB_relationship.js         |   50 -
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:11:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:24:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:11:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/delete_paths.txt:24:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_report/file_times.tsv:37:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:69:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/all_files.txt:36:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_report/all_files.txt:68:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:45: D src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:22:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:22:src/core/content/ContentDB_relationship.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_relationship.js:1:// ContentDB_relationship.js — 第一輪命理化調教（不改 id / weights / axes）
+./_governance/cleanup_phase2/git_status_before.txt:23: D src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_before.txt:46: D src/core/content/ContentDB_self.js
+./archive/legacy/core-content/ContentDB_index.js:10:import { ROUND2 as R2_self, ROUND3 as R3_self } from './ContentDB_self.js'
+./_governance/cleanup_phase2/git_diff_stat.txt:23: src/_deprecated/core/ContentDB_self.js             |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:46: src/core/content/ContentDB_self.js                 |   14 -
+./_governance/cleanup_phase2/delete_paths.txt:12:src/core/content/ContentDB_self.js
+./_governance/cleanup_phase2/delete_paths.txt:25:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_after.txt:23: D src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_after.txt:46: D src/core/content/ContentDB_self.js
+./archive/legacy/core-content/index.js:8:import * as Self from './ContentDB_self.js'
+./_governance/cleanup_phase3/delete_paths.raw.txt:12:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:23:src/core/content/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:12:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:23:src/core/content/ContentDB_self.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_self.js:1:// ContentDB_self.js — 第一輪命理化調教
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:12:src/core/content/ContentDB_self.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:25:src/_deprecated/core/ContentDB_self.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:37:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_report/all_files.txt:69:src/core/content/ContentDB_self.js
+./_governance/cleanup_report/file_times.tsv:38:src/_deprecated/core/ContentDB_self.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:70:src/core/content/ContentDB_self.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/git_status_before.txt:24: D src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_before.txt:47: D src/core/content/ContentDB_social.js
+./archive/legacy/core-content/ContentDB_index.js:7:import { ROUND2 as R2_social, ROUND3 as R3_social } from './ContentDB_social.js'
+./archive/legacy/core-content/ContentDB_social.js:1:// src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_after.txt:24: D src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_after.txt:47: D src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/git_diff_stat.txt:24: src/_deprecated/core/ContentDB_social.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:47: src/core/content/ContentDB_social.js               |   23 -
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:13:src/core/content/ContentDB_social.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:26:src/_deprecated/core/ContentDB_social.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:13:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:24:src/core/content/ContentDB_social.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_social.js:1:// ContentDB_social.js — 第一輪命理化調教
+./_governance/cleanup_report/file_times.tsv:39:src/_deprecated/core/ContentDB_social.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:71:src/core/content/ContentDB_social.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:13:src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/delete_paths.txt:26:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:13:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:24:src/core/content/ContentDB_social.js
+./_governance/cleanup_report/all_files.txt:38:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_report/all_files.txt:70:src/core/content/ContentDB_social.js
+./archive/legacy/core-content/ContentDB_index.js:6:import { ROUND2 as R2_study, ROUND3 as R3_study } from './ContentDB_study.js'
+./_governance/cleanup_phase2/git_status_before.txt:25: D src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_before.txt:48: D src/core/content/ContentDB_study.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_study.js:1:// ContentDB_study.js — 第一輪命理化調教
+./archive/legacy/core-content/ContentDB_study.js:1:// src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_after.txt:25: D src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_after.txt:48: D src/core/content/ContentDB_study.js
+./_governance/cleanup_report/all_files.txt:39:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_report/all_files.txt:71:src/core/content/ContentDB_study.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:14:src/core/content/ContentDB_study.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:27:src/_deprecated/core/ContentDB_study.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase2/git_diff_stat.txt:25: src/_deprecated/core/ContentDB_study.js            |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:48: src/core/content/ContentDB_study.js                |   23 -
+./_governance/cleanup_report/file_times.tsv:40:src/_deprecated/core/ContentDB_study.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:72:src/core/content/ContentDB_study.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:14:src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/delete_paths.txt:27:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:14:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:25:src/core/content/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:14:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:25:src/core/content/ContentDB_study.js
+./archive/legacy/core-content/ContentDB_index.js:5:import { ROUND2 as R2_career, ROUND3 as R3_career } from './ContentDB_career.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_career.js:1:// ContentDB_career.js — 第一輪命理化調教
+./archive/legacy/core-content/index.js:5:import * as Career from './ContentDB_career.js'
+./_governance/cleanup_phase2/git_status_before.txt:16: D src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase2/git_status_before.txt:38: D src/core/content/ContentDB_career.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:4:src/core/content/ContentDB_career.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:18:src/_deprecated/core/ContentDB_career.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:5:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:15:src/core/content/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:5:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:15:src/core/content/ContentDB_career.js
+./_governance/cleanup_phase2/git_diff_stat.txt:16: src/_deprecated/core/ContentDB_career.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:38: src/core/content/ContentDB_career.js               |   14 -
+./_governance/cleanup_report/file_times.tsv:31:src/_deprecated/core/ContentDB_career.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:62:src/core/content/ContentDB_career.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:4:src/core/content/ContentDB_career.js
+./_governance/cleanup_phase2/delete_paths.txt:18:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_report/all_files.txt:30:src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_report/all_files.txt:61:src/core/content/ContentDB_career.js
+./_governance/cleanup_phase2/git_status_after.txt:16: D src/_deprecated/core/ContentDB_career.js
+./_governance/cleanup_phase2/git_status_after.txt:38: D src/core/content/ContentDB_career.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_family.js:1:// ContentDB_family.js — 第一輪命理化調教
+./archive/legacy/core-content/ContentDB_index.js:8:import { ROUND2 as R2_family, ROUND3 as R3_family } from './ContentDB_family.js'
+./_governance/cleanup_phase2/git_status_before.txt:17: D src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_before.txt:39: D src/core/content/ContentDB_family.js
+./_governance/cleanup_phase2/git_diff_stat.txt:17: src/_deprecated/core/ContentDB_family.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:39: src/core/content/ContentDB_family.js               |   14 -
+./archive/legacy/core-content/index.js:7:import * as Family from './ContentDB_family.js'
+./_governance/cleanup_phase2/delete_paths.txt:5:src/core/content/ContentDB_family.js
+./_governance/cleanup_phase2/delete_paths.txt:19:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_after.txt:17: D src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase2/git_status_after.txt:39: D src/core/content/ContentDB_family.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:5:src/core/content/ContentDB_family.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:19:src/_deprecated/core/ContentDB_family.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:31:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_report/all_files.txt:62:src/core/content/ContentDB_family.js
+./_governance/cleanup_report/file_times.tsv:32:src/_deprecated/core/ContentDB_family.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:63:src/core/content/ContentDB_family.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:6:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:16:src/core/content/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:6:src/_deprecated/core/ContentDB_family.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:16:src/core/content/ContentDB_family.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_finance.js:1:// ContentDB_finance.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03_finance.js:1:// src/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_before.txt:18: D src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_before.txt:40: D src/core/content/ContentDB_finance.js
+./_governance/cleanup_phase2/git_diff_stat.txt:18: src/_deprecated/core/ContentDB_finance.js          |  121 -
+./_governance/cleanup_phase2/git_diff_stat.txt:40: src/core/content/ContentDB_finance.js              |   13 -
+./_governance/cleanup_phase2/delete_paths.txt:6:src/core/content/ContentDB_finance.js
+./_governance/cleanup_phase2/delete_paths.txt:20:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_after.txt:18: D src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase2/git_status_after.txt:40: D src/core/content/ContentDB_finance.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:6:src/core/content/ContentDB_finance.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:20:src/_deprecated/core/ContentDB_finance.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:7:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:17:src/core/content/ContentDB_finance.js
+./_governance/cleanup_report/file_times.tsv:33:src/_deprecated/core/ContentDB_finance.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:64:src/core/content/ContentDB_finance.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:7:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:17:src/core/content/ContentDB_finance.js
+./_governance/cleanup_report/all_files.txt:32:src/_deprecated/core/ContentDB_finance.js
+./_governance/cleanup_report/all_files.txt:63:src/core/content/ContentDB_finance.js
+./archive/legacy/core-content/ContentDB_index.js:9:import { ROUND2 as R2_health, ROUND3 as R3_health } from './ContentDB_health.js'
+./archive/legacy/core-content/index.js:6:import * as Health from './ContentDB_health.js'
+./_governance/cleanup_phase2/git_status_before.txt:19: D src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase2/git_status_before.txt:41: D src/core/content/ContentDB_health.js
+./_governance/cleanup_phase2/git_status_after.txt:19: D src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase2/git_status_after.txt:41: D src/core/content/ContentDB_health.js
+./_governance/cleanup_phase2/delete_paths.txt:7:src/core/content/ContentDB_health.js
+./_governance/cleanup_phase2/delete_paths.txt:21:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:7:src/core/content/ContentDB_health.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:21:src/_deprecated/core/ContentDB_health.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/all_files.txt:33:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_report/all_files.txt:64:src/core/content/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:8:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:18:src/core/content/ContentDB_health.js
+./_governance/cleanup_report/file_times.tsv:34:src/_deprecated/core/ContentDB_health.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:65:src/core/content/ContentDB_health.js	2025-12-28T20:59:04+08:00	
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_health.js:1:// ContentDB_health.js — 第一輪命理化調教
+./_governance/cleanup_phase2/git_diff_stat.txt:19: src/_deprecated/core/ContentDB_health.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:41: src/core/content/ContentDB_health.js               |   14 -
+./_governance/cleanup_phase3/delete_paths.raw.txt:8:src/_deprecated/core/ContentDB_health.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:18:src/core/content/ContentDB_health.js
+./archive/legacy/core-content/ContentDB_index.js:1:// src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/git_status_before.txt:42: D src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/git_diff_stat.txt:42: src/core/content/ContentDB_index.js                |   27 -
+./_governance/cleanup_phase2/delete_paths.txt:8:src/core/content/ContentDB_index.js
+./_governance/cleanup_report/file_times.tsv:66:src/core/content/ContentDB_index.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/git_status_after.txt:42: D src/core/content/ContentDB_index.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:19:src/core/content/ContentDB_index.js
+./_governance/cleanup_report/all_files.txt:65:src/core/content/ContentDB_index.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:8:src/core/content/ContentDB_index.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:19:src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/git_status_before.txt:20: D src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_before.txt:43: D src/core/content/ContentDB_love.js
+./_governance/cleanup_phase2/git_diff_stat.txt:20: src/_deprecated/core/ContentDB_love.js             |  120 -
+./_governance/cleanup_phase2/git_diff_stat.txt:43: src/core/content/ContentDB_love.js                 |   13 -
+./_governance/cleanup_phase2/delete_paths.txt:9:src/core/content/ContentDB_love.js
+./_governance/cleanup_phase2/delete_paths.txt:22:src/_deprecated/core/ContentDB_love.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_love.js:1:// ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:9:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:20:src/core/content/ContentDB_love.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_03_love.js:1:// src/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_after.txt:20: D src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase2/git_status_after.txt:43: D src/core/content/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:9:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:20:src/core/content/ContentDB_love.js
+./_governance/cleanup_report/all_files.txt:34:src/_deprecated/core/ContentDB_love.js
+./_governance/cleanup_report/all_files.txt:66:src/core/content/ContentDB_love.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:9:src/core/content/ContentDB_love.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:22:src/_deprecated/core/ContentDB_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:35:src/_deprecated/core/ContentDB_love.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:67:src/core/content/ContentDB_love.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/git_status_before.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_before.txt:44: D src/core/content/ContentDB_money.js
+./archive/legacy/core-content/ContentDB_index.js:2:import { ROUND2 as R2_money, ROUND3 as R3_money } from './ContentDB_money.js'
+./_governance/cleanup_phase2/git_diff_stat.txt:21: src/_deprecated/core/ContentDB_money.js            |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:44: src/core/content/ContentDB_money.js                |   50 -
+./_governance/cleanup_phase2/git_status_after.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_after.txt:44: D src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/delete_paths.txt:10:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/delete_paths.txt:23:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:21:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:21:src/core/content/ContentDB_money.js
+./archive/legacy/core-content/ContentDB_money.js:1:// src/core/content/ContentDB_money.js
+./archive/legacy/core-content/index.js:3:import * as Money from './ContentDB_money.js'
+./_governance/cleanup_report/file_times.tsv:36:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:68:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/all_files.txt:35:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_report/all_files.txt:67:src/core/content/ContentDB_money.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_money.js:1:// ContentDB_money.js — 第一輪命理化調教（不改 id / weights / axes）
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:10:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:23:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase2/git_status_before.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:45: D src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_diff_stat.txt:22: src/_deprecated/core/ContentDB_relationship.js     |   21 -
+./_governance/cleanup_phase2/git_diff_stat.txt:45: src/core/content/ContentDB_relationship.js         |   50 -
+./_governance/cleanup_phase2/delete_paths.txt:11:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/delete_paths.txt:24:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:45: D src/core/content/ContentDB_relationship.js
+./archive/legacy/core-content/ContentDB_index.js:3:import { ROUND2 as R2_relationship, ROUND3 as R3_relationship } from './ContentDB_relationship.js'
+./_governance/cleanup_phase3/delete_paths.raw.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:22:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:22:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_report/all_files.txt:36:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_report/all_files.txt:68:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_report/file_times.tsv:37:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:69:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:11:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:24:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./archive/legacy/core-content/index.js:4:import * as Relationship from './ContentDB_relationship.js'
+./archive/legacy/core-content/ContentDB_relationship.js:1:// src/core/content/ContentDB_relationship.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_relationship.js:1:// ContentDB_relationship.js — 第一輪命理化調教（不改 id / weights / axes）
+./archive/legacy/core-content/ContentDB_index.js:10:import { ROUND2 as R2_self, ROUND3 as R3_self } from './ContentDB_self.js'
+./archive/legacy/core-content/index.js:8:import * as Self from './ContentDB_self.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_self.js:1:// ContentDB_self.js — 第一輪命理化調教
+./_governance/cleanup_phase2/git_status_before.txt:23: D src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_before.txt:46: D src/core/content/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_after.txt:23: D src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase2/git_status_after.txt:46: D src/core/content/ContentDB_self.js
+./_governance/cleanup_phase2/delete_paths.txt:12:src/core/content/ContentDB_self.js
+./_governance/cleanup_phase2/delete_paths.txt:25:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:12:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:23:src/core/content/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:12:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:23:src/core/content/ContentDB_self.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:12:src/core/content/ContentDB_self.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:25:src/_deprecated/core/ContentDB_self.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:38:src/_deprecated/core/ContentDB_self.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:70:src/core/content/ContentDB_self.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_phase2/git_diff_stat.txt:23: src/_deprecated/core/ContentDB_self.js             |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:46: src/core/content/ContentDB_self.js                 |   14 -
+./_governance/cleanup_report/all_files.txt:37:src/_deprecated/core/ContentDB_self.js
+./_governance/cleanup_report/all_files.txt:69:src/core/content/ContentDB_self.js
+./archive/legacy/core-content/ContentDB_index.js:7:import { ROUND2 as R2_social, ROUND3 as R3_social } from './ContentDB_social.js'
+./archive/legacy/core-content/ContentDB_social.js:1:// src/core/content/ContentDB_social.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_social.js:1:// ContentDB_social.js — 第一輪命理化調教
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:13:src/core/content/ContentDB_social.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:26:src/_deprecated/core/ContentDB_social.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.raw.txt:13:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:24:src/core/content/ContentDB_social.js
+./_governance/cleanup_report/all_files.txt:38:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_report/all_files.txt:70:src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_before.txt:24: D src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_before.txt:47: D src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_after.txt:24: D src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase2/git_status_after.txt:47: D src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/delete_paths.txt:13:src/core/content/ContentDB_social.js
+./_governance/cleanup_phase2/delete_paths.txt:26:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase2/git_diff_stat.txt:24: src/_deprecated/core/ContentDB_social.js           |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:47: src/core/content/ContentDB_social.js               |   23 -
+./_governance/cleanup_phase3/delete_paths.filtered.txt:13:src/_deprecated/core/ContentDB_social.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:24:src/core/content/ContentDB_social.js
+./_governance/cleanup_report/file_times.tsv:39:src/_deprecated/core/ContentDB_social.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:71:src/core/content/ContentDB_social.js	2025-12-28T20:59:04+08:00	
+./archive/legacy/core-content/ContentDB_index.js:6:import { ROUND2 as R2_study, ROUND3 as R3_study } from './ContentDB_study.js'
+./archive/legacy/core-content/ContentDB_study.js:1:// src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_before.txt:25: D src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_before.txt:48: D src/core/content/ContentDB_study.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_study.js:1:// ContentDB_study.js — 第一輪命理化調教
+./_governance/cleanup_phase2/git_status_after.txt:25: D src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase2/git_status_after.txt:48: D src/core/content/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:14:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:25:src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/delete_paths.txt:14:src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/delete_paths.txt:27:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_report/all_files.txt:39:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_report/all_files.txt:71:src/core/content/ContentDB_study.js
+./_governance/cleanup_phase2/git_diff_stat.txt:25: src/_deprecated/core/ContentDB_study.js            |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:48: src/core/content/ContentDB_study.js                |   23 -
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:14:src/core/content/ContentDB_study.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:27:src/_deprecated/core/ContentDB_study.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:14:src/_deprecated/core/ContentDB_study.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:25:src/core/content/ContentDB_study.js
+./_governance/cleanup_report/file_times.tsv:40:src/_deprecated/core/ContentDB_study.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:72:src/core/content/ContentDB_study.js	2025-12-28T20:59:04+08:00	
+./archive/legacy/core-content/resultTemplates/anchorSelector.js:1:// src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_phase2/git_status_before.txt:50: D src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:2:src/core/content/resultTemplates/anchorSelector.js	2025-12-30T07:10:00+08:00	
+./_governance/cleanup_phase2/git_diff_stat.txt:50: src/core/content/resultTemplates/anchorSelector.js |  324 ---
+./_governance/cleanup_report/file_times.tsv:74:src/core/content/resultTemplates/anchorSelector.js	2025-12-30T07:10:00+08:00	
+./_governance/cleanup_phase2/CANON_KEEP_SUGGESTION.txt:19:src/core/content/resultTemplates/anchorSelector.js  # keep only if still used; otherwise delete
+./_governance/cleanup_report/all_files.txt:73:src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:26:src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:26:src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_phase2/delete_paths.txt:2:src/core/content/resultTemplates/anchorSelector.js
+./_governance/cleanup_phase2/git_status_after.txt:50: D src/core/content/resultTemplates/anchorSelector.js
+./ROOT_CAUSE.md:172:- **檔案**: `src/core/content/index.js:59-66`
+./ROOT_CAUSE_MIN.md:71:- `src/core/content/index.js` 仍存在 `CONTENT_MAP`，但 `choiceEngine.js` 已不使用
+./reports/question_bank_concept_package.md:33:  - 載入方式：`questionBank/index.js` 的 `getQuestions()`
+./scripts/scanImports.mjs:32:    path.join(base, 'index.js')
+./archive/legacy/questionBank/index.js:2: * core/psych/questionBank/index.js
+./archive/legacy/core-content/ContentDB_money.js:41:// ✅ 給 index.js 用的「穩定匯出名」：ContentDB_money
+./archive/legacy/core-content/ContentDB_index.js:1:// src/core/content/ContentDB_index.js
+./archive/legacy/core-content/ContentDB_relationship.js:41:// ✅ 給 index.js 用的「穩定匯出名」：ContentDB_relationship
+./archive/legacy/core-content/index.js:1:// src/core/content/index.js
+./_governance/cleanup_phase2/git_status_before.txt:42: D src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/git_status_before.txt:49: D src/core/content/index.js
+./_governance/cleanup_phase2/git_status_before.txt:62: D src/core/psych/questionBank/index.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:19:src/core/content/ContentDB_index.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:28:src/core/psych/questionBank/index.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:8:src/core/content/ContentDB_index.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:28:src/core/psych/questionBank/index.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_phase3/delete_paths.filtered.txt:19:src/core/content/ContentDB_index.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:27:src/core/psych/questionBank/index.js
+./_governance/cleanup_phase2/git_diff_stat.txt:42: src/core/content/ContentDB_index.js                |   27 -
+./_governance/cleanup_phase2/git_diff_stat.txt:49: src/core/content/index.js                          |   66 -
+./_governance/cleanup_phase2/git_diff_stat.txt:62: src/core/psych/questionBank/index.js               |  109 -
+./_governance/cleanup_phase2/delete_references.tsv:11:scripts/scanImports.mjs	index.js
+./_governance/cleanup_phase2/git_status_after.txt:42: D src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/git_status_after.txt:49: D src/core/content/index.js
+./_governance/cleanup_phase2/git_status_after.txt:62: D src/core/psych/questionBank/index.js
+./_governance/cleanup_report/file_times.tsv:66:src/core/content/ContentDB_index.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/file_times.tsv:73:src/core/content/index.js	2025-12-28T20:54:58+08:00	
+./_governance/cleanup_report/file_times.tsv:101:src/core/psych/questionBank/index.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_report/file_times.tsv:108:src/router/index.js	2025-12-28T14:50:42+08:00	2025-12-23T06:17:28+00:00
+./_governance/cleanup_report/all_files.txt:65:src/core/content/ContentDB_index.js
+./_governance/cleanup_report/all_files.txt:72:src/core/content/index.js
+./_governance/cleanup_report/all_files.txt:100:src/core/psych/questionBank/index.js
+./_governance/cleanup_report/all_files.txt:107:src/router/index.js
+./_governance/cleanup_phase2/CANON_KEEP_SUGGESTION.txt:36:src/router/index.js
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_relationship.js:17:// ✅ 這個就是你 index.js 正在 import 的名字：ContentDB_relationship
+./_governance/cleanup_report/REVIEW.txt:29:src/core/content/index.js	2025-12-28T20:54:58+08:00	
+./_governance/cleanup_report/REVIEW.txt:81:src/router/index.js	2025-12-28T14:50:42+08:00	2025-12-23T06:17:28+00:00
+./_governance/cleanup_phase2/delete_paths.txt:8:src/core/content/ContentDB_index.js
+./_governance/cleanup_phase2/delete_paths.txt:28:src/core/psych/questionBank/index.js
+./archive/legacy/questionBank/index.js:11:import money from './money.js'
+./reports/question_bank_concept_package.md:31:- **舊版題庫（legacy）**：`src/core/psych/questionBank/money.js`, `relationship.js`
+./reports/question_bank_concept_package.md:115:- `src/core/psych/questionBank/money.js`, `relationship.js`：舊版題庫（legacy，仍被 scorer 讀取）
+./reports/question_bank_concept_package.md:228:**舊版題庫（legacy）的 weights 格式**（`questionBank/money.js`）：
+./archive/legacy/core-content/ContentDB_index.js:2:import { ROUND2 as R2_money, ROUND3 as R3_money } from './ContentDB_money.js'
+./archive/legacy/questionBank/money.js:2: * core/psych/questionBank/money.js
+./_governance/cleanup_phase2/git_status_before.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_before.txt:44: D src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_before.txt:63: D src/core/psych/questionBank/money.js
+./_governance/cleanup_phase2/git_diff_stat.txt:21: src/_deprecated/core/ContentDB_money.js            |   23 -
+./_governance/cleanup_phase2/git_diff_stat.txt:44: src/core/content/ContentDB_money.js                |   50 -
+./_governance/cleanup_phase2/git_diff_stat.txt:63: src/core/psych/questionBank/money.js               |  151 --
+./_governance/cleanup_phase2/delete_paths.txt:10:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/delete_paths.txt:23:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/delete_paths.txt:29:src/core/psych/questionBank/money.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:10:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:23:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:29:src/core/psych/questionBank/money.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_report/file_times.tsv:36:src/_deprecated/core/ContentDB_money.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:68:src/core/content/ContentDB_money.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/file_times.tsv:102:src/core/psych/questionBank/money.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_phase2/git_status_after.txt:21: D src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_after.txt:44: D src/core/content/ContentDB_money.js
+./_governance/cleanup_phase2/git_status_after.txt:63: D src/core/psych/questionBank/money.js
+./archive/legacy/core-content/ContentDB_money.js:1:// src/core/content/ContentDB_money.js
+./_governance/cleanup_report/all_files.txt:35:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_report/all_files.txt:67:src/core/content/ContentDB_money.js
+./_governance/cleanup_report/all_files.txt:101:src/core/psych/questionBank/money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:21:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:29:src/core/psych/questionBank/money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:10:src/_deprecated/core/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:21:src/core/content/ContentDB_money.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:28:src/core/psych/questionBank/money.js
+./archive/legacy/core-content/index.js:3:import * as Money from './ContentDB_money.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_money.js:1:// ContentDB_money.js — 第一輪命理化調教（不改 id / weights / axes）
+./_governance/cleanup_phase2/git_status_before.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:33: D src/_deprecated/core/domains/relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:45: D src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_before.txt:64: D src/core/psych/questionBank/relationship.js
+./reports/question_bank_concept_package.md:31:- **舊版題庫（legacy）**：`src/core/psych/questionBank/money.js`, `relationship.js`
+./reports/question_bank_concept_package.md:115:- `src/core/psych/questionBank/money.js`, `relationship.js`：舊版題庫（legacy，仍被 scorer 讀取）
+./_governance/cleanup_phase2/git_status_after.txt:22: D src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:33: D src/_deprecated/core/domains/relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:45: D src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/git_status_after.txt:64: D src/core/psych/questionBank/relationship.js
+./archive/legacy/questionBank/index.js:12:import relationship from './relationship.js'
+./archive/legacy/questionBank/relationship.js:2: * core/psych/questionBank/relationship.js
+./_governance/cleanup_phase2/git_diff_stat.txt:22: src/_deprecated/core/ContentDB_relationship.js     |   21 -
+./_governance/cleanup_phase2/git_diff_stat.txt:33: src/_deprecated/core/domains/relationship.js       |    0
+./_governance/cleanup_phase2/git_diff_stat.txt:45: src/core/content/ContentDB_relationship.js         |   50 -
+./_governance/cleanup_phase2/git_diff_stat.txt:64: src/core/psych/questionBank/relationship.js        |  104 -
+./_governance/cleanup_phase3/delete_paths.raw.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:22:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.raw.txt:30:src/core/psych/questionBank/relationship.js
+./archive/legacy/core-content/ContentDB_index.js:3:import { ROUND2 as R2_relationship, ROUND3 as R3_relationship } from './ContentDB_relationship.js'
+./_governance/cleanup_phase3/delete_paths.filtered.txt:11:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:22:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase3/delete_paths.filtered.txt:29:src/core/psych/questionBank/relationship.js
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:11:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:24:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/DELETE_CANDIDATES.txt:30:src/core/psych/questionBank/relationship.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_report/file_times.tsv:37:src/_deprecated/core/ContentDB_relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:48:src/_deprecated/core/domains/relationship.js	2025-12-28T20:53:35+08:00	
+./_governance/cleanup_report/file_times.tsv:69:src/core/content/ContentDB_relationship.js	2025-12-28T20:59:04+08:00	
+./_governance/cleanup_report/file_times.tsv:103:src/core/psych/questionBank/relationship.js	2025-12-28T14:50:42+08:00	
+./_governance/cleanup_phase2/delete_paths.txt:11:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_phase2/delete_paths.txt:24:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_phase2/delete_paths.txt:30:src/core/psych/questionBank/relationship.js
+./_governance/cleanup_report/all_files.txt:36:src/_deprecated/core/ContentDB_relationship.js
+./_governance/cleanup_report/all_files.txt:47:src/_deprecated/core/domains/relationship.js
+./_governance/cleanup_report/all_files.txt:68:src/core/content/ContentDB_relationship.js
+./_governance/cleanup_report/all_files.txt:102:src/core/psych/questionBank/relationship.js
+./_governance/cleanup_report/REVIEW.txt:36:src/_deprecated/core/domains/relationship.js	2025-12-28T20:53:35+08:00	
+./archive/legacy/core-content/ContentDB_relationship.js:1:// src/core/content/ContentDB_relationship.js
+./archive/legacy/core-content/index.js:4:import * as Relationship from './ContentDB_relationship.js'
+./archive/legacy_question_bank/2025-12-31/src/_deprecated/core/ContentDB_relationship.js:1:// ContentDB_relationship.js — 第一輪命理化調教（不改 id / weights / axes）

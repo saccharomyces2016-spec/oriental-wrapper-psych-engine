@@ -1,0 +1,5 @@
+my-first-app/archive/legacy/core-content/index.js
+my-first-app/archive/legacy/questionBank/index.js
+my-first-app/src/index.ts
+my-first-app/src/main.js
+my-first-app/src/router/index.js

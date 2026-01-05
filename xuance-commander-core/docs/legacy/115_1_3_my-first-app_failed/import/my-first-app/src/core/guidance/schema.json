@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/soul/guidance.schema.json",
+  "title": "GuidancePayload",
+  "type": "object",
+  "required": ["actions", "forecasts", "warnings", "meta"],
+  "properties": {
+    "actions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/actionBundle" }
+    },
+    "forecasts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/forecastBundle" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["version", "domain", "generatedAt", "note"],
+      "properties": {
+        "version": { "type": "string" },
+        "domain": { "type": "string" },
+        "generatedAt": { "type": "string" },
+        "note": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "actionBundle": {
+      "type": "object",
+      "required": ["id", "title", "tone", "rationale", "actions"],
+      "properties": {
+        "id": { "type": "string" },
+        "domain": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "title": { "type": "string" },
+        "tone": { "type": "string", "enum": ["warm", "neutral", "sharp"] },
+        "rationale": { "type": "string" },
+        "actions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/actionItem" }
+        },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "actionItem": {
+      "type": "object",
+      "required": ["type", "label", "steps", "time"],
+      "properties": {
+        "type": { "type": "string", "enum": ["micro", "habit", "plan"] },
+        "label": { "type": "string" },
+        "steps": { "type": "array", "items": { "type": "string" } },
+        "time": { "type": "string" }
+      }
+    },
+    "forecastBundle": {
+      "type": "object",
+      "required": ["id", "title", "probability", "window", "signals", "ifThen", "counterMoves"],
+      "properties": {
+        "id": { "type": "string" },
+        "domain": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "title": { "type": "string" },
+        "probability": { "type": "string", "enum": ["low", "mid", "high"] },
+        "window": { "type": "string" },
+        "signals": { "type": "array", "items": { "type": "string" } },
+        "ifThen": {
+          "type": "object",
+          "required": ["if", "then"],
+          "properties": {
+            "if": { "type": "string" },
+            "then": { "type": "string" }
+          }
+        },
+        "counterMoves": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

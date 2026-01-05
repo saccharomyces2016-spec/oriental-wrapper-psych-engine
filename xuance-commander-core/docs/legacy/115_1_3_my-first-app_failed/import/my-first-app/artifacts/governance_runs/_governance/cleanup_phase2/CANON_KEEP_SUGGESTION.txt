@@ -1,0 +1,36 @@
+# Canonical final set (suggestion based on your pasted file_times excerpt)
+# - App flow/UI
+src/views/03_Resonance.vue
+src/views/05_Dashboard.vue
+
+# - Core ontology/question bank
+src/core/ontology/questionBank.v1.json
+src/core/ontology/ontologyLoader.js
+src/core/ontology/motherThemes.v1.json
+src/core/ontology/patternToThemeMap.v1.js
+src/core/ontology/resultLexicon.v1.json
+src/core/ontology/behaviorFacetLexicon.v1.json
+src/core/ontology/guidance*.json
+
+# - Result templates + mapping tables
+src/core/content/resultTemplates/*.v1.json
+src/core/content/resultTemplates/loader.js
+src/core/content/resultTemplates/stateTagExtractor.js
+src/core/content/resultTemplates/anchorSelector.js  # keep only if still used; otherwise delete
+
+# - Telemetry
+src/core/telemetry/choiceMetrics.js
+
+# - Core runtime
+src/core/SoulArchitect.js
+src/core/choiceEngine.js
+src/core/psych/scorer.js
+src/core/psych/motherThemeMapper.js
+
+# - Build system
+package.json
+package-lock.json
+vite.config.js
+src/main.js
+src/App.vue
+src/router/index.js

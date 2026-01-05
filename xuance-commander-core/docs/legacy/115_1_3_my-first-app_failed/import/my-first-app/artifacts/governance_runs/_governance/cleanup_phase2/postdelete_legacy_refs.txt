@@ -1,0 +1,4 @@
+scripts/deprecateUnused.mjs:34:  return path.join('src/_deprecated', rel)
+scripts/deprecateUnused.mjs:52:    console.log('Dry run: the following files would be moved to src/_deprecated/')
+scripts/deprecateUnused.mjs:58:    console.log('Moving files to src/_deprecated/ ...')
+scripts/validate/validate-ontology-consistency.mjs:205:  // This is a basic check - actual domain usage is in ContentDB_*.js files

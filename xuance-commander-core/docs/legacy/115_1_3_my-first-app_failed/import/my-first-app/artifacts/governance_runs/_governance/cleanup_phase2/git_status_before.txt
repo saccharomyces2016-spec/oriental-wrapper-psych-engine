@@ -1,0 +1,149 @@
+ M .env
+ M package-lock.json
+ M package.json
+ M reports/pattern_tag_policy_v1.md
+ M reports/pattern_tag_usage_audit.md
+ M reports/question_bank_concept_package.md
+ M scripts/analyzeAnchorPerformance.mjs
+ M scripts/auditPatternTags.mjs
+ M scripts/generateAnchorSamples.mjs
+ M scripts/generateQuestionBlueprint.mjs
+ M src/App.vue
+ D src/_deprecated/core/ContentDB.js
+ D src/_deprecated/core/ContentDB_03.js
+ D src/_deprecated/core/ContentDB_03_finance.js
+ D src/_deprecated/core/ContentDB_03_love.js
+ D src/_deprecated/core/ContentDB_career.js
+ D src/_deprecated/core/ContentDB_family.js
+ D src/_deprecated/core/ContentDB_finance.js
+ D src/_deprecated/core/ContentDB_health.js
+ D src/_deprecated/core/ContentDB_love.js
+ D src/_deprecated/core/ContentDB_money.js
+ D src/_deprecated/core/ContentDB_relationship.js
+ D src/_deprecated/core/ContentDB_self.js
+ D src/_deprecated/core/ContentDB_social.js
+ D src/_deprecated/core/ContentDB_study.js
+ D src/_deprecated/core/WuXingEngine.js
+ D src/_deprecated/core/domainIndex.js
+ D src/_deprecated/core/domainProfiles.js
+ D src/_deprecated/core/domains/career.js
+ D src/_deprecated/core/domains/family.js
+ D src/_deprecated/core/domains/finance.js
+ D src/_deprecated/core/domains/health.js
+ D src/_deprecated/core/domains/relationship.js
+ D src/_deprecated/core/domains/self.js
+ D src/_deprecated/core/guidance/validateGuidance.js
+ M src/core/SoulArchitect.js
+ M src/core/choiceEngine.js
+ D src/core/content/ContentDB_career.js
+ D src/core/content/ContentDB_family.js
+ D src/core/content/ContentDB_finance.js
+ D src/core/content/ContentDB_health.js
+ D src/core/content/ContentDB_index.js
+ D src/core/content/ContentDB_love.js
+ D src/core/content/ContentDB_money.js
+ D src/core/content/ContentDB_relationship.js
+ D src/core/content/ContentDB_self.js
+ D src/core/content/ContentDB_social.js
+ D src/core/content/ContentDB_study.js
+ D src/core/content/index.js
+ D src/core/content/resultTemplates/anchorSelector.js
+ D src/core/content/resultTemplates/anchor_statements.v1.json
+ D src/core/content/resultTemplates/attribution_error_matrix.v1.json
+ D src/core/content/resultTemplates/consequence_chain_library.v1.json
+ D src/core/content/resultTemplates/five_element_mapping.v1.json
+ D src/core/content/resultTemplates/intervention_boundary_matrix.v1.json
+ D src/core/content/resultTemplates/loader.js
+ D src/core/content/resultTemplates/stateTagExtractor.js
+ M src/core/ontology/ontologyLoader.js
+ M src/core/ontology/patternToThemeMap.v1.js
+ D src/core/ontology/questionBank.v1.json
+ M src/core/psych/motherThemeMapper.js
+ D src/core/psych/questionBank/index.js
+ D src/core/psych/questionBank/money.js
+ D src/core/psych/questionBank/relationship.js
+ M src/core/psych/scorer.js
+ M src/core/telemetry/choiceMetrics.js
+ M src/main.js
+ M src/ui/transitions/StageTransition.vue
+ M src/views/01_Origin.vue
+ M src/views/03_Resonance.vue
+ M src/views/05_Dashboard.vue
+ M vite.config.js
+?? GOVERNANCE_UI_AUDIT_REPORT.md
+?? IMPLEMENTATION_REPORT.md
+?? PATCH_PLAN.md
+?? PRODUCT_ANALYSIS_REPORT.md
+?? ROOT_CAUSE.md
+?? ROOT_CAUSE_MIN.md
+?? VERIFICATION_REPORT.md
+?? WORKFLOW_ROLES_AND_RECOMMENDATIONS.md
+?? _governance/
+?? archive/
+?? cleanup_governance.sh
+?? docs/
+?? qbank_coverage_report.json
+?? reports/.gitkeep
+?? reports/MIN_ACCEPTANCE_ENTRY_REPORT.md
+?? reports/anchor_samples.json
+?? reports/anchor_samples.txt
+?? reports/digest.example.txt
+?? reports/digest.txt
+?? reports/p1_question_blueprint_v1.json
+?? reports/pattern_tag_audit_raw.json
+?? reports/proposals.summary.example.json
+?? scripts/diagnoseReading.mjs
+?? scripts/fixChoiceMeta.mjs
+?? scripts/fixQuestionBankJSON.mjs
+?? scripts/fixQuestionBankJSON2.mjs
+?? scripts/fixQuestionBankJSON3.mjs
+?? scripts/fixQuestionBankJSON4.mjs
+?? scripts/fixQuestionBankJSONFinal.mjs
+?? scripts/smoke-flow.mjs
+?? scripts/smoke-ui-governance.mjs
+?? scripts/telemetryServer.mjs
+?? scripts/validate/
+?? scripts/validateNarrative.mjs
+?? scripts/validateOutputV2.mjs
+?? scripts/validateReading.mjs
+?? scripts/validateRound2.mjs
+?? scripts/validateRound4.mjs
+?? scripts/verify-domain-canonicalization.mjs
+?? scripts/verify-entry-no-legacy.mjs
+?? scripts/verify-no-legacy-imports.mjs
+?? scripts/verify-r3-gate.mjs
+?? scripts/verify-round2-data-source.mjs
+?? scripts/verify-round2-schema.mjs
+?? scripts/verify-round4-coverage.mjs
+?? scripts/verify-ui-no-legacy-imports.mjs
+?? scripts/verify/
+?? scripts/verifyProxy.mjs
+?? server/
+?? src/components/ReportIssueButton.vue
+?? src/config/
+?? src/core/config/
+?? src/core/flow/
+?? src/core/governanceDebugExpose.js
+?? src/core/llm/
+?? src/core/narrative/elementNarrative.v1.js
+?? src/core/narrative/round2OracularText.v1.js
+?? src/core/ontology/domainAlias.v1.js
+?? src/core/ontology/domainCanonicalMap.js
+?? src/core/ontology/patternTag.v1.js
+?? src/core/ontology/round1Domains.v1.json
+?? src/core/ontology/round2FourSymbol.v1.json
+?? src/core/ontology/round3Ipsative.v2.json
+?? src/core/ontology/round4Anchors.v1.json
+?? src/core/ontology/round4IntensityTrigger.v1.json
+?? src/core/ontology/signalEnums.ts
+?? src/core/scoring/
+?? src/core/telemetry/telemetryClient.js
+?? src/core/types/
+?? src/core/ui/
+?? src/dev/
+?? src/engine/
+?? src/index.ts
+?? src/metaphysics/
+?? src/views/components/
+?? tests/
+?? vitest.config.ts

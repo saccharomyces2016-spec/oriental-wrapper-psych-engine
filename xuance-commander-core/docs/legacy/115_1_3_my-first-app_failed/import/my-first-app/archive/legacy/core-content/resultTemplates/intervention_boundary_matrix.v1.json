@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "介入邊界矩陣：定義建議的適用範圍和限制",
+    "note": "Frozen - do not edit, only extend"
+  },
+  "items": [
+    {
+      "id": "interv_self_help_only",
+      "label": "僅限自我調整",
+      "confidence": "high",
+      "uncertainty_note": "此類建議適用於一般情況，若症狀嚴重需專業協助",
+      "do_not_say": [
+        "這可以治療你的疾病",
+        "這能解決所有問題",
+        "不需要看醫生",
+        "這比專業治療有效",
+        "你不需要其他幫助"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "這些建議可以作為日常自我調整的參考",
+        "guide": "若情況持續或加重，建議尋求專業協助",
+        "action": "先試行一週，觀察是否有改善；若無，考慮尋求專業支持"
+      }
+    },
+    {
+      "id": "interv_relationship_boundary",
+      "label": "關係介入邊界",
+      "confidence": "high",
+      "uncertainty_note": "關係問題涉及雙方，個人調整有極限",
+      "do_not_say": [
+        "你改變了對方就會改變",
+        "這都是你的責任",
+        "你必須完全配合對方",
+        "關係問題都是你的錯"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "關係是雙向的，你的調整確實有影響",
+        "guide": "同時，關係的改善需要雙方參與，不是單方面責任",
+        "action": "先從你能控制的部分開始，例如表達方式或界線設定"
+      }
+    },
+    {
+      "id": "interv_career_scope",
+      "label": "職涯建議範圍",
+      "confidence": "medium",
+      "uncertainty_note": "職涯建議需考慮市場環境和個人條件，非絕對",
+      "do_not_say": [
+        "你應該立刻轉職",
+        "這個行業不適合你",
+        "你註定會失敗",
+        "你必須做這個工作"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "職涯選擇確實需要考慮多個因素",
+        "guide": "建議先從探索和試行開始，而非立即做重大決定",
+        "action": "列出三個可以探索的方向，先做資訊收集和短期試行"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+

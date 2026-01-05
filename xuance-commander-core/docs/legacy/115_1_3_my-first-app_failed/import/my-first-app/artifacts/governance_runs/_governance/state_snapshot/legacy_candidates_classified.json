@@ -1,0 +1,63 @@
+{
+  "src/core/content/ContentDB_*.js": {
+    "files": [],
+    "status": "ALREADY_DELETED",
+    "referenced_by": [],
+    "classification": "DEAD",
+    "can_delete": true,
+    "note": "所有 ContentDB_*.js 檔案已從 src 目錄移除（find 結果為 0）。可能已移至 archive 或已刪除。"
+  },
+  "src/_deprecated/**": {
+    "files": [],
+    "status": "ALREADY_DELETED",
+    "referenced_by": [
+      "scripts/deprecateUnused.mjs"
+    ],
+    "classification": "DEAD",
+    "can_delete": true,
+    "note": "src/_deprecated 目錄已不存在。scripts/deprecateUnused.mjs 仍引用此路徑，但僅為工具腳本。"
+  },
+  "src/core/psych/questionBank/**": {
+    "files": [],
+    "status": "ALREADY_DELETED",
+    "referenced_by": [],
+    "classification": "DEAD",
+    "can_delete": true,
+    "note": "psych/questionBank 目錄已不存在。"
+  },
+  "src/core/ontology/questionBank.v1.json": {
+    "files": ["src/core/ontology/questionBank.v1.json"],
+    "status": "MISSING_BUT_REFERENCED",
+    "referenced_by": [
+      "scripts/fixQuestionBankJSON*.mjs",
+      "scripts/validate/validate-questionbank.mjs",
+      "_governance/cleanup_phase3/delete_paths.blocked_by_keep.txt"
+    ],
+    "classification": "DEV_TOOLING",
+    "can_delete": false,
+    "note": "檔案不存在，但被多個 scripts 引用。可能是 legacy 引用，需確認 scripts 是否仍需要。"
+  },
+  "archive/legacy/**": {
+    "files": [
+      "archive/legacy/core-content/ContentDB_*.js",
+      "archive/legacy/questionBank/*.js"
+    ],
+    "status": "ARCHIVED",
+    "referenced_by": [],
+    "classification": "ARCHIVE",
+    "can_delete": true,
+    "note": "已歸檔，不影響 runtime。可安全刪除。"
+  },
+  "archive/legacy_question_bank/**": {
+    "files": [
+      "archive/legacy_question_bank/2025-12-31/src/_deprecated/core/**"
+    ],
+    "status": "ARCHIVED",
+    "referenced_by": [],
+    "classification": "ARCHIVE",
+    "can_delete": true,
+    "note": "已歸檔，不影響 runtime。可安全刪除。"
+  }
+}
+
+

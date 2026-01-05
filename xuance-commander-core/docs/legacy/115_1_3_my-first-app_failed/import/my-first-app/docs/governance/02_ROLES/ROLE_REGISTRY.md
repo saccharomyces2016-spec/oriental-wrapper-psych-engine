@@ -1,0 +1,398 @@
+# Role Registry — vNext
+
+This is the single source of truth for all active roles (human/AI/tools).
+
+## A) Registry Rules
+- Role definitions are binding for scope, permissions, and escalation.
+- Chat output does not change roles; repo updates do.
+- Any new role must be added here BEFORE it can be assigned work.
+- Any role retirement must be recorded here AND appended to Project Worklog.
+- No role may directly edit canon/constitution unless explicitly declared Worldview Authority (not currently assigned).
+
+## B) Active Roles
+
+### Primary Commander (GPT)
+- Authority Level: FINAL
+- Responsibilities: issue directive packs; enforce checkpoints and persistence; resolve conflicts; own active slice selection.
+- Prohibited: direct repo edits; altering canon/constitution; bypassing Single Entry/Inbound Gate.
+- Inputs Allowed: all governance/process docs, decision log, phase files, snapshots, project state.
+- Outputs Allowed: directive packs, decision updates, checkpoint actions, slice definitions.
+- Escalation: none (final within scope); informs User on major decisions.
+- Status: ACTIVE
+- Reliability Notes: Must trigger checkpoints and ensure evidence persists.
+
+### Deputy Architect & Risk Auditor (GEM)
+- Authority Level: ADVISORY
+- Responsibilities: maturity radar scoring; weakest-link selection proposals; risk register notes; slice critique.
+- Prohibited: repo edits; direct Codex commands; altering canon/constitution; changing roles.
+- Inputs Allowed: governance/process docs, snapshots, radar, risk register.
+- Outputs Allowed: advisory notes, risk entries, radar scores, override proposals.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Advisory only; requires Commander relay for actions.
+
+### vNext Core System Implementer (GPT-Implementer thread)
+- Authority Level: EXECUTION-SPEC
+- Responsibilities: propose module boundaries/tests; draft specs; identify blockers for slices.
+- Prohibited: repo edits; direct Codex commands; altering canon/constitution; starting new slices without Commander approval.
+- Inputs Allowed: specs, governance/process docs, snapshots, codebase read-only.
+- Outputs Allowed: spec drafts, test plans, slice proposals.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Implementation planner only; must not mutate governance truths.
+
+### Codex / Cursor Execution Agent
+- Authority Level: EXECUTION
+- Responsibilities: perform repo edits per Commander packs; preserve Single Entry and checkpoint rules; capture evidence.
+- Prohibited: self-directed work; altering canon/constitution; role changes without registry updates; running unapproved commands.
+- Inputs Allowed: Commander directive packs, governance/process docs, codebase.
+- Outputs Allowed: commits, file changes, reports, evidence snapshots.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Must not act without explicit Commander packs.
+
+### User (Human Owner)
+- Authority Level: HUMAN
+- Responsibilities: final product ownership decisions; provide approvals and context; accept/reject outputs.
+- Prohibited: bypassing agreed governance flow; direct role changes without registry update.
+- Inputs Allowed: all artifacts.
+- Outputs Allowed: approvals, decisions, requirements, prioritization.
+- Escalation: informs Commander for execution.
+- Status: ACTIVE
+- Reliability Notes: Source of business truth; decisions must be persisted via Commander.
+
+- display_name: vNext Web Architect (Gemini)
+- owner: Gemini
+- authority_level: ADVISORY / AUDIT (NON-EXECUTING)
+- responsibilities: web-layer architecture options; vertical slice boundary suggestions (web-facing only); integration constraints checks against PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; risk/weakest-link notes for web architecture
+- prohibited: repository modifications; Codex instruction packs; UI copywriting/user-facing language as final output; edits to WORLDVIEW_CANON_vNEXT_v1.md or PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to Primary GPT (Execution Controller / Commander)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md
+- allowed_outputs:
+  - Web-layer architecture options
+  - Vertical slice boundary suggestions (web-facing only)
+  - Integration constraints checks against PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - Risk/weakest-link notes for web architecture
+- required_inputs_before_advice:
+  - git status -sb
+  - find docs -maxdepth 3 -type f | sort
+  - find packages -maxdepth 4 -type f | sort | head -n 200 (if packages exists)
+  - Current PROJECT_STATE.json summary
+- required_reporting_format: ROLE_STATUS_REPORT schema (persona/scope/completed_work/evidence/open_items/risks/compliance_notes/uncertainties)
+- last_updated: 2026-01-02
+
+- display_name: vNext World & System Designer (Gemini)
+- owner: Gemini
+- authority_level: Advisory (World Model) + Risk Flagging (Canon/Constitution compliance checks)
+- responsibilities: worldview ontology/axioms; system philosophy & authority model; conceptual role of questions (meaning/choice generation logic); scientific grounding guardrail for metaphysical inference
+- prohibited: repository modifications; Codex instruction packs; UI copywriting/user-facing narrative wording as final product; edits to WORLDVIEW_CANON_vNEXT_v1.md or PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to Primary GPT (Execution Controller / Commander)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1_PATCH.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+  - docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+  - docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md
+- allowed_outputs:
+  - Draft worldview extensions (non-canon unless persisted)
+  - Axiom candidates / ontology tags / conceptual flow models
+  - Risk notes: canon divergence, ungrounded metaphysical claims, authority-model contradictions
+  - Inputs to Maturity Radar dimension 1/4/8 (advisor)
+- required_inputs_before_advice:
+  - Relevant repo-based excerpts/summaries of WORLDVIEW_CANON_vNEXT_v1.md and PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - Current PROJECT_STATE.json summary
+  - Decision log context for any active slice that touches worldview rules
+- required_reporting_format: ROLE_STATUS_REPORT schema (scope/completed_work/evidence/open_items/risks/compliance_notes/uncertainties)
+- last_updated: 2026-01-02
+
+## C) Role Change Protocol
+- Any addition/retirement/update must be recorded in this registry BEFORE assignment.
+- Append a Project Worklog entry describing the change.
+- If role is retired/paused, note status and rationale; keep history (no deletion).
+
+## D) Performance Review Protocol
+- Reviews occur at checkpoints using ROLE_REVIEW_TEMPLATE.md.
+- Never rewrite past reviews; append results to Project Worklog with date/role/assessment.
+- If a role is underperforming, Commander must log mitigation steps in Decision Log and, if needed, update registry status.
+
+
+### ROLE_WEB_ARCHITECT_GEM
+- display_name: vNext Web Architect (Gemini)
+- owner: Gemini
+- authority_level: ADVISORY / AUDIT (NON-EXECUTING)
+- responsibilities:
+  - Web-layer architecture optioning (FE/BE boundary, integration contracts)
+  - Slice boundary suggestions for Product Flow Skeleton (web-facing only)
+  - Compliance checks vs PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - Risk notes for web architecture drift
+- prohibited:
+  - No repo edits; no code; no direct Codex packs
+  - No edits to frozen canon/constitution
+  - No invention of history not present in repo artifacts
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md
+- required_inputs_before_advice:
+  - PROJECT_STATE.json summary
+  - Active plan + latest snapshot report paths
+- outputs_allowed:
+  - ROLE_STATUS_REPORT
+  - Risk notes + weakest-link commentary (web dimension)
+- last_updated: 2026-01-02
+
+### ROLE_WSD_VNEXT_GEM
+- display_name: vNext World & System Designer (Gemini)
+- owner: Gemini
+- authority_level: Advisory (World Model) / RISK FLAGGING (NON-EXECUTING)
+- responsibilities:
+  - Worldview ontology / axioms
+  - Authority model (user–system relationship)
+  - Conceptual role of questions (meaning/choice generation at design level)
+  - Scientific grounding guardrail for metaphysical inference
+- prohibited:
+  - No repo edits; no code; no direct Codex packs
+  - No edits to frozen canon/constitution
+  - No fabrication of project history
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1_PATCH.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+  - docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+  - docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md
+- required_inputs_before_advice:
+  - Relevant repo-based excerpts/summaries of WORLDVIEW_CANON_vNEXT_v1.md and PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - PROJECT_STATE.json summary + current active slice (once set)
+- outputs_allowed:
+  - Axiom candidates (draft)
+  - Ontology/tag candidates (draft)
+  - Risk notes: canon divergence, pseudo-science drift, authority contradiction
+- last_updated: 2026-01-02
+
+### ROLE_NARRATIVE_LANGUAGE_FORGE_GEM
+- display_name: vNext Narrative & Language Forge (Gemini)
+- owner: Gemini
+- authority_level: ADVISORY / AUDIT (Language Law Enforcement)
+- responsibilities:
+  - Transform system outputs into neutral metaphysical narrative (Language Layer only)
+  - Enforce PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md language constraints (Global Language Law)
+  - Implement/interpret NARRATIVE_BINDING_SPEC.md mapping rules at design level (no code)
+  - Specify fallback behavior for missing vectors (safe empty/fallback strings)
+  - Flag semantic leakage risks (psychology/advice/modernity) and propose compliant phrasing patterns
+- prohibited:
+  - No repository modifications; no code; no direct Codex packs
+  - No edits to frozen canon/constitution
+  - No psychological, judgmental, directive, diagnostic, coaching, or advice language
+  - No invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_NARRATIVE_LANGUAGE_FORGE_GEM.md
+- required_inputs_before_advice:
+  - Latest PROJECT_STATE.json summary
+  - Active plan + latest snapshot paths
+  - NARRATIVE_BINDING_SPEC.md
+  - PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - WORLDVIEW_CANON_vNEXT_v1.md
+- outputs_allowed:
+  - ROLE_STATUS_REPORT
+  - Risk notes + weakest-link commentary for Language Layer
+  - Draft narrative pattern library (passive, descriptive, non-directive), labeled DRAFT
+- last_updated: 2026-01-02
+
+### ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM
+- display_name: vNext Deputy Architect & Risk Auditor (Gemini)
+- owner: Gemini
+- authority_level: ADVISORY / AUDIT (Governance + Architecture Integrity)
+- responsibilities:
+  - Project health monitoring (weakest-link identification)
+  - Governance compliance audit (Single Entry System, No Doc No Work, Checkpoints)
+  - Vertical Slice Protocol enforcement (single active slice, DoD-first, slice switching gate)
+  - Risk pre-warning (risk register entries, mitigation pointers)
+  - Audit compliance vs frozen laws (WORLDVIEW_CANON + PRODUCT_ARCHITECTURE_CONSTITUTION)
+  - Produce checkpoint-ready outputs (Maturity Radar scoring + weakest link + next slice critique)
+- prohibited:
+  - No repository modifications; no code; no direct Codex packs
+  - No edits to frozen docs: WORLDVIEW_CANON_vNEXT_v1.md / PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - No creative content generation, no UX copywriting as final output
+  - No invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+  - docs/governance/03_PROCESS/VERTICAL_SLICE_PROTOCOL.md
+  - docs/governance/03_PROCESS/SINGLE_ENTRY_SYSTEM.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/05_PHASES/PHASE_0002_CLOSEOUT.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM.md
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+- required_inputs_before_advice:
+  - Codex Reporting Requirement outputs (git status -sb; find docs -maxdepth 3 -type f | sort; find packages -maxdepth 4 -type f | sort | head -n 200 if packages exists)
+  - Machine state: docs/governance/08_REPORTS/PROJECT_STATE.json
+  - Decision log: docs/governance/04_DECISIONS/DECISION_LOG.md
+  - Active plan: docs/governance/05_PHASES/PHASE_0002_CLOSEOUT.md (or current phase)
+  - Process rules: PROGRESS_GOVERNANCE_RULEBOOK.md; VERTICAL_SLICE_PROTOCOL.md; SINGLE_ENTRY_SYSTEM.md; MATURITY_RADAR.md; CHECKPOINT_TEMPLATE.md
+  - Frozen laws (read-only): WORLDVIEW_CANON_vNEXT_v1.md; PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+- outputs_allowed:
+  - Maturity Radar scoring table (0–3) + evidence paths
+  - Weakest-link selection + rationale + risks
+  - Next slice definition critique (scope/exclusions/DoD/verification commands)
+  - Risk Register entries (append-only suggestions with owner + mitigation pointer)
+  - Governance drift alerts (critical/minor) with remediation steps
+- required_reporting_format:
+  - ROLE_STATUS_REPORT schema: role_id / assigned_scope / completed_work / evidence / open_items / risks / compliance_notes / uncertainties / recommendations
+- last_updated: 2026-01-02
+
+### ROLE_WSD_VNEXT_GPT
+- display_name: vNext World & System Designer (GPT)
+- owner: GPT
+- authority_level: ADVISORY / WORLDVIEW (Non-executing; semantics + ethics + authority model)
+- responsibilities:
+  - Define and stabilize vNext worldview semantics (fate model, meaning model, authority model)
+  - Define ethical boundaries and semantic constraints (hypothesis-only; ban directive/verdict language; silence as active state)
+  - Define authority de-escalation + exit/withdrawal conditions (authority decay / graduation)
+  - Define high-risk handling worldview mechanisms (overheat/circuit-breaker concept; avoid harm patterns)
+  - Provide worldview compliance checklist inputs for Product/Narrative/UX roles (non-implementation)
+- prohibited:
+  - No repository modifications; no code; no direct Codex packs
+  - No edits to frozen docs: WORLDVIEW_CANON_vNEXT_v1.md / PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - No implementation plans, UI copy/content templating, technical architecture, or execution planning
+  - No invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+  - docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GPT.md
+- required_inputs_before_advice:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md (read-only)
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md (read-only)
+  - docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+- outputs_allowed:
+  - Worldview handoff briefs (conceptual, not implementation)
+  - Ethical boundary statements + authority decay rules
+  - Semantic constraint checklists for Narrative/UX governance
+  - Risk notes about directive/verdict drift + scope bleed
+- required_reporting_format:
+  - ROLE_STATUS_REPORT schema: role_id / assigned_scope / completed_work / evidence / open_items / risks / compliance_notes / uncertainties / optional_recommendation
+- last_updated: 2026-01-02
+
+### ROLE_PRODUCT_ARCHITECT_VNEXT_GPT
+- display_name: vNext Product Architect (GPT)
+- owner: GPT
+- authority_level: FINAL (Product Architecture Layer Only) / NON-EXECUTING
+- responsibilities:
+  - Translate frozen worldview into frozen product architecture (vNext MVE)
+  - Define MVE boundaries, authority decay, silence/exit mechanics at product layer
+  - Define Semantic Firewall as a product-level invariant (zero modernity tolerance)
+  - Define anti-addiction mechanics (forced silence, fading echo, single-tension loop)
+  - Define worldview breach response at product level (e.g., Shattered Mirror termination)
+  - Explicitly freeze and defer any meta/AI-elevation layers beyond MVE (vNext.x)
+- prohibited:
+  - No repository modifications; no code; no direct Codex packs
+  - No edits to WORLDVIEW_CANON_vNEXT_v1.md or PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - No UI design, prompt engineering, question design, QA linting, or execution planning
+  - No re-opening or re-negotiation of frozen architecture decisions
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-EXECUTING, FROZEN SCOPE)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_PRODUCT_ARCHITECT_VNEXT_GPT.md
+- required_inputs_before_advice:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md (read-only)
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md (read-only)
+  - docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+- outputs_allowed:
+  - Product Architecture Conclusions (textual, governance-level)
+  - MVE boundary definitions (conceptual)
+  - Compliance checklists for downstream execution roles
+  - Risk warnings for scope creep or authority leakage
+- required_reporting_format:
+  - ROLE_STATUS_REPORT schema
+- last_updated: 2026-01-02
+
+### ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT
+- display_name: vNext Core System Implementer (GPT)
+- owner: GPT
+- authority_level: EXECUTION-SPEC (Design-to-Implementation Translation; NOT repo edits)
+- responsibilities:
+  - Land frozen WORLDVIEW_CANON and PRODUCT_ARCHITECTURE_CONSTITUTION at system-implementation layer
+  - Define and implement core data flow, module boundaries, and dependency-injection rules
+  - Implement MVE MVP and Phase B Interop Harness (system layer only)
+  - Implement Semantic Firewalls, Trace masking, and Gemini-as-tool adapters
+  - Define tests, failure strategies, evidence outputs, and verification contracts
+- prohibited:
+  - No UI work, narrative language, or experience design
+  - No governance or architectural decisions
+  - No edits to frozen canon/constitution
+  - No direct repository edits (Codex only)
+  - No user-facing copy or advice generation
+- reporting_line: Reports ONLY to GPT_PRIMARY_COMMANDER (Execution Controller)
+- status: ACTIVE (NON-GOVERNING, EXECUTION-SPEC ONLY)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/governance/03_PROCESS/VERTICAL_SLICE_PROTOCOL.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT.md
+- required_inputs_before_execution:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md (frozen)
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md (frozen, must exist)
+  - docs/governance/03_PROCESS/VERTICAL_SLICE_PROTOCOL.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+- outputs_allowed:
+  - System-layer specifications
+  - Module boundary definitions
+  - Test plans and verification schemas
+  - Evidence-oriented command templates
+- evidence_standard:
+  - No completion claim without git/file-system proof
+  - Toolchain failures must be distinguished from code failures
+- required_reporting_format:
+  - ROLE_STATUS_REPORT schema
+- last_updated: 2026-01-02

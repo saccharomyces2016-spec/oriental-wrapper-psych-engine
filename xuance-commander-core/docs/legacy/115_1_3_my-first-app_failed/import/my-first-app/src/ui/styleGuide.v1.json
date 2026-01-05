@@ -1,0 +1,19 @@
+{
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "motion": {
+    "defaultTransition": "dissolve",
+    "durationMs": 420,
+    "easing": "cubic-bezier(0.2,0.8,0.2,1)",
+    "fadeOnlyDurationMs": 220,
+    "fpsFloor": 45,
+    "fpsSampleWindowMs": 900
+  },
+  "accessibility": {
+    "respectReducedMotion": true
+  },
+  "visual": {
+    "overlayOpacity": 0.65,
+    "grainOpacity": 0.08
+  }
+}

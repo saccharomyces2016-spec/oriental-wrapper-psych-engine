@@ -1,0 +1,31 @@
+from	to	kind	notes
+src/main.js	src/App.vue	RUNTIME_HARD	Entrypoint → App
+src/App.vue	src/views/01_Origin.vue	RUNTIME_HARD	App → Views
+src/App.vue	src/views/02_Input.vue	RUNTIME_HARD	App → Views
+src/App.vue	src/views/03_Resonance.vue	RUNTIME_HARD	App → Views
+src/App.vue	src/views/04_Computation.vue	RUNTIME_HARD	App → Views
+src/App.vue	src/views/05_Dashboard.vue	RUNTIME_HARD	App → Views
+src/App.vue	src/core/SoulArchitect.js	RUNTIME_HARD	App → Core Engine
+src/App.vue	src/core/content/resultTemplates/anchorSelector.js	RUNTIME_SOFT	Dynamic import (may fail if missing)
+src/views/03_Resonance.vue	src/core/choiceEngine.js	RUNTIME_HARD	Resonance → Choice Engine
+src/views/03_Resonance.vue	src/core/ontology/round2FourSymbol.v1.json	RUNTIME_HARD	Resonance → Round2 Data
+src/views/03_Resonance.vue	src/core/ontology/round4IntensityTrigger.v1.json	RUNTIME_HARD	Resonance → Round4 Data
+src/views/05_Dashboard.vue	src/core/flow/readingEngine.v1.js	RUNTIME_SOFT	Dashboard → Reading Engine (stub)
+src/views/05_Dashboard.vue	src/core/flow/readingNarrative.v1.js	RUNTIME_HARD	Dashboard → Narrative
+src/views/05_Dashboard.vue	src/core/ontology/round4Anchors.v1.json	RUNTIME_HARD	Dashboard → Round4 Data
+src/core/choiceEngine.js	src/core/ontology/round1Domains.v1.json	RUNTIME_HARD	Choice Engine → Round1 Data
+src/core/choiceEngine.js	src/core/ontology/round2FourSymbol.v1.json	RUNTIME_HARD	Choice Engine → Round2 Data
+src/core/choiceEngine.js	src/core/ontology/round3Ipsative.v2.json	RUNTIME_HARD	Choice Engine → Round3 Data
+src/core/SoulArchitect.js	src/engine/readingFacade.v1.js	RUNTIME_HARD	SoulArchitect → Reading Facade
+src/core/SoulArchitect.js	src/core/psych/scorer.js	RUNTIME_HARD	SoulArchitect → Psych Scorer
+src/core/SoulArchitect.js	src/core/guidance/buildGuidance.js	RUNTIME_HARD	SoulArchitect → Guidance Builder
+src/core/SoulArchitect.js	src/core/ai/promptBuilder.js	RUNTIME_HARD	SoulArchitect → AI Prompt
+src/core/SoulArchitect.js	src/core/ai/localNarrative.js	RUNTIME_HARD	SoulArchitect → Local Narrative
+src/core/SoulArchitect.js	src/core/ai/aiNarrative.js	RUNTIME_HARD	SoulArchitect → AI Narrative
+src/engine/readingFacade.v1.js	src/core/psych/scorer.js	RUNTIME_HARD	Reading Facade → Psych Scorer
+src/core/psych/scorer.js	src/core/ontology/motherThemes.v1.json	RUNTIME_HARD	Psych Scorer → Mother Themes
+src/core/guidance/buildGuidance.js	src/core/ontology/motherThemes.v1.json	RUNTIME_HARD	Guidance → Mother Themes
+src/core/guidance/buildGuidance.js	src/core/ontology/guidancePrinciples.v1.json	RUNTIME_HARD	Guidance → Principles
+src/core/guidance/buildGuidance.js	src/core/ontology/guidanceActionTemplates.v1.json	RUNTIME_HARD	Guidance → Action Templates
+
+

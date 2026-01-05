@@ -1,0 +1,47 @@
+# Scripts used by package.json
+
+doctorPaths.mjs - USED
+scanImports.mjs - USED
+deprecateUnused.mjs - USED
+telemetryServer.mjs - USED
+analyticsReport.mjs - USED
+notifyDigest.mjs - USED
+generateAnchorSamples.mjs - USED
+analyzeAnchorPerformance.mjs - USED
+validate/validate-elements.mjs - USED
+validate/validate-questionbank.mjs - USED
+validateRound2.mjs - USED
+validateRound4.mjs - USED
+validateReading.mjs - USED
+diagnoseReading.mjs - USED
+validateNarrative.mjs - USED
+validateOutputV2.mjs - USED
+validate/validate-canonical.mjs - USED
+validate/validate-modes.mjs - USED
+validate/validate-metaphysics.mjs - USED
+validate/validate-governance.mjs - USED
+verify-entry-no-legacy.mjs - USED
+verify-domain-canonicalization.mjs - USED
+verify-round2-schema.mjs - USED
+verify-r3-gate.mjs - USED
+verify-round4-coverage.mjs - USED
+verify-no-legacy-imports.mjs - USED
+verify-ui-no-legacy-imports.mjs - USED
+verify/verify-no-legacy-bundles.mjs - USED
+verify/verify-no-legacy-strings.mjs - USED
+verify-round2-data-source.mjs - USED
+verify/verify-round2-ui-ontology-only.mjs - USED
+smoke-ui-governance.mjs - USED
+validate/validate-ontology-consistency.mjs - USED
+
+# Scripts NOT used by package.json
+auditPatternTags.mjs - UNUSED
+fixChoiceMeta.mjs - UNUSED
+fixQuestionBankJSON.mjs - UNUSED
+fixQuestionBankJSON2.mjs - UNUSED
+fixQuestionBankJSON3.mjs - UNUSED
+fixQuestionBankJSON4.mjs - UNUSED
+fixQuestionBankJSONFinal.mjs - UNUSED
+generateQuestionBlueprint.mjs - UNUSED
+smoke-flow.mjs - UNUSED
+verifyProxy.mjs - UNUSED

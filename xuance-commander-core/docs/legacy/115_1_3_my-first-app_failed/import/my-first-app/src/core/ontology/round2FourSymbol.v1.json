@@ -1,0 +1,213 @@
+{
+  "version": "v1",
+  "domains": [
+    {
+      "domain_id": "domain_yuan",
+      "title": "情緣之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "情緒潮起潮落，你覺得人際氣場在推著你走。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "主動拉近或疏離他人，覺得自己在控場或被推著走。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "界線模糊或過緊，情感距離感讓你不自在。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "關係節奏忽快忽慢，連你也不確定下一步該停還是進。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_cai",
+      "title": "財流之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "資源流動有阻力或過載，心裡很難放鬆。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "收入支出節奏失衡，想掌控卻總被外部驅動。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "界線不清，責任與資源分配讓你左右為難。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "財務決策像是反覆起落的波，難以穩住步調。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_shen",
+      "title": "身軀之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "身體能量時強時弱，像有股氣場在推動或壓制你。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "想行動但力量跟不上，或身體在逼你放慢。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "界線與照護難以拿捏，身體訊號容易被忽略或放大。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "作息與感受反覆波動，進退之間心難定。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_ye",
+      "title": "事業之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "職涯路徑有阻力或被推著走，內心拉扯明顯。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "想主動領跑，但環境力量讓你不得不隨勢而行。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "界線、角色與責任分配讓你難以取得平衡。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "任務節奏忽快忽慢，像被不穩定的風推著轉。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_jia",
+      "title": "家宅之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "家務或照護能量流動不順，情緒累積難排解。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "家庭動能由他人主導，你想掌控卻分身乏術。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "親密與責任的界線模糊，感覺被牽制或疏離。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "家庭節奏忽緊忽鬆，像在反覆調速的跑步機上。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_ju",
+      "title": "局勢之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "變局之中氣場滯塞或過強，難以判斷方向。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "勢能推著你改變，你卻想穩住或反向操作。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "界線、角色轉換讓你無法定位，感到拉扯。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "節奏反覆，既想行動又怕代價，像在波谷波峰間晃動。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_xin",
+      "title": "心志之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "內心思緒起伏，感覺被想法或情緒推著走。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "意志想控制方向，但情緒或環境牽引你偏離。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "內外界線模糊，難以專注或維持內在秩序。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "心境節奏忽強忽弱，動念與收攝之間左右搖擺。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    },
+    {
+      "domain_id": "domain_ming",
+      "title": "命途之局",
+      "options": [
+        {
+          "symbol": "qi",
+          "text": "整體命盤的氣感起伏，像有股大勢在推動。",
+          "decoder": { "visual_key": "qi", "signal_map": { "qi": "HIGH", "shi": "LOW", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "shi",
+          "text": "命途勢能強烈，你想掌舵但大勢滾動。",
+          "decoder": { "visual_key": "shi", "signal_map": { "qi": "LOW", "shi": "HIGH", "jie": "LOW", "dong": "LOW" } }
+        },
+        {
+          "symbol": "jie",
+          "text": "角色與使命的界線模糊，感到責任綑綁或失去定位。",
+          "decoder": { "visual_key": "jie", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "HIGH", "dong": "LOW" } }
+        },
+        {
+          "symbol": "dong",
+          "text": "運勢節奏反覆，起落難測，心中猶疑。",
+          "decoder": { "visual_key": "dong", "signal_map": { "qi": "LOW", "shi": "LOW", "jie": "LOW", "dong": "HIGH" } }
+        }
+      ]
+    }
+  ]
+}

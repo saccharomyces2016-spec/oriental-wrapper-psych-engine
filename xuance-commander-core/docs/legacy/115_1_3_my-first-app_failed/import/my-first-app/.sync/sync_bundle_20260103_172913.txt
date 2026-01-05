@@ -1,0 +1,503 @@
+=== SYNC BUNDLE (compact) ===
+Generated_at: 2026-01-03 17:29:13 +0800
+Host: Darwin MacBookAir.home 25.1.0 Darwin Kernel Version 25.1.0: Mon Oct 20 19:32:47 PDT 2025; root:xnu-12377.41.6~2/RELEASE_ARM64_T8103 arm64
+PWD: /Users/yujunwei/Projects/my-first-app
+
+## A) Git status
+## gov/cleanup-legacy-20260101-170835
+ M docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+ M docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+ M docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+?? .sync/
+
+## B) HEAD + last 10 commits
+89894fbb17433c47364042f23da9faa5cea63e46
+89894fb (HEAD -> gov/cleanup-legacy-20260101-170835) governance: persist commander focus guard + single-block copy/paste rule
+6a7f222 governance: checkpoint verify SLICE_001 semantic firewall
+f44b3d9 slice: implement semantic firewall denylist tests + validate gate
+32021db governance: run first checkpoint and align project state pointers
+4ff9ccb governance: finalize system master progress map (audit-compliant MVE)
+8751449 architecture: lock daily & diagnostic mode protocols (signal-only, authority-decay)
+2b58c8f architecture: lock daily and diagnostic mode protocols (audited, zero-authority, hard-cap)
+335f1dc architecture: formalize three-layer system (detection / structure / consequence)
+d0c1eae governance: finalize commander co-founder mode as binding standard
+e2ba020 governance: adopt work-mode discovery protocol + persist deputy daily-mode discussion brief
+
+## C) Diff stat
+ docs/metaphysics/ELEMENT_PRIOR_SPEC.md             | 146 +++++++++++++++------
+ docs/metaphysics/NARRATIVE_BINDING_SPEC.md         |  47 ++++---
+ .../metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md |  47 +++----
+ 3 files changed, 150 insertions(+), 90 deletions(-)
+
+## D) Key files sha256
+35b8a1e7954e47f62e2bfa56b9be16a6a0571aed22adedf2faf095819ffbe2fd  package.json
+714ef7e90e96f83b3936d6f8107476f57537953610aa1d3f7eee43370f79079a  scripts/assistant_sync_report.sh
+7e622315d6737652c49e9d9488c47ab938e2b52de6e1e06d48963f27f4e8f886  docs/governance/08_REPORTS/PROJECT_STATE.json
+c7ccfa28ffe999c952a8bc19eba4514338ec9a84d8290f9160f103331d39219a  docs/governance/04_DECISIONS/DECISION_LOG.md
+e30541da41b20eaddc485c5a64c1219b861513b5164199a4cd646fc73ee24e4b  docs/governance/03_PROCESS/ROLE_REGISTRY.md
+4d015847085fd80a3964ef7874164c88ab4b17a081a99207e3505c2156d53f7a  docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+ff3e70623d98a9996d6c4df4fc275e0826f7f08687a61b6c2ed92195ff9148e4  docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+5e42e317bc2224c1725a3fd52228ab8cedaca38888531c9b317b2739ccc0c772  docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+42d1bccd02cbd4d9b07f6818eaa5162a5b14ca2d21bce687202ef480293c1429  docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+62812cb8841f285c47efc5d5a6466605708245c32ce5a90116d097ed7d033828  docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+
+## E) Assistant sync report
+=== ASSISTANT SYNC REPORT ===
+Generated_at: 2026-01-03 17:29:13 +0800
+
+A) git status -sb
+## gov/cleanup-legacy-20260101-170835
+ M docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+ M docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+ M docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+?? .sync/
+
+B) git log -1 --oneline --decorate
+89894fb (HEAD -> gov/cleanup-legacy-20260101-170835) governance: persist commander focus guard + single-block copy/paste rule
+
+C) git show --stat --oneline --decorate HEAD
+89894fb (HEAD -> gov/cleanup-legacy-20260101-170835) governance: persist commander focus guard + single-block copy/paste rule
+ .../ROLE_DOSSIER__ROLE_PRODUCT_ARCHITECT_VNEXT_GPT.md    | 11 +++++++++++
+ .../governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md | 16 ++++++++++++++++
+ 2 files changed, 27 insertions(+)
+
+---- PROJECT_STATE.json ----
+{
+  "updated_at": "2026-01-03",
+  "phase": "PHASE_0002",
+  "active_plan": "docs/governance/05_PHASES/PHASE_0002_CLOSEOUT.md",
+  "state_snapshot": "docs/governance/08_REPORTS/PHASE_0002_STATE_SNAPSHOT_2026-01-02.md",
+  "active_slice_id": "SLICE_001_SEMANTIC_FIREWALL",
+  "backlog": "docs/governance/03_PROCESS/BACKLOG.md",
+  "critical_docs": {
+    "worldview_canon": "docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md",
+    "product_constitution": "docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md"
+  },
+  "role_registry": "docs/governance/03_PROCESS/ROLE_REGISTRY.md",
+  "role_review_template": "docs/governance/03_PROCESS/ROLE_REVIEW_TEMPLATE.md",
+  "risk_register": "docs/governance/03_PROCESS/RISK_REGISTER.md",
+  "commander_brain": "docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md",
+  "ingest_log": "docs/governance/03_PROCESS/INGEST_AND_HANDOFF_LOG.md",
+  "role_performance_log": "docs/governance/03_PROCESS/ROLE_PERFORMANCE_LOG.md",
+  "mission_brief_protocol": "docs/governance/03_PROCESS/MISSION_BRIEF_PROTOCOL.md",
+  "assignment_log": "docs/governance/03_PROCESS/ASSIGNMENT_LOG.md",
+  "role_deliverable_report_template": "docs/governance/03_PROCESS/ROLE_DELIVERABLE_REPORT_TEMPLATE.md",
+  "assistant_sync_script": "scripts/assistant_sync_report.sh",
+  "assistant_sync_request_template": "docs/governance/03_PROCESS/ASSISTANT_SYNC_REQUEST_TEMPLATE.md",
+  "deputy_escalation_protocol": "docs/governance/03_PROCESS/DEPUTY_DISCUSSION_ESCALATION_PROTOCOL.md",
+  "communication_style_protocol": "docs/governance/03_PROCESS/COMMUNICATION_STYLE_PROTOCOL.md",
+  "professional_contradiction_duty": true,
+  "work_mode_discovery_protocol": "docs/governance/03_PROCESS/WORK_MODE_DISCOVERY_PROTOCOL.md",
+  "deputy_discussion_brief_daily_mode": "docs/governance/08_REPORTS/DEPUTY_DISCUSSION_BRIEF__DAILY_MODE_DIRECTION.md",
+  "commander_mode": "CO_FOUNDER",
+  "commander_self_standard": "docs/governance/01_PRINCIPLES/COMMANDER_SELF_STANDARD_CO_FOUNDER_MODE.md",
+  "three_layer_architecture": "docs/architecture/specifications/THREE_LAYER_SYSTEM_ARCHITECTURE.md",
+  "diagnostic_mode_spec": "docs/architecture/specifications/DIAGNOSTIC_MODE_PROTOCOL.md",
+  "latest_checkpoint": "docs/governance/08_REPORTS/CHECKPOINT_2026-01-03_02.md",
+  "daily_mode_protocol": "docs/architecture/specifications/DAILY_MODE_PROTOCOL.md",
+  "roles": {
+    "registry": "docs/governance/02_ROLES/ROLE_REGISTRY.md",
+    "dossiers_dir": "docs/governance/02_ROLES/",
+    "performance_log": "docs/governance/03_PROCESS/ROLE_PERFORMANCE_LOG.md"
+  },
+  "empty_data_incident_template": "docs/governance/03_PROCESS/EMPTY_DATA_INCIDENT_TEMPLATE.md",
+  "status": "IN_PROGRESS",
+  "blockers": [],
+  "next_actions": [
+    {
+      "owner": "Commander",
+      "action": "Plan next slice for Observability & Recovery around semantic firewall (logging/evidence capture)."
+    },
+    {
+      "owner": "Codex",
+      "action": "Document observability/logging plan for firewall runs in PHASE_0002_CLOSEOUT.md and update PROJECT_STATE.json next_actions."
+    },
+    {
+      "owner": "Commander",
+      "action": "Run checkpoint after observability slice planning to reassess weakest link."
+    }
+  ],
+  "checkpoint": {
+    "cadence": "every 3 Codex runs OR slice status change OR context-risk OR before new work",
+    "template": "docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md",
+    "maturity_radar": "docs/governance/03_PROCESS/MATURITY_RADAR.md"
+  },
+  "sync_protocol": "docs/governance/03_PROCESS/PROJECT_SYNC_PROTOCOL.md",
+  "workspace_trust_mode": {
+    "status": "ENABLED",
+    "scope": "this repository only",
+    "policy": "docs/governance/03_PROCESS/WORKSPACE_TRUST_MODE.md"
+  }
+}
+
+---- PHASE CLOSEOUT (tail) ----
+# PHASE 0002 CLOSEOUT
+
+## Phase
+Phase 2 – Monorepo & Core Refactor (MVR)
+
+## Status
+IN_PROGRESS
+
+## Accepted Architectural Rulings
+- packages/data exports under src/ (Gemini Q1)
+- Path alias alignment: tsconfig + Vite (Gemini Q2)
+- UI runtime import restrictions enforced by ESLint (Gemini Q3)
+- ReadingFacade as Domain Service with strict forbidden list (Gemini Q4)
+- SoulArchitect split into Flow / Facade / Narrative / Strategy (Gemini Q5)
+- PromptBuilder legacy retained until TS tests green (Gemini Q6)
+- Zero circular dependency enforced by madge (Gemini Q7)
+- Phase 2 DoD defined with 5 hard criteria (Gemini Q8)
+
+## MVR / DoD (Reference)
+Source of Truth:
+docs/governance/06_TRANSCRIPTS/2026-01-02_phase2_architectural_ruling_gemini.md
+
+## Notes
+This document will be marked CLOSED only when all DoD criteria are satisfied.
+
+---
+
+Retained prior draft (for traceability)
+
+PHASE 0002 CLOSEOUT
+
+Phase: PHASE_0002
+Date: 2026-01-02
+Status: DRAFT (Phase 2 not executed yet)
+
+Target (MVR / Hard Rules)
+- Core is Node-only (no window/document/localStorage usage)
+- Domain has no fs/path I/O
+- Domain has no process.env decision logic (must inject config)
+- Core has zero circular dependencies (tooling enforced)
+- Must-pass: DestinyScoringEngine.test, PromptBuilder.test, smoke_reading.ts
+
+Planned deliverables
+- docs/governance/04_DECISIONS/0002-repo-structure.md finalized
+- packages/* scaffold (core/data/ui/api/tools) (execution step)
+- smoke_reading.ts + minimal fixtures (execution step)
+
+## Progress Update (2026-01-02)
+- Toolchain remains offline: pnpm/tsx install and typecheck pending user-run in connected environment.
+- Smoke script wired (packages/core/scripts/smoke_reading.ts) with stubbed flow + JSON import; runnable once tsx/pnpm are available.
+- Root runner added (scripts/run_core_smoke.mjs) to delegate to packages/core smoke script.
+- Placeholder DestinyScoringEngine test staged under packages/core/tests (skipped; awaits migration).
+
+## Progress Update (2026-01-02 – toolchain online)
+- Toolchain unblocked via `npx pnpm@10.27.0` + workspace tsx; core typecheck passes.
+- Smoke run succeeds (`pnpm -C packages/core smoke`): non-empty JSON output captured locally.
+- Madge circular check executed: no circular dependency found.
+- DestinyScoringEngine test still placeholder (skipped); migration deferred to next steps.
+
+## Blockers
+- Toolchain (pnpm/tsc/madge) verified online ✅.
+- Current blocker: git staging may be blocked by OS permission to create `.git/index.lock` — see docs/governance/07_BLOCKERS/2026-01-02_git_index_lock_permission.md.
+- Work can proceed locally, but persistence/commit is at risk until resolved.
+
+## Status Update (2026-01-02)
+- Current status: IN_PROGRESS
+- Completed: governance restructure, constitution enacted, artifacts relocated, state snapshot report created
+- Active blockers: none
+- Next actions: Implementer audit pack; Gemini interop gate; decide next phase role
+
+## Mode and Architecture Alignment (2026-01-03)
+- Architecture Alignment: DONE
+- Daily Mode: LOCKED
+- Diagnostic Mode: LOCKED (Audited)
+- Architecture alignment completed: Daily Mode and Diagnostic Mode protocols locked, authority decay, anti-addiction hard caps, and signal-only detection layer ratified.
+
+## Checkpoint Requirement (Effective Immediately)
+Before starting any new execution work, run a checkpoint using:
+- docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+and record the weakest-link selection for the next slice.
+
+## Governance Continuity
+- Role registry, commander brain contract, and ingest/handoff logs are mandatory: see docs/governance/03_PROCESS/ROLE_REGISTRY.md and docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md.
+- Continuity artifacts: INGEST_AND_HANDOFF_LOG.md, ROLE_PERFORMANCE_LOG.md, PROJECT_STATE.json pointers must stay current.
+
+Started SLICE_001_SEMANTIC_FIREWALL (local enforcement) — scope: denylist validator + tests + validate integration. No LLM/UI.
+
+---- DECISION_LOG (tail) ----
+2026-01-02 | Phase 2 | Architectural Ruling (Gemini) | transcripts/2026-01-02_phase2_architectural_ruling_gemini.md
+2026-01-02 | Blocker | Toolchain offline | blockers/2026-01-02_toolchain_offline.md
+2026-01-02 | Phase 2 | Step 3 (pending online) | packages/core/scripts/smoke_reading.ts; scripts/run_core_smoke.mjs; packages/core/tests/DestinyScoringEngine.placeholder.test.ts
+2026-01-02 | Blocker Resolved | Toolchain online via npx pnpm@10.27.0 | blockers/2026-01-02_toolchain_offline.md
+2026-01-02 | Phase 2 | Step 3 VERIFIED | typecheck + smoke + madge executed | packages/core/scripts/smoke_reading.ts
+2026-01-02 | Governance | Locked vNext Worldview Canon v1 and Single Codex Command Authority | docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+2026-01-02 | Governance | Added Context Window Management hard rule (Codex persistence on overflow risk) | docs/governance/PROGRESS_GOVERNANCE_RULEBOOK.md
+2026-01-02 | Governance | Restructured governance docs into indexed folders (00_INDEX..09_LEGACY) with single entry | docs/governance/00_INDEX/GOVERNANCE_INDEX.md
+2026-01-02 | Blocker | Git cannot create .git/index.lock (staging blocked by OS permission) | docs/governance/07_BLOCKERS/2026-01-02_git_index_lock_permission.md
+2026-01-02 | Architecture | Enacted vNext Product Architecture Constitution (Frozen); binding across all product layers | docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+2026-01-02 | Governance | Phase 2 state snapshot report added | docs/governance/08_REPORTS/PHASE_0002_STATE_SNAPSHOT_2026-01-02.md
+2026-01-02 | Governance | Added Vertical Slice Protocol + Single Entry System + Golden Commands + Persistent Handoff artifacts | docs/governance/03_PROCESS/*; docs/governance/08_REPORTS/PROJECT_STATE.json
+2026-01-02 | Governance | Hardened inbound gate, slice switching gate, backlog container, cadence checkpoints, toolchain lock, project state fields | docs/governance/03_PROCESS/*; docs/governance/08_REPORTS/PROJECT_STATE.json; .nvmrc; package.json
+2026-01-02 | Governance | Instituted weakest-link checkpoint system (Maturity Radar + Checkpoint Template); Billing/Licensing dimension explicitly deferred until launch pricing phase | docs/governance/03_PROCESS/MATURITY_RADAR.md; docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+2026-01-02 | Governance | Adopted Role Registry gate + role review + risk register as binding process artifacts | docs/governance/02_ROLES/ROLE_REGISTRY.md; docs/governance/03_PROCESS/ROLE_REVIEW_TEMPLATE.md; docs/governance/03_PROCESS/RISK_REGISTER.md
+2026-01-02 | Governance | Registered ROLE_WEB_ARCHITECT_GEM (Gemini Web Architect) as ACTIVE (NON-EXECUTING) | ROLE_REGISTRY.md + ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Adopted Permanent Commander Brain artifacts (role registry + ingest/handoff + performance log) as binding governance | docs/governance/03_PROCESS/ROLE_REGISTRY.md; docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md; docs/governance/03_PROCESS/INGEST_AND_HANDOFF_LOG.md; docs/governance/03_PROCESS/ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Registered ROLE_WSD_VNEXT_GEM (Gemini World & System Designer) as ACTIVE (NON-EXECUTING) | ROLE_REGISTRY.md + ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Canonicalized Role Registry location and registered ROLE_WEB_ARCHITECT_GEM + ROLE_WSD_VNEXT_GEM; added empty-data evidence template | ROLE_REGISTRY + dossiers + EMPTY_DATA_INCIDENT_TEMPLATE.md
+2026-01-02 | Governance | Registered ROLE_NARRATIVE_LANGUAGE_FORGE_GEM as ACTIVE (NON-EXECUTING) with strict Zero Modernity / Zero Psychology / Zero Advice constraints | ROLE_REGISTRY + ROLE_DOSSIER__ROLE_NARRATIVE_LANGUAGE_FORGE_GEM.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Registered ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM as ACTIVE (NON-EXECUTING) | ROLE_REGISTRY + ROLE_DOSSIER__ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Registered ROLE_WSD_VNEXT_GPT (vNext World & System Designer, GPT) as ACTIVE (NON-EXECUTING) | ROLE_REGISTRY + ROLE_DOSSIER__ROLE_WSD_VNEXT_GPT.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Registered ROLE_PRODUCT_ARCHITECT_VNEXT_GPT (vNext Product Architect, GPT) with FINAL authority at product layer | ROLE_REGISTRY + ROLE_DOSSIER__ROLE_PRODUCT_ARCHITECT_VNEXT_GPT.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Registered ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT (Core System Implementer, execution-spec only) | ROLE_REGISTRY + ROLE_DOSSIER__ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT.md + ROLE_PERFORMANCE_LOG.md
+2026-01-02 | Governance | Enabled Workspace Trust Mode for Codex execution (project-scoped, directive-pack-only) | WORKSPACE_TRUST_MODE.md
+2026-01-02 | Governance | Adopt SLICE_001_SEMANTIC_FIREWALL as first runnable enforcement slice (denylist/regex, local validate:all gate; no LLM/UI).
+2026-01-02 | Governance | Adopted Deterministic Project State Synchronization as a hard governance rule. AI understanding must derive only from git-verifiable outputs. | docs/governance/03_PROCESS/PROJECT_SYNC_PROTOCOL.md
+2026-01-03 | Governance | Formalized Mission Brief as binding requirement for all task assignments to prevent context loss in long-running development. | docs/governance/03_PROCESS/MISSION_BRIEF_PROTOCOL.md; docs/governance/03_PROCESS/MISSION_BRIEF_TEMPLATE.md; docs/governance/03_PROCESS/ASSIGNMENT_LOG.md
+2026-01-03 | Governance | Adopt Role Deliverable Reporting as a hard rule; Assistant Sync Report expanded as canonical snapshot; Role Registry SSoT enforced. | docs/governance/03_PROCESS/ROLE_DELIVERABLE_REPORT_TEMPLATE.md; scripts/assistant_sync_report.sh; docs/governance/02_ROLES/ROLE_REGISTRY.md
+2026-01-03 | Governance | Adopted Data Request Protocol: Commander must proactively request Assistant Sync Snapshot (via template) whenever repo state is needed; no assumption-based directive packs. | docs/governance/03_PROCESS/ASSISTANT_SYNC_REQUEST_TEMPLATE.md; docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md
+2026-01-03 | Governance | Instituted Deputy Involvement Gate for strategic/ethical/structural multi-round topics; requires Deputy review with repo-based context packet and persistence of outcomes. | docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md; docs/governance/03_PROCESS/SINGLE_ENTRY_SYSTEM.md; docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md; docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md
+2026-01-03 | Governance | Adopted mandatory Deputy escalation for multi-turn ethical/structural topics and dual-audience communication protocol (plain to user, technical to roles); bound into gates and checkpoint checks. | docs/governance/03_PROCESS/DEPUTY_DISCUSSION_ESCALATION_PROTOCOL.md; docs/governance/03_PROCESS/COMMUNICATION_STYLE_PROTOCOL.md
+2026-01-03 | Governance | Ratified Non-Deference Rule: professional accuracy overrides authority comfort; user retains final decision after disclosure. | docs/governance/01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md
+Rule: When a professional contradiction is raised and overridden by the user, log: "User override after professional contradiction disclosure."
+- 2026-01-03 | Governance | Adopt Work-Mode Discovery as binding protocol; persist Deputy Discussion Brief for Daily Mode boundary locking | docs/governance/03_PROCESS/WORK_MODE_DISCOVERY_PROTOCOL.md; docs/governance/08_REPORTS/DEPUTY_DISCUSSION_BRIEF__DAILY_MODE_DIRECTION.md
+- 2026-01-03 | Governance | Adopted Commander Self-Standard Directive (Co-Founder Mode) as a binding rule; Commander silence in face of risk defined as governance failure. | docs/governance/01_PRINCIPLES/COMMANDER_SELF_STANDARD_CO_FOUNDER_MODE.md
+- 2026-01-03 | Architecture/Governance | Adopted Three-Layer System Architecture to prevent psychological authority leakage, wrapper metaphysics, and predictive overreach. | docs/architecture/specifications/THREE_LAYER_SYSTEM_ARCHITECTURE.md; docs/architecture/specifications/DIAGNOSTIC_MODE_PROTOCOL.md
+- 2026-01-03 | Architecture/Governance | Locked Daily Mode (zero authority, ambient observation) and Diagnostic Mode (audited, hard cap with fade-to-silence) under Product Architecture Constitution. | docs/architecture/specifications/DAILY_MODE_PROTOCOL.md; docs/architecture/specifications/DIAGNOSTIC_MODE_PROTOCOL.md; docs/governance/05_PHASES/PHASE_0002_CLOSEOUT.md
+- 2026-01-03 | Governance | Accepted Deputy Architect conditional pass on System Master Progress Map; resolved scope sprawl by deferring Daily Mode; locked Diagnostic Mode as single Relational Mirror. | docs/governance/01_PRINCIPLES/SYSTEM_MASTER_PROGRESS_MAP.md
+- 2026-01-03 | Governance | Checkpoint executed: maturity radar scored; weakest-link selected; next execution steps locked per CHECKPOINT_2026-01-03_01.md. | docs/governance/08_REPORTS/CHECKPOINT_2026-01-03_01.md
+- 2026-01-03 | Governance | SLICE_001 Semantic Firewall gate landed (denylist/regex + tests + validate integration). | packages/core/src/middleware/semanticFirewall/index.ts; packages/core/tests/semanticFirewall.test.ts; package.json
+- 2026-01-03 | Governance | Checkpoint executed: SLICE_001 verified; maturity radar updated; weakest-link set to Observability & Recovery. | docs/governance/08_REPORTS/CHECKPOINT_2026-01-03_02.md
+
+---- ROLE_REGISTRY (head) ----
+# Role Registry — vNext
+
+This is the single source of truth for all active roles (human/AI/tools).
+
+## A) Registry Rules
+- Role definitions are binding for scope, permissions, and escalation.
+- Chat output does not change roles; repo updates do.
+- Any new role must be added here BEFORE it can be assigned work.
+- Any role retirement must be recorded here AND appended to Project Worklog.
+- No role may directly edit canon/constitution unless explicitly declared Worldview Authority (not currently assigned).
+
+## B) Active Roles
+
+### Primary Commander (GPT)
+- Authority Level: FINAL
+- Responsibilities: issue directive packs; enforce checkpoints and persistence; resolve conflicts; own active slice selection.
+- Prohibited: direct repo edits; altering canon/constitution; bypassing Single Entry/Inbound Gate.
+- Inputs Allowed: all governance/process docs, decision log, phase files, snapshots, project state.
+- Outputs Allowed: directive packs, decision updates, checkpoint actions, slice definitions.
+- Escalation: none (final within scope); informs User on major decisions.
+- Status: ACTIVE
+- Reliability Notes: Must trigger checkpoints and ensure evidence persists.
+
+### Deputy Architect & Risk Auditor (GEM)
+- Authority Level: ADVISORY
+- Responsibilities: maturity radar scoring; weakest-link selection proposals; risk register notes; slice critique.
+- Prohibited: repo edits; direct Codex commands; altering canon/constitution; changing roles.
+- Inputs Allowed: governance/process docs, snapshots, radar, risk register.
+- Outputs Allowed: advisory notes, risk entries, radar scores, override proposals.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Advisory only; requires Commander relay for actions.
+
+### vNext Core System Implementer (GPT-Implementer thread)
+- Authority Level: EXECUTION-SPEC
+- Responsibilities: propose module boundaries/tests; draft specs; identify blockers for slices.
+- Prohibited: repo edits; direct Codex commands; altering canon/constitution; starting new slices without Commander approval.
+- Inputs Allowed: specs, governance/process docs, snapshots, codebase read-only.
+- Outputs Allowed: spec drafts, test plans, slice proposals.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Implementation planner only; must not mutate governance truths.
+
+### Codex / Cursor Execution Agent
+- Authority Level: EXECUTION
+- Responsibilities: perform repo edits per Commander packs; preserve Single Entry and checkpoint rules; capture evidence.
+- Prohibited: self-directed work; altering canon/constitution; role changes without registry updates; running unapproved commands.
+- Inputs Allowed: Commander directive packs, governance/process docs, codebase.
+- Outputs Allowed: commits, file changes, reports, evidence snapshots.
+- Escalation: reports to Primary Commander.
+- Status: ACTIVE
+- Reliability Notes: Must not act without explicit Commander packs.
+
+### User (Human Owner)
+- Authority Level: HUMAN
+- Responsibilities: final product ownership decisions; provide approvals and context; accept/reject outputs.
+- Prohibited: bypassing agreed governance flow; direct role changes without registry update.
+- Inputs Allowed: all artifacts.
+- Outputs Allowed: approvals, decisions, requirements, prioritization.
+- Escalation: informs Commander for execution.
+- Status: ACTIVE
+- Reliability Notes: Source of business truth; decisions must be persisted via Commander.
+
+- display_name: vNext Web Architect (Gemini)
+- owner: Gemini
+- authority_level: ADVISORY / AUDIT (NON-EXECUTING)
+- responsibilities: web-layer architecture options; vertical slice boundary suggestions (web-facing only); integration constraints checks against PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; risk/weakest-link notes for web architecture
+- prohibited: repository modifications; Codex instruction packs; UI copywriting/user-facing language as final output; edits to WORLDVIEW_CANON_vNEXT_v1.md or PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to Primary GPT (Execution Controller / Commander)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+  - docs/governance/08_REPORTS/PROJECT_STATE.json
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md
+- allowed_outputs:
+  - Web-layer architecture options
+  - Vertical slice boundary suggestions (web-facing only)
+  - Integration constraints checks against PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - Risk/weakest-link notes for web architecture
+- required_inputs_before_advice:
+  - git status -sb
+  - find docs -maxdepth 3 -type f | sort
+  - find packages -maxdepth 4 -type f | sort | head -n 200 (if packages exists)
+  - Current PROJECT_STATE.json summary
+- required_reporting_format: ROLE_STATUS_REPORT schema (persona/scope/completed_work/evidence/open_items/risks/compliance_notes/uncertainties)
+- last_updated: 2026-01-02
+
+- display_name: vNext World & System Designer (Gemini)
+- owner: Gemini
+- authority_level: Advisory (World Model) + Risk Flagging (Canon/Constitution compliance checks)
+- responsibilities: worldview ontology/axioms; system philosophy & authority model; conceptual role of questions (meaning/choice generation logic); scientific grounding guardrail for metaphysical inference
+- prohibited: repository modifications; Codex instruction packs; UI copywriting/user-facing narrative wording as final product; edits to WORLDVIEW_CANON_vNEXT_v1.md or PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md; invention of project history not present in repo artifacts
+- reporting_line: Reports ONLY to Primary GPT (Execution Controller / Commander)
+- status: ACTIVE (NON-EXECUTING)
+- primary_artifacts:
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1.md
+  - docs/worldview/WORLDVIEW_CANON_vNEXT_v1_PATCH.md
+  - docs/architecture/PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - docs/metaphysics/ELEMENT_PRIOR_SPEC.md
+  - docs/metaphysics/NARRATIVE_BINDING_SPEC.md
+  - docs/metaphysics/ONTOLOGY_PATTERN_TAG_GOVERNANCE.md
+  - docs/governance/03_PROCESS/MATURITY_RADAR.md
+  - docs/governance/04_DECISIONS/DECISION_LOG.md
+  - docs/governance/02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md
+- allowed_outputs:
+  - Draft worldview extensions (non-canon unless persisted)
+  - Axiom candidates / ontology tags / conceptual flow models
+  - Risk notes: canon divergence, ungrounded metaphysical claims, authority-model contradictions
+  - Inputs to Maturity Radar dimension 1/4/8 (advisor)
+- required_inputs_before_advice:
+  - Relevant repo-based excerpts/summaries of WORLDVIEW_CANON_vNEXT_v1.md and PRODUCT_ARCHITECTURE_CONSTITUTION_vNEXT.md
+  - Current PROJECT_STATE.json summary
+  - Decision log context for any active slice that touches worldview rules
+- required_reporting_format: ROLE_STATUS_REPORT schema (scope/completed_work/evidence/open_items/risks/compliance_notes/uncertainties)
+- last_updated: 2026-01-02
+
+## C) Role Change Protocol
+
+---- ROLE_PERFORMANCE_LOG (tail) ----
+# Role Performance Log (Append-only)
+
+Rule: Append-only; factual, evidence-linked.
+- Codex deliverable is not accepted unless Sync Report exists.
+
+## Entries
+- 2026-01-02 | role_id: CODEX_EXECUTION_ENGINE | observed: governance commits (e.g., 640b472, ddea4cd, a418a28, f4d3909) adding process/state docs | quality: OK | follow-up: maintain evidence snapshots at checkpoints
+- 2026-01-02 | role_id: GEMINI_DEPUTY_ARCHITECT_RISK_AUDITOR | observed: onboarding acknowledged; expected inputs: radar scoring, risk notes, slice critique (no repo edits) | quality: OK | follow-up: record radar/risk outputs when produced
+- 2026-01-02 | role_id: GPT_CORE_SYSTEM_IMPLEMENTER | observed: packages/core/src/mve_mvp/** and interop scaffolding present; tests listed | quality: OK (evidence of scaffolding only) | follow-up: capture test/typecheck evidence in checkpoints
+- 2026-01-02 | role_id: ROLE_WEB_ARCHITECT_GEM | observed: registered and activated (non-executing) with dossier and registry entries | quality: OK | follow-up: pending first audit after ingest of required inputs
+- 2026-01-02 | role_id: ROLE_WSD_VNEXT_GEM | observed: registered and activated (non-executing) with dossier and registry entries | quality: OK | follow-up: pending canon/constitution ingestion before any draft output
+- 2026-01-02 | role_id: ROLE_NARRATIVE_LANGUAGE_FORGE_GEM | observed: registered and activated (non-executing) with dossier and registry entries | quality: OK | follow-up: pending validate:reading evidence and first ROLE_STATUS_REPORT\n*** End Patch
+- 2026-01-02 | role_id: ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM | observed: registered and activated (non-executing) with dossier and registry entries | quality: OK | follow-up: require baseline checkpoint audit after evidence ingestion
+- 2026-01-02 | role_id: ROLE_WSD_VNEXT_GPT | observed: registered and activated (non-executing) with dossier and registry entries | quality: OK | follow-up: enforce worldview compliance checklist usage by Narrative/UX roles at checkpoints
+- 2026-01-02 | role_id: ROLE_PRODUCT_ARCHITECT_VNEXT_GPT | observed: registered and activated (product architecture frozen) with dossier and registry entries | quality: OK | follow-up: enforce product-architecture compliance at slice checkpoints
+- 2026-01-02 | role_id: ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT | observed: registered; execution blocked pending governance prerequisites; dossier + registry entries present | quality: OK | follow-up: await constitution presence and checkpoint approval before execution
+- 2026-01-02 | role_id: CODEX_EXECUTION_ENGINE | observed: Assistant Sync Report hard rule and generator added (`npm run sync:assistant`) | quality: Pending first enforced use | follow-up: refuse deliverables without Sync Report evidence
+
+---- PROJECT_WORKLOG (tail) ----
+# Project Worklog (Append-only)
+
+Rule: Append new entries only. Do not rewrite history.
+
+## 2026-01-02
+- Governance restructuring stabilized; artifacts relocated; phase snapshot mechanism introduced.
+- Next focus: enforce vertical slice + single entry + golden commands.
+- Governance hardening patch applied (inbound gate, slice switching gate, backlog container, cadence checkpoints, toolchain lock placeholders).
+- Added checkpoint system: maturity radar + checkpoint template to enforce weakest-link reinforcement; billing kept deferred until launch pricing phase.
+- Added Role Registry + Role Review + Risk Register (permanent memory layer).
+- Added Permanent Commander Brain artifacts (role registry, ingest/handoff, performance log) and bound into single entry/state.
+- Registered ROLE_WEB_ARCHITECT_GEM and ROLE_WSD_VNEXT_GEM (non-executing advisory roles) with dossiers and performance tracking.
+- Added role memory for ROLE_WSD_VNEXT_GPT (registry + dossier + performance log entry).
+- Added role memory for ROLE_PRODUCT_ARCHITECT_VNEXT_GPT (product architecture, frozen scope).
+- Registered vNext Core System Implementer role; execution formally blocked pending constitution + repo readiness.
+Enabled Codex Workspace Trust Mode to remove per-command approval friction while preserving governance controls.
+Started SLICE_001_SEMANTIC_FIREWALL: local semantic firewall validator + tests + validate integration.
+- Formalized Deterministic Project Sync Protocol; chat memory deprecated as state source.
+
+## 2026-01-03
+- Adopted Mission Brief Protocol as mandatory assignment gate.
+- Hardened permanent work memory: role registry SSoT, fixed trust-mode filename, added role deliverable report template + bound as hard rule, expanded assistant sync report coverage.
+- Added Data Request Protocol (Hard Rule) + Assistant Sync Request Template to force proactive sync requests before repo-dependent discussions/decisions.
+- Added Deputy Involvement Gate for strategic/ethical/structural multi-round topics; requires Deputy review with repo-based context packet and persistence of outcomes.
+- Added Deputy Discussion Escalation Protocol + Communication Style Protocol; bound as hard rules and checkpoint gates.
+- Adopted Professional Contradiction Duty: Commander required to surface conflicts between user directives and real-world professional knowledge, regardless of hierarchy.
+- Adopted Work-Mode Discovery Protocol (hard rule) to prevent silent workflow drift; added Deputy Discussion Brief for Daily Mode boundaries and monetization alignment.
+- Finalized Commander Co-Founder Mode as binding governance rule; independent judgment, professional objection duty, and mandatory deputy escalation now enforced.
+- Formalized Three-Layer System Architecture (State Detection / Structural Mapping / Consequence Simulation) as binding rule; clarified science–metaphysics separation and authority decay.
+- Locked Daily Mode (zero authority, ambient observation, one-shot, stateless) and Diagnostic Mode (audited, hard authority cap with fade-to-silence).
+- Finalized System Master Progress Map after Deputy Architect audit; Diagnostic Mode confirmed as sole MVE; Daily Mode deferred to vNext.x to satisfy Vertical Slice Protocol.
+- Ran first formal checkpoint (maturity radar + weakest link) and persisted CHECKPOINT_2026-01-03_01.md; aligned PROJECT_STATE.json updated_at and checkpoint pointer.
+- SLICE_001 Semantic Firewall implemented with denylist+tests and wired into validate:all; evidence: validate:all passing (local run).
+- Checkpoint_2026-01-03_02: SLICE_001 verified (validate:all green). Next weakest-link selected.
+
+---- GOVERNANCE INDEX (head) ----
+# Governance Index
+
+Quick start (read in this order):
+1) Highest rulebook: [01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md](../01_PRINCIPLES/PROGRESS_GOVERNANCE_RULEBOOK.md)
+2) Collaboration charter: [01_PRINCIPLES/AI_COLLABORATION_CHARTER.md](../01_PRINCIPLES/AI_COLLABORATION_CHARTER.md)
+3) Roles & workflow: [02_ROLES/ROLE_AND_WORKFLOW_DEFINITION.md](../02_ROLES/ROLE_AND_WORKFLOW_DEFINITION.md)
+4) Task rules: [02_ROLES/TASK_ASSIGNMENT_AND_ONE_OFF_RULES.md](../02_ROLES/TASK_ASSIGNMENT_AND_ONE_OFF_RULES.md)
+5) Role registry: [02_ROLES/ROLE_REGISTRY.md](../02_ROLES/ROLE_REGISTRY.md)
+6) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md](../02_ROLES/ROLE_DOSSIER__ROLE_WEB_ARCHITECT_GEM.md)
+7) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md](../02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GEM.md)
+8) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_NARRATIVE_LANGUAGE_FORGE_GEM.md](../02_ROLES/ROLE_DOSSIER__ROLE_NARRATIVE_LANGUAGE_FORGE_GEM.md)
+9) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM.md](../02_ROLES/ROLE_DOSSIER__ROLE_DEPUTY_ARCHITECT_RISK_AUDITOR_GEM.md)
+10) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GPT.md](../02_ROLES/ROLE_DOSSIER__ROLE_WSD_VNEXT_GPT.md)
+11) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_PRODUCT_ARCHITECT_VNEXT_GPT.md](../02_ROLES/ROLE_DOSSIER__ROLE_PRODUCT_ARCHITECT_VNEXT_GPT.md)
+12) Role dossier: [02_ROLES/ROLE_DOSSIER__ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT.md](../02_ROLES/ROLE_DOSSIER__ROLE_CORE_SYSTEM_IMPLEMENTER_VNEXT_GPT.md)
+7) Decision log: [04_DECISIONS/DECISION_LOG.md](../04_DECISIONS/DECISION_LOG.md)
+8) Active phase closeout: [05_PHASES/PHASE_0002_CLOSEOUT.md](../05_PHASES/PHASE_0002_CLOSEOUT.md)
+9) Transcripts folder: [06_TRANSCRIPTS/](../06_TRANSCRIPTS/)
+10) Blockers: [07_BLOCKERS/](../07_BLOCKERS/)
+11) Reports: [08_REPORTS/](../08_REPORTS/)
+12) Legacy: [09_LEGACY/](../09_LEGACY/)
+13) Worldview canon: [../../worldview/WORLDVIEW_CANON_vNEXT_v1.md](../../worldview/WORLDVIEW_CANON_vNEXT_v1.md)
+14) Worldview patch: [../../worldview/WORLDVIEW_CANON_vNEXT_v1_PATCH.md](../../worldview/WORLDVIEW_CANON_vNEXT_v1_PATCH.md)
+- Commander self-standard: [01_PRINCIPLES/COMMANDER_SELF_STANDARD_CO_FOUNDER_MODE.md](../01_PRINCIPLES/COMMANDER_SELF_STANDARD_CO_FOUNDER_MODE.md)
+- System master progress map: [01_PRINCIPLES/SYSTEM_MASTER_PROGRESS_MAP.md](../01_PRINCIPLES/SYSTEM_MASTER_PROGRESS_MAP.md)
+
+## 03_PROCESS
+- docs/governance/03_PROCESS/WORKSPACE_TRUST_MODE.md
+
+- docs/governance/03_PROCESS/MATURITY_RADAR.md
+- docs/governance/03_PROCESS/CHECKPOINT_TEMPLATE.md
+- docs/governance/03_PROCESS/PROJECT_SYNC_PROTOCOL.md
+- scripts/assistant_sync_report.sh (npm run sync:assistant)
+- docs/governance/03_PROCESS/ROLE_REVIEW_TEMPLATE.md
+- docs/governance/03_PROCESS/RISK_REGISTER.md
+- docs/governance/03_PROCESS/COMMANDER_MEMORY_AND_DUTIES.md
+- docs/governance/03_PROCESS/INGEST_AND_HANDOFF_LOG.md
+- docs/governance/03_PROCESS/ROLE_PERFORMANCE_LOG.md
+- docs/governance/03_PROCESS/EMPTY_DATA_INCIDENT_TEMPLATE.md
+- docs/governance/03_PROCESS/MISSION_BRIEF_PROTOCOL.md
+- docs/governance/03_PROCESS/MISSION_BRIEF_TEMPLATE.md
+- docs/governance/03_PROCESS/ASSIGNMENT_LOG.md
+- docs/governance/03_PROCESS/ROLE_DELIVERABLE_REPORT_TEMPLATE.md
+- docs/governance/03_PROCESS/ASSISTANT_SYNC_REQUEST_TEMPLATE.md
+- docs/governance/03_PROCESS/DEPUTY_DISCUSSION_ESCALATION_PROTOCOL.md
+- docs/governance/03_PROCESS/COMMUNICATION_STYLE_PROTOCOL.md
+- docs/governance/03_PROCESS/WORK_MODE_DISCOVERY_PROTOCOL.md
+- docs/architecture/specifications/THREE_LAYER_SYSTEM_ARCHITECTURE.md
+- docs/architecture/specifications/DIAGNOSTIC_MODE_PROTOCOL.md
+- docs/architecture/specifications/DAILY_MODE_PROTOCOL.md
+
+## Naming conventions
+- Transcripts: `YYYY-MM-DD_<subject>_transcript.md`
+- Blockers: `YYYY-MM-DD_<title>.md`
+- Reports: `YYYY-MM-DD_<title>.md`
+- Phases: `PHASE_XXXX_CLOSEOUT.md`
+- Decisions: sequential numeric IDs under `04_DECISIONS/`
+
+=== END ASSISTANT SYNC REPORT ===
+
+=== END ===

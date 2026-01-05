@@ -1,0 +1,13 @@
+file	delete_basename
+scripts/fixQuestionBankJSON.mjs	questionBank.v1.json
+scripts/fixQuestionBankJSON4.mjs	questionBank.v1.json
+scripts/fixQuestionBankJSON2.mjs	questionBank.v1.json
+scripts/fixQuestionBankJSON3.mjs	questionBank.v1.json
+scripts/fixQuestionBankJSONFinal.mjs	questionBank.v1.json
+scripts/doctorPaths.mjs	questionBank.v1.json
+scripts/fixChoiceMeta.mjs	questionBank.v1.json
+scripts/auditPatternTags.mjs	questionBank.v1.json
+scripts/analyticsReport.mjs	questionBank.v1.json
+scripts/scanImports.mjs	index.js
+scripts/validate/validate-questionbank.mjs	questionBank.v1.json
+scripts/validate/validate-ontology-consistency.mjs	questionBank.v1.json

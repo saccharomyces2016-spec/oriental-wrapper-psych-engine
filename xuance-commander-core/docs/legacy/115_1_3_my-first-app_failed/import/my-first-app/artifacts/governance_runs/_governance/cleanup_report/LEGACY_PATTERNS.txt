@@ -1,0 +1,7 @@
+ContentDB
+questionBank
+round2Situations
+round4Anchors
+anchorSelector
+CONTENT_MAP
+(^|/)(legacy|old|deprecated|archive|backup|bak)(/|$)

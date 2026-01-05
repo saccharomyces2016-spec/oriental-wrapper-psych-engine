@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "version": "m3a-1",
+    "note": "Chains are probabilistic projections, not fate."
+  },
+  "byTheme": {
+    "control_need": {
+      "short": [
+        "你會反覆驗算，決策速度下降。"
+      ],
+      "mid": [
+        "你開始避免新的承諾，生活選項變少。"
+      ],
+      "long": [
+        "人生逐漸縮成安全區，機會感明顯下降。"
+      ]
+    },
+
+    "attachment_insecurity": {
+      "short": [
+        "你用退開換安全，對方更難理解你。"
+      ],
+      "mid": [
+        "關係進入追逃模式，溝通成本升高。"
+      ],
+      "long": [
+        "你會相信靠近等於受傷，修復能力下降。"
+      ]
+    },
+
+    "avoidance_procrastination": {
+      "short": [
+        "你用準備來合理化延後。"
+      ],
+      "mid": [
+        "未完成事項累積，自責感增加。"
+      ],
+      "long": [
+        "你會把人生停在未開始狀態。"
+      ]
+    },
+
+    "commitment_anxiety": {
+      "short": [
+        "你傾向模糊回應，避免表態。"
+      ],
+      "mid": [
+        "他人開始不再等待你的決定。"
+      ],
+      "long": [
+        "你會被動接受別人替你做的選擇。"
+      ]
+    },
+
+    "burnout_overload": {
+      "short": [
+        "睡眠與情緒品質下降。"
+      ],
+      "mid": [
+        "耐心降低，對人事更易煩躁。"
+      ],
+      "long": [
+        "恢復期拉長，需要更久才能回到狀態。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "Minimal Kangxi stroke dictionary; extend as needed",
+  "items": {
+    "張": 11,
+    "王": 4,
+    "李": 7,
+    "陳": 16,
+    "林": 8,
+    "吳": 7,
+    "黃": 12,
+    "呂": 7,
+    "趙": 14,
+    "謝": 17
+  }
+}

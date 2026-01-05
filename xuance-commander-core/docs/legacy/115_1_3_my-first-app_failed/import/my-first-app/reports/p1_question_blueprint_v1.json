@@ -1,0 +1,2481 @@
+{
+  "meta": {
+    "purpose": "blueprint only, not final wording",
+    "generatedAt": "2025-12-30T00:38:24.432Z",
+    "totalThemes": 10,
+    "questionsPerTheme": 7,
+    "totalQuestions": 70
+  },
+  "themes": {
+    "chronic_depletion": [
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for chronic_depletion - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for chronic_depletion - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for chronic_depletion - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for chronic_depletion - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for chronic_depletion - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for chronic_depletion - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_depletion",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for chronic_depletion - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "overextension",
+          "recovery",
+          "body_signals"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "loss_of_agency": [
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for loss_of_agency - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for loss_of_agency - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for loss_of_agency - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for loss_of_agency - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for loss_of_agency - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for loss_of_agency - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "loss_of_agency",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for loss_of_agency - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "voice",
+          "decision-making",
+          "negotiation"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "hyper_responsibility": [
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for hyper_responsibility - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for hyper_responsibility - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for hyper_responsibility - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for hyper_responsibility - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for hyper_responsibility - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for hyper_responsibility - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "hyper_responsibility",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for hyper_responsibility - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "role_drift",
+          "control",
+          "shared_ownership"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "fear_based_stability": [
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for fear_based_stability - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for fear_based_stability - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for fear_based_stability - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for fear_based_stability - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for fear_based_stability - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for fear_based_stability - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "fear_based_stability",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for fear_based_stability - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "risk_aversion",
+          "status_quo",
+          "experimentation"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "identity_diffusion": [
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for identity_diffusion - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for identity_diffusion - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for identity_diffusion - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for identity_diffusion - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for identity_diffusion - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for identity_diffusion - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "identity_diffusion",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for identity_diffusion - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "external_validation",
+          "values_clarity",
+          "direction"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "suppressed_needs": [
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for suppressed_needs - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for suppressed_needs - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for suppressed_needs - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for suppressed_needs - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for suppressed_needs - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for suppressed_needs - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "suppressed_needs",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for suppressed_needs - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "self-care",
+          "need_expression",
+          "conflict_avoidance"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "chronic_alertness": [
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for chronic_alertness - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for chronic_alertness - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for chronic_alertness - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for chronic_alertness - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for chronic_alertness - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for chronic_alertness - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "chronic_alertness",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for chronic_alertness - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "baseline_tension",
+          "somatic_state",
+          "safety_signal"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "unprocessed_loss": [
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for unprocessed_loss - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for unprocessed_loss - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for unprocessed_loss - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for unprocessed_loss - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for unprocessed_loss - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for unprocessed_loss - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "unprocessed_loss",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for unprocessed_loss - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "avoidance",
+          "emotional_regulation",
+          "triggers"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "meaning_vacuum": [
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for meaning_vacuum - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for meaning_vacuum - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for meaning_vacuum - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for meaning_vacuum - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for meaning_vacuum - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for meaning_vacuum - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "meaning_vacuum",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for meaning_vacuum - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "purpose_alignment",
+          "task_quality",
+          "fulfillment"
+        ],
+        "confidence_weight": 1
+      }
+    ],
+    "self_erosion": [
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 1",
+        "question_text": "[Rough question text for self_erosion - intent 1]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1.2
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 2",
+        "question_text": "[Rough question text for self_erosion - intent 2]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 3",
+        "question_text": "[Rough question text for self_erosion - intent 3]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 4",
+        "question_text": "[Rough question text for self_erosion - intent 4]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 5",
+        "question_text": "[Rough question text for self_erosion - intent 5]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 6",
+        "question_text": "[Rough question text for self_erosion - intent 6]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      },
+      {
+        "theme_id": "self_erosion",
+        "intent_label": "Intent 7",
+        "question_text": "[Rough question text for self_erosion - intent 7]",
+        "choices": [
+          "[Choice 1]",
+          "[Choice 2]",
+          "[Choice 3]",
+          "[Choice 4]"
+        ],
+        "choice_meta": [
+          {
+            "choice": "[Choice 1]",
+            "behavior_facet": "follow_momentum"
+          },
+          {
+            "choice": "[Choice 2]",
+            "behavior_facet": "avoid_conflict"
+          },
+          {
+            "choice": "[Choice 3]",
+            "behavior_facet": "observe_and_wait"
+          },
+          {
+            "choice": "[Choice 4]",
+            "behavior_facet": "self_prioritize"
+          }
+        ],
+        "pattern_tags": [
+          "values_tradeoff",
+          "compromise_habit",
+          "integrity"
+        ],
+        "confidence_weight": 1
+      }
+    ]
+  }
+}
