@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eo pipefail
 
 REPO_ROOT="/Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine"
 CORE="$REPO_ROOT/xuance-commander-core"
