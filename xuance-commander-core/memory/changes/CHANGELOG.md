@@ -91,3 +91,10 @@
 
 - Added: Mandatory Milestone Recording Rule (all completed phase/temporary goals must be written into text)
 - Added: Legacy vault temporary milestone sealed at callable-layer (router/capability/reuse/ui/failure); paragraph-level analysis intentionally deferred
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T18:11:19+0800, msg=MILESTONE: mandatory milestone recording rule added + legacy callable-layer sealed, branch=main, head=31e098added6882a747d435acc543ac42c433540, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: Completion Record Rule (mandatory write-on-complete)
+- Added: Governance CODEBOOK (high-density rules)
+- Added: MODE_SWITCHES (auto workflow modes)
+- Added: Legacy routing layer sealed as completed temporary goal

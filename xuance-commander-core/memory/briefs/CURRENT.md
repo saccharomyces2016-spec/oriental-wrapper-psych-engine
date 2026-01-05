@@ -327,3 +327,25 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 1. 主線（如 P0-2）實作卡關，且明確需要 legacy 對照
 2. 顧問輸出出現歧義，需以 legacy 作裁決依據
 3. 決定正式納入 legacy 方法為新系統的一部分
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: mandatory milestone recording rule added + legacy callable-layer sealed
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 31e098added6882a747d435acc543ac42c433540
+
+---
+【臨時目標完成｜Legacy Routing Layer】
+
+已完成：
+- 建立 legacy vault 路由層（ROUTER / CAPABILITY / REUSE / UI / FAIL）
+- 建立 legacy consult 強制規則（未查 legacy 不得設計題型）
+- legacy 專案可被「導航式引用」，避免整包失憶
+
+套用規範代碼：
+- G01 G03 G04
+- M03 → M04
