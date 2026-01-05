@@ -109,3 +109,7 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T18:20:32+0800, msg=MILESTONE: P0-2 kickoff briefs staged for income_expansion_pressure (R1/R4) with legacy+research+lessons mandatory refs, branch=main, head=8d5ab106241d3df036d5ac00fe0e51deedeb9831, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint (pre-commit) staged (ts=2026-01-05T19:17:04+0800, msg=MILESTONE: checkpoint flow reorder test, branch=main, head_before=89343ec4b15ec29a7ea321b75311d73e9ea479d6, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T19:17:04+0800, msg=MILESTONE: checkpoint flow reorder test, branch=main, head=5170f146441673c2e0a8830c8daefd0aafaa7675, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: checkpoint(pre-commit) ts=2026-01-05T19:23:21+0800 msg="MILESTONE: checkpoint flow reorder test 2" branch=main head_before=5170f146441673c2e0a8830c8daefd0aafaa7675 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"

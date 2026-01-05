@@ -415,3 +415,21 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head(before): 89343ec4b15ec29a7ea321b75311d73e9ea479d6
+
+---
+[MILESTONE|2026-01-05T19:17:04+0800]
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: checkpoint flow reorder test
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 5170f146441673c2e0a8830c8daefd0aafaa7675
+
+---
+[CHECKPOINT|2026-01-05T19:23:21+0800]
+phase: pre-commit
+message: MILESTONE: checkpoint flow reorder test 2
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 5170f146441673c2e0a8830c8daefd0aafaa7675
