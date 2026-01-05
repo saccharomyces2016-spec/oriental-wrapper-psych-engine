@@ -54,3 +54,10 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T12:30:09+0800, msg=MILESTONE: sync hook stable - evidence sealed, branch=main, head=49a7a95a543720fb995539a080b915ea17779d5a, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T12:35:48+0800, msg=MILESTONE: sync hook stable - evidence sealed (final), branch=main, head=6ec5eb7f1fef27450b1acc3614068d548ce7786c, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T13:10:23+0800, msg=MILESTONE: research layer added + life_cycle_0_100 note imported, branch=main, head=b6ae24c168e4b12954697885c72d35480254cd1e, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: Checkpoint workflow (`tools/xc_checkpoint.sh`) for milestone sealing (commit+push+evidence+MASTER rebuild)
+- Added: Robust zsh command capture for LAST_COMMAND_STATUS (preexec+precmd hooks) to prevent `(unknown)` command evidence
+- Added: Internal research layer (`docs/research/`) with explicit non-exposure rule (research text must not be pasted into user-visible domain outputs)
+- Added: GEM briefing staging area (`docs/gem/briefs/`) to convert research signals into advisor-ready inputs

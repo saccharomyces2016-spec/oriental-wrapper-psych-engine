@@ -132,35 +132,6 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 
 
 ---
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: checkpoint TS/locale fix probe
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: a3b273ba9e61344807874219225361310ee7596e
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: cleanup mojibake evidence (CURRENT/CHANGELOG) verified
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: b2fd185984ea15b73d1e8a01515d918080f5a48a
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: sync system stable (evidence clean)
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 54982618a5f6dc8fa2dbc432845adc0d29199346
-
 <!-- XUANCE_MILESTONE_SYNC_STABLE_BEGIN -->
 ---
 【里程碑封板｜2026-01-05T11:01:02+0800】
@@ -183,63 +154,26 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - 雲端保留前提仍是 commit + push；未提交檔案只在本機。
 <!-- XUANCE_MILESTONE_SYNC_STABLE_END -->
 
+---
+## 里程碑封板紀錄（可讀版｜後續只追加，不重寫）
+
+### 2026-01-05｜同步系統封板（Sync System Stable）
+- ✅ LAST_COMMAND_STATUS 不再出現 `(unknown)`，可記錄實際指令
+- ✅ Checkpoint 可用：可 commit + push + 留證 + 重建 MASTER
+- ✅ GitHub 雲端同步可用（main 對齊 origin/main）
+- ✅ 即時同步（MASTER）可用：指令 → LAST_COMMAND_STATUS → MASTER 重建
+
+### 2026-01-05｜GEM 顧問角色封板（R1/R4）
+- ✅ 已建立 R1（題目設計顧問）與 R4（風險鏈顧問）的 GEM 使用說明與輸出格式
+- ✅ 顧問輸出落點：`docs/gem/runs/`
+- ✅ 指揮官採納後才可落盤到 `domain/`
+
+### 2026-01-05｜Research 層封板（內部研究不可外露）
+- ✅ 新增 `docs/research/` 作為內部研究層（不可直接外露到使用者可見輸出）
+- ✅ 匯入研究筆記：`docs/research/life_cycle_0_100_integrated_research_note.zh.md`
+- ✅ 新增顧問摘要佔位：`docs/gem/briefs/BRIEF_life_cycle_0_100_inputs.zh.md`
+---
+
+
 
 ---
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: sync system stable (sealed in text)
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 6d85ad419578cbdc9d3e9f803c2e80a1b9ef1f31
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: GEM advisory roles (R1/R4) defined and sealed
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: ac3e4abeccd963336f00f2a1da362a92ba49a7c2
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: GEM roles sealed + evidence clean + LAST_COMMAND_STATUS verified
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 6c6ab9211620f97e6f2e6753755c3e20c9db14ad
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: sync hook stable (command capture verified) + evidence updated
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 7ec63de4f11b3128ac8da5178205fe2e1acc4d63
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: sync hook stable - evidence sealed
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 49a7a95a543720fb995539a080b915ea17779d5a
-
----
-【里程碑備份｜��
-
-已完成：
-- ✅ 雲端備份（commit + push）完成
-  - message: MILESTONE: sync hook stable - evidence sealed (final)
-  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
-  - branch: main
-  - head: 6ec5eb7f1fef27450b1acc3614068d548ce7786c
