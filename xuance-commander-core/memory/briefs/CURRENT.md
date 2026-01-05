@@ -183,3 +183,13 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - 雲端保留前提仍是 commit + push；未提交檔案只在本機。
 <!-- XUANCE_MILESTONE_SYNC_STABLE_END -->
 
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: sync system stable (sealed in text)
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 6d85ad419578cbdc9d3e9f803c2e80a1b9ef1f31
