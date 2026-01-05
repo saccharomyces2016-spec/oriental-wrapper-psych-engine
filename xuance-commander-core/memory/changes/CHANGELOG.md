@@ -65,3 +65,8 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T13:22:56+0800, msg=MILESTONE: sync system + GEM roles + research layer (evidence cleaned & readable), branch=main, head=dd90747261b1cccc0058ba226242394f8dd2adcc, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T13:27:50+0800, msg=MILESTONE: evidence drift sealed (post-readable-cleanup), branch=main, head=be6ef3e1f1e8ebc5fb7f00d133d524bb27c36995, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T14:02:11+0800, msg=MILESTONE: research reference modes sealed (Research->Brief->Advisor->Domain gate), branch=main, head=a64e7c0696a05226397e6544800253abb6ea9be8, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: Foundation & governance sealed (sync system, checkpoint workflow, AI advisory roles, research layer, research gate)
+- Changed: Project state now ready to enter ROADMAP Phase 0 (MVP single facet)

@@ -197,3 +197,35 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: be6ef3e1f1e8ebc5fb7f00d133d524bb27c36995
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: research reference modes sealed (Research->Brief->Advisor->Domain gate)
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: a64e7c0696a05226397e6544800253abb6ea9be8
+
+---
+【階段性任務完成｜基礎系統已封板】
+
+已完成（封板）：
+- MASTER 即時同步機制
+- Absolute Auto-Log（LAST_COMMAND_STATUS）
+- Checkpoint（commit + push + evidence + MASTER）
+- 同步噪音清理（_xc_precmd）
+- 治理文件體系（BOOT / STOP / PREWRITE / TEXT-ONLY）
+- AI 合夥人責任制
+- AI 顧問角色系統（R1–R5 + GEM）
+- Research 層（docs/research）建立
+- 0–100 生命週期研究筆記匯入
+- Research → Brief → Advisor → Domain Gate
+
+狀態：
+- 基礎治理與同步系統穩定
+- 可正式進入主線（ROADMAP Phase 0）
+
+下一步（主線）：
+- P0-1：選定第一個 facet（單一構面）
