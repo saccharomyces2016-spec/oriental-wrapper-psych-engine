@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -e -o pipefail
+# XUANCE_CHECKPOINT_TS_BEGIN
+# Normalize locale to avoid mojibake in timestamps/logs
+export LANG=${LANG:-en_US.UTF-8}
+export LC_ALL=${LC_ALL:-en_US.UTF-8}
+
+# Stable timestamp for evidence/logging
+TS="$(date '+%Y-%m-%dT%H:%M:%S%z')"
+# XUANCE_CHECKPOINT_TS_END
 
 # Normalize locale to avoid mojibake in logs/commits
 export LC_ALL="en_US.UTF-8" LANG="en_US.UTF-8"
@@ -10,7 +18,6 @@ CURRENT="$CORE/memory/briefs/CURRENT.md"
 CHANGELOG="$CORE/memory/changes/CHANGELOG.md"
 
 MSG="${1:-MILESTONE: checkpoint}"
-TS="$(date "+%Y-%m-%dT%H:%M:%S%z")"
 
 cd "$REPO_ROOT"
 
