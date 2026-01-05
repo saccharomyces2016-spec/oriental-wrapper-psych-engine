@@ -48,3 +48,5 @@
 - Added: milestone checkpoint pushed (ts=2026-01-05T11:24:20+0800, msg=MILESTONE: GEM advisory roles (R1/R4) defined and sealed, branch=main, head=ac3e4abeccd963336f00f2a1da362a92ba49a7c2, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
 
 - Added: milestone checkpoint pushed (ts=2026-01-05T11:34:01+0800, msg=MILESTONE: GEM roles sealed + evidence clean + LAST_COMMAND_STATUS verified, branch=main, head=6c6ab9211620f97e6f2e6753755c3e20c9db14ad, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T12:26:26+0800, msg=MILESTONE: sync hook stable (command capture verified) + evidence updated, branch=main, head=7ec63de4f11b3128ac8da5178205fe2e1acc4d63, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)
