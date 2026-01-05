@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## Unreleased
+- Added: Governance lessons learned from prior failures (version drift + rules deadlock) -> docs/governance/LESSONS_LEARNED.md
+- Added: GEM briefing from failures/constraints -> docs/gem/briefs/BRIEF_lessons_and_constraints.zh.md
+- Changed: CURRENT now points to lessons + advisory constraints to avoid repeating failure modes
 
 - Added: USER_OVERRIDE_PROTOCOL (fatigue-safe final override + rollback-by-checkpoint)
 - Added: ADR_0005 (Proposed) user override + fatigue rollback protocol
@@ -75,3 +78,5 @@
 
 - Added: Foundation & governance sealed (sync system, checkpoint workflow, AI advisory roles, research layer, research gate)
 - Changed: Project state now ready to enter ROADMAP Phase 0 (MVP single facet)
+
+- Added: milestone checkpoint pushed (ts=2026-01-05T15:05:28+0800, msg=MILESTONE: P0-1 facet selected (income_expansion_pressure) + user override protocol added, branch=main, head=4bc4347cc615b35fcbf1720bcd215a72a23a7f0c, remote=https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git)

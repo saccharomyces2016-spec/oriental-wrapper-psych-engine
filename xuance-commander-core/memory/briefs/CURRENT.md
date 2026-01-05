@@ -242,3 +242,22 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - 並走 Research → Brief → Advisor → Domain gate
 - P0-3：補齊 golden tests（固定輸入輸出）
 <!-- XUANCE_CURRENT_MAINLINE_END -->
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: P0-1 facet selected (income_expansion_pressure) + user override protocol added
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 4bc4347cc615b35fcbf1720bcd215a72a23a7f0c
+
+<!-- XUANCE_CURRENT_LESSONS_POINTER_BEGIN -->
+## 失敗案例已入庫（避免重犯｜指向）
+- 治理層已記錄兩個過去失敗案例（版本漂移 / 規則卡死）：
+  - docs/governance/LESSONS_LEARNED.md
+- 給顧問的約束 brief：
+  - docs/gem/briefs/BRIEF_lessons_and_constraints.zh.md
+<!-- XUANCE_CURRENT_LESSONS_POINTER_END -->
+
