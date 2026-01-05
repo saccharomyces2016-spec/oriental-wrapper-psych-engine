@@ -261,3 +261,13 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - docs/gem/briefs/BRIEF_lessons_and_constraints.zh.md
 <!-- XUANCE_CURRENT_LESSONS_POINTER_END -->
 
+
+---
+【里程碑備份｜��
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: failure cases recorded (version drift + rules deadlock) + advisory constraints brief
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: eefb589c79dc4952c1b0fdda8d88010d8dcb9e11

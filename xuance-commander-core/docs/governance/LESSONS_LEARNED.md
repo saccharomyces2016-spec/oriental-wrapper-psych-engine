@@ -48,3 +48,17 @@
 - 顧問輸出只能是建議稿：docs/gem/runs/；採納後才可落盤 domain
 - 舊版本題庫/題型應進 archive/legacy 層：只做「反例與訊號萃取」，不得直接貼進 domain
 <!-- XUANCE_LESSONS_FAILCASES_END -->
+
+---
+
+## 失敗案例補充：my-first-app（早期封存）
+
+問題：
+- 題目版本多線並存，無唯一真相來源
+- 無研究層，直接把題目當結果
+- UI 與命題邏輯耦合
+
+改善原則：
+- 強制 Research → Brief → Advisor → Domain
+- 題目必須可被替換，不可綁死敘事
+- 治理層允許「使用者最終覆寫」
