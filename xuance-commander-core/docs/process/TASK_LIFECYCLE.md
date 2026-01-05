@@ -29,6 +29,27 @@
 - 更新 `MASTER_SYNC_PACKET.md` 作為對話快照
 - MASTER 為只讀，不可手改
 
+## 5. 里程碑備份（Checkpoint｜雲端留存）
+
+當指揮官宣告「階段性任務目標達成 / 已驗收完成」時，必須立刻觸發一次雲端備份與留證：
+
+- 執行：
+  - `bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+
+此指令必須同時完成：
+- git add/commit/push（雲端備份）
+- 將證據寫入：`memory/briefs/CURRENT.md` 與 `memory/changes/CHANGELOG.md`
+- 重建：`memory/briefs/MASTER_SYNC_PACKET.md`
+
+驗收：
+- GitHub 上 `origin/main` 可看到新 commit（message 含 MILESTONE）。
+- `CURRENT.md` / `CHANGELOG.md` 有新增里程碑留證。
+- 同一輪 `MASTER_SYNC_PACKET.md` 的 `generatedAt` 更新。
+
+注意：
+- 若 push 失敗（網路/認證/衝突），不得宣稱「雲端已備份」；必須先修復後再重跑 checkpoint。
+
+
 ## 核心原則
 - 有紀錄才算做過
 - 有成功狀態才算完成

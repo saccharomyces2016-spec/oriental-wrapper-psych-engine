@@ -6,6 +6,20 @@
 #   export XUANCE_CORE_ROOT="/absolute/path/to/xuance-commander-core"
 #   source "$XUANCE_CORE_ROOT/tools/sync_mode_hooks.sh"
 
+# --- legacy hook cleanup (pre-20260104) ---
+# Some older shells still have `_xc_precmd` registered in `precmd_functions`.
+# That legacy implementation relies on STATUS_FILE/MASTER_GEN and can emit:
+#   _xc_precmd:8: no such file or directory:
+# We hard-remove it on every (re)source to keep prompts clean.
+if typeset -f _xc_precmd >/dev/null 2>&1; then
+  # remove from precmd_functions if present
+  if typeset -p precmd_functions >/dev/null 2>&1; then
+    precmd_functions=(${precmd_functions:#_xc_precmd})
+  fi
+  unset -f _xc_precmd 2>/dev/null || true
+fi
+# --- end legacy hook cleanup ---
+
 _xc_write_status() {
   local cmd="$1"
   local ec="$2"
@@ -110,3 +124,45 @@ if [[ -n "${ZSH_VERSION:-}" ]]; then
 else
   _xc_install_bash
 fi
+
+# XUANCE_ZSH_CMD_CAPTURE_BEGIN
+# Purpose: ensure zsh captures the last executed command so LAST_COMMAND_STATUS is not (unknown).
+
+# Legacy cleanup (old function names)
+if typeset -p precmd_functions >/dev/null 2>&1; then
+  precmd_functions=(${precmd_functions:#_xc_precmd})
+fi
+if typeset -p preexec_functions >/dev/null 2>&1; then
+  preexec_functions=(${preexec_functions:#_xc_preexec})
+fi
+unset -f _xc_precmd _xc_preexec 2>/dev/null || true
+
+# --- zsh hooks (capture command + write status) ---
+_xc_zsh_preexec() {
+  # $1 is the full command line about to be executed
+  _xc_zsh_last_cmd="$1"
+}
+
+_xc_zsh_precmd() {
+  local ec="$?"
+  local cmd="${_xc_zsh_last_cmd:-"(unknown)"}"
+  _xc_write_status "$cmd" "$ec"
+}
+
+# Register zsh hooks (avoid duplicates)
+if typeset -p preexec_functions >/dev/null 2>&1; then
+  preexec_functions=(${preexec_functions:#_xc_zsh_preexec})
+  preexec_functions+=( _xc_zsh_preexec )
+fi
+if typeset -p precmd_functions >/dev/null 2>&1; then
+  precmd_functions=(${precmd_functions:#_xc_zsh_precmd})
+  precmd_functions+=( _xc_zsh_precmd )
+fi
+
+if type add-zsh-hook >/dev/null 2>&1; then
+  add-zsh-hook -d preexec _xc_zsh_preexec 2>/dev/null || true
+  add-zsh-hook -d precmd _xc_zsh_precmd 2>/dev/null || true
+  add-zsh-hook preexec _xc_zsh_preexec
+  add-zsh-hook precmd _xc_zsh_precmd
+fi
+# XUANCE_ZSH_CMD_CAPTURE_END

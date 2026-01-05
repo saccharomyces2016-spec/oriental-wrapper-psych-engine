@@ -34,6 +34,19 @@
 ---
 
 
+
+
+## 里程碑自動備份（Checkpoint｜必做）
+
+當指揮官判定「階段性任務目標達成」並準備寫入 CURRENT/CHANGELOG 做留證時，必須改用 checkpoint 工具一次完成：
+
+- 指令：
+  - `bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+
+硬規則：
+- 只有 checkpoint 成功 push 後，才算完成「雲端備份 + 文本留證 + MASTER 更新」。
+- 若 push 失敗，必須先修復（PAT/SSH/網路/衝突），再重跑 checkpoint。
+
 ## Cursor / Codex 協同權限（新增）
 
 ### 自主工具選擇授權（硬性）

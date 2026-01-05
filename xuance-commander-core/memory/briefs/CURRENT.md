@@ -28,8 +28,8 @@
 已達成：
 - ✅ 已建立「即時同步」機制：用 `LAST_COMMAND_STATUS` 作為執行證據，並由 hook（或 tools）觸發重建 `MASTER_SYNC_PACKET.md`。
 - ✅ 已形成固定做法（不靠人工複製貼上）：
-  1) 任何關鍵指令 → 讓系統自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
-  2) 立即重建 `memory/briefs/MASTER_SYNC_PACKET.md`
+  1) 任何關鍵指令 → 自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) 同步重建 `memory/briefs/MASTER_SYNC_PACKET.md`
   3) 後續對齊一律貼 MASTER（必要時再補 CHAT_PACKET）
 
 驗收（可檢查）：
@@ -39,7 +39,7 @@
 
 注意：
 - SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 只是同步快照。
-- 若 hook 失效：不得宣稱「已同步」，需改用既有工具（如 tools/xc / tools/xuance_run.sh）跑關鍵指令。
+- hook 失效時：不得宣稱「即時同步」，改用既有工具（如 `tools/xc` / `tools/xuance_run.sh`）跑關鍵指令以產生證據。
 
 ---
 【狀態更新｜2026-01-04】
@@ -50,3 +50,56 @@
   - 指令結果可被 MASTER_SYNC_PACKET 納入同步
   - 已實測（echo sync-test）：成功寫入 command / exitCode / success
 
+
+---
+【里程碑完成｜2026-01-04】
+
+已驗收完成：
+- ✅ GitHub 雲端同步已可用（local HEAD 可與 origin/main 比對）
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - 備註：雲端保留的前提是 commit + push（未 commit 的檔案仍只在本機）
+- ✅ 即時同步（MASTER）已可用（每次指令 → LAST_COMMAND_STATUS 更新 → 觸發 MASTER 重建）
+  - 驗收方式：`LAST_COMMAND_STATUS.md.updatedAt` 會更新，且同一輪 `MASTER_SYNC_PACKET.md.generatedAt` 會更新。
+- ✅ 里程碑備份流程已建立（Checkpoint）
+  - 執行：`bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+  - 成功條件：push 成功 + CURRENT/CHANGELOG 留證 + MASTER 更新
+
+決策：
+- 「第八行（quick verify timestamps）」不再視為必做門檻；它只是『最後看一眼』，可省略。
+
+待處理（下一個任務）：
+- ⏳ 清除殼層遺留的 `_xc_precmd` 噴錯：`_xc_precmd:8: no such file or directory:`（以 hook cleanup + 新開終端驗收）
+
+
+## 白話補充說明：看不懂技術輸出是什麼意思
+
+有時系統會顯示很多技術性很強的內容（像一些 shell 輸出或 hook 路徑訊息）。  
+**這些不是錯誤**，而是系統在寫很多「機器用的證據」給它自己看。  
+真正要看的重點只有三件事：
+
+1) 這條指令是否真正成功（exitCode 代表執行結果）  
+2) 有沒有成功推到雲端（commit + push）  
+3) MASTER 是否更新
+
+如果這三件事都有證據支持，那就算成功，  
+其它技術輸出不用特別理解或記住。
+
+---
+
+## 白話補充說明：GPT 上下文長度與同步資料的問題
+
+GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）。  
+因此我們不會把所有歷史訊息一次塞給它，而是透過「同步快照 + 分段掃描」讓 GPT 只讀**必要部分**。
+
+白話比喻：
+
+- 把整本書印成一張大海報 → GPT 會爆掉（因為太長）  
+- 把書拆成很多小片段 + 目錄查詢 → GPT 只看重要章節
+
+未來我們也可能把這些片段存進更進階的查詢系統（例如向量資料庫），
+讓 GPT 只抓與當前任務最相關的段落來讀。
+
+這些白話補充能幫助讀者理解底層機制，而不被技術輸出搞混。
+
+---

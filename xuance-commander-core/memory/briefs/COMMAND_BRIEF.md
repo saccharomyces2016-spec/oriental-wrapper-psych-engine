@@ -1,6 +1,6 @@
 # COMMAND BRIEF（指揮官每次必讀，否則不得開始工作）
 
-- generatedAt: 2026-01-04T21:06:46
+- generatedAt: 2026-01-05T08:42:49
 
 ## 必讀清單（只以文本為準）
 - charter/CHARTER.md
@@ -126,10 +126,23 @@
 
 ---
 
-## 補充：即時同步（MASTER）成果（已建立）
-- 已建立：單檔同步快照 MASTER_SYNC_PACKET.md（只讀，供每次對齊用）
-- 原則：SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 與原檔衝突以原檔為準，需重新生成 MASTER
-- 使用習慣：每次新任務／重要決策前，優先貼 MASTER（必要時再補 CHAT_PACKET）
+## 補充：即時同步（MASTER）成果（已達成）
+
+已達成：
+- ✅ 已建立「即時同步」機制：用 `LAST_COMMAND_STATUS` 作為執行證據，並由 hook（或 tools）觸發重建 `MASTER_SYNC_PACKET.md`。
+- ✅ 已形成固定做法（不靠人工複製貼上）：
+  1) 任何關鍵指令 → 自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) 同步重建 `memory/briefs/MASTER_SYNC_PACKET.md`
+  3) 後續對齊一律貼 MASTER（必要時再補 CHAT_PACKET）
+
+驗收（可檢查）：
+- 跑一條指令後，`LAST_COMMAND_STATUS.md` 的 `updatedAt` 會更新。
+- 同一輪操作後，`MASTER_SYNC_PACKET.md` 的 `generatedAt` 會更新。
+- MASTER 內能看得到最新的 `LAST_COMMAND_STATUS`（必要時含 `REPO_STATUS`）。
+
+注意：
+- SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 只是同步快照。
+- hook 失效時：不得宣稱「即時同步」，改用既有工具（如 `tools/xc` / `tools/xuance_run.sh`）跑關鍵指令以產生證據。
 
 ---
 【狀態更新｜2026-01-04】
@@ -139,6 +152,27 @@
   - 每一條終端機指令會自動寫入 memory/briefs/LAST_COMMAND_STATUS.md
   - 指令結果可被 MASTER_SYNC_PACKET 納入同步
   - 已實測（echo sync-test）：成功寫入 command / exitCode / success
+
+
+---
+【里程碑完成｜2026-01-04】
+
+已驗收完成：
+- ✅ GitHub 雲端同步已可用（local HEAD 可與 origin/main 比對）
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - 備註：雲端保留的前提是 commit + push（未 commit 的檔案仍只在本機）
+- ✅ 即時同步（MASTER）已可用（每次指令 → LAST_COMMAND_STATUS 更新 → 觸發 MASTER 重建）
+  - 驗收方式：`LAST_COMMAND_STATUS.md.updatedAt` 會更新，且同一輪 `MASTER_SYNC_PACKET.md.generatedAt` 會更新。
+- ✅ 里程碑備份流程已建立（Checkpoint）
+  - 執行：`bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+  - 成功條件：push 成功 + CURRENT/CHANGELOG 留證 + MASTER 更新
+
+決策：
+- 「第八行（quick verify timestamps）」不再視為必做門檻；它只是『最後看一眼』，可省略。
+
+待處理（下一個任務）：
+- ⏳ 清除殼層遺留的 `_xc_precmd` 噴錯：`_xc_precmd:8: no such file or directory:`（以 hook cleanup + 新開終端驗收）
 
 ## TEXT-ONLY RULES（摘要）
 （以下內容為原文節錄；若衝突，以 docs/governance/TEXT_ONLY_EXECUTION_RULES.md 為準）

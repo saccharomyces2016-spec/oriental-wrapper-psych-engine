@@ -1,6 +1,6 @@
 # CHAT_PACKET (paste this whole file into XuanCe Commander)
 
-Generated: 2026-01-04T21:06:46+08:00
+Generated: 2026-01-05T08:42:49+08:00
 
 ## WHAT THIS PACKET IS
 - Minimal context bundle to keep Commander aligned to TEXT-only goals/progress.
@@ -10,7 +10,7 @@ Generated: 2026-01-04T21:06:46+08:00
 
 # COMMAND BRIEF（指揮官每次必讀，否則不得開始工作）
 
-- generatedAt: 2026-01-04T21:06:46
+- generatedAt: 2026-01-05T08:42:49
 
 ## 必讀清單（只以文本為準）
 - charter/CHARTER.md
@@ -136,10 +136,23 @@ Generated: 2026-01-04T21:06:46+08:00
 
 ---
 
-## 補充：即時同步（MASTER）成果（已建立）
-- 已建立：單檔同步快照 MASTER_SYNC_PACKET.md（只讀，供每次對齊用）
-- 原則：SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 與原檔衝突以原檔為準，需重新生成 MASTER
-- 使用習慣：每次新任務／重要決策前，優先貼 MASTER（必要時再補 CHAT_PACKET）
+## 補充：即時同步（MASTER）成果（已達成）
+
+已達成：
+- ✅ 已建立「即時同步」機制：用 `LAST_COMMAND_STATUS` 作為執行證據，並由 hook（或 tools）觸發重建 `MASTER_SYNC_PACKET.md`。
+- ✅ 已形成固定做法（不靠人工複製貼上）：
+  1) 任何關鍵指令 → 自動寫入 `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) 同步重建 `memory/briefs/MASTER_SYNC_PACKET.md`
+  3) 後續對齊一律貼 MASTER（必要時再補 CHAT_PACKET）
+
+驗收（可檢查）：
+- 跑一條指令後，`LAST_COMMAND_STATUS.md` 的 `updatedAt` 會更新。
+- 同一輪操作後，`MASTER_SYNC_PACKET.md` 的 `generatedAt` 會更新。
+- MASTER 內能看得到最新的 `LAST_COMMAND_STATUS`（必要時含 `REPO_STATUS`）。
+
+注意：
+- SSOT 仍是 charter/roadmap/governance/adr 等原始檔；MASTER 只是同步快照。
+- hook 失效時：不得宣稱「即時同步」，改用既有工具（如 `tools/xc` / `tools/xuance_run.sh`）跑關鍵指令以產生證據。
 
 ---
 【狀態更新｜2026-01-04】
@@ -149,6 +162,27 @@ Generated: 2026-01-04T21:06:46+08:00
   - 每一條終端機指令會自動寫入 memory/briefs/LAST_COMMAND_STATUS.md
   - 指令結果可被 MASTER_SYNC_PACKET 納入同步
   - 已實測（echo sync-test）：成功寫入 command / exitCode / success
+
+
+---
+【里程碑完成｜2026-01-04】
+
+已驗收完成：
+- ✅ GitHub 雲端同步已可用（local HEAD 可與 origin/main 比對）
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - 備註：雲端保留的前提是 commit + push（未 commit 的檔案仍只在本機）
+- ✅ 即時同步（MASTER）已可用（每次指令 → LAST_COMMAND_STATUS 更新 → 觸發 MASTER 重建）
+  - 驗收方式：`LAST_COMMAND_STATUS.md.updatedAt` 會更新，且同一輪 `MASTER_SYNC_PACKET.md.generatedAt` 會更新。
+- ✅ 里程碑備份流程已建立（Checkpoint）
+  - 執行：`bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+  - 成功條件：push 成功 + CURRENT/CHANGELOG 留證 + MASTER 更新
+
+決策：
+- 「第八行（quick verify timestamps）」不再視為必做門檻；它只是『最後看一眼』，可省略。
+
+待處理（下一個任務）：
+- ⏳ 清除殼層遺留的 `_xc_precmd` 噴錯：`_xc_precmd:8: no such file or directory:`（以 hook cleanup + 新開終端驗收）
 
 ## TEXT-ONLY RULES（摘要）
 （以下內容為原文節錄；若衝突，以 docs/governance/TEXT_ONLY_EXECUTION_RULES.md 為準）
@@ -181,7 +215,12 @@ docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md
 # CHANGELOG
 
 ## Unreleased
+- Added: GitHub cloud sync verified (local HEAD can be matched to origin/main); documented the safety caveat that only committed+pushed changes are protected
+- Added: Legacy zsh hook `_xc_precmd` auto-cleanup in tools/sync_mode_hooks.sh to stop prompt errors and keep Absolute Auto-Log stable
+- Added: Milestone checkpoint workflow (xc_checkpoint.sh) required in Task Lifecycle/Autopilot with MASTER rebuild + CURRENT/CHANGELOG evidence
 
+
+- Added: Realtime MASTER sync marked as achieved (LAST_COMMAND_STATUS as evidence + hook/tool-triggered MASTER rebuild + verifiable checks documented in CURRENT)
 - Added: REPO_STATUS auto snapshot (git status/remote/last commit) -> `memory/briefs/REPO_STATUS.md`, included in MASTER for deterministic repo alignment
 - Changed: Commander may proactively propose best-path workflow (Cursor diagnosis -> Codex one-shot fix) under controlled limits (see ROLE_XUANCE_COMMANDER R6; COMMANDER_AUTOPILOT_PROTOCOL Cursor/Codex section)
 
@@ -271,6 +310,7 @@ tools/refresh_brief.py
 tools/preflight.sh
 tools/xuance_exec.sh
 tools/run_with_status.sh
+tools/xc_checkpoint.sh
 tools/build_master_sync_packet.sh
 tools/refresh_brief.sh
 tools/build_master_sync_packet_full.sh
@@ -400,6 +440,7 @@ logs/preflight/2026-01-04_153359.txt
 logs/preflight/2026-01-04_174916.txt
 logs/preflight/2026-01-04_124138.txt
 logs/preflight/2026-01-04_121653.txt
+logs/preflight/2026-01-05_084244.txt
 logs/preflight/2026-01-04_153606.txt
 logs/preflight/2026-01-04_162418.txt
 logs/preflight/2026-01-04_131718.txt
@@ -410,6 +451,7 @@ logs/preflight/2026-01-04_063046.txt
 logs/preflight/2026-01-04_161645.txt
 logs/preflight/2026-01-04_153608.txt
 logs/preflight/2026-01-04_165636.txt
+logs/preflight/2026-01-05_084249.txt
 logs/preflight/2026-01-04_170809.txt
 logs/preflight/2026-01-04_124121.txt
 logs/preflight/2026-01-04_153356.txt
@@ -518,6 +560,19 @@ domain/questions/stress_recovery.questions.v1.0.json
 ---
 
 
+
+
+## 里程碑自動備份（Checkpoint｜必做）
+
+當指揮官判定「階段性任務目標達成」並準備寫入 CURRENT/CHANGELOG 做留證時，必須改用 checkpoint 工具一次完成：
+
+- 指令：
+  - `bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <里程碑名稱> 已驗收完成"`
+
+硬規則：
+- 只有 checkpoint 成功 push 後，才算完成「雲端備份 + 文本留證 + MASTER 更新」。
+- 若 push 失敗，必須先修復（PAT/SSH/網路/衝突），再重跑 checkpoint。
+
 ## Cursor / Codex 協同權限（新增）
 
 ### 自主工具選擇授權（硬性）
@@ -596,4 +651,6 @@ domain/questions/stress_recovery.questions.v1.0.json
 - 必須安裝 shell hook（bash/zsh），讓「每一條指令」都自動把 (command + exitCode) 寫入 `memory/briefs/LAST_COMMAND_STATUS.md`。
 - 每次寫入後必須自動重新生成 `MASTER_SYNC_PACKET.md`，確保同步模式下 MASTER 永遠最新。
 - 若 shell hook 未安裝或失效：不得宣稱「已同步」，需改用 `tools/xc <cmd...>` 或 `tools/xuance_run.sh <cmd...>` 執行關鍵指令。
+- 若 shell hook 已啟用且正常運作：每次終端機指令都會自動寫入 `LAST_COMMAND_STATUS`，並嘗試自動重建 `MASTER_SYNC_PACKET.md`（以 `tools/build_master_sync_packet_full.sh` 為優先）。
+- 因此「自動寫入 MASTER」的可行方案就是：確保 hook 可用（或使用 `tools/xc` / `tools/xuance_run.sh` 執行關鍵指令），然後由 hook 觸發 MASTER 重建；不再依賴人工複製貼上。
 
