@@ -737,3 +737,26 @@ message: MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored +
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
+
+
+### TEMP_OBJECTIVE: Governance Hardening via Cursor Audit
+
+背景：
+- 曾發生同類資料分散於不同資料夾（docs/gem）導致判斷困難
+- 問題非單點錯誤，而是制度缺口
+
+目標：
+- 使用 Cursor 進行全倉治理盤點與彙整
+- 產出「可寫入文本的治理規則」
+
+產出要求：
+- 只關注「會再次發生的結構性問題」
+- 每一項問題需對應：
+  - 明確規範
+  - 檢查方式（script / checklist）
+  - Canon 路徑
+
+完成條件：
+- 新規則寫入 governance 文本
+- 對應 audit / guard script 存在
+
