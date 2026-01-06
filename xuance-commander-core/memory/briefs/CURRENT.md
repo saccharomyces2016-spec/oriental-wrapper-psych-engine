@@ -721,3 +721,11 @@ message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore gene
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: d031279f9f676de1d1f77ee35051427aa6266daf
+
+---
+[CHECKPOINT|2026-01-06T22:09:05+0800]
+phase: pre-commit
+message: MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored + depth 6)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: a3eb9664a43ec3cc1c47194b0a36a4966c9ef8ef
