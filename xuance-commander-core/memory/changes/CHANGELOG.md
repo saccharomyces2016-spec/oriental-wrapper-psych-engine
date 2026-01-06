@@ -171,3 +171,5 @@
 - Added: checkpoint(post-push) ts=2026-01-06T15:37:09+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_pushed=16ec30ed760bb482cd1996a2d362fc7b382576c9 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T15:51:09+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_before=1555140c6066d474493ddd767bead2f96ec78135 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T15:51:11+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_pushed=7b2567a4ce565140374ef71c45834082893eac37 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
