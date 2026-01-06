@@ -128,3 +128,23 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 規範來源：
 - `xuance-commander-core/docs/governance/DOCS_GEM_CANON_RULE.md`
 <!-- XUANCE_DOCS_GEM_CANON_END -->
+
+---
+
+## Pending Governance Specs (to be authored from audit)
+
+These items are approved to be written next (derived from the governance gap audit) and then enforced:
+
+- Governance Canon Enforcement (single governance root)
+- Output Artifact Canon (single `out/` + naming)
+- Temporary Artifact Canon (single `tmp/` + lifecycle)
+- Log Artifact Registry (structure + retention)
+- Sync Packet Single Source (role sync packets)
+- Chat Packet Canon (single path)
+- Advisor Packet Versioning (timestamp dirs + LATEST rule)
+- Duplicate Filename Resolution (priority + lint rule)
+- Cross-Directory Reference Rule (how to cite paths)
+- Shadow Path Registry (explicitly non-evidence unless promoted)
+- Legacy Artifact Governance (retention + reference ban by default)
+
+- Global Path Canon: docs/governance/GLOBAL_PATH_CANON.md
