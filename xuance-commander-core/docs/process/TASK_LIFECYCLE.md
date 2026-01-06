@@ -60,6 +60,10 @@
 - 日常對齊（推薦）：貼 MIN 快照（MASTER_MIN_SYNC_PACKET.md）。
 - 需要深度對齊或觸發 FULL 條件時：貼 FULL 快照（MASTER_SYNC_PACKET.md）。
 
+補充（對話層索取規則）：
+- 日常對齊：只貼 MIN（`MASTER_MIN_SYNC_PACKET.md`）。
+- 只有在 `docs/ops/SYNC_TRIGGERS.md` 的「FULL 索取觸發條件」任一成立時，指揮官才會點名索取 FULL（`MASTER_SYNC_PACKET.md`）。
+
 ### 工程證據（Verification）
 當任務涉及「改碼是否改對」「測試是否通過」「環境/Hook 是否修好」：
 - 必須生成 VERIFICATION_PACK（若工具存在）並在文本中留下路徑指標。

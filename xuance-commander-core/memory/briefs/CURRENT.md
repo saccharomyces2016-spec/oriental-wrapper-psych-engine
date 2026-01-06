@@ -667,3 +667,11 @@ message: MILESTONE: enforce role sync packet coverage audit (single-packet rule)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 5790e6216d77c4737296585d543c54b704eb3c35
+
+---
+[CHECKPOINT|2026-01-06T18:34:13+0800]
+phase: pre-commit
+message: MILESTONE: FULL trigger + MIN evidence policy added
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: fc5d088495465be3d44062a681a78826802422ba

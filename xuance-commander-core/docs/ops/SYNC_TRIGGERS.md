@@ -35,3 +35,53 @@ Decision: FULL + (VP: yes) + touched docs/governance + milestone checkpoint
 - 你發現顧問輸出出現「缺件/自行假設」
 
 目的：讓顧問永遠以最新共同規範 + 角色專屬 brief 工作，避免漂移。
+
+## FULL 索取觸發條件（對話層｜指揮官會點名你要貼 FULL）
+
+預設：日常只貼 `MASTER_MIN_SYNC_PACKET.md`（MIN）。
+
+只要符合下列任一條件，指揮官必須明確點名：
+> 「請提供 FULL：MASTER_SYNC_PACKET.md，原因是觸發了 <條件>」
+
+### 觸發條件（任一成立即索取 FULL）
+1) 變更類型涉及結構/規則主權（高風險）
+- schema / domain / governance / charter / roadmap / adr 任何一項有改動或正在討論改動。
+
+2) 顧問/外部角色出現 STOP / MISSING / INCOMPLETE
+- 任何顧問回報缺件、衝突、或要求補參照。
+
+3) 需要跨檔案做「裁決」或「追溯」
+- 例如：版本漂移、規則卡死、legacy 對照裁決、或需要確認某規範的原文細節。
+
+4) 工程診斷需要更完整證據
+- hook/殼層/路徑/分支/遠端同步/自動生成工具疑似異常，且 MIN 內的證據不足以判定。
+
+5) 里程碑封板/Checkpoint 前後的對齊
+- 你宣告「已驗收完成」要封板，或剛封板完成需要核對證據鏈。
+
+6) 指揮官發現 MIN 與現況不一致（Evidence Drift）
+- 例如：`LAST_COMMAND_STATUS`/`REPO_STATUS`/`LATEST_VERIFICATION_PACK` 顯示的時間戳或 head 與你描述不一致。
+
+---
+
+## MIN 必含工程回報（常用證據）
+
+硬規則：
+- `MASTER_MIN_SYNC_PACKET.md`（MIN）必須內嵌（或至少明確指向並包含最新內容摘要）以下 3 份證據：
+  1) `memory/briefs/LAST_COMMAND_STATUS.md`
+  2) `memory/briefs/REPO_STATUS.md`
+  3) `memory/briefs/LATEST_VERIFICATION_PACK.md`
+
+重要澄清：
+- 指揮官看得到的「指令執行回報」，只會是 **MIN/FULL 快照生成當下** 的最新狀態。
+- 因此：跑完指令後，必須確保「證據已寫入」且「MIN 已重建」。
+
+### 驗收（最短可檢查）
+1) 跑一條無害指令：`echo __probe__`
+2) 檢查 `memory/briefs/LAST_COMMAND_STATUS.md`：`updatedAt/command/exitCode` 是否更新。
+3) 檢查 `memory/briefs/MASTER_MIN_SYNC_PACKET.md`：`generatedAt` 是否更新，且內文的 LAST_COMMAND_STATUS 區塊是否同步到最新。
+
+### 若你發現「跑完指令但 MIN 沒更新」
+- 一律視為同步鏈不完整：不得宣稱已同步。
+- 先用你們既定工具重建同步（例如 `build_master_sync_packet_auto.sh` 或專案內的 MIN 重建腳本）。
+- 若仍無法自動更新：生成 `VERIFICATION_PACK` 作為當輪證據，並在 MIN/FULL 中提供路徑指標。

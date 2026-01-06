@@ -1,4 +1,28 @@
-# VERIFICATION_PACK Policy（證據包管理規範｜硬規則）
+# VERIFICATION_PACK Policy
+
+## Repo Tree Snapshot（資料夾全貌快照｜必備條目之一）
+
+目的：
+- 在不貼整個 repo、且不靠主觀記憶的前提下，讓指揮官/顧問能「確定」目前 repo 的檔案結構與關鍵路徑是否存在。
+
+何時必做（任一成立）：
+- 顧問輸出回報缺件（MISSING / INCOMPLETE / STOP）
+- 你要我判斷「資料在哪」「是否已有該檔」「路徑是否正確」
+- 你要我做跨資料夾的規範整合（例如：domain + docs/gem + legacy vault）
+
+快照內容（至少包含）：
+- repo 內被追蹤檔案清單（tracked files）
+- 關鍵路徑是否存在（例如：`docs/gem/briefs/`, `docs/gem/runs/`, `domain/`, `docs/research/`, `memory/briefs/`, `xuance-commander-core/memory/briefs/role_sync_packets/`）
+
+建議做法（擇一即可，依環境可用性）：
+1) `git ls-files`
+2) `find . -maxdepth <N> -type f`（排除 `.git/`、`node_modules/`、`dist/` 等巨量目錄）
+3) `tree -a`（若系統有安裝 tree）
+
+落盤規則：
+- Repo Tree Snapshot 必須作為 VERIFICATION_PACK 的一部分被保存（同一輪任務可追溯）。
+- 若專案後續新增自動化工具：可以把 Snapshot 另存為 `memory/briefs/REPO_TREE.md`，並在 VERIFICATION_PACK 與 MASTER/MIN 中只保留「路徑指標」。
+（證據包管理規範｜硬規則）
 
 目的：
 - 避免證據包散落、難以找、難以引用

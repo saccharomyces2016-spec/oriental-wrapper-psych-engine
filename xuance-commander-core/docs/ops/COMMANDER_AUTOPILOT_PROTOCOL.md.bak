@@ -6,7 +6,6 @@
 - 避免資料量爆炸：只傳「最小必要上下文」，缺什麼再點名索取
 
 ## 永久硬規則
-5) 指揮官不能宣稱「已掌握 repo 全貌」；除非你提供了最新快照證據（MASTER/MIN 或含 Repo Tree Snapshot 的 VERIFICATION_PACK）。
 1) 主目標/主進度只引用：
    - charter/CHARTER.md
    - roadmap/ROADMAP.md
