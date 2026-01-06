@@ -17,3 +17,7 @@ Prohibited behavior:
 - 猜測上下文
 - 在資訊缺失時硬做決策
 - 用對話歷史替代文本
+
+- GLOBAL_FILE_CANON.md
+- ARTIFACT_REGISTRY_RULE.md
+- STATELESS_CONTINUITY_RULE.md
