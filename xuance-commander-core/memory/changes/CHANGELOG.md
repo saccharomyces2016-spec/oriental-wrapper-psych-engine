@@ -189,3 +189,5 @@
 - Added: checkpoint(post-push) ts=2026-01-06T18:34:15+0800 msg="MILESTONE: FULL trigger + MIN evidence policy added" branch=main head_pushed=a7e98cabe9f49ed96c185600f7f9bf71138d5107 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T22:00:33+0800 msg="MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated tmp/logs" branch=main head_before=cdfb9011a3ae549d057b48cd8608ef189d05314d remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T22:00:41+0800 msg="MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated tmp/logs" branch=main head_pushed=d031279f9f676de1d1f77ee35051427aa6266daf remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
