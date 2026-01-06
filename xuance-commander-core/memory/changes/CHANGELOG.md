@@ -127,3 +127,5 @@
 - Added: checkpoint(post-push) ts=2026-01-06T10:10:53+0800 msg="MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared" branch=main head_pushed=3abf24bc98bdb9c7cc1842440ead9c5b962eac8e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T10:25:11+0800 msg="MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)" branch=main head_before=9c59b93ab20fb6586807c1cfa9278c77a6bc33c5 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T10:25:13+0800 msg="MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)" branch=main head_pushed=4569052a10dde039b4c4f6a0b155234ee20bb5b4 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
