@@ -474,3 +474,11 @@ message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) d
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: ca71c4f1aadd484c1f34e993a7e0d7ba77f42b40
+
+---
+[CHECKPOINT|2026-01-06T10:10:53+0800]
+phase: post-push
+message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 3abf24bc98bdb9c7cc1842440ead9c5b962eac8e
