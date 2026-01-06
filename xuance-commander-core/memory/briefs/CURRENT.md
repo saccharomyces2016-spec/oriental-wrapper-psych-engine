@@ -643,3 +643,11 @@ message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: 31fffc70e5539b9d18ea9db8e33f8313aef529f4
+
+---
+[CHECKPOINT|2026-01-06T16:41:43+0800]
+phase: post-push
+message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: e2514c8b651ecc110e57f6349367fe282bd50997
