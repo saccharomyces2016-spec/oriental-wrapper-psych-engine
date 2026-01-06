@@ -6,10 +6,10 @@
 - 初始化資料夾結構與玄策指揮官角色規範
 - 建立可擴充 MVP 骨架（domain 分檔、schema、golden tests、build 合併）
 
-下一步（待做）：
-1) 選定第一個心理構面（facet）：例如 stress_recovery
-2) 寫入該 facet 的 questions / scoring / recommendations / narratives / riskchains
-3) 跑 golden tests，確保輸入輸出穩定
+下一步（主線）：
+1) P0-2：為 income_expansion_pressure 建立 questions/scoring/recommendations/narratives/riskchains
+2) 走 Research → Brief → Advisor → Domain gate
+3) 補齊 golden tests（固定輸入輸出）
 
 制度已建立：
 - 想法治理（Idea Governor）
@@ -482,3 +482,11 @@ message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) d
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 3abf24bc98bdb9c7cc1842440ead9c5b962eac8e
+
+---
+[CHECKPOINT|2026-01-06T10:25:11+0800]
+phase: pre-commit
+message: MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 9c59b93ab20fb6586807c1cfa9278c77a6bc33c5
