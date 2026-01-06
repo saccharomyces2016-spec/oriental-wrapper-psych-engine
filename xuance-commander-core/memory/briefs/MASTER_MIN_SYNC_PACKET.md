@@ -1,5 +1,5 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-06T15:31:12+0800
+generatedAt: 2026-01-06T15:36:37+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
@@ -688,6 +688,32 @@ head_pushed: fdaaa8728e2ac80d1bf2cee9022c39d811398509
   - 生成：bash xuance-commander-core/tools/build_role_sync_packets.sh
   - 產物：xuance-commander-core/memory/briefs/role_sync_packets/（含 LATEST/ 指標）
 
+- 🧠 新工作模式已啟用：GPT 架構/治理判斷、Cursor 主力施工、Codex 一次性修復；所有指令包必須標註「貼給誰」
+
+---
+[CHECKPOINT|2026-01-06T15:31:17+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e
+
+---
+[CHECKPOINT|2026-01-06T15:31:24+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e
+
+---
+[CHECKPOINT|2026-01-06T15:31:26+0800]
+phase: post-push
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 0073f2e241f7b8e66a0e40ba2723a52acddc0d81
+
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 
@@ -984,7 +1010,7 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-06T15:31:12+0800
+generatedAt: 2026-01-06T15:36:37+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1010,8 +1036,8 @@ generatedAt: 2026-01-06T15:31:12+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-06T15:31:12+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_153112.md
+updatedAt: 2026-01-06T15:36:37+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_153637.md
 overallExitCode: 0
 
 ---

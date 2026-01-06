@@ -571,6 +571,8 @@ head_pushed: fdaaa8728e2ac80d1bf2cee9022c39d811398509
   - 生成：bash xuance-commander-core/tools/build_role_sync_packets.sh
   - 產物：xuance-commander-core/memory/briefs/role_sync_packets/（含 LATEST/ 指標）
 
+- 🧠 新工作模式已啟用：GPT 架構/治理判斷、Cursor 主力施工、Codex 一次性修復；所有指令包必須標註「貼給誰」
+
 ---
 [CHECKPOINT|2026-01-06T15:31:17+0800]
 phase: pre-commit
@@ -594,3 +596,11 @@ message: MILESTONE: role sync packets (single file per role, embeds all refs) en
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 0073f2e241f7b8e66a0e40ba2723a52acddc0d81
+
+---
+[CHECKPOINT|2026-01-06T15:37:08+0800]
+phase: pre-commit
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bbee5f4a9d6d949f548e77cd8b87106702939f7e
