@@ -540,3 +540,21 @@ message: MILESTONE: repair recording rule added (no silent fixes allowed)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 9742044430fb1d9c16d8be74aa952075f1c2f88d
+
+- 🧭 同步觸發治理已補齊：MIN/FULL/VERIFICATION_PACK 觸發條件改為可審計決策表（避免長期漂移）
+
+---
+[CHECKPOINT|2026-01-06T14:19:24+0800]
+phase: pre-commit
+message: MILESTONE: sync trigger governance + verification pack policy + commander optimization duty
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bb94c7a0f465cf822fb09a78b78815b12402b4db
+
+---
+[CHECKPOINT|2026-01-06T14:20:23+0800]
+phase: pre-commit
+message: MILESTONE: sync trigger governance + verification pack policy + commander optimization duty
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bb94c7a0f465cf822fb09a78b78815b12402b4db
