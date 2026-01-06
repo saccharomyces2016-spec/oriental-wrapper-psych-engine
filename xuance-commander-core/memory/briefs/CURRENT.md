@@ -604,3 +604,11 @@ message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explici
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: bbee5f4a9d6d949f548e77cd8b87106702939f7e
+
+---
+[CHECKPOINT|2026-01-06T15:37:09+0800]
+phase: post-push
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9

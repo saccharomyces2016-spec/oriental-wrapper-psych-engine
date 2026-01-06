@@ -165,3 +165,5 @@
 - Changed: Commander role adds Smart Allocation Duty (explicit tool assignment per instruction pack) -> docs/roles/ROLE_XUANCE_COMMANDER.md
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T15:37:08+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_before=bbee5f4a9d6d949f548e77cd8b87106702939f7e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T15:37:09+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_pushed=16ec30ed760bb482cd1996a2d362fc7b382576c9 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
