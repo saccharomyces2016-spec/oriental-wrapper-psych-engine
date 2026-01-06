@@ -675,3 +675,11 @@ message: MILESTONE: FULL trigger + MIN evidence policy added
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: fc5d088495465be3d44062a681a78826802422ba
+
+---
+[CHECKPOINT|2026-01-06T18:34:15+0800]
+phase: post-push
+message: MILESTONE: FULL trigger + MIN evidence policy added
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: a7e98cabe9f49ed96c185600f7f9bf71138d5107

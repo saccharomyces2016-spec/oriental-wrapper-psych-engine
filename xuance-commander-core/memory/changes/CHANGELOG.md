@@ -185,3 +185,5 @@
 - Added: checkpoint(post-push) ts=2026-01-06T16:58:03+0800 msg="MILESTONE: enforce role sync packet coverage audit (single-packet rule)" branch=main head_pushed=5790e6216d77c4737296585d543c54b704eb3c35 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T18:34:13+0800 msg="MILESTONE: FULL trigger + MIN evidence policy added" branch=main head_before=fc5d088495465be3d44062a681a78826802422ba remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T18:34:15+0800 msg="MILESTONE: FULL trigger + MIN evidence policy added" branch=main head_pushed=a7e98cabe9f49ed96c185600f7f9bf71138d5107 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
