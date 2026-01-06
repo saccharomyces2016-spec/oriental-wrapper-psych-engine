@@ -1,36 +1,130 @@
-# ROLE_R1_SYNC_PACKET（單檔同步包｜Common + Role + References）
-generatedAt: 2026-01-06T15:50:44+08:00
-facetId: income_expansion_pressure
+# ROLE_R1_SYNC_PACKET（單檔同步包｜Common+Role+Refs）
+generatedAt: 2026-01-06T16:19:34+08:00
+sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core
 
 ## NOTE
 - This file is auto-generated. Do not edit by hand.
 - Regenerate via: bash xuance-commander-core/tools/build_role_sync_packets.sh
-- If you think anything is missing, STOP and report missing paths; do NOT assume.
 
 ---
 ## 0) ROLE SCOPE
-- Role: R1
-- Facet: income_expansion_pressure
-- Required behavior: obey Common Rules + Role Brief + embedded references below
+- role: R1
+- rule: one-file-per-role; embeds common + role-specific + refs
 
 ---
-## 1) COMMON (embedded)
+## 1) COMMON
 
 ---
-## FILE: CHARTER.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/charter/CHARTER.md
+## FILE: charter/CHARTER.md
 
-> MISSING: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/charter/CHARTER.md
+# CHARTER（不可越界憲章：最高目標與限制）
+
+## 最高主權
+- 使用者擁有最終決策權
+- AI 不得自訂、替換、升級「最高目標」
+- AI 的任何目標提案僅能作為建議，且必須標示「建議」
+
+## 最高目標（只允許使用者修改）
+- 主目標：打造可長期運作、可維護、可收費、可持續擴充的互動式網頁產品
+- 核心策略：核心引擎可審計；外層以東方命理敘事呈現；對使用者提供可執行建議與風險鏈
+
+## 不可觸碰限制（只允許使用者修改）
+1) 主進度/主目標以文本為準，不以對話上下文為準
+2) 未寫入文本的結論視為不存在
+3) 任何結構性變更（schema/domain/governance/charter）必須 ADR + 使用者批准
+4) 指揮官必須白話回報、短句直白
 
 ---
-## FILE: ROADMAP.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/roadmap/ROADMAP.md
 
-> MISSING: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/roadmap/ROADMAP.md
+## 成功定義補充（不可移除）
+
+本專案在**使用者的認知與體驗中**，是一個**完整的玄學系統**。
+
+使用者只會、也只需要感知到：
+- 這是一個玄學網站
+- 這是一套命理／神秘系統
+- 這個系統非常準
+- 這個系統對自己很有幫助
+
+使用者**不需要、也不應該**被告知：
+- 任何心理學名詞
+- 任何現代科學背景
+- 任何「其實這不是玄學」的說明
+
+所有會削弱「這就是玄學」的解釋，
+**都不得出現在使用者可接觸的層級。**
+
+在系統內部（僅限開發與設計層）：
+
+- 本專案不是胡扯
+- 不是隨機生成
+- 不是憑感覺寫內容
+- 而是建立在**完整、嚴謹、可推導的現代心理學與相關科學系統之上**
+
+即使外層呈現為玄學公式與敘事，
+其內部也必須是**可以被推導的結構，而非隨意編造**。
+
+本專案不追求讓使用者理解系統如何運作，
+只追求一件事：
+
+> 讓使用者在實際使用後，真實地覺得  
+> 「這套玄學非常準，而且真的有幫助」。
+
+若使用者普遍無法產生上述感受，
+即使系統在工程或結構上正確，
+**仍視為未達成專案目標，必須持續調整與修正。**
+
+## 世界級水準與國際市場（CN/EN）
+
+- 本產品必須做到世界級水準（質感、互動、敘事、穩定、可維護）。
+- 本產品必須可切換成英文版（CN/EN），可直接接軌國際市場。
+- 不管中文或英文，使用者都要普遍覺得：很準、看得懂、真的有幫助。
+- 英文版不得只是翻譯；英文敘事要像原生英文玄學系統一樣自然。
+- 以上不得削弱「對使用者：純玄學體驗」的硬規則（ADR_0002）。
+
 
 ---
-## FILE: CURRENT.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/CURRENT.md
+## FILE: roadmap/ROADMAP.md
+
+# ROADMAP（唯一主線進度）
+
+規則：
+- 任何「題目版本」「規則版本」「方向調整」都必須先記錄在此
+- 沒寫進 ROADMAP 的東西 = 不存在，不得採用
+- 每次推進只允許更新一個「目前工作項」避免亂跳
+
+## Phase 0：MVP（單一構面）
+- [x] P0-1 選定第一個構面（facet）
+- [ ] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
+- [ ] P0-3 跑 golden tests 固定輸入輸出
+- [ ] P0-4 建立最小 UI 串接（讀 compiled facet -> 顯示敘事+建議+風險鏈）
+- [ ] P0-5 最小付費/權限策略（占位，不優化）
+
+<!-- XUANCE_P0_1_FACET_SELECTION_BEGIN -->
+### P0-1 決策：第一個 facet（單一構面）已選定
+- facetId: income_expansion_pressure
+- 定義：薪資增速追不上家庭開銷所產生的壓力，以及對「第二收入」的驅動與可行性狀態。
+- 題目種子（將在 P0-2 正式定稿）：
+  - Q1：近一年，你覺得「俸祿的增幅」追得上「家用的潮水」嗎？
+    - A 追得上且有餘裕 / B 追得上但幾乎不剩 / C 開始吃緊 / D 已透支或壓力明顯影響生活
+<!-- XUANCE_P0_1_FACET_SELECTION_END -->
+
+## 版本紀錄（只記關鍵）
+- v0.0：初始化治理/記憶/外置化骨架
+
+---
+
+### 後續能力（非 Phase 0 實作）
+
+- Analysis Orchestrator（AI 聚合分析層）：  
+  題目完成診斷後，可送交外部 AI 做跨層整合與敘事呈現。
+
+- Exploration / Unlock Mechanism（探索／抽取式呈現）：  
+  以 UX 機制提高使用者持續互動動機，不影響診斷核心。
+
+
+---
+## FILE: memory/briefs/CURRENT.md
 
 # CURRENT（當前狀態短摘要）
 
@@ -653,8 +747,24 @@ head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
   - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
 
 ---
-## FILE: CHANGELOG.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/changes/CHANGELOG.md
+[CHECKPOINT|2026-01-06T15:51:09+0800]
+phase: pre-commit
+message: MILESTONE: advisor role packet workflow integrated
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 1555140c6066d474493ddd767bead2f96ec78135
+
+---
+[CHECKPOINT|2026-01-06T15:51:11+0800]
+phase: post-push
+message: MILESTONE: advisor role packet workflow integrated
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 7b2567a4ce565140374ef71c45834082893eac37
+
+
+---
+## FILE: memory/changes/CHANGELOG.md
 
 # CHANGELOG
 
@@ -828,67 +938,13 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 
 - Added: checkpoint(post-push) ts=2026-01-06T15:37:09+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_pushed=16ec30ed760bb482cd1996a2d362fc7b382576c9 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
----
-## FILE: TEXT_ONLY_EXECUTION_RULES.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/governance/TEXT_ONLY_EXECUTION_RULES.md
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:51:09+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_before=1555140c6066d474493ddd767bead2f96ec78135 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
-# Text-Only Execution Rules（文本主控硬規則）
+- Added: checkpoint(post-push) ts=2026-01-06T15:51:11+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_pushed=7b2567a4ce565140374ef71c45834082893eac37 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
-
-## 白話說明：看不懂技術輸出是什麼意思
-
-## 白話說明：GPT 上下文長度與同步資料的問題
-
-GPT 一次最多只能讀取一定長度的上下文（文字量限制）。  
-為了讓 GPT 只讀需要的部分，我們不把所有歷史資料丟給它，  
-而是用「同步快照 + 分段」方式讓 GPT 聚焦在關鍵段落。
-
-簡單比喻：
-
-- 把整本書全部丟給 GPT → 它會忘記前面  
-- 把書拆成小段 + 目錄查詢 → GPT 只看需要的章節
-
-未來我們可以進一步把重要片段存進更高效的查詢系統（例如向量資料庫），  
-讓 GPT 查詢時更加精準、token 也省更多。
 
 ---
-
-
-
-有時系統會顯示很多技術性很強的內容（例如 shell hook 輸出或系統內部訊息）。  
-這些技術訊息並非錯誤，而是系統寫給機器或流程檢查用的「證據」文字。  
-人類要看的重點是：
-
-- 指令是否成功（exitCode / success）
-- 是否已同步到雲端（commit + push）
-- 是否更新 MASTER snapshot
-
-如果這三件事都有證據，其他技術訊息可以視為背景細節，不影響結果判斷。
-
----
-
-
-## 核心規則
-- 對話上下文只能作為參考，不得作為主目標與主進度依據
-- 主目標與主進度只允許引用：
-  - charter/CHARTER.md
-  - roadmap/ROADMAP.md
-  - memory/briefs/CURRENT.md
-  - docs/adr/*
-
-## 禁止行為
-- AI 不得擅自新增更高層級目標
-- AI 不得擅自增加不可接受的限制
-- AI 不得基於「我覺得更好」改寫主線
-
-## 強制行為
-- 每次開始任何工作前，必須先跑 preflight（tools/preflight.sh）
-- preflight 會生成 memory/briefs/COMMAND_BRIEF.md
-- 指揮官之後的所有決策與建議必須基於 COMMAND_BRIEF.md
-
----
-## FILE: TASK_LIFECYCLE.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/process/TASK_LIFECYCLE.md
+## FILE: docs/process/TASK_LIFECYCLE.md
 
 # Task Lifecycle（任務執行與驗證流程）
 
@@ -983,9 +1039,9 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 - 有成功狀態才算完成
 - 有寫入文本才算存在
 
+
 ---
-## FILE: AI_ADVISORY_ROLES.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/governance/AI_ADVISORY_ROLES.md
+## FILE: docs/governance/AI_ADVISORY_ROLES.md
 
 # AI Advisory Roles System（AI 顧問角色系統）
 
@@ -1125,9 +1181,9 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 4) 我可以依需要啟動任意多個顧問角色（可並行），以追求最高產品品質；顧問輸出一律視為建議稿，需審核後才可寫入正式 domain。
 5) 所有顧問輸出必須存檔到 `docs/gem/runs/`（包含：任務、輸入、輸出、採納/拒絕/修改決策摘要），可追溯。
 
+
 ---
-## FILE: REPAIR_RECORDING_RULE.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/governance/REPAIR_RECORDING_RULE.md
+## FILE: docs/governance/REPAIR_RECORDING_RULE.md
 
 # Repair Recording Rule（修繕紀錄規範｜硬規則）
 
@@ -1167,9 +1223,9 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 - 小事也要留下痕跡
 - 不讓「修到哪算哪」成為常態
 
+
 ---
-## FILE: SYNC_TRIGGERS.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/ops/SYNC_TRIGGERS.md
+## FILE: docs/ops/SYNC_TRIGGERS.md
 
 # Sync Triggers（MIN/FULL/VERIFICATION_PACK 觸發治理｜硬規則）
 
@@ -1209,9 +1265,9 @@ Decision: FULL + (VP: yes) + touched docs/governance + milestone checkpoint
 
 目的：讓顧問永遠以最新共同規範 + 角色專屬 brief 工作，避免漂移。
 
+
 ---
-## FILE: VERIFICATION_PACK_POLICY.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/ops/VERIFICATION_PACK_POLICY.md
+## FILE: docs/ops/VERIFICATION_PACK_POLICY.md
 
 # VERIFICATION_PACK Policy（證據包管理規範｜硬規則）
 
@@ -1249,9 +1305,9 @@ topic 例：
 - 若顧問輸出要被採納落盤到 domain/：
   - 必須在指揮官審核後，額外生成一個 VERIFICATION_PACK（含：變更檔案清單 + golden tests 或可重跑驗證指令）。
 
+
 ---
-## FILE: ROLE_SYNC_PACKET_PROTOCOL.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md
+## FILE: docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md
 
 # Role Sync Packet Protocol（角色同步封包制度｜硬規則）
 
@@ -1319,119 +1375,9 @@ Role Sync Packet 內文必至少包含：
 - Assumptions: <所有假設條列>
 - Acceptance: <如何驗收題目/風險鏈是否有效>
 
----
-## FILE: ADR_0002_esoteric_experience_scientific_core.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/adr/ADR_0002_esoteric_experience_scientific_core.md
-
-# ADR 0002 - Esoteric User Experience with Scientific Internal Core
-
-## Status
-Accepted
-
-## Context
-本專案以玄學形式呈現給使用者，但內部實際運作依賴現代心理學與可驗證的科學結構。
-若未明確鎖定此原則，後期可能出現：
-- 對使用者解釋過多，削弱玄學體驗
-- 為了「合理化」而破壞玄學的整體感受
-- 將產品誤導為心理測驗或教育工具，而非玄學系統
-
-## Decision
-1) 在使用者可感知的層級，本專案**完全且只是一個玄學系統**
-2) 使用者不應被告知任何心理學或現代科學背景
-3) 任何削弱「這就是玄學」的說明，禁止出現在使用者層
-4) 系統內部必須建立在完整、嚴謹、可推導的現代心理學與相關科學系統之上
-5) 外層玄學公式與敘事，必須對應到可推導的內部結構，不得隨意編造
-6) 專案成功的唯一判準，是使用者實際感知到「很準、很有幫助」
-
-## Consequences
-- 所有設計與實作，必須同時滿足：
-  - 對使用者：純玄學、直覺、不可被拆解
-  - 對內部：結構完整、可驗證、可修正
-- 若使用者普遍未感知其準確性與實用性，即視為未達成目標，必須持續修正
-
-## Verification
-- charter/CHARTER.md 明確載入此原則
-- 未來所有功能、facet、敘事皆可回溯至此 ADR
 
 ---
-## FILE: ADR_0003_world_class_bilingual_global_market.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/adr/ADR_0003_world_class_bilingual_global_market.md
-
-# ADR 0003 - World-Class Quality & Bilingual (CN/EN) Global Market Readiness
-
-## Status
-Accepted (approved by user)
-
-- approvedAt: 2026-01-04
-
-## Context
-外層呈現是完整的玄學系統，但若要商業化並接軌國際市場，必須把「世界級水準」與「可切換英文版」視為硬目標。
-若未明確寫入，可能只做到中文可用、英文只是草率翻譯，導致整體質感與可信度不足。
-
-## Decision
-1) 產品品質目標：世界級（水準涵蓋視覺、互動、敘事、穩定性、可維護性）
-2) 產品必須可切換成英文版（CN/EN），可直接接軌國際市場
-3) 無論中文或英文，使用者普遍要感知：
-   - 很準
-   - 看得懂（不含糊）
-   - 真的有幫助（能促進行動或反思）
-4) 英文版不得只是逐字翻譯；敘事需自然如原生英文玄學系統（外層仍是玄學，不暴露內核）
-
-## Consequences
-- 需要 i18n/文案結構；外層仍維持玄學體驗（遵守 ADR_0002）
-- 後續「敘事/建議/風險鏈」需能產出 CN/EN 版（或可追溯的生成流程）
-- 若使用者普遍不覺得準/有幫助，即使工程正確，也視為未達成目標，需迭代
-
-## Verification
-- charter/CHARTER.md 載入世界級 + CN/EN 切換要求
-- prototype/UI 可顯示 CN/EN 兩種語系（不解釋原理）
-
----
-## FILE: ADR_0004_ai_advisory_roles_and_gem_protocol.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md
-
-# ADR 0004 - AI Advisory Roles System & GEM Protocol
-
-## Status
-Accepted (approved by user)
-
-- approvedAt: 2026-01-04
-
-## Context
-為達成「世界級水準」與「CN/EN 可原生切換」且維持「對使用者：純玄學體驗」，專案不能只靠單一 AI 隨機產出題目或文案。
-需要一個可審計、可追溯、可分工的顧問角色系統，並用受限的 GEM 角色來產出「建議稿」供指揮官審核。
-
-若未建立此制度，常見風險：
-- 題目像心理測驗或太直白，削弱玄學體驗
-- 英文版像翻譯機，失去原生語感與可信度
-- 敘事/建議/風險鏈品質不穩定，無法迭代
-- 無法回溯「為何這樣設計」，難以維護與擴充
-
-## Decision
-1) 建立「AI 顧問角色系統」（Advisory Roles System），定義每個角色的責任、輸入、輸出、禁區、驗收標準。
-2) 建立「GEM Protocol」：以 Gemini GEM（或等價角色提示）模擬顧問，但其輸出僅能作為建議稿，不得直接寫入正式 domain。
-3) 指揮官負責：
-   - 指派任務給顧問角色
-   - 審核顧問輸出
-   - 決定是否寫入正式 domain（必要時追加 ADR）
-4) 所有顧問輸出必須可追溯：保存到 `docs/gem/runs/`，包含：任務、輸入、輸出、指揮官決策摘要。
-
-## Consequences
-- 新增 docs/gem/ 與 prompts/gem/ 作為顧問角色與 GEM 設定的真相來源。
-- 題目/敘事/建議/風險鏈進入正式 domain 前，必須先經過顧問輸出 -> 指揮官審核 ->（必要時）版本更新與測試。
-
-## Verification
-- 新增以下檔案：
-  - docs/governance/AI_ADVISORY_ROLES.md
-  - docs/gem/README.md
-  - docs/gem/profiles/*.md
-  - prompts/gem/*.md
-  - docs/gem/runs/README.md
-- CHANGELOG 與 INDEX 註冊完成
-
----
-## FILE: LESSONS_LEARNED.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/governance/LESSONS_LEARNED.md
+## FILE: docs/governance/LESSONS_LEARNED.md
 
 # Lessons Learned（失敗案例→治理規則）
 
@@ -1498,9 +1444,9 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 - 題目必須可被替換，不可綁死敘事
 - 治理層允許「使用者最終覆寫」
 
+
 ---
-## FILE: REPO_STATUS.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/REPO_STATUS.md
+## FILE: memory/briefs/REPO_STATUS.md
 
 # REPO_STATUS（Repo 狀態快照｜自動）
 updatedAt: 2026-01-06T14:15:35+08:00
@@ -1524,9 +1470,9 @@ CommitDate: Tue Jan 6 11:35:09 2026 +0800
 
     chore: MILESTONE: repair recording rule added (no silent fixes allowed) (post-push evidence)
 
+
 ---
-## FILE: LAST_COMMAND_STATUS.md
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/LAST_COMMAND_STATUS.md
+## FILE: memory/briefs/LAST_COMMAND_STATUS.md
 
 # LAST_COMMAND_STATUS（最新一次指令結果｜自動）
 updatedAt: 2026-01-06T14:15:35+08:00
@@ -1534,16 +1480,448 @@ command: (unknown)
 exitCode: 0
 success: true
 
----
-## FILE: LEGACY_ROUTER
-> MISSING: no legacy router file found in candidates.
 
 ---
-## 2) ROLE-SPECIFIC (embedded)
+## FILE: docs/adr/ADR_0001_externalize_domain_and_version_schema.md
+
+# ADR 0001 - Externalize Domain Content & Versioned Schemas
+
+## Status
+Accepted
+
+## Context
+若把題目/規則/建議/敘事寫死在程式碼中，後期擴充時會大量修改同一檔案，造成 merge conflicts 與行為不可預測。
+同時「文本記憶」會越來越大，必須採用小檔索引與指向式記憶，降低傳輸與同步成本。
+
+## Decision
+1) 引擎 code 固定且精簡；內容（questions/scoring/reco/narr/risk）全部外置化到 domain/ 分檔
+2) 用 manifest 指向各分檔，build 時 compile 成 compiled facet
+3) schema 固定並版本化（domainVersion），任何變更需新增 ADR 與 bump version
+4) 用 golden tests 固定輸入輸出，確保新增內容不破壞既有行為
+5) 記憶採小檔索引：INDEX + CURRENT + CHANGELOG + ADR，避免單一巨大文本
+
+## Consequences
+- 優點：後期新增多為新增檔案，降低衝突；行為可驗收可回歸
+- 代價：需要 compile 步驟；需要維護 schema/manifest
+
+## Verification
+- 新增 facet 時可只新增 domain 檔案與 manifest，不必改引擎
+- build/compile_all.sh 可成功編譯所有 manifests
+- tests/run_golden.sh 通過
+
 
 ---
-## FILE: R1_BRIEF
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md
+## FILE: docs/adr/ADR_0002_esoteric_experience_scientific_core.md
+
+# ADR 0002 - Esoteric User Experience with Scientific Internal Core
+
+## Status
+Accepted
+
+## Context
+本專案以玄學形式呈現給使用者，但內部實際運作依賴現代心理學與可驗證的科學結構。
+若未明確鎖定此原則，後期可能出現：
+- 對使用者解釋過多，削弱玄學體驗
+- 為了「合理化」而破壞玄學的整體感受
+- 將產品誤導為心理測驗或教育工具，而非玄學系統
+
+## Decision
+1) 在使用者可感知的層級，本專案**完全且只是一個玄學系統**
+2) 使用者不應被告知任何心理學或現代科學背景
+3) 任何削弱「這就是玄學」的說明，禁止出現在使用者層
+4) 系統內部必須建立在完整、嚴謹、可推導的現代心理學與相關科學系統之上
+5) 外層玄學公式與敘事，必須對應到可推導的內部結構，不得隨意編造
+6) 專案成功的唯一判準，是使用者實際感知到「很準、很有幫助」
+
+## Consequences
+- 所有設計與實作，必須同時滿足：
+  - 對使用者：純玄學、直覺、不可被拆解
+  - 對內部：結構完整、可驗證、可修正
+- 若使用者普遍未感知其準確性與實用性，即視為未達成目標，必須持續修正
+
+## Verification
+- charter/CHARTER.md 明確載入此原則
+- 未來所有功能、facet、敘事皆可回溯至此 ADR
+
+
+---
+## FILE: docs/adr/ADR_0003_world_class_bilingual_global_market.md
+
+# ADR 0003 - World-Class Quality & Bilingual (CN/EN) Global Market Readiness
+
+## Status
+Accepted (approved by user)
+
+- approvedAt: 2026-01-04
+
+## Context
+外層呈現是完整的玄學系統，但若要商業化並接軌國際市場，必須把「世界級水準」與「可切換英文版」視為硬目標。
+若未明確寫入，可能只做到中文可用、英文只是草率翻譯，導致整體質感與可信度不足。
+
+## Decision
+1) 產品品質目標：世界級（水準涵蓋視覺、互動、敘事、穩定性、可維護性）
+2) 產品必須可切換成英文版（CN/EN），可直接接軌國際市場
+3) 無論中文或英文，使用者普遍要感知：
+   - 很準
+   - 看得懂（不含糊）
+   - 真的有幫助（能促進行動或反思）
+4) 英文版不得只是逐字翻譯；敘事需自然如原生英文玄學系統（外層仍是玄學，不暴露內核）
+
+## Consequences
+- 需要 i18n/文案結構；外層仍維持玄學體驗（遵守 ADR_0002）
+- 後續「敘事/建議/風險鏈」需能產出 CN/EN 版（或可追溯的生成流程）
+- 若使用者普遍不覺得準/有幫助，即使工程正確，也視為未達成目標，需迭代
+
+## Verification
+- charter/CHARTER.md 載入世界級 + CN/EN 切換要求
+- prototype/UI 可顯示 CN/EN 兩種語系（不解釋原理）
+
+
+---
+## FILE: docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md
+
+# ADR 0004 - AI Advisory Roles System & GEM Protocol
+
+## Status
+Accepted (approved by user)
+
+- approvedAt: 2026-01-04
+
+## Context
+為達成「世界級水準」與「CN/EN 可原生切換」且維持「對使用者：純玄學體驗」，專案不能只靠單一 AI 隨機產出題目或文案。
+需要一個可審計、可追溯、可分工的顧問角色系統，並用受限的 GEM 角色來產出「建議稿」供指揮官審核。
+
+若未建立此制度，常見風險：
+- 題目像心理測驗或太直白，削弱玄學體驗
+- 英文版像翻譯機，失去原生語感與可信度
+- 敘事/建議/風險鏈品質不穩定，無法迭代
+- 無法回溯「為何這樣設計」，難以維護與擴充
+
+## Decision
+1) 建立「AI 顧問角色系統」（Advisory Roles System），定義每個角色的責任、輸入、輸出、禁區、驗收標準。
+2) 建立「GEM Protocol」：以 Gemini GEM（或等價角色提示）模擬顧問，但其輸出僅能作為建議稿，不得直接寫入正式 domain。
+3) 指揮官負責：
+   - 指派任務給顧問角色
+   - 審核顧問輸出
+   - 決定是否寫入正式 domain（必要時追加 ADR）
+4) 所有顧問輸出必須可追溯：保存到 `docs/gem/runs/`，包含：任務、輸入、輸出、指揮官決策摘要。
+
+## Consequences
+- 新增 docs/gem/ 與 prompts/gem/ 作為顧問角色與 GEM 設定的真相來源。
+- 題目/敘事/建議/風險鏈進入正式 domain 前，必須先經過顧問輸出 -> 指揮官審核 ->（必要時）版本更新與測試。
+
+## Verification
+- 新增以下檔案：
+  - docs/governance/AI_ADVISORY_ROLES.md
+  - docs/gem/README.md
+  - docs/gem/profiles/*.md
+  - prompts/gem/*.md
+  - docs/gem/runs/README.md
+- CHANGELOG 與 INDEX 註冊完成
+
+
+---
+## FILE: docs/adr/ADR_0005_user_override_and_fatigue_rollback.md
+
+# ADR 0005 - User Override & Fatigue-Rollback Protocol
+
+## Status
+Proposed
+
+## Context
+高密度討論容易造成疲勞與決策失誤。專案需要一個操作層規範，明確保障使用者「最後可修正」的權利，同時保留可審計、可回滾的工程流程。
+
+## Decision
+1) 新增 docs/governance/USER_OVERRIDE_PROTOCOL.md 作為操作層規範：
+   - 使用者可隨時修正決策
+   - AI 必須在明顯違反專業常理時提醒風險與替代方案
+   - 疲勞狀態優先封板最小決策，避免返工
+2) 回滾以 Git 為唯一可靠方式：
+   - 里程碑封板使用 checkpoint（commit+push+evidence+MASTER）
+   - 後續修正以新 checkpoint 留證，不手改歷史
+
+## Consequences
+- 流程更穩定：可回溯、可回滾、可審計
+- 決策成本降低：疲勞時可先封板最小可行決策
+
+## Verification
+- repo 內存在 USER_OVERRIDE_PROTOCOL.md
+- ROADMAP/CURRENT/CHANGELOG 對應紀錄可追溯
+
+
+---
+## FILE: docs/adr/ADR_TEMPLATE.md
+
+# ADR XXXX - Title
+
+## Status
+Proposed / Accepted / Deprecated
+
+## Context
+（為什麼要做這個決策）
+
+## Decision
+（做了什麼決策）
+
+## Consequences
+（好處/代價/風險）
+
+## Verification
+（怎麼驗收這個決策是有效的）
+
+
+---
+## 1.5) LEGACY_ROUTER (MANDATORY REFS)
+
+---
+## FILE: xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed/extract/ROUTER.md
+
+# LEGACY ROUTER（可調用導航｜不要再翻整包）
+
+用途：
+- 當我們在做「主線 P0-2（questions/scoring/reco/narr/risk）」或任何治理/流程討論時，
+  直接用本路由定位 legacy 內的可用材料。
+- 本檔只做「導航」，不做全文引用；需要時再開檔精讀。
+
+原則：
+- ✅ 必須參考（consult）可用材料
+- ❌ 不要求引用原文（quote/copy）
+- ✅ 若採納 legacy 方案：要在「採納摘要」寫出來源路徑（traceability）
+
+---
+
+## 路由：題目系統（Question Design / Blueprint）
+優先看：
+- reports/question_bank_concept_package.md
+- reports/mother_theme_questionization_v2.md
+- scripts/generateQuestionBlueprint.mjs
+- reports/p1_question_blueprint_v1.json
+
+延伸看（更上層的舊規格/白皮書）：
+- artifacts/imports/115.1.2/DESTINY_CODE_CANONICAL_WORKSPACE_v1__COLON/legacy_sources/DESTINY_CODE/docs/00_canonical/02_QUESTION_SYSTEM.md
+- artifacts/imports/115.1.2/DESTINY_CODE_CANONICAL_WORKSPACE_v1__COLON/legacy_sources/DESTINY_CODE/docs/00_canonical/01_PROJECT_MASTER.md
+
+---
+
+## 路由：計分模型（Scoring）
+優先看：
+- src/core/psych/scorer.js
+- reports/p1_question_blueprint_v1.json
+- scripts/validate/validate-questionbank.mjs
+
+---
+
+## 路由：敘事與結果呈現（Narrative / Result Templates）
+優先看：
+- src/core/flow/readingNarrative.v1.js
+- archive/legacy/core-content/resultTemplates/readingOutputV2.js
+- src/engine/contracts/readingContract.v1.js
+- src/engine/readingFacade.v1.js
+
+---
+
+## 路由：LLM 提示與總控（Prompt / Orchestration）
+優先看：
+- src/core/SoulArchitect.js
+- src/core/llm/masterPrompt.v1.1.md
+- src/core/guidance/buildGuidance.js
+
+---
+
+## 路由：金錢/經濟題庫（Money / Finance question bank）
+優先看：
+- archive/legacy/questionBank/money.js
+- archive/legacy/questionBank/index.js
+
+搭配看（標籤/政策/清理）：
+- reports/pattern_tag_policy_v1.md
+- reports/pattern_tag_cleanup_summary.md
+- reports/pattern_tag_usage_audit.md
+- reports/pattern_tag_audit_raw.json
+
+---
+
+## 路由：治理與證據（Governance / Evidence）
+優先看：
+- docs/governance/02_ROLES/ROLE_REGISTRY.md
+- docs/governance/08_REPORTS/GOVERNANCE_STATE_REPORT.md
+- docs/governance/08_REPORTS/root_reports/PRODUCT_ANALYSIS_REPORT.md
+
+舊資料（僅用來理解歷史設計思路，不直接搬）：
+- artifacts/imports/115.1.2/DESTINY_CODE_CANONICAL_WORKSPACE_v1__COLON/legacy_sources/DESTINY_CODE/docs/00_canonical/04_GOVERNANCE_EVIDENCE.md
+- artifacts/governance_runs/_governance/state_snapshot/missing_refs.json
+- artifacts/governance_runs/_governance/state_snapshot/legacy_candidates_classified.json
+
+---
+
+## 路由：資料結構/Schema（Data Schema）
+優先看：
+- docs/DATA_SCHEMA_SPEC.md
+- scripts/validate/validate-canonical.mjs
+- scripts/validate/validate-modes.mjs
+
+---
+
+## 路由：診斷與分析工具（Diagnostics / Analytics）
+優先看：
+- scripts/analyticsReport.mjs
+- scripts/diagnoseReading.mjs
+
+
+---
+## FILE: xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed/extract/FAILURE_PATTERNS.md
+
+# FAILURE PATTERNS（legacy 失敗模式庫｜用來避免重犯）
+
+目的：
+- 把「失敗」變成可查的規則與預警，不再靠記憶。
+
+---
+
+## 已知高風險模式（從你描述的歷史失敗 + legacy 結構推定）
+1) 題型/題庫版本漂移（多版本並存、互相引用）
+- 徵兆：同概念在多處 duplicated；引用路徑交叉；改 A 壞 B
+- 對策：domain 外置化 + schema 版本化 + golden tests（現行 ADR_0001 已處理）
+
+2) 規則上層寫死造成下層無法滿足需求（deadlock）
+- 徵兆：治理/規則不可變；但需求演進必然改動 → 導致整包報廢
+- 對策：USER_OVERRIDE_PROTOCOL + checkpoint rollback（現行已入治理）
+
+3) 「整包保存但不可調用」
+- 徵兆：資料在，但不知道去哪找；每次都要重新掃描
+- 對策：本 vault 必須具備 ROUTER（本次已落盤）
+
+---
+
+## 後續要補的「精讀證據」（下一輪任務）
+- 從 legacy 文件中抓出 3~5 個具體案例（檔名+段落摘要）來證明上述模式
+- 把每個模式補上：
+  - 觸發條件
+  - 最短驗收（如何快速檢查是否又開始發生）
+
+
+---
+## FILE: xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed/extract/UI_FLOW_REFERENCES.md
+
+# UI / FLOW REFERENCES（互動流程參考）
+
+用途：
+- 後續做 P0-4（最小 UI 串接）時，快速定位舊版如何串接「輸入→計分→敘事→輸出」。
+
+---
+
+## Candidate files
+- src/engine/readingFacade.v1.js（入口/流程）
+- src/core/flow/readingNarrative.v1.js（敘事流程）
+- archive/legacy/core-content/resultTemplates/readingOutputV2.js（結果模板）
+- src/core/telemetry/choiceMetrics.js（使用者選擇記錄/遙測可能性）
+
+---
+
+## What to extract later（精讀時要抓的點）
+- UI 的狀態機：題目如何分步呈現？
+- 結果頁：哪些欄位/區塊最能承載「玄學體驗」？
+- 收集資料點：哪些資料適合做成後續迭代的 telemetry（不侵犯隱私前提下）？
+
+
+---
+## FILE: xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed/extract/CAPABILITY_MAP.md
+
+# CAPABILITY MAP（legacy 能力盤點｜可移植資產）
+
+用途：
+- 把 legacy 的「可用能力」抽成模組，方便新系統採納或避免重犯。
+
+---
+
+## A. 題庫與命題能力（Questionization）
+- 題庫概念包：reports/question_bank_concept_package.md
+- 主題→命題方法：reports/mother_theme_questionization_v2.md
+- 題目藍圖生成器：scripts/generateQuestionBlueprint.mjs
+- 題目藍圖輸出：reports/p1_question_blueprint_v1.json
+
+可移植方向（新系統）：
+- 用於 P0-2 的「題目藍圖」設計（R1 顧問輸入/輸出結構）
+- 用於後續多 facet 扩張（保持模板一致性）
+
+---
+
+## B. 計分與分段能力（Scoring / Banding）
+- scorer：src/core/psych/scorer.js
+- 校驗：scripts/validate/validate-questionbank.mjs
+
+可移植方向：
+- 保留「可校驗的 scoring contract」
+- 保留「輸入→分數→band」的可測試鏈
+
+---
+
+## C. 敘事/結果輸出能力（Narrative / Templates）
+- 敘事流程：src/core/flow/readingNarrative.v1.js
+- 結果模板：archive/legacy/core-content/resultTemplates/readingOutputV2.js
+- contract/facade：src/engine/contracts/readingContract.v1.js, src/engine/readingFacade.v1.js
+
+可移植方向：
+- P0-4 的最小 UI 串接（讀 compiled facet → 顯示敘事/建議/風險鏈）
+- 文案與模板分離（便於 CN/EN）
+
+---
+
+## D. LLM 編排與引導能力（Orchestration / Guidance）
+- 總控：src/core/SoulArchitect.js
+- 主提示：src/core/llm/masterPrompt.v1.1.md
+- guidance builder：src/core/guidance/buildGuidance.js
+
+可移植方向：
+- 僅抽象「接口設計」與「輸入輸出契約」
+- 不直接搬 prompt（避免與現行治理/研究 gate 衝突）
+
+---
+
+## E. 標籤治理與清理能力（Tag policy / Audit）
+- policy/summary/raw：reports/pattern_tag_policy_v1.md, reports/pattern_tag_cleanup_summary.md, reports/pattern_tag_audit_raw.json
+
+可移植方向：
+- 做為 domain 擴張時的「分類/標籤」治理模板
+
+
+---
+## FILE: xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed/extract/REUSABLE_ASSETS.md
+
+# REUSABLE ASSETS（可重用資產清單）
+
+原則：
+- ✅ 可用作「參考、模板、接口設計對照」
+- ❌ 不直接複製舊系統全文進新 domain（避免帶入舊版矛盾/治理死鎖）
+
+---
+
+## Code assets（可能可重用的程式骨架）
+- src/core/psych/scorer.js（計分骨架）
+- src/engine/contracts/readingContract.v1.js（契約）
+- src/engine/readingFacade.v1.js（外觀/入口）
+- scripts/validate/*（驗證腳本模式）
+- scripts/analyticsReport.mjs（分析輸出模式）
+
+---
+
+## Content assets（題目/模板原型）
+- archive/legacy/questionBank/money.js（經濟/金錢題型原型）
+- archive/legacy/core-content/resultTemplates/readingOutputV2.js（結果模板原型）
+- reports/p1_question_blueprint_v1.json（題目藍圖資料範例）
+
+---
+
+## Governance assets（治理模板/報告結構）
+- docs/governance/02_ROLES/ROLE_REGISTRY.md
+- docs/governance/08_REPORTS/*（報告組織方式）
+
+
+---
+## 2) ROLE-SPECIFIC
+
+---
+## FILE: docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md
 
 # BRIEF（P0-2｜income_expansion_pressure｜R1 題目設計顧問）
 generatedAt: 2026-01-05T18:20:32+0800
@@ -1586,9 +1964,9 @@ generatedAt: 2026-01-05T18:20:32+0800
 4) 風險提示（哪些問法會太像心理測驗，如何改成玄學問卦）
 5) 驗收（最少 3 組對照使用者，能明顯落在不同 band）
 
+
 ---
-## FILE: MASTER_PROPOSAL
-path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md
+## FILE: docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md
 
 # P0-2 顧問總提案（MASTER PROPOSAL）
 facet: income_expansion_pressure
@@ -1613,3 +1991,4 @@ facet: income_expansion_pressure
 ## 非本階段
 - 不實作 UI 特效
 - 不實作 AI 聚合分析（僅接口宣告）
+

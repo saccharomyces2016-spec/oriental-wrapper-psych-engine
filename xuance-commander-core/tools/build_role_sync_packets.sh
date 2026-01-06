@@ -2,178 +2,142 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-CORE="$REPO_ROOT/xuance-commander-core"
-OUT_DIR="$CORE/memory/briefs/role_sync_packets"
+XC_ROOT="$REPO_ROOT/xuance-commander-core"
+
+OUT_DIR="$XC_ROOT/memory/briefs/role_sync_packets"
 LATEST_DIR="$OUT_DIR/LATEST"
 mkdir -p "$OUT_DIR" "$LATEST_DIR"
 
 ts="$(date -Iseconds)"
 
-# Utility: add a file (if exists) with a header; otherwise note missing.
-add_file() {
-  local out="$1"
-  local label="$2"
-  local path="$3"
+emit_file() {
+  local label="$1"
+  local path="$2"
+  echo ""
+  echo "---"
+  echo "## FILE: ${label}"
+  echo ""
+  cat "$path"
+  echo ""
+}
 
-  echo "" >> "$out"
-  echo "---" >> "$out"
-  echo "## FILE: $label" >> "$out"
-  echo "path: $path" >> "$out"
-  echo "" >> "$out"
-
-  if [[ -f "$path" ]]; then
-    cat "$path" >> "$out"
-  else
-    echo "> MISSING: $path" >> "$out"
+must_exist() {
+  local path="$1"
+  if [ ! -f "$path" ]; then
+    echo "❌ missing required file: $path" >&2
+    exit 1
   fi
 }
 
-# Utility: pick first existing among candidates
-pick_first_existing() {
-  for p in "$@"; do
-    if [[ -f "$p" ]]; then
-      echo "$p"
-      return 0
-    fi
-  done
-  echo ""  # none
+resolve_one() {
+  local p1="$1"
+  local p2="$2"
+  if [ -f "$p1" ]; then echo "$p1"; return; fi
+  if [ -f "$p2" ]; then echo "$p2"; return; fi
+  echo ""
 }
 
-# Common references (embedded into every role packet)
+CHARTER_PATH="$(resolve_one "$XC_ROOT/charter/CHARTER.md" "$REPO_ROOT/charter/CHARTER.md")"
+ROADMAP_PATH="$(resolve_one "$XC_ROOT/roadmap/ROADMAP.md" "$REPO_ROOT/roadmap/ROADMAP.md")"
+
+[ -n "$CHARTER_PATH" ] || { echo "❌ CHARTER not found" >&2; exit 1; }
+[ -n "$ROADMAP_PATH" ] || { echo "❌ ROADMAP not found" >&2; exit 1; }
+
+find_legacy() {
+  local name="$1"
+  find "$REPO_ROOT" -maxdepth 8 -type f -name "$name" 2>/dev/null | head -n 1 || true
+}
+
+LEGACY_ROUTER_PATH="$(find_legacy "ROUTER.md")"
+LEGACY_FAIL_PATH="$(find_legacy "FAILURE_PATTERNS.md")"
+LEGACY_UI_PATH="$(find_legacy "UI_FLOW_REFERENCES.md")"
+LEGACY_CAP_PATH="$(find_legacy "CAPABILITY_MAP.md")"
+LEGACY_REUSE_PATH="$(find_legacy "REUSABLE_ASSETS.md")"
+
+[ -n "$LEGACY_ROUTER_PATH" ] || { echo "❌ LEGACY ROUTER.md not found" >&2; exit 1; }
+[ -n "$LEGACY_FAIL_PATH" ] || { echo "❌ LEGACY FAILURE_PATTERNS.md not found" >&2; exit 1; }
+
 COMMON_FILES=(
-  "$REPO_ROOT/charter/CHARTER.md"
-  "$REPO_ROOT/roadmap/ROADMAP.md"
-  "$CORE/memory/briefs/CURRENT.md"
-  "$CORE/memory/changes/CHANGELOG.md"
-  "$CORE/docs/governance/TEXT_ONLY_EXECUTION_RULES.md"
-  "$CORE/docs/process/TASK_LIFECYCLE.md"
-  "$CORE/docs/governance/AI_ADVISORY_ROLES.md"
-  "$CORE/docs/governance/REPAIR_RECORDING_RULE.md"
-  "$CORE/docs/ops/SYNC_TRIGGERS.md"
-  "$CORE/docs/ops/VERIFICATION_PACK_POLICY.md"
-  "$CORE/docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md"
-  "$CORE/docs/adr/ADR_0002_esoteric_experience_scientific_core.md"
-  "$CORE/docs/adr/ADR_0003_world_class_bilingual_global_market.md"
-  "$CORE/docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md"
-  "$CORE/docs/governance/LESSONS_LEARNED.md"
-  "$CORE/memory/briefs/REPO_STATUS.md"
-  "$CORE/memory/briefs/LAST_COMMAND_STATUS.md"
+  "$CHARTER_PATH"
+  "$ROADMAP_PATH"
+  "$XC_ROOT/memory/briefs/CURRENT.md"
+  "$XC_ROOT/memory/changes/CHANGELOG.md"
+  "$XC_ROOT/docs/process/TASK_LIFECYCLE.md"
+  "$XC_ROOT/docs/governance/AI_ADVISORY_ROLES.md"
+  "$XC_ROOT/docs/governance/REPAIR_RECORDING_RULE.md"
+  "$XC_ROOT/docs/ops/SYNC_TRIGGERS.md"
+  "$XC_ROOT/docs/ops/VERIFICATION_PACK_POLICY.md"
+  "$XC_ROOT/docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md"
+  "$XC_ROOT/docs/governance/LESSONS_LEARNED.md"
+  "$XC_ROOT/memory/briefs/REPO_STATUS.md"
+  "$XC_ROOT/memory/briefs/LAST_COMMAND_STATUS.md"
 )
 
-# Legacy router pointer(s) (include if present)
-LEGACY_ROUTER_CANDIDATES=(
-  "$CORE/legacy/ROUTER.md"
-  "$CORE/docs/legacy/ROUTER.md"
-  "$REPO_ROOT/legacy/ROUTER.md"
-  "$REPO_ROOT/docs/legacy/ROUTER.md"
+ADR_GLOBS=( "$XC_ROOT/docs/adr/"*.md )
+for a in "${ADR_GLOBS[@]}"; do
+  [ -f "$a" ] && COMMON_FILES+=( "$a" )
+done
+
+LEGACY_FILES=(
+  "$LEGACY_ROUTER_PATH"
+  "$LEGACY_FAIL_PATH"
 )
 
-LEGACY_ROUTER="$(pick_first_existing "${LEGACY_ROUTER_CANDIDATES[@]}")"
+[ -n "${LEGACY_UI_PATH:-}" ] && LEGACY_FILES+=( "$LEGACY_UI_PATH" )
+[ -n "${LEGACY_CAP_PATH:-}" ] && LEGACY_FILES+=( "$LEGACY_CAP_PATH" )
+[ -n "${LEGACY_REUSE_PATH:-}" ] && LEGACY_FILES+=( "$LEGACY_REUSE_PATH" )
 
-build_role_packet() {
-  local role="$1"      # R1 or R4
-  local facet="$2"     # income_expansion_pressure
+emit_packet() {
+  local role="$1"
+  local brief="$2"
+  local master_proposal="$3"
   local out="$OUT_DIR/ROLE_${role}_SYNC_PACKET.md"
 
-  : > "$out"
-  echo "# ROLE_${role}_SYNC_PACKET（單檔同步包｜Common + Role + References）" >> "$out"
-  echo "generatedAt: $ts" >> "$out"
-  echo "facetId: $facet" >> "$out"
-  echo "" >> "$out"
-  echo "## NOTE" >> "$out"
-  echo "- This file is auto-generated. Do not edit by hand." >> "$out"
-  echo "- Regenerate via: bash xuance-commander-core/tools/build_role_sync_packets.sh" >> "$out"
-  echo "- If you think anything is missing, STOP and report missing paths; do NOT assume." >> "$out"
+  must_exist "$brief"
+  must_exist "$master_proposal"
 
-  echo "" >> "$out"
-  echo "---" >> "$out"
-  echo "## 0) ROLE SCOPE" >> "$out"
-  echo "- Role: $role" >> "$out"
-  echo "- Facet: $facet" >> "$out"
-  echo "- Required behavior: obey Common Rules + Role Brief + embedded references below" >> "$out"
+  {
+    echo "# ROLE_${role}_SYNC_PACKET（單檔同步包｜Common+Role+Refs）"
+    echo "generatedAt: ${ts}"
+    echo "sourceRoot: ${XC_ROOT}"
+    echo ""
+    echo "## NOTE"
+    echo "- This file is auto-generated. Do not edit by hand."
+    echo "- Regenerate via: bash xuance-commander-core/tools/build_role_sync_packets.sh"
+    echo ""
+    echo "---"
+    echo "## 0) ROLE SCOPE"
+    echo "- role: ${role}"
+    echo "- rule: one-file-per-role; embeds common + role-specific + refs"
+    echo ""
+    echo "---"
+    echo "## 1) COMMON"
+    for f in "${COMMON_FILES[@]}"; do
+      [ -f "$f" ] && emit_file "${f#${XC_ROOT}/}" "$f"
+    done
+    echo ""
+    echo "---"
+    echo "## 1.5) LEGACY_ROUTER (MANDATORY REFS)"
+    for f in "${LEGACY_FILES[@]}"; do
+      [ -f "$f" ] && emit_file "${f#${REPO_ROOT}/}" "$f"
+    done
+    echo ""
+    echo "---"
+    echo "## 2) ROLE-SPECIFIC"
+    emit_file "docs/gem/briefs/$(basename "$brief")" "$brief"
+    emit_file "docs/gem/briefs/$(basename "$master_proposal")" "$master_proposal"
+  } > "$out"
 
-  echo "" >> "$out"
-  echo "---" >> "$out"
-  echo "## 1) COMMON (embedded)" >> "$out"
-
-  for f in "${COMMON_FILES[@]}"; do
-    add_file "$out" "$(basename "$f")" "$f"
-  done
-
-  if [[ -n "${LEGACY_ROUTER}" ]]; then
-    add_file "$out" "LEGACY_ROUTER" "$LEGACY_ROUTER"
-  else
-    echo "" >> "$out"
-    echo "---" >> "$out"
-    echo "## FILE: LEGACY_ROUTER" >> "$out"
-    echo "> MISSING: no legacy router file found in candidates." >> "$out"
-  fi
-
-  echo "" >> "$out"
-  echo "---" >> "$out"
-  echo "## 2) ROLE-SPECIFIC (embedded)" >> "$out"
-
-  if [[ "$role" == "R1" ]]; then
-    # R1 brief candidates
-    R1_BRIEF_CANDIDATES=(
-      "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md"
-      "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_R1.zh.md"
-      "$REPO_ROOT/BRIEF_P0-2_income_expansion_pressure_R1.zh.md"
-    )
-    R1_BRIEF="$(pick_first_existing "${R1_BRIEF_CANDIDATES[@]}")"
-    if [[ -n "$R1_BRIEF" ]]; then
-      add_file "$out" "R1_BRIEF" "$R1_BRIEF"
-    else
-      add_file "$out" "R1_BRIEF" "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md"
-    fi
-
-    # Master proposal (facet) candidates
-    MASTER_PROPOSAL_CANDIDATES=(
-      "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-      "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-      "$REPO_ROOT/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-    )
-    MASTER_PROPOSAL="$(pick_first_existing "${MASTER_PROPOSAL_CANDIDATES[@]}")"
-    if [[ -n "$MASTER_PROPOSAL" ]]; then
-      add_file "$out" "MASTER_PROPOSAL" "$MASTER_PROPOSAL"
-    else
-      # still record missing deterministically
-      add_file "$out" "MASTER_PROPOSAL" "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-    fi
-  fi
-
-  if [[ "$role" == "R4" ]]; then
-    # R4 brief candidates
-    R4_BRIEF_CANDIDATES=(
-      "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md"
-      "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_R4.zh.md"
-      "$REPO_ROOT/BRIEF_P0-2_income_expansion_pressure_R4.zh.md"
-    )
-    R4_BRIEF="$(pick_first_existing "${R4_BRIEF_CANDIDATES[@]}")"
-    if [[ -n "$R4_BRIEF" ]]; then
-      add_file "$out" "R4_BRIEF" "$R4_BRIEF"
-    else
-      add_file "$out" "R4_BRIEF" "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md"
-    fi
-
-    # Master proposal (facet) candidates
-    MASTER_PROPOSAL_CANDIDATES=(
-      "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-      "$CORE/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-      "$REPO_ROOT/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-    )
-    MASTER_PROPOSAL="$(pick_first_existing "${MASTER_PROPOSAL_CANDIDATES[@]}")"
-    if [[ -n "$MASTER_PROPOSAL" ]]; then
-      add_file "$out" "MASTER_PROPOSAL" "$MASTER_PROPOSAL"
-    else
-      add_file "$out" "MASTER_PROPOSAL" "$CORE/memory/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
-    fi
-  fi
-
-  # LATEST pointer copy (no symlink to avoid cross-platform issues)
-  cp -f "$out" "$LATEST_DIR/$(basename "$out")"
-  echo "OK: built $out"
+  cp -f "$out" "$LATEST_DIR/ROLE_${role}_SYNC_PACKET.md"
+  echo "✅ generated: $out"
 }
 
-build_role_packet "R1" "income_expansion_pressure"
-build_role_packet "R4" "income_expansion_pressure"
+emit_packet "R1" \
+  "$XC_ROOT/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md" \
+  "$XC_ROOT/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
+
+emit_packet "R4" \
+  "$XC_ROOT/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md" \
+  "$XC_ROOT/docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_MASTER_PROPOSAL.zh.md"
+
+echo "== DONE =="

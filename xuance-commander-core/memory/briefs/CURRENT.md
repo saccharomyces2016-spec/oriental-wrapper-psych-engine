@@ -618,6 +618,8 @@ head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
   - 對指揮官：日常 MASTER_MIN；需要深度對齊才用 FULL
   - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
 
+- 🧭 任務指派規範已啟用：Execution Assignment Rule（Cursor / Codex 分工決策）
+
 ---
 [CHECKPOINT|2026-01-06T15:51:09+0800]
 phase: pre-commit
@@ -633,3 +635,11 @@ message: MILESTONE: advisor role packet workflow integrated
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 7b2567a4ce565140374ef71c45834082893eac37
+
+---
+[CHECKPOINT|2026-01-06T16:41:40+0800]
+phase: pre-commit
+message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 31fffc70e5539b9d18ea9db8e33f8313aef529f4

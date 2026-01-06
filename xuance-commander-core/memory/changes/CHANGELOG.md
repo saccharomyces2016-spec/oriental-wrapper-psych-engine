@@ -173,3 +173,7 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T15:51:09+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_before=1555140c6066d474493ddd767bead2f96ec78135 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-06T15:51:11+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_pushed=7b2567a4ce565140374ef71c45834082893eac37 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: Execution Assignment Rule (task -> Cursor/Codex decision policy) -> docs/governance/EXECUTION_ASSIGNMENT_RULE.md
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T16:41:40+0800 msg="MILESTONE: execution assignment rule added (Cursor vs Codex decision)" branch=main head_before=31fffc70e5539b9d18ea9db8e33f8313aef529f4 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
