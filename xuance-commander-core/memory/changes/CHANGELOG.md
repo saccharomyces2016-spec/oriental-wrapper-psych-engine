@@ -151,3 +151,10 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T14:20:23+0800 msg="MILESTONE: sync trigger governance + verification pack policy + commander optimization duty" branch=main head_before=bb94c7a0f465cf822fb09a78b78815b12402b4db remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-06T14:20:25+0800 msg="MILESTONE: sync trigger governance + verification pack policy + commander optimization duty" branch=main head_pushed=fdaaa8728e2ac80d1bf2cee9022c39d811398509 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: Role Sync Packet Protocol (one role = one packet; common+role+refs embedded) -> docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md
+- Added: Role Sync Packet generator + outputs -> tools/build_role_sync_packets.sh; memory/briefs/role_sync_packets/ROLE_R1_SYNC_PACKET.md; ROLE_R4_SYNC_PACKET.md
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:31:17+0800 msg="MILESTONE: role sync packets (single file per role, embeds all refs) enabled" branch=main head_before=c812b52b8954afe5108f8b852c5b2377d8af743e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:31:24+0800 msg="MILESTONE: role sync packets (single file per role, embeds all refs) enabled" branch=main head_before=c812b52b8954afe5108f8b852c5b2377d8af743e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"

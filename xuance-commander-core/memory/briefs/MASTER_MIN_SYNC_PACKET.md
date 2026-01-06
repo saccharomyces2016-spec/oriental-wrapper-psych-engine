@@ -1,5 +1,5 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-05T18:45:40+0800
+generatedAt: 2026-01-06T15:31:12+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
@@ -103,6 +103,16 @@ sourceRoot: xuance-commander-core
 - v0.0：初始化治理/記憶/外置化骨架
 
 ---
+
+### 後續能力（非 Phase 0 實作）
+
+- Analysis Orchestrator（AI 聚合分析層）：  
+  題目完成診斷後，可送交外部 AI 做跨層整合與敘事呈現。
+
+- Exploration / Unlock Mechanism（探索／抽取式呈現）：  
+  以 UX 機制提高使用者持續互動動機，不影響診斷核心。
+
+---
 ## FILE: memory/briefs/CURRENT.md
 
 # CURRENT（當前狀態短摘要）
@@ -113,10 +123,10 @@ sourceRoot: xuance-commander-core
 - 初始化資料夾結構與玄策指揮官角色規範
 - 建立可擴充 MVP 骨架（domain 分檔、schema、golden tests、build 合併）
 
-下一步（待做）：
-1) 選定第一個心理構面（facet）：例如 stress_recovery
-2) 寫入該 facet 的 questions / scoring / recommendations / narratives / riskchains
-3) 跑 golden tests，確保輸入輸出穩定
+下一步（主線）：
+1) P0-2：為 income_expansion_pressure 建立 questions/scoring/recommendations/narratives/riskchains
+2) 走 Research → Brief → Advisor → Domain gate
+3) 補齊 golden tests（固定輸入輸出）
 
 制度已建立：
 - 想法治理（Idea Governor）
@@ -370,7 +380,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -380,7 +390,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: eefb589c79dc4952c1b0fdda8d88010d8dcb9e11
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -390,7 +400,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: 645967b9bdc9f31cbd71a7da6f986f261d3cedba
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -400,7 +410,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - head: 4fed2a38373d1c4f419d661bd886e461713df856
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -436,7 +446,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 3. 決定正式納入 legacy 方法為新系統的一部分
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -458,7 +468,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - M03 → M04
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -470,6 +480,24 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 ---
 【主線推進｜P0-2 Kickoff｜2026-01-05T18:20:32+0800】
 
+---
+【施工方式升級｜Smart Sync Tiered Workflow｜2026-01-05】
+
+決策（已啟用或即將啟用）：
+- 由「單一 FULL MASTER」升級為「分層同步」：MIN（每次必帶）+ FULL（條件觸發）+ VERIFICATION_PACK（工程證據）。
+- 目的：不漏任何規範（roles/治理/主線），但避免 MASTER 因歷史全文膨脹而降低可靠性。
+
+影響：
+- 日常你只要貼 MIN；遇到里程碑/關鍵改動/失敗診斷才需要 FULL + 證據包。
+
+驗收：
+- 存在：MASTER_MIN_SYNC_PACKET.md（每次生成）
+- 存在：VERIFICATION_PACK（有需要時生成），並有 LATEST 指標
+- AUTO 能依規則決定 MIN/FULL（或至少保留可手動切換）
+---
+
+
+
 已建立顧問輸入 Brief（高階藍圖，不是題庫全文）：
 - R1 題目藍圖：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R1_question_blueprint.zh.md
 - R4 風險鏈框架：docs/gem/briefs/BRIEF_P0-2_income_expansion_pressure_R4_riskchains.zh.md
@@ -480,7 +508,7 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
 - 必查 lessons learned（避免版本漂移/規則卡死）
 
 ---
-【里程碑備份｜��
+【里程碑備份｜��
 
 已完成：
 - ✅ 雲端備份（commit + push）完成
@@ -488,6 +516,177 @@ GPT 每一次最多只能讀取一定長度的文字（上下文長度限制）�
   - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
   - branch: main
   - head: 8d5ab106241d3df036d5ac00fe0e51deedeb9831
+
+---
+
+---
+
+---
+
+---
+[MILESTONE|2026-01-05T19:17:04+0800]
+
+已完成：
+- ✅ 雲端備份（commit + push）預備執行
+  - message: MILESTONE: checkpoint flow reorder test
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head(before): 89343ec4b15ec29a7ea321b75311d73e9ea479d6
+
+---
+[MILESTONE|2026-01-05T19:17:04+0800]
+
+已完成：
+- ✅ 雲端備份（commit + push）完成
+  - message: MILESTONE: checkpoint flow reorder test
+  - remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+  - branch: main
+  - head: 5170f146441673c2e0a8830c8daefd0aafaa7675
+
+---
+[CHECKPOINT|2026-01-05T19:23:21+0800]
+phase: pre-commit
+message: MILESTONE: checkpoint flow reorder test 2
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 5170f146441673c2e0a8830c8daefd0aafaa7675
+
+---
+[CHECKPOINT|2026-01-05T19:23:44+0800]
+phase: post-push
+message: MILESTONE: checkpoint flow reorder test 2
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 4e11f8f0309e1cf4afaa8ac05d8f5e55775ca450
+
+---
+[CHECKPOINT|2026-01-05T19:24:02+0800]
+phase: pre-commit
+message: MILESTONE: checkpoint flow reorder test 2
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: ad3249a61ac3f29f446a75371f12b108abd0df71
+
+---
+[CHECKPOINT|2026-01-05T19:24:04+0800]
+phase: post-push
+message: MILESTONE: checkpoint flow reorder test 2
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: fd8be79ac672af77ae2a71514bd39c3059f1bb60
+
+---
+
+【已納入但尚未實作的能力】
+
+- Analysis Orchestrator（AI 聚合分析層）
+- Exploration / Unlock Mechanism（探索／抽取式呈現）
+
+以上能力已寫入治理文件，待後續階段實作。
+
+---
+[CHECKPOINT|2026-01-06T10:10:51+0800]
+phase: pre-commit
+message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: ca71c4f1aadd484c1f34e993a7e0d7ba77f42b40
+
+---
+[CHECKPOINT|2026-01-06T10:10:53+0800]
+phase: post-push
+message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 3abf24bc98bdb9c7cc1842440ead9c5b962eac8e
+
+---
+[CHECKPOINT|2026-01-06T10:25:11+0800]
+phase: pre-commit
+message: MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 9c59b93ab20fb6586807c1cfa9278c77a6bc33c5
+
+---
+[CHECKPOINT|2026-01-06T10:25:13+0800]
+phase: post-push
+message: MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 4569052a10dde039b4c4f6a0b155234ee20bb5b4
+
+---
+[CHECKPOINT|2026-01-06T10:27:24+0800]
+phase: pre-commit
+message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 9a71dffaa7eaf906b49de3e2980279388fc790b8
+
+---
+[CHECKPOINT|2026-01-06T11:24:37+0800]
+phase: pre-commit
+message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: e1b05a5e05657d21e5871f0698f2d198725de743
+
+---
+[CHECKPOINT|2026-01-06T11:24:42+0800]
+phase: post-push
+message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 047bc9ba1d5afbd68d0738942afc75c3bca11d19
+
+- 🛠 修繕治理已啟用：任何小修正（wording / script / guard）皆需留 CHANGELOG + CURRENT 紀錄
+
+---
+[CHECKPOINT|2026-01-06T11:35:03+0800]
+phase: pre-commit
+message: MILESTONE: repair recording rule added (no silent fixes allowed)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 6ef9ba707d910c0d2afeef0c0991b3e86b29b743
+
+---
+[CHECKPOINT|2026-01-06T11:35:09+0800]
+phase: post-push
+message: MILESTONE: repair recording rule added (no silent fixes allowed)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 9742044430fb1d9c16d8be74aa952075f1c2f88d
+
+- 🧭 同步觸發治理已補齊：MIN/FULL/VERIFICATION_PACK 觸發條件改為可審計決策表（避免長期漂移）
+
+---
+[CHECKPOINT|2026-01-06T14:19:24+0800]
+phase: pre-commit
+message: MILESTONE: sync trigger governance + verification pack policy + commander optimization duty
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bb94c7a0f465cf822fb09a78b78815b12402b4db
+
+---
+[CHECKPOINT|2026-01-06T14:20:23+0800]
+phase: pre-commit
+message: MILESTONE: sync trigger governance + verification pack policy + commander optimization duty
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bb94c7a0f465cf822fb09a78b78815b12402b4db
+
+---
+[CHECKPOINT|2026-01-06T14:20:25+0800]
+phase: post-push
+message: MILESTONE: sync trigger governance + verification pack policy + commander optimization duty
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: fdaaa8728e2ac80d1bf2cee9022c39d811398509
+
+- 📦 角色同步封包（Role Sync Packet）已啟用：一角色一包（Common+Role+Refs 內嵌），避免缺件與假設漂移
+  - 生成：bash xuance-commander-core/tools/build_role_sync_packets.sh
+  - 產物：xuance-commander-core/memory/briefs/role_sync_packets/（含 LATEST/ 指標）
 
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
@@ -601,9 +800,18 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - 若無對應成功紀錄，任務視為未完成
 
 ## 4. 狀態對齊（Sync）
-- 執行 `tools/build_master_sync_packet.sh`
-- 更新 `MASTER_SYNC_PACKET.md` 作為對話快照
-- MASTER 為只讀，不可手改
+
+- 生成同步快照（優先 AUTO）：
+  - `bash xuance-commander-core/tools/build_master_sync_packet_auto.sh`（若存在）
+  - 否則沿用：`bash tools/build_master_sync_packet_full.sh`
+
+- 日常對齊（推薦）：貼 MIN 快照（MASTER_MIN_SYNC_PACKET.md）。
+- 需要深度對齊或觸發 FULL 條件時：貼 FULL 快照（MASTER_SYNC_PACKET.md）。
+
+### 工程證據（Verification）
+當任務涉及「改碼是否改對」「測試是否通過」「環境/Hook 是否修好」：
+- 必須生成 VERIFICATION_PACK（若工具存在）並在文本中留下路徑指標。
+
 
 ## 5. 里程碑備份（Checkpoint｜雲端留存）
 
@@ -776,7 +984,7 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-05T18:45:40+0800
+generatedAt: 2026-01-06T15:31:12+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -791,8 +999,8 @@ generatedAt: 2026-01-05T18:45:40+0800
 - REPO_STATUS: memory/briefs/REPO_STATUS.md
 
 ## Latest evidence (quick)
-- repoHead: 6ec5eb7
-- lastCommand: echo __cmd_capture_probe__
+- repoHead: bb94c7a
+- lastCommand: (unknown)
 - lastSuccess: true
 
 ## Mandatory rules always-on
@@ -802,44 +1010,41 @@ generatedAt: 2026-01-05T18:45:40+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-05T18:45:40+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260105_184540.md
+updatedAt: 2026-01-06T15:31:12+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_153112.md
 overallExitCode: 0
 
 ---
 ## FILE: memory/briefs/REPO_STATUS.md
 
 # REPO_STATUS（Repo 狀態快照｜自動）
-updatedAt: 2026-01-05T13:09:10+08:00
+updatedAt: 2026-01-06T14:15:35+08:00
 repoRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine
 branch: main
-head: 6ec5eb7
+head: bb94c7a
 
 ## git status -sb
 ## main...origin/main
- M xuance-commander-core/memory/briefs/CURRENT.md
- M xuance-commander-core/memory/changes/CHANGELOG.md
-?? xuance-commander-core/docs/research/
 
 ## git remote -v
 origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (fetch)
 origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (push)
 
 ## last commit
-commit 6ec5eb7f1fef27450b1acc3614068d548ce7786c
+commit bb94c7a0f465cf822fb09a78b78815b12402b4db
 Author:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
-AuthorDate: Mon Jan 5 12:35:48 2026 +0800
+AuthorDate: Tue Jan 6 11:35:09 2026 +0800
 Commit:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
-CommitDate: Mon Jan 5 12:35:48 2026 +0800
+CommitDate: Tue Jan 6 11:35:09 2026 +0800
 
-    chore: MILESTONE: sync hook stable - evidence sealed (final)
+    chore: MILESTONE: repair recording rule added (no silent fixes allowed) (post-push evidence)
 
 ---
 ## FILE: memory/briefs/LAST_COMMAND_STATUS.md
 
 # LAST_COMMAND_STATUS（最新一次指令結果｜自動）
-updatedAt: 2026-01-05T13:09:10+08:00
-command: echo __cmd_capture_probe__
+updatedAt: 2026-01-06T14:15:35+08:00
+command: (unknown)
 exitCode: 0
 success: true
 

@@ -566,3 +566,23 @@ message: MILESTONE: sync trigger governance + verification pack policy + command
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: fdaaa8728e2ac80d1bf2cee9022c39d811398509
+
+- 📦 角色同步封包（Role Sync Packet）已啟用：一角色一包（Common+Role+Refs 內嵌），避免缺件與假設漂移
+  - 生成：bash xuance-commander-core/tools/build_role_sync_packets.sh
+  - 產物：xuance-commander-core/memory/briefs/role_sync_packets/（含 LATEST/ 指標）
+
+---
+[CHECKPOINT|2026-01-06T15:31:17+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e
+
+---
+[CHECKPOINT|2026-01-06T15:31:24+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e

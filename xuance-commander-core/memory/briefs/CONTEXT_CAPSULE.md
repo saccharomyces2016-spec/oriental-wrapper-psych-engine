@@ -1,5 +1,5 @@
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-05T18:45:40+0800
+generatedAt: 2026-01-06T15:31:12+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -14,8 +14,8 @@ generatedAt: 2026-01-05T18:45:40+0800
 - REPO_STATUS: memory/briefs/REPO_STATUS.md
 
 ## Latest evidence (quick)
-- repoHead: 6ec5eb7
-- lastCommand: echo __cmd_capture_probe__
+- repoHead: bb94c7a
+- lastCommand: (unknown)
 - lastSuccess: true
 
 ## Mandatory rules always-on
