@@ -148,3 +148,5 @@ These items are approved to be written next (derived from the governance gap aud
 - Legacy Artifact Governance (retention + reference ban by default)
 
 - Global Path Canon: docs/governance/GLOBAL_PATH_CANON.md
+- Governance Audit Record (FULL): memory/briefs/CURRENT.md (section: Governance Audit Record)
+  - 注意：`./tmp/audit/*` 只能當暫存輸出；FULL 記錄以 CURRENT 為準

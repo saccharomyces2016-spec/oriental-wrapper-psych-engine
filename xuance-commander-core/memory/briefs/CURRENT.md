@@ -760,3 +760,317 @@ head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
 - 新規則寫入 governance 文本
 - 對應 audit / guard script 存在
 
+
+## Phase Objective (Now)
+
+### Governance Gap Closure: Canon / Artifacts / Shadow Paths
+
+**Scope (from governance audit):**
+- Canon violations: duplicate governance roots; undefined `out/`, `tmp/` placement
+- Ambiguity: multiple sources for `ROLE_*_SYNC_PACKET`, `CHAT_PACKET`, timestamped advisor packs
+- Drift risk: `out/`, `tmp/`, `logs/` not registered; `docs/gem/runs/` naming/versioning not governed
+- Missing rules: duplicate filename resolution; shadow path registry; legacy governance; cross-directory references
+
+**Goal:**
+- Convert the audit findings into enforceable governance text + simple repo-level enforcement rules.
+- Eliminate ambiguous sources so there is exactly one “source of truth” per artifact type.
+
+### Deliverables
+
+1) **Canonical path decision** (write down and enforce)
+- Governance docs: single canonical root
+- Output artifacts: single canonical `out/`
+- Temporary artifacts: single canonical `tmp/`
+- Logs: canonical `logs/` rules
+
+2) **Artifact single-source rules**
+- Sync packets: single-source path + allowed mirrors (if any)
+- Chat packet: single canonical path
+- Advisor packs: versioning rules + `LATEST` pointer rules
+
+3) **Registry & lifecycle rules**
+- Add/extend registry rule: all artifact dirs must be registered
+- tmp lifecycle: retention + cleanup trigger
+- logs lifecycle: naming + retention
+
+4) **Reference rules**
+- Duplicate filename resolution
+- Cross-directory reference priority
+- Legacy directory governance
+- Shadow path registry + “not evidence” labeling
+
+### Execution Checklist (acceptance)
+
+- [ ] Repo contains **one** governance root; any non-canon governance dir is removed or clearly marked as non-canon
+- [ ] Exactly **one** canonical `out/` path is declared and used by scripts/docs
+- [ ] Exactly **one** canonical `tmp/` path is declared and used by scripts/docs
+- [ ] `out/`, `tmp/`, `logs/` are registered in the artifact registry (or equivalent canon file)
+- [ ] `CHAT_PACKET.md` and `ROLE_*_SYNC_PACKET` have exactly one source-of-truth path
+- [ ] Timestamped advisor pack directories have a deterministic “latest” resolution rule
+- [ ] Shadow paths (e.g., `prompts/gem`) are explicitly registered and labeled as non-canon evidence
+
+### Notes
+- This phase is *text-first*: policy comes before refactor.
+- Any structural move (delete/move directories) must include a rollback note.
+
+## Temporary Objective — Governance Hardening
+
+- 強化 Governance 目錄結構與管理
+- 實施自動化檢查點以防止違規路徑與文件重複
+- 修正相對路徑引用問題，確保證據資料正確性
+- In progress
+
+<!-- XUANCE_GOVERNANCE_AUDIT_FULL_BEGIN -->
+## Governance Audit Record (FULL) — Canon Violations + Automation Checkpoints
+
+來源：Cursor 盤點輸出（已複寫入此處作為 SSOT 記錄；`./tmp/audit/*` 僅為暫存，不可引用為證據）
+
+### Canon 違規盤點報告
+
+#### A) Canon 路徑違規
+
+##### A1. Governance 目錄違規
+- **違規路徑**: `./docs/governance`
+- **違反規範**: GLOBAL_PATH_CANON.md "禁止：repo root 出現 ./docs/governance"
+- **Canon 路徑**: `xuance-commander-core/docs/governance/`
+
+##### A2. Output 目錄違規
+- **違規路徑**: `./out/`
+- **違反規範**: GLOBAL_PATH_CANON.md "Canon: xuance-commander-core/out/"
+- **Canon 路徑**: `xuance-commander-core/out/`
+- **違規內容**: `out/CHAT_PACKET.md`
+
+##### A3. Temporary 目錄違規
+- **違規路徑**: `./tmp/`
+- **違反規範**: GLOBAL_PATH_CANON.md "Canon: xuance-commander-core/tmp/"
+- **Canon 路徑**: `xuance-commander-core/tmp/`
+
+#### B) 同名文件跨目錄
+
+##### B1. CHAT_PACKET.md 重複
+- `out/CHAT_PACKET.md`
+- `xuance-commander-core/out/CHAT_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "CHAT_PACKET：single source（由 registry 指定）"
+
+##### B2. ROLE_R1_SYNC_PACKET.md 重複
+- `xuance-commander-core/memory/briefs/role_sync_packets/LATEST/ROLE_R1_SYNC_PACKET.md`
+- `xuance-commander-core/memory/briefs/role_sync_packets/ROLE_R1_SYNC_PACKET.md`
+- `xuance-commander-core/out/role_sync_packets/ROLE_R1_SYNC_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "ROLE_*_SYNC_PACKET：single source（由 registry 指定）"
+
+##### B3. ROLE_R4_SYNC_PACKET.md 重複
+- `xuance-commander-core/memory/briefs/role_sync_packets/LATEST/ROLE_R4_SYNC_PACKET.md`
+- `xuance-commander-core/memory/briefs/role_sync_packets/ROLE_R4_SYNC_PACKET.md`
+- `xuance-commander-core/out/role_sync_packets/ROLE_R4_SYNC_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "ROLE_*_SYNC_PACKET：single source（由 registry 指定）"
+
+##### B4. COMMON_PACKET.md 重複（時間戳目錄）
+- `xuance-commander-core/out/advisor_packs/20260106_143538/COMMON_PACKET.md`
+- `xuance-commander-core/out/advisor_packs/20260106_143713/COMMON_PACKET.md`
+- **違反規範**: 無明確版本管理規則，無法確定 single source
+
+##### B5. README.md 多處存在（目錄說明文件，可能不違規）
+- 11 個位置（legacy 目錄內多個，非 legacy 目錄內 8 個）
+- **狀態**: 需確認是否違規（目錄說明文件可能允許多個）
+
+#### C) out/tmp/logs 被誤引用為證據
+
+##### C1. 引用 `out/CHAT_PACKET.md`（相對路徑，可能指向錯誤位置）
+- `xuance-commander-core/memory/briefs/CURRENT.md:30` - "並貼 out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/memory/briefs/COMMAND_BRIEF.md:163` - "並貼 out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md:50,55` - 引用 `out/CHAT_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：所有產物只允許寫入此處" + 相對路徑可能指向 `./out/` 而非 Canon `xuance-commander-core/out/`
+
+##### C2. 引用 `tmp/`（在 CURRENT.md 中提及）
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "tmp/logs"
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：不可被引用為證據；可隨時清除"
+
+##### C3. 引用 `logs/`（在 CURRENT.md 中提及）
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "tmp/logs"
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：僅供除錯，不可作為決策依據"
+
+#### D) 可自動化的檢查點
+
+##### D1. Governance 目錄檢查
+```bash
+# 檢查點：repo root 下不得有 docs/governance
+find . -type d -path "*/docs/governance" -not -path "*/xuance-commander-core/docs/governance" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：只應找到 xuance-commander-core/docs/governance
+```
+
+##### D2. Gem 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/docs/gem 和 xuance-commander-core/prompts/gem
+find . -type d -name "gem" -not -path "*/xuance-commander-core/docs/gem" -not -path "*/xuance-commander-core/prompts/gem" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果
+```
+
+##### D3. Output 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/out/
+find . -type d -name "out" -not -path "*/xuance-commander-core/out" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果（但會找到 ./out/）
+```
+
+##### D4. Temporary 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/tmp/
+find . -type d -name "tmp" -not -path "*/xuance-commander-core/tmp" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果（但會找到 ./tmp/）
+```
+
+##### D5. CHAT_PACKET.md Single Source 檢查
+```bash
+# 檢查點：CHAT_PACKET.md 只能有一個位置（由 registry 指定）
+git ls-files | grep "CHAT_PACKET.md$" | wc -l
+# 預期：1（但實際為 2）
+```
+
+##### D6. ROLE_*_SYNC_PACKET.md Single Source 檢查
+```bash
+# 檢查點：每個 ROLE_*_SYNC_PACKET.md 只能有一個位置
+git ls-files | grep "ROLE_.*_SYNC_PACKET.md$" | awk -F/ '{print $NF}' | sort | uniq -d
+# 預期：無重複（但實際有重複）
+```
+
+##### D7. 相對路徑引用檢查
+```bash
+# 檢查點：不得使用相對路徑引用 out/tmp/logs（應使用絕對路徑或明確指定）
+git ls-files "*.md" | xargs grep -l "out/CHAT_PACKET\\|tmp/\\|logs/" | grep -v "GLOBAL_PATH_CANON\\|TEXT_ONLY_EXECUTION"
+# 預期：無結果（但實際有多個文件引用）
+```
+
+##### D8. 時間戳目錄版本管理檢查
+```bash
+# 檢查點：advisor_packs 下應有 LATEST 連結指向最新版本
+ls -la xuance-commander-core/out/advisor_packs/ | grep LATEST
+# 預期：存在 LATEST 連結（但實際可能不存在）
+```
+
+##### D9. Legacy 目錄引用檢查
+```bash
+# 檢查點：非 legacy 文件不得引用 legacy 目錄內容
+git ls-files "*.md" | grep -v "legacy" | xargs grep -l "docs/legacy" | head -5
+# 預期：無結果（需手動確認是否違規）
+```
+
+##### D10. 證據類資料夾登記檢查
+```bash
+# 檢查點：所有證據類資料夾必須在 ARTIFACT_REGISTRY 或 GLOBAL_PATH_CANON 中登記
+# 需手動比對 find 結果與登記清單
+find . -type d -maxdepth 3 -not -path "*/.git/*" -not -path "*/legacy/*" | grep -E "(evidence|artifact|output|result|report|data)" | sort
+# 預期：所有結果都應在登記清單中
+```
+
+<!-- XUANCE_GOVERNANCE_AUDIT_FULL_END -->
+
+---
+
+## TEMP_OBJECTIVE: Governance Hardening (Cursor Audit SSOT)
+
+來源（SSOT）：
+- tmp/audit/CANON_VIOLATIONS.md（Cursor 全倉治理盤點完整報告）
+
+目標：
+- 以「最完整、未雨綢繆」為原則，**一次性消除制度型漂移風險**
+- 所有對策必須能對應到「未來同類問題不再發生」
+
+執行原則：
+- 本臨時目標期間，**功能主線暫停**
+- 僅允許：
+  - 撰寫治理規則（text-first）
+  - 新增/強化 audit / guard scripts
+  - Canon 路徑與引用修正
+- 禁止任何未在本報告列出的臆測性修正
+
+工作分工：
+- Cursor：盤點、彙整、產出完整治理對策文本（以報告為唯一依據）
+- Codex：**逐條**依治理文本修正 repo（一條一驗收）
+- 指揮官：只做 PASS / FAIL / NEXT 判斷
+
+完成條件：
+- CANON_VIOLATIONS.md 中每一項：
+  - 都有對應的治理規則文本
+  - 都有可執行的檢查方式（script / checklist）
+  - 檢查結果為 PASS
+- 完成後才允許進入「摘要化 / 精簡 CURRENT」
+
+狀態：
+- In progress
+
+---
+
+---
+
+## 治理慣例已啟用：Cursor Audit 驅動制度升級
+
+說明（白話）：
+- 只要 Cursor 一次抓出一堆錯誤，就代表「制度不夠」
+- 正確順序永遠是：
+  1) 先補制度
+  2) 再修實作
+  3) 最後驗證不再復發
+
+狀態：
+- 永久有效（非臨時目標）
+
+---
+
+---
+## 治理修復事件｜二次掃描後封板（Cursor Rescan Closure）
+
+來源：
+- Cursor 二次治理掃描（CURSOR_RESCAN_RESULTS.md）
+
+錯誤性質分類：
+- Canon 路徑違規（governance / out / tmp）
+- Single-Source 失效（CHAT_PACKET / ROLE_* / COMMON_PACKET）
+- 相對路徑歧義（out/tmp/logs）
+- 影子路徑未登記（verification_packs）
+- 時間戳版本無 LATEST
+- role_sync_packets 雙重結構
+
+決策：
+- 本次不只修檔案，**同步補齊制度**
+- 同類問題未來一律視為制度缺口，不得只修單點
+
+狀態：
+- Fixing + Writing Governance
+
+---
+
+---
+## 治理封板｜二次掃描結案
+
+已補齊制度：
+- Global Path Canon
+- Single Source Rules
+- Absolute Reference Rule
+- Shadow Path Registry
+- Advisor Pack Versioning
+
+效果：
+- 同類錯誤未來可被腳本與文本雙重阻擋
+- 不再依賴人工記憶或對話上下文
+
+狀態：
+- Governance Hardening COMPLETE
+
+---
+
+---
+## 治理事件（進行中）：Cursor 二次全面掃描（Post-Audit Pass）
+
+目的：
+- 在第一次 Canon Audit 修補後
+- 再次用 Cursor 全倉掃描
+- 確認是否仍有「未被制度覆蓋的結構性問題」
+
+原則：
+- 只要 Cursor 再抓到問題
+- 一律視為「制度缺口」，不得只修單點
+
+狀態：
+- Scanning (Cursor)
+
+---
