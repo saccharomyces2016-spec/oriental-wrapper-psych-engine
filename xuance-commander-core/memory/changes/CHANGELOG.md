@@ -131,3 +131,5 @@
 - Added: checkpoint(post-push) ts=2026-01-06T10:25:13+0800 msg="MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)" branch=main head_pushed=4569052a10dde039b4c4f6a0b155234ee20bb5b4 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T10:27:24+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4)" branch=main head_before=9a71dffaa7eaf906b49de3e2980279388fc790b8 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T11:24:37+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]" branch=main head_before=e1b05a5e05657d21e5871f0698f2d198725de743 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
