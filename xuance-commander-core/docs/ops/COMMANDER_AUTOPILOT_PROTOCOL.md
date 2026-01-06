@@ -20,6 +20,31 @@
    - 指定要哪段（例如某函式/某模組）
    - 說明理由（為何需要）
 
+## 封板（Seal）= Checkpoint（雲端留存）｜自動建議規則
+
+定義：
+- 「封板」在本專案中等同於：執行一次 `xc_checkpoint.sh`，把本輪成果 **commit + push + 留證 + 重建同步快照**。
+- 封板不是儀式；它是「可回到的版本」。
+
+指揮官自動建議（AUTO-SUGGEST）封板的觸發條件（任一成立）：
+1) 新增/修改了治理制度（governance / ops / process / adr / roles）
+2) 新增/修改了同步策略（MIN/FULL/VERIFICATION_PACK/role packets/audit/tooling）
+3) 新增/修改了角色定位、工作分配、顧問輸入輸出格式
+4) 完成一個可獨立驗收的階段性成果（例如：新增工具 + Audit PASS）
+5) 修復了過去失敗類型（版本漂移/規則卡死/hook 噪音/路徑錯）且已驗收成功
+
+執行規則（硬性）：
+- 觸發後：指揮官在輸出「指令包」時，必須 **附帶** checkpoint 指令（除非使用者明確說「先不要封板」）。
+- 封板前必做留證：更新 `memory/briefs/CURRENT.md` + `memory/changes/CHANGELOG.md`（只追加，不改歷史）。
+
+標準封板指令：
+- `bash xuance-commander-core/tools/xc_checkpoint.sh "MILESTONE: <一句話描述>"`
+
+驗收：
+- origin/main 出現對應 commit（message 含 MILESTONE）
+- CURRENT/CHANGELOG 有新增留證
+- MASTER/MIN（或同步快照）`generatedAt` 更新
+
 ## 你提供最新資訊的最省事方法
 - 在專案根目錄執行：bash tools/export_chat_packet.sh .
 - 然後把輸出的 out/CHAT_PACKET.md 內容整段貼給指揮官

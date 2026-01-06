@@ -85,3 +85,25 @@ Decision: FULL + (VP: yes) + touched docs/governance + milestone checkpoint
 - 一律視為同步鏈不完整：不得宣稱已同步。
 - 先用你們既定工具重建同步（例如 `build_master_sync_packet_auto.sh` 或專案內的 MIN 重建腳本）。
 - 若仍無法自動更新：生成 `VERIFICATION_PACK` 作為當輪證據，並在 MIN/FULL 中提供路徑指標。
+
+## FULL 觸發提醒（條件式）與 MIN 證據鏈規則
+
+FULL 觸發條件（任一成立 → 改用 FULL / 或附帶 VERIFICATION_PACK）：
+- 顧問回報 MISSING / INCOMPLETE / STOP
+- 需要做跨資料夾判斷（路徑是否存在、是否已有某檔、是否已納入 legacy/router/brief）
+- 要做結構性變更（schema/domain/governance/charter/roadmap/adr）
+- 需要追溯「為什麼會變成這樣」（需看較完整變更脈絡）
+
+MIN 是否需要包含所有變動？（答案：不用，但必須可追溯）
+- MIN 目標是「足夠推進主線」+「帶最新證據」；不是存放全部歷史。
+- 制度/流程/角色/策略的變更：必須落盤到 SSOT（CURRENT/CHANGELOG/治理文件/ADR），必要時用 FULL 或 Role Packets 提供原文。
+
+MIN 證據鏈必備三件套（缺一視為證據不足）：
+- `LAST_COMMAND_STATUS`（最新指令/exitCode/success）
+- `REPO_STATUS`（branch/head/remote）
+- `LATEST_VERIFICATION_PACK`（若本輪需要工程證據）
+
+處理規則（硬性）：
+- 若你發現 MIN 內沒有最新指令（例如 command 仍是 (unknown)、updatedAt 沒變）：
+  1) 不要靠「我記得剛剛有跑」推進
+  2) 先重建快照（MIN/FULL）或生成 VERIFICATION_PACK，再進入下一步

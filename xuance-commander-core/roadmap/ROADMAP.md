@@ -6,6 +6,17 @@
 - 每次推進只允許更新一個「目前工作項」避免亂跳
 
 ## Phase 0：MVP（單一構面）
+
+<!-- XUANCE_P0_2_DECISION_BEGIN -->
+### P0-2 決策（Commander Locked）
+- 採納 R1 題目藍圖：A「歲時農耕・倉廩觀」作為 user-facing 唯一主隱喻
+- 採納 R4 風險鏈：Framework A/B 作為 internal 結構（對外輸出必須翻譯成農耕語彙）
+- 顧問證據落盤：
+  - docs/gem/runs/RUN_P0-2_income_expansion_pressure_R1_20260106.md
+  - docs/gem/runs/RUN_P0-2_income_expansion_pressure_R4_20260106.md
+  - docs/gem/runs/DECISION_P0-2_income_expansion_pressure_20260106.md
+<!-- XUANCE_P0_2_DECISION_END -->
+
 - [x] P0-1 選定第一個構面（facet）
 - [ ] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
 - [ ] P0-3 跑 golden tests 固定輸入輸出

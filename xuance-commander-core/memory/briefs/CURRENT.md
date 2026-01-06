@@ -1,5 +1,13 @@
 # CURRENT（當前狀態短摘要）
 
+## P0-2（income_expansion_pressure）決策已鎖定
+- R1：採用「歲時農耕・倉廩觀」作為題目與敘事主隱喻
+- R4：採用 A/B 風險鏈結構（對外全部轉譯為農耕詞彙，避免隱喻混用）
+- 下一步：產出 questions + scoring -> 交 R2 做 narr/reco -> 風險鏈落盤 -> golden tests
+- 證據：docs/gem/runs/DECISION_P0-2_income_expansion_pressure_20260106.md
+
+
+
 目標：MVP（最小可行產品）採用「核心引擎穩定、內容外置化、schema 版本化」架構，降低後期衝突。
 
 已完成：
@@ -683,3 +691,25 @@ message: MILESTONE: FULL trigger + MIN evidence policy added
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: a7e98cabe9f49ed96c185600f7f9bf71138d5107
+
+## Temporary Objective — Governance Hardening
+
+目標：
+- 系統性盤點並修補「制度型漂移風險」
+- 優先於功能推進，避免後期高成本回補
+
+目前聚焦：
+- docs/gem 證據路徑治理
+- SSOT 明確化 + 可自動驗證
+
+狀態：
+- In progress
+
+
+---
+[CHECKPOINT|2026-01-06T22:00:33+0800]
+phase: pre-commit
+message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated tmp/logs
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: cdfb9011a3ae549d057b48cd8608ef189d05314d

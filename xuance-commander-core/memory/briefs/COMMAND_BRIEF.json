@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-05T14:15:22",
+  "generatedAt": "2026-01-06T19:09:22",
   "mustRead": [
     "charter/CHARTER.md",
     "roadmap/ROADMAP.md",
     "memory/briefs/CURRENT.md",
     "docs/governance/TEXT_ONLY_EXECUTION_RULES.md",
     "memory/index/COMMANDER_ENTRYPOINTS.md",
-    "docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md"
+    "docs/adr/ADR_0005_user_override_and_fatigue_rollback.md"
   ]
 }

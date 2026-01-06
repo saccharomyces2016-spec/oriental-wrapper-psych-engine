@@ -13,3 +13,9 @@ xuance-commander-core/memory/briefs/LAST_COMMAND_STATUS.md
 xuance-commander-core/memory/briefs/REPO_STATUS.md
 # Legacy raw zips (store locally only; too large for git)
 xuance-commander-core/docs/legacy/*/import/raw/*.zip
+# generated / local-only
+tmp/
+tmp/**
+xuance-commander-core/logs/
+xuance-commander-core/logs/**
+.DS_Store

@@ -80,3 +80,23 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - 每次開始任何工作前，必須先跑 preflight（tools/preflight.sh）
 - preflight 會生成 memory/briefs/COMMAND_BRIEF.md
 - 指揮官之後的所有決策與建議必須基於 COMMAND_BRIEF.md
+
+<!-- XUANCE_DOCS_GEM_CANON_BEGIN -->
+## docs/gem 單一真相來源（防漂移硬規則）
+
+硬規則：
+- GEM 證據（briefs/profiles/runs）的唯一合法落點是：
+  - `xuance-commander-core/docs/gem/`
+- `xuance-commander-core/prompts/gem/` 只放提示模板，不是 runs 落點。
+- 任何其他 `*/docs/gem`（尤其是 repo root 的 `./docs/gem`）一律視為漂移副本，不得寫入。
+
+驗收（可檢查）：
+- `bash xuance-commander-core/tools/audit_docs_gem_drift.sh` 必須 PASS。
+
+引用要求：
+- ROADMAP/CURRENT/DECISION 內對 GEM runs 的引用，必須使用：
+  - `xuance-commander-core/docs/gem/runs/...`
+
+規範來源：
+- `xuance-commander-core/docs/governance/DOCS_GEM_CANON_RULE.md`
+<!-- XUANCE_DOCS_GEM_CANON_END -->
