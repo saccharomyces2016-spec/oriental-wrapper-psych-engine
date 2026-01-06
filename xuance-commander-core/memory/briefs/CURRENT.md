@@ -1074,3 +1074,11 @@ find . -type d -maxdepth 3 -not -path "*/.git/*" -not -path "*/legacy/*" | grep 
 - Scanning (Cursor)
 
 ---
+
+---
+[CHECKPOINT|2026-01-06T23:18:12+0800]
+phase: pre-commit
+message: MILESTONE: governance hardening sealed (cursor rescan -> rules written)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: e2a15aea40dfd558741c449f7863740683cec934

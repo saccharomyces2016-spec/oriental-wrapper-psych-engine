@@ -195,3 +195,5 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T22:09:05+0800 msg="MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored + depth 6)" branch=main head_before=a3eb9664a43ec3cc1c47194b0a36a4966c9ef8ef remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-06T22:09:08+0800 msg="MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored + depth 6)" branch=main head_pushed=c9fff2cfa44224679d5dc62b9d235ba328a6319f remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T23:18:12+0800 msg="MILESTONE: governance hardening sealed (cursor rescan -> rules written)" branch=main head_before=e2a15aea40dfd558741c449f7863740683cec934 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
