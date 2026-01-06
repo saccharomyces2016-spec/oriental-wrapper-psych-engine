@@ -63,3 +63,52 @@ Role Sync Packet 內文必至少包含：
 - Output: <建議稿全文>
 - Assumptions: <所有假設條列>
 - Acceptance: <如何驗收題目/風險鏈是否有效>
+
+---
+
+## Coverage Audit & Single-Packet Rule（硬性治理）
+
+### 1. Single-Packet Rule（不可拆包原則）
+
+- 任何角色（R1 / R2 / R4 / 其他顧問）
+- 任何時間
+- 任何任務階段
+
+👉 只能接收「一個」對應角色的 Sync Packet（單一 Markdown 檔）
+
+禁止行為：
+- 補貼零散 Markdown
+- 在對話中臨時補充背景
+- 要求顧問自行回 repo 查資料
+- 同一角色同時傳送兩個以上檔案
+
+### 2. Coverage Audit Requirement（覆蓋率稽核強制）
+
+- 每一份 ROLE_*_SYNC_PACKET.md
+- 必須搭配一份 Coverage Audit 報告
+- Audit 結果為 PASS，該 Packet 才視為可交付
+
+Audit 至少包含：
+- Required Sources（SSOT）
+- Included Sources
+- sha256 + line count
+- 明確 Verdict：PASS / FAIL
+
+### 3. FAIL Handling（失敗處理）
+
+- Audit FAIL：
+  - 不得交付顧問
+  - 不得補貼修正
+  - 必須重建 Packet + Audit
+
+### 4. Consultant Stop Condition
+
+- 顧問回報 MISSING / INCOMPLETE / STOP
+- 一律視為 Packet 未通過 Audit
+- 必須回到重建流程
+
+### 5. Commander Responsibility
+
+- 指揮官不得依賴記憶
+- 只能以 Packet + PASS Audit 作為推進依據
+

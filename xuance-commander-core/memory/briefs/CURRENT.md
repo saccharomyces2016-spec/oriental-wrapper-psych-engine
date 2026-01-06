@@ -651,3 +651,11 @@ message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: e2514c8b651ecc110e57f6349367fe282bd50997
+
+---
+[CHECKPOINT|2026-01-06T16:58:01+0800]
+phase: pre-commit
+message: MILESTONE: enforce role sync packet coverage audit (single-packet rule)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: e1e0df1a90ddd13877453367a76989693bc8e516
