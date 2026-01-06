@@ -135,3 +135,7 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T11:24:37+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]" branch=main head_before=e1b05a5e05657d21e5871f0698f2d198725de743 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-06T11:24:42+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]" branch=main head_pushed=047bc9ba1d5afbd68d0738942afc75c3bca11d19 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: Repair Recording Rule (all fixes/patches must leave textual trace; no silent repairs) -> docs/governance/REPAIR_RECORDING_RULE.md
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T11:35:03+0800 msg="MILESTONE: repair recording rule added (no silent fixes allowed)" branch=main head_before=6ef9ba707d910c0d2afeef0c0991b3e86b29b743 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"

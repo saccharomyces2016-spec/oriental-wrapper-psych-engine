@@ -522,3 +522,13 @@ message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording f
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 047bc9ba1d5afbd68d0738942afc75c3bca11d19
+
+- 🛠 修繕治理已啟用：任何小修正（wording / script / guard）皆需留 CHANGELOG + CURRENT 紀錄
+
+---
+[CHECKPOINT|2026-01-06T11:35:03+0800]
+phase: pre-commit
+message: MILESTONE: repair recording rule added (no silent fixes allowed)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 6ef9ba707d910c0d2afeef0c0991b3e86b29b743
