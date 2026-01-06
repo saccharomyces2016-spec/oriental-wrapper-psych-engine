@@ -457,3 +457,20 @@ message: MILESTONE: checkpoint flow reorder test 2
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: fd8be79ac672af77ae2a71514bd39c3059f1bb60
+
+---
+
+【已納入但尚未實作的能力】
+
+- Analysis Orchestrator（AI 聚合分析層）
+- Exploration / Unlock Mechanism（探索／抽取式呈現）
+
+以上能力已寫入治理文件，待後續階段實作。
+
+---
+[CHECKPOINT|2026-01-06T10:10:51+0800]
+phase: pre-commit
+message: MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: ca71c4f1aadd484c1f34e993a7e0d7ba77f42b40

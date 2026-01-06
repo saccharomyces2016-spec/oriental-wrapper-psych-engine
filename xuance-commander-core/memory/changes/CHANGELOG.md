@@ -119,3 +119,7 @@
 - Added: checkpoint(pre-commit) ts=2026-01-05T19:24:02+0800 msg="MILESTONE: checkpoint flow reorder test 2" branch=main head_before=ad3249a61ac3f29f446a75371f12b108abd0df71 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-05T19:24:04+0800 msg="MILESTONE: checkpoint flow reorder test 2" branch=main head_pushed=fd8be79ac672af77ae2a71514bd39c3059f1bb60 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: System Capabilities declaration (Analysis Orchestrator; Exploration/Unlock UX) and noted in roadmap/current
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T10:10:51+0800 msg="MILESTONE: system capabilities (AI orchestrator + exploration unlock) declared" branch=main head_before=ca71c4f1aadd484c1f34e993a7e0d7ba77f42b40 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
