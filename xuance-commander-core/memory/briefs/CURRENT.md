@@ -498,3 +498,11 @@ message: MILESTONE: CURRENT aligned to P0-2 (income_expansion_pressure)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 4569052a10dde039b4c4f6a0b155234ee20bb5b4
+
+---
+[CHECKPOINT|2026-01-06T10:27:24+0800]
+phase: pre-commit
+message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 9a71dffaa7eaf906b49de3e2980279388fc790b8
