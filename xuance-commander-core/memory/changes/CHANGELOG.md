@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## Unreleased
+- Changed: Sync governance now explicitly integrates Role Sync Packets for advisor inputs (avoid missing-text assumptions)
+- Added: Advisor return-pack minimal spec (Used Packet/Output/Assumptions/Acceptance) to ROLE_SYNC_PACKET_PROTOCOL
 - Added: Tiered Sync spec (MIN/FULL/VERIFICATION_PACK) + Smart Sync definition -> docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md
 - Changed: TASK_LIFECYCLE Sync step now prefers AUTO + requires VERIFICATION_PACK when correctness must be proven -> docs/process/TASK_LIFECYCLE.md
 - Added: CURRENT records workflow upgrade to Smart Sync Tiered Workflow (construction method upgraded)
@@ -167,3 +169,5 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T15:37:08+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_before=bbee5f4a9d6d949f548e77cd8b87106702939f7e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-06T15:37:09+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_pushed=16ec30ed760bb482cd1996a2d362fc7b382576c9 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:51:09+0800 msg="MILESTONE: advisor role packet workflow integrated" branch=main head_before=1555140c6066d474493ddd767bead2f96ec78135 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"

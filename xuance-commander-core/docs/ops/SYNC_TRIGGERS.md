@@ -27,3 +27,11 @@ Decision: MIN|FULL + (VP: yes|no) + reason
 
 例：
 Decision: FULL + (VP: yes) + touched docs/governance + milestone checkpoint
+
+### Role Sync Packet Trigger（新增｜顧問交付專用）
+當任一成立時，除了 MIN/FULL 之外，**必須**同時生成對應角色的 Role Sync Packet：
+- 你要把任務交給顧問角色（R1–R5）
+- 你要顧問做第二輪/改版輸出
+- 你發現顧問輸出出現「缺件/自行假設」
+
+目的：讓顧問永遠以最新共同規範 + 角色專屬 brief 工作，避免漂移。

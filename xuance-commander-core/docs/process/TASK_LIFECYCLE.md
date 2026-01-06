@@ -25,8 +25,10 @@
 2) Brief（顧問輸入）：
    - 把 research 萃取成短輸入，存到 docs/gem/briefs/BRIEF_*.md
 3) Advisor Runs（顧問建議稿）：
+   - 顧問輸入一律使用對應 Role Sync Packet（ROLE_*_SYNC_PACKET.md）；不得用 FULL MASTER 取代。
    - 顧問輸出存到 docs/gem/runs/（只算建議稿）
 4) Commander 審核：
+   - 若顧問輸出顯示缺件或自行假設：必須先重建 Role Sync Packet 並要求顧問重做（不得直接採納）。
    - 指揮官做採納/拒絕/修改決策摘要後，才可落盤到 domain/
 5) Golden Tests：
    - 跑 tests/run_golden.sh（或專案既定測試腳本）確保輸入輸出穩定

@@ -1,5 +1,5 @@
 # ROLE_R4_SYNC_PACKET（單檔同步包｜Common + Role + References）
-generatedAt: 2026-01-06T15:30:53+08:00
+generatedAt: 2026-01-06T15:50:44+08:00
 facetId: income_expansion_pressure
 
 ## NOTE
@@ -601,6 +601,57 @@ remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.
 branch: main
 head_pushed: fdaaa8728e2ac80d1bf2cee9022c39d811398509
 
+- 📦 角色同步封包（Role Sync Packet）已啟用：一角色一包（Common+Role+Refs 內嵌），避免缺件與假設漂移
+  - 生成：bash xuance-commander-core/tools/build_role_sync_packets.sh
+  - 產物：xuance-commander-core/memory/briefs/role_sync_packets/（含 LATEST/ 指標）
+
+- 🧠 新工作模式已啟用：GPT 架構/治理判斷、Cursor 主力施工、Codex 一次性修復；所有指令包必須標註「貼給誰」
+
+---
+[CHECKPOINT|2026-01-06T15:31:17+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e
+
+---
+[CHECKPOINT|2026-01-06T15:31:24+0800]
+phase: pre-commit
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: c812b52b8954afe5108f8b852c5b2377d8af743e
+
+---
+[CHECKPOINT|2026-01-06T15:31:26+0800]
+phase: post-push
+message: MILESTONE: role sync packets (single file per role, embeds all refs) enabled
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 0073f2e241f7b8e66a0e40ba2723a52acddc0d81
+
+---
+[CHECKPOINT|2026-01-06T15:37:08+0800]
+phase: pre-commit
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bbee5f4a9d6d949f548e77cd8b87106702939f7e
+
+---
+[CHECKPOINT|2026-01-06T15:37:09+0800]
+phase: post-push
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
+
+- 📦 顧問交付流程升級：一角色一包（Role Sync Packet）
+  - 對顧問（R1–R5）：使用 ROLE_*_SYNC_PACKET.md 作為唯一輸入
+  - 對指揮官：日常 MASTER_MIN；需要深度對齊才用 FULL
+  - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
+
 ---
 ## FILE: CHANGELOG.md
 path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/changes/CHANGELOG.md
@@ -608,6 +659,8 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 # CHANGELOG
 
 ## Unreleased
+- Changed: Sync governance now explicitly integrates Role Sync Packets for advisor inputs (avoid missing-text assumptions)
+- Added: Advisor return-pack minimal spec (Used Packet/Output/Assumptions/Acceptance) to ROLE_SYNC_PACKET_PROTOCOL
 - Added: Tiered Sync spec (MIN/FULL/VERIFICATION_PACK) + Smart Sync definition -> docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md
 - Changed: TASK_LIFECYCLE Sync step now prefers AUTO + requires VERIFICATION_PACK when correctness must be proven -> docs/process/TASK_LIFECYCLE.md
 - Added: CURRENT records workflow upgrade to Smart Sync Tiered Workflow (construction method upgraded)
@@ -759,6 +812,22 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 
 - Added: checkpoint(post-push) ts=2026-01-06T14:20:25+0800 msg="MILESTONE: sync trigger governance + verification pack policy + commander optimization duty" branch=main head_pushed=fdaaa8728e2ac80d1bf2cee9022c39d811398509 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
+- Added: Role Sync Packet Protocol (one role = one packet; common+role+refs embedded) -> docs/ops/ROLE_SYNC_PACKET_PROTOCOL.md
+- Added: Role Sync Packet generator + outputs -> tools/build_role_sync_packets.sh; memory/briefs/role_sync_packets/ROLE_R1_SYNC_PACKET.md; ROLE_R4_SYNC_PACKET.md
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:31:17+0800 msg="MILESTONE: role sync packets (single file per role, embeds all refs) enabled" branch=main head_before=c812b52b8954afe5108f8b852c5b2377d8af743e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:31:24+0800 msg="MILESTONE: role sync packets (single file per role, embeds all refs) enabled" branch=main head_before=c812b52b8954afe5108f8b852c5b2377d8af743e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T15:31:26+0800 msg="MILESTONE: role sync packets (single file per role, embeds all refs) enabled" branch=main head_pushed=0073f2e241f7b8e66a0e40ba2723a52acddc0d81 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: Smart Work Allocation Protocol (GPT vs Cursor vs Codex) -> docs/ops/SMART_WORK_ALLOCATION_PROTOCOL.md
+- Changed: Commander role adds Smart Allocation Duty (explicit tool assignment per instruction pack) -> docs/roles/ROLE_XUANCE_COMMANDER.md
+
+- Added: checkpoint(pre-commit) ts=2026-01-06T15:37:08+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_before=bbee5f4a9d6d949f548e77cd8b87106702939f7e remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T15:37:09+0800 msg="MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)" branch=main head_pushed=16ec30ed760bb482cd1996a2d362fc7b382576c9 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
 ---
 ## FILE: TEXT_ONLY_EXECUTION_RULES.md
 path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/governance/TEXT_ONLY_EXECUTION_RULES.md
@@ -848,8 +917,10 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 2) Brief（顧問輸入）：
    - 把 research 萃取成短輸入，存到 docs/gem/briefs/BRIEF_*.md
 3) Advisor Runs（顧問建議稿）：
+   - 顧問輸入一律使用對應 Role Sync Packet（ROLE_*_SYNC_PACKET.md）；不得用 FULL MASTER 取代。
    - 顧問輸出存到 docs/gem/runs/（只算建議稿）
 4) Commander 審核：
+   - 若顧問輸出顯示缺件或自行假設：必須先重建 Role Sync Packet 並要求顧問重做（不得直接採納）。
    - 指揮官做採納/拒絕/修改決策摘要後，才可落盤到 domain/
 5) Golden Tests：
    - 跑 tests/run_golden.sh（或專案既定測試腳本）確保輸入輸出穩定
@@ -1130,6 +1201,14 @@ Decision: MIN|FULL + (VP: yes|no) + reason
 例：
 Decision: FULL + (VP: yes) + touched docs/governance + milestone checkpoint
 
+### Role Sync Packet Trigger（新增｜顧問交付專用）
+當任一成立時，除了 MIN/FULL 之外，**必須**同時生成對應角色的 Role Sync Packet：
+- 你要把任務交給顧問角色（R1–R5）
+- 你要顧問做第二輪/改版輸出
+- 你發現顧問輸出出現「缺件/自行假設」
+
+目的：讓顧問永遠以最新共同規範 + 角色專屬 brief 工作，避免漂移。
+
 ---
 ## FILE: VERIFICATION_PACK_POLICY.md
 path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/docs/ops/VERIFICATION_PACK_POLICY.md
@@ -1161,6 +1240,14 @@ topic 例：
 ## 清理規則（允許）
 - 可只保留最近 N 份（例如 20）
 - 但 LATEST.md 必須永遠正確指向「最新一次」
+
+---
+
+## Advisor Runs 與 Verification Pack 的邊界
+- 顧問輸出（docs/gem/runs/）不是工程證據，不屬於 VERIFICATION_PACK。
+- VERIFICATION_PACK 只用於工程正確性：repo 狀態、測試、diff、環境/Hook 診斷。
+- 若顧問輸出要被採納落盤到 domain/：
+  - 必須在指揮官審核後，額外生成一個 VERIFICATION_PACK（含：變更檔案清單 + golden tests 或可重跑驗證指令）。
 
 ---
 ## FILE: ROLE_SYNC_PACKET_PROTOCOL.md
@@ -1201,6 +1288,36 @@ path: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-comm
 - 若顧問產出與現行規範/brief 衝突：
   - 視為使用過期封包；
   - 該產出不得進入 Domain Gate（不得寫入 domain/）。
+
+---
+
+## Integration Notes（與現有同步/治理的整合｜必讀）
+
+### 1) Role Sync Packets 與 MASTER_MIN/FULL 的分工
+- 對 **顧問角色（R1/R4/R2/R3/R5）** 的交付：**一律用 Role Sync Packet**（一角色一包）。
+- 對 **指揮官（GPT）** 的狀態對齊：日常用 **MASTER_MIN**；必要時用 **FULL**。
+- 禁止：把 FULL MASTER 當成顧問輸入（容易爆上下文且顧問不需要工程證據）。
+
+### 2) Role Sync Packets 的內容優先序（避免缺件與漂移）
+Role Sync Packet 內文必至少包含：
+1. CHARTER / ROADMAP / CURRENT（共同規範）
+2. 角色專屬 Brief（例如 R1 blueprint、R4 riskchains）
+3. 必查指標（legacy router、research gate、lessons learned）
+4. 交付格式與驗收點（該角色在 AI_ADVISORY_ROLES.md 定義者）
+
+### 3) 何時必須重新生成 Role Sync Packets
+任一成立即必須重建並重新貼給對應角色：
+- CHARTER / ROADMAP / CURRENT 任一更新
+- ADR 變動（新增/狀態變更）
+- 該角色的 brief 變動（docs/gem/briefs/*）
+- 你要顧問在同一主題上做「第二輪」輸出（避免顧問仍使用舊規範）
+
+### 4) 顧問需要提交給指揮官的「最小可用回包」（回收資料規格）
+顧問回包必包含（否則視為缺件、不得採納落盤）：
+- Used Packet: <ROLE_*_SYNC_PACKET.md 的 generatedAt 或 LATEST 指標路徑>
+- Output: <建議稿全文>
+- Assumptions: <所有假設條列>
+- Acceptance: <如何驗收題目/風險鏈是否有效>
 
 ---
 ## FILE: ADR_0002_esoteric_experience_scientific_core.md

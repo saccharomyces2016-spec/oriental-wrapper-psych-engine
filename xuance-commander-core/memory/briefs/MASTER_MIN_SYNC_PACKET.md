@@ -1,6 +1,6 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-06T15:36:37+0800
-sourceRoot: xuance-commander-core
+generatedAt: 2026-01-06T15:50:44+0800
+sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core
 
 ## RULE
 - Always consult: CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
@@ -715,6 +715,27 @@ branch: main
 head_pushed: 0073f2e241f7b8e66a0e40ba2723a52acddc0d81
 
 ---
+[CHECKPOINT|2026-01-06T15:37:08+0800]
+phase: pre-commit
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: bbee5f4a9d6d949f548e77cd8b87106702939f7e
+
+---
+[CHECKPOINT|2026-01-06T15:37:09+0800]
+phase: post-push
+message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explicit roles)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
+
+- 📦 顧問交付流程升級：一角色一包（Role Sync Packet）
+  - 對顧問（R1–R5）：使用 ROLE_*_SYNC_PACKET.md 作為唯一輸入
+  - 對指揮官：日常 MASTER_MIN；需要深度對齊才用 FULL
+  - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
+
+---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 
 # Text-Only Execution Rules（文本主控硬規則）
@@ -801,8 +822,10 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 2) Brief（顧問輸入）：
    - 把 research 萃取成短輸入，存到 docs/gem/briefs/BRIEF_*.md
 3) Advisor Runs（顧問建議稿）：
+   - 顧問輸入一律使用對應 Role Sync Packet（ROLE_*_SYNC_PACKET.md）；不得用 FULL MASTER 取代。
    - 顧問輸出存到 docs/gem/runs/（只算建議稿）
 4) Commander 審核：
+   - 若顧問輸出顯示缺件或自行假設：必須先重建 Role Sync Packet 並要求顧問重做（不得直接採納）。
    - 指揮官做採納/拒絕/修改決策摘要後，才可落盤到 domain/
 5) Golden Tests：
    - 跑 tests/run_golden.sh（或專案既定測試腳本）確保輸入輸出穩定
@@ -1010,7 +1033,7 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-06T15:36:37+0800
+generatedAt: 2026-01-06T15:50:44+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1036,8 +1059,8 @@ generatedAt: 2026-01-06T15:36:37+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-06T15:36:37+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_153637.md
+updatedAt: 2026-01-06T15:50:44+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_155044.md
 overallExitCode: 0
 
 ---

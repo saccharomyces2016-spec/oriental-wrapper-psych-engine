@@ -33,3 +33,33 @@
 - 若顧問產出與現行規範/brief 衝突：
   - 視為使用過期封包；
   - 該產出不得進入 Domain Gate（不得寫入 domain/）。
+
+---
+
+## Integration Notes（與現有同步/治理的整合｜必讀）
+
+### 1) Role Sync Packets 與 MASTER_MIN/FULL 的分工
+- 對 **顧問角色（R1/R4/R2/R3/R5）** 的交付：**一律用 Role Sync Packet**（一角色一包）。
+- 對 **指揮官（GPT）** 的狀態對齊：日常用 **MASTER_MIN**；必要時用 **FULL**。
+- 禁止：把 FULL MASTER 當成顧問輸入（容易爆上下文且顧問不需要工程證據）。
+
+### 2) Role Sync Packets 的內容優先序（避免缺件與漂移）
+Role Sync Packet 內文必至少包含：
+1. CHARTER / ROADMAP / CURRENT（共同規範）
+2. 角色專屬 Brief（例如 R1 blueprint、R4 riskchains）
+3. 必查指標（legacy router、research gate、lessons learned）
+4. 交付格式與驗收點（該角色在 AI_ADVISORY_ROLES.md 定義者）
+
+### 3) 何時必須重新生成 Role Sync Packets
+任一成立即必須重建並重新貼給對應角色：
+- CHARTER / ROADMAP / CURRENT 任一更新
+- ADR 變動（新增/狀態變更）
+- 該角色的 brief 變動（docs/gem/briefs/*）
+- 你要顧問在同一主題上做「第二輪」輸出（避免顧問仍使用舊規範）
+
+### 4) 顧問需要提交給指揮官的「最小可用回包」（回收資料規格）
+顧問回包必包含（否則視為缺件、不得採納落盤）：
+- Used Packet: <ROLE_*_SYNC_PACKET.md 的 generatedAt 或 LATEST 指標路徑>
+- Output: <建議稿全文>
+- Assumptions: <所有假設條列>
+- Acceptance: <如何驗收題目/風險鏈是否有效>

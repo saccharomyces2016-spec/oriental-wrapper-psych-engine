@@ -612,3 +612,16 @@ message: MILESTONE: smart work allocation mode enabled (GPT/Cursor/Codex explici
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
+
+- 📦 顧問交付流程升級：一角色一包（Role Sync Packet）
+  - 對顧問（R1–R5）：使用 ROLE_*_SYNC_PACKET.md 作為唯一輸入
+  - 對指揮官：日常 MASTER_MIN；需要深度對齊才用 FULL
+  - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
+
+---
+[CHECKPOINT|2026-01-06T15:51:09+0800]
+phase: pre-commit
+message: MILESTONE: advisor role packet workflow integrated
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 1555140c6066d474493ddd767bead2f96ec78135

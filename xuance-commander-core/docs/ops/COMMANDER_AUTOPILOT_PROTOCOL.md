@@ -159,3 +159,8 @@
 - 若 shell hook 未安裝或失效：不得宣稱「已同步」，需改用 `tools/xc <cmd...>` 或 `tools/xuance_run.sh <cmd...>` 執行關鍵指令。
 - 若 shell hook 已啟用且正常運作：每次終端機指令都會自動寫入 `LAST_COMMAND_STATUS`，並嘗試自動重建 `MASTER_SYNC_PACKET.md`（以 `tools/build_master_sync_packet_full.sh` 為優先）。
 - 因此「自動寫入 MASTER」的可行方案就是：確保 hook 可用（或使用 `tools/xc` / `tools/xuance_run.sh` 執行關鍵指令），然後由 hook 觸發 MASTER 重建；不再依賴人工複製貼上。
+
+## 給顧問角色（R1–R5）的同步輸入（新增｜一角色一包）
+- 你要把任務交給顧問時：不要貼 MASTER。
+- 改成貼對應的：ROLE_<ROLE>_SYNC_PACKET.md（例如 R1 用 ROLE_R1_SYNC_PACKET.md）。
+- 原則：顧問只需要「共同規範 + 角色專屬 brief + 參考指標」，不需要工程證據全文。
