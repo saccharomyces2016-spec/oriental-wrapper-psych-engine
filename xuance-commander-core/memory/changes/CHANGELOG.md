@@ -133,3 +133,5 @@
 - Added: checkpoint(pre-commit) ts=2026-01-06T10:27:24+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4)" branch=main head_before=9a71dffaa7eaf906b49de3e2980279388fc790b8 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(pre-commit) ts=2026-01-06T11:24:37+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]" branch=main head_before=e1b05a5e05657d21e5871f0698f2d198725de743 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(post-push) ts=2026-01-06T11:24:42+0800 msg="MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]" branch=main head_pushed=047bc9ba1d5afbd68d0738942afc75c3bca11d19 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"

@@ -514,3 +514,11 @@ message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording f
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: e1b05a5e05657d21e5871f0698f2d198725de743
+
+---
+[CHECKPOINT|2026-01-06T11:24:42+0800]
+phase: post-push
+message: MILESTONE: P0-2 briefs staged (MASTER PROPOSAL + R1/R4) [seal wording fix]
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 047bc9ba1d5afbd68d0738942afc75c3bca11d19
