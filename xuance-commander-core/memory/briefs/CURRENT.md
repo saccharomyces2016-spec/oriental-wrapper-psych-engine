@@ -1250,3 +1250,18 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 - 由 Cursor + Gemini Pro 做 sources scan（市場/學術/評測），輸出比較表 + 引用清單
 - 指揮官（GPT）負責裁決：採納哪些原型/禁用哪些反模式 → 才能進入 Facet 題目設計（R1/R4）
 <!-- XUANCE_P0_2_META_STAGE1_END -->
+<!-- XUANCE_P0_2_META_STAGE2_KICKOFF -->
+【P0-2｜Facet Meta Research｜Stage 2 啟動｜External Evidence】
+Executor: Cursor + Gemini Pro（僅研究）
+Scope:
+- 市場趨勢 / 學術量表設計 / 成功產品互動模式
+Constraints:
+- 不新增 Facet 結構
+- 不改 CHARTER / ROADMAP / governance
+Deliverables:
+- 比較表（8–12）
+- 可引用來源清單（link + 1 句）
+- 失敗風險對照（映射 FAILURE/ANTI-PATTERNS）
+Decision: GPT only
+Next:
+- 研究完成後提交裁決（切 FULL）

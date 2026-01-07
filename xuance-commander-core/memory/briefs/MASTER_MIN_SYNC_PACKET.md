@@ -1,5 +1,5 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-07T16:30:21+0800
+generatedAt: 2026-01-07T16:50:22+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
@@ -1379,6 +1379,21 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 - 由 Cursor + Gemini Pro 做 sources scan（市場/學術/評測），輸出比較表 + 引用清單
 - 指揮官（GPT）負責裁決：採納哪些原型/禁用哪些反模式 → 才能進入 Facet 題目設計（R1/R4）
 <!-- XUANCE_P0_2_META_STAGE1_END -->
+<!-- XUANCE_P0_2_META_STAGE2_KICKOFF -->
+【P0-2｜Facet Meta Research｜Stage 2 啟動｜External Evidence】
+Executor: Cursor + Gemini Pro（僅研究）
+Scope:
+- 市場趨勢 / 學術量表設計 / 成功產品互動模式
+Constraints:
+- 不新增 Facet 結構
+- 不改 CHARTER / ROADMAP / governance
+Deliverables:
+- 比較表（8–12）
+- 可引用來源清單（link + 1 句）
+- 失敗風險對照（映射 FAILURE/ANTI-PATTERNS）
+Decision: GPT only
+Next:
+- 研究完成後提交裁決（切 FULL）
 
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
@@ -1955,7 +1970,7 @@ These items are approved to be written next (derived from the governance gap aud
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-07T16:30:21+0800
+generatedAt: 2026-01-07T16:50:21+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1981,8 +1996,8 @@ generatedAt: 2026-01-07T16:30:21+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-07T16:30:21+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_163021.md
+updatedAt: 2026-01-07T16:50:22+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_165022.md
 overallExitCode: 0
 
 ---

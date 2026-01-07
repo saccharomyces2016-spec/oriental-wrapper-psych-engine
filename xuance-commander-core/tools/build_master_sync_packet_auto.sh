@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CORE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+
 CORE_DIR="${1:-}"
 if [ -z "${CORE_DIR}" ]; then
   echo "usage: build_master_sync_packet_auto.sh <core_dir>"
@@ -45,8 +49,7 @@ if [ "${days_since_full}" -ge 7 ]; then need_full=1; fi
 if [ "${changed_critical}" -eq 1 ]; then need_full=1; fi
 if [ "${milestone_commit}" -eq 1 ]; then need_full=1; fi
 if [ "${verification_failed}" -eq 1 ]; then need_full=1; fi
-
-bash "${CORE_DIR}/tools/build_context_capsule.sh" "${CORE_DIR}"
+bash "${SCRIPT_DIR}/build_context_capsule.sh" "${CORE_DIR}"
 
 if ! git diff --quiet; then
   set +e
