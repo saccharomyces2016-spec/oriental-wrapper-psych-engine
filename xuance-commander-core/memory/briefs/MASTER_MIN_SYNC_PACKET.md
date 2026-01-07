@@ -1,5 +1,5 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-07T15:19:17+0800
+generatedAt: 2026-01-07T16:30:21+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
@@ -128,6 +128,11 @@ sourceRoot: xuance-commander-core
 ## FILE: memory/briefs/CURRENT.md
 
 # CURRENT（當前狀態短摘要）
+
+## P0-2｜Facet 設計語境已確認
+- 題型與結果統一採用東方玄學體系（五行／陰陽／八卦等）
+- 題目、分數、敘事在封板前皆可回調
+
 
 ## P0-2（income_expansion_pressure）決策已鎖定
 - R1：採用「歲時農耕・倉廩觀」作為題目與敘事主隱喻
@@ -1352,6 +1357,29 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 - Cursor 執行前必提供 CONTEXT_BRIEF；執行後必回報 what/where/result/next + evidence pointers
 - 來源：docs/governance/CURSOR_USAGE_RULE.md（Cursor Context Brief Protocol）
 
+## P0-2｜Facet Meta-Map Sprint（ACTIVE）
+- Goal: Define Facet qualification rules before listing facets
+- Status: Meta-Map drafting started
+- Tools: Cursor + Gemini Pro (research only)
+- Governance: Structure decisions reserved to GPT
+<!-- XUANCE_P0_2_META_STAGE1_BEGIN -->
+【P0-2｜Facet Meta Research｜Stage 1 完成｜Failure Distillation + Evidence Coverage Map】
+產物（SSOT 指標｜給顧問/後續設計必讀）：
+- docs/domain/research/EVIDENCE_COVERAGE_MAP.md
+- docs/domain/research/FAILURE_PATTERNS.md
+- docs/domain/research/SALVAGEABLE_ELEMENTS.md
+- docs/domain/research/RECURRING_ANTI_PATTERNS.md
+
+結論（白話）：
+- 我們已把「會搞死系統的設計」整理成負面案例庫（避免重犯）
+- 我們也把「可以回收的關係模型/敘事原型」整理成零件庫（可用但需裁決）
+- 外部實證（市場/學術/用戶反饋）仍屬缺口：只允許以顧問研究補齊，使用者不必手動補資料
+
+接下來（Stage 2｜外部實證補缺口｜只做研究，不做結構決策）：
+- 由 Cursor + Gemini Pro 做 sources scan（市場/學術/評測），輸出比較表 + 引用清單
+- 指揮官（GPT）負責裁決：採納哪些原型/禁用哪些反模式 → 才能進入 Facet 題目設計（R1/R4）
+<!-- XUANCE_P0_2_META_STAGE1_END -->
+
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 
@@ -1927,7 +1955,7 @@ These items are approved to be written next (derived from the governance gap aud
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-07T15:19:17+0800
+generatedAt: 2026-01-07T16:30:21+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1953,8 +1981,8 @@ generatedAt: 2026-01-07T15:19:17+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-07T15:19:17+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_151917.md
+updatedAt: 2026-01-07T16:30:21+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_163021.md
 overallExitCode: 0
 
 ---

@@ -1,5 +1,5 @@
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-07T15:19:17+0800
+generatedAt: 2026-01-07T16:30:21+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
