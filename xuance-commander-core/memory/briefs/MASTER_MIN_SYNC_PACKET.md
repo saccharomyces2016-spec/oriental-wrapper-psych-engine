@@ -1,11 +1,11 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-07T13:59:01+0800
+generatedAt: 2026-01-07T14:04:25+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
 - Always consult: CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
 - Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
-- Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
+- Recordkeeping: after each task, update CURRENT (what/where/result/next) and CHANGELOG when applicable; milestone requires checkpoint + evidence pointers
 ---
 ## FILE: charter/CHARTER.md
 
@@ -1902,7 +1902,7 @@ These items are approved to be written next (derived from the governance gap aud
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-06T15:50:44+0800
+generatedAt: 2026-01-07T14:04:25+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1917,7 +1917,7 @@ generatedAt: 2026-01-06T15:50:44+0800
 - REPO_STATUS: memory/briefs/REPO_STATUS.md
 
 ## Latest evidence (quick)
-- repoHead: bb94c7a
+- repoHead: 5a041e6
 - lastCommand: (unknown)
 - lastSuccess: true
 
@@ -1928,10 +1928,9 @@ generatedAt: 2026-01-06T15:50:44+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-06T15:50:44+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260106_155044.md
+updatedAt: 2026-01-07T14:04:25+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_140425.md
 overallExitCode: 0
-inventoryReportPointer: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/LATEST_INVENTORY_REPORT.md
 
 ---
 ## FILE: memory/briefs/REPO_STATUS.md
@@ -1973,4 +1972,3 @@ updatedAt: 2026-01-07T11:07:56+08:00
 command: (unknown)
 exitCode: 0
 success: true
-

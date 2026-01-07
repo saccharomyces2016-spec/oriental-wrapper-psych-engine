@@ -97,7 +97,7 @@ bash "$PACK_PATH"
 ```
 備註：
 - 要可追溯：pack 改存 repo：tmp/audit/packs/，並把「路徑 + hash」寫進 VERIFICATION_PACK。
-<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+<!-- XUANCE_TRUNCATION_GUARD_END -->
 
 - **Terminal**：只能貼純 shell 指令（建議用「腳本式指令包」模板）。
 - **Cursor AI**：適合貼「需要本機盤點/彙整/檢查」的需求，並要求它先跑只讀盤點。
@@ -133,12 +133,7 @@ bash "$PACK_PATH"
 - 不依賴對話記憶即可執行
 - 若「無法一次貼完」，必須先產生指令包或要求補充最小必要上下文
 
-- 對話上下文只能作為參考，不得作為主目標與主進度依據
-- 主目標與主進度只允許引用：
-  - charter/CHARTER.md
-  - roadmap/ROADMAP.md
-  - memory/briefs/CURRENT.md
-  - docs/adr/*
+
 
 ## 禁止行為
 - AI 不得擅自新增更高層級目標

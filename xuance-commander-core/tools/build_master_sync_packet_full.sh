@@ -49,3 +49,6 @@ write_file () {
   write_file "memory/briefs/REPO_STATUS.md"
   write_file "memory/briefs/LAST_COMMAND_STATUS.md"
 } > "$OUT"
+
+# include: latest inventory pointer (governance sprint)
+# LATEST_INVENTORY_REPORT.md
