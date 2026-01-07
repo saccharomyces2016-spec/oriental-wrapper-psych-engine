@@ -1106,3 +1106,11 @@ message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: 771d1492c9896547e90e79faee5fcefa5f0da602
+
+---
+[CHECKPOINT|2026-01-07T08:47:16+0800]
+phase: pre-commit
+message: MILESTONE: zero-memory execution + master sharding phase started
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 4871a427b43df2a1f01481980625ab1578ac5937

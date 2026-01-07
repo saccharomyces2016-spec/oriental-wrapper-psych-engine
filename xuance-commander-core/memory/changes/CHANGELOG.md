@@ -203,3 +203,5 @@
 - Added: checkpoint(pre-commit) ts=2026-01-07T08:24:36+0800 msg="MILESTONE: canon cleanup applied (governance rules enforced in repo)" branch=main head_before=16a4cc4dabe3dbb522836455f7cda0a459de47b4 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
 
 - Added: checkpoint(post-push) ts=2026-01-07T08:24:37+0800 msg="MILESTONE: canon cleanup applied (governance rules enforced in repo)" branch=main head_pushed=771d1492c9896547e90e79faee5fcefa5f0da602 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
+
+- Added: checkpoint(pre-commit) ts=2026-01-07T08:47:16+0800 msg="MILESTONE: zero-memory execution + master sharding phase started" branch=main head_before=4871a427b43df2a1f01481980625ab1578ac5937 remote="https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git"
