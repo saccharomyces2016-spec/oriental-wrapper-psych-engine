@@ -1197,3 +1197,8 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 ### ⛳ 下一步（臨時性目標）
 - 由 Cursor 執行一次「三類必回檢項」掃描並產出 VERIFICATION_PACK
 - 全部結論為 OK 後，允許推進主線任務
+---
+【Governance Inventory Sprint｜盤點完成｜2026-01-07T13:58:35】
+- pointer: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/LATEST_INVENTORY_REPORT.md
+- counts: governance=47 dupBasename=9 unindexed=46 missingOwner=59
+- next: 先修 GOVERNANCE_INDEX coverage（unindexed=0）→ 再補 Owner（missingOwner 降到可接受）

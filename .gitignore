@@ -19,3 +19,6 @@ tmp/**
 xuance-commander-core/logs/
 xuance-commander-core/logs/**
 .DS_Store
+
+# generated inventory reports (keep pointer+hash in briefs only)
+xuance-commander-core/out/inventory/
