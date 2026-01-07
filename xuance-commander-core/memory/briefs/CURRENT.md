@@ -1122,3 +1122,74 @@ message: MILESTONE: zero-memory execution + master sharding phase started
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
+
+
+## TEMP OBJECTIVE｜System Governance Hardening (Cursor-driven)
+
+來源：
+- Cursor Full-System Governance Scan
+
+狀態：
+- 已識別治理缺口：17 項（未建立）
+- 已存在核心規範：GLOBAL_PATH_CANON / SINGLE_SOURCE / ABSOLUTE_REF / REGISTRY
+
+未完成（列管）：
+- AUTOMATED_CANON_AUDIT_RULE
+- FILENAME_COLLISION_RULE
+- TIMESTAMP_DIRECTORY_AUTOMATION
+- EVIDENCE_REFERENCE_TRACKING
+- LEGACY_UPGRADE_PROTOCOL
+- GOVERNANCE_RULE_VERSIONING
+- GOVERNANCE_CI_CD_RULE
+- GOVERNANCE_VIOLATION_SEVERITY
+- GOVERNANCE_RULE_TESTING
+- GOVERNANCE_ENFORCEMENT_TRACKING
+- GOVERNANCE_INHERITANCE
+- GOVERNANCE_AUTO_FIX_RULE
+- RULE_CONFLICT_RESOLUTION
+- RULE_EXECUTION_ORDER
+- ONBOARDING_GOVERNANCE_GUIDE
+- VIOLATION_REPAIR_GUIDE
+- RULE_UPDATE_NOTIFICATION
+
+證據：
+- Cursor 原始報告：tmp/audit/CURSOR_FULL_SYSTEM_SCAN.md（非 SSOT）
+
+策略：
+- 每修一項制度 → 必須寫入治理文件 + CURRENT 留證
+- 禁止只修實作不補制度
+
+
+## Governance Hardening Status (Auto)
+
+### 已 scaffold（自動落盤）
+- governance sprint next steps block exists
+- 17 governance rule stubs created in docs/governance/
+- SMART_CONTEXT_SHARDING_RULE.md present
+- CURSOR_USAGE_RULE.md filed
+- MASTER_MIN_SYNC_PACKET.md updated with governance summary
+
+### 檢查要點
+- stub files must be populated in Priority order (P0 → P1 → P2)
+- Cursor original reports live in tmp/audit (non-SSOT)
+- MASTER_MIN always shows governance sync status
+
+---
+
+---
+
+## 階段性目標｜治理重整（Cursor-driven）— 進度盤點
+
+### ✅ 已完成
+- Canon / Single Source / Absolute Reference 制度落地
+- Execution Target UI Legend（避免貼錯）
+- Boss Mode 精簡回報（≤ 8 行）
+- 指令包防截斷（腳本式交付）
+- Cursor-first 治理流程（先盤點再改檔）
+
+### ⏳ 進行中
+- Cursor Limitation Review（語義/策略/歷史意圖）制度化（本次已補）
+
+### ⛳ 下一步（臨時性目標）
+- 由 Cursor 執行一次「三類必回檢項」掃描並產出 VERIFICATION_PACK
+- 全部結論為 OK 後，允許推進主線任務

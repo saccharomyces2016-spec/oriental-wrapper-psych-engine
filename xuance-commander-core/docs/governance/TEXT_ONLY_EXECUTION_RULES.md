@@ -63,6 +63,47 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - 一旦驗收失敗：立即停止追加功能，優先修回穩定狀態（必要時回退到上一次 checkpoint）。
 
 
+## Execution Target｜貼哪裡才對（避免貼錯造成 Terminal exit 127）
+
+<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+
+
+## 指令包交付防截斷規則（Chat / UI Truncation Guard）
+
+問題：Chat/介面可能截斷「很長的 code block」，導致貼到 Terminal 只是一半 → 直接失敗。
+
+硬規則（之後一律照做）：
+1) 只要指令包 >= 80 行、或混合 shell+python、或包含多段 heredoc：不得在 Chat 交付全文。
+2) 一律改成「兩段式交付」：
+   - A 段（短 bootstrap）：貼到 Terminal 就能跑，負責驗證 pack 檔案存在與摘要。
+   - B 段（完整 pack）：由 Cursor 在本機寫入固定路徑（建議 tmp/audit/packs/<name>.sh 或 /tmp/<name>.sh），不走 Chat 複製。
+3) 驗收：bootstrap 必須印出 pack 的「路徑 + 行數 + hash」，用來抓截斷/貼錯。
+
+標準 bootstrap（只允許貼這段到 Terminal）：
+```bash
+set -euo pipefail
+PACK_PATH="/tmp/xc_pack.sh"
+
+test -f "$PACK_PATH" || (echo "[ERR] Missing pack: $PACK_PATH" && exit 1)
+echo "PACK=$PACK_PATH"
+echo "LINES=$(wc -l < "$PACK_PATH" | tr -d ' ')"
+if command -v shasum >/dev/null 2>&1; then
+  echo "SHA256=$(shasum -a 256 "$PACK_PATH" | awk '{print $1}')"
+else
+  echo "SHA256=$(sha256sum "$PACK_PATH" | awk '{print $1}')"
+fi
+
+bash "$PACK_PATH"
+```
+備註：
+- 要可追溯：pack 改存 repo：tmp/audit/packs/，並把「路徑 + hash」寫進 VERIFICATION_PACK。
+<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+
+- **Terminal**：只能貼純 shell 指令（建議用「腳本式指令包」模板）。
+- **Cursor AI**：適合貼「需要本機盤點/彙整/檢查」的需求，並要求它先跑只讀盤點。
+- **Codex**：只在落點與規則位置已被 evidence 確認後，用來做一次性修補。
+- **ChatGPT（指揮官）**：只做判斷與規格化，不直接宣稱已改到本機。
+
 ## 核心規則
 - 對話上下文只能作為參考，不得作為主目標與主進度依據
 - 主目標與主進度只允許引用：
@@ -105,9 +146,18 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - AI 不得基於「我覺得更好」改寫主線
 
 ## 強制行為
+- 每次完成任務驗收後：必須在 MASTER_MIN / CURRENT 留下「進度百分比 + 下一個檢查點」的可讀摘要
 - 每次開始任何工作前，必須先跑 preflight（tools/preflight.sh）
 - preflight 會生成 memory/briefs/COMMAND_BRIEF.md
 - 指揮官之後的所有決策與建議必須基於 COMMAND_BRIEF.md
+- 預設證據來源：REPO_STATUS / LAST_COMMAND_STATUS / LATEST_VERIFICATION_PACK（對話中不貼長輸出）
+- 若證據缺失或過期：先要求 Cursor 重新生成 REPO_STATUS + VERIFICATION_PACK；未補齊前不得提出修復方案
+
+- 證據回報預設走「自動快照」：除非指揮官明確要求，否則不要要求使用者手動貼 terminal 輸出；以 LAST_COMMAND_STATUS / REPO_STATUS / LATEST_VERIFICATION_PACK / MASTER_MIN 作為回報依據
+- 當需要驗收時，指揮官必須提供「可重跑指令包」來自動產出證據（寫入 LAST_COMMAND_STATUS + 更新 LATEST_VERIFICATION_PACK/MASTER），使用者只需執行完後貼最新 MASTER_MIN（或回覆 done 並附 MASTER_MIN）
+- 治理/制度性改動的施工前檢查：優先由 Cursor 先做本機彙整與檢查（路徑/重複/索引/缺檔/未追蹤檔案），輸出報告後，指揮官才可下達修復指令包與寫入文本
+- 會話紀錄硬規則：每回合結束必須把（計畫/指令/結果/阻塞）寫入文本（CURRENT/CHANGELOG/必要時 governance），下一回合必須輸出可直接執行的指令包以更新文本與驗收
+
 
 <!-- XUANCE_DOCS_GEM_CANON_BEGIN -->
 ## docs/gem 單一真相來源（防漂移硬規則）
@@ -150,3 +200,27 @@ These items are approved to be written next (derived from the governance gap aud
 - Global Path Canon: docs/governance/GLOBAL_PATH_CANON.md
 - Governance Audit Record (FULL): memory/briefs/CURRENT.md (section: Governance Audit Record)
   - 注意：`./tmp/audit/*` 只能當暫存輸出；FULL 記錄以 CURRENT 為準
+
+---
+## 執行環境標註（Execution Target Declaration｜硬規則）
+
+- 每一個「指令包 / 操作建議」，**必須明確標註執行對象**：
+  - Cursor + Terminal（本機）
+  - Codex（一次性代碼修復）
+  - NO RUN（僅制度/決策，先寫文本）
+
+- 未標註執行對象的指令包，**視為不合格，不得執行**。
+
+- 涉及以下類型，**預設一律使用 Cursor + Terminal**：
+  - 文本治理（.md）
+  - 規則／制度新增或調整
+  - 流程文件（TASK / GOVERNANCE / RULES）
+  - 需要 grep / git status / git diff 驗收者
+
+- Codex 僅限用於：
+  - 已明確定義修改範圍與內容的程式碼修復
+  - 不涉及制度判斷與文本治理的情境
+
+## Cursor 能力邊界（策略層補檢）
+- Cursor 不自動處理：語義層衝突／跨文件策略衝突／歷史意圖偏離
+- 必依 `docs/governance/CURSOR_LIMITATION_REVIEW_RULE.md` 於關鍵節點回檢
