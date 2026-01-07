@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Cursor Audit → Governance Upgrade Rule（強制制度升級規則）
 
 ## 觸發條件

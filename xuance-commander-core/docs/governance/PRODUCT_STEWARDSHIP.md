@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # 產品經營責任（Product Stewardship Duty）
 
 ## 核心定位

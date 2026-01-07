@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Cursor Usage Rule（Cursor 協助制度改善規則）
 
 ## 目的
@@ -31,3 +33,43 @@ Cursor **不得**：
   - GOVERNANCE_INDEX.md
   寫明摘要與引用
 
+
+## Cursor Context Brief Protocol（必填）
+
+目的：避免 Cursor 在缺少上下文時誤判（MIN/FULL 是「快照集合」，不是 SSOT 本體）。
+
+### 0) 定義
+- **SSOT（Source of Truth）**：repo 內原始文件（例如 CHARTER / ROADMAP / CURRENT / docs/governance/* / docs/adr/*）。
+- **MIN/FULL**：同步快照（snapshot bundle），用來「傳遞必要上下文」，不等於 SSOT 本體。
+- **CONTEXT_BRIEF**：給 Cursor 的最小必要任務說明包。
+
+### 1) 何時必須提供 CONTEXT_BRIEF
+只要要 Cursor 執行下列任一類型工作，就必須先提供 CONTEXT_BRIEF：
+- 全倉盤點 / 目錄稽核 / 重複與衝突檢查
+- 文件治理（索引、Owner、FULL_ONLY、淘汰、合併）
+- 任何會改動路徑/檔名/生成器腳本/同步規則的工作
+
+### 2) CONTEXT_BRIEF 最小內容（固定格式）
+由指揮官提供給 Cursor（貼在同一則訊息開頭）：
+- **Task Goal**：一句話（要達成什麼）
+- **Scope**：要掃/要改的目錄範圍（含排除項）
+- **Hard Constraints**：不可違反的規則（列 3~10 條，必引用檔名）
+- **Required Refs**：本次必讀的 SSOT 文件清單（含路徑）
+- **Output Location**：報告輸出落點（MD + JSON）
+- **Acceptance**：成功條件（可用 grep / git diff --stat / script PASS 驗收）
+
+### 3) Cursor 輸出格式（必回）
+Cursor 完成任務後，必須輸出：
+1) **Summary（≤ 12 行）**：結論 + 影響面（功能/結構/制度）
+2) **What Changed**：檔案清單（新增/修改/刪除）+ 每項 1 行原因
+3) **Evidence Pointers**：報告路徑、hash、關鍵計數、必要 grep 命中行
+4) **Next**：下一步（最多 3 條）
+
+### 4) 禁止事項（避免漂移）
+- 未提供 CONTEXT_BRIEF：不得自行推進「結構性改動」
+- 不得把大量細節灌入 MIN/FULL；只能更新指標（pointer）與必要短摘要
+- 不得把暫存輸出當證據（除非被指揮官提升為 SSOT 並寫入索引）
+
+### 5) 指揮官裁決責任
+- Cursor 只做「盤點/施工/回報」；所有取捨與制度裁決由指揮官（GPT）負責。
+- 指揮官以 Cursor 報告為依據，決定是否採納、是否需要回滾、是否需要補制度。

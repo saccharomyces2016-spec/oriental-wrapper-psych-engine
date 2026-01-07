@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Execution Assignment Rule（任務指派決策規範｜硬規則）
 
 ## 目的

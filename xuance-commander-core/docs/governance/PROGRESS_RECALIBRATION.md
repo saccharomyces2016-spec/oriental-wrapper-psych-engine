@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Progress Recalibration Trigger
 
 Purpose:

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # EXECUTIVE_RESPONSE_MODE（老闆模式）
 
 ## 回覆格式（強制）

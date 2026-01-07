@@ -22,3 +22,4 @@ xuance-commander-core/logs/**
 
 # generated inventory reports (keep pointer+hash in briefs only)
 xuance-commander-core/out/inventory/
+xuance-commander-core/out/tool_audit/

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # LEGACY_VAULTS（舊版封存入口）
 
 目的：

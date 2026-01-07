@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # MASTER Sync Protocol（單檔同步與永久記憶協議）
 
 ## 定位

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # User Override Protocol（使用者最終修正權｜操作層規範）
 
 <!-- XUANCE_USER_OVERRIDE_PROTOCOL_BEGIN -->

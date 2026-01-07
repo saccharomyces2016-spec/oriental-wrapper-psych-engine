@@ -1,11 +1,11 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-07T14:04:25+0800
+generatedAt: 2026-01-07T15:19:17+0800
 sourceRoot: xuance-commander-core
 
 ## RULE
 - Always consult: CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
 - Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
-- Recordkeeping: after each task, update CURRENT (what/where/result/next) and CHANGELOG when applicable; milestone requires checkpoint + evidence pointers
+- Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
 ---
 ## FILE: charter/CHARTER.md
 
@@ -149,6 +149,21 @@ sourceRoot: xuance-commander-core
 3) 補齊 golden tests（固定輸入輸出）
 
 治理橋接任務（已批准）：Governance Inventory Sprint
+---
+【治理橋接任務｜Governance Slimming Sprint｜Apply 完成｜2026-01-07】
+已完成：
+- 合併規則：COMPLETION_RECORD_RULE.md + REPAIR_RECORDING_RULE.md → MANDATORY_MILESTONE_RECORDING_RULE.md（並移除原檔）
+- FULL_ONLY 標記：24 份治理文件已標記為 [FULL_ONLY]
+- MIN 補規則：Cursor Model Selection（Gemini 分析 / Claude 實作 / GPT 裁決）
+
+下一步（必做收尾）：
+1) git commit + push（把 Apply 變更入庫）
+2) 重建 MASTER_MIN / MASTER（auto）
+3) 更新 LATEST_VERIFICATION_PACK（若有生成新 pack）
+
+封板後摘要化規則：
+- 本段落在任務完成後，需縮成 3~6 行摘要 + 指標（避免 CURRENT 膨脹與上下文漂移）
+
 - 預設由 Cursor 產出 Inventory Report（Markdown + JSON）→ 指揮官裁決 → 才允許 Codex 落地
 - Done Definition 以 GOVERNANCE_INDEX.md 內之章節為準
 
@@ -1332,6 +1347,11 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 - counts: governance=47 dupBasename=9 unindexed=46 missingOwner=59
 - next: 先修 GOVERNANCE_INDEX coverage（unindexed=0）→ 再補 Owner（missingOwner 降到可接受）
 
+補充規則（已啟用）：
+- MIN/FULL = 快照集合，不是 SSOT 本體
+- Cursor 執行前必提供 CONTEXT_BRIEF；執行後必回報 what/where/result/next + evidence pointers
+- 來源：docs/governance/CURSOR_USAGE_RULE.md（Cursor Context Brief Protocol）
+
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 
@@ -1434,7 +1454,7 @@ bash "$PACK_PATH"
 ```
 備註：
 - 要可追溯：pack 改存 repo：tmp/audit/packs/，並把「路徑 + hash」寫進 VERIFICATION_PACK。
-<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+<!-- XUANCE_TRUNCATION_GUARD_END -->
 
 - **Terminal**：只能貼純 shell 指令（建議用「腳本式指令包」模板）。
 - **Cursor AI**：適合貼「需要本機盤點/彙整/檢查」的需求，並要求它先跑只讀盤點。
@@ -1470,12 +1490,7 @@ bash "$PACK_PATH"
 - 不依賴對話記憶即可執行
 - 若「無法一次貼完」，必須先產生指令包或要求補充最小必要上下文
 
-- 對話上下文只能作為參考，不得作為主目標與主進度依據
-- 主目標與主進度只允許引用：
-  - charter/CHARTER.md
-  - roadmap/ROADMAP.md
-  - memory/briefs/CURRENT.md
-  - docs/adr/*
+
 
 ## 禁止行為
 - AI 不得擅自新增更高層級目標
@@ -1561,6 +1576,16 @@ These items are approved to be written next (derived from the governance gap aud
 ## Cursor 能力邊界（策略層補檢）
 - Cursor 不自動處理：語義層衝突／跨文件策略衝突／歷史意圖偏離
 - 必依 `docs/governance/CURSOR_LIMITATION_REVIEW_RULE.md` 於關鍵節點回檢
+
+## Boss Mode｜回報層級限制（治理規則）
+
+- 預設模式：**老闆模式（Boss Mode）**
+- AI 回覆必須遵守：
+  - 用白話摘要
+  - 不展開實作細節
+  - 不教使用者怎麼跑指令
+- 若需要技術細節，必須明確被要求，否則禁止主動補充。
+
 
 ---
 ## FILE: docs/process/TASK_LIFECYCLE.md
@@ -1902,7 +1927,7 @@ These items are approved to be written next (derived from the governance gap aud
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
 # CONTEXT_CAPSULE（超短狀態膠囊｜每次同步必帶）
-generatedAt: 2026-01-07T14:04:25+0800
+generatedAt: 2026-01-07T15:19:17+0800
 
 ## Mainline
 - phase: Phase 0 / MVP
@@ -1928,8 +1953,8 @@ generatedAt: 2026-01-07T14:04:25+0800
 ## FILE: memory/briefs/LATEST_VERIFICATION_PACK.md
 
 # LATEST_VERIFICATION_PACK（指向最新工程證據包）
-updatedAt: 2026-01-07T14:04:25+0800
-path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_140425.md
+updatedAt: 2026-01-07T15:19:17+0800
+path: docs/ops/verification_packs/VERIFICATION_PACK_20260107_151917.md
 overallExitCode: 0
 
 ---
@@ -1972,3 +1997,4 @@ updatedAt: 2026-01-07T11:07:56+08:00
 command: (unknown)
 exitCode: 0
 success: true
+

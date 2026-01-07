@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Cursor Limitation Review Rule（人工/策略層檢查）
 
 ## 為什麼需要

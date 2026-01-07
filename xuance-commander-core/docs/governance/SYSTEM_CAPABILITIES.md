@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # System Capabilities（系統能力聲明）
 
 本文件用來宣告「系統已納入設計視野、但未必於當前階段實作」的能力。

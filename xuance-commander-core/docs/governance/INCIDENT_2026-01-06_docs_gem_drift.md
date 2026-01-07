@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Incident Report — docs/gem Drift (2026-01-06)
 
 ## Summary（發生了什麼）

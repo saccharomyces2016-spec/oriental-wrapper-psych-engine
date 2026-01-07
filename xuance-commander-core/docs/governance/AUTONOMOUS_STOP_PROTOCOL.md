@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Autonomous Stop Protocol（自動停機協議）
 
 ## 目的

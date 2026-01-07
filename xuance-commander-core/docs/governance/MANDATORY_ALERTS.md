@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # 強制提醒義務（Mandatory Alert Duty）
 
 ## 指揮官必須提醒使用者的情境（非選擇）

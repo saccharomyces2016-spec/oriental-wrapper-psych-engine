@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Lessons Learned（失敗案例→治理規則）
 
 <!-- XUANCE_LESSONS_FAILCASES_BEGIN -->

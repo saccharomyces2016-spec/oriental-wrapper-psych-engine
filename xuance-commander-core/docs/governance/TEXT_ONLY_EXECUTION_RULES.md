@@ -219,3 +219,13 @@ These items are approved to be written next (derived from the governance gap aud
 ## Cursor 能力邊界（策略層補檢）
 - Cursor 不自動處理：語義層衝突／跨文件策略衝突／歷史意圖偏離
 - 必依 `docs/governance/CURSOR_LIMITATION_REVIEW_RULE.md` 於關鍵節點回檢
+
+## Boss Mode｜回報層級限制（治理規則）
+
+- 預設模式：**老闆模式（Boss Mode）**
+- AI 回覆必須遵守：
+  - 用白話摘要
+  - 不展開實作細節
+  - 不教使用者怎麼跑指令
+- 若需要技術細節，必須明確被要求，否則禁止主動補充。
+

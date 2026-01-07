@@ -20,6 +20,21 @@
 3) 補齊 golden tests（固定輸入輸出）
 
 治理橋接任務（已批准）：Governance Inventory Sprint
+---
+【治理橋接任務｜Governance Slimming Sprint｜Apply 完成｜2026-01-07】
+已完成：
+- 合併規則：COMPLETION_RECORD_RULE.md + REPAIR_RECORDING_RULE.md → MANDATORY_MILESTONE_RECORDING_RULE.md（並移除原檔）
+- FULL_ONLY 標記：24 份治理文件已標記為 [FULL_ONLY]
+- MIN 補規則：Cursor Model Selection（Gemini 分析 / Claude 實作 / GPT 裁決）
+
+下一步（必做收尾）：
+1) git commit + push（把 Apply 變更入庫）
+2) 重建 MASTER_MIN / MASTER（auto）
+3) 更新 LATEST_VERIFICATION_PACK（若有生成新 pack）
+
+封板後摘要化規則：
+- 本段落在任務完成後，需縮成 3~6 行摘要 + 指標（避免 CURRENT 膨脹與上下文漂移）
+
 - 預設由 Cursor 產出 Inventory Report（Markdown + JSON）→ 指揮官裁決 → 才允許 Codex 落地
 - Done Definition 以 GOVERNANCE_INDEX.md 內之章節為準
 
@@ -1202,3 +1217,8 @@ head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
 - pointer: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core/memory/briefs/LATEST_INVENTORY_REPORT.md
 - counts: governance=47 dupBasename=9 unindexed=46 missingOwner=59
 - next: 先修 GOVERNANCE_INDEX coverage（unindexed=0）→ 再補 Owner（missingOwner 降到可接受）
+
+補充規則（已啟用）：
+- MIN/FULL = 快照集合，不是 SSOT 本體
+- Cursor 執行前必提供 CONTEXT_BRIEF；執行後必回報 what/where/result/next + evidence pointers
+- 來源：docs/governance/CURSOR_USAGE_RULE.md（Cursor Context Brief Protocol）

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # CODEBOOK（治理與流程代碼字典）
 
 ## Governance

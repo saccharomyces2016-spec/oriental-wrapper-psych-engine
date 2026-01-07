@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # AI Partnership Protocol（AI 合夥人責任制）
 
 ## 目的

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # MODE SWITCHES（自動判斷｜不需人工操作）
 
 判斷來源（優先序）：

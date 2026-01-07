@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # 提醒推翻紀錄規範（Override Policy）
 
 ## 原則

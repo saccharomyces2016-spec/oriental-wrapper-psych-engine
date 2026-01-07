@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Cursor Git Tree Audit Task（檔案結構總盤點任務書）
 
 ## 目標

@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Phase Gate（成長節點）
 
 Phase 0：單一構面 MVP

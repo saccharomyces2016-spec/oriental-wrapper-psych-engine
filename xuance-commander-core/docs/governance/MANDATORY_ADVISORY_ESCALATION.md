@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # 強制顧問升級制度（Mandatory Advisory Escalation）
 
 ## 核心原則

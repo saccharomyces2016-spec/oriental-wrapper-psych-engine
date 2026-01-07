@@ -1,3 +1,5 @@
+[FULL_ONLY]
+
 # Legacy Reference Rules（Legacy Vault 參考規則｜不要求引用）
 
 目的：
