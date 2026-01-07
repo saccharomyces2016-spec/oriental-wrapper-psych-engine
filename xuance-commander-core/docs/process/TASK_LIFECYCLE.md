@@ -40,16 +40,79 @@
 
 ## 2.5 診斷（Diagnosis）
 
+### 2.5.1 執行者選擇（避免治理期反覆返工）
+治理/制度重整期間（目前階段）預設採用：
+1) **Cursor（先盤點）**：先產出本機證據（git/grep/檔案落點/工具存在性）。
+2) **指揮官（再決策）**：根據證據決定要改哪個檔、放哪個段落、驗收點是什麼。
+3) **Codex（後修補）**：只在「落點與規則位置已確定」時，做一次性修補與收尾。
+
+硬規則：
+- 沒有 evidence（或 evidence 過期）→ 不得進入步驟 3。
+- 若發現貼錯區（例如把說明貼進 Terminal）→ 先回到步驟 1 重新盤點，不要硬修。
+
 當問題屬於環境/殼層/Hook/路徑等「不先定位就可能改錯」的類型：
 - 先用 Cursor 產出 VERIFICATION PACK（只讀）。
 - 再由指揮官根據證據產出 Codex 修復包。
 - 驗證結果必須可被寫入 LAST_COMMAND_STATUS（直接執行或透過 tools/xc / tools/xuance_run.sh）。
 - 同步 Repo 狀態：若為版本/分支/遠端相關問題，診斷階段必須生成 `memory/briefs/REPO_STATUS.md` 並納入 MASTER。
 
+## 2.6 治理修繕（Governance Hardening）｜Cursor 先行檢查（硬規則）
+觸發條件（任一成立即必做）：
+- 新增/修改治理規則（docs/governance/*）
+- 新增/修改快照制度（MASTER_MIN / MASTER / VERIFICATION_PACK / sharding）
+- Cursor 掃描報告指出缺口或衝突（例如 FULL_SYSTEM_SCAN / audit gaps）
+
+必做流程：
+1) Cursor 本機檢查：先產出「檢查報告」（路徑正確性 / 缺檔清單 / 重複與命名衝突 / 未追蹤檔案 / 索引是否更新）。
+2) 指揮官決策：根據報告，產出可重跑指令包（含驗收），並同回合寫入文本留證。
+3) Cursor 二次驗證：執行後再跑一次檢查，確認缺口數下降或歸零。
+
+證據：
+- Cursor 報告：存 tmp/audit 或 verification_packs（只摘要進 MASTER，raw 保留路徑）
+- git status -sb 必須可驗收（新增檔案需被追蹤；不允許把關鍵證據留在 tmp 但未留指標）
+
+驗收：
+- GOVERNANCE_INDEX.md（或對應索引）已更新
+- 新增/修改的規則文件可被索引定位（不得孤兒文件）
+- 若有 stub：至少填到「Procedure/Evidence/Acceptance」可用程度
+
 ## 3. 任務驗證（After）
 
 - 以 `LAST_COMMAND_STATUS` 作為唯一執行證據
 - 若無對應成功紀錄，任務視為未完成
+
+- 驗收後必做：更新 MASTER_MIN 的「Progress (MIN)」兩條百分比與 next checkpoint（不需要貼長輸出）
+
+### 3.1 Boss Mode｜驗收回報握手（減少貼輸出）
+
+預設：使用者不需要理解也不需要手動貼長輸出。
+
+指揮官在需要驗收時必須：
+1) 給「可重跑指令包」（會自動更新 LAST_COMMAND_STATUS / REPO_STATUS / LATEST_VERIFICATION_PACK / MASTER）
+2) 指定需要看的證據指標（例如：repo head/branch/dirty、git diff --stat、grep 命中、tests 是否通過）
+3) 要求 Cursor 在本機端把「驗收輸出」寫入 VERIFICATION_PACK（不要貼長輸出到對話），MASTER_MIN 只保留指標與結論
+
+使用者只需要：
+- 跑完指令包後，貼最新 MASTER_MIN_SYNC_PACKET.md（或回覆 done 並附上 MASTER_MIN）
+
+例外：
+- 只有當自動快照沒更新、或證據指標缺失時，才要求使用者貼 terminal 原始輸出。
+### 3.1 會話紀錄與下一輪指令包（硬規則｜避免遺忘）
+每一次對話/施工回合結束，都必須把「我們決定要做什麼、怎麼做、做完的結果、遇到的困難」寫進文本，並在下一輪對話輸出可直接執行的指令包。
+
+必寫入（至少其一；能多寫就多寫）：
+- memory/briefs/CURRENT.md：更新「現在做到哪、下一步是什麼」
+- memory/changes/CHANGELOG.md：記錄本回合做了哪些變更與原因（可用白話）
+- 若屬治理修繕：在 CURRENT 的 GOV 區塊追加進度，並更新對應 governance 文件（或 stub）
+
+下一輪對話必須輸出：
+- 一包可重跑（idempotent）的指令包（含驗收指令）
+- 若需要 Cursor 證據：明確寫「要 Cursor 提供哪個檔、哪個輸出」
+
+驗收：
+- CURRENT/CHANGELOG 至少一處有新增紀錄
+- 指令包能在終端機直接跑，並在最後輸出可檢查的成功條件
+
 
 ## 4. 狀態對齊（Sync）
 

@@ -3,8 +3,48 @@ generatedAt: 2026-01-06T15:50:44+0800
 sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core
 
 ## RULE
+- Execution Target (must declare): **Cursor AI Agent + Terminal** / **Terminal (manual)** / **Codex** / **NO RUN**
+- Execution Target UI Legend (to avoid paste-to-wrong-place):
+  - **Codex** = Cursor/VSCode 左側「藍色 Codex 面板」（用來產生/套用修補、一次性改檔）
+  - **Terminal** = 視窗下方中間的 Terminal（zsh；只接受純 shell 指令）
+  - **Cursor AI** = 右側「AI 面板」（Cursor Agent；適合盤點/檢查/彙整/生成指令包）
+  - **ChatGPT（指揮官）** = 你正在對話的這裡（只做判斷/規格/指令包；不直接改本機檔）
+- Cursor-first Policy (governance phase default):
+  - ✅ 任何「治理/制度/文本」改動：**先用 Cursor 做本機盤點（evidence）→ 再改檔**。
+  - ✅ 優先由 Cursor 產生/執行「只讀盤點指令包」與「驗收指令包」。
+  - ✅ 只有在「檔案落點、規則位置、改動範圍」都被 evidence 確認後，才允許用 Codex 做一次性修補。
+  - ❌ 禁止：在 evidence 缺失/過期時直接讓 Codex 大改（高返工風險）。
 - Always consult: CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
 - Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
+- Auto Report Checklist (default): repo head/branch/dirty, changed files stat, last command exitCode, latest verification pack pointer, any failing check summary (if exists)
+- Missing Evidence Rule: if any item in Auto Report Checklist is missing/stale, commander must request a Cursor verification run to regenerate REPO_STATUS + VERIFICATION_PACK before proposing fixes
+- Smart Sharding: SMART_CONTEXT_SHARDING_RULE.md
+- Cursor Evidence: summarized only; raw kept in tmp/audit
+- MIN Slimming: prefer MASTER_MIN; enforce token budget via sharding + link-outs; only escalate to FULL/VERIFICATION_PACK by trigger rules
+- Boss Mode Reporting: 回報只要白話摘要（<= 8 行）；技術細節/長輸出一律進 VERIFICATION_PACK（或 tmp/audit）並只在 MIN 留「路徑指標 + 1 行結論」
+- Boss Mode Evidence Handshake:
+
+- Command Pack Truncation Guard: if a command pack is long (>= 80 lines) or multi-language (shell+python), do NOT deliver full text via Chat; use Cursor to write the pack to a file (prefer tmp/audit/packs/) and only share a short bootstrap + file path + hash.
+- Evidence for Packs: VERIFICATION_PACK must include pack path + line count + sha256 (or shasum -a 256) so we can detect truncation/copy errors.
+<!-- XUANCE_TRUNCATION_GUARD_MIN_BEGIN -->
+<!-- XUANCE_TRUNCATION_GUARD_MIN_BEGIN -->
+ default = user runs command pack then posts updated MASTER_MIN; no manual paste of git/grep outputs unless explicitly requested
+- Progress Reporting: MASTER_MIN must include a small progress block (Mainline + Governance) with percent + next checkpoint; keep it <= 6 lines
+- Execution Log Discipline: every session must record (plan/commands/results/blockers) into text files; next session must ship an actionable command pack that updates the texts
+
+
+## Governance Sync Summary (MIN)
+
+- CURRENT governance sprint next steps present
+- Cursor scan gaps stubbed & indexed
+- Governance stub files exist (17)
+- SMART_CONTEXT_SHARDING_RULE.md referenced
+
+## Progress (MIN)
+- Mainline (Phase 0 / MVP): __%  (current: P0-2; next checkpoint: P0-2 domain + golden tests green)
+- Governance hardening (Cursor-driven): __%  (current: stubs + rules wired; next checkpoint: all new/modified files committed + push)
+
+
 ---
 ## FILE: charter/CHARTER.md
 
@@ -1096,4 +1136,3 @@ updatedAt: 2026-01-06T14:15:35+08:00
 command: (unknown)
 exitCode: 0
 success: true
-
