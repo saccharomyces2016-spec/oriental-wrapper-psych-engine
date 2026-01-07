@@ -1090,3 +1090,11 @@ message: MILESTONE: governance hardening sealed (cursor rescan -> rules written)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: c5a7b11487a20395d943435e14a8aba56988949c
+
+---
+[CHECKPOINT|2026-01-07T08:24:36+0800]
+phase: pre-commit
+message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 16a4cc4dabe3dbb522836455f7cda0a459de47b4
