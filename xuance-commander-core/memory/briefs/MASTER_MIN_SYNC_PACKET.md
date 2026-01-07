@@ -1,50 +1,10 @@
 # MASTER_MIN_SYNC_PACKET（小快照｜每次必帶｜SSOT 指向）
-generatedAt: 2026-01-06T15:50:44+0800
-sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuance-commander-core
+generatedAt: 2026-01-07T13:31:29+0800
+sourceRoot: xuance-commander-core
 
 ## RULE
-- Execution Target (must declare): **Cursor AI Agent + Terminal** / **Terminal (manual)** / **Codex** / **NO RUN**
-- Execution Target UI Legend (to avoid paste-to-wrong-place):
-  - **Codex** = Cursor/VSCode 左側「藍色 Codex 面板」（用來產生/套用修補、一次性改檔）
-  - **Terminal** = 視窗下方中間的 Terminal（zsh；只接受純 shell 指令）
-  - **Cursor AI** = 右側「AI 面板」（Cursor Agent；適合盤點/檢查/彙整/生成指令包）
-  - **ChatGPT（指揮官）** = 你正在對話的這裡（只做判斷/規格/指令包；不直接改本機檔）
-- Cursor-first Policy (governance phase default):
-  - ✅ 任何「治理/制度/文本」改動：**先用 Cursor 做本機盤點（evidence）→ 再改檔**。
-  - ✅ 優先由 Cursor 產生/執行「只讀盤點指令包」與「驗收指令包」。
-  - ✅ 只有在「檔案落點、規則位置、改動範圍」都被 evidence 確認後，才允許用 Codex 做一次性修補。
-  - ❌ 禁止：在 evidence 缺失/過期時直接讓 Codex 大改（高返工風險）。
 - Always consult: CHARTER / ROADMAP / CURRENT / TEXT_ONLY / TASK_LIFECYCLE / AI_ADVISORY_ROLES
 - Evidence: LAST_COMMAND_STATUS + REPO_STATUS + LATEST_VERIFICATION_PACK
-- Auto Report Checklist (default): repo head/branch/dirty, changed files stat, last command exitCode, latest verification pack pointer, any failing check summary (if exists)
-- Missing Evidence Rule: if any item in Auto Report Checklist is missing/stale, commander must request a Cursor verification run to regenerate REPO_STATUS + VERIFICATION_PACK before proposing fixes
-- Smart Sharding: SMART_CONTEXT_SHARDING_RULE.md
-- Cursor Evidence: summarized only; raw kept in tmp/audit
-- MIN Slimming: prefer MASTER_MIN; enforce token budget via sharding + link-outs; only escalate to FULL/VERIFICATION_PACK by trigger rules
-- Boss Mode Reporting: 回報只要白話摘要（<= 8 行）；技術細節/長輸出一律進 VERIFICATION_PACK（或 tmp/audit）並只在 MIN 留「路徑指標 + 1 行結論」
-- Boss Mode Evidence Handshake:
-
-- Command Pack Truncation Guard: if a command pack is long (>= 80 lines) or multi-language (shell+python), do NOT deliver full text via Chat; use Cursor to write the pack to a file (prefer tmp/audit/packs/) and only share a short bootstrap + file path + hash.
-- Evidence for Packs: VERIFICATION_PACK must include pack path + line count + sha256 (or shasum -a 256) so we can detect truncation/copy errors.
-<!-- XUANCE_TRUNCATION_GUARD_MIN_BEGIN -->
-<!-- XUANCE_TRUNCATION_GUARD_MIN_BEGIN -->
- default = user runs command pack then posts updated MASTER_MIN; no manual paste of git/grep outputs unless explicitly requested
-- Progress Reporting: MASTER_MIN must include a small progress block (Mainline + Governance) with percent + next checkpoint; keep it <= 6 lines
-- Execution Log Discipline: every session must record (plan/commands/results/blockers) into text files; next session must ship an actionable command pack that updates the texts
-
-
-## Governance Sync Summary (MIN)
-
-- CURRENT governance sprint next steps present
-- Cursor scan gaps stubbed & indexed
-- Governance stub files exist (17)
-- SMART_CONTEXT_SHARDING_RULE.md referenced
-
-## Progress (MIN)
-- Mainline (Phase 0 / MVP): __%  (current: P0-2; next checkpoint: P0-2 domain + golden tests green)
-- Governance hardening (Cursor-driven): __%  (current: stubs + rules wired; next checkpoint: all new/modified files committed + push)
-
-
 ---
 ## FILE: charter/CHARTER.md
 
@@ -124,6 +84,17 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 - 每次推進只允許更新一個「目前工作項」避免亂跳
 
 ## Phase 0：MVP（單一構面）
+
+<!-- XUANCE_P0_2_DECISION_BEGIN -->
+### P0-2 決策（Commander Locked）
+- 採納 R1 題目藍圖：A「歲時農耕・倉廩觀」作為 user-facing 唯一主隱喻
+- 採納 R4 風險鏈：Framework A/B 作為 internal 結構（對外輸出必須翻譯成農耕語彙）
+- 顧問證據落盤：
+  - docs/gem/runs/RUN_P0-2_income_expansion_pressure_R1_20260106.md
+  - docs/gem/runs/RUN_P0-2_income_expansion_pressure_R4_20260106.md
+  - docs/gem/runs/DECISION_P0-2_income_expansion_pressure_20260106.md
+<!-- XUANCE_P0_2_DECISION_END -->
+
 - [x] P0-1 選定第一個構面（facet）
 - [ ] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
 - [ ] P0-3 跑 golden tests 固定輸入輸出
@@ -157,6 +128,14 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 
 # CURRENT（當前狀態短摘要）
 
+## P0-2（income_expansion_pressure）決策已鎖定
+- R1：採用「歲時農耕・倉廩觀」作為題目與敘事主隱喻
+- R4：採用 A/B 風險鏈結構（對外全部轉譯為農耕詞彙，避免隱喻混用）
+- 下一步：產出 questions + scoring -> 交 R2 做 narr/reco -> 風險鏈落盤 -> golden tests
+- 證據：docs/gem/runs/DECISION_P0-2_income_expansion_pressure_20260106.md
+
+
+
 目標：MVP（最小可行產品）採用「核心引擎穩定、內容外置化、schema 版本化」架構，降低後期衝突。
 
 已完成：
@@ -167,6 +146,10 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 1) P0-2：為 income_expansion_pressure 建立 questions/scoring/recommendations/narratives/riskchains
 2) 走 Research → Brief → Advisor → Domain gate
 3) 補齊 golden tests（固定輸入輸出）
+
+治理橋接任務（已批准）：Governance Inventory Sprint
+- 預設由 Cursor 產出 Inventory Report（Markdown + JSON）→ 指揮官裁決 → 才允許 Codex 落地
+- Done Definition 以 GOVERNANCE_INDEX.md 內之章節為準
 
 制度已建立：
 - 想法治理（Idea Governor）
@@ -775,6 +758,574 @@ head_pushed: 16ec30ed760bb482cd1996a2d362fc7b382576c9
   - 對指揮官：日常 MASTER_MIN；需要深度對齊才用 FULL
   - 若顧問輸出出現缺件/假設：先重建 Role Sync Packet 再重做，不得硬採納
 
+- 🧭 任務指派規範已啟用：Execution Assignment Rule（Cursor / Codex 分工決策）
+
+---
+[CHECKPOINT|2026-01-06T15:51:09+0800]
+phase: pre-commit
+message: MILESTONE: advisor role packet workflow integrated
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 1555140c6066d474493ddd767bead2f96ec78135
+
+---
+[CHECKPOINT|2026-01-06T15:51:11+0800]
+phase: post-push
+message: MILESTONE: advisor role packet workflow integrated
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 7b2567a4ce565140374ef71c45834082893eac37
+
+---
+[CHECKPOINT|2026-01-06T16:41:40+0800]
+phase: pre-commit
+message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 31fffc70e5539b9d18ea9db8e33f8313aef529f4
+
+---
+[CHECKPOINT|2026-01-06T16:41:43+0800]
+phase: post-push
+message: MILESTONE: execution assignment rule added (Cursor vs Codex decision)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: e2514c8b651ecc110e57f6349367fe282bd50997
+
+---
+[CHECKPOINT|2026-01-06T16:58:01+0800]
+phase: pre-commit
+message: MILESTONE: enforce role sync packet coverage audit (single-packet rule)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: e1e0df1a90ddd13877453367a76989693bc8e516
+
+---
+[CHECKPOINT|2026-01-06T16:58:03+0800]
+phase: post-push
+message: MILESTONE: enforce role sync packet coverage audit (single-packet rule)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 5790e6216d77c4737296585d543c54b704eb3c35
+
+---
+[CHECKPOINT|2026-01-06T18:34:13+0800]
+phase: pre-commit
+message: MILESTONE: FULL trigger + MIN evidence policy added
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: fc5d088495465be3d44062a681a78826802422ba
+
+---
+[CHECKPOINT|2026-01-06T18:34:15+0800]
+phase: post-push
+message: MILESTONE: FULL trigger + MIN evidence policy added
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: a7e98cabe9f49ed96c185600f7f9bf71138d5107
+
+## Temporary Objective — Governance Hardening
+
+目標：
+- 系統性盤點並修補「制度型漂移風險」
+- 優先於功能推進，避免後期高成本回補
+
+目前聚焦：
+- docs/gem 證據路徑治理
+- SSOT 明確化 + 可自動驗證
+
+狀態：
+- In progress
+
+
+---
+[CHECKPOINT|2026-01-06T22:00:33+0800]
+phase: pre-commit
+message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated （禁止引用之暫存路徑）
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: cdfb9011a3ae549d057b48cd8608ef189d05314d
+
+---
+[CHECKPOINT|2026-01-06T22:00:41+0800]
+phase: post-push
+message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated （禁止引用之暫存路徑）
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: d031279f9f676de1d1f77ee35051427aa6266daf
+
+---
+[CHECKPOINT|2026-01-06T22:09:05+0800]
+phase: pre-commit
+message: MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored + depth 6)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: a3eb9664a43ec3cc1c47194b0a36a4966c9ef8ef
+
+---
+[CHECKPOINT|2026-01-06T22:09:08+0800]
+phase: post-push
+message: MILESTONE: docs/gem drift audit hardened + pushed (repo-root anchored + depth 6)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
+
+
+### TEMP_OBJECTIVE: Governance Hardening via Cursor Audit
+
+背景：
+- 曾發生同類資料分散於不同資料夾（docs/gem）導致判斷困難
+- 問題非單點錯誤，而是制度缺口
+
+目標：
+- 使用 Cursor 進行全倉治理盤點與彙整
+- 產出「可寫入文本的治理規則」
+
+產出要求：
+- 只關注「會再次發生的結構性問題」
+- 每一項問題需對應：
+  - 明確規範
+  - 檢查方式（script / checklist）
+  - Canon 路徑
+
+完成條件：
+- 新規則寫入 governance 文本
+- 對應 audit / guard script 存在
+
+
+## Phase Objective (Now)
+
+### Governance Gap Closure: Canon / Artifacts / Shadow Paths
+
+**Scope (from governance audit):**
+- Canon violations: duplicate governance roots; undefined `out/`, `tmp/` placement
+- Ambiguity: multiple sources for `ROLE_*_SYNC_PACKET`, `CHAT_PACKET`, timestamped advisor packs
+- Drift risk: `out/`, `tmp/`, `logs/` not registered; `docs/gem/runs/` naming/versioning not governed
+- Missing rules: duplicate filename resolution; shadow path registry; legacy governance; cross-directory references
+
+**Goal:**
+- Convert the audit findings into enforceable governance text + simple repo-level enforcement rules.
+- Eliminate ambiguous sources so there is exactly one “source of truth” per artifact type.
+
+### Deliverables
+
+1) **Canonical path decision** (write down and enforce)
+- Governance docs: single canonical root
+- Output artifacts: single canonical `out/`
+- Temporary artifacts: single canonical `tmp/`
+- Logs: canonical `logs/` rules
+
+2) **Artifact single-source rules**
+- Sync packets: single-source path + allowed mirrors (if any)
+- Chat packet: single canonical path
+- Advisor packs: versioning rules + `LATEST` pointer rules
+
+3) **Registry & lifecycle rules**
+- Add/extend registry rule: all artifact dirs must be registered
+- tmp lifecycle: retention + cleanup trigger
+- logs lifecycle: naming + retention
+
+4) **Reference rules**
+- Duplicate filename resolution
+- Cross-directory reference priority
+- Legacy directory governance
+- Shadow path registry + “not evidence” labeling
+
+### Execution Checklist (acceptance)
+
+- [ ] Repo contains **one** governance root; any non-canon governance dir is removed or clearly marked as non-canon
+- [ ] Exactly **one** canonical `out/` path is declared and used by scripts/docs
+- [ ] Exactly **one** canonical `tmp/` path is declared and used by scripts/docs
+- [ ] `out/`, `tmp/`, `logs/` are registered in the artifact registry (or equivalent canon file)
+- [ ] `CHAT_PACKET.md` and `ROLE_*_SYNC_PACKET` have exactly one source-of-truth path
+- [ ] Timestamped advisor pack directories have a deterministic “latest” resolution rule
+- [ ] Shadow paths (e.g., `prompts/gem`) are explicitly registered and labeled as non-canon evidence
+
+### Notes
+- This phase is *text-first*: policy comes before refactor.
+- Any structural move (delete/move directories) must include a rollback note.
+
+## Temporary Objective — Governance Hardening
+
+- 強化 Governance 目錄結構與管理
+- 實施自動化檢查點以防止違規路徑與文件重複
+- 修正相對路徑引用問題，確保證據資料正確性
+- In progress
+
+<!-- XUANCE_GOVERNANCE_AUDIT_FULL_BEGIN -->
+## Governance Audit Record (FULL) — Canon Violations + Automation Checkpoints
+
+來源：Cursor 盤點輸出（已複寫入此處作為 SSOT 記錄；`./tmp/audit/*` 僅為暫存，不可引用為證據）
+
+### Canon 違規盤點報告
+
+#### A) Canon 路徑違規
+
+##### A1. Governance 目錄違規
+- **違規路徑**: `./docs/governance`
+- **違反規範**: GLOBAL_PATH_CANON.md "禁止：repo root 出現 ./docs/governance"
+- **Canon 路徑**: `xuance-commander-core/docs/governance/`
+
+##### A2. Output 目錄違規
+- **違規路徑**: `./out/`
+- **違反規範**: GLOBAL_PATH_CANON.md "Canon: xuance-commander-core/out/"
+- **Canon 路徑**: `xuance-commander-core/out/`
+- **違規內容**: `xuance-commander-core/out/CHAT_PACKET.md`
+
+##### A3. Temporary 目錄違規
+- **違規路徑**: `./tmp/`
+- **違反規範**: GLOBAL_PATH_CANON.md "Canon: xuance-commander-core/tmp/"
+- **Canon 路徑**: `xuance-commander-core/tmp/`
+
+#### B) 同名文件跨目錄
+
+##### B1. CHAT_PACKET.md 重複
+- `xuance-commander-core/out/CHAT_PACKET.md`
+- `xuance-commander-core/out/CHAT_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "CHAT_PACKET：single source（由 registry 指定）"
+
+##### B2. ROLE_R1_SYNC_PACKET.md 重複
+- `xuance-commander-core/memory/briefs/role_sync_packets/LATEST/ROLE_R1_SYNC_PACKET.md`
+- `xuance-commander-core/memory/briefs/role_sync_packets/ROLE_R1_SYNC_PACKET.md`
+- `xuance-commander-core/out/role_sync_packets/ROLE_R1_SYNC_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "ROLE_*_SYNC_PACKET：single source（由 registry 指定）"
+
+##### B3. ROLE_R4_SYNC_PACKET.md 重複
+- `xuance-commander-core/memory/briefs/role_sync_packets/LATEST/ROLE_R4_SYNC_PACKET.md`
+- `xuance-commander-core/memory/briefs/role_sync_packets/ROLE_R4_SYNC_PACKET.md`
+- `xuance-commander-core/out/role_sync_packets/ROLE_R4_SYNC_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "ROLE_*_SYNC_PACKET：single source（由 registry 指定）"
+
+##### B4. COMMON_PACKET.md 重複（時間戳目錄）
+- `xuance-commander-core/out/advisor_packs/20260106_143538/COMMON_PACKET.md`
+- `xuance-commander-core/out/advisor_packs/20260106_143713/COMMON_PACKET.md`
+- **違反規範**: 無明確版本管理規則，無法確定 single source
+
+##### B5. README.md 多處存在（目錄說明文件，可能不違規）
+- 11 個位置（legacy 目錄內多個，非 legacy 目錄內 8 個）
+- **狀態**: 需確認是否違規（目錄說明文件可能允許多個）
+
+#### C) out/（禁止引用之暫存路徑） 被誤引用為證據
+
+##### C1. 引用 `xuance-commander-core/out/CHAT_PACKET.md`（相對路徑，可能指向錯誤位置）
+- `xuance-commander-core/memory/briefs/CURRENT.md:30` - "並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/memory/briefs/COMMAND_BRIEF.md:163` - "並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md:50,55` - 引用 `xuance-commander-core/out/CHAT_PACKET.md`
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：所有產物只允許寫入此處" + 相對路徑可能指向 `./out/` 而非 Canon `xuance-commander-core/out/`
+
+##### C2. 引用 `tmp/`（在 CURRENT.md 中提及）
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "（禁止引用之暫存路徑）"
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：不可被引用為證據；可隨時清除"
+
+##### C3. 引用 `logs/`（在 CURRENT.md 中提及）
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "（禁止引用之暫存路徑）"
+- **違反規範**: GLOBAL_PATH_CANON.md "規則：僅供除錯，不可作為決策依據"
+
+#### D) 可自動化的檢查點
+
+##### D1. Governance 目錄檢查
+```bash
+# 檢查點：repo root 下不得有 docs/governance
+find . -type d -path "*/docs/governance" -not -path "*/xuance-commander-core/docs/governance" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：只應找到 xuance-commander-core/docs/governance
+```
+
+##### D2. Gem 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/docs/gem 和 xuance-commander-core/prompts/gem
+find . -type d -name "gem" -not -path "*/xuance-commander-core/docs/gem" -not -path "*/xuance-commander-core/prompts/gem" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果
+```
+
+##### D3. Output 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/out/
+find . -type d -name "out" -not -path "*/xuance-commander-core/out" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果（但會找到 ./out/）
+```
+
+##### D4. Temporary 目錄檢查
+```bash
+# 檢查點：只允許 xuance-commander-core/tmp/
+find . -type d -name "tmp" -not -path "*/xuance-commander-core/tmp" -not -path "*/legacy/*" -not -path "*/.git/*"
+# 預期：無結果（但會找到 ./tmp/）
+```
+
+##### D5. CHAT_PACKET.md Single Source 檢查
+```bash
+# 檢查點：CHAT_PACKET.md 只能有一個位置（由 registry 指定）
+git ls-files | grep "CHAT_PACKET.md$" | wc -l
+# 預期：1（但實際為 2）
+```
+
+##### D6. ROLE_*_SYNC_PACKET.md Single Source 檢查
+```bash
+# 檢查點：每個 ROLE_*_SYNC_PACKET.md 只能有一個位置
+git ls-files | grep "ROLE_.*_SYNC_PACKET.md$" | awk -F/ '{print $NF}' | sort | uniq -d
+# 預期：無重複（但實際有重複）
+```
+
+##### D7. 相對路徑引用檢查
+```bash
+# 檢查點：不得使用相對路徑引用 out/（禁止引用之暫存路徑）（應使用絕對路徑或明確指定）
+git ls-files "*.md" | xargs grep -l "out/CHAT_PACKET\\|tmp/\\|logs/" | grep -v "GLOBAL_PATH_CANON\\|TEXT_ONLY_EXECUTION"
+# 預期：無結果（但實際有多個文件引用）
+```
+
+##### D8. 時間戳目錄版本管理檢查
+```bash
+# 檢查點：advisor_packs 下應有 LATEST 連結指向最新版本
+ls -la xuance-commander-core/out/advisor_packs/ | grep LATEST
+# 預期：存在 LATEST 連結（但實際可能不存在）
+```
+
+##### D9. Legacy 目錄引用檢查
+```bash
+# 檢查點：非 legacy 文件不得引用 legacy 目錄內容
+git ls-files "*.md" | grep -v "legacy" | xargs grep -l "docs/legacy" | head -5
+# 預期：無結果（需手動確認是否違規）
+```
+
+##### D10. 證據類資料夾登記檢查
+```bash
+# 檢查點：所有證據類資料夾必須在 ARTIFACT_REGISTRY 或 GLOBAL_PATH_CANON 中登記
+# 需手動比對 find 結果與登記清單
+find . -type d -maxdepth 3 -not -path "*/.git/*" -not -path "*/legacy/*" | grep -E "(evidence|artifact|output|result|report|data)" | sort
+# 預期：所有結果都應在登記清單中
+```
+
+<!-- XUANCE_GOVERNANCE_AUDIT_FULL_END -->
+
+---
+
+## TEMP_OBJECTIVE: Governance Hardening (Cursor Audit SSOT)
+
+來源（SSOT）：
+- tmp/audit/CANON_VIOLATIONS.md（Cursor 全倉治理盤點完整報告）
+
+目標：
+- 以「最完整、未雨綢繆」為原則，**一次性消除制度型漂移風險**
+- 所有對策必須能對應到「未來同類問題不再發生」
+
+執行原則：
+- 本臨時目標期間，**功能主線暫停**
+- 僅允許：
+  - 撰寫治理規則（text-first）
+  - 新增/強化 audit / guard scripts
+  - Canon 路徑與引用修正
+- 禁止任何未在本報告列出的臆測性修正
+
+工作分工：
+- Cursor：盤點、彙整、產出完整治理對策文本（以報告為唯一依據）
+- Codex：**逐條**依治理文本修正 repo（一條一驗收）
+- 指揮官：只做 PASS / FAIL / NEXT 判斷
+
+完成條件：
+- CANON_VIOLATIONS.md 中每一項：
+  - 都有對應的治理規則文本
+  - 都有可執行的檢查方式（script / checklist）
+  - 檢查結果為 PASS
+- 完成後才允許進入「摘要化 / 精簡 CURRENT」
+
+狀態：
+- In progress
+
+---
+
+---
+
+## 治理慣例已啟用：Cursor Audit 驅動制度升級
+
+說明（白話）：
+- 只要 Cursor 一次抓出一堆錯誤，就代表「制度不夠」
+- 正確順序永遠是：
+  1) 先補制度
+  2) 再修實作
+  3) 最後驗證不再復發
+
+狀態：
+- 永久有效（非臨時目標）
+
+---
+
+---
+## 治理修復事件｜二次掃描後封板（Cursor Rescan Closure）
+
+來源：
+- Cursor 二次治理掃描（CURSOR_RESCAN_RESULTS.md）
+
+錯誤性質分類：
+- Canon 路徑違規（governance / out / tmp）
+- Single-Source 失效（CHAT_PACKET / ROLE_* / COMMON_PACKET）
+- 相對路徑歧義（out/（禁止引用之暫存路徑））
+- 影子路徑未登記（verification_packs）
+- 時間戳版本無 LATEST
+- role_sync_packets 雙重結構
+
+決策：
+- 本次不只修檔案，**同步補齊制度**
+- 同類問題未來一律視為制度缺口，不得只修單點
+
+狀態：
+- Fixing + Writing Governance
+
+---
+
+---
+## 治理封板｜二次掃描結案
+
+已補齊制度：
+- Global Path Canon
+- Single Source Rules
+- Absolute Reference Rule
+- Shadow Path Registry
+- Advisor Pack Versioning
+
+效果：
+- 同類錯誤未來可被腳本與文本雙重阻擋
+- 不再依賴人工記憶或對話上下文
+
+狀態：
+- Governance Hardening COMPLETE
+
+---
+
+---
+## 治理事件（進行中）：Cursor 二次全面掃描（Post-Audit Pass）
+
+目的：
+- 在第一次 Canon Audit 修補後
+- 再次用 Cursor 全倉掃描
+- 確認是否仍有「未被制度覆蓋的結構性問題」
+
+原則：
+- 只要 Cursor 再抓到問題
+- 一律視為「制度缺口」，不得只修單點
+
+狀態：
+- Scanning (Cursor)
+
+---
+
+---
+[CHECKPOINT|2026-01-06T23:18:12+0800]
+phase: pre-commit
+message: MILESTONE: governance hardening sealed (cursor rescan -> rules written)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: e2a15aea40dfd558741c449f7863740683cec934
+
+---
+[CHECKPOINT|2026-01-06T23:18:14+0800]
+phase: post-push
+message: MILESTONE: governance hardening sealed (cursor rescan -> rules written)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: c5a7b11487a20395d943435e14a8aba56988949c
+
+---
+[CHECKPOINT|2026-01-07T08:24:36+0800]
+phase: pre-commit
+message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 16a4cc4dabe3dbb522836455f7cda0a459de47b4
+
+---
+[CHECKPOINT|2026-01-07T08:24:37+0800]
+phase: post-push
+message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 771d1492c9896547e90e79faee5fcefa5f0da602
+
+---
+[CHECKPOINT|2026-01-07T08:47:16+0800]
+phase: pre-commit
+message: MILESTONE: zero-memory execution + master sharding phase started
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_before: 4871a427b43df2a1f01481980625ab1578ac5937
+
+---
+[CHECKPOINT|2026-01-07T08:47:18+0800]
+phase: post-push
+message: MILESTONE: zero-memory execution + master sharding phase started
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: a80397d9ff96a7581202ccac4660d55d6f8d8bcc
+
+
+## TEMP OBJECTIVE｜System Governance Hardening (Cursor-driven)
+
+來源：
+- Cursor Full-System Governance Scan
+
+狀態：
+- 已識別治理缺口：17 項（未建立）
+- 已存在核心規範：GLOBAL_PATH_CANON / SINGLE_SOURCE / ABSOLUTE_REF / REGISTRY
+
+未完成（列管）：
+- AUTOMATED_CANON_AUDIT_RULE
+- FILENAME_COLLISION_RULE
+- TIMESTAMP_DIRECTORY_AUTOMATION
+- EVIDENCE_REFERENCE_TRACKING
+- LEGACY_UPGRADE_PROTOCOL
+- GOVERNANCE_RULE_VERSIONING
+- GOVERNANCE_CI_CD_RULE
+- GOVERNANCE_VIOLATION_SEVERITY
+- GOVERNANCE_RULE_TESTING
+- GOVERNANCE_ENFORCEMENT_TRACKING
+- GOVERNANCE_INHERITANCE
+- GOVERNANCE_AUTO_FIX_RULE
+- RULE_CONFLICT_RESOLUTION
+- RULE_EXECUTION_ORDER
+- ONBOARDING_GOVERNANCE_GUIDE
+- VIOLATION_REPAIR_GUIDE
+- RULE_UPDATE_NOTIFICATION
+
+證據：
+- Cursor 原始報告：tmp/audit/CURSOR_FULL_SYSTEM_SCAN.md（非 SSOT）
+
+策略：
+- 每修一項制度 → 必須寫入治理文件 + CURRENT 留證
+- 禁止只修實作不補制度
+
+
+## Governance Hardening Status (Auto)
+
+### 已 scaffold（自動落盤）
+- governance sprint next steps block exists
+- 17 governance rule stubs created in docs/governance/
+- SMART_CONTEXT_SHARDING_RULE.md present
+- CURSOR_USAGE_RULE.md filed
+- MASTER_MIN_SYNC_PACKET.md updated with governance summary
+
+### 檢查要點
+- stub files must be populated in Priority order (P0 → P1 → P2)
+- Cursor original reports live in tmp/audit (non-SSOT)
+- MASTER_MIN always shows governance sync status
+
+---
+
+---
+
+## 階段性目標｜治理重整（Cursor-driven）— 進度盤點
+
+### ✅ 已完成
+- Canon / Single Source / Absolute Reference 制度落地
+- Execution Target UI Legend（避免貼錯）
+- Boss Mode 精簡回報（≤ 8 行）
+- 指令包防截斷（腳本式交付）
+- Cursor-first 治理流程（先盤點再改檔）
+
+### ⏳ 進行中
+- Cursor Limitation Review（語義/策略/歷史意圖）制度化（本次已補）
+
+### ⛳ 下一步（臨時性目標）
+- 由 Cursor 執行一次「三類必回檢項」掃描並產出 VERIFICATION_PACK
+- 全部結論為 OK 後，允許推進主線任務
+
 ---
 ## FILE: docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 
@@ -814,7 +1365,105 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 ---
 
 
+## Repo 可視性邊界（AI 不可直接瀏覽你的 repo）
+
+硬事實：
+- 指揮官（GPT）**無法直接讀取**你本機的資料夾結構、檔名清單、或任何未被貼出的檔案內容。
+- 指揮官能掌握的全貌，**只能來自你提供的文本快照**（例如 MASTER / MIN / Role Sync Packets / Verification Pack）。
+
+因此：
+- 只要「資料夾全貌」會影響判斷（例如：顧問缺件、路徑是否存在、是否有 legacy/router/brief/run/domain 檔），就必須提供可審計的快照證據。
+- 未被快照包含的檔案/內容，對指揮官而言視為不存在；不得基於猜測推進。
+
+驗收（可檢查）：
+- 任何需要 repo 全貌的任務，必須在 VERIFICATION_PACK 內提供一份「Repo Tree Snapshot」輸出（見 `docs/ops/VERIFICATION_PACK_POLICY.md`）。
+
+
+## 穩定性優先（Stability-First）功能提升規則
+
+硬規則：
+- 任何「功能提升 / 自動化增強 / 同步策略優化」，都必須以**系統穩定性不下降**為前提。
+- 若新增功能會引入不確定性（例如：更多 hook、更多自動生成、更多同步分支），必須先提供「可回滾」方案；未提供則不得合併。
+
+必備驗收（至少一項，依變更範圍提升）：
+- 最低：可重跑且成功（exitCode=0）+ 不產生新噪音/錯誤
+- 中等：提供 VERIFICATION_PACK（含：版本/狀態/關鍵輸出）證明功能正常
+- 高風險：必須先在「隔離測試」或「dry-run」模式驗證，並保留 rollback 指令
+
+失敗處理：
+- 一旦驗收失敗：立即停止追加功能，優先修回穩定狀態（必要時回退到上一次 checkpoint）。
+
+
+## Execution Target｜貼哪裡才對（避免貼錯造成 Terminal exit 127）
+
+<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+
+
+## 指令包交付防截斷規則（Chat / UI Truncation Guard）
+
+問題：Chat/介面可能截斷「很長的 code block」，導致貼到 Terminal 只是一半 → 直接失敗。
+
+硬規則（之後一律照做）：
+1) 只要指令包 >= 80 行、或混合 shell+python、或包含多段 heredoc：不得在 Chat 交付全文。
+2) 一律改成「兩段式交付」：
+   - A 段（短 bootstrap）：貼到 Terminal 就能跑，負責驗證 pack 檔案存在與摘要。
+   - B 段（完整 pack）：由 Cursor 在本機寫入固定路徑（建議 tmp/audit/packs/<name>.sh 或 /tmp/<name>.sh），不走 Chat 複製。
+3) 驗收：bootstrap 必須印出 pack 的「路徑 + 行數 + hash」，用來抓截斷/貼錯。
+
+標準 bootstrap（只允許貼這段到 Terminal）：
+```bash
+set -euo pipefail
+PACK_PATH="/tmp/xc_pack.sh"
+
+test -f "$PACK_PATH" || (echo "[ERR] Missing pack: $PACK_PATH" && exit 1)
+echo "PACK=$PACK_PATH"
+echo "LINES=$(wc -l < "$PACK_PATH" | tr -d ' ')"
+if command -v shasum >/dev/null 2>&1; then
+  echo "SHA256=$(shasum -a 256 "$PACK_PATH" | awk '{print $1}')"
+else
+  echo "SHA256=$(sha256sum "$PACK_PATH" | awk '{print $1}')"
+fi
+
+bash "$PACK_PATH"
+```
+備註：
+- 要可追溯：pack 改存 repo：tmp/audit/packs/，並把「路徑 + hash」寫進 VERIFICATION_PACK。
+<!-- XUANCE_TRUNCATION_GUARD_BEGIN -->
+
+- **Terminal**：只能貼純 shell 指令（建議用「腳本式指令包」模板）。
+- **Cursor AI**：適合貼「需要本機盤點/彙整/檢查」的需求，並要求它先跑只讀盤點。
+- **Codex**：只在落點與規則位置已被 evidence 確認後，用來做一次性修補。
+- **ChatGPT（指揮官）**：只做判斷與規格化，不直接宣稱已改到本機。
+
 ## 核心規則
+- 對話上下文只能作為參考，不得作為主目標與主進度依據
+- 主目標與主進度只允許引用：
+  - charter/CHARTER.md
+  - roadmap/ROADMAP.md
+  - memory/briefs/CURRENT.md
+  - docs/adr/*
+
+## 低說明・指令優先互動模式（Anti-Drift Mode）
+
+適用情境：
+- 進入執行期 / 治理修復期 / 大型專案中後段
+- 使用者明確要求「只要下一步 / 指令包」
+
+互動原則：
+- 指揮官預設 **不進行長篇說明**
+- 回覆內容優先順序：
+  1) 可直接執行的指令包
+  2) 必要時的一行判斷（對 / 不對 / PASS / FAIL）
+- 非必要背景、推理、術語一律省略
+
+例外：
+- 僅在「重大決策 / 題目設計 / 世界觀封板」時，才可進入詳細說明模式
+
+驗收：
+- 每次回覆可在 1 次貼上內完成
+- 不依賴對話記憶即可執行
+- 若「無法一次貼完」，必須先產生指令包或要求補充最小必要上下文
+
 - 對話上下文只能作為參考，不得作為主目標與主進度依據
 - 主目標與主進度只允許引用：
   - charter/CHARTER.md
@@ -828,9 +1477,84 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - AI 不得基於「我覺得更好」改寫主線
 
 ## 強制行為
+- 每次完成任務驗收後：必須在 MASTER_MIN / CURRENT 留下「進度百分比 + 下一個檢查點」的可讀摘要
 - 每次開始任何工作前，必須先跑 preflight（tools/preflight.sh）
 - preflight 會生成 memory/briefs/COMMAND_BRIEF.md
 - 指揮官之後的所有決策與建議必須基於 COMMAND_BRIEF.md
+- 預設證據來源：REPO_STATUS / LAST_COMMAND_STATUS / LATEST_VERIFICATION_PACK（對話中不貼長輸出）
+- 若證據缺失或過期：先要求 Cursor 重新生成 REPO_STATUS + VERIFICATION_PACK；未補齊前不得提出修復方案
+
+- 證據回報預設走「自動快照」：除非指揮官明確要求，否則不要要求使用者手動貼 terminal 輸出；以 LAST_COMMAND_STATUS / REPO_STATUS / LATEST_VERIFICATION_PACK / MASTER_MIN 作為回報依據
+- 當需要驗收時，指揮官必須提供「可重跑指令包」來自動產出證據（寫入 LAST_COMMAND_STATUS + 更新 LATEST_VERIFICATION_PACK/MASTER），使用者只需執行完後貼最新 MASTER_MIN（或回覆 done 並附 MASTER_MIN）
+- 治理/制度性改動的施工前檢查：優先由 Cursor 先做本機彙整與檢查（路徑/重複/索引/缺檔/未追蹤檔案），輸出報告後，指揮官才可下達修復指令包與寫入文本
+- 會話紀錄硬規則：每回合結束必須把（計畫/指令/結果/阻塞）寫入文本（CURRENT/CHANGELOG/必要時 governance），下一回合必須輸出可直接執行的指令包以更新文本與驗收
+
+
+<!-- XUANCE_DOCS_GEM_CANON_BEGIN -->
+## docs/gem 單一真相來源（防漂移硬規則）
+
+硬規則：
+- GEM 證據（briefs/profiles/runs）的唯一合法落點是：
+  - `xuance-commander-core/docs/gem/`
+- `xuance-commander-core/prompts/gem/` 只放提示模板，不是 runs 落點。
+- 任何其他 `*/docs/gem`（尤其是 repo root 的 `./docs/gem`）一律視為漂移副本，不得寫入。
+
+驗收（可檢查）：
+- `bash xuance-commander-core/tools/audit_docs_gem_drift.sh` 必須 PASS。
+
+引用要求：
+- ROADMAP/CURRENT/DECISION 內對 GEM runs 的引用，必須使用：
+  - `xuance-commander-core/docs/gem/runs/...`
+
+規範來源：
+- `xuance-commander-core/docs/governance/DOCS_GEM_CANON_RULE.md`
+<!-- XUANCE_DOCS_GEM_CANON_END -->
+
+---
+
+## Pending Governance Specs (to be authored from audit)
+
+These items are approved to be written next (derived from the governance gap audit) and then enforced:
+
+- Governance Canon Enforcement (single governance root)
+- Output Artifact Canon (single `out/` + naming)
+- Temporary Artifact Canon (single `tmp/` + lifecycle)
+- Log Artifact Registry (structure + retention)
+- Sync Packet Single Source (role sync packets)
+- Chat Packet Canon (single path)
+- Advisor Packet Versioning (timestamp dirs + LATEST rule)
+- Duplicate Filename Resolution (priority + lint rule)
+- Cross-Directory Reference Rule (how to cite paths)
+- Shadow Path Registry (explicitly non-evidence unless promoted)
+- Legacy Artifact Governance (retention + reference ban by default)
+
+- Global Path Canon: docs/governance/GLOBAL_PATH_CANON.md
+- Governance Audit Record (FULL): memory/briefs/CURRENT.md (section: Governance Audit Record)
+  - 注意：`./tmp/audit/*` 只能當暫存輸出；FULL 記錄以 CURRENT 為準
+
+---
+## 執行環境標註（Execution Target Declaration｜硬規則）
+
+- 每一個「指令包 / 操作建議」，**必須明確標註執行對象**：
+  - Cursor + Terminal（本機）
+  - Codex（一次性代碼修復）
+  - NO RUN（僅制度/決策，先寫文本）
+
+- 未標註執行對象的指令包，**視為不合格，不得執行**。
+
+- 涉及以下類型，**預設一律使用 Cursor + Terminal**：
+  - 文本治理（.md）
+  - 規則／制度新增或調整
+  - 流程文件（TASK / GOVERNANCE / RULES）
+  - 需要 grep / git status / git diff 驗收者
+
+- Codex 僅限用於：
+  - 已明確定義修改範圍與內容的程式碼修復
+  - 不涉及制度判斷與文本治理的情境
+
+## Cursor 能力邊界（策略層補檢）
+- Cursor 不自動處理：語義層衝突／跨文件策略衝突／歷史意圖偏離
+- 必依 `docs/governance/CURSOR_LIMITATION_REVIEW_RULE.md` 於關鍵節點回檢
 
 ---
 ## FILE: docs/process/TASK_LIFECYCLE.md
@@ -877,16 +1601,79 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 
 ## 2.5 診斷（Diagnosis）
 
+### 2.5.1 執行者選擇（避免治理期反覆返工）
+治理/制度重整期間（目前階段）預設採用：
+1) **Cursor（先盤點）**：先產出本機證據（git/grep/檔案落點/工具存在性）。
+2) **指揮官（再決策）**：根據證據決定要改哪個檔、放哪個段落、驗收點是什麼。
+3) **Codex（後修補）**：只在「落點與規則位置已確定」時，做一次性修補與收尾。
+
+硬規則：
+- 沒有 evidence（或 evidence 過期）→ 不得進入步驟 3。
+- 若發現貼錯區（例如把說明貼進 Terminal）→ 先回到步驟 1 重新盤點，不要硬修。
+
 當問題屬於環境/殼層/Hook/路徑等「不先定位就可能改錯」的類型：
 - 先用 Cursor 產出 VERIFICATION PACK（只讀）。
 - 再由指揮官根據證據產出 Codex 修復包。
 - 驗證結果必須可被寫入 LAST_COMMAND_STATUS（直接執行或透過 tools/xc / tools/xuance_run.sh）。
 - 同步 Repo 狀態：若為版本/分支/遠端相關問題，診斷階段必須生成 `memory/briefs/REPO_STATUS.md` 並納入 MASTER。
 
+## 2.6 治理修繕（Governance Hardening）｜Cursor 先行檢查（硬規則）
+觸發條件（任一成立即必做）：
+- 新增/修改治理規則（docs/governance/*）
+- 新增/修改快照制度（MASTER_MIN / MASTER / VERIFICATION_PACK / sharding）
+- Cursor 掃描報告指出缺口或衝突（例如 FULL_SYSTEM_SCAN / audit gaps）
+
+必做流程：
+1) Cursor 本機檢查：先產出「檢查報告」（路徑正確性 / 缺檔清單 / 重複與命名衝突 / 未追蹤檔案 / 索引是否更新）。
+2) 指揮官決策：根據報告，產出可重跑指令包（含驗收），並同回合寫入文本留證。
+3) Cursor 二次驗證：執行後再跑一次檢查，確認缺口數下降或歸零。
+
+證據：
+- Cursor 報告：存 tmp/audit 或 verification_packs（只摘要進 MASTER，raw 保留路徑）
+- git status -sb 必須可驗收（新增檔案需被追蹤；不允許把關鍵證據留在 tmp 但未留指標）
+
+驗收：
+- GOVERNANCE_INDEX.md（或對應索引）已更新
+- 新增/修改的規則文件可被索引定位（不得孤兒文件）
+- 若有 stub：至少填到「Procedure/Evidence/Acceptance」可用程度
+
 ## 3. 任務驗證（After）
 
 - 以 `LAST_COMMAND_STATUS` 作為唯一執行證據
 - 若無對應成功紀錄，任務視為未完成
+
+- 驗收後必做：更新 MASTER_MIN 的「Progress (MIN)」兩條百分比與 next checkpoint（不需要貼長輸出）
+
+### 3.1 Boss Mode｜驗收回報握手（減少貼輸出）
+
+預設：使用者不需要理解也不需要手動貼長輸出。
+
+指揮官在需要驗收時必須：
+1) 給「可重跑指令包」（會自動更新 LAST_COMMAND_STATUS / REPO_STATUS / LATEST_VERIFICATION_PACK / MASTER）
+2) 指定需要看的證據指標（例如：repo head/branch/dirty、git diff --stat、grep 命中、tests 是否通過）
+3) 要求 Cursor 在本機端把「驗收輸出」寫入 VERIFICATION_PACK（不要貼長輸出到對話），MASTER_MIN 只保留指標與結論
+
+使用者只需要：
+- 跑完指令包後，貼最新 MASTER_MIN_SYNC_PACKET.md（或回覆 done 並附上 MASTER_MIN）
+
+例外：
+- 只有當自動快照沒更新、或證據指標缺失時，才要求使用者貼 terminal 原始輸出。
+### 3.1 會話紀錄與下一輪指令包（硬規則｜避免遺忘）
+每一次對話/施工回合結束，都必須把「我們決定要做什麼、怎麼做、做完的結果、遇到的困難」寫進文本，並在下一輪對話輸出可直接執行的指令包。
+
+必寫入（至少其一；能多寫就多寫）：
+- memory/briefs/CURRENT.md：更新「現在做到哪、下一步是什麼」
+- memory/changes/CHANGELOG.md：記錄本回合做了哪些變更與原因（可用白話）
+- 若屬治理修繕：在 CURRENT 的 GOV 區塊追加進度，並更新對應 governance 文件（或 stub）
+
+下一輪對話必須輸出：
+- 一包可重跑（idempotent）的指令包（含驗收指令）
+- 若需要 Cursor 證據：明確寫「要 Cursor 提供哪個檔、哪個輸出」
+
+驗收：
+- CURRENT/CHANGELOG 至少一處有新增紀錄
+- 指令包能在終端機直接跑，並在最後輸出可檢查的成功條件
+
 
 ## 4. 狀態對齊（Sync）
 
@@ -896,6 +1683,10 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 
 - 日常對齊（推薦）：貼 MIN 快照（MASTER_MIN_SYNC_PACKET.md）。
 - 需要深度對齊或觸發 FULL 條件時：貼 FULL 快照（MASTER_SYNC_PACKET.md）。
+
+補充（對話層索取規則）：
+- 日常對齊：只貼 MIN（`MASTER_MIN_SYNC_PACKET.md`）。
+- 只有在 `docs/ops/SYNC_TRIGGERS.md` 的「FULL 索取觸發條件」任一成立時，指揮官才會點名索取 FULL（`MASTER_SYNC_PACKET.md`）。
 
 ### 工程證據（Verification）
 當任務涉及「改碼是否改對」「測試是否通過」「環境/Hook 是否修好」：
@@ -927,6 +1718,23 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 - 有紀錄才算做過
 - 有成功狀態才算完成
 - 有寫入文本才算存在
+
+### 封板判斷表（白話）
+
+你可以把「封板」理解成：把這輪的成果存成一個「可回到的雲端版本」。
+
+建議封板（任一成立就做）：
+- 今天改到「制度/規則/流程/角色」
+- 今天加了工具或腳本（或修改了生成邏輯）
+- 今天修掉一個會反覆出現的問題（例如 sync drift / missing refs / hook 噪音）
+- 今天做到一個可以獨立驗收的段落（有 PASS、有 grep、有 audit、有 pack）
+
+不建議封板（通常先不要）：
+- 只是探索，尚未驗收
+- 只是聊天討論，尚未落盤到 repo
+
+硬規則：
+- 若你宣告「這段已完成/已驗收」但沒封板 → 一律視為未完成（因為未留雲端證據）。
 
 ---
 ## FILE: docs/governance/AI_ADVISORY_ROLES.md
@@ -1069,6 +1877,21 @@ GPT 一次最多只能讀取一定長度的上下文（文字量限制）。
 4) 我可以依需要啟動任意多個顧問角色（可並行），以追求最高產品品質；顧問輸出一律視為建議稿，需審核後才可寫入正式 domain。
 5) 所有顧問輸出必須存檔到 `docs/gem/runs/`（包含：任務、輸入、輸出、採納/拒絕/修改決策摘要），可追溯。
 
+## Cursor（治理盤點 / 結構審計顧問）
+
+定位：
+- 負責「全倉盤點」「重複 / 漂移 / 命名衝突」的發現
+- 不負責決策，只提供結構證據與彙整建議
+
+使用時機：
+- 發生治理事故（Incident）
+- 懷疑規範不足或規則重疊
+- 需要一次性全面掃描 repo
+
+輸出要求：
+- 重點式（Issue / Location / Risk）
+- 可直接轉寫為治理規則
+
 ---
 ## FILE: memory/briefs/CONTEXT_CAPSULE.md
 
@@ -1107,32 +1930,40 @@ overallExitCode: 0
 ## FILE: memory/briefs/REPO_STATUS.md
 
 # REPO_STATUS（Repo 狀態快照｜自動）
-updatedAt: 2026-01-06T14:15:35+08:00
+updatedAt: 2026-01-07T11:07:56+08:00
 repoRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine
 branch: main
-head: bb94c7a
+head: 5a041e6
 
 ## git status -sb
 ## main...origin/main
+ M xuance-commander-core/docs/governance/TEXT_ONLY_EXECUTION_RULES.md
+ M xuance-commander-core/docs/process/TASK_LIFECYCLE.md
+ M xuance-commander-core/memory/briefs/CURRENT.md
+ M xuance-commander-core/memory/briefs/MASTER_MIN_SYNC_PACKET.md
+?? xuance-commander-core/docs/governance/CURSOR_USAGE_RULE.md
+?? xuance-commander-core/docs/governance/GOVERNANCE_INDEX.md
+?? xuance-commander-core/docs/governance/SMART_CONTEXT_SHARDING_RULE.md
 
 ## git remote -v
 origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (fetch)
 origin	https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git (push)
 
 ## last commit
-commit bb94c7a0f465cf822fb09a78b78815b12402b4db
+commit 5a041e656089163ed780099ff27b0ef2f9a2c5dc
 Author:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
-AuthorDate: Tue Jan 6 11:35:09 2026 +0800
+AuthorDate: Wed Jan 7 08:47:18 2026 +0800
 Commit:     saccharomyces2016-spec <Saccharomyces2016@gmail.com>
-CommitDate: Tue Jan 6 11:35:09 2026 +0800
+CommitDate: Wed Jan 7 08:47:18 2026 +0800
 
-    chore: MILESTONE: repair recording rule added (no silent fixes allowed) (post-push evidence)
+    chore: MILESTONE: zero-memory execution + master sharding phase started (post-push evidence)
 
 ---
 ## FILE: memory/briefs/LAST_COMMAND_STATUS.md
 
 # LAST_COMMAND_STATUS（最新一次指令結果｜自動）
-updatedAt: 2026-01-06T14:15:35+08:00
+updatedAt: 2026-01-07T11:07:56+08:00
 command: (unknown)
 exitCode: 0
 success: true
+

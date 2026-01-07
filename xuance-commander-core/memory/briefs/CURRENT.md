@@ -19,6 +19,10 @@
 2) 走 Research → Brief → Advisor → Domain gate
 3) 補齊 golden tests（固定輸入輸出）
 
+治理橋接任務（已批准）：Governance Inventory Sprint
+- 預設由 Cursor 產出 Inventory Report（Markdown + JSON）→ 指揮官裁決 → 才允許 Codex 落地
+- Done Definition 以 GOVERNANCE_INDEX.md 內之章節為準
+
 制度已建立：
 - 想法治理（Idea Governor）
 - 記憶治理（Memory Curator）
