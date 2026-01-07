@@ -1098,3 +1098,11 @@ message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: 16a4cc4dabe3dbb522836455f7cda0a459de47b4
+
+---
+[CHECKPOINT|2026-01-07T08:24:37+0800]
+phase: post-push
+message: MILESTONE: canon cleanup applied (governance rules enforced in repo)
+remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
+branch: main
+head_pushed: 771d1492c9896547e90e79faee5fcefa5f0da602
