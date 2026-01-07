@@ -27,7 +27,7 @@
 
 操作習慣：
 - 任何新討論/新任務前：bash tools/export_chat_packet.sh .
-- 並貼 out/CHAT_PACKET.md 給指揮官（最小必要上下文）
+- 並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官（最小必要上下文）
 
 ---
 
@@ -709,7 +709,7 @@ head_pushed: a7e98cabe9f49ed96c185600f7f9bf71138d5107
 ---
 [CHECKPOINT|2026-01-06T22:00:33+0800]
 phase: pre-commit
-message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated tmp/logs
+message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated （禁止引用之暫存路徑）
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_before: cdfb9011a3ae549d057b48cd8608ef189d05314d
@@ -717,7 +717,7 @@ head_before: cdfb9011a3ae549d057b48cd8608ef189d05314d
 ---
 [CHECKPOINT|2026-01-06T22:00:41+0800]
 phase: post-push
-message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated tmp/logs
+message: MILESTONE: exec response mode + docs/gem drift audit PASS + ignore generated （禁止引用之暫存路徑）
 remote: https://github.com/saccharomyces2016-spec/oriental-wrapper-psych-engine.git
 branch: main
 head_pushed: d031279f9f676de1d1f77ee35051427aa6266daf
@@ -838,7 +838,7 @@ head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
 - **違規路徑**: `./out/`
 - **違反規範**: GLOBAL_PATH_CANON.md "Canon: xuance-commander-core/out/"
 - **Canon 路徑**: `xuance-commander-core/out/`
-- **違規內容**: `out/CHAT_PACKET.md`
+- **違規內容**: `xuance-commander-core/out/CHAT_PACKET.md`
 
 ##### A3. Temporary 目錄違規
 - **違規路徑**: `./tmp/`
@@ -848,7 +848,7 @@ head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
 #### B) 同名文件跨目錄
 
 ##### B1. CHAT_PACKET.md 重複
-- `out/CHAT_PACKET.md`
+- `xuance-commander-core/out/CHAT_PACKET.md`
 - `xuance-commander-core/out/CHAT_PACKET.md`
 - **違反規範**: GLOBAL_PATH_CANON.md "CHAT_PACKET：single source（由 registry 指定）"
 
@@ -873,20 +873,20 @@ head_pushed: c9fff2cfa44224679d5dc62b9d235ba328a6319f
 - 11 個位置（legacy 目錄內多個，非 legacy 目錄內 8 個）
 - **狀態**: 需確認是否違規（目錄說明文件可能允許多個）
 
-#### C) out/tmp/logs 被誤引用為證據
+#### C) out/（禁止引用之暫存路徑） 被誤引用為證據
 
-##### C1. 引用 `out/CHAT_PACKET.md`（相對路徑，可能指向錯誤位置）
-- `xuance-commander-core/memory/briefs/CURRENT.md:30` - "並貼 out/CHAT_PACKET.md 給指揮官"
-- `xuance-commander-core/memory/briefs/COMMAND_BRIEF.md:163` - "並貼 out/CHAT_PACKET.md 給指揮官"
-- `xuance-commander-core/docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md:50,55` - 引用 `out/CHAT_PACKET.md`
+##### C1. 引用 `xuance-commander-core/out/CHAT_PACKET.md`（相對路徑，可能指向錯誤位置）
+- `xuance-commander-core/memory/briefs/CURRENT.md:30` - "並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/memory/briefs/COMMAND_BRIEF.md:163` - "並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官"
+- `xuance-commander-core/docs/ops/COMMANDER_AUTOPILOT_PROTOCOL.md:50,55` - 引用 `xuance-commander-core/out/CHAT_PACKET.md`
 - **違反規範**: GLOBAL_PATH_CANON.md "規則：所有產物只允許寫入此處" + 相對路徑可能指向 `./out/` 而非 Canon `xuance-commander-core/out/`
 
 ##### C2. 引用 `tmp/`（在 CURRENT.md 中提及）
-- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "tmp/logs"
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "（禁止引用之暫存路徑）"
 - **違反規範**: GLOBAL_PATH_CANON.md "規則：不可被引用為證據；可隨時清除"
 
 ##### C3. 引用 `logs/`（在 CURRENT.md 中提及）
-- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "tmp/logs"
+- `xuance-commander-core/memory/briefs/CURRENT.md:712,720` - 提及 "（禁止引用之暫存路徑）"
 - **違反規範**: GLOBAL_PATH_CANON.md "規則：僅供除錯，不可作為決策依據"
 
 #### D) 可自動化的檢查點
@@ -935,7 +935,7 @@ git ls-files | grep "ROLE_.*_SYNC_PACKET.md$" | awk -F/ '{print $NF}' | sort | u
 
 ##### D7. 相對路徑引用檢查
 ```bash
-# 檢查點：不得使用相對路徑引用 out/tmp/logs（應使用絕對路徑或明確指定）
+# 檢查點：不得使用相對路徑引用 out/（禁止引用之暫存路徑）（應使用絕對路徑或明確指定）
 git ls-files "*.md" | xargs grep -l "out/CHAT_PACKET\\|tmp/\\|logs/" | grep -v "GLOBAL_PATH_CANON\\|TEXT_ONLY_EXECUTION"
 # 預期：無結果（但實際有多個文件引用）
 ```
@@ -1025,7 +1025,7 @@ find . -type d -maxdepth 3 -not -path "*/.git/*" -not -path "*/legacy/*" | grep 
 錯誤性質分類：
 - Canon 路徑違規（governance / out / tmp）
 - Single-Source 失效（CHAT_PACKET / ROLE_* / COMMON_PACKET）
-- 相對路徑歧義（out/tmp/logs）
+- 相對路徑歧義（out/（禁止引用之暫存路徑））
 - 影子路徑未登記（verification_packs）
 - 時間戳版本無 LATEST
 - role_sync_packets 雙重結構

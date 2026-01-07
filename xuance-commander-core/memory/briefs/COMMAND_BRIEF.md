@@ -160,7 +160,7 @@
 
 操作習慣：
 - 任何新討論/新任務前：bash tools/export_chat_packet.sh .
-- 並貼 out/CHAT_PACKET.md 給指揮官（最小必要上下文）
+- 並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官（最小必要上下文）
 
 ---
 

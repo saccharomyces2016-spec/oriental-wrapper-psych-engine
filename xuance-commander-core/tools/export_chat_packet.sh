@@ -5,7 +5,7 @@ set -euo pipefail
 #   bash tools/export_chat_packet.sh [PROJECT_ROOT]
 #
 # Output:
-#   out/CHAT_PACKET.md
+#   xuance-commander-core/out/CHAT_PACKET.md
 
 PROJ="${1:-.}"
 OUTDIR="$PROJ/out"

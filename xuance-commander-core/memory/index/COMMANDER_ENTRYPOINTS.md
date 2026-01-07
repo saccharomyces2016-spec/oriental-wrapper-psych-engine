@@ -20,5 +20,5 @@
 - 未跑 preflight / 未讀 COMMAND_BRIEF -> 不得開始做任何決策或產出指令包
 
 ## 缺資料時的最低要求（替代上傳整包）
-- 先索取 out/CHAT_PACKET.md
+- 先索取 xuance-commander-core/out/CHAT_PACKET.md
 - 生成方式：bash tools/export_chat_packet.sh .

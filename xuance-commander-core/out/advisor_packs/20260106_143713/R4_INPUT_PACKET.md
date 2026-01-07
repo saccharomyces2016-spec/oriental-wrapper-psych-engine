@@ -152,7 +152,7 @@ facetId: income_expansion_pressure
 
 操作習慣：
 - 任何新討論/新任務前：bash tools/export_chat_packet.sh .
-- 並貼 out/CHAT_PACKET.md 給指揮官（最小必要上下文）
+- 並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官（最小必要上下文）
 
 ---
 
@@ -1555,7 +1555,7 @@ sourceRoot: /Users/yujunwei/Projects/115.1.4 oriental-wrapper-psych-engine/xuanc
 
 操作習慣：
 - 任何新討論/新任務前：bash tools/export_chat_packet.sh .
-- 並貼 out/CHAT_PACKET.md 給指揮官（最小必要上下文）
+- 並貼 xuance-commander-core/out/CHAT_PACKET.md 給指揮官（最小必要上下文）
 
 ---
 
@@ -2660,12 +2660,12 @@ AI 必須明確提出反對意見與理由。
 
 ## 你提供最新資訊的最省事方法
 - 在專案根目錄執行：bash tools/export_chat_packet.sh .
-- 然後把輸出的 out/CHAT_PACKET.md 內容整段貼給指揮官
+- 然後把輸出的 xuance-commander-core/out/CHAT_PACKET.md 內容整段貼給指揮官
 
 ## 指揮官的固定索取話術（必用）
 - 我需要你先提供最新 CHAT_PACKET，否則我不能開始做決策或產出指令包。
 - 請你在專案根目錄執行：bash tools/export_chat_packet.sh .
-- 然後把 out/CHAT_PACKET.md 全部貼給我。
+- 然後把 xuance-commander-core/out/CHAT_PACKET.md 全部貼給我。
 
 ## AI 合夥人責任確認
 - Before entering any design or content production phase, the Commander must verify compliance with docs/governance/AI_PARTNERSHIP_PROTOCOL.md

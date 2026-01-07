@@ -88,9 +88,9 @@ mkdir -p out
   echo
   echo "## ADR"
   ls docs/adr/ADR_*.md 2>/dev/null || echo "(no ADR yet)"
-} > out/CHAT_PACKET.md
+} > xuance-commander-core/out/CHAT_PACKET.md
 
-echo "✅ CHAT_PACKET generated at out/CHAT_PACKET.md"
+echo "✅ CHAT_PACKET generated at xuance-commander-core/out/CHAT_PACKET.md"
 EOS
 )"
 chmod +x "$ROOT/tools/export_chat_packet.sh"
