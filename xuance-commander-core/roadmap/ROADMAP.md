@@ -44,3 +44,15 @@
 
 - Exploration / Unlock Mechanism（探索／抽取式呈現）：  
   以 UX 機制提高使用者持續互動動機，不影響診斷核心。
+
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_POINTER_BEGIN -->
+### P0-2（延伸任務）：Output Contract（ACTIVE）
+- 目的：定義系統級輸出合約（允許/禁止輸出、抽象層級、翻譯邊界、安全 fallback）。
+- 顧問啟動：R1/R2/R4（briefs 見 docs/gem/briefs/BRIEF_P0-2_output_contract_*.md）
+- 備註：此任務不含 UI、不含新題目內容。
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_POINTER_END -->
+
+## P0-3 Narrative Sharpness / Esoteric Precision
+- Goal: Make outputs sharper, consistent, and testable within P0-2 boundaries.
+- Deliverables: Metrics v1, Skeleton v1, Lexicon v1, Diversity v1.
+- Status: ACTIVE (DRAFT)
