@@ -5,25 +5,29 @@
     "background_asset": "textures/wood_grain.jpg",
     "primary_font": "calligraphy_font",
     "secondary_font": "serif_font",
-    "color_palette": ["#2C1810", "#D4AF37", "#8B4513"]
+    "color_palette": [
+      "#2C1810",
+      "#D4AF37",
+      "#8B4513"
+    ]
   },
   "i18n": {
     "stage2_title": {
       "zh-TW": "萬象定物象",
       "en-US": "Phenomenon Compass"
     },
-      "stage2_guide": {
-        "zh-TW": "凝視盤面，點擊此刻映入眼簾的 3 個徵兆。",
-        "en-US": "Gaze at the compass, tap the 3 signs that catch your eye."
-      },
-      "compass_guide": {
-        "zh-TW": "凝視盤面，點擊此刻映入眼簾的 3 個徵兆。",
-        "en-US": "Gaze at the compass, tap the 3 signs that catch your eye."
-      },
-      "btn_confirm": {
-        "zh-TW": "確認",
-        "en-US": "Confirm"
-      },
+    "stage2_guide": {
+      "zh-TW": "凝視盤面，點擊此刻映入眼簾的 3 個徵兆。",
+      "en-US": "Gaze at the compass, tap the 3 signs that catch your eye."
+    },
+    "compass_guide": {
+      "zh-TW": "凝視盤面，點擊此刻映入眼簾的 3 個徵兆。",
+      "en-US": "Gaze at the compass, tap the 3 signs that catch your eye."
+    },
+    "btn_confirm": {
+      "zh-TW": "確認",
+      "en-US": "Confirm"
+    },
     "stage3_title": {
       "zh-TW": "投射定歸因",
       "en-US": "Projective Assessment"
@@ -52,47 +56,79 @@
       "zh-TW": "姿態",
       "en-US": "The Stance"
     },
-      "l4_body": {
-        "zh-TW": "宜止息播種，先護根，守中養根，避風保本",
-        "en-US": "Cease new planting; first protect the roots; maintain stability, guard the foundation"
-      },
-      "symbol_yin": {
-        "zh-TW": "陰",
-        "en-US": "Yin"
-      },
-      "symbol_yang": {
-        "zh-TW": "陽",
-        "en-US": "Yang"
-      },
-      "symbol_cai": {
-        "zh-TW": "財",
-        "en-US": "Wealth"
-      },
-      "symbol_guan": {
-        "zh-TW": "官",
-        "en-US": "Official"
-      },
-      "symbol_qing": {
-        "zh-TW": "情",
-        "en-US": "Emotion"
-      },
-      "symbol_yuan": {
-        "zh-TW": "緣",
-        "en-US": "Fate"
-      },
-      "projection_q1_title": {
-        "zh-TW": "投射問題 1",
-        "en-US": "Projection Question 1"
-      },
-      "projection_q1_a1": {
-        "zh-TW": "選項 1",
-        "en-US": "Option 1"
-      },
-      "projection_q1_a2": {
-        "zh-TW": "選項 2",
-        "en-US": "Option 2"
-      }
+    "l4_body": {
+      "zh-TW": "宜止息播種，先護根，守中養根，避風保本",
+      "en-US": "Cease new planting; first protect the roots; maintain stability, guard the foundation"
     },
+    "symbol_yin": {
+      "zh-TW": "陰",
+      "en-US": "Yin"
+    },
+    "symbol_yang": {
+      "zh-TW": "陽",
+      "en-US": "Yang"
+    },
+    "symbol_cai": {
+      "zh-TW": "財",
+      "en-US": "Wealth"
+    },
+    "symbol_guan": {
+      "zh-TW": "官",
+      "en-US": "Official"
+    },
+    "symbol_qing": {
+      "zh-TW": "情",
+      "en-US": "Emotion"
+    },
+    "symbol_yuan": {
+      "zh-TW": "緣",
+      "en-US": "Fate"
+    },
+    "projection_q1_title": {
+      "zh-TW": "投射問題 1",
+      "en-US": "Projection Question 1"
+    },
+    "projection_q1_a1": {
+      "zh-TW": "選項 1",
+      "en-US": "Option 1"
+    },
+    "projection_q1_a2": {
+      "zh-TW": "選項 2",
+      "en-US": "Option 2"
+    },
+    "zh-TW": {
+      "symbol_heaven": "天",
+      "symbol_earth": "地",
+      "symbol_water": "水",
+      "symbol_fire": "火",
+      "symbol_mountain": "山",
+      "symbol_fu": "福",
+      "symbol_shou": "壽",
+      "symbol_zi": "子",
+      "symbol_de": "德",
+      "symbol_xue": "學",
+      "symbol_shi": "事",
+      "symbol_you": "友",
+      "symbol_ming": "名",
+      "symbol_yun": "運"
+    },
+    "en": {
+      "symbol_heaven": "Heaven",
+      "symbol_earth": "Earth",
+      "symbol_water": "Water",
+      "symbol_fire": "Fire",
+      "symbol_mountain": "Mountain",
+      "symbol_fu": "Fortune",
+      "symbol_shou": "Longevity",
+      "symbol_zi": "Offspring",
+      "symbol_de": "Virtue",
+      "symbol_xue": "Learning",
+      "symbol_shi": "Affair",
+      "symbol_you": "Friendship",
+      "symbol_ming": "Fame",
+      "symbol_yun": "Luck"
+    }
+  },
   "stage2_compass": {
     "rules": {
       "min_selections": 2,
@@ -107,38 +143,122 @@
       {
         "symbol_id": "yin_01",
         "label_key": "symbol_yin",
-        "track": "INNER",
-        "angle": 0
+        "svg_ref": "",
+        "track": "INNER"
       },
       {
         "symbol_id": "yang_01",
         "label_key": "symbol_yang",
-        "track": "INNER",
-        "angle": 72
+        "svg_ref": "",
+        "track": "INNER"
+      },
+      {
+        "symbol_id": "heaven_01",
+        "label_key": "symbol_heaven",
+        "svg_ref": "",
+        "track": "INNER"
+      },
+      {
+        "symbol_id": "earth_01",
+        "label_key": "symbol_earth",
+        "svg_ref": "",
+        "track": "INNER"
+      },
+      {
+        "symbol_id": "water_01",
+        "label_key": "symbol_water",
+        "svg_ref": "",
+        "track": "INNER"
+      },
+      {
+        "symbol_id": "fire_01",
+        "label_key": "symbol_fire",
+        "svg_ref": "",
+        "track": "INNER"
+      },
+      {
+        "symbol_id": "mountain_01",
+        "label_key": "symbol_mountain",
+        "svg_ref": "",
+        "track": "INNER"
       },
       {
         "symbol_id": "cai_01",
         "label_key": "symbol_cai",
-        "track": "MIDDLE",
-        "angle": 0
+        "svg_ref": "",
+        "track": "MIDDLE"
       },
       {
         "symbol_id": "guan_01",
         "label_key": "symbol_guan",
-        "track": "MIDDLE",
-        "angle": 45
+        "svg_ref": "",
+        "track": "MIDDLE"
       },
       {
         "symbol_id": "qing_01",
         "label_key": "symbol_qing",
-        "track": "OUTER",
-        "angle": 0
+        "svg_ref": "",
+        "track": "MIDDLE"
       },
       {
         "symbol_id": "yuan_01",
         "label_key": "symbol_yuan",
-        "track": "OUTER",
-        "angle": 60
+        "svg_ref": "",
+        "track": "MIDDLE"
+      },
+      {
+        "symbol_id": "fu_01",
+        "label_key": "symbol_fu",
+        "svg_ref": "",
+        "track": "MIDDLE"
+      },
+      {
+        "symbol_id": "shou_01",
+        "label_key": "symbol_shou",
+        "svg_ref": "",
+        "track": "MIDDLE"
+      },
+      {
+        "symbol_id": "zi_01",
+        "label_key": "symbol_zi",
+        "svg_ref": "",
+        "track": "MIDDLE"
+      },
+      {
+        "symbol_id": "de_01",
+        "label_key": "symbol_de",
+        "svg_ref": "",
+        "track": "OUTER"
+      },
+      {
+        "symbol_id": "xue_01",
+        "label_key": "symbol_xue",
+        "svg_ref": "",
+        "track": "OUTER"
+      },
+      {
+        "symbol_id": "shi_01",
+        "label_key": "symbol_shi",
+        "svg_ref": "",
+        "track": "OUTER"
+      },
+      {
+        "symbol_id": "you_01",
+        "label_key": "symbol_you",
+        "svg_ref": "",
+        "track": "OUTER"
+      },
+      {
+        "symbol_id": "ming_01",
+        "label_key": "symbol_ming",
+        "svg_ref": "",
+        "track": "OUTER"
+      },
+      {
+        "symbol_id": "yun_01",
+        "label_key": "symbol_yun",
+        "svg_ref": "",
+        "track": "OUTER"
       }
     ]
   },
@@ -183,4 +303,3 @@
     }
   }
 }
-
