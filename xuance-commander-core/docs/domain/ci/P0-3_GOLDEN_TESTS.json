@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "version": "0.1",
+    "status": "editable",
+    "scope": "P0-3",
+    "facet": "income_expansion_pressure"
+  },
+  "tests": [
+    {
+      "id": "GT-01-modern-leak",
+      "input": "你最近壓力很大，可能有焦慮傾向。",
+      "expect": "FAIL",
+      "reason": "M3 modern psychology leakage"
+    },
+    {
+      "id": "GT-02-cross-domain",
+      "input": "這就像在暴風雨中航行，船快翻了。",
+      "expect": "FAIL",
+      "reason": "secondary metaphor domain violation"
+    },
+    {
+      "id": "GT-03-l5-instruction",
+      "input": "你應該立刻離職，減少開銷。",
+      "expect": "FAIL",
+      "reason": "L5 specific instruction"
+    },
+    {
+      "id": "GT-04-high-severity-no-cooling",
+      "input": "倉底已空，仍強行播種，只會全盤崩毀。",
+      "context": { "severity": 9 },
+      "expect": "FAIL",
+      "reason": "missing L4 cooling tokens"
+    },
+    {
+      "id": "GT-05-pass-safe",
+      "input": "溝渠淤塞，水流難入田地，宜先清淤養地。",
+      "context": { "severity": 5 },
+      "expect": "PASS"
+    }
+  ]
+}

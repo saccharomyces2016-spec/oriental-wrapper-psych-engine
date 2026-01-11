@@ -26,7 +26,7 @@ Cursor **不得**：
 3) 未入制度前，指令視為「取證報告」而非制度存在
 
 ## 證據與留存
-- Cursor 原始報告儲存於 tmp/audit/  
+- Cursor 原始報告儲存於 xuance-commander-core/tmp/audit/  
 - 任何制度納入必須在：
   - docs/governance/* md  
   - CURRENT.md  
@@ -83,3 +83,24 @@ Cursor 完成任務後，必須輸出：
 - Cursor 不得自行設計或決定玄學體系
 - 僅能依 Context Brief 分析、整理、檢查一致性
 - 所有體系選擇需由指揮官裁決
+
+<!-- XUANCE_CURSOR_SUGGESTIONS_ALLOWED_BEGIN -->
+## Cursor 建議輸出（允許，但必須標註為建議）
+
+允許：
+- Cursor 可以提供更多參考資訊、替代方案、風險提醒、可驗證步驟。
+- Cursor 可以主動指出「資料缺口」並提出如何補齊（只讀盤點 / 引用清單）。
+
+必須：
+- 任何「新增規則／改變結構／裁決」一律由指揮官（GPT）決定。
+- Cursor 的文字必須清楚標註：
+  - [SUGGESTION] 建議
+  - [EVIDENCE] 證據（含路徑指標）
+  - [RISK] 風險
+  - [NEXT] 下一步可跑的指令或檢查點
+
+禁止：
+- Cursor 不得把建議當作已定案寫入 SSOT（charter/roadmap/governance/adr/domain）。
+- Cursor 不得自行「收斂」為單一路線並宣告最佳解；只能提供可選方案 + 代價。
+<!-- XUANCE_CURSOR_SUGGESTIONS_ALLOWED_END -->
+

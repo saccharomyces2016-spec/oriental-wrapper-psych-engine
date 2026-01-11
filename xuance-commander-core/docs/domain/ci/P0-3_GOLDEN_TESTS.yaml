@@ -1,0 +1,30 @@
+facet: income_expansion_pressure
+tests:
+  - id: GT-01
+    input:
+      severity: 9
+      coping: -3
+      attribution: -2
+    expect:
+      l4: true
+      cooldown_applied: true
+
+  - id: GT-02
+    input:
+      narrative: "你的船正在沉沒"
+    expect:
+      result: FAIL
+      reason: banned_metaphor
+
+  - id: GT-03
+    input:
+      narrative: "倉底發霉，溝渠不通"
+    expect:
+      result: PASS
+
+  - id: GT-04
+    input:
+      narrative: "徹底毀滅，無路可走"
+    expect:
+      result: REWRITE
+      cooldown: true

@@ -1,0 +1,220 @@
+/**
+ * App Styles
+ * 
+ * 主應用樣式
+ * 
+ * 核心原則：
+ * - 使用 CSS Variables（由 Theme Engine 控制）
+ * - 所有設計保持不鎖定、不凍結、可回滾
+ */
+
+:root {
+  /* 預設主題變數（Theme Engine 會覆蓋） */
+  --theme-bg-color: #faf8f5;
+  --theme-text-color: #2c1810;
+  --theme-primary-font: 'Georgia', 'Times New Roman', serif;
+  --theme-secondary-font: 'Georgia', serif;
+  --theme-button-bg: #8b4513;
+  --theme-button-text: #ffffff;
+  --theme-button-bg-hover: #a0522d;
+  --theme-button-border: #6b3410;
+  --theme-button-bg-disabled: #ccc;
+  --theme-compass-bg: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--theme-primary-font, 'Georgia', serif);
+  background: var(--theme-bg-color, #faf8f5);
+  color: var(--theme-text-color, #2c1810);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--theme-bg-color, #faf8f5);
+  position: relative;
+}
+
+.app-header {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.locale-toggle {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--theme-text-color, #2c1810);
+  transition: all 0.2s ease;
+  font-family: var(--theme-primary-font, 'Georgia', serif);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.locale-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-loading,
+.app-error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  font-size: 1.125rem;
+  color: var(--theme-text-color, #2c1810);
+}
+
+.app-error button {
+  padding: 0.75rem 1.5rem;
+  background: var(--theme-button-bg, #8b4513);
+  color: var(--theme-button-text, #ffffff);
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--theme-primary-font, 'Georgia', serif);
+  transition: all 0.2s ease;
+}
+
+.app-error button:hover {
+  background: var(--theme-button-bg-hover, #a0522d);
+  transform: translateY(-1px);
+}
+
+/* Stage Pages */
+.stage-2-page,
+.stage-3-page,
+.stage-4-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Stage 3 Projection Card */
+.stage-3-page {
+  background: var(--theme-bg-color, #faf8f5);
+}
+
+.projection-card {
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.projection-card h2 {
+  margin-bottom: 2.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--theme-text-color, #2c1810);
+  text-align: center;
+  font-family: var(--theme-primary-font, 'Georgia', serif);
+  line-height: 1.6;
+}
+
+.projection-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.projection-option {
+  padding: 1.25rem 1.5rem;
+  background: rgba(250, 248, 245, 0.8);
+  border: 2px solid rgba(139, 69, 19, 0.2);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  color: var(--theme-text-color, #2c1810);
+  font-family: var(--theme-primary-font, 'Georgia', serif);
+}
+
+.projection-option:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: var(--theme-button-bg, #8b4513);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projection-option:active {
+  transform: translateX(2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stage 4 Results */
+.stage-4-page {
+  background: var(--theme-bg-color, #faf8f5);
+  padding: 3rem 2rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .app-header {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .locale-toggle {
+    padding: 0.4rem 0.875rem;
+    font-size: 0.8rem;
+  }
+
+  .projection-card {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .projection-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .projection-option {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .stage-4-page {
+    padding: 2rem 1rem;
+  }
+}

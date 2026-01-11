@@ -18,10 +18,16 @@
 <!-- XUANCE_P0_2_DECISION_END -->
 
 - [x] P0-1 選定第一個構面（facet）
-- [ ] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
-- [ ] P0-3 跑 golden tests 固定輸入輸出
-- [ ] P0-4 建立最小 UI 串接（讀 compiled facet -> 顯示敘事+建議+風險鏈）
-- [ ] P0-5 最小付費/權限策略（占位，不優化）
+- [x] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
+- [x] P0-3 跑 golden tests 固定輸入輸出
+- [x] P0-4 Facet Portability & Stress Test（驗證結構可移植性）
+- [x] P0-4.5 題目流程與分流系統設計（多階段分流系統設計）
+- [x] P0-5 建立最小 UI 串接（讀 compiled facet -> 顯示敘事+建議+風險鏈）
+  - 狀態：✅ **CANONIZED**（結案報告已定案，可開始工程實作）
+  - 結案日期：2026-01-10
+  - 核心交付物：通用玄學介面協議 (UMIP) v1.0
+  - 結案報告：`P0-5/P0-5_UMIP_CLOSURE_REPORT.md`
+- [ ] P0-6 最小付費/權限策略（占位，不優化）
 
 <!-- XUANCE_P0_1_FACET_SELECTION_BEGIN -->
 ### P0-1 決策：第一個 facet（單一構面）已選定
@@ -55,4 +61,44 @@
 ## P0-3 Narrative Sharpness / Esoteric Precision
 - Goal: Make outputs sharper, consistent, and testable within P0-2 boundaries.
 - Deliverables: Metrics v1, Skeleton v1, Lexicon v1, Diversity v1.
-- Status: ACTIVE (DRAFT)
+- Status: ✅ READY_TO_FREEZE
+
+## P0-4 Facet Portability & Stress Test
+- Goal: 驗證 P0-3 結構可在第二個 Facet（relationship_imbalance）上零改動搬移且不崩壞
+- Deliverables: Facet Brief, Portability Plan, Golden Tests Spec, Failure Audit Rules
+- Status: ✅ READY_TO_FREEZE
+
+## P0-4.5 題目流程與分流系統設計（Question Flow & Funnel System Design）
+- Goal: 設計一個能夠「涵蓋全人類、全年齡、全困擾、全困境」的多階段分流選擇系統，確定題型設計策略，為未來的八卦盤界面設計奠定基礎
+- Deliverables: 4-Stage Holographic Funnel System Design（FREEZE 狀態）
+- Status: ✅ COMPLETED
+- 核心設計：4 階段全像漏斗系統（八卦定方位 → 六親定物象 → 萬象定歸因 → 命盤綜合與斷語）
+- 八卦盤界面整合：Stage 1 使用八卦轉輪/八門卡片
+- 路由規則：精確路由 + 模糊路由（中宮/混沌處理）
+- 核心文件：`P0-4.5/P0-4.5_FUNNEL_SYSTEM_DESIGN.md`
+
+---
+
+## 主線工作目標體系（Master Work Objectives）
+
+**參考文件**：`roadmap/MASTER_WORK_OBJECTIVES.md`
+
+所有任務包發派必須按照 `MASTER_WORK_OBJECTIVES.md` 中定義的工作目標執行。
+
+**核心原則**：
+- 所有工作目標必須附屬於 `FULL/NORTH_STAR.md`（終極目標）
+- 任何目標不得違背終極目標的三個核心要求：
+  1. **真的能賺錢**（商業可行性）
+  2. **真的可以上國際**（國際化與市場擴展）
+  3. **真的可以幫到人**（使用者價值與效果驗證）
+
+**當前階段**：
+- Phase 0：MVP 核心功能（P0-1 至 P0-5）
+- Phase 1：使用者驗證與效果測量（P1-1 至 P1-3）
+- Phase 2：商業化基礎（P2-1 至 P2-4）
+- Phase 3：國際化基礎（P3-1 至 P3-5）
+- Phase 4：使用者研究與洞察（P4-1）
+- Phase 5：技術基礎設施（P5-1 至 P5-4）
+- Phase 6：安全性與倫理（P6-1 至 P6-3）
+
+**詳細工作目標與執行順序**：見 `roadmap/MASTER_WORK_OBJECTIVES.md`

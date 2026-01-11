@@ -142,3 +142,57 @@ Status: DRAFT / NON-BINDING.
 ## Metrics-Gated Narrative (DRAFT)
 Any narrative rule introduced after P0-3 must be evaluable by the current Sharpness Metrics.
 Non-evaluable prose is not eligible for promotion.
+
+<!-- ANTI_DRIFT_WORKFLOW_BEGIN -->
+## Anti-Drift Collaboration Workflow (DRAFT)
+
+### Purpose
+Prevent context drift caused by long chat threads by enforcing **document-first execution**.
+Chat is for **decisions only**; knowledge must be persisted to SSOT files.
+
+### Core Principles
+1. **Single Objective per Iteration**
+   - Each iteration must declare **one and only one** objective.
+   - Out-of-scope topics are deferred to a new phase.
+
+2. **Document-First, Chat-Second**
+   - Any accepted insight must be written to SSOT immediately.
+   - Chat memory is non-authoritative.
+
+3. **Adopt-First, Debate-Later**
+   - Good material is recorded as DRAFT (non-binding).
+   - Discussion happens after persistence, not before.
+
+4. **Executable Outputs Only**
+   - Accepted content must be:
+     - machine-checkable, or
+     - rule-based, or
+     - templated (reusable).
+   - Narrative opinions without structure are not persisted.
+
+5. **Minimal Follow-ups**
+   - Only ask follow-up questions that:
+     - unblock implementation, or
+     - reduce legal/ethical risk.
+   - Avoid exploratory or stylistic debate inside the same phase.
+
+### Standard Operating Steps (SOP)
+**Every iteration follows these 5 steps:**
+1. Declare the **single objective**.
+2. Collect advisor outputs.
+3. Decide:
+   - what is **accepted now** (write to SSOT),
+   - what is **deferred** (explicitly marked).
+4. Persist accepted items via command patch.
+5. Open a **new phase** for new questions.
+
+### Phase Boundaries
+- New ideas = new phase.
+- No retroactive edits without a new patch.
+- Previous phases remain editable but not silently rewritten.
+
+### Binding Level
+- All entries default to **DRAFT / NON-BINDING**.
+- Any lock-in requires explicit "BINDING" tag.
+
+<!-- ANTI_DRIFT_WORKFLOW_END -->

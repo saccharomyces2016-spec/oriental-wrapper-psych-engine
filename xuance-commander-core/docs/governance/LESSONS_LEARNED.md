@@ -46,8 +46,43 @@
 ---
 
 ## 本輪討論結論（要寫進治理層的共同約束）
-- 題目設計要達成終極目標，需要顧問介入（R1 題目設計 + R4 風險鏈）
+- 為避免偏離 NORTH_STAR Canon，題目設計階段必須顧問介入（R1 題目設計 + R4 風險鏈）
 - 顧問輸出只能是建議稿：docs/gem/runs/；採納後才可落盤 domain
+
+---
+
+## 失敗案例 C：2026-01 Governance Hardening Incident
+
+### 現象
+- 健康檢查發現大量結構性問題：
+  - Canon Path 違規：2 個（repo-root 層級的 ./docs, ./tmp）
+  - 單源規則違規：1 個（COMMON_PACKET.md 多份）
+  - 影子路徑引用：260 個
+  - 未索引治理文件：42 個
+  - 重複檔名：44 個
+
+### 根因（工程語言）
+**本次修復量偏大，原因不是人為疏失，而是：**
+> 「制度早期偏重『生成與推進』，對『結構健康』缺乏持續約束」
+
+具體表現：
+- 缺乏「寫入時驗證」機制（文件寫入時未檢查 Canon 路徑）
+- 缺乏「索引強制」機制（治理文件未強制要求索引）
+- 缺乏「引用檢查」機制（相對路徑引用未被阻止）
+- 健康檢查工具建立較晚，問題累積後才發現
+
+### 本專案對策（已採用/必維持）
+- 建立健康檢查機制（HEALTH_CHECK_PLAN.md）
+- 健康檢查 = 治理結構全面盤點（Governance Inventory）
+- FULL 快照必須引用健康檢查結果
+- 啟動制度改進提案機制（GOVERNANCE_IMPROVEMENT_PROPOSAL）
+
+### 驗收點
+- 健康檢查定期執行（每週一次）
+- 硬性指標（canon_path_violations, single_source_violations）必須為 0
+- 未來減少 80% 大型返工
+
+---
 - 舊版本題庫/題型應進 archive/legacy 層：只做「反例與訊號萃取」，不得直接貼進 domain
 <!-- XUANCE_LESSONS_FAILCASES_END -->
 

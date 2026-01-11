@@ -1,0 +1,62 @@
+{
+  "version": "2.0",
+  "scope": "P0-3 income_expansion_pressure",
+  "status": "FROZEN_FOR_P0-3",
+  "facet": "income_expansion_pressure",
+  "primary_metaphor": "agriculture_granary",
+  "note": "Facet限定，不具全域封鎖效力",
+  "blacklist": {
+    "clinical_medical": {
+      "cn": [
+        "焦慮", "憂鬱", "躁鬱", "創傷", "壓力", "失眠", "職業倦怠",
+        "心理諮商", "治療", "診斷", "症狀", "內分泌", "皮質醇", "多巴胺", "身心科"
+      ],
+      "en": [
+        "Anxiety", "Depression", "Trauma", "PTSD", "Burnout", "Stress", "Insomnia",
+        "Therapy", "Counseling", "Diagnosis", "Symptom", "Cortisol", "Dopamine", "Mental health", "Panic attack"
+      ]
+    },
+    "finance_corporate": {
+      "cn": [
+        "投資", "理財", "破產", "負債", "貸款", "槓桿", "被動收入", "資產配置",
+        "績效", "KPI", "OKR", "升遷", "離職", "裁員", "失業", "職場", "老闆", "主管", "面試"
+      ],
+      "en": [
+        "Investment", "Bankruptcy", "Debt", "Loan", "Passive income", "Asset", "KPI", "Performance",
+        "Promotion", "Resign", "Quit", "Layoff", "Unemployment", "Boss", "Manager", "Career path"
+      ]
+    },
+    "specific_instruction": {
+      "cn": [
+        "分手", "離婚", "買房", "買車", "存錢", "記帳", "兼職", "斜槓", "轉職", "跳槽"
+      ],
+      "en": [
+        "Break up", "Divorce", "Buy house", "Save money", "Accounting", "Side hustle", "Part-time job"
+      ]
+    },
+    "fatalism_fear": {
+      "cn": [
+        "註定失敗", "沒救了", "完蛋", "永遠無法", "報應", "死路", "絕望", "災難"
+      ],
+      "en": [
+        "Doomed", "Hopeless", "Irreversible", "Ruined", "Disaster", "Karma (punitive)", "Forever stuck"
+      ]
+    }
+  },
+  "rule": {
+    "on_hit": "FAIL",
+    "no_translation_recovery": true,
+    "note": "命中任一詞彙 → 直接 FAIL，不可轉譯補救"
+  },
+  "exceptions": {
+    "context_whitelist": {
+      "note": "Internal specification documents may use these terms in technical context only. They must not appear in user-facing narratives.",
+      "allowed_contexts": [
+        "internal_field_names",
+        "test_case_descriptions",
+        "specification_documents",
+        "code_comments"
+      ]
+    }
+  }
+}

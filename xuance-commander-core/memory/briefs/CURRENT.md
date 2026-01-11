@@ -1342,7 +1342,7 @@ Next Dependency:
 <!-- DESIGN_NOTES_DEFERRED_BEGIN -->
 
 ### 題目形式（Question Modality）— 重要但延後封板（避免過早鎖死）
-背景：我們的終極目標是把「全世界所有人的狀態」收斂到可維護、可解釋、可擴充的結構，因此 **題目形式/互動形式** 對「訊號品質」與「可收斂性」高度關鍵。
+背景：為服務 NORTH_STAR Canon（見 FULL/NORTH_STAR.md），本階段目標是將「全世界所有人的狀態」收斂到可維護、可解釋、可擴充的結構，因此 **題目形式/互動形式** 對「訊號品質」與「可收斂性」高度關鍵。
 
 現狀（已知約束）：
 - 依 **ADR-0006**：P0-2 期間禁止引入創新 UI 交互（例如八卦盤、多代幣符號多選）。
@@ -1584,3 +1584,12 @@ P0-3 Roles Activated:
 - R2: Esoteric Language Refiner
 - R4: Safety Consistency Auditor
 Briefs: docs/gem/briefs/BRIEF_P0-3_*.md
+
+<!-- ANTI_DRIFT_WORKFLOW_POINTER_BEGIN -->
+Process Update:
+- Adopted Anti-Drift Collaboration Workflow.
+- Rule: chat is for decisions; SSOT is the authority.
+- Practice: accept-first (DRAFT), debate-later, phase-separated.
+- Status: ACTIVE / NON-BINDING (subject to refinement).
+<!-- ANTI_DRIFT_WORKFLOW_POINTER_END -->
+

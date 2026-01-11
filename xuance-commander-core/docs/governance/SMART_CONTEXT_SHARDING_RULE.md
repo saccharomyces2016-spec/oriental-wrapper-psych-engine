@@ -20,7 +20,7 @@
 3) EVIDENCE（工程證據）
    - Cursor 掃描 / Audit / Verification Pack
    - 僅以「摘要指標」寫入 MASTER
-   - 原始檔保留於 tmp/audit（非 SSOT）
+   - 原始檔保留於 xuance-commander-core/tmp/audit（非 SSOT）
 
 ## Cursor 報告整合規則
 - Cursor 報告不得全文寫入 MASTER

@@ -33,6 +33,10 @@ write_file () {
   write_file "memory/briefs/CURRENT.md"
   write_file "memory/changes/CHANGELOG.md"
   write_file "docs/governance/TEXT_ONLY_EXECUTION_RULES.md"
+  write_file "docs/governance/FILE_WRITE_LOCATION_RULE.md"
+  write_file "docs/governance/GLOBAL_PATH_CANON.md"
+  write_file "docs/governance/ABSOLUTE_REFERENCE_RULE.md"
+  write_file "docs/governance/MASTER_SNAPSHOT_USAGE_GUIDE.md"
   write_file "docs/governance/BOOT_RULE.md"
   write_file "docs/governance/AUTONOMOUS_STOP_PROTOCOL.md"
   write_file "docs/governance/PREWRITE_STATE_CONFIRMATION.md"
@@ -48,7 +52,28 @@ write_file () {
   write_file "docs/adr/ADR_0004_ai_advisory_roles_and_gem_protocol.md"
   write_file "memory/briefs/REPO_STATUS.md"
   write_file "memory/briefs/LAST_COMMAND_STATUS.md"
+  write_file "docs/ops/HEALTH_CHECK_RECORDS.md"
 } > "$OUT"
+
+# Append health check summary to FULL snapshot
+LATEST_HEALTH_CHECK="$CORE/tmp/health_check/LATEST_HEALTH_CHECK.md"
+if [ -f "$LATEST_HEALTH_CHECK" ]; then
+  LATEST_REPORT_DIR=$(grep "^path:" "$LATEST_HEALTH_CHECK" | awk '{print $2}')
+  if [ -n "$LATEST_REPORT_DIR" ] && [ -f "$CORE/$LATEST_REPORT_DIR/summary.md" ]; then
+    {
+      echo ""
+      echo "---"
+      echo "## HEALTH_CHECK_STATUS (Latest)"
+      echo ""
+      echo "**Latest Report:** $LATEST_REPORT_DIR"
+      echo ""
+      cat "$CORE/$LATEST_REPORT_DIR/summary.md"
+      echo ""
+      echo "**Full Report:** See $LATEST_REPORT_DIR/"
+      echo "**Records:** docs/ops/HEALTH_CHECK_RECORDS.md"
+    } >> "$OUT"
+  fi
+fi
 
 # include: latest inventory pointer (governance sprint)
 # LATEST_INVENTORY_REPORT.md

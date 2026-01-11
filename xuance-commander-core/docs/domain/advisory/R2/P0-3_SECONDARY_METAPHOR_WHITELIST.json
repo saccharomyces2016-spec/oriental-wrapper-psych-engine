@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "version": "1.0",
+    "facet": "income_expansion_pressure",
+    "primary_metaphor": "agriculture_granary",
+    "policy": "terrestrialization_required"
+  },
+  "allowed": {
+    "navigation_land": {
+      "scope": ["L1", "L4"],
+      "terms": ["迷途", "歸途", "方位", "星象", "指北", "地標"]
+    },
+    "hydrology_irrigation": {
+      "scope": ["L1", "L2", "L3", "L4"],
+      "terms": ["溝渠", "水閘", "引水", "疏通", "乾涸", "氾濫", "濁流", "清流"]
+    },
+    "atmospheric_illusion": {
+      "scope": ["L3"],
+      "terms": ["霧氣", "瘴氣", "虛景", "鬼火", "熱浪"]
+    }
+  },
+  "banned": {
+    "marine": ["船", "帆", "錨", "港口", "海浪", "沉沒", "航向", "燈塔"],
+    "deep_sea": ["深海", "潛水", "溺水", "海底"],
+    "warfare": ["戰役", "戰勝", "血路", "殲滅"]
+  },
+  "rule": {
+    "on_banned_hit": "FAIL",
+    "on_allowed_scope_violation": "FAIL"
+  }
+}

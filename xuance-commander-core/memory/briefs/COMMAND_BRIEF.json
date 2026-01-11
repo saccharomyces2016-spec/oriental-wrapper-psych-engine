@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-07T16:50:21",
+  "generatedAt": "2026-01-10T16:41:31",
   "mustRead": [
     "charter/CHARTER.md",
     "roadmap/ROADMAP.md",
     "memory/briefs/CURRENT.md",
     "docs/governance/TEXT_ONLY_EXECUTION_RULES.md",
     "memory/index/COMMANDER_ENTRYPOINTS.md",
-    "docs/adr/ADR_0005_user_override_and_fatigue_rollback.md"
+    "docs/adr/ADR_0006_question_modality_scope_lock.md"
   ]
 }

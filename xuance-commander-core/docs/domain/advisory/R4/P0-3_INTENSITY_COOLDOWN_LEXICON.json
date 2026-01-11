@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "version": "1.0",
+    "purpose": "de-escalation",
+    "apply_when": "Severity>=7 OR L4"
+  },
+  "replace_rules": [
+    {
+      "from": ["崩塌", "毀滅", "燒盡", "枯死"],
+      "to": "消耗"
+    },
+    {
+      "from": ["洪災", "大旱", "冰封"],
+      "to": "嚴峻天候"
+    },
+    {
+      "from": ["絕路", "終局", "沒救"],
+      "to": "關口"
+    }
+  ],
+  "enforcement": {
+    "design_phase": "REJECT",
+    "runtime": "REWRITE"
+  }
+}

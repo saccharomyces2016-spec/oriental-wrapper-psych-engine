@@ -1,0 +1,35 @@
+/**
+ * Global Styles
+ * 
+ * 全域樣式
+ * 
+ * 核心原則：
+ * - 使用 CSS Variables（由 Theme Engine 控制）
+ * - 所有設計保持不鎖定、不凍結、可回滾
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--theme-primary-font, 'Georgia', 'Times New Roman', serif);
+  background: var(--theme-bg-color, #faf8f5);
+  color: var(--theme-text-color, #2c1810);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

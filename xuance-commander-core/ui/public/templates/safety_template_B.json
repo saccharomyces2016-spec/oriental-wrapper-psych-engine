@@ -1,0 +1,12 @@
+{
+  "template_id": "B",
+  "title_key": "l4_safety_template_b_title",
+  "body_keys": [
+    "l4_safety_template_b_body"
+  ],
+  "cta": {
+    "label_key": "l4_safety_template_b_cta",
+    "href": null
+  }
+}
+

@@ -19,6 +19,12 @@
 - 然後必讀：memory/briefs/COMMAND_BRIEF.md
 - 未跑 preflight / 未讀 COMMAND_BRIEF -> 不得開始做任何決策或產出指令包
 
+## 文件放置規範（寫入文件前必讀）
+- **必須參考**：`docs/governance/CURSOR_FILE_PLACEMENT_RULE.md`
+- 每次寫入文件前，必須檢查文件放置位置是否符合規範
+- 每次生成任務包前，必須參考文件放置規範
+- 使用者說「請參考你的規範」時，即指此文件
+
 ## 缺資料時的最低要求（替代上傳整包）
 - 先索取 xuance-commander-core/out/CHAT_PACKET.md
 - 生成方式：bash tools/export_chat_packet.sh .

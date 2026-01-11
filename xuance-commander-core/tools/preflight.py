@@ -24,6 +24,7 @@ def main():
   current = ROOT / "memory" / "briefs" / "CURRENT.md"
   rules = ROOT / "docs" / "governance" / "TEXT_ONLY_EXECUTION_RULES.md"
   entry = ROOT / "memory" / "index" / "COMMANDER_ENTRYPOINTS.md"
+  file_placement_rule = ROOT / "docs" / "governance" / "CURSOR_FILE_PLACEMENT_RULE.md"
   adr = newest_adr()
 
   brief_md = ROOT / "memory" / "briefs" / "COMMAND_BRIEF.md"
@@ -70,6 +71,14 @@ def main():
   md.append("（以下內容為原文節錄；若衝突，以 docs/governance/TEXT_ONLY_EXECUTION_RULES.md 為準）")
   md.append("")
   md.append(read(rules).strip())
+  md.append("")
+  md.append("## 文件放置規範（引用）")
+  md.append("**重要**：每次寫入文件前，請參考 `docs/governance/CURSOR_FILE_PLACEMENT_RULE.md`")
+  md.append("")
+  md.append("**文件放置規範引用**：")
+  md.append("- 權威規範：`docs/governance/CURSOR_FILE_PLACEMENT_RULE.md`")
+  md.append("- 文件分類對照表、決策流程、重複文件清理規則均在此規範中")
+  md.append("- 使用者說「請參考你的規範」時，即指此文件")
   md.append("")
   if adr:
     md.append("## LATEST ADR（參考）")

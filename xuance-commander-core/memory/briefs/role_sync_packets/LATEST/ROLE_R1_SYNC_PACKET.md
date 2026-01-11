@@ -2136,7 +2136,7 @@ Role Sync Packet 內文必至少包含：
 ---
 
 ## 本輪討論結論（要寫進治理層的共同約束）
-- 題目設計要達成終極目標，需要顧問介入（R1 題目設計 + R4 風險鏈）
+- 題目設計為服務 NORTH_STAR Canon，需要顧問介入（R1 題目設計 + R4 風險鏈）
 - 顧問輸出只能是建議稿：docs/gem/runs/；採納後才可落盤 domain
 - 舊版本題庫/題型應進 archive/legacy 層：只做「反例與訊號萃取」，不得直接貼進 domain
 <!-- XUANCE_LESSONS_FAILCASES_END -->

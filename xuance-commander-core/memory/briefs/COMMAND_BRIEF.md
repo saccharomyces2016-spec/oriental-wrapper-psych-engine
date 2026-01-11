@@ -1,6 +1,6 @@
 # COMMAND BRIEF（指揮官每次必讀，否則不得開始工作）
 
-- generatedAt: 2026-01-07T16:50:21
+- generatedAt: 2026-01-10T16:41:31
 
 ## 必讀清單（只以文本為準）
 - charter/CHARTER.md
@@ -8,7 +8,7 @@
 - memory/briefs/CURRENT.md
 - docs/governance/TEXT_ONLY_EXECUTION_RULES.md
 - memory/index/COMMANDER_ENTRYPOINTS.md
-- docs/adr/ADR_0005_user_override_and_fatigue_rollback.md
+- docs/adr/ADR_0006_question_modality_scope_lock.md
 
 ## CHARTER（摘要）
 （以下內容為原文節錄；若衝突，以 charter/CHARTER.md 為準）
@@ -101,10 +101,12 @@
 <!-- XUANCE_P0_2_DECISION_END -->
 
 - [x] P0-1 選定第一個構面（facet）
-- [ ] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
-- [ ] P0-3 跑 golden tests 固定輸入輸出
-- [ ] P0-4 建立最小 UI 串接（讀 compiled facet -> 顯示敘事+建議+風險鏈）
-- [ ] P0-5 最小付費/權限策略（占位，不優化）
+- [x] P0-2 建立該 facet 的 questions/scoring/reco/narr/risk
+- [x] P0-3 跑 golden tests 固定輸入輸出
+- [x] P0-4 Facet Portability & Stress Test（驗證結構可移植性）
+- [x] P0-4.5 題目流程與分流系統設計（多階段分流系統設計）
+- [ ] P0-5 建立最小 UI 串接（讀 compiled facet -> 顯示敘事+建議+風險鏈）
+- [ ] P0-6 最小付費/權限策略（占位，不優化）
 
 <!-- XUANCE_P0_1_FACET_SELECTION_BEGIN -->
 ### P0-1 決策：第一個 facet（單一構面）已選定
@@ -128,10 +130,75 @@
 - Exploration / Unlock Mechanism（探索／抽取式呈現）：  
   以 UX 機制提高使用者持續互動動機，不影響診斷核心。
 
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_POINTER_BEGIN -->
+### P0-2（延伸任務）：Output Contract（ACTIVE）
+- 目的：定義系統級輸出合約（允許/禁止輸出、抽象層級、翻譯邊界、安全 fallback）。
+- 顧問啟動：R1/R2/R4（briefs 見 docs/gem/briefs/BRIEF_P0-2_output_contract_*.md）
+- 備註：此任務不含 UI、不含新題目內容。
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_POINTER_END -->
+
+## P0-3 Narrative Sharpness / Esoteric Precision
+- Goal: Make outputs sharper, consistent, and testable within P0-2 boundaries.
+- Deliverables: Metrics v1, Skeleton v1, Lexicon v1, Diversity v1.
+- Status: ✅ READY_TO_FREEZE
+
+## P0-4 Facet Portability & Stress Test
+- Goal: 驗證 P0-3 結構可在第二個 Facet（relationship_imbalance）上零改動搬移且不崩壞
+- Deliverables: Facet Brief, Portability Plan, Golden Tests Spec, Failure Audit Rules
+- Status: ✅ READY_TO_FREEZE
+
+## P0-4.5 題目流程與分流系統設計（Question Flow & Funnel System Design）
+- Goal: 設計一個能夠「涵蓋全人類、全年齡、全困擾、全困境」的多階段分流選擇系統，確定題型設計策略，為未來的八卦盤界面設計奠定基礎
+- Deliverables: 4-Stage Holographic Funnel System Design（FREEZE 狀態）
+- Status: ✅ COMPLETED
+- 核心設計：4 階段全像漏斗系統（八卦定方位 → 六親定物象 → 萬象定歸因 → 命盤綜合與斷語）
+- 八卦盤界面整合：Stage 1 使用八卦轉輪/八門卡片
+- 路由規則：精確路由 + 模糊路由（中宮/混沌處理）
+- 核心文件：`P0-4.5/P0-4.5_FUNNEL_SYSTEM_DESIGN.md`
+
+---
+
+## 主線工作目標體系（Master Work Objectives）
+
+**參考文件**：`roadmap/MASTER_WORK_OBJECTIVES.md`
+
+所有任務包發派必須按照 `MASTER_WORK_OBJECTIVES.md` 中定義的工作目標執行。
+
+**核心原則**：
+- 所有工作目標必須附屬於 `FULL/NORTH_STAR.md`（終極目標）
+- 任何目標不得違背終極目標的三個核心要求：
+  1. **真的能賺錢**（商業可行性）
+  2. **真的可以上國際**（國際化與市場擴展）
+  3. **真的可以幫到人**（使用者價值與效果驗證）
+
+**當前階段**：
+- Phase 0：MVP 核心功能（P0-1 至 P0-5）
+- Phase 1：使用者驗證與效果測量（P1-1 至 P1-3）
+- Phase 2：商業化基礎（P2-1 至 P2-4）
+- Phase 3：國際化基礎（P3-1 至 P3-5）
+- Phase 4：使用者研究與洞察（P4-1）
+- Phase 5：技術基礎設施（P5-1 至 P5-4）
+- Phase 6：安全性與倫理（P6-1 至 P6-3）
+
+**詳細工作目標與執行順序**：見 `roadmap/MASTER_WORK_OBJECTIVES.md`
+
 ## CURRENT（摘要）
 （以下內容為原文節錄；若衝突，以 memory/briefs/CURRENT.md 為準）
 
 # CURRENT（當前狀態短摘要）
+
+<!-- XUANCE_RESEARCH_LEGACY_SEPARATION_POINTER_BEGIN -->
+## 資料層分離（RESEARCH vs LEGACY_FAILED vs CURRENT_DOMAIN）— 指標
+- 規則（SSOT）：docs/governance/RESEARCH_LEGACY_SEPARATION_RULE.md
+- RESEARCH（Google Notebook 匯集）：docs/domain/research/RESEARCH/
+- LEGACY_FAILED（舊失敗版本）：docs/legacy/115_1_3_my-first-app_failed/
+- 現行主線產物：docs/domain/ + domain/
+
+補充：
+- 使用者口令「記得寫進去」= 立即產出指令包寫入 SSOT，禁止直接寫快照；規則：docs/governance/REMEMBER_MEANS_COMMAND_PACK_RULE.md
+- 顧問完整背景提案包：docs/gem/briefs/BRIEF_P0-2_ADVISOR_CONTEXT_SUPERPACK_income_expansion_pressure.zh.md
+<!-- XUANCE_RESEARCH_LEGACY_SEPARATION_POINTER_END -->
+
 
 ## P0-2｜Facet 設計語境已確認
 - 題型與結果統一採用東方玄學體系（五行／陰陽／八卦等）
@@ -141,6 +208,7 @@
 ## P0-2（income_expansion_pressure）決策已鎖定
 - R1：採用「歲時農耕・倉廩觀」作為題目與敘事主隱喻
 - R4：採用 A/B 風險鏈結構（對外全部轉譯為農耕詞彙，避免隱喻混用）
+- R4（用詞校正）：為了讓中/高風險層級一眼可辨，已將四條風險鏈的玄學名改為「氣滯流塞（中）／基石掏空（高）／雙力相衝（中）／逐幻斷航（高）」，並補上 Severity Cue。
 - 下一步：產出 questions + scoring -> 交 R2 做 narr/reco -> 風險鏈落盤 -> golden tests
 - 證據：docs/gem/runs/DECISION_P0-2_income_expansion_pressure_20260106.md
 
@@ -1399,6 +1467,319 @@ Decision: GPT only
 Next:
 - 研究完成後提交裁決（切 FULL）
 
+---
+## 【主線啟動｜P0-2 Facet 設計階段｜進行中】
+
+狀態切換：
+- 已從「治理/準備階段」正式進入 ROADMAP Phase 0 / P0-2
+- 當前任務：income_expansion_pressure 的題目／評分／敘事／風險鏈設計（顧問制）
+
+強制引用來源（不可省略）：
+1) 失敗案例（Legacy Failed）
+   - 路徑：docs/legacy/115_1_3_my-first-app_failed/
+   - 用途：避免重犯已知的版本漂移、規則卡死、敘事失效問題
+2) 研究文獻（Research / Google Notebook 匯整）
+   - 路徑：docs/domain/research/
+   - 用途：提供可推導的結構依據（僅內部使用，不外露）
+
+執行規則：
+- 題目與風險鏈設計一律走 Research → Brief → Advisor → Commander → Domain Gate
+- 未引用 legacy 或 research 的顧問輸出，一律退回重做
+
+下一個檢查點：
+- 啟動 R1（題目設計顧問）與 R4（風險鏈顧問）
+- 產出 docs/gem/runs/ 下的顧問建議稿
+- 由指揮官裁決後，才允許落盤 domain/
+
+
+---
+## 【P0-2｜R1+R4 已啟動】
+- 啟動方式：A（題目＋風險鏈）
+- 時間：2026-01-07T18:02:55+0800
+- 強制引用：
+  - Legacy（失敗版）：xuance-commander-core/docs/legacy/115_1_3_my-first-app_failed
+  - Research（Google Notebook 匯整）：xuance-commander-core/docs/domain/research
+- 限制：
+  - 顧問僅產出研究/建議，不得決定結構或落盤 domain/
+  - 必須逐條引用來源（legacy / research），未引用一律退回
+- 輸出位置：docs/gem/runs/
+
+---
+
+### P0-2 | R4 Structural Assets Integrated
+
+- R4 risk-chain structures accepted at engine level.
+- Stored as SSOT under docs/domain/advisory/R4/.
+- Exclusions confirmed and locked.
+- Awaiting metaphysical + plain-language translation pass.
+- No UI or scoring dependency introduced.
+
+Next Dependency:
+- R4 Translation Addendum
+- R1 Question Mapping
+
+---
+## 【決策鎖定｜ADR-0006】Facet Question Design Scope Lock (P0-2)
+- **範圍鎖定**：P0-2 期間禁止引入創新 UI 交互（八卦盤、符號多選）。
+- **優先級**：結構正確性 > UI 表現力。
+- **未來保留**：符號化多代幣介面保留至 P0-2 之後。
+- **研究規範**：R1 不得直接消費原始研究語料，必須使用經指揮官批准的萃取物。
+- **文件**：docs/adr/ADR_0006_question_modality_scope_lock.md
+
+<!-- DESIGN_NOTES_DEFERRED_BEGIN -->
+
+### 題目形式（Question Modality）— 重要但延後封板（避免過早鎖死）
+背景：為服務 NORTH_STAR Canon（見 FULL/NORTH_STAR.md），本階段目標是將「全世界所有人的狀態」收斂到可維護、可解釋、可擴充的結構，因此 **題目形式/互動形式** 對「訊號品質」與「可收斂性」高度關鍵。
+
+現狀（已知約束）：
+- 依 **ADR-0006**：P0-2 期間禁止引入創新 UI 交互（例如八卦盤、多代幣符號多選）。
+- 因此本階段只做：**結構正確性 + 可穩定分 band 的題目/選項**（UI 先占位，不做創新落地）。
+
+未來必討論（強制提醒點，不等於制度/不鎖死）：
+- 在進入 **P0-4 最小 UI 串接** 前，必須開一個「Question Modality 設計會議」：
+  - 目的：定義「幾階段問法」與每階段可用題型（單選/複選/光譜/情境/卡牌/連連看/符號盤等）的適用條件。
+  - 產出：只允許是「候選方案 + 取捨理由 + 驗收方式」，不得直接封成硬制度；需要封板時走 ADR。
+
+候選方向（記錄想法，未裁決）：
+- **八卦盤（符號/詞彙多選）** 作為「高維掃描」：讓使用者用多個獨立詞彙拼出狀態分佈，可用加權/去相關做收斂。
+- **單選/情境題** 作為「強制收斂」：用少量關鍵題把 band 拉開，降低漂移。
+- **兩段式順序**（未定，後續再決）：
+  - 方案 A：先八卦盤多選（掃描）→ 再單選（收斂/確認）
+  - 方案 B：先單選（定位類別）→ 再八卦盤（細化強弱/細節）
+
+陰陽（Yin/Yang）納入討論（記錄想法，未裁決）：
+- 若主打五行，可考慮把「陰陽兩極」作為 **強弱/方向性** 的輔助軸（例如同一五行在陰/陽呈現不同表徵）。
+- 後續諮詢東方命理顧問時，必須把「陰陽是否納入、如何映射到題目形式」列為討論題。
+
+文本安全原則（避免上下文飄移）：
+- 本段為 **提醒與候選清單**，不得被解讀為已封板制度。
+- 未來若採用任何新題型/新交互，必須在 ROADMAP 記錄版本調整，必要時用 ADR 封板。
+
+作風（本專案的工作習慣，避免草率）：
+- 可慢，不可草率：每一步都要有「可驗收」與「可回滾」的最小證據。
+- 題目形式與互動一律以「可維護 + 可重跑 + 可審計」為先，不以炫技為先。
+
+## Design Notes｜Deferred Improvements（未封板｜非制度｜僅記錄）
+
+> 狀態說明：
+> - 本段為「高價值但尚未進入制度化／封板」之設計判斷與建議
+> - 不得視為規則、不可作為治理依據
+> - 未來僅在「明確回合指定修正」時才可升級
+
+### 本回合共識（已確認）
+1. **問題一與問題二屬於「可修正但非立即阻斷主線」**
+   - 同意延後修正
+   - 不得因方便而提前制度化
+   - 不可寫死為治理規則，避免上下文漂移誤判為 Canon
+
+2. **文本安全原則**
+   - CURRENT 中僅保留「判斷紀錄」
+   - 不引入 MUST / SHALL / HARD RULE 等語言
+   - 不新增觸發條件、不建立隱性依賴
+
+### 已觀察到的優點（保留）
+- 目前 R4 結構具有「可回收性高、可轉譯性佳」的優點
+- 有助於後續從內部風險鏈轉譯為外層玄學語境
+- 與既有 Research / Legacy Failure 的避免條件不衝突
+
+### 明確待改善項（暫不處理）
+- 資料覆蓋完整性仍需二次盤點（含 Research 大檔與 Failed 題型）
+- 顧問是否「實際消費全部來源」仍需驗證機制（未建）
+- 此類改善需搭配工具或稽核腳本，暫不人工補救
+
+### 禁止事項（重要）
+- ❌ 不得將本段內容引用為制度
+- ❌ 不得作為顧問輸入的硬約束
+- ❌ 不得在未指揮官明確指示下升級為 ADR / Governance
+
+- 【UI 設計提醒｜未封板｜非制度】後續只要進入「UI/題型呈現」設計討論（不論是哪個 facet），必須把「八卦盤／符號化多代幣複選」作為候選題型之一納入比較與取捨（至少討論一次），避免上下文漂移導致遺漏。
+  - 這是提醒規則（Design Note），不是制度；不得因此鎖死題型，也不得在 P0-2 期間引入創新 UI（遵守 ADR-0006）。
+
+- 【陰陽軸概念｜未封板｜非制度】除五行外，保留把「陰陽兩極/雙向向度」作為"感受強弱/趨勢方向"的輔助軸之可能性（例如：同一五行狀態下，以陰陽標示偏盛/偏衰、偏躁/偏滯等）。
+  - 待後續諮詢東方命理/五行顧問時，必須把此概念列為討論題：是否適合、如何不破壞主隱喻、如何映射到 scoring/敘事而不暴露內核。
+  - 現階段只記錄為候選設計方向，不寫死為制度/必做項。
+
+- 【待追問阿萬（R1 顧問）｜問題清單】若需要回合追問，請直接用以下問題：
+  - Q1：在不違反「純玄學體驗」與 ADR-0006（P0-2 禁止創新 UI）前提下，你的 R1 藍圖是否能被改寫成「多代幣複選（八卦盤/字詞盤）」的題型？若可以，請給一個"同隱喻、同分段"的替代題型草案（只要 1 題示例）。
+  - Q2：你的三段式（Climate/Granary/New Field）能否加入"陰陽軸"的輔助辨識（例如同一段內加上偏盛/偏衰）而不讓使用者覺得在做量表？若可以，請說明最小改動策略（不改結構，只加辨識）。
+  - Q3：你在本次輸出中，是否有使用到 legacy/router 與 research 指標（不是引用原文，而是遵守 Research→Brief→Advisor Gate 的萃取物）？若沒有，請列出你缺的檔案名稱/路徑指標。
+
+<!-- DESIGN_NOTES_DEFERRED_END -->
+
+<!-- DESIGN_STRATEGY_NOTES_BEGIN -->
+P0-2 Design Notes Update:
+- R1 question strategy insights recorded in QUESTION_STRATEGY_NOTES.md
+- Multi-stage questioning, Yin–Yang spectrum, and symbol-first strategy acknowledged
+- All above marked as NON-BINDING / DRAFT
+- Advisor iteration protocol draft created to prevent context drift
+<!-- DESIGN_STRATEGY_NOTES_END -->
+
+
+<!-- GLOBAL_OUTPUT_CONTRACT_POINTER_BEGIN -->
+Design Strategy Update:
+- Added Global Goal & Output Contract (DRAFT) to QUESTION_STRATEGY_NOTES.md
+- Added Yin–Yang axis refinement requirement (separate attribution/coping/severity axes)
+- Added Advisor follow-up checklist to ADVISOR_ITERATION_PROTOCOL.md
+<!-- GLOBAL_OUTPUT_CONTRACT_POINTER_END -->
+
+
+<!-- R1_REFINED_SPEC_POINTER_BEGIN -->
+Design Strategy Update:
+- Recorded R1 Refined Specification Summary (P0-2) in QUESTION_STRATEGY_NOTES.md (DRAFT)
+- Added Minimal Implementation Asks addendum to ADVISOR_ITERATION_PROTOCOL.md (DRAFT)
+<!-- R1_REFINED_SPEC_POINTER_END -->
+
+
+<!-- R1_ENGINEERING_HANDOFF_POINTER_BEGIN -->
+Design Strategy Update:
+- Recorded R1 Engineering Handoff Spec (P0-2) in QUESTION_STRATEGY_NOTES.md (DRAFT)
+- Noted two required clarifications (score range/normalization; gate variable definitions)
+<!-- R1_ENGINEERING_HANDOFF_POINTER_END -->
+
+
+<!-- R1_HARD_DEFINITIONS_POINTER_BEGIN -->
+Design Strategy Update:
+- Recorded R1 Hard Definitions (P0-2): native 0–10 integer severity, explicit gate variable semantics, token severity numeric mapping.
+- Applied required patch: Q1(C 死水) severity set to 0 to make 0–10 range reachable; noted coping may reach -5 hence clamp is required.
+<!-- R1_HARD_DEFINITIONS_POINTER_END -->
+
+
+<!-- P0_2_PHASE_CLOSURE_BEGIN -->
+P0-2 Question Design:
+- Status: Phase Closed (Implementation-Ready)
+- Output: 5-question symbol-first assessment with integer scoring & gates
+- Notes: All UI, follow-up probes, and intervention layers explicitly deferred
+- Reference: docs/domain/design/P0_2_PHASE_CLOSURE_SUMMARY.md
+<!-- P0_2_PHASE_CLOSURE_END -->
+
+
+<!-- COLLABORATION_MODEL_BEGIN -->
+Collaboration Model — Current Assessment:
+
+- Role coverage is **sufficient** for current and foreseeable scope.
+- No new advisory roles are required at this stage.
+- Priority is **institutional clarity**, not role expansion.
+
+Operating Style (Institutionalized):
+- Decisions are based on **textual records**, not conversational memory.
+- All insights are recorded first, refined later.
+- Early over-inclusion is preferred; pruning occurs only after convergence.
+
+Design Philosophy:
+- Aim: extreme psychological resolution + esoteric surface.
+- Engine may be scientific; output must never feel scientific.
+- Accuracy > explanation; resonance > transparency.
+
+Status: ACTIVE PRACTICE / NON-BINDING.
+<!-- COLLABORATION_MODEL_END -->
+
+
+<!-- P0-2_QUESTION_DESIGN_CLOSED -->
+P0-2 Phase Status Update:
+- Question Design (R1) has reached **Engineering Handoff completeness**.
+- Status: CLOSED for MVP scope.
+- Note: Future refinements allowed via iteration protocol; core logic is stable.
+<!-- /P0-2_QUESTION_DESIGN_CLOSED -->
+
+
+<!-- P0-2_OUTPUT_CONTRACT_BEGIN -->
+## Mainline Task: P0-2 Output Contract (ACTIVE)
+
+### Objective
+Define a **system-level Output Contract** that specifies:
+- What kinds of results the engine is allowed to output
+- The semantic granularity of those outputs
+- Explicit boundaries between:
+  - Internal psychological inference
+  - External esoteric narrative presentation
+  - Forbidden interpretations (diagnosis, concrete life decisions)
+
+### Why this task exists
+- Prevent UI-first or content-first drift
+- Enable future domain extensions (e.g., family, in-law dynamics) without rewriting core logic
+- Ensure all outputs remain aligned with risk & ethics constraints
+
+### In Scope
+- Result Archetype definitions (types, not content)
+- Allowed vs forbidden inference rules
+- Output tone & abstraction level
+- Extension hook rules (when follow-up probes are allowed)
+
+### Out of Scope (for this phase)
+- UI / visual design
+- New question content
+- Domain-specific advice (e.g.,婆媳、職場)
+
+### Status
+- State: ACTIVE
+- Snapshot Visibility: MIN required
+- Binding Level: DRAFT (modifiable by future evidence & iteration)
+
+<!-- P0-2_OUTPUT_CONTRACT_END -->
+
+
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_ROLE_ACTIVATION_BEGIN -->
+## P0-2｜Output Contract｜Advisor Role Activation (ACTIVE) (DRAFT)
+
+Activated roles (for this task only):
+- R1（題目設計顧問）：定義「引擎可推斷的真邊界」與不可推斷清單；輸出為 Output Contract 的 truth boundary。
+- R2（玄學敘事顧問）：把允許的推斷翻譯成 user-facing 玄學敘事；提供 archetypes + 禁語 + 抽象層級規則。
+- R4（風險鏈/倫理防火牆）：對 Output Contract 做風險壓測；定義 hard bans + fallback mode（安全輸出模板）。
+
+Advisor input artifacts (single-source for this task):
+- COMMON: xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_output_contract_COMMON.md
+- R1:     xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_output_contract_R1.md
+- R2:     xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_output_contract_R2.md
+- R4:     xuance-commander-core/docs/gem/briefs/BRIEF_P0-2_output_contract_R4.md
+
+Notes:
+- All advisor outputs are DRAFT / NON-BINDING until Commander acceptance is written into SSOT.
+- Scope: Output archetypes + allowed/forbidden inference rules + boundary translation; no UI, no new questions.
+<!-- XUANCE_P0_2_OUTPUT_CONTRACT_ROLE_ACTIVATION_END -->
+
+
+<!-- P0_2_OUTPUT_CONTRACT_STAGE_POINTER_BEGIN -->
+Stage Update:
+- P0-2 Output Contract 階段性結論已記錄
+- 已鎖定：引擎只判斷「狀態」，不判斷「人生」
+- 已完成：禁止清單、允許層級、責任邊界
+Next Action:
+- 補強「禁止 → 允許替代出口」規則（R4）
+<!-- P0_2_OUTPUT_CONTRACT_STAGE_POINTER_END -->
+
+
+<!-- P0_2_OUTPUT_CONTRACT_STAGE_CLOSED_POINTER -->
+Stage Update:
+- P0-2 Output Contract 已完成階段性收尾（DRAFT）
+- 已明確：
+  - 引擎只判斷狀態，不判斷人生
+  - 禁止項 + 強制替代出口（Safe Expression Space）
+- 本階段完成後，不再新增限制，只進行後續轉譯與銳化
+- Next Phase（待開啟）：P0-3 Narrative Sharpness / Esoteric Precision
+<!-- P0_2_OUTPUT_CONTRACT_STAGE_CLOSED_POINTER -->
+
+
+<!-- P0-3_BEGIN -->
+Mainline Task Opened: P0-3 Narrative Sharpness / Esoteric Precision
+- Focus: narrative rules & precision (NOT UI, NOT new prohibitions)
+- Deliverables: Metrics, Skeleton, Lexicon, Diversity (v1)
+- Binding: DRAFT (iterable)
+<!-- P0-3_END -->
+
+P0-3 Roles Activated:
+- R1: Narrative Metrics Architect
+- R2: Esoteric Language Refiner
+- R4: Safety Consistency Auditor
+Briefs: docs/gem/briefs/BRIEF_P0-3_*.md
+
+<!-- ANTI_DRIFT_WORKFLOW_POINTER_BEGIN -->
+Process Update:
+- Adopted Anti-Drift Collaboration Workflow.
+- Rule: chat is for decisions; SSOT is the authority.
+- Practice: accept-first (DRAFT), debate-later, phase-separated.
+- Status: ACTIVE / NON-BINDING (subject to refinement).
+<!-- ANTI_DRIFT_WORKFLOW_POINTER_END -->
+
 ## TEXT-ONLY RULES（摘要）
 （以下內容為原文節錄；若衝突，以 docs/governance/TEXT_ONLY_EXECUTION_RULES.md 為準）
 
@@ -1633,5 +2014,13 @@ These items are approved to be written next (derived from the governance gap aud
   - 不教使用者怎麼跑指令
 - 若需要技術細節，必須明確被要求，否則禁止主動補充。
 
+## 文件放置規範（引用）
+**重要**：每次寫入文件前，請參考 `docs/governance/CURSOR_FILE_PLACEMENT_RULE.md`
+
+**文件放置規範引用**：
+- 權威規範：`docs/governance/CURSOR_FILE_PLACEMENT_RULE.md`
+- 文件分類對照表、決策流程、重複文件清理規則均在此規範中
+- 使用者說「請參考你的規範」時，即指此文件
+
 ## LATEST ADR（參考）
-docs/adr/ADR_0005_user_override_and_fatigue_rollback.md
+docs/adr/ADR_0006_question_modality_scope_lock.md

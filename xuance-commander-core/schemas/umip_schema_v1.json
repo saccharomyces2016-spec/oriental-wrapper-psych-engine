@@ -1,0 +1,315 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.local/umip.schema.v1.json",
+  "title": "UMIP Schema v1.0",
+  "description": "Universal Metaphysical Interface Protocol Schema v1.0 - 通用玄學介面協議 Schema v1.0",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "facet_id",
+    "risk_level",
+    "theme_config",
+    "i18n",
+    "stage2_compass",
+    "stage3_projection",
+    "stage4_results"
+  ],
+  "properties": {
+    "facet_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Facet 唯一識別碼（如：income_expansion_pressure, relationship_imbalance）"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["NORMAL", "HIGH"],
+      "description": "風險等級。HIGH 時必須觸發 RiskOverride Interceptor"
+    },
+    "theme_config": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["primary_color", "assets"],
+      "properties": {
+        "metaphor_id": {
+          "type": "string",
+          "description": "隱喻 ID（如：agriculture_v1, ocean_v1），用於識別視覺主題"
+        },
+        "primary_color": {
+          "type": "string",
+          "pattern": "^#([A-Fa-f0-9]{6})$",
+          "description": "主色調（十六進位色碼）"
+        },
+        "font_family": {
+          "type": "string",
+          "description": "字體族（如：'Noto Serif SC', 'Inter'）"
+        },
+        "assets": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "background_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "背景圖片 URL（可選）"
+            },
+            "particle_texture": {
+              "type": "string",
+              "format": "uri",
+              "description": "粒子紋理 URL（可選）"
+            },
+            "border_pattern": {
+              "type": "string",
+              "format": "uri",
+              "description": "邊框圖案 URL（可選）"
+            }
+          }
+        },
+        "typography": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "heading_font": { "type": "string" },
+            "body_font": { "type": "string" },
+            "font_size_scale": { 
+              "type": "number", 
+              "minimum": 0.5, 
+              "maximum": 2.0 
+            }
+          }
+        }
+      }
+    },
+    "i18n": {
+      "type": "object",
+      "description": "Parallel-key dictionary，非 runtime 翻譯。每個 key 必須包含 zh-TW 和 en-US",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["zh-TW", "en-US"],
+        "properties": {
+          "zh-TW": {
+            "type": "string",
+            "minLength": 1,
+            "description": "繁體中文文本（原生語感，非翻譯）"
+          },
+          "en-US": {
+            "type": "string",
+            "minLength": 1,
+            "description": "英文文本（原生語感，非翻譯腔）"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "stage2_compass": {
+      "type": "object",
+      "required": ["symbols"],
+      "properties": {
+        "symbols": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 30,
+          "description": "羅盤符碼列表（20-30 個）",
+          "items": {
+            "type": "object",
+            "required": ["id", "label_key", "svg_ref", "track"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "符碼唯一 ID（如：symbol_authority, symbol_power）"
+              },
+              "label_key": {
+                "type": "string",
+                "description": "i18n key（對應 i18n 字典中的 key）"
+              },
+              "svg_ref": {
+                "type": "string",
+                "description": "SVG 圖示引用（asset key 或 path）"
+              },
+              "track": {
+                "type": "string",
+                "enum": ["INNER", "MIDDLE", "OUTER"],
+                "description": "符碼所在軌道（內/中/外層）"
+              },
+              "initial_angle": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 360,
+                "description": "初始角度（度數，0-360），可選"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "rules": {
+          "type": "object",
+          "properties": {
+            "select_max": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3,
+              "description": "最多可選符碼數量（預設 3 個）"
+            },
+            "select_min": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3,
+              "default": 2,
+              "description": "至少需選符碼數量（預設 2 個）"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "stage3_projection": {
+      "type": "object",
+      "required": ["questions"],
+      "properties": {
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "description": "投射定歸因題目列表",
+          "items": {
+            "type": "object",
+            "required": ["id", "title_key", "prompt_key", "question_type", "options"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "題目唯一 ID"
+              },
+              "title_key": {
+                "type": "string",
+                "description": "題目標題 i18n key"
+              },
+              "prompt_key": {
+                "type": "string",
+                "description": "題目提示 i18n key（引導文字）"
+              },
+              "question_type": {
+                "type": "string",
+                "enum": ["SINGLE", "MULTI"],
+                "description": "題目類型（單選/多選）"
+              },
+              "options": {
+                "type": "array",
+                "minItems": 2,
+                "description": "選項列表（必須是「象/狀態」描述，不得包含分數）",
+                "items": {
+                  "type": "object",
+                  "required": ["id", "label_key"],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "選項唯一 ID"
+                    },
+                    "label_key": {
+                      "type": "string",
+                      "description": "選項文字 i18n key（必須是「象/狀態」描述）"
+                    },
+                    "image_ref": {
+                      "type": "string",
+                      "description": "選項圖片引用（asset key 或 path），可選"
+                    },
+                    "scene_key": {
+                      "type": "string",
+                      "description": "情境描述 i18n key（可選，用於更詳細的「象/狀態」描述）"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "stage4_results": {
+      "type": "object",
+      "required": ["layers"],
+      "properties": {
+        "layers": {
+          "type": "object",
+          "required": ["l1", "l2", "l3", "l4"],
+          "properties": {
+            "l1": {
+              "$ref": "#/definitions/layerBlock",
+              "description": "L1：天象/定調（The Atmosphere）"
+            },
+            "l2": {
+              "$ref": "#/definitions/layerBlock",
+              "description": "L2：物象/主敘事（The Manifestation）"
+            },
+            "l3": {
+              "$ref": "#/definitions/layerBlock",
+              "description": "L3：干擾/盲點（The Fog）"
+            },
+            "l4": {
+              "type": "object",
+              "required": ["title_key"],
+              "description": "L4：姿態/儀式（The Stance）。HIGH Risk 時必須被 RiskOverride Interceptor 覆蓋",
+              "properties": {
+                "title_key": {
+                  "type": "string",
+                  "description": "L4 標題 i18n key"
+                },
+                "dynamic_body_key": {
+                  "type": "string",
+                  "description": "動態建議內容 i18n key（僅在 risk_level: NORMAL 時使用）"
+                },
+                "safety_template_id": {
+                  "type": "string",
+                  "enum": ["TEMPLATE_A", "TEMPLATE_B"],
+                  "description": "安全模板 ID（僅在 risk_level: HIGH 時由 RiskOverride Interceptor 注入）"
+                },
+                "safety_body_key": {
+                  "type": "string",
+                  "description": "安全模板內容 i18n key（僅在 risk_level: HIGH 時由 RiskOverride Interceptor 注入）"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "definitions": {
+    "layerBlock": {
+      "type": "object",
+      "required": ["title_key", "body_key"],
+      "description": "L1/L2/L3 層級的基本結構",
+      "properties": {
+        "title_key": {
+          "type": "string",
+          "description": "層級標題 i18n key"
+        },
+        "body_key": {
+          "type": "string",
+          "description": "層級內容 i18n key"
+        },
+        "variants": {
+          "type": "array",
+          "description": "變體內容（同 Band 下至少 3 組，用於隨機輪播）",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title_key": { "type": "string" },
+              "body_key": { "type": "string" }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
+
