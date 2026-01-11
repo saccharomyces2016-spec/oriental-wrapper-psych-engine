@@ -177,12 +177,15 @@ export function RadialCompass({
           {compassData.symbols
             .filter((symbol) => {
               const hasId = !!symbol.id;
-              const hasPosition = !!glyphPositions[symbol.id];
+              const hasPosition = glyphPositions[symbol.id] !== undefined;
               return hasId && hasPosition;
             })
             .map((symbol) => {
               const position = glyphPositions[symbol.id];
-              if (!position) return null;
+              if (!position) {
+                console.warn(`Symbol ${symbol.id} has no position`);
+                return null;
+              }
               
               return (
                 <SymbolGlyph
@@ -196,7 +199,8 @@ export function RadialCompass({
                   getLabel={t}
                 />
               );
-            })}
+            })
+            .filter(Boolean)}
         </g>
 
         {/* 中央太極區（選取的符碼顯示區域，未來可實作） */}
