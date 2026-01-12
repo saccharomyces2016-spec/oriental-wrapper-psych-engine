@@ -43,7 +43,7 @@
   - 快照相關內容已刪除
   - 保留文件作為參考，但標記為已整合
 
-- ✅ `FILE_WRITE_LOCATION_RULE.md` → 已標記為已整合到 `CURSOR_FILE_PLACEMENT_RULE.md`
+- ✅ `CURSOR_FILE_PLACEMENT_RULE.md` → 已標記為已整合到 `CURSOR_FILE_PLACEMENT_RULE.md`
   - 基本規則已整合到主要規範
   - 保留文件作為快速參考，但標記為已整合
 
@@ -62,7 +62,7 @@
 **更新內容**：
 - ✅ **添加新建文件引用**：
   - `AI_ROLES_CURSOR_ARCHITECTURE.md`：核心角色定義文件（Cursor 架構版本）
-  - `FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`：資料夾結構整合指南（雙重保障規範）
+  - `CURSOR_FILE_PLACEMENT_RULE.md`：資料夾結構整合指南（雙重保障規範）
   - `DATA_REORGANIZATION_FINAL_REPORT.md`：資料重組最終報告
 
 - ✅ **標記已刪除文件**：
@@ -109,7 +109,7 @@
 ### 2.5 在工作規範中明確記錄資料夾放置規則（100% 完成）
 
 **建立文件**：
-- ✅ `FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`：資料夾結構整合指南（雙重保障規範）
+- ✅ `CURSOR_FILE_PLACEMENT_RULE.md`：資料夾結構整合指南（雙重保障規範）
   - 完整的資料夾結構對照表
   - 資料夾放置決策流程
   - 常見錯誤與修正
@@ -121,12 +121,12 @@
   - 完整的決策流程
   - 具體的命名規則
 
-- ✅ `FILE_WRITE_LOCATION_RULE.md`：標記為已整合（保留作為快速參考）
+- ✅ `CURSOR_FILE_PLACEMENT_RULE.md`：標記為已整合（保留作為快速參考）
 
 **雙重保障機制**：
 1. **主要規範**：`CURSOR_FILE_PLACEMENT_RULE.md`（詳細規範，包含完整對照表）
-2. **整合指南**：`FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`（快速參考，雙重保障）
-3. **快速參考**：`FILE_WRITE_LOCATION_RULE.md`（基本規則，已標記為已整合）
+2. **整合指南**：`CURSOR_FILE_PLACEMENT_RULE.md`（快速參考，雙重保障）
+3. **快速參考**：`CURSOR_FILE_PLACEMENT_RULE.md`（基本規則，已標記為已整合）
 
 **使用建議**：
 - 寫入文件前：先查整合指南（快速參考），再查主要規範（詳細確認）
@@ -151,16 +151,16 @@
 1. `GOVERNANCE_INDEX.md`：更新索引，標記已刪除和已整合文件
 2. `TEXT_ONLY_EXECUTION_RULES.md`：刪除快照相關內容，更新為 Cursor 架構說明
 3. `COMPLETE_TASK_PACKAGE_RULE.md`：標記為已整合，刪除快照相關引用
-4. `FILE_WRITE_LOCATION_RULE.md`：標記為已整合
+4. `CURSOR_FILE_PLACEMENT_RULE.md`：標記為已整合
 5. `CURSOR_FILE_PLACEMENT_RULE.md`：更新為主要規範
 6. `AI_ADVISORY_ROLES.md`：已於前一階段更新（更新角色定義）
 
 **新建文件**（1 份）：
-1. `FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`：資料夾結構整合指南（雙重保障規範）
+1. `CURSOR_FILE_PLACEMENT_RULE.md`：資料夾結構整合指南（雙重保障規範）
 
 **標記整合**（2 份）：
 1. `COMPLETE_TASK_PACKAGE_RULE.md`：已整合到 `CURSOR_TASK_PACKAGE_RULE.md`
-2. `FILE_WRITE_LOCATION_RULE.md`：已整合到 `CURSOR_FILE_PLACEMENT_RULE.md`
+2. `CURSOR_FILE_PLACEMENT_RULE.md`：已整合到 `CURSOR_FILE_PLACEMENT_RULE.md`
 
 ---
 
@@ -172,10 +172,10 @@
 - `CURSOR_FILE_PLACEMENT_RULE.md`：詳細規範，包含完整對照表和決策流程
 
 **整合指南層**（雙重保障）：
-- `FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`：快速參考，整合彙總，方便查閱
+- `CURSOR_FILE_PLACEMENT_RULE.md`：快速參考，整合彙總，方便查閱
 
 **快速參考層**（已整合，保留作為參考）：
-- `FILE_WRITE_LOCATION_RULE.md`：基本規則，已標記為已整合
+- `CURSOR_FILE_PLACEMENT_RULE.md`：基本規則，已標記為已整合
 
 ### 4.2 使用場景
 
@@ -228,11 +228,11 @@
 
 **整合規範**：
 - ✅ `COMPLETE_TASK_PACKAGE_RULE.md` → `CURSOR_TASK_PACKAGE_RULE.md`
-- ✅ `FILE_WRITE_LOCATION_RULE.md` → `CURSOR_FILE_PLACEMENT_RULE.md`
+- ✅ `CURSOR_FILE_PLACEMENT_RULE.md` → `CURSOR_FILE_PLACEMENT_RULE.md`
 
 **新建規範**：
 - ✅ `AI_ROLES_CURSOR_ARCHITECTURE.md`：核心角色定義文件（Cursor 架構版本）
-- ✅ `FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`：資料夾結構整合指南（雙重保障規範）
+- ✅ `CURSOR_FILE_PLACEMENT_RULE.md`：資料夾結構整合指南（雙重保障規範）
 
 ---
 
@@ -271,13 +271,13 @@
 
 **執行結果**：
 - 更新文件：6 份
-- 新建文件：1 份（`FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`）
+- 新建文件：1 份（`CURSOR_FILE_PLACEMENT_RULE.md`）
 - 標記整合：2 份
 
 **雙重保障機制已建立**：
 - ✅ 主要規範（`CURSOR_FILE_PLACEMENT_RULE.md`）
-- ✅ 整合指南（`FOLDER_STRUCTURE_INTEGRATION_GUIDE.md`）
-- ✅ 快速參考（`FILE_WRITE_LOCATION_RULE.md`）
+- ✅ 整合指南（`CURSOR_FILE_PLACEMENT_RULE.md`）
+- ✅ 快速參考（`CURSOR_FILE_PLACEMENT_RULE.md`）
 
 **結論**：所有後續任務已完成，雙重保障機制已建立，資料夾放置規則已明確記錄在工作規範中，可以防止長期工作後資料散落。
 

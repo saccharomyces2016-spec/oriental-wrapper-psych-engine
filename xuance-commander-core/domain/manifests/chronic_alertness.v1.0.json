@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "chronic_alertness",
+  "sources": {
+    "questions": "domain/questions/chronic_alertness.questions.v1.0.json",
+    "scoring": "domain/facets/chronic_alertness.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/chronic_alertness.reco.v1.0.json",
+    "narratives": "domain/narratives/chronic_alertness.narr.v1.0.json",
+    "riskchains": "domain/riskchains/chronic_alertness.risk.v1.0.json"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華。ContentDB 內容需要手動分析提取。",
+  "low": {
+    "opening": "你比誰都嚴格地審你自己",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "你寧願自己扛",
+    "explain": ""
+  },
+  "high": {
+    "opening": "你在撐一個家",
+    "explain": ""
+  },
+  "_raw_anchors": [],
+  "_contentdb_sources": [
+    {
+      "domain": "self",
+      "file": "ContentDB_self.js"
+    },
+    {
+      "domain": "family",
+      "file": "ContentDB_family.js"
+    }
+  ],
+  "_extracted_from_contentdb": true,
+  "_status": "MISSING",
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

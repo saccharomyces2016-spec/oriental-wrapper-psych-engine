@@ -1,0 +1,159 @@
+{
+  "_schema": "items[]: {motherThemeId, actionTemplates: {today:[], week:[]}, ageBands?: {\"any\"|\"0-12\"|\"13-18\"|\"19-25\"|\"26-35\"|\"36-45\"|\"46-60\"|\"61-80\"|\"81-100\": {today:[], week:[]}}}",
+  "note": "Frozen – do not edit, only extend",
+  "version": 1,
+  "items": [
+    {
+      "motherThemeId": "chronic_depletion",
+      "actionTemplates": {
+        "today": [
+          "Today: remove one non-essential task to {{principle}}.",
+          "Today: set a 15-minute block to {{principle}}, then stop on time."
+        ],
+        "week": [
+          "This week: reserve two short windows (20–30 min) to {{principle}} and tell one person to help protect it.",
+          "This week: pre-plan one lighter day to {{principle}} without adding new tasks."
+        ]
+      },
+      "ageBands": {
+        "13-25": {
+          "today": [
+            "Today: drop one optional plan so you can {{principle}}.",
+            "Today: set a simple stop time and use it to {{principle}}."
+          ],
+          "week": [
+            "This week: pick two evenings to stay light so you can {{principle}}.",
+            "This week: add one short routine that helps you {{principle}} and protect it like a class."
+          ]
+        },
+        "46-60": {
+          "today": [
+            "Today: cancel or delegate one non-critical item to {{principle}}.",
+            "Today: schedule a firm pause to {{principle}} before evening."
+          ],
+          "week": [
+            "This week: place two low-demand blocks on your calendar to {{principle}} and keep them intact.",
+            "This week: ask one helper to cover a task so you can {{principle}} once."
+          ]
+        }
+      }
+    },
+    {
+      "motherThemeId": "loss_of_agency",
+      "actionTemplates": {
+        "today": [
+          "Today: list two real options before saying yes, to {{principle}}.",
+          "Today: make one small renegotiation to {{principle}}."
+        ],
+        "week": [
+          "This week: schedule a 20-minute check-in to {{principle}} on a current commitment.",
+          "This week: track three self-directed choices to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "hyper_responsibility",
+      "actionTemplates": {
+        "today": [
+          "Today: share one task so you can {{principle}}.",
+          "Today: set a stop rule and use it to {{principle}}."
+        ],
+        "week": [
+          "This week: ask two people to co-own outcomes so you can {{principle}}.",
+          "This week: leave one deliverable at \"good enough\" to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "fear_based_stability",
+      "actionTemplates": {
+        "today": [
+          "Today: pick one tiny experiment with a safety limit to {{principle}}.",
+          "Today: write the true worst-case and cushion so you can {{principle}}."
+        ],
+        "week": [
+          "This week: run two small trials with clear guardrails to {{principle}}.",
+          "This week: stack one small win toward change to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "identity_diffusion",
+      "actionTemplates": {
+        "today": [
+          "Today: name what matters before a decision to {{principle}}.",
+          "Today: note one moment that felt like you to {{principle}}."
+        ],
+        "week": [
+          "This week: test-fit one choice against your values to {{principle}}.",
+          "This week: replace one obligation driven only by others to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "suppressed_needs",
+      "actionTemplates": {
+        "today": [
+          "Today: voice one small need early to {{principle}}.",
+          "Today: set a minimum self-care block to {{principle}} and keep it."
+        ],
+        "week": [
+          "This week: practice one clean ask (no hints) to {{principle}}.",
+          "This week: create an opt-out rule when capacity is low to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "chronic_alertness",
+      "actionTemplates": {
+        "today": [
+          "Today: scan once, then add a body cue to settle and {{principle}}.",
+          "Today: set one off-alert window (10–15 min) to {{principle}}."
+        ],
+        "week": [
+          "This week: place two safety cues in daily spaces to help {{principle}}.",
+          "This week: practice a flexible response to a small plan change to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "unprocessed_loss",
+      "actionTemplates": {
+        "today": [
+          "Today: make a gentle ritual (note, object, song) to {{principle}}.",
+          "Today: set a short window to feel, then close with a soothing act to {{principle}}."
+        ],
+        "week": [
+          "This week: share one safe thread of the story to {{principle}}.",
+          "This week: notice one decision steered by old loss to {{principle}}."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "meaning_vacuum",
+      "actionTemplates": {
+        "today": [
+          "Today: attach one task to a small why to {{principle}}.",
+          "Today: swap one hollow task for a meaningful one to {{principle}}."
+        ],
+        "week": [
+          "This week: track three moments that felt worthwhile to {{principle}}.",
+          "This week: name a near-term outcome that matters to {{principle}} and act on it once."
+        ]
+      }
+    },
+    {
+      "motherThemeId": "self_erosion",
+      "actionTemplates": {
+        "today": [
+          "Today: state one preference out loud to {{principle}}.",
+          "Today: protect energy from one default yes to {{principle}}."
+        ],
+        "week": [
+          "This week: limit one compromise that drains you to {{principle}}.",
+          "This week: take one decision that trusts your own read to {{principle}}."
+        ]
+      }
+    }
+  ]
+}

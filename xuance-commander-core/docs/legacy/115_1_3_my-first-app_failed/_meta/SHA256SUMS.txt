@@ -1,3 +1,0 @@
-# SHA256 for legacy raw zip (stored outside repo due to size limits)
-# source: /Users/yujunwei/Projects/115.1.3 my-first-app(失敗封存）.zip
-8adefa2485ff4e9af45e9807b638c054433ae19a3391e00d3249bd88faaf11c1  115_1_3_my-first-app_failed.zip

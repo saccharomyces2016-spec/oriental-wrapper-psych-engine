@@ -1,1 +1,0 @@
-src/core/ontology/questionBank.v1.json

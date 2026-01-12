@@ -1,8 +1,0 @@
-^src/core/ontology/round2FourSymbol\.v1\.json$
-^src/core/ontology/round3Ipsative\.v2\.json$
-^src/core/ontology/round4IntensityTrigger\.v1\.json$
-^src/core/flow/readingEngine\.v1\.js$
-^src/core/flow/readingNarrative\.v1\.js$
-^src/core/content/resultTemplates/readingOutputV2\.js$
-^src/views/03_Resonance\.vue$
-^src/views/05_Dashboard\.vue$

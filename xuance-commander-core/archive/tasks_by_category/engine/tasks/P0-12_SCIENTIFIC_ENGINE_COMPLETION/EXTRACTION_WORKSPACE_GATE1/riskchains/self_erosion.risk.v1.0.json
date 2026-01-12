@@ -1,0 +1,23 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "已從 buildGuidance.js 分析，需要手動提取具體內容",
+  "mid": {
+    "if_not_improve": []
+  },
+  "high": {
+    "if_not_improve": []
+  },
+  "_raw_chains": [],
+  "_analyzed_from_buildGuidance": true,
+  "_status": "MISSING",
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

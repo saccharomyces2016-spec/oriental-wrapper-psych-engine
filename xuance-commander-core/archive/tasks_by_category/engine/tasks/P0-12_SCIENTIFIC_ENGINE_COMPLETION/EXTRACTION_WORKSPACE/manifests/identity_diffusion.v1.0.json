@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "identity_diffusion",
+  "sources": {
+    "questions": "domain/questions/identity_diffusion.questions.v1.0.json",
+    "scoring": "domain/facets/identity_diffusion.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/identity_diffusion.reco.v1.0.json",
+    "narratives": "domain/narratives/identity_diffusion.narr.v1.0.json",
+    "riskchains": "domain/riskchains/identity_diffusion.risk.v1.0.json"
+  }
+}

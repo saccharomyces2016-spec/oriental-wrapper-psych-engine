@@ -18,6 +18,6 @@ Prohibited behavior:
 - 在資訊缺失時硬做決策
 - 用對話歷史替代文本
 
-- GLOBAL_FILE_CANON.md
+- CURSOR_FILE_PLACEMENT_RULE.md
 - ARTIFACT_REGISTRY_RULE.md
 - STATELESS_CONTINUITY_RULE.md

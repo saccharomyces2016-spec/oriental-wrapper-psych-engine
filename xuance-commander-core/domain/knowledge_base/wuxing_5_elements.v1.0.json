@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "elements": [
+    {
+      "id": "WOOD",
+      "name": { "zh": "木", "en": "Wood" },
+      "properties": {
+        "zh": "生長、擴展、向上、條理",
+        "en": "Growth, expansion, upward movement, structuring"
+      },
+      "symbolism": {
+        "zh": "生命、開始、仁、春",
+        "en": "Life, initiation, benevolence, spring"
+      },
+      "psychological_mapping": {
+        "state": "Initiative / Expansion",
+        "behavior": "探索、成長導向、行動前傾",
+        "desc": "心理能量向外生長，傾向開創與嘗試新可能，但在受剋時易折斷或退縮。"
+      },
+      "relationships": {
+        "generates": "FIRE",
+        "controlled_by": "METAL",
+        "controls": "EARTH",
+        "generated_by": "WATER"
+      }
+    },
+    {
+      "id": "FIRE",
+      "name": { "zh": "火", "en": "Fire" },
+      "properties": {
+        "zh": "熱能、顯化、加速、升騰",
+        "en": "Heat, manifestation, acceleration, ascending"
+      },
+      "symbolism": {
+        "zh": "意識、禮、光明、夏",
+        "en": "Consciousness, propriety, illumination, summer"
+      },
+      "psychological_mapping": {
+        "state": "Activation / Expression",
+        "behavior": "表達、決策、情緒外放",
+        "desc": "能量快速顯化，適合表現與推進，思考敏捷但需注意過熱與持續力不足。"
+      },
+      "relationships": {
+        "generates": "EARTH",
+        "controlled_by": "WATER",
+        "controls": "METAL",
+        "generated_by": "WOOD"
+      }
+    },
+    {
+      "id": "EARTH",
+      "name": { "zh": "土", "en": "Earth" },
+      "properties": {
+        "zh": "承載、整合、穩定、轉化",
+        "en": "Containment, integration, stability, transformation"
+      },
+      "symbolism": {
+        "zh": "信、中心、調和、長夏",
+        "en": "Trust, center, harmonization, late summer"
+      },
+      "psychological_mapping": {
+        "state": "Stabilization / Integration",
+        "behavior": "整合、協調、承擔責任",
+        "desc": "心理重心穩定，善於調和衝突並維持系統平衡，但也可能陷入停滯或過度保守。"
+      },
+      "relationships": {
+        "generates": "METAL",
+        "controlled_by": "WOOD",
+        "controls": "WATER",
+        "generated_by": "FIRE"
+      }
+    },
+    {
+      "id": "METAL",
+      "name": { "zh": "金", "en": "Metal" },
+      "properties": {
+        "zh": "收斂、切割、規範、革新",
+        "en": "Contraction, cutting, regulation, reform"
+      },
+      "symbolism": {
+        "zh": "義、界線、決斷、秋",
+        "en": "Justice, boundaries, decisiveness, autumn"
+      },
+      "psychological_mapping": {
+        "state": "Judgment / Boundary",
+        "behavior": "分析、裁決、去蕪存菁",
+        "desc": "擅長建立界線與標準，適合決策與審計情境，心理狀態冷靜但可能缺乏彈性。"
+      },
+      "relationships": {
+        "generates": "WATER",
+        "controlled_by": "FIRE",
+        "controls": "WOOD",
+        "generated_by": "EARTH"
+      }
+    },
+    {
+      "id": "WATER",
+      "name": { "zh": "水", "en": "Water" },
+      "properties": {
+        "zh": "流動、滲透、潛藏、適應",
+        "en": "Flow, penetration, storage, adaptation"
+      },
+      "symbolism": {
+        "zh": "智、深度、恐懼、冬",
+        "en": "Wisdom, depth, fear, winter"
+      },
+      "psychological_mapping": {
+        "state": "Adaptation / Crisis",
+        "behavior": "應變、深度思考、避險",
+        "desc": "心理具高度彈性，能穿越危機與障礙，能量向內潛藏，易陷入焦慮或深淵。"
+      },
+      "relationships": {
+        "generates": "WOOD",
+        "controlled_by": "EARTH",
+        "controls": "FIRE",
+        "generated_by": "METAL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "五行映射：將五行概念映射到行為模式和建議",
+    "note": "Frozen - do not edit, only extend"
+  },
+  "items": [
+    {
+      "id": "element_wood",
+      "label": "木行",
+      "confidence": "medium",
+      "uncertainty_note": "五行映射為傳統概念，現代應用需謹慎詮釋",
+      "do_not_say": [
+        "你五行缺木所以會失敗",
+        "你註定是木命",
+        "這是你的宿命",
+        "你無法改變五行",
+        "你天生就是這樣"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "木行的特質可能反映在你的行為模式中",
+        "guide": "這是一種觀察角度，而非絕對定義",
+        "action": "試著觀察自己是否有成長、拓展的傾向，思考如何平衡發展"
+      }
+    },
+    {
+      "id": "element_fire",
+      "label": "火行",
+      "confidence": "medium",
+      "uncertainty_note": "五行映射為傳統概念，現代應用需謹慎詮釋",
+      "do_not_say": [
+        "你五行缺火所以會失敗",
+        "你註定是火命",
+        "這是你的宿命",
+        "你無法改變五行",
+        "你天生就是這樣"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "火行的特質可能反映在你的行為模式中",
+        "guide": "這是一種觀察角度，而非絕對定義",
+        "action": "試著觀察自己是否有熱情、表達的傾向，思考如何平衡發展"
+      }
+    },
+    {
+      "id": "element_earth",
+      "label": "土行",
+      "confidence": "medium",
+      "uncertainty_note": "五行映射為傳統概念，現代應用需謹慎詮釋",
+      "do_not_say": [
+        "你五行缺土所以會失敗",
+        "你註定是土命",
+        "這是你的宿命",
+        "你無法改變五行",
+        "你天生就是這樣"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "土行的特質可能反映在你的行為模式中",
+        "guide": "這是一種觀察角度，而非絕對定義",
+        "action": "試著觀察自己是否有穩定、承載的傾向，思考如何平衡發展"
+      }
+    },
+    {
+      "id": "element_metal",
+      "label": "金行",
+      "confidence": "medium",
+      "uncertainty_note": "五行映射為傳統概念，現代應用需謹慎詮釋",
+      "do_not_say": [
+        "你五行缺金所以會失敗",
+        "你註定是金命",
+        "這是你的宿命",
+        "你無法改變五行",
+        "你天生就是這樣"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "金行的特質可能反映在你的行為模式中",
+        "guide": "這是一種觀察角度，而非絕對定義",
+        "action": "試著觀察自己是否有收斂、整理的傾向，思考如何平衡發展"
+      }
+    },
+    {
+      "id": "element_water",
+      "label": "水行",
+      "confidence": "medium",
+      "uncertainty_note": "五行映射為傳統概念，現代應用需謹慎詮釋",
+      "do_not_say": [
+        "你五行缺水所以會失敗",
+        "你註定是水命",
+        "這是你的宿命",
+        "你無法改變五行",
+        "你天生就是這樣"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "水行的特質可能反映在你的行為模式中",
+        "guide": "這是一種觀察角度，而非絕對定義",
+        "action": "試著觀察自己是否有流動、適應的傾向，思考如何平衡發展"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+

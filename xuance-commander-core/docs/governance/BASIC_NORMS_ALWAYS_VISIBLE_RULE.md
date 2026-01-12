@@ -83,7 +83,7 @@
 ## MIN 快照必須包含的基本規範（不可移除）
 
 ### 必須始終包含
-1. **FILE_WRITE_LOCATION_RULE.md**（文件寫入位置規則）
+1. **CURSOR_FILE_PLACEMENT_RULE.md**（文件寫入位置規則）
 2. **GLOBAL_PATH_CANON.md**（Canon 路徑定義）
 3. **ABSOLUTE_REFERENCE_RULE.md**（禁止相對路徑）
 4. **AI_ADVISORY_ROLES.md**（角色職責定義，關鍵部分）

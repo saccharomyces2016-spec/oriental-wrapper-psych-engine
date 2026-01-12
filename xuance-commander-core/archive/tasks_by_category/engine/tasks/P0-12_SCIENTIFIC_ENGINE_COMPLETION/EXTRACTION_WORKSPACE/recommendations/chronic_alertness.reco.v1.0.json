@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "chronic_alertness",
+  "actionTemplates": {
+    "today": [
+      "Today: scan once, then add a body cue to settle and {{principle}}.",
+      "Today: set one off-alert window (10–15 min) to {{principle}}."
+    ],
+    "week": [
+      "This week: place two safety cues in daily spaces to help {{principle}}.",
+      "This week: practice a flexible response to a small plan change to {{principle}}."
+    ]
+  },
+  "ageBands": {}
+}

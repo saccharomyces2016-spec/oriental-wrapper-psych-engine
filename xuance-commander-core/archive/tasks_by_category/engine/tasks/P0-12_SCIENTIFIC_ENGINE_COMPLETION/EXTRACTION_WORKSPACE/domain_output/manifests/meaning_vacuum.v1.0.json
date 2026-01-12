@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "meaning_vacuum",
+  "sources": {
+    "questions": "domain/questions/meaning_vacuum.questions.v1.0.json",
+    "scoring": "domain/facets/meaning_vacuum.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/meaning_vacuum.reco.v1.0.json",
+    "narratives": "domain/narratives/meaning_vacuum.narr.v1.0.json",
+    "riskchains": "domain/riskchains/meaning_vacuum.risk.v1.0.json"
+  }
+}

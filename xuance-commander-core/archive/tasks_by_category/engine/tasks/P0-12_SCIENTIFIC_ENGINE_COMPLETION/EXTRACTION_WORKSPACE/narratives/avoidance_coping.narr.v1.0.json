@@ -1,0 +1,298 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "low": {
+    "opening": "你不是不想動，而是把每一步都當成不能輸的考試，所以寧可停在原地。",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "mid": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "_raw_anchors": [
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_01",
+      "label": "逃避迴圈中的停滯感",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想動，而是把每一步都當成不能輸的考試，所以寧可停在原地。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想動，而是把每一步都當成不能錯的選擇，所以寧可停在原地。",
+        "你不是不想動，而是把每一步都當成不能失敗的任務，所以寧可停在原地。"
+      ],
+      "why_it_hits": "重新框架拖延為保護機制，而非能力缺陷，降低防衛。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_02",
+      "label": "逃避迴圈中的停滯感（變體2）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "avoidance"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想開始，而是把開始當成不能回頭的決定，所以一直拖延。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想開始，而是把開始當成不能改變的決定，所以一直拖延。",
+        "你不是不想開始，而是把開始當成不能修正的選擇，所以一直拖延。"
+      ],
+      "why_it_hits": "重新框架拖延為謹慎，而非懶惰，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_03",
+      "label": "逃避迴圈中的停滯感（變體3）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "uncertainty"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想行動，而是把行動當成不能出錯的選擇，所以一直猶豫。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想行動，而是把行動當成不能失敗的選擇，所以一直猶豫。",
+        "你不是不想行動，而是把行動當成不能後悔的決定，所以一直猶豫。"
+      ],
+      "why_it_hits": "重新框架猶豫為謹慎，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_04",
+      "label": "逃避迴圈中的停滯感（變體4）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "lack_of_agency"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想改變，而是把改變當成不能控制的風險，所以一直停在原地。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想改變，而是把改變當成不能預測的風險，所以一直停在原地。",
+        "你不是不想改變，而是把改變當成不能掌控的變數，所以一直停在原地。"
+      ],
+      "why_it_hits": "重新框架停滯為風險管理，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_05",
+      "label": "逃避迴圈中的停滯感（變體5）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "fear_based_stability"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想前進，而是把前進當成可能失去現狀的風險，所以一直停在原地。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想前進，而是把前進當成可能失去安全的風險，所以一直停在原地。",
+        "你不是不想前進，而是把前進當成可能失去穩定的風險，所以一直停在原地。"
+      ],
+      "why_it_hits": "重新框架停滯為保護現狀，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_06",
+      "label": "逃避迴圈中的停滯感（變體6）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "avoidance"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想開始，而是把開始當成不能回頭的承諾，所以一直拖延。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想開始，而是把開始當成不能改變的承諾，所以一直拖延。",
+        "你不是不想開始，而是把開始當成不能修正的決定，所以一直拖延。"
+      ],
+      "why_it_hits": "重新框架拖延為謹慎承諾，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_07",
+      "label": "逃避迴圈中的停滯感（變體7）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "uncertainty"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想行動，而是把行動當成不能出錯的選擇，所以一直猶豫。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想行動，而是把行動當成不能失敗的選擇，所以一直猶豫。",
+        "你不是不想行動，而是把行動當成不能後悔的決定，所以一直猶豫。"
+      ],
+      "why_it_hits": "重新框架猶豫為謹慎，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_08",
+      "label": "逃避迴圈中的停滯感（變體8）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "lack_of_agency"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想改變，而是把改變當成不能控制的變數，所以一直停在原地。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想改變，而是把改變當成不能預測的變數，所以一直停在原地。",
+        "你不是不想改變，而是把改變當成不能掌控的風險，所以一直停在原地。"
+      ],
+      "why_it_hits": "重新框架停滯為風險管理，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_09",
+      "label": "逃避迴圈中的停滯感（變體9）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "fear_based_stability"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想前進，而是把前進當成可能失去現狀的風險，所以一直停在原地。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想前進，而是把前進當成可能失去安全的風險，所以一直停在原地。",
+        "你不是不想前進，而是把前進當成可能失去穩定的風險，所以一直停在原地。"
+      ],
+      "why_it_hits": "重新框架停滯為保護現狀，而非無能，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_AVOID_STAGNATION_10",
+      "label": "逃避迴圈中的停滯感（變體10）",
+      "mother_theme": "avoidance_stagnation",
+      "state_tags": [
+        "low_arousal",
+        "procrastination",
+        "self_doubt",
+        "avoidance"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前正在積極行動中，這句可能不適用。",
+      "do_not_say": [
+        "你太懶了",
+        "你沒有行動力",
+        "你註定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你不是不想開始，而是把開始當成不能回頭的決定，所以一直拖延。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你不是不想開始，而是把開始當成不能改變的決定，所以一直拖延。",
+        "你不是不想開始，而是把開始當成不能修正的選擇，所以一直拖延。"
+      ],
+      "why_it_hits": "重新框架拖延為謹慎，而非懶惰，降低自我批評。"
+    }
+  ]
+}

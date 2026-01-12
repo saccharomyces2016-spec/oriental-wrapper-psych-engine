@@ -1,0 +1,1239 @@
+{
+  "generated_at": "2026-01-12T16:08:01.903728",
+  "questions": {
+    "count": 63,
+    "files": [
+      {
+        "file": "xuance-commander-core/domain/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/stress_recovery.questions.v1.0.json",
+        "count": 2,
+        "type": "likert_5",
+        "scale_length": 5,
+        "sample_question": "最近 7 天，你覺得自己大多時候是在「撐著」嗎？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/avoidance_coping.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/social_comparison.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/domain/questions/emotional_permeability.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/avoidance_coping.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/social_comparison.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/questions/emotional_permeability.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/avoidance_coping.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/social_comparison.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/questions/emotional_permeability.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/stress_recovery.questions.v1.0.json",
+        "count": 2,
+        "type": "likert_5",
+        "scale_length": 5,
+        "sample_question": "最近 7 天，你覺得自己大多時候是在「撐著」嗎？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/stress_recovery.questions.v1.0.json",
+        "count": 2,
+        "type": "likert_5",
+        "scale_length": 5,
+        "sample_question": "最近 7 天，你覺得自己大多時候是在「撐著」嗎？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/meaning_vacuum.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/chronic_depletion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在同時照顧年邁父母與未成年子女的高壓期，你每天醒來的第一個念頭是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/fear_based_stability.questions.v1.0.json",
+        "count": 3,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於投資理財，你的風格傾向於？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/suppressed_needs.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你有想要的東西或想做的事，但家人強烈反對時，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/hyper_responsibility.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "團隊專案中有人進度落後，眼看死線快到了，你會採取什麼行動？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/avoidance_coping.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/identity_diffusion.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "對於「你是誰」這個問題，如果不談工作和家庭角色，你會？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/social_comparison.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "在社群媒體上滑到朋友曬升遷、奢華旅遊或精緻生活時，你第一時間更像？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/chronic_alertness.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/loss_of_agency.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當你發現無論怎麼努力都難以買房或完成階級流動時，你會更接近哪一種反應？"
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/questions/emotional_permeability.questions.v1.0.json",
+        "count": 7,
+        "type": "likert_5",
+        "scale_length": 4,
+        "sample_question": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？"
+      }
+    ],
+    "types": [
+      "likert_5"
+    ],
+    "total_questions": 402
+  },
+  "scoring": {
+    "count": 27,
+    "files": [
+      {
+        "file": "xuance-commander-core/domain/facets/chronic_alertness.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/stress_recovery.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands",
+          "notes"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/loss_of_agency.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/identity_diffusion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/chronic_depletion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/meaning_vacuum.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/suppressed_needs.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/hyper_responsibility.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/domain/facets/fear_based_stability.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/chronic_alertness.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/stress_recovery.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands",
+          "notes"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/loss_of_agency.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/identity_diffusion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/chronic_depletion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/meaning_vacuum.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/suppressed_needs.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/hyper_responsibility.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/facets/fear_based_stability.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/chronic_alertness.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/stress_recovery.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands",
+          "notes"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/loss_of_agency.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/identity_diffusion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/chronic_depletion.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/meaning_vacuum.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/suppressed_needs.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/hyper_responsibility.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/facets/fear_based_stability.scoring.v1.0.json",
+        "structure": [
+          "model",
+          "inputs",
+          "bands"
+        ],
+        "has_thresholds": false,
+        "has_levels": false
+      }
+    ]
+  },
+  "engine": {
+    "count": 6,
+    "files": [
+      {
+        "file": "xuance-commander-core/engine/collision_calculator.py",
+        "size": 1183,
+        "has_question_logic": false,
+        "has_scoring_logic": false,
+        "has_calculation": true
+      },
+      {
+        "file": "xuance-commander-core/engine/compile_domain.py",
+        "size": 1346,
+        "has_question_logic": true,
+        "has_scoring_logic": false,
+        "has_calculation": false
+      },
+      {
+        "file": "xuance-commander-core/engine/__init__.py",
+        "size": 24,
+        "has_question_logic": false,
+        "has_scoring_logic": false,
+        "has_calculation": false
+      },
+      {
+        "file": "xuance-commander-core/engine/hexagram_deriver.py",
+        "size": 928,
+        "has_question_logic": false,
+        "has_scoring_logic": false,
+        "has_calculation": false
+      },
+      {
+        "file": "xuance-commander-core/engine/score_facet.py",
+        "size": 1523,
+        "has_question_logic": true,
+        "has_scoring_logic": true,
+        "has_calculation": false
+      },
+      {
+        "file": "xuance-commander-core/engine/root_element_mapper.py",
+        "size": 791,
+        "has_question_logic": false,
+        "has_scoring_logic": false,
+        "has_calculation": true
+      }
+    ]
+  },
+  "stages": {
+    "count": 57,
+    "files": [
+      {
+        "file": "xuance-commander-core/domain/narratives/social_comparison.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/suppressed_needs.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/avoidance_coping.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/meaning_vacuum.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/fear_based_stability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/emotional_permeability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/chronic_alertness.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/hyper_responsibility.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/unprocessed_loss.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/stress_recovery.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/self_erosion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/loss_of_agency.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/domain/narratives/identity_diffusion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/social_comparison.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/suppressed_needs.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/avoidance_coping.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/meaning_vacuum.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/fear_based_stability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/emotional_permeability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/chronic_alertness.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/hyper_responsibility.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/unprocessed_loss.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/self_erosion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/loss_of_agency.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE_GATE1/narratives/identity_diffusion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/social_comparison.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/suppressed_needs.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/avoidance_coping.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/meaning_vacuum.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/fear_based_stability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/emotional_permeability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/chronic_alertness.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/hyper_responsibility.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/unprocessed_loss.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/self_erosion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/loss_of_agency.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/narratives/identity_diffusion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_2026-01-12/narratives/stress_recovery.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/GATE4_BACKUP/domain_backup_20260112_160100/narratives/stress_recovery.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/social_comparison.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/suppressed_needs.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/avoidance_coping.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/meaning_vacuum.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/chronic_depletion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/fear_based_stability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/emotional_permeability.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/chronic_alertness.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/hyper_responsibility.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/unprocessed_loss.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/self_erosion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/loss_of_agency.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      {
+        "file": "xuance-commander-core/P0-12_SCIENTIFIC_ENGINE_COMPLETION/EXTRACTION_WORKSPACE/domain_output/narratives/identity_diffusion.narr.v1.0.json",
+        "stages": [
+          "low",
+          "mid",
+          "high"
+        ]
+      }
+    ]
+  }
+}

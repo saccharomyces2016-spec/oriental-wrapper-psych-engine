@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "overrides": [
+    {
+      "sourceElement": "EARTH",
+      "targetElement": "WATER",
+      "relation": "EARTH_OVERCOMES_WATER",
+      "template_id": "T_EARTH_WATER_001",
+      "cn": "土石崩落，阻塞水道：現實壓力若不卸下，情緒會先潰堤。",
+      "en": "Earth blocks water: unresolved pressure can flood your emotional system first."
+    },
+    {
+      "sourceElement": "FIRE",
+      "targetElement": "METAL",
+      "relation": "FIRE_OVERCOMES_METAL",
+      "template_id": "T_FIRE_METAL_001",
+      "cn": "火旺銷金，思緒焦枯：過度燃燒會先損判斷與清晰。",
+      "en": "Fire melts metal: overburning can erode judgment and clarity first."
+    }
+  ]
+}

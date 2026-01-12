@@ -10,7 +10,6 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React from 'react';
 import type { FacetViewModel } from '../adapters/types';
 import { RadialCompass } from '../components/compass';
 import { useFlowState } from '../state';
@@ -26,7 +25,7 @@ export interface Stage2PageProps {
  * Stage 2 Page Component
  */
 export function Stage2Page({ viewModel }: Stage2PageProps) {
-  const { state, setSelectedSymbolIds, setCurrentStage } = useFlowState();
+  const { setSelectedSymbolIds, setCurrentStage } = useFlowState();
 
   const handleSelectionChange = (selectedIds: string[]) => {
     setSelectedSymbolIds(selectedIds);

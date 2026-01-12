@@ -45,4 +45,3 @@
 **不等於**：全域禁用  
 **其他 Facet**：若需使用狩獵/航行隱喻，必須另立 Facet 和白名單，不可回滲本 Facet。  
 **詳細說明**：見 `P0-3_SECONDARY_METAPHOR_WHITELIST.md` 第 3 節「治理定位說明」。
-

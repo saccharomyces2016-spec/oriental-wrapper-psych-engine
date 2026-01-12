@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "hyper_responsibility",
+  "actionTemplates": {
+    "today": [
+      "Today: share one task so you can {{principle}}.",
+      "Today: set a stop rule and use it to {{principle}}."
+    ],
+    "week": [
+      "This week: ask two people to co-own outcomes so you can {{principle}}.",
+      "This week: leave one deliverable at \"good enough\" to {{principle}}."
+    ]
+  },
+  "ageBands": {}
+}

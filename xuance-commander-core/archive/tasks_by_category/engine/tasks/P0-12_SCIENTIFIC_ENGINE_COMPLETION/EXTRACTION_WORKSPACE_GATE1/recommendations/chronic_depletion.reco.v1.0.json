@@ -1,0 +1,37 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "chronic_depletion",
+  "actionTemplates": {
+    "today": [
+      "Today: remove one non-essential task to {{principle}}.",
+      "Today: set a 15-minute block to {{principle}}, then stop on time."
+    ],
+    "week": [
+      "This week: reserve two short windows (20–30 min) to {{principle}} and tell one person to help protect it.",
+      "This week: pre-plan one lighter day to {{principle}} without adding new tasks."
+    ]
+  },
+  "ageBands": {
+    "13-25": {
+      "today": [
+        "Today: drop one optional plan so you can {{principle}}.",
+        "Today: set a simple stop time and use it to {{principle}}."
+      ],
+      "week": [
+        "This week: pick two evenings to stay light so you can {{principle}}.",
+        "This week: add one short routine that helps you {{principle}} and protect it like a class."
+      ]
+    },
+    "46-60": {
+      "today": [
+        "Today: cancel or delegate one non-critical item to {{principle}}.",
+        "Today: schedule a firm pause to {{principle}} before evening."
+      ],
+      "week": [
+        "This week: place two low-demand blocks on your calendar to {{principle}} and keep them intact.",
+        "This week: ask one helper to cover a task so you can {{principle}} once."
+      ]
+    }
+  }
+}

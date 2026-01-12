@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "loss_of_agency",
+  "sources": {
+    "questions": "domain/questions/loss_of_agency.questions.v1.0.json",
+    "scoring": "domain/facets/loss_of_agency.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/loss_of_agency.reco.v1.0.json",
+    "narratives": "domain/narratives/loss_of_agency.narr.v1.0.json",
+    "riskchains": "domain/riskchains/loss_of_agency.risk.v1.0.json"
+  }
+}

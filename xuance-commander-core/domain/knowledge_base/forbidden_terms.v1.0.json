@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "purpose": "Prevent exposure of psychological/scientific terms",
+    "usage": "AI prompt filtering and manual review"
+  },
+  "categories": {
+    "psychological_terms": {
+      "zh": {
+        "焦慮": {
+          "forbidden": true,
+          "suggested_alternatives": ["心神不寧", "氣滯流塞"]
+        },
+        "抑鬱": {
+          "forbidden": true,
+          "suggested_alternatives": ["能量低落", "氣血不暢"]
+        },
+        "防禦機制": {
+          "forbidden": true,
+          "suggested_alternatives": ["自我保護", "心神閉塞"]
+        }
+      },
+      "en": {
+        "anxiety": {
+          "forbidden": true,
+          "suggested_alternatives": ["Unease", "Disquiet"]
+        },
+        "depression": {
+          "forbidden": true,
+          "suggested_alternatives": ["Low Energy", "Blocked Flow"]
+        },
+        "defense mechanism": {
+          "forbidden": true,
+          "suggested_alternatives": ["Self-Protection", "Blocked Mind"]
+        }
+      }
+    },
+    "scientific_terms": {
+      "zh": {
+        "心理學": {
+          "forbidden": true
+        },
+        "神經科學": {
+          "forbidden": true
+        },
+        "認知科學": {
+          "forbidden": true
+        }
+      },
+      "en": {
+        "psychology": {
+          "forbidden": true
+        },
+        "neuroscience": {
+          "forbidden": true
+        },
+        "cognitive science": {
+          "forbidden": true
+        }
+      }
+    },
+    "diagnostic_terms": {
+      "zh": {
+        "診斷": {
+          "forbidden": true,
+          "suggested_alternatives": ["解讀", "解象"]
+        },
+        "治療": {
+          "forbidden": true,
+          "suggested_alternatives": ["指引", "調和"]
+        },
+        "症狀": {
+          "forbidden": true,
+          "suggested_alternatives": ["徵象", "顯現"]
+        },
+        "你註定是木命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你註定是火命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你註定是土命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你註定是金命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你註定是水命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你無法改變五行": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你天生就是這樣": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你五行缺木所以會失敗": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你五行缺火所以會失敗": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你五行缺土所以會失敗": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你五行缺金所以會失敗": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "你五行缺水所以會失敗": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        },
+        "這是你的宿命": {
+          "forbidden": true,
+          "source": "legacy_five_element_mapping",
+          "note": "命定論用語，禁止使用"
+        }
+      },
+      "en": {
+        "diagnosis": {
+          "forbidden": true,
+          "suggested_alternatives": ["Reading", "Interpretation"]
+        },
+        "treatment": {
+          "forbidden": true,
+          "suggested_alternatives": ["Guidance", "Adjustment"]
+        },
+        "symptom": {
+          "forbidden": true,
+          "suggested_alternatives": ["Sign", "Manifestation"]
+        }
+      }
+    }
+  }
+}

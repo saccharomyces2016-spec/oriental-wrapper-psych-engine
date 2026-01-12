@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "stress_recovery",
+  "sources": {
+    "questions": "domain/questions/stress_recovery.questions.v1.0.json",
+    "scoring": "domain/facets/stress_recovery.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/stress_recovery.reco.v1.0.json",
+    "narratives": "domain/narratives/stress_recovery.narr.v1.0.json",
+    "riskchains": "domain/riskchains/stress_recovery.risk.v1.0.json"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "version": "1.0",
+  "type": "bagua_domain_map",
+  "domains": [
+    {
+      "domainKey": "qian",
+      "trigram": "乾",
+      "element": "metal",
+      "labels": {
+        "zh": "乾｜天",
+        "en": "Qian｜Heaven"
+      },
+      "routing_hints": [
+        "leadership",
+        "purpose",
+        "identity"
+      ],
+      "default_facets": [
+        "leadership_burden"
+      ]
+    },
+    {
+      "domainKey": "kun",
+      "trigram": "坤",
+      "element": "earth",
+      "labels": {
+        "zh": "坤｜地",
+        "en": "Kun｜Earth"
+      },
+      "routing_hints": [
+        "career",
+        "resources",
+        "money"
+      ],
+      "default_facets": [
+        "income_expansion_pressure"
+      ]
+    },
+    {
+      "domainKey": "zhen",
+      "trigram": "震",
+      "element": "wood",
+      "labels": {
+        "zh": "震｜雷",
+        "en": "Zhen｜Thunder"
+      },
+      "routing_hints": [
+        "action",
+        "change",
+        "anxiety"
+      ],
+      "default_facets": [
+        "procrastination_loop"
+      ]
+    },
+    {
+      "domainKey": "xun",
+      "trigram": "巽",
+      "element": "wood",
+      "labels": {
+        "zh": "巽｜風",
+        "en": "Xun｜Wind"
+      },
+      "routing_hints": [
+        "relationship",
+        "communication",
+        "social"
+      ],
+      "default_facets": [
+        "relationship_imbalance"
+      ]
+    },
+    {
+      "domainKey": "kan",
+      "trigram": "坎",
+      "element": "water",
+      "labels": {
+        "zh": "坎｜水",
+        "en": "Kan｜Water"
+      },
+      "routing_hints": [
+        "emotion",
+        "depression",
+        "addiction"
+      ],
+      "default_facets": [
+        "deep_depression"
+      ]
+    },
+    {
+      "domainKey": "li",
+      "trigram": "離",
+      "element": "fire",
+      "labels": {
+        "zh": "離｜火",
+        "en": "Li｜Fire"
+      },
+      "routing_hints": [
+        "burnout",
+        "image",
+        "cognition"
+      ],
+      "default_facets": [
+        "burnout_syndrome"
+      ]
+    },
+    {
+      "domainKey": "gen",
+      "trigram": "艮",
+      "element": "earth",
+      "labels": {
+        "zh": "艮｜山",
+        "en": "Gen｜Mountain"
+      },
+      "routing_hints": [
+        "health",
+        "family",
+        "stagnation"
+      ],
+      "default_facets": [
+        "physical_somatization"
+      ]
+    },
+    {
+      "domainKey": "dui",
+      "trigram": "兌",
+      "element": "metal",
+      "labels": {
+        "zh": "兌｜澤",
+        "en": "Dui｜Lake"
+      },
+      "routing_hints": [
+        "conflict",
+        "desire",
+        "criticism"
+      ],
+      "default_facets": [
+        "conflict_argument"
+      ]
+    },
+    {
+      "domainKey": "center",
+      "trigram": "中宮",
+      "element": null,
+      "labels": {
+        "zh": "中宮｜渾沌",
+        "en": "Center｜Chaos"
+      },
+      "routing_hints": [
+        "unclear",
+        "mixed",
+        "router"
+      ],
+      "default_facets": [
+        "general_chaos_router"
+      ]
+    }
+  ]
+}

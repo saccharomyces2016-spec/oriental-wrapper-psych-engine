@@ -126,7 +126,7 @@ P2（最後補齊）：
 ## FOLDER_STRUCTURE_INTEGRATION_GUIDE（新增）
 - Status: ACTIVE（自 2026-01-10 起生效）
 - Priority: HIGH
-- Path: docs/governance/FOLDER_STRUCTURE_INTEGRATION_GUIDE.md
+- Path: docs/governance/CURSOR_FILE_PLACEMENT_RULE.md
 - Scope: 資料夾結構整合指南（雙重保障規範）
 - Note: **雙重保障規範**，與 CURSOR_FILE_PLACEMENT_RULE.md 配合使用，防止長期工作後資料散落
 - Note: 包含完整的資料夾結構對照表和決策流程
@@ -153,8 +153,8 @@ P2（最後補齊）：
 - DOCS_GEM_CANON_RULE.md（已刪除，自 2026-01-10 起）
 - EXECUTION_ASSIGNMENT_RULE.md
 - EXECUTIVE_RESPONSE_MODE.md
-- FILE_ORGANIZATION_GUIDE.md
-- GLOBAL_FILE_CANON.md
+- CURSOR_FILE_PLACEMENT_RULE.md
+- CURSOR_FILE_PLACEMENT_RULE.md
 - CURSOR_FILE_PLACEMENT_RULE.md（文件放置規範，每次任務前必引用）
 - GOVERNANCE_GAPS.md
 - IDEA_GOVERNANCE.md
@@ -195,7 +195,7 @@ P2（最後補齊）：
 ## FILE_WRITE_LOCATION_RULE
 - Status: ACTIVE
 - Priority: CRITICAL
-- Path: docs/governance/FILE_WRITE_LOCATION_RULE.md
+- Path: docs/governance/CURSOR_FILE_PLACEMENT_RULE.md
 - Scope: All file write operations
 - Note: 必須納入 MIN 快照，防止文件寫錯位置
 
@@ -207,7 +207,7 @@ P2（最後補齊）：
 - Note: **Cursor 文件放置的權威規範，每次執行任務前必引用**
 - Note: 包含完整的文件分類對照表、文件放置決策流程、重複文件清理規則
 - Note: 使用者說「請參考你的規範」時，即指此文件
-- Related: FILE_ORGANIZATION_GUIDE.md, FILE_WRITE_LOCATION_RULE.md, GLOBAL_FILE_CANON.md
+- Related: CURSOR_FILE_PLACEMENT_RULE.md, CURSOR_FILE_PLACEMENT_RULE.md, CURSOR_FILE_PLACEMENT_RULE.md
 
 ## MASTER_SNAPSHOT_USAGE_GUIDE
 - Status: DELETED（已刪除，自 2026-01-10 起）

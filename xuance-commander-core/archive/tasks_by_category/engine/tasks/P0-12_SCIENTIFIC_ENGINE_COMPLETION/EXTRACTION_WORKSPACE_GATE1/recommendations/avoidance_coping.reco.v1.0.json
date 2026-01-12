@@ -1,0 +1,21 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json（缺失）",
+  "_extraction_date": "2026-01-12",
+  "_note": "⚠️ 此主題在 guidanceActionTemplates 中沒有對應的模板，需要從其他來源提取或標註缺失",
+  "_status": "MISSING",
+  "theme_id": "avoidance_coping",
+  "actionTemplates": {
+    "today": [],
+    "week": []
+  },
+  "ageBands": {},
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "No recommendation blocks found in available raw sources for this facet.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

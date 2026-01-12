@@ -8,7 +8,7 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 /**
  * L3 Reveal Props

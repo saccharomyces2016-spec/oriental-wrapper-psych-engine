@@ -1,0 +1,35 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "mid": {
+    "if_not_improve": [
+      "待轉換：試著找出一個壓力源，思考如何減輕或調整應對方式"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "待轉換：試著找出一個壓力源，思考如何減輕或調整應對方式"
+    ]
+  },
+  "_raw_chains": [
+    {
+      "id": "chain_chronic_stress",
+      "label": "長期壓力連鎖",
+      "confidence": "high",
+      "uncertainty_note": "壓力反應因人而異，此為一般性描述",
+      "do_not_say": [
+        "你一定會生病",
+        "你註定會崩潰",
+        "這是不可逆的",
+        "你已經沒救了",
+        "你注定會失敗"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "長期壓力確實會影響身心狀態",
+        "guide": "同時，及早調整可以改變發展方向",
+        "action": "試著找出一個壓力源，思考如何減輕或調整應對方式"
+      }
+    }
+  ]
+}

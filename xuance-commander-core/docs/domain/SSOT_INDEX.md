@@ -77,7 +77,7 @@
 - Note: 系統執行前必須明確請求所需快照
 
 ## FILE_WRITE_LOCATION_RULE
-- Path: xuance-commander-core/docs/governance/FILE_WRITE_LOCATION_RULE.md
+- Path: xuance-commander-core/docs/governance/CURSOR_FILE_PLACEMENT_RULE.md
 - Status: ACTIVE
 - Priority: CRITICAL
 - Scope: All file write operations

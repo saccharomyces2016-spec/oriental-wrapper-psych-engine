@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "chronic_depletion",
+  "sources": {
+    "questions": "domain/questions/chronic_depletion.questions.v1.0.json",
+    "scoring": "domain/facets/chronic_depletion.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/chronic_depletion.reco.v1.0.json",
+    "narratives": "domain/narratives/chronic_depletion.narr.v1.0.json",
+    "riskchains": "domain/riskchains/chronic_depletion.risk.v1.0.json"
+  }
+}

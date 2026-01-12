@@ -1,0 +1,255 @@
+# P0-5 UI Architecture（P0-5 UI 架構設計）
+
+## 狀態
+- ACTIVE
+- EDITABLE
+- 建立日期：2026-01-09
+- 設計來源：副指揮官（GPT）提案，總指揮批准
+
+---
+
+## 架構總覽
+
+### 設計原則
+- **可擴充 / 可刪減 / 可調整 / 可治理**
+- 不做任何結構性越權假設
+- 所有設計皆可在後續 ADR 中收斂或替換
+
+### 核心定位
+- **UI = 敘事管線（Narrative Pipeline）**
+- **UI = 儀式引導器（Ritual Orchestrator）**
+
+---
+
+## Layer 詳細規格
+
+### Layer 0：世界觀與氣氛層（Entrance Layer）
+
+**目的**：建立信任，引入玄學世界觀
+
+**模組**：
+- 開場動畫（五行生成 / 陰陽流轉）
+- 世界觀短敘事（30–60 秒）
+- 語言切換（CN / EN）
+
+**技術要求**：
+- 只出現一次
+- 可後續替換為高規動畫
+- 不影響主流程
+
+**設計原則**：
+- 無互動決策
+- 不承載資料
+- 僅負責「信任建立」
+
+---
+
+### Layer 1：使用者錨定層（User Anchor）
+
+**目的**：把「人」穩定錨定進系統，供後續敘事引用
+
+**來源**：`ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` Section 5（2026-01-12 審核通過）
+
+**資料輸入**（混合策略）：
+- **姓名**（顯示用，可選）
+- **性別**（語氣與隱喻微調，可選）
+- **出生年月日**（必須，用於 Root Element / 五行碰撞計算）
+- **Role Archetype**（角色原型，新增為可選或弱必填，用於調參 `volatility_thresholds`）
+  - 選項：開拓者 (Pioneer) / 守成者 (Keeper) / 謀略者 (Strategist) / 工匠 (Artisan)
+
+**UI 表現**：
+- 表單輸入
+- 不顯示「為什麼要這些資料」
+- 只說：「此為觀測之錨」
+
+**資料處理**：
+- 儲存使用者資訊
+- 供後續 Layer 使用（個人化稱呼）
+- **出生年月日**：用於計算 Root Element（`engine/root_element_mapper.py`），用於五行碰撞計算（`engine/collision_calculator.py`）
+- **Role Archetype**：用於調參 V3 params（`volatility_thresholds` 或 `rigidity_weight` 可微調，但建議只動 thresholds）
+
+**兩套系統整合**（CONSTITUTION Section 5.2）：
+- 採用 **兩者獨立、互不影響**：
+  - Role Archetype：只影響 V3 params（`volatility_thresholds`）
+  - Root Element：只影響五行碰撞（`collision_calculator.py`）與敘事層（不影響 score 的數學核心）
+
+**隱私與存留**（CONSTITUTION Section 5.3）：
+- DOB 屬 PII：
+  - 若 server 端處理：必須有「短期存留/可刪除」策略（資料清理）
+  - 若 client 端處理：可只上傳 Root Element（不傳 DOB）作為最小化方案（此為後續 ADR 可選路線）
+
+**注意**：若要把「出生年月日改為非必填」屬於 P0-5 結構性變更，必須走 ADR + 指揮官批准；本文件先不觸碰該變更。
+
+---
+
+### Layer 2：困擾領域選擇層（Facet Gate）
+
+**目的**：對應 compiled facet 的入口層
+
+**UI 表現**：
+- 卡片式困境選擇
+- 事業（`income_expansion_pressure`）
+- 關係（`relationship_imbalance`）
+- （未來可擴充）
+
+**設計要求**：
+- 每張卡只有「玄學描述」，不顯示系統名（facet key）
+- 卡片設計符合東方命理風格
+
+**資料行為**：
+- 選擇 = facet key
+- 不做任何邏輯判斷
+- 直接進入 Layer 3
+
+---
+
+### Layer 3：問題行走層（Question Walk）
+
+**目的**：問題不是在「問你」，是在「帶你走一段路」
+
+**特性**：
+- 問題逐題顯示（不可跳）
+- 無返回鍵（避免理性校正）
+- 轉場有「氣息流動」動畫
+
+**題型呈現方式**：
+- **當前實作（P0-5 MVP）**：使用基礎的單選/多選形式（符合 ADR_0006）
+- **未來擴充**：支持八卦盤、符號多選等創新 UI（已明確保留，見 ADR_0006）
+- **架構要求**：題型呈現組件必須模組化，可替換，不影響數據結構
+
+**資料**：
+- 單純收集 answer payload
+- UI 不解釋、不推論
+- 答案格式統一（questionId → answer value），不依賴特定題型
+- 完成後進入 Layer 4
+
+**詳細說明**：見 `docs/domain/design/P0-5_QUESTION_MODALITY_EXTENSIBILITY.md`
+
+---
+
+### Layer 4：轉譯儀式層（Transition Ritual）
+
+**目的**：系統「運算中」的象徵階段
+
+**表現**：
+- 五行 / 月相 / 節氣動畫（依 facet）
+- 不顯示 loading 百分比
+- 時間固定（避免感知推論）
+
+**設計要求**：
+- 動畫必須符合 facet 的主隱喻
+- 例如：`income_expansion_pressure` 使用「歲時農耕・倉廩觀」動畫
+- 例如：`relationship_imbalance` 使用「月相潮汐・盈虛觀」動畫
+
+---
+
+### Layer 5：結果敘事層（Narrative Stage）
+
+**目的**：核心價值所在
+
+**分段呈現**：
+1. **主敘事（Narrative）**：L1–L4 層級的敘事內容
+2. **行動建議（Recommendations）**：可執行的行動建議
+3. **風險鏈（Risk Chain）**：風險鏈的視覺化呈現
+
+**設計重點**：
+- 分層展開（非一次丟出）
+- 每層都可單獨動畫
+- 使用姓名進行「指名敘事」（如果提供）
+
+**視覺化要求**：
+- 使用圖表、圖示、動畫等方式呈現結果
+- 按照 L1–L4 層級分層顯示
+- 允許使用者深入查看某個層級的詳細內容
+
+---
+
+### Layer 6：指引與收尾層（Guidance & Exit）
+
+**目的**：不做決策，只留下方向
+
+**內容**：
+- 當下可行的一步
+- 不承諾結果
+- 不給具體指令（符合法規）
+
+**設計要求**：
+- 符合「純玄學體驗」要求
+- 不暴露內部結構
+- 不給具體決策指令
+
+---
+
+## 技術架構
+
+### 技術立場
+- **UI = Pure Renderer**
+- 所有資料來自 compiled facet JSON
+- 無任何 domain logic 在 UI
+
+### 資料流
+```
+compiled_facet.json
+        ↓
+UI Adapter（只 mapping，不運算）
+        ↓
+View Components
+```
+
+### 可擴充性保證
+- 新 Facet = 新 JSON + 新文案
+- UI 無需改動結構
+- 所有 Layer 可獨立替換
+
+### 題型可擴充性（重要）
+- **數據層與呈現層分離**：compiled facet JSON 結構獨立於 UI 呈現方式
+- **當前實作**：P0-5 可能使用基礎的單選/多選形式（符合 ADR_0006）
+- **未來擴充**：架構必須支持未來切換到八卦盤、符號多選等創新 UI
+- **架構要求**：
+  - UI 組件模組化（QuestionRenderer 抽象接口）
+  - 數據綁定抽象化（不依賴特定呈現方式）
+  - 配置驅動設計（可在配置文件中指定題型呈現方式）
+
+**詳細說明**：見 `docs/domain/design/P0-5_QUESTION_MODALITY_EXTENSIBILITY.md`
+
+---
+
+## 動畫與視覺策略
+
+### 原則
+- 動畫 = 情緒節拍器
+- 不為炫技
+- 不與內容耦合
+
+### 技術建議（非強制）
+- CSS / Canvas / WebGL 皆可
+- 動畫模組獨立，可整包替換
+
+### 動畫節點
+- Layer 0 → Layer 1：開場動畫結束
+- Layer 1 → Layer 2：資料輸入完成
+- Layer 2 → Layer 3：困境選擇完成
+- Layer 3 → Layer 4：問題回答完成
+- Layer 4 → Layer 5：轉譯儀式完成
+- Layer 5 內部：結果分層展開
+- Layer 5 → Layer 6：結果呈現完成
+
+---
+
+## 錯誤處理（玄學語感版）
+
+| 狀況 | UI 回應 |
+|------|---------|
+| JSON 無法讀取 | 「卦象未成，暫不可觀」 |
+| 結構錯誤 | 「此時天象紊亂，請稍後再試」 |
+| 缺欄位 | 「部分徵象未顯」 |
+| 網路錯誤 | 「天象未連，請稍後再試」 |
+| 使用者輸入錯誤 | 「請重新觀測」 |
+
+---
+
+## 狀態
+- ACTIVE
+- EDITABLE
+- 必須納入 P0-5 任務包
+

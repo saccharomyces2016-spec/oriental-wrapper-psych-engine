@@ -2,15 +2,73 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Compiled Facet Schema",
   "type": "object",
-  "required": ["domainVersion", "facetId", "questions", "scoring", "recommendations", "narratives", "riskchains"],
+  "required": [
+    "domainVersion",
+    "domainKey",
+    "facetId",
+    "questionSet",
+    "questions",
+    "scoring",
+    "recommendations",
+    "narratives",
+    "riskchains"
+  ],
   "properties": {
-    "domainVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+$" },
-    "facetId": { "type": "string" },
-    "questions": { "type": "array" },
-    "scoring": { "type": "object" },
-    "recommendations": { "type": "object" },
-    "narratives": { "type": "object" },
-    "riskchains": { "type": "object" }
+    "domainVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "domainKey": {
+      "type": "string",
+      "enum": [
+        "qian",
+        "kun",
+        "zhen",
+        "xun",
+        "kan",
+        "li",
+        "gen",
+        "dui",
+        "center"
+      ]
+    },
+    "facetId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "questionSet": {
+      "type": "string",
+      "enum": [
+        "OCTET_8",
+        "DECET_10"
+      ]
+    },
+    "element": {
+      "type": "string",
+      "enum": [
+        "METAL",
+        "WOOD",
+        "WATER",
+        "FIRE",
+        "EARTH",
+        "NONE"
+      ]
+    },
+    "questions": {
+      "type": "array"
+    },
+    "scoring": {
+      "type": "object"
+    },
+    "recommendations": {
+      "type": "object"
+    },
+    "narratives": {
+      "type": "object"
+    },
+    "riskchains": {
+      "type": "object"
+    }
   },
   "additionalProperties": false
 }

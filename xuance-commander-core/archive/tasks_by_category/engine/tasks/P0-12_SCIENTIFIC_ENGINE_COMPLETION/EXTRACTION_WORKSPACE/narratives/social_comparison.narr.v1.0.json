@@ -1,0 +1,313 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華。ContentDB 內容需要手動分析提取。",
+  "low": {
+    "opening": "想靠近又怕失控",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "mid": {
+    "opening": "你不是冷，是怕被否定",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "_raw_anchors": [
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_01",
+      "label": "關係中的靠近與自保",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道失去的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道失去的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道失去的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_02",
+      "label": "關係中的靠近與自保（變體2）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "emotional_suppression"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道受傷的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道受傷的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道受傷的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_03",
+      "label": "關係中的靠近與自保（變體3）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "people_pleasing"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被拒絕的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被拒絕的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被拒絕的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_04",
+      "label": "關係中的靠近與自保（變體4）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "social_withdrawal"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被拋棄的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被拋棄的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被拋棄的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_05",
+      "label": "關係中的靠近與自保（變體5）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "emotional_suppression"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被背叛的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被背叛的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被背叛的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_06",
+      "label": "關係中的靠近與自保（變體6）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "people_pleasing"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被忽略的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被忽略的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被忽略的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_07",
+      "label": "關係中的靠近與自保（變體7）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "social_withdrawal"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被傷害的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被傷害的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被傷害的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_08",
+      "label": "關係中的靠近與自保（變體8）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "emotional_suppression"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被遺棄的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被遺棄的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被遺棄的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_09",
+      "label": "關係中的靠近與自保（變體9）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "people_pleasing"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被否定的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被否定的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被否定的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    },
+    {
+      "id": "ANCHOR_ATTACH_INSECURITY_10",
+      "label": "關係中的靠近與自保（變體10）",
+      "mother_theme": "attachment_insecurity",
+      "state_tags": [
+        "relationship_anxiety",
+        "withdrawal",
+        "need_for_control",
+        "social_withdrawal"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若關係目前穩定，這句可能不適用。",
+      "do_not_say": [
+        "你缺乏安全感",
+        "你關係有問題",
+        "你註定會分手"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你在靠近與自保之間來回，不是因為你不想要親密，而是因為你太知道被離開的痛。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你在靠近與自保之間來回，不是因為你不想要連結，而是因為你太知道被離開的痛。",
+        "你在靠近與自保之間來回，不是因為你不想要關係，而是因為你太知道被離開的痛。"
+      ],
+      "why_it_hits": "承認需求與恐懼並存，而非單純歸因於性格缺陷。"
+    }
+  ],
+  "_contentdb_sources": [
+    {
+      "domain": "relationship",
+      "file": "ContentDB_relationship.js"
+    },
+    {
+      "domain": "social",
+      "file": "ContentDB_social.js"
+    },
+    {
+      "domain": "love",
+      "file": "ContentDB_love.js"
+    }
+  ],
+  "_extracted_from_contentdb": true
+}

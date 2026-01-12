@@ -122,7 +122,7 @@
 | 文件路徑 | 檢查項目 |
 | --- | --- |
 | `docs/governance/GOVERNANCE_INDEX.md` | 可能引用已刪除的文件 |
-| `docs/governance/FILE_ORGANIZATION_GUIDE.md` | 可能引用已刪除的文件 |
+| `docs/governance/CURSOR_FILE_PLACEMENT_RULE.md` | 可能引用已刪除的文件 |
 | `memory/index/INDEX.md` | 可能引用已刪除的快照文件 |
 
 ---

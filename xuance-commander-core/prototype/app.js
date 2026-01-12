@@ -78,7 +78,16 @@ function pickQuestions(compiled) {
 function normalizeQuestion(q) {
   const id = q.id || q.qid || q.key || q.code || "";
   const prompt = q.prompt || q.text || q.title || q.question || q.label || "";
-  const options = q.options || q.choices || q.answers || q.items || [];
+  // Handle both options array and scale array (for likert scales)
+  let options = q.options || q.choices || q.answers || q.items || [];
+  // If scale exists, convert it to options with values 0, 1, 2, ... and scores
+  if (q.scale && Array.isArray(q.scale) && options.length === 0) {
+    options = q.scale.map((label, index) => ({
+      value: index,
+      label: label,
+      score: index  // Default score, can be overridden by scoring rules
+    }));
+  }
   return { id, prompt, options };
 }
 
@@ -160,19 +169,65 @@ function updateButtonsEnabled(total) {
 }
 
 function sumScore(compiled) {
-  const hasExplicit = compiled?.scoring || compiled?.scoreRules || compiled?.rules?.scoring;
-  if (hasExplicit) {
-    // TODO: map explicit scoring rules if needed; for MVP, use option scores.
+  const scoring = compiled?.scoring;
+  if (scoring && scoring.inputs && Array.isArray(scoring.inputs)) {
+    // Use explicit scoring rules
+    let weightedSum = 0;
+    let totalWeight = 0;
+    const questions = pickQuestions(compiled);
+    
+    for (const rule of scoring.inputs) {
+      const qId = rule.questionId;
+      const answer = state.answers.get(qId);
+      if (!answer) continue;
+      
+      const rawValue = Number(answer.value);
+      if (Number.isNaN(rawValue)) continue;
+      
+      // Find question to get max value
+      const question = questions.find(q => {
+        const qid = q.id || q.qid || q.key || q.code || "";
+        return qid === qId;
+      });
+      const scaleLength = question?.scale?.length || question?.options?.length || 5;
+      const maxValue = scaleLength - 1;
+      
+      // Normalize to 0-1
+      let normalizedValue = maxValue > 0 ? rawValue / maxValue : 0;
+      
+      // Apply direction (higher_is_worse means higher raw = higher score, no inversion needed)
+      const weight = rule.weight || 1.0;
+      weightedSum += normalizedValue * weight;
+      totalWeight += weight;
+    }
+    
+    // Return normalized score (0-1)
+    return totalWeight > 0 ? weightedSum / totalWeight : 0;
   }
+  
+  // Fallback: simple sum and normalize
   let total = 0;
-  for (const [, a] of state.answers) {
-    if (typeof a.score === "number") total += a.score;
-    else {
+  let maxPossible = 0;
+  const questions = pickQuestions(compiled);
+  
+  for (const [qId, a] of state.answers) {
+    const q = questions.find(q => {
+      const qid = q.id || q.qid || q.key || q.code || "";
+      return qid === qId;
+    });
+    const scaleLength = q?.scale?.length || q?.options?.length || 5;
+    maxPossible += scaleLength - 1;
+    
+    if (typeof a.score === "number") {
+      total += a.score;
+    } else {
       const n = Number(a.value);
       if (!Number.isNaN(n)) total += n;
     }
   }
-  return total;
+  
+  // Normalize to 0-1 if we have a max
+  return maxPossible > 0 ? total / maxPossible : total;
 }
 
 function pickBands(compiled) {
@@ -192,7 +247,7 @@ function chooseOutcome(compiled, score) {
   if (!bands.length) return null;
 
   const norm = bands.map(b => ({
-    id: b.id || b.key || b.code || "",
+    id: b.id || b.key || b.code || b.band || "",
     min: (typeof b.min === "number") ? b.min : (typeof b.low === "number") ? b.low : null,
     max: (typeof b.max === "number") ? b.max : (typeof b.high === "number") ? b.high : null,
     threshold: (typeof b.threshold === "number") ? b.threshold : null,
@@ -212,7 +267,7 @@ function chooseOutcome(compiled, score) {
     return chosen;
   }
 
-  return norm[0].raw;
+  return norm[0]?.raw || null;
 }
 
 function safeBlock(title, body) {
@@ -233,39 +288,58 @@ function renderResult(compiled) {
   const score = sumScore(compiled);
   const outcome = chooseOutcome(compiled, score);
 
-  const title =
-    t(outcome?.title, state.renderedLang) ||
-    t(outcome?.name, state.renderedLang) ||
-    outcome?.label ||
-    "卦象已成";
+  if (!outcome) {
+    els.result.textContent = "已出卦，但無法確定卦象。";
+    els.detail.innerHTML = "";
+    return;
+  }
 
-  const narrative =
-    t(outcome?.narrative, state.renderedLang) ||
-    t(outcome?.desc, state.renderedLang) ||
-    t(outcome?.description, state.renderedLang) ||
-    "";
+  // Get band ID/key
+  const bandId = outcome.id || outcome.key || outcome.code || outcome.band || "";
+  
+  // Extract narratives
+  const narratives = compiled?.narratives || {};
+  const narrativeData = narratives[bandId] || {};
+  const narrativeOpening = narrativeData.opening || "";
+  const narrativeExplain = narrativeData.explain || "";
+  const narrative = [narrativeOpening, narrativeExplain].filter(Boolean).join("\n");
 
-  const reco =
-    t(outcome?.recommendation, state.renderedLang) ||
-    t(outcome?.reco, state.renderedLang) ||
-    t(outcome?.advice, state.renderedLang) ||
-    "";
+  // Extract recommendations
+  const recommendations = compiled?.recommendations || {};
+  const recoList = recommendations[bandId] || [];
+  let reco = "";
+  if (recoList.length > 0) {
+    const firstReco = recoList[0];
+    const recoTitle = firstReco.title || "";
+    const recoSteps = Array.isArray(firstReco.steps) ? firstReco.steps : [];
+    const stepsText = recoSteps.map((step, idx) => `${idx + 1}. ${step}`).join("\n");
+    reco = [recoTitle, stepsText].filter(Boolean).join("\n");
+  }
 
-  const risk =
-    t(outcome?.risk, state.renderedLang) ||
-    t(outcome?.riskchain, state.renderedLang) ||
-    t(outcome?.warning, state.renderedLang) ||
-    "";
+  // Extract risk chains
+  const riskchains = compiled?.riskchains || {};
+  const riskData = riskchains[bandId] || {};
+  const riskList = riskData.if_not_improve || [];
+  const risk = riskList.length > 0 ? riskList.join("\n") : "";
 
-  const headline = `【${title}】`;
-  const text = [headline, narrative, reco, risk].filter(Boolean).join("\n\n");
-
-  els.result.textContent = text || "已出卦，但結果文案為空。";
+  // Build result text
+  const parts = [];
+  if (narrative) parts.push(narrative);
+  if (reco) parts.push(`【建議】\n${reco}`);
+  if (risk) parts.push(`【需留意】\n${risk}`);
+  
+  const text = parts.length > 0 ? parts.join("\n\n") : "已出卦，但結果文案為空。";
+  els.result.textContent = text;
 
   els.detail.innerHTML = "";
-  els.detail.appendChild(safeBlock("本次卦象強度（內部）", String(score)));
-  els.detail.appendChild(safeBlock("關鍵提示", reco || "—"));
-  els.detail.appendChild(safeBlock("需留意", risk || "—"));
+  els.detail.appendChild(safeBlock("本次卦象強度（內部）", score.toFixed(3)));
+  els.detail.appendChild(safeBlock("卦象分類", bandId || "—"));
+  if (reco) {
+    els.detail.appendChild(safeBlock("關鍵提示", reco.split("\n")[0] || "—"));
+  }
+  if (risk) {
+    els.detail.appendChild(safeBlock("需留意", risk.split("\n")[0] || "—"));
+  }
 }
 
 async function loadCompiled(path) {

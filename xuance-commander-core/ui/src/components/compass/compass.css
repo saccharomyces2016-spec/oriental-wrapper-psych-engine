@@ -62,6 +62,10 @@
   display: flex;
   justify-content: center;
   z-index: 10;
+  position: sticky;
+  bottom: 2rem;
+  padding: 1rem 0;
+  background: linear-gradient(to top, var(--theme-bg-color, #faf8f5) 70%, transparent);
 }
 
 .compass-confirm-button {

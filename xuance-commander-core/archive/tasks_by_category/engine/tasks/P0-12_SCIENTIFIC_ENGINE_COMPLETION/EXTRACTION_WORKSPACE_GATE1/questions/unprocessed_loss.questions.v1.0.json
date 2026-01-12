@@ -1,0 +1,17 @@
+{
+  "_extracted_from": "p1_question_blueprint_v1.json（設計藍圖，內容為 placeholder）",
+  "_extraction_date": "2026-01-12",
+  "_note": "⚠️ 此主題在 p1_question_blueprint_v1.json 中只有設計藍圖，內容為 placeholder（[Rough question text for unprocessed_loss - intent X]），需要實際題目內容或標註缺失",
+  "_status": "MISSING",
+  "theme_id": "unprocessed_loss",
+  "questions": [],
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "No concrete question items found for this facet in available raw sources; blueprint is placeholder only.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

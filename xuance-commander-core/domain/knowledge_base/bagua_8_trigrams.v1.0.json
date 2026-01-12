@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "trigrams": [
+    {
+      "id": "QIAN",
+      "code": "111",
+      "name": { "zh": "乾", "en": "Heaven" },
+      "properties": { "zh": "剛健、創造", "en": "Strength, creation" },
+      "symbolism": { "zh": "父、天、首領", "en": "Father, sky, leadership" },
+      "element": "METAL"
+    },
+    {
+      "id": "KUN",
+      "code": "000",
+      "name": { "zh": "坤", "en": "Earth" },
+      "properties": { "zh": "柔順、承載", "en": "Receptive, supportive" },
+      "symbolism": { "zh": "母、地、包容", "en": "Mother, ground, inclusion" },
+      "element": "EARTH"
+    },
+    {
+      "id": "ZHEN",
+      "code": "001",
+      "name": { "zh": "震", "en": "Thunder" },
+      "properties": { "zh": "啟動、驚動", "en": "Arousal, initiation" },
+      "symbolism": { "zh": "長子、雷、動", "en": "First son, thunder, movement" },
+      "element": "WOOD"
+    },
+    {
+      "id": "XUN",
+      "code": "110",
+      "name": { "zh": "巽", "en": "Wind" },
+      "properties": { "zh": "滲透、柔入", "en": "Penetration, influence" },
+      "symbolism": { "zh": "長女、風、入", "en": "First daughter, wind, entry" },
+      "element": "WOOD"
+    },
+    {
+      "id": "KAN",
+      "code": "010",
+      "name": { "zh": "坎", "en": "Water" },
+      "properties": { "zh": "危險、深陷", "en": "Danger, depth" },
+      "symbolism": { "zh": "中子、水、陷", "en": "Middle son, water, abyss" },
+      "element": "WATER"
+    },
+    {
+      "id": "LI",
+      "code": "101",
+      "name": { "zh": "離", "en": "Fire" },
+      "properties": { "zh": "光明、附著", "en": "Clarity, attachment" },
+      "symbolism": { "zh": "中女、火、明", "en": "Middle daughter, fire, light" },
+      "element": "FIRE"
+    },
+    {
+      "id": "GEN",
+      "code": "100",
+      "name": { "zh": "艮", "en": "Mountain" },
+      "properties": { "zh": "止、界線", "en": "Stillness, boundary" },
+      "symbolism": { "zh": "少子、山、止", "en": "Youngest son, mountain, stop" },
+      "element": "EARTH"
+    },
+    {
+      "id": "DUI",
+      "code": "011",
+      "name": { "zh": "兌", "en": "Lake" },
+      "properties": { "zh": "喜悅、交流", "en": "Joy, communication" },
+      "symbolism": { "zh": "少女、澤、說", "en": "Youngest daughter, lake, speech" },
+      "element": "METAL"
+    }
+  ]
+}

@@ -46,6 +46,7 @@ export function riskIntercept(vm: FacetViewModel): RiskInterceptResult {
     const template = loadSafetyTemplate(templateId);
 
     // 3. 丟棄動態 L4（關鍵）
+    const safetyTemplateId: 'TEMPLATE_A' | 'TEMPLATE_B' = templateId === 'A' ? 'TEMPLATE_A' : 'TEMPLATE_B';
     const safeResults = {
       ...vm.stages.results,
       layers: {
@@ -53,7 +54,7 @@ export function riskIntercept(vm: FacetViewModel): RiskInterceptResult {
         l4: {
           titleKey: vm.stages.results.layers.l4.titleKey,
           // 刪除 dynamicBodyKey
-          safetyTemplateId: templateId === 'A' ? 'TEMPLATE_A' : 'TEMPLATE_B',
+          safetyTemplateId,
           safetyBodyKey: template.body_keys[0], // 使用第一個 body key
         },
       },

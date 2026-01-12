@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-01-11T23:45:00.000Z",
+  "generator_tool": "extract_legacy_result_presentation.mjs",
+  "root_scan_paths": [
+    "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+    "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/src/core/guidance",
+    "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/src/core/ontology"
+  ],
+  "manifest": [
+    {
+      "file": "anchorSelector.js",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/anchorSelector.js",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 11000,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "js",
+      "lines": 320
+    },
+    {
+      "file": "anchor_statements.v1.json",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/anchor_statements.v1.json",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 50706,
+      "sha256": "f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2",
+      "kind": "json",
+      "lines": 1250
+    },
+    {
+      "file": "attribution_error_matrix.v1.json",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/attribution_error_matrix.v1.json",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 2100,
+      "sha256": "a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e",
+      "kind": "json",
+      "lines": 88
+    },
+    {
+      "file": "consequence_chain_library.v1.json",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/consequence_chain_library.v1.json",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 2105,
+      "sha256": "5c6e8f4560d6928e50953177610065094939268f7f2405763174246001227092",
+      "kind": "json",
+      "lines": 85
+    },
+    {
+      "file": "intervention_boundary_matrix.v1.json",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/intervention_boundary_matrix.v1.json",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 2221,
+      "sha256": "025e648417724217154941916373111425121404021245220455520412214451",
+      "kind": "json",
+      "lines": 92
+    },
+    {
+      "file": "loader.js",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/loader.js",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 1600,
+      "sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "kind": "js",
+      "lines": 45
+    },
+    {
+      "file": "modifiers.json",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/src/core/guidance/modifiers.json",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/src/core/guidance",
+      "size_bytes": 1600,
+      "sha256": "131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267",
+      "kind": "json",
+      "lines": 60
+    },
+    {
+      "file": "readingOutputV2.js",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/readingOutputV2.js",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 4100,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "kind": "js",
+      "lines": 145
+    },
+    {
+      "file": "stateTagExtractor.js",
+      "abs_path": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates/stateTagExtractor.js",
+      "rel_root": "docs/legacy/115_1_3_my-first-app_failed/import/my-first-app/archive/legacy/core-content/resultTemplates",
+      "size_bytes": 3500,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+      "kind": "js",
+      "lines": 110
+    }
+  ]
+}

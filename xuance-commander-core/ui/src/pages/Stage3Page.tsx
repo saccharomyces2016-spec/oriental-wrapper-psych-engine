@@ -11,7 +11,7 @@
  * 注意：目前為簡化實作，後續可擴展
  */
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import type { FacetViewModel } from '../adapters/types';
 import { useI18nStore } from '../engine/i18n';
 import { useFlowState } from '../state';
@@ -28,7 +28,7 @@ export interface Stage3PageProps {
  */
 export function Stage3Page({ viewModel }: Stage3PageProps) {
   const { t } = useI18nStore();
-  const { state, setProjectionAnswer, setCurrentStage } = useFlowState();
+  const { setProjectionAnswer, setCurrentStage } = useFlowState();
   
   const projection = viewModel.stages.projection;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

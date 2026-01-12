@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "fear_based_stability",
+  "actionTemplates": {
+    "today": [
+      "Today: pick one tiny experiment with a safety limit to {{principle}}.",
+      "Today: write the true worst-case and cushion so you can {{principle}}."
+    ],
+    "week": [
+      "This week: run two small trials with clear guardrails to {{principle}}.",
+      "This week: stack one small win toward change to {{principle}}."
+    ]
+  },
+  "ageBands": {}
+}

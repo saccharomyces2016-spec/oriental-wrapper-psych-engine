@@ -8,8 +8,6 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React from 'react';
-
 /**
  * L1 Title Props
  */

@@ -1,0 +1,26 @@
+{
+  "facetId": "income_expansion_pressure",
+  "domainVersion": "1.0",
+  "hexagram_mapping": {
+    "bands": {
+      "low": {
+        "hexagram_candidates": [11, 48],
+        "default_hexagram_id": 11,
+        "rationale": "Peace / Well"
+      },
+      "mid": {
+        "hexagram_candidates": [47],
+        "default_hexagram_id": 47,
+        "rationale": "Oppression"
+      },
+      "high": {
+        "hexagram_candidates": [29, 47],
+        "default_hexagram_id": 29,
+        "rationale": "The Abysmal"
+      }
+    },
+    "changing_line_triggers": {
+      "default": { "changing_line_index": null }
+    }
+  }
+}

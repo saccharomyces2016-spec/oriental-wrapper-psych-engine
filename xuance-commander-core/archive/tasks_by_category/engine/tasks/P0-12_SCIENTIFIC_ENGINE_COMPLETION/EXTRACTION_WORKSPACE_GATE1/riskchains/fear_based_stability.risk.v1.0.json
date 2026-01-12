@@ -1,0 +1,35 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "mid": {
+    "if_not_improve": [
+      "他人開始不再等待你的決定。"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "你會被動接受別人替你做的選擇。"
+    ]
+  },
+  "_raw_chains": [
+    {
+      "id": "chain_avoidance_loop",
+      "label": "逃避迴圈連鎖",
+      "confidence": "high",
+      "uncertainty_note": "逃避模式可能因情境而異，非絕對",
+      "do_not_say": [
+        "你永遠無法改變",
+        "你註定會重複這個模式",
+        "這是你的宿命",
+        "你已經定型了"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "逃避模式確實容易形成迴圈",
+        "guide": "同時，每個當下都可以選擇不同的回應方式",
+        "action": "試著在下一次想逃避時，先停下來，思考一個最小可行行動"
+      }
+    }
+  ],
+  "_updated_from": "chains.json (byTheme.commitment_anxiety)"
+}

@@ -45,12 +45,12 @@
 **放置位置**：`xuance-commander-core/docs/governance/`
 
 **包含類型**：
-- 治理規則與制度（如 `FILE_WRITE_LOCATION_RULE.md`）
+- 治理規則與制度（如 `CURSOR_FILE_PLACEMENT_RULE.md`）
 - AI 協作框架（如 `CURSOR_GPT_GEMINI_COLLABORATION_FRAMEWORK.md`）
 - 角色定義（如 `AI_ADVISORY_ROLES.md`）
 - 流程協議（如 `CURSOR_TASK_PACKAGE_RULE.md`）
 - 決策記錄與經驗總結（如 `LESSONS_LEARNED.md`）
-- 文件組織指南（如 `FILE_ORGANIZATION_GUIDE.md`）
+- 文件組織指南（如 `CURSOR_FILE_PLACEMENT_RULE.md`）
 
 **禁止放置**：
 - ❌ repo-root 的 `./docs/governance`
@@ -62,7 +62,7 @@
 
 **命名規則**：
 - 格式：`UPPERCASE_WITH_UNDERSCORES.md`
-- 範例：`FILE_WRITE_LOCATION_RULE.md`, `CURSOR_TASK_PACKAGE_RULE.md`
+- 範例：`CURSOR_FILE_PLACEMENT_RULE.md`, `CURSOR_TASK_PACKAGE_RULE.md`
 
 ---
 
@@ -618,7 +618,7 @@
 **格式**：`UPPERCASE_WITH_UNDERSCORES.md`
 
 **範例**：
-- `FILE_WRITE_LOCATION_RULE.md`
+- `CURSOR_FILE_PLACEMENT_RULE.md`
 - `CURSOR_TASK_PACKAGE_RULE.md`
 - `AI_ADVISORY_ROLES.md`
 
@@ -726,9 +726,9 @@
 ## 十、相關規範文件索引
 
 ### 核心規範文件
-- `FILE_ORGANIZATION_GUIDE.md`：詳細的文件組織指南
-- `FILE_WRITE_LOCATION_RULE.md`：文件寫入位置規則（硬規則）
-- `GLOBAL_FILE_CANON.md`：全域檔案憲法（Canon Path 定義）
+- `CURSOR_FILE_PLACEMENT_RULE.md`：詳細的文件組織指南
+- `CURSOR_FILE_PLACEMENT_RULE.md`：文件寫入位置規則（硬規則）
+- `CURSOR_FILE_PLACEMENT_RULE.md`：全域檔案憲法（Canon Path 定義）
 - `ARTIFACT_REGISTRY_RULE.md`：產物登記制度（新資料夾/資料線登記）
 - `ABSOLUTE_REFERENCE_RULE.md`：絕對路徑規則（禁止相對路徑）
 - `SHADOW_PATH_REGISTRY.md`：影子路徑登記（允許存在但不可引用）

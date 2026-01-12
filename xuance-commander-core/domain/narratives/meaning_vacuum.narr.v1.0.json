@@ -1,0 +1,14 @@
+{
+  "low": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  }
+}

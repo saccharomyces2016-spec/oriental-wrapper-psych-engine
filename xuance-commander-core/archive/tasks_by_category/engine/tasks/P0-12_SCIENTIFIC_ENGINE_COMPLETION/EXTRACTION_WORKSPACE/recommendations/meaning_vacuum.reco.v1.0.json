@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "meaning_vacuum",
+  "actionTemplates": {
+    "today": [
+      "Today: attach one task to a small why to {{principle}}.",
+      "Today: swap one hollow task for a meaningful one to {{principle}}."
+    ],
+    "week": [
+      "This week: track three moments that felt worthwhile to {{principle}}.",
+      "This week: name a near-term outcome that matters to {{principle}} and act on it once."
+    ]
+  },
+  "ageBands": {}
+}

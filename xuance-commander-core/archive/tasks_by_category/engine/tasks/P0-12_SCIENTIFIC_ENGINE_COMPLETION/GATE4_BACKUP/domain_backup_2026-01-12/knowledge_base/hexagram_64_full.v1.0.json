@@ -1,0 +1,834 @@
+[
+  {
+    "id": 0,
+    "code": "111111",
+    "name": { "zh": "乾", "en": "The Creative" },
+    "structure": { "upper": "Heaven", "lower": "Heaven" },
+    "keywords": { "zh": ["創造", "動力", "剛健"], "en": ["Initiating", "Power", "Drive"] },
+    "psychological_mapping": {
+      "archetype": "The Executive",
+      "state": "High Energy / High Willpower",
+      "desc": "處於極高能量與意志力的狀態，思維清晰，行動力強。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 1,
+    "code": "000000",
+    "name": { "zh": "坤", "en": "The Receptive" },
+    "structure": { "upper": "Earth", "lower": "Earth" },
+    "keywords": { "zh": ["包容", "承載", "執行"], "en": ["Receptive", "Supporting", "Yielding"] },
+    "psychological_mapping": {
+      "archetype": "The Supporter",
+      "state": "Receptive / Processing",
+      "desc": "處於接收與轉化的狀態，比起開創，更傾向於完善現有架構。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 2,
+    "code": "010001",
+    "name": { "zh": "屯", "en": "Difficulty at the Beginning" },
+    "structure": { "upper": "Water", "lower": "Thunder" },
+    "keywords": { "zh": ["萌芽", "混亂", "成長痛"], "en": ["Sprouting", "Chaos", "Growth Pains"] },
+    "psychological_mapping": {
+      "archetype": "The Pioneer",
+      "state": "Chaotic Growth",
+      "desc": "萬事起頭難的階段，充滿潛力但也伴隨著資源調度的混亂。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 3,
+    "code": "100010",
+    "name": { "zh": "蒙", "en": "Youthful Folly" },
+    "structure": { "upper": "Mountain", "lower": "Water" },
+    "keywords": { "zh": ["啟蒙", "未知", "教育"], "en": ["Ignorance", "Learning", "Mentorship"] },
+    "psychological_mapping": {
+      "archetype": "The Student",
+      "state": "Uninformed / Seeking",
+      "desc": "認知處於模糊階段，需要指導或透過學習來消除不確定性。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 4,
+    "code": "010111",
+    "name": { "zh": "需", "en": "Waiting" },
+    "structure": { "upper": "Water", "lower": "Heaven" },
+    "keywords": { "zh": ["等待", "積累", "時機"], "en": ["Patience", "Accumulation", "Timing"] },
+    "psychological_mapping": {
+      "archetype": "The Strategist",
+      "state": "Active Waiting",
+      "desc": "目標明確但時機未到，心理上需要耐心，這是一種策略性的暫停。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 5,
+    "code": "111010",
+    "name": { "zh": "訟", "en": "Conflict" },
+    "structure": { "upper": "Heaven", "lower": "Water" },
+    "keywords": { "zh": ["爭端", "不合", "談判"], "en": ["Dispute", "Disharmony", "Negotiation"] },
+    "psychological_mapping": {
+      "archetype": "The Litigator",
+      "state": "Cognitive Dissonance",
+      "desc": "內在價值觀與外在環境發生衝突，或人際間的利益對立。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 6,
+    "code": "000010",
+    "name": { "zh": "師", "en": "The Army" },
+    "structure": { "upper": "Earth", "lower": "Water" },
+    "keywords": { "zh": ["紀律", "組織", "動員"], "en": ["Discipline", "Organization", "Mobilization"] },
+    "psychological_mapping": {
+      "archetype": "The Commander",
+      "state": "Focused / Regimented",
+      "desc": "面臨挑戰需要集中資源，強調紀律與階層化的管理狀態。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 7,
+    "code": "010000",
+    "name": { "zh": "比", "en": "Holding Together" },
+    "structure": { "upper": "Water", "lower": "Earth" },
+    "keywords": { "zh": ["親密", "聯盟", "社交"], "en": ["Union", "Alliance", "Networking"] },
+    "psychological_mapping": {
+      "archetype": "The Diplomat",
+      "state": "Bonding / Connecting",
+      "desc": "尋求歸屬感與合作，心理能量向外連結，建立互信關係。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 8,
+    "code": "110111",
+    "name": { "zh": "小畜", "en": "The Taming Power of the Small" },
+    "structure": { "upper": "Wind", "lower": "Heaven" },
+    "keywords": { "zh": ["暫停", "醞釀", "小阻"], "en": ["Restraint", "Incubation", "Minor Obstacle"] },
+    "psychological_mapping": {
+      "archetype": "The Cultivator",
+      "state": "Restrained Growth",
+      "desc": "進展受到輕微阻礙，適合回到內部進行細節的優化與調整。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 9,
+    "code": "111011",
+    "name": { "zh": "履", "en": "Treading" },
+    "structure": { "upper": "Heaven", "lower": "Lake" },
+    "keywords": { "zh": ["實踐", "禮儀", "小心"], "en": ["Conduct", "Etiquette", "Cautious Walk"] },
+    "psychological_mapping": {
+      "archetype": "The Performer",
+      "state": "Vigilant Action",
+      "desc": "如履薄冰的行動狀態，強調按照規則辦事，避免踩線。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 10,
+    "code": "000111",
+    "name": { "zh": "泰", "en": "Peace" },
+    "structure": { "upper": "Earth", "lower": "Heaven" },
+    "keywords": { "zh": ["通達", "和諧", "交流"], "en": ["Flow", "Harmony", "Interaction"] },
+    "psychological_mapping": {
+      "archetype": "The Mediator",
+      "state": "Flow State",
+      "desc": "上下溝通順暢，內外資源流動無阻，心理處於極佳的平衡狀態。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 11,
+    "code": "111000",
+    "name": { "zh": "否", "en": "Stagnation" },
+    "structure": { "upper": "Heaven", "lower": "Earth" },
+    "keywords": { "zh": ["閉塞", "不通", "孤立"], "en": ["Blockage", "Isolation", "Misalignment"] },
+    "psychological_mapping": {
+      "archetype": "The Alienated",
+      "state": "Disconnected",
+      "desc": "溝通管道中斷，個人與環境格格不入，感到孤立無援。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 12,
+    "code": "111101",
+    "name": { "zh": "同人", "en": "Fellowship with Men" },
+    "structure": { "upper": "Heaven", "lower": "Fire" },
+    "keywords": { "zh": ["合作", "共鳴", "團隊"], "en": ["Camaraderie", "Consensus", "Teamwork"] },
+    "psychological_mapping": {
+      "archetype": "The Community Builder",
+      "state": "Synergistic",
+      "desc": "追求共同目標，打破私心，強調公開透明的合作關係。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 13,
+    "code": "101111",
+    "name": { "zh": "大有", "en": "Possession in Great Measure" },
+    "structure": { "upper": "Fire", "lower": "Heaven" },
+    "keywords": { "zh": ["豐盛", "收穫", "光輝"], "en": ["Abundance", "Harvest", "Clarified Power"] },
+    "psychological_mapping": {
+      "archetype": "The Philanthropist",
+      "state": "Resourceful / Generous",
+      "desc": "資源豐富且有能力掌控，心理上充滿自信與分享的慾望。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 14,
+    "code": "000100",
+    "name": { "zh": "謙", "en": "Modesty" },
+    "structure": { "upper": "Earth", "lower": "Mountain" },
+    "keywords": { "zh": ["謙虛", "低調", "平衡"], "en": ["Humility", "Balance", "Low Profile"] },
+    "psychological_mapping": {
+      "archetype": "The Sage",
+      "state": "Grounded",
+      "desc": "內在充實但不外顯，懂得藏鋒，透過退讓來獲得更長遠的利益。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 15,
+    "code": "001000",
+    "name": { "zh": "豫", "en": "Enthusiasm" },
+    "structure": { "upper": "Thunder", "lower": "Earth" },
+    "keywords": { "zh": ["歡愉", "預備", "動力"], "en": ["Joy", "Preparation", "Motivation"] },
+    "psychological_mapping": {
+      "archetype": "The Motivator",
+      "state": "Anticipation",
+      "desc": "對未來充滿期待，情緒高昂，但也容易流於安逸或過度樂觀。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 16,
+    "code": "011001",
+    "name": { "zh": "隨", "en": "Following" },
+    "structure": { "upper": "Lake", "lower": "Thunder" },
+    "keywords": { "zh": ["順應", "調整", "彈性"], "en": ["Adaptation", "Flexibility", "Following"] },
+    "psychological_mapping": {
+      "archetype": "The Adapter",
+      "state": "Flowing / Reactive",
+      "desc": "放下執著，順應環境變化，心理上展現高度的彈性與適應力。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 17,
+    "code": "100110",
+    "name": { "zh": "蠱", "en": "Work on What Has Been Spoiled" },
+    "structure": { "upper": "Mountain", "lower": "Wind" },
+    "keywords": { "zh": ["整頓", "修復", "改革"], "en": ["Correction", "Repair", "Reform"] },
+    "psychological_mapping": {
+      "archetype": "The Fixer",
+      "state": "Troubleshooting",
+      "desc": "面對積弊已久的問題，心理上感到沈重，但必須採取行動進行清理。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 18,
+    "code": "000011",
+    "name": { "zh": "臨", "en": "Approach" },
+    "structure": { "upper": "Earth", "lower": "Lake" },
+    "keywords": { "zh": ["親臨", "成長", "督導"], "en": ["Expansion", "Supervision", "Approach"] },
+    "psychological_mapping": {
+      "archetype": "The Overseer",
+      "state": "Assertive Growth",
+      "desc": "勢力增長，主動介入管理事務，展現影響力的時期。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 19,
+    "code": "110000",
+    "name": { "zh": "觀", "en": "Contemplation" },
+    "structure": { "upper": "Wind", "lower": "Earth" },
+    "keywords": { "zh": ["觀察", "展示", "反思"], "en": ["Observation", "Reflection", "Insight"] },
+    "psychological_mapping": {
+      "archetype": "The Observer",
+      "state": "Detached Awareness",
+      "desc": "抽離現場進行宏觀審視，心理上處於靜態的分析與洞察模式。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 20,
+    "code": "101001",
+    "name": { "zh": "噬嗑", "en": "Biting Through" },
+    "structure": { "upper": "Fire", "lower": "Thunder" },
+    "keywords": { "zh": ["決斷", "刑罰", "磨合"], "en": ["Decision", "Justice", "Integration"] },
+    "psychological_mapping": {
+      "archetype": "The Judge",
+      "state": "Confrontational",
+      "desc": "面對障礙必須強硬排除，心理上準備好進行激烈的磨合或衝突解決。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 21,
+    "code": "100101",
+    "name": { "zh": "賁", "en": "Grace" },
+    "structure": { "upper": "Mountain", "lower": "Fire" },
+    "keywords": { "zh": ["修飾", "美化", "形象"], "en": ["Adornment", "Aesthetics", "Presentation"] },
+    "psychological_mapping": {
+      "archetype": "The Artist",
+      "state": "Expressive",
+      "desc": "重視外在表現與形式美感，但可能掩蓋了內在的實質問題。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 22,
+    "code": "100000",
+    "name": { "zh": "剝", "en": "Splitting Apart" },
+    "structure": { "upper": "Mountain", "lower": "Earth" },
+    "keywords": { "zh": ["剝落", "衰退", "侵蝕"], "en": ["Erosion", "Decay", "Letting Go"] },
+    "psychological_mapping": {
+      "archetype": "The Minimalist",
+      "state": "Deconstructing",
+      "desc": "基礎受到侵蝕，舊有結構崩解，心理上需要學會放手與止損。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 23,
+    "code": "000001",
+    "name": { "zh": "復", "en": "Return" },
+    "structure": { "upper": "Earth", "lower": "Thunder" },
+    "keywords": { "zh": ["復甦", "回歸", "初衷"], "en": ["Renewal", "Recovery", "Restart"] },
+    "psychological_mapping": {
+      "archetype": "The Phoenix",
+      "state": "Regenerating",
+      "desc": "經歷低谷後的第一線生機，心理能量開始回升，適合小步重新出發。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 24,
+    "code": "111001",
+    "name": { "zh": "無妄", "en": "Innocence" },
+    "structure": { "upper": "Heaven", "lower": "Thunder" },
+    "keywords": { "zh": ["自然", "真實", "意外"], "en": ["Spontaneity", "Unexpected", "Integrity"] },
+    "psychological_mapping": {
+      "archetype": "The Naturalist",
+      "state": "Uncontrived",
+      "desc": "順應天性，不矯揉造作。但也暗示可能遭遇非人為控制的意外。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 25,
+    "code": "100111",
+    "name": { "zh": "大畜", "en": "The Taming Power of the Great" },
+    "structure": { "upper": "Mountain", "lower": "Heaven" },
+    "keywords": { "zh": ["積蓄", "涵養", "大格局"], "en": ["Great Accumulation", "Restraint", "Vision"] },
+    "psychological_mapping": {
+      "archetype": "The Steward",
+      "state": "Capacity Building",
+      "desc": "心理素質強大，能夠容納並轉化巨大的能量與資源，為大目標做準備。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 26,
+    "code": "100001",
+    "name": { "zh": "頤", "en": "The Corners of the Mouth" },
+    "structure": { "upper": "Mountain", "lower": "Thunder" },
+    "keywords": { "zh": ["養育", "口舌", "吸收"], "en": ["Nourishment", "Wellness", "Input/Output"] },
+    "psychological_mapping": {
+      "archetype": "The Nurturer",
+      "state": "Maintenance",
+      "desc": "關注身心靈的攝取與表達，也就是「病從口入，禍從口出」的審慎狀態。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 27,
+    "code": "011110",
+    "name": { "zh": "大過", "en": "Preponderance of the Great" },
+    "structure": { "upper": "Lake", "lower": "Wind" },
+    "keywords": { "zh": ["負荷", "壓力", "突破"], "en": ["Overload", "Critical Mass", "Stress"] },
+    "psychological_mapping": {
+      "archetype": "The Weightlifter",
+      "state": "Overextended",
+      "desc": "承擔了超過常規的壓力與責任，結構岌岌可危，必須尋求突破或減壓。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 28,
+    "code": "010010",
+    "name": { "zh": "坎", "en": "The Abysmal" },
+    "structure": { "upper": "Water", "lower": "Water" },
+    "keywords": { "zh": ["危險", "深淵", "習練"], "en": ["Danger", "Depth", "Resilience"] },
+    "psychological_mapping": {
+      "archetype": "The Survivor",
+      "state": "High Anxiety / Crisis",
+      "desc": "處於環境險惡或情緒低谷，需要極大的韌性來維持生存與流動。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 29,
+    "code": "101101",
+    "name": { "zh": "離", "en": "The Clinging, Fire" },
+    "structure": { "upper": "Fire", "lower": "Fire" },
+    "keywords": { "zh": ["依附", "光明", "熱情"], "en": ["Clarity", "Dependency", "Passion"] },
+    "psychological_mapping": {
+      "archetype": "The Visionary",
+      "state": "Illuminated / Dependent",
+      "desc": "思維敏捷，熱情如火，但需要依附於某種燃料（資源/人）才能持續燃燒。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 30,
+    "code": "001110",
+    "name": { "zh": "咸", "en": "Influence" },
+    "structure": { "upper": "Lake", "lower": "Mountain" },
+    "keywords": { "zh": ["感應", "直覺", "戀愛"], "en": ["Attraction", "Intuition", "Resonance"] },
+    "psychological_mapping": {
+      "archetype": "The Empath",
+      "state": "Receptive Connection",
+      "desc": "對外界刺激高度敏感，直覺力強，容易與人建立情感連結。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 31,
+    "code": "001100",
+    "name": { "zh": "恆", "en": "Duration" },
+    "structure": { "upper": "Thunder", "lower": "Wind" },
+    "keywords": { "zh": ["恆久", "毅力", "常規"], "en": ["Consistency", "Endurance", "Routine"] },
+    "psychological_mapping": {
+      "archetype": "The Marathon Runner",
+      "state": "Steady State",
+      "desc": "追求長期的穩定與不變，心理上能夠忍受重複與平淡，具有恆心。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 32,
+    "code": "111100",
+    "name": { "zh": "遯", "en": "Retreat" },
+    "structure": { "upper": "Heaven", "lower": "Mountain" },
+    "keywords": { "zh": ["退避", "隱居", "保留"], "en": ["Withdrawal", "Preservation", "Distance"] },
+    "psychological_mapping": {
+      "archetype": "The Hermit",
+      "state": "Strategic Withdrawal",
+      "desc": "識別到環境不利，主動選擇撤退以保存實力，非逃避而是智慧。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 33,
+    "code": "001111",
+    "name": { "zh": "大壯", "en": "The Power of the Great" },
+    "structure": { "upper": "Thunder", "lower": "Heaven" },
+    "keywords": { "zh": ["強盛", "衝動", "壯大"], "en": ["Great Power", "Assertiveness", "Momentum"] },
+    "psychological_mapping": {
+      "archetype": "The Warrior",
+      "state": "High Drive",
+      "desc": "力量充沛，急於表現。需注意過度自信導致的莽撞。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 34,
+    "code": "101000",
+    "name": { "zh": "晉", "en": "Progress" },
+    "structure": { "upper": "Fire", "lower": "Earth" },
+    "keywords": { "zh": ["晉升", "光明", "前進"], "en": ["Advancement", "Promotion", "Recognition"] },
+    "psychological_mapping": {
+      "archetype": "The Rising Star",
+      "state": "Upward Mobility",
+      "desc": "得到認可與支持，處於上升期，心理充滿希望與榮譽感。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 35,
+    "code": "000101",
+    "name": { "zh": "明夷", "en": "Darkening of the Light" },
+    "structure": { "upper": "Earth", "lower": "Fire" },
+    "keywords": { "zh": ["受傷", "晦暗", "韜光"], "en": ["Censorship", "Oppression", "Hiding Light"] },
+    "psychological_mapping": {
+      "archetype": "The Martyr/Spy",
+      "state": "Suppressed",
+      "desc": "才華受壓抑，環境不友善。必須隱藏真實想法，韜光養晦以求生存。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 36,
+    "code": "110101",
+    "name": { "zh": "家人", "en": "The Family" },
+    "structure": { "upper": "Wind", "lower": "Fire" },
+    "keywords": { "zh": ["內部", "責任", "本分"], "en": ["Family", "Role", "Inner Circle"] },
+    "psychological_mapping": {
+      "archetype": "The Caretaker",
+      "state": "Domestic / Internal",
+      "desc": "焦點回歸內部團隊或家庭，釐清角色與責任，強調由內而外的穩定。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 37,
+    "code": "101011",
+    "name": { "zh": "睽", "en": "Opposition" },
+    "structure": { "upper": "Fire", "lower": "Lake" },
+    "keywords": { "zh": ["背離", "差異", "誤會"], "en": ["Polarization", "Misunderstanding", "Diversity"] },
+    "psychological_mapping": {
+      "archetype": "The Maverick",
+      "state": "Alienated",
+      "desc": "與周遭格格不入，觀點分歧。正面看是獨特視角，負面看是人際疏離。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 38,
+    "code": "010100",
+    "name": { "zh": "蹇", "en": "Obstruction" },
+    "structure": { "upper": "Water", "lower": "Mountain" },
+    "keywords": { "zh": ["困難", "險阻", "反省"], "en": ["Impasse", "Obstacle", "Self-Reflection"] },
+    "psychological_mapping": {
+      "archetype": "The Mountain Climber",
+      "state": "Blocked",
+      "desc": "寸步難行，外部障礙巨大。被迫停下來反求諸己，尋求內部突破。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 39,
+    "code": "001010",
+    "name": { "zh": "解", "en": "Deliverance" },
+    "structure": { "upper": "Thunder", "lower": "Water" },
+    "keywords": { "zh": ["緩解", "釋放", "解決"], "en": ["Relief", "Solution", "Unlocking"] },
+    "psychological_mapping": {
+      "archetype": "The Liberator",
+      "state": "Release",
+      "desc": "壓力驟減，問題得到解決，心理上感到輕鬆與自由，適合立即行動。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 40,
+    "code": "100011",
+    "name": { "zh": "損", "en": "Decrease" },
+    "structure": { "upper": "Mountain", "lower": "Lake" },
+    "keywords": { "zh": ["犧牲", "減法", "投資"], "en": ["Sacrifice", "Investment", "Reduction"] },
+    "psychological_mapping": {
+      "archetype": "The Investor",
+      "state": "Strategic Loss",
+      "desc": "為了長遠利益而犧牲短期享受，或去除多餘部分，是一種主動的減法。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 41,
+    "code": "110001",
+    "name": { "zh": "益", "en": "Increase" },
+    "structure": { "upper": "Wind", "lower": "Thunder" },
+    "keywords": { "zh": ["增益", "公益", "擴張"], "en": ["Benefit", "Expansion", "Gain"] },
+    "psychological_mapping": {
+      "archetype": "The Benefactor",
+      "state": "Prosperity",
+      "desc": "資源湧入，各方面條件有利，適合擴張與回饋社會。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 42,
+    "code": "011111",
+    "name": { "zh": "夬", "en": "Break-through" },
+    "structure": { "upper": "Lake", "lower": "Heaven" },
+    "keywords": { "zh": ["決裂", "攤牌", "果斷"], "en": ["Resolution", "Elimination", "Showdown"] },
+    "psychological_mapping": {
+      "archetype": "The Whistleblower",
+      "state": "Decisive",
+      "desc": "積累的能量必須釋放，公開指出問題，進行最後的攤牌與清理。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 43,
+    "code": "111110",
+    "name": { "zh": "姤", "en": "Coming to Meet" },
+    "structure": { "upper": "Heaven", "lower": "Wind" },
+    "keywords": { "zh": ["相遇", "誘惑", "機遇"], "en": ["Encounter", "Temptation", "Serendipity"] },
+    "psychological_mapping": {
+      "archetype": "The Networker",
+      "state": "Unexpected Contact",
+      "desc": "意外的際遇或連結。可能是好的機遇，也可能是危險的誘惑。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 44,
+    "code": "011000",
+    "name": { "zh": "萃", "en": "Gathering Together" },
+    "structure": { "upper": "Lake", "lower": "Earth" },
+    "keywords": { "zh": ["聚集", "菁英", "焦點"], "en": ["Congregation", "Focus", "Cluster"] },
+    "psychological_mapping": {
+      "archetype": "The Organizer",
+      "state": "Centripetal",
+      "desc": "人與資源向中心聚集，但也伴隨著擁擠與潛在的資源爭奪。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 45,
+    "code": "000110",
+    "name": { "zh": "升", "en": "Pushing Upward" },
+    "structure": { "upper": "Earth", "lower": "Wind" },
+    "keywords": { "zh": ["上升", "積累", "順利"], "en": ["Ascent", "Growth", "Step-by-Step"] },
+    "psychological_mapping": {
+      "archetype": "The Climber",
+      "state": "Steady Progress",
+      "desc": "像樹木生長一樣，緩慢但穩定地向上發展，心理狀態平穩自信。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 46,
+    "code": "011010",
+    "name": { "zh": "困", "en": "Oppression" },
+    "structure": { "upper": "Lake", "lower": "Water" },
+    "keywords": { "zh": ["困境", "枯竭", "考驗"], "en": ["Exhaustion", "Confinement", "Testing"] },
+    "psychological_mapping": {
+      "archetype": "The Prisoner",
+      "state": "Depleted",
+      "desc": "資源枯竭，進退維谷。這是一段考驗心智堅韌度的時期，需靜待轉機。"
+    },
+    "risk_level": 5
+  },
+  {
+    "id": 47,
+    "code": "010110",
+    "name": { "zh": "井", "en": "The Well" },
+    "structure": { "upper": "Water", "lower": "Wind" },
+    "keywords": { "zh": ["資源", "共享", "維護"], "en": ["Source", "Infrastructure", "Sustenance"] },
+    "psychological_mapping": {
+      "archetype": "The Provider",
+      "state": "Resource Management",
+      "desc": "關注深層資源的挖掘與維護。井水不動，但能養人，強調不變的價值。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 48,
+    "code": "011101",
+    "name": { "zh": "革", "en": "Revolution" },
+    "structure": { "upper": "Lake", "lower": "Fire" },
+    "keywords": { "zh": ["變革", "去舊", "時機"], "en": ["Transformation", "Change", "Molting"] },
+    "psychological_mapping": {
+      "archetype": "The Revolutionary",
+      "state": "Metamorphosis",
+      "desc": "水火不容，勢必改變。心理上準備好拋棄舊身份，迎接徹底的轉型。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 49,
+    "code": "101110",
+    "name": { "zh": "鼎", "en": "The Cauldron" },
+    "structure": { "upper": "Fire", "lower": "Wind" },
+    "keywords": { "zh": ["建立", "煉化", "權威"], "en": ["Establishment", "Refining", "Authority"] },
+    "psychological_mapping": {
+      "archetype": "The Alchemist",
+      "state": "Integration",
+      "desc": "將新的元素融合並制度化，建立新的權威與秩序。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 50,
+    "code": "001001",
+    "name": { "zh": "震", "en": "The Arousing" },
+    "structure": { "upper": "Thunder", "lower": "Thunder" },
+    "keywords": { "zh": ["震驚", "恐懼", "啟動"], "en": ["Shock", "Awakening", "Action"] },
+    "psychological_mapping": {
+      "archetype": "The Catalyst",
+      "state": "Startled",
+      "desc": "受到突如其來的衝擊，心理產生恐懼，但也因此被喚醒，恢復行動力。"
+    },
+    "risk_level": 4
+  },
+  {
+    "id": 51,
+    "code": "100100",
+    "name": { "zh": "艮", "en": "Keep Still" },
+    "structure": { "upper": "Mountain", "lower": "Mountain" },
+    "keywords": { "zh": ["停止", "界線", "自我"], "en": ["Stillness", "Boundaries", "Mindfulness"] },
+    "psychological_mapping": {
+      "archetype": "The Monk",
+      "state": "Meditative",
+      "desc": "動極思靜，設立界線，回歸自我內在的寧靜，停止外在追逐。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 52,
+    "code": "110100",
+    "name": { "zh": "漸", "en": "Development" },
+    "structure": { "upper": "Wind", "lower": "Mountain" },
+    "keywords": { "zh": ["循序", "漸進", "穩定"], "en": ["Gradual Progress", "Procedure", "Integration"] },
+    "psychological_mapping": {
+      "archetype": "The Pilgrim",
+      "state": "Patient Steps",
+      "desc": "不急不躁，按部就班地前進。重視過程與基礎的穩固。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 53,
+    "code": "001011",
+    "name": { "zh": "歸妹", "en": "The Marrying Maiden" },
+    "structure": { "upper": "Thunder", "lower": "Lake" },
+    "keywords": { "zh": ["衝動", "錯位", "妥協"], "en": ["Impulse", "Mismatch", "Compromise"] },
+    "psychological_mapping": {
+      "archetype": "The Dreamer",
+      "state": "Disoriented",
+      "desc": "感情用事或位置不當，導致願望難以如期實現，需要妥協或調整心態。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 54,
+    "code": "001101",
+    "name": { "zh": "豐", "en": "Abundance" },
+    "structure": { "upper": "Thunder", "lower": "Fire" },
+    "keywords": { "zh": ["盛大", "頂峰", "短暫"], "en": ["Peak", "Climax", "Momentary"] },
+    "psychological_mapping": {
+      "archetype": "The King",
+      "state": "Peak Performance",
+      "desc": "處於人生的正午時刻，光芒萬丈，但也隱含著盛極而衰的憂慮。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 55,
+    "code": "101100",
+    "name": { "zh": "旅", "en": "The Wanderer" },
+    "structure": { "upper": "Fire", "lower": "Mountain" },
+    "keywords": { "zh": ["旅行", "不安定", "探索"], "en": ["Travel", "Instability", "Exploration"] },
+    "psychological_mapping": {
+      "archetype": "The Nomad",
+      "state": "Transitional",
+      "desc": "身處異地或過渡期，缺乏歸屬感，保持警覺與機動性。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 56,
+    "code": "110110",
+    "name": { "zh": "巽", "en": "The Gentle" },
+    "structure": { "upper": "Wind", "lower": "Wind" },
+    "keywords": { "zh": ["滲透", "順從", "猶豫"], "en": ["Penetration", "Influence", "Indecision"] },
+    "psychological_mapping": {
+      "archetype": "The Agent",
+      "state": "Pervasive",
+      "desc": "無孔不入，潛移默化。但也可能因為過度思考而優柔寡斷。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 57,
+    "code": "011011",
+    "name": { "zh": "兌", "en": "The Joyous" },
+    "structure": { "upper": "Lake", "lower": "Lake" },
+    "keywords": { "zh": ["喜悅", "溝通", "說服"], "en": ["Joy", "Communication", "Persuasion"] },
+    "psychological_mapping": {
+      "archetype": "The Orator",
+      "state": "Charismatic",
+      "desc": "情緒外放，善於言辭與感染他人，追求互動與快樂。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 58,
+    "code": "110010",
+    "name": { "zh": "渙", "en": "Dispersion" },
+    "structure": { "upper": "Wind", "lower": "Water" },
+    "keywords": { "zh": ["消散", "化解", "遠行"], "en": ["Dissolution", "Flow", "Spreading"] },
+    "psychological_mapping": {
+      "archetype": "The Healer",
+      "state": "Dissolving",
+      "desc": "僵局被打破，滯悶的能量消散。適合化解心結或進行精神層面的擴展。"
+    },
+    "risk_level": 1
+  },
+  {
+    "id": 59,
+    "code": "010011",
+    "name": { "zh": "節", "en": "Limitation" },
+    "structure": { "upper": "Water", "lower": "Lake" },
+    "keywords": { "zh": ["節制", "規律", "限制"], "en": ["Regulation", "Limits", "Moderation"] },
+    "psychological_mapping": {
+      "archetype": "The Auditor",
+      "state": "Disciplined",
+      "desc": "設立標準與額度，避免過度消耗。雖然受限，但帶來長遠的安全。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 60,
+    "code": "110011",
+    "name": { "zh": "中孚", "en": "Inner Truth" },
+    "structure": { "upper": "Wind", "lower": "Lake" },
+    "keywords": { "zh": ["誠信", "共鳴", "感化"], "en": ["Sincerity", "Trust", "Confidence"] },
+    "psychological_mapping": {
+      "archetype": "The Believer",
+      "state": "Authentic",
+      "desc": "內心誠摯，表裡如一。強大的精神力量能夠感動他人。"
+    },
+    "risk_level": 0
+  },
+  {
+    "id": 61,
+    "code": "001011",
+    "name": { "zh": "小過", "en": "Preponderance of the Small" },
+    "structure": { "upper": "Thunder", "lower": "Mountain" },
+    "keywords": { "zh": ["過失", "細節", "低飛"], "en": ["Exceeding", "Detail-Oriented", "Caution"] },
+    "psychological_mapping": {
+      "archetype": "The Perfectionist",
+      "state": "Hyper-vigilant",
+      "desc": "對細節過度關注，稍微矯枉過正。適合處理小事，不宜處理大事。"
+    },
+    "risk_level": 3
+  },
+  {
+    "id": 62,
+    "code": "010101",
+    "name": { "zh": "既濟", "en": "After Completion" },
+    "structure": { "upper": "Water", "lower": "Fire" },
+    "keywords": { "zh": ["完成", "完美", "守成"], "en": ["Completion", "Equilibrium", "Maintenance"] },
+    "psychological_mapping": {
+      "archetype": "The Conservator",
+      "state": "Perfect Balance",
+      "desc": "事情達到完美狀態，也是走下坡的開始。心理上充滿守成的焦慮。"
+    },
+    "risk_level": 2
+  },
+  {
+    "id": 63,
+    "code": "101010",
+    "name": { "zh": "未濟", "en": "Before Completion" },
+    "structure": { "upper": "Fire", "lower": "Water" },
+    "keywords": { "zh": ["未完", "希望", "重啟"], "en": ["Incompletion", "Potential", "Restart"] },
+    "psychological_mapping": {
+      "archetype": "The Seeker",
+      "state": "Unfinished",
+      "desc": "一切尚未定案，充滿變數也充滿希望。心理上準備好迎接新的循環。"
+    },
+    "risk_level": 2
+  }
+]

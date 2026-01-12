@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "emotional_permeability",
+  "sources": {
+    "questions": "domain/questions/emotional_permeability.questions.v1.0.json",
+    "scoring": "domain/facets/emotional_permeability.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/emotional_permeability.reco.v1.0.json",
+    "narratives": "domain/narratives/emotional_permeability.narr.v1.0.json",
+    "riskchains": "domain/riskchains/emotional_permeability.risk.v1.0.json"
+  }
+}

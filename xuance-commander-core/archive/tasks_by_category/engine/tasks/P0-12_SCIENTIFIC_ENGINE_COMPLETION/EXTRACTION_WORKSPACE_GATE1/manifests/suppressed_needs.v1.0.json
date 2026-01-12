@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "suppressed_needs",
+  "sources": {
+    "questions": "domain/questions/suppressed_needs.questions.v1.0.json",
+    "scoring": "domain/facets/suppressed_needs.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/suppressed_needs.reco.v1.0.json",
+    "narratives": "domain/narratives/suppressed_needs.narr.v1.0.json",
+    "riskchains": "domain/riskchains/suppressed_needs.risk.v1.0.json"
+  }
+}

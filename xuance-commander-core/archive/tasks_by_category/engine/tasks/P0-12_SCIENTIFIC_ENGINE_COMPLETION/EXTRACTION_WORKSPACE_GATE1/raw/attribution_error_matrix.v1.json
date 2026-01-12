@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "歸因錯誤矩陣：用於識別和修正結果輸出中的歸因偏差",
+    "note": "Frozen - do not edit, only extend"
+  },
+  "items": [
+    {
+      "id": "attrib_external_blame",
+      "label": "過度外歸因",
+      "confidence": "high",
+      "uncertainty_note": "可能忽略個人能動性，需平衡內外因素",
+      "do_not_say": [
+        "都是別人的錯",
+        "你完全無法改變",
+        "這是宿命",
+        "你註定會失敗",
+        "環境決定了你的一切"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "確實，外部環境會影響你的處境",
+        "guide": "同時，我們也可以看看哪些部分是你能夠調整的",
+        "action": "試著列出三件你可以主動改變的小事，即使環境不變"
+      }
+    },
+    {
+      "id": "attrib_internal_overload",
+      "label": "過度內歸因",
+      "confidence": "high",
+      "uncertainty_note": "可能過度自責，需考慮系統性因素",
+      "do_not_say": [
+        "都是你的問題",
+        "你能力不足",
+        "你性格有缺陷",
+        "你天生如此",
+        "你永遠改不了"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你確實承擔了很多責任",
+        "guide": "有些情況是系統性的，不完全在個人控制範圍內",
+        "action": "試著區分哪些是你能控制的，哪些需要外部支持"
+      }
+    },
+    {
+      "id": "attrib_temporal_fixation",
+      "label": "時間歸因固化",
+      "confidence": "medium",
+      "uncertainty_note": "可能過度強調過去決定現在，忽略動態變化",
+      "do_not_say": [
+        "你過去決定了現在",
+        "你無法擺脫過去",
+        "歷史會重演",
+        "你已經定型了"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "過去的經驗確實會影響現在",
+        "guide": "同時，每個當下都是新的起點，可以有不同的選擇",
+        "action": "試著找出一個過去模式，思考如何在下次用不同方式回應"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+

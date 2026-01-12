@@ -1,0 +1,315 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華。ContentDB 內容需要手動分析提取。",
+  "low": {
+    "opening": "你比誰都嚴格地審你自己",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "你寧願自己扛",
+    "explain": ""
+  },
+  "high": {
+    "opening": "",
+    "explain": ""
+  },
+  "_raw_anchors": [
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_01",
+      "label": "方向未定時的內在搖擺",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的方向多受外力牽引，不是因為你沒有想法，而是因為你還沒找到自己的落點。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的方向多受外力牽引，不是因為你沒有主見，而是因為你還沒找到自己的落點。",
+        "你的方向多受外力牽引，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_02",
+      "label": "方向未定時的內在搖擺（變體2）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "self_doubt"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的選擇多受外界影響，不是因為你沒有想法，而是因為你還沒找到自己的聲音。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的選擇多受外界影響，不是因為你沒有主見，而是因為你還沒找到自己的聲音。",
+        "你的選擇多受外界影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_03",
+      "label": "方向未定時的內在搖擺（變體3）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "people_pleasing"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的決定多受他人期待影響，不是因為你沒有想法，而是因為你還沒找到自己的標準。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的決定多受他人期待影響，不是因為你沒有主見，而是因為你還沒找到自己的標準。",
+        "你的決定多受他人期待影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_04",
+      "label": "方向未定時的內在搖擺（變體4）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "self_doubt"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的路徑多受外界指引，不是因為你沒有想法，而是因為你還沒找到自己的方向。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的路徑多受外界指引，不是因為你沒有主見，而是因為你還沒找到自己的方向。",
+        "你的路徑多受外界指引，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_05",
+      "label": "方向未定時的內在搖擺（變體5）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "people_pleasing"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的選擇多受他人意見影響，不是因為你沒有想法，而是因為你還沒找到自己的判斷。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的選擇多受他人意見影響，不是因為你沒有主見，而是因為你還沒找到自己的判斷。",
+        "你的選擇多受他人意見影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_06",
+      "label": "方向未定時的內在搖擺（變體6）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "self_doubt"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的決定多受外界標準影響，不是因為你沒有想法，而是因為你還沒找到自己的價值。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的決定多受外界標準影響，不是因為你沒有主見，而是因為你還沒找到自己的價值。",
+        "你的決定多受外界標準影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_07",
+      "label": "方向未定時的內在搖擺（變體7）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "people_pleasing"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的路徑多受他人期待影響，不是因為你沒有想法，而是因為你還沒找到自己的目標。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的路徑多受他人期待影響，不是因為你沒有主見，而是因為你還沒找到自己的目標。",
+        "你的路徑多受他人期待影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_08",
+      "label": "方向未定時的內在搖擺（變體8）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "self_doubt"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的選擇多受外界壓力影響，不是因為你沒有想法，而是因為你還沒找到自己的節奏。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的選擇多受外界壓力影響，不是因為你沒有主見，而是因為你還沒找到自己的節奏。",
+        "你的選擇多受外界壓力影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_09",
+      "label": "方向未定時的內在搖擺（變體9）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "people_pleasing"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的決定多受他人評價影響，不是因為你沒有想法，而是因為你還沒找到自己的標準。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的決定多受他人評價影響，不是因為你沒有主見，而是因為你還沒找到自己的標準。",
+        "你的決定多受他人評價影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    },
+    {
+      "id": "ANCHOR_IDENTITY_DIFFUSION_10",
+      "label": "方向未定時的內在搖擺（變體10）",
+      "mother_theme": "identity_diffusion",
+      "state_tags": [
+        "uncertainty",
+        "external_validation",
+        "lack_of_agency",
+        "self_doubt"
+      ],
+      "confidence": "medium",
+      "uncertainty_note": "若你目前有明確方向，這句可能不適用。",
+      "do_not_say": [
+        "你沒有主見",
+        "你太依賴別人",
+        "你找不到自己"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的路徑多受外界期待影響，不是因為你沒有想法，而是因為你還沒找到自己的答案。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的路徑多受外界期待影響，不是因為你沒有主見，而是因為你還沒找到自己的答案。",
+        "你的路徑多受外界期待影響，不是因為你沒有想法，而是因為你還沒找到自己的定位。"
+      ],
+      "why_it_hits": "重新框架為探索過程，而非缺陷，降低自我批評。"
+    }
+  ],
+  "_contentdb_sources": [
+    {
+      "domain": "self",
+      "file": "ContentDB_self.js"
+    }
+  ],
+  "_extracted_from_contentdb": true,
+  "_status": "MISSING",
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

@@ -1,5 +1,127 @@
 # CHANGELOG
 
+## 2026-01-12
+
+### ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3 審核（GPT V3 處理後版本）
+
+**狀態**：✅ 高度合格，已解決大部分追問問題，部分需要微調和確認  
+**審核日期**：2026-01-12
+
+**審核結果**：
+- ✅ 合格部分（可直接整合）：八大領域覆蓋方案、題目設計聖典（已解決追問 1）、V3 運算引擎核心（已解決追問 2）、跨域擴散引擎（已解決追問 3，已提供完整實作）、使用者背景資料策略（已解決追問 4）、向後相容與遷移（已解決追問 5）、Domain Element 儲存結構（已解決追問 1.1，已提供完整實作）、Schema 更新（已更新 domainKey/questionSet/scoringModel）、V3 引擎實作（已提供完整實作和測試）、新 Facet 範例（已提供 burnout_syndrome 和 deep_depression）、i18n 範例（已提供中英文題目範例）
+- ⚠️ 需要微調和確認：缺失 Priors 的 Rigidity 預設值不一致（Section 7.2 說 0.50，但 DIRECTIVE REV.B 說 0.0）、Domain Schema 定義（需要建立 domain.schema.json）、世界級增強建議的實作細節（需要更詳細的規格）
+
+**關鍵交付物**：
+- ✅ `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_AUDIT.md` - 審核報告
+- ✅ `docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_QUESTIONS.md` - 追問包（3 個關鍵問題）
+- ✅ `tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_PACKAGE_*.zip` - 打包檔案（83KB，24 個文件）
+- ✅ **V3 實作已整合**：`engine/score_facet.py`（完整 V3 實作）、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`、`domain/cascade/cascade_overrides.v1.0.json`
+
+**關鍵追問問題**（3 個）：
+1. ⭐⭐⭐ 缺失 Priors 的 Rigidity 預設值（應該是 0 還是 0.50？）
+2. ⭐⭐ Domain Schema 定義（是否需要建立完整的 Domain Schema？）
+3. ⭐⭐ 世界級增強建議的實作細節（是否需要建立詳細的實作規格？）
+
+**相關文件更新**：
+- `specs/engine/core/ENGINE_CORE_LOGIC_MASTER_V3.md` - 已更新 Section 3.2、3.7、4.2
+- `specs/integration/ui_engine/FRONTEND_BACKEND_CALCULATION_ALIGNMENT.md` - 已更新實作狀態
+- `docs/ops/TASK_RECORDS_SUMMARY.md` - 更新任務記錄
+- `docs/ops/TASK_STATUS.md` - 更新任務狀態
+
+---
+
+### ENGINE_CORE_OMNISCIENT_CONSTITUTION 審核（V2）
+
+**狀態**：✅ 高度合格，部分需要微調和補強  
+**審核日期**：2026-01-12
+
+**審核結果**：
+- ✅ 合格部分（可直接整合）：八大領域覆蓋方案、題目設計聖典（已解決追問 1）、V3 運算引擎核心（已解決追問 2）、跨域擴散引擎（已解決追問 3）、使用者背景資料策略（已解決追問 4）、向後相容與遷移（已解決追問 5）、P0-4.5 Funnel 整合、UI/Engine 契約、風險鏈結構、驗收標準
+- ⚠️ 需要微調和補強：Domain element 儲存結構、缺失 Priors 的 Rigidity 預設值、10 題擴展模板的 Schema 擴充、標準差模式的 ADR 更新、世界級水準增強建議
+
+**關鍵交付物**：
+- ✅ `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_AUDIT.md` - 審核報告
+- ✅ `docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_QUESTIONS.md` - 追問包（5 個關鍵問題 + 世界級水準增強建議）
+- ✅ `tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_PACKAGE_20260112_220831.zip` - 打包檔案（78KB，21 個文件）
+
+**關鍵追問問題**（5 個）：
+1. ⭐⭐⭐ Domain Element 儲存結構（是否需要建立新的 domain 配置文件？）
+2. ⭐⭐ 缺失 Priors 的 Rigidity 預設值（應該是 0 還是 0.50？）
+3. ⭐⭐ 10 題擴展模板的 Schema 擴充（是否需要更新 schema？）
+4. ⭐ 標準差模式的 ADR 更新（是否需要更新 ADR_0005？）
+5. ⭐⭐ 世界級水準增強建議（多語言本地化、文化適應性、可訪問性、效能與擴展性、數據隱私與合規）
+
+**相關文件更新**：
+- `docs/ops/TASK_RECORDS_SUMMARY.md` - 更新任務記錄
+
+---
+
+### ENGINE_CORE_OMNISCIENT_MATRIX 審核
+
+**狀態**：⚠️ 部分合格，需要追問  
+**審核日期**：2026-01-12
+
+**審核結果**：
+- ✅ 合格部分：八大領域覆蓋方案、P0-4.5 分流系統整合、UI/Engine 契約
+- ⚠️ 需要追問：題目數量規範、V3 引擎計算公式完整性、跨域擴散引擎實作細節、使用者背景資料策略整合、向後相容性
+
+**關鍵交付物**：
+- ✅ `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_MATRIX_AUDIT.md` - 審核報告
+- ✅ `docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_MATRIX_QUESTIONS.md` - 追問包（5 個關鍵問題）
+- ✅ `tmp/ENGINE_CORE_OMNISCIENT_MATRIX_PACKAGE_20260112_214233.zip` - 打包檔案（20 個文件）
+
+**關鍵追問問題**（5 個）：
+1. ⭐⭐⭐ 題目數量規範（是否強制 8 題？）
+2. ⭐⭐⭐ V3 引擎計算公式完整性（Rigidity、Volatility、Debug Payload）
+3. ⭐⭐ 跨域擴散引擎實作細節
+4. ⭐⭐ 使用者背景資料策略整合
+5. ⭐ 向後相容性
+
+**相關文件更新**：
+- `docs/ops/TASK_RECORDS_SUMMARY.md` - 更新任務記錄
+
+---
+
+### 新增任務：ENGINE_CORE_FINAL_INTEGRATION_EXECUTION（底層引擎最終整合執行）
+
+**狀態**：🔄 進行中（準備階段）  
+**開始日期**：2026-01-12
+
+**任務描述**：
+- 基於最終整合任務包，與顧問團隊進行最終整合討論
+- 執行 7 個主要任務，達成「全人類、全年齡、全困擾、全解決策略、全連鎖反應」的終極目標
+
+**關鍵交付物**：
+- ✅ `docs/task_packets/advisor/ENGINE_CORE_FINAL_INTEGRATION_TASK_PACKET.md` - 最終整合任務包
+- ✅ `docs/ops/analysis/ENGINE_CORE_COMPREHENSIVE_INTEGRATION_ANALYSIS.md` - 整合分析報告
+- ✅ `tmp/ENGINE_CORE_FINAL_INTEGRATION_PACKAGE_20260112_212851.zip` - ZIP 打包檔案（106KB）
+
+**核心問題**（8 個，最高優先級 3 個）：
+1. ⭐⭐⭐ 八大領域覆蓋度評估與題庫設計
+2. ⭐⭐⭐ 解決方案與連鎖反應資料庫完整性
+3. ⭐⭐⭐ UI 互動設計的四個回合明確化
+4. 題庫豐富度與分類
+5. 計算模型實作
+6. 分流系統整合
+7. UI 整合策略
+8. 使用者背景資料收集
+
+**7 個主要任務**：
+1. 底層引擎內容整合（PRIORITY: HIGH）
+2. V3 引擎實作（PRIORITY: HIGH）
+3. 題庫擴充與分類（PRIORITY: HIGH）
+4. P0-4.5 分流系統整合（PRIORITY: MEDIUM）
+5. UI 整合（PRIORITY: MEDIUM）
+6. 使用者背景資料收集系統（PRIORITY: MEDIUM）
+7. 八大領域覆蓋（PRIORITY: HIGH）
+
+**相關文件更新**：
+- `docs/ops/TASK_RECORDS_SUMMARY.md` - 新增任務記錄
+- `docs/ops/TASK_STATUS.md` - 更新任務狀態
+- `memory/briefs/CURRENT.md` - 更新當前狀態
+
+---
+
 ## Unreleased
 - Changed: Sync governance now explicitly integrates Role Sync Packets for advisor inputs (avoid missing-text assumptions)
 - Added: Advisor return-pack minimal spec (Used Packet/Output/Assumptions/Acceptance) to ROLE_SYNC_PACKET_PROTOCOL

@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-01-12T16:59:53.238178",
+  "total_folders": 54,
+  "duplicate_files": {
+    "README.md": 18,
+    "CHANGELOG.md": 2,
+    "INDEX.md": 2,
+    "MASTER_SYNC_PACKET.md": 2,
+    "P0-11_PHASE2_TASK_PACKET.md": 2,
+    "P0-12_PHASE3_COMPREHENSIVE_INTEGRATION_TASK_PACKET.md": 2,
+    "P0-12_PHASE3_INTEGRATION_ANALYSIS.md": 2,
+    "P0-12_LEGACY_INTEGRATION_TASK_PACKET.md": 2,
+    "P0-5.6_ENGINEER_BRIEF.md": 2,
+    "P0-5.6_TASK_PACKET.md": 2,
+    "P0-5_UMIP_CLOSURE_REPORT.md": 2,
+    "P0-5_UI_INTEGRATION_SPEC.md": 2,
+    "P0-5_UI_ARCHITECTURE.md": 2,
+    "P0-5_COMPONENT_SPEC_COMPASS.md": 2,
+    "COMMON_PACKET.md": 2,
+    "P0-4.5_INTEGRATION_WITH_P0-5.md": 2,
+    "P0-4.5_FUNNEL_SYSTEM_DESIGN.md": 2,
+    "result_presentation_design.v1.0.md": 2,
+    "question_design_guidelines.v1.0.md": 2,
+    "NORTH_STAR.md": 2,
+    "ROLE_XUANCE_COMMANDER.md": 2,
+    "NEXT_TASK_RECOMMENDATION.md": 2,
+    "P0-5_TECHNICAL_SPEC_DESIGN_TASK_PACKET.md": 2,
+    "COMMANDER_AUTOPILOT_PROTOCOL.md": 2,
+    "TASK_LIFECYCLE.md": 2,
+    "summary.md": 10
+  },
+  "categories": {
+    "governance": 80,
+    "domain": 143,
+    "engine": 6,
+    "ui": 19,
+    "specs": 1,
+    "memory": 23,
+    "docs": 127,
+    "archive": 221,
+    "tasks": 8,
+    "other": 60
+  },
+  "summary_files_count": 161,
+  "duplicate_files_detail": {
+    "README.md": [
+      "README.md",
+      "ui/README.md",
+      "archive/p0_tasks/P0-5.6_ICHING_MATRIX_IMPLEMENTATION/README.md",
+      "specs/README.md",
+      "prototype/README.md"
+    ],
+    "CHANGELOG.md": [
+      "memory/changes/CHANGELOG.md",
+      "tmp/gov_patch_backup_20260104_202853/memory/changes/CHANGELOG.md"
+    ],
+    "INDEX.md": [
+      "memory/index/INDEX.md",
+      "docs/task_packets/INDEX.md"
+    ],
+    "MASTER_SYNC_PACKET.md": [
+      "memory/briefs/MASTER_SYNC_PACKET.md",
+      "docs/legacy/archived_old_system_structure/root_duplicate_structure/memory/briefs/MASTER_SYNC_PACKET.md"
+    ],
+    "P0-11_PHASE2_TASK_PACKET.md": [
+      "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE2_TASK_PACKET.md",
+      "specs/engine/metaphysical/P0-11_PHASE2_TASK_PACKET.md"
+    ],
+    "P0-12_PHASE3_COMPREHENSIVE_INTEGRATION_TASK_PACKET.md": [
+      "archive/p0_tasks/P0-12_SCIENTIFIC_ENGINE_COMPLETION/P0-12_PHASE3_COMPREHENSIVE_INTEGRATION_TASK_PACKET.md",
+      "specs/integration/ui_engine/P0-12_PHASE3_COMPREHENSIVE_INTEGRATION_TASK_PACKET.md"
+    ],
+    "P0-12_PHASE3_INTEGRATION_ANALYSIS.md": [
+      "archive/p0_tasks/P0-12_SCIENTIFIC_ENGINE_COMPLETION/P0-12_PHASE3_INTEGRATION_ANALYSIS.md",
+      "specs/integration/ui_engine/P0-12_PHASE3_INTEGRATION_ANALYSIS.md"
+    ],
+    "P0-12_LEGACY_INTEGRATION_TASK_PACKET.md": [
+      "archive/p0_tasks/P0-12_SCIENTIFIC_ENGINE_COMPLETION/P0-12_LEGACY_INTEGRATION_TASK_PACKET.md",
+      "specs/integration/ui_engine/P0-12_LEGACY_INTEGRATION_TASK_PACKET.md"
+    ],
+    "P0-5.6_ENGINEER_BRIEF.md": [
+      "archive/p0_tasks/P0-5.6_ICHING_MATRIX_IMPLEMENTATION/P0-5.6_ENGINEER_BRIEF.md",
+      "specs/engine/metaphysical/hexagram/P0-5.6_ENGINEER_BRIEF.md"
+    ],
+    "P0-5.6_TASK_PACKET.md": [
+      "archive/p0_tasks/P0-5.6_ICHING_MATRIX_IMPLEMENTATION/P0-5.6_TASK_PACKET.md",
+      "specs/engine/metaphysical/hexagram/P0-5.6_TASK_PACKET.md"
+    ],
+    "P0-5_UMIP_CLOSURE_REPORT.md": [
+      "archive/p0_tasks/P0-5/P0-5_UMIP_CLOSURE_REPORT.md",
+      "specs/ui/architecture/P0-5_UMIP_CLOSURE_REPORT.md"
+    ],
+    "P0-5_UI_INTEGRATION_SPEC.md": [
+      "archive/p0_tasks/P0-5/P0-5_UI_INTEGRATION_SPEC.md",
+      "specs/ui/architecture/P0-5_UI_INTEGRATION_SPEC.md"
+    ],
+    "P0-5_UI_ARCHITECTURE.md": [
+      "archive/p0_tasks/P0-5/P0-5_UI_ARCHITECTURE.md",
+      "specs/ui/architecture/P0-5_UI_ARCHITECTURE.md"
+    ],
+    "P0-5_COMPONENT_SPEC_COMPASS.md": [
+      "archive/p0_tasks/P0-5/P0-5_COMPONENT_SPEC_COMPASS.md",
+      "specs/ui/interaction/P0-5_COMPONENT_SPEC_COMPASS.md"
+    ],
+    "COMMON_PACKET.md": [
+      "out/advisor_packs/20260106_143538/COMMON_PACKET.md",
+      "out/advisor_packs/20260106_143713/COMMON_PACKET.md"
+    ],
+    "P0-4.5_INTEGRATION_WITH_P0-5.md": [
+      "specs/ui/workflow/P0-4.5_INTEGRATION_WITH_P0-5.md",
+      "P0-4.5/P0-4.5_INTEGRATION_WITH_P0-5.md"
+    ],
+    "P0-4.5_FUNNEL_SYSTEM_DESIGN.md": [
+      "specs/ui/workflow/P0-4.5_FUNNEL_SYSTEM_DESIGN.md",
+      "P0-4.5/P0-4.5_FUNNEL_SYSTEM_DESIGN.md"
+    ],
+    "result_presentation_design.v1.0.md": [
+      "specs/domain/narratives/result_presentation_design.v1.0.md",
+      "domain/knowledge_base/result_presentation_design.v1.0.md"
+    ],
+    "question_design_guidelines.v1.0.md": [
+      "specs/domain/questions/question_design_guidelines.v1.0.md",
+      "domain/knowledge_base/question_design_guidelines.v1.0.md"
+    ],
+    "NORTH_STAR.md": [
+      "docs/legacy/archived_old_system_structure/full_min_snapshots/FULL/NORTH_STAR.md",
+      "docs/legacy/archived_old_system_structure/full_min_snapshots/MIN/NORTH_STAR.md"
+    ]
+  },
+  "summary_files_sample": [
+    "REORGANIZATION_FINAL_REPORT.md",
+    "DESIGN_DIRECTION_SUMMARY_2026-01-11.md",
+    "P0-12_GATE2_COMPLETE.zip",
+    "tools/audit_docs_gem_drift.sh",
+    "memory/changes/CHANGELOG.md",
+    "memory/briefs/CURRENT_SUMMARY.md",
+    "memory/briefs/LATEST_INVENTORY_REPORT.md",
+    "memory/briefs/role_sync_packets/LATEST/ROLE_R4_AUDIT.md",
+    "memory/briefs/role_sync_packets/LATEST/ROLE_R1_AUDIT.md",
+    "archive/p0_tasks/P0-5.7_WORLDVIEW_DESIGN/P0-5.7_AUDIT_REPORT.md",
+    "archive/p0_tasks/P0-5.7_WORLDVIEW_DESIGN/P0-5.7_DESIGN_DOC_FINAL.md",
+    "archive/p0_tasks/P0-5.7_WORLDVIEW_DESIGN/P0-5.7_CONCEPT_CLARIFICATION_LOG.md",
+    "archive/p0_tasks/P0-5.7_WORLDVIEW_DESIGN/P0-5.7_TASK_EXECUTION_LOG.md",
+    "archive/p0_tasks/P0-5.5_ORIENTAL_ELEMENT_CONSULTATION/P0-5.5_TASK_COMPLETION_REPORT.md",
+    "archive/p0_tasks/P0-5.5_ORIENTAL_ELEMENT_CONSULTATION/P0-5.5_AUDIT_CHECKLIST.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_LEGACY_INTEGRATION_REPORT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE1_DELIVERY_SUMMARY.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE1_AUDIT_REPORT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE4_COMPLETION_SUMMARY.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE1_FINAL_AUDIT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_TASK_EXECUTION_LOG.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE1_COMPLETION_SUMMARY.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_LEGACY_EXTRACTION_FINAL_AUDIT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE2_AUDIT_REPORT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE3_COMPLETE_TASK_PACKET.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE3_COMPLETION_SUMMARY.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE3_AUDIT_REPORT.md",
+    "archive/p0_tasks/P0-11_METAPHYSICAL_ENGINE_COMPLETION/P0-11_PHASE4_AUDIT_REPORT.md",
+    "archive/p0_tasks/P0-12_SCIENTIFIC_ENGINE_COMPLETION/P0-12_TASK_PROGRESS_LOG.md",
+    "archive/p0_tasks/P0-12_SCIENTIFIC_ENGINE_COMPLETION/LEGACY_DELETION_COMPLETED.md"
+  ]
+}

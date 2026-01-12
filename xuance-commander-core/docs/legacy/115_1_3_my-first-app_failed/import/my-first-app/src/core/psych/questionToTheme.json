@@ -1,7 +1,0 @@
-{
-  "questionId": "money_r2_3",
-  "mapsTo": [
-    { "themeId": "MT10", "w": 0.8 },
-    { "themeId": "MT3", "w": 0.4 }
-  ]
-}

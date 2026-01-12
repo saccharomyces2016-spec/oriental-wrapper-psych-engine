@@ -1,0 +1,35 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "mid": {
+    "if_not_improve": [
+      "關係進入追逃模式，溝通成本升高。"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "你會相信靠近等於受傷，修復能力下降。"
+    ]
+  },
+  "_raw_chains": [
+    {
+      "id": "chain_relationship_pattern",
+      "label": "關係模式連鎖",
+      "confidence": "medium",
+      "uncertainty_note": "關係發展受多因素影響，此為可能性描述",
+      "do_not_say": [
+        "你註定會重複這個關係模式",
+        "你永遠找不到對的人",
+        "你註定會失敗",
+        "這是你的宿命"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "關係模式確實可能重複",
+        "guide": "同時，覺察和調整可以改變互動方式",
+        "action": "試著回顧一個關係模式，思考下次可以用什麼不同方式回應"
+      }
+    }
+  ],
+  "_updated_from": "chains.json (byTheme.attachment_insecurity)"
+}

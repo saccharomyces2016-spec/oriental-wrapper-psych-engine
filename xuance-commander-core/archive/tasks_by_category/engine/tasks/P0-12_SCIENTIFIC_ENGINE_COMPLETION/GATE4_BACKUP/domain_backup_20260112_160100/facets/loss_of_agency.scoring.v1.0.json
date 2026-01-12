@@ -1,0 +1,57 @@
+{
+  "model": "weighted_sum",
+  "inputs": [
+    {
+      "questionId": "loa_q1",
+      "weight": 1.2,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q2",
+      "weight": 1.4,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q3",
+      "weight": 1.3,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q4",
+      "weight": 1.2,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q5",
+      "weight": 1.2,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q6",
+      "weight": 1.1,
+      "direction": "higher_is_worse"
+    },
+    {
+      "questionId": "loa_q7",
+      "weight": 1.2,
+      "direction": "higher_is_worse"
+    }
+  ],
+  "bands": [
+    {
+      "band": "low",
+      "min": 0.0,
+      "max": 0.33
+    },
+    {
+      "band": "mid",
+      "min": 0.33,
+      "max": 0.66
+    },
+    {
+      "band": "high",
+      "min": 0.66,
+      "max": 1.01
+    }
+  ]
+}

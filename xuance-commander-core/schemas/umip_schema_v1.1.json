@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UMIP Schema v1.1",
+  "type": "object",
+  "properties": {
+    "userProfile": {
+      "type": "object",
+      "properties": {
+        "dob": { "type": ["string", "null"], "format": "date" },
+        "root_element": {
+          "type": ["string", "null"],
+          "enum": ["METAL", "WOOD", "WATER", "FIRE", "EARTH", null]
+        }
+      },
+      "additionalProperties": false
+    },
+    "resultPayload": {
+      "type": "object",
+      "properties": {
+        "hexagram_id": { "type": "number", "minimum": 0, "maximum": 63 },
+        "changing_line_index": { "type": ["number", "null"], "minimum": 0, "maximum": 5 },
+        "root_flow_collision_key": { "type": "string" }
+      },
+      "required": ["hexagram_id", "root_flow_collision_key"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["resultPayload"],
+  "additionalProperties": true
+}

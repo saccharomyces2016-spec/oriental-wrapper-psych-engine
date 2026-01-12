@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "avoidance_coping",
+  "sources": {
+    "questions": "domain/questions/avoidance_coping.questions.v1.0.json",
+    "scoring": "domain/facets/avoidance_coping.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/avoidance_coping.reco.v1.0.json",
+    "narratives": "domain/narratives/avoidance_coping.narr.v1.0.json",
+    "riskchains": "domain/riskchains/avoidance_coping.risk.v1.0.json"
+  }
+}

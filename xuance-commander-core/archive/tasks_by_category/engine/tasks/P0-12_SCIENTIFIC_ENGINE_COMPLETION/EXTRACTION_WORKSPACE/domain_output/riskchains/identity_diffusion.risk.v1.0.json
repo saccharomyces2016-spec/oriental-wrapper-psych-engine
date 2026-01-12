@@ -1,0 +1,12 @@
+{
+  "mid": {
+    "if_not_improve": [
+      "待從 consequence_chain_library 和 buildGuidance.js 提取"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "待從 consequence_chain_library 和 buildGuidance.js 提取"
+    ]
+  }
+}

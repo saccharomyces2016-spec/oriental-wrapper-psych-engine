@@ -27,6 +27,7 @@
 - docs/governance/SUPREME_AUTHORITY.md
 - docs/governance/MANDATORY_ALERTS.md
 - docs/governance/OVERRIDE_POLICY.md
+- docs/governance/CURSOR_FILE_PLACEMENT_RULE.md（資料夾組織規範）
 
 ## 顧問升級制度
 - docs/governance/MANDATORY_ADVISORY_ESCALATION.md

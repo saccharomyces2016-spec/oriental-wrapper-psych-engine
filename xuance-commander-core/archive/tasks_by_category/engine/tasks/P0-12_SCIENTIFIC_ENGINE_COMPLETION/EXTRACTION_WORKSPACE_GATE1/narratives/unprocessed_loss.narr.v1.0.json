@@ -1,0 +1,28 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "low": {
+    "opening": "",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "",
+    "explain": ""
+  },
+  "high": {
+    "opening": "",
+    "explain": ""
+  },
+  "_raw_anchors": [],
+  "_status": "MISSING",
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "Narrative text placeholders present; no ContentDB in package; anchor_statements mother_theme mapping does not provide facet-specific low/mid/high narratives.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

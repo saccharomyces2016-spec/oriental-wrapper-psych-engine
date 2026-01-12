@@ -1,0 +1,317 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華。ContentDB 內容需要手動分析提取。",
+  "low": {
+    "opening": "你比誰都嚴格地審你自己",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "你寧願自己扛",
+    "explain": ""
+  },
+  "high": {
+    "opening": "你在撐一個家",
+    "explain": ""
+  },
+  "_raw_anchors": [
+    {
+      "id": "ANCHOR_FIRE_CONTROL_01",
+      "label": "高頻運轉下的隱性耗竭",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前正處於短期高壓衝刺期，這句可能被感覺成否定努力。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你其實很會撐，但沒有人教過你，什麼時候撐已經不是責任，而是在消耗自己。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你很能扛，但沒有人告訴你，什麼時候該停下來，而不是一直撐下去。",
+        "你習慣把事情扛到底，但可能沒注意到，有些時候撐已經變成消耗。"
+      ],
+      "why_it_hits": "它同時肯定能力與指出代價，讓高功能型使用者放下防衛。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_02",
+      "label": "高頻運轉下的隱性耗竭（變體2）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety",
+        "overthinking"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前處於放鬆狀態，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你的大腦一直在運轉，即使身體停下來，思緒還在處理未完成的事。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你的思緒總是在運轉，即使想停下來，大腦還在處理那些未完成的事。",
+        "你習慣把事情想得很周全，但可能沒注意到，思緒一直在運轉，沒有真正休息。"
+      ],
+      "why_it_hits": "描述認知負荷而非性格缺陷，讓高功能型使用者認同。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_03",
+      "label": "高頻運轉下的隱性耗竭（變體3）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "high_obligation"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前責任負擔較輕，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都做到最好，但可能沒注意到，這樣做其實在消耗你的能量。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把事情做到最好，但可能沒注意到，這樣做其實在消耗你的能量。",
+        "你對每件事都很認真，但可能沒注意到，這樣做其實在消耗你的能量。"
+      ],
+      "why_it_hits": "肯定認真態度同時指出代價，讓完美主義者看到選擇。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_04",
+      "label": "高頻運轉下的隱性耗竭（變體4）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "sleep_debt"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前睡眠充足，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都安排好，但可能沒注意到，這樣做其實在透支你的體力。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都安排好，但可能沒注意到，這樣做其實在透支你的體力。",
+        "你對每件事都很用心，但可能沒注意到，這樣做其實在透支你的體力。"
+      ],
+      "why_it_hits": "指出體力透支而非能力問題，讓高功能型使用者看到休息的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_05",
+      "label": "高頻運轉下的隱性耗竭（變體5）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "neglected_needs"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前有照顧自己的需求，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都處理好，但可能沒注意到，這樣做其實在忽略你自己的需求。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都處理好，但可能沒注意到，這樣做其實在忽略你自己的需求。",
+        "你對每件事都很負責，但可能沒注意到，這樣做其實在忽略你自己的需求。"
+      ],
+      "why_it_hits": "指出需求被忽略而非自私，讓高責任型使用者看到自我照顧的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_06",
+      "label": "高頻運轉下的隱性耗竭（變體6）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety",
+        "exhaustion"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前處於恢復期，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都掌控好，但可能沒注意到，這樣做其實在透支你的心力。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都掌控好，但可能沒注意到，這樣做其實在透支你的心力。",
+        "你對每件事都很用心，但可能沒注意到，這樣做其實在透支你的心力。"
+      ],
+      "why_it_hits": "指出心力透支而非能力問題，讓高功能型使用者看到放手的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_07",
+      "label": "高頻運轉下的隱性耗竭（變體7）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety",
+        "overthinking"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前思緒較為平靜，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都想得很清楚，但可能沒注意到，這樣做其實在消耗你的專注力。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都想得很清楚，但可能沒注意到，這樣做其實在消耗你的專注力。",
+        "你對每件事都很仔細，但可能沒注意到，這樣做其實在消耗你的專注力。"
+      ],
+      "why_it_hits": "指出專注力消耗而非能力問題，讓高功能型使用者看到簡化的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_08",
+      "label": "高頻運轉下的隱性耗竭（變體8）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "high_obligation",
+        "neglected_needs"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前責任負擔較輕，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有責任都扛起來，但可能沒注意到，這樣做其實在忽略你自己的界限。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有責任都扛起來，但可能沒注意到，這樣做其實在忽略你自己的界限。",
+        "你對每件事都很負責，但可能沒注意到，這樣做其實在忽略你自己的界限。"
+      ],
+      "why_it_hits": "指出界限被忽略而非責任感問題，讓高責任型使用者看到設限的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_09",
+      "label": "高頻運轉下的隱性耗竭（變體9）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety",
+        "sleep_debt"
+      ],
+      "confidence": "medium-high",
+      "uncertainty_note": "若你目前睡眠充足，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都安排好，但可能沒注意到，這樣做其實在影響你的休息品質。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都安排好，但可能沒注意到，這樣做其實在影響你的休息品質。",
+        "你對每件事都很用心，但可能沒注意到，這樣做其實在影響你的休息品質。"
+      ],
+      "why_it_hits": "指出休息品質受影響而非能力問題，讓高功能型使用者看到放鬆的必要。"
+    },
+    {
+      "id": "ANCHOR_FIRE_CONTROL_10",
+      "label": "高頻運轉下的隱性耗竭（變體10）",
+      "mother_theme": "control_vs_exhaustion",
+      "state_tags": [
+        "high_arousal",
+        "over_control",
+        "anxiety",
+        "exhaustion",
+        "neglected_needs"
+      ],
+      "confidence": "high",
+      "uncertainty_note": "若你目前有照顧自己的需求，這句可能不適用。",
+      "do_not_say": [
+        "你太焦慮了",
+        "你控制慾很強",
+        "你這樣一定會崩潰"
+      ],
+      "safe_tone_template": {
+        "acknowledge": "你習慣把所有事都處理好，但可能沒注意到，這樣做其實在透支你的整體狀態。",
+        "guide": "",
+        "action": ""
+      },
+      "variants": [
+        "你習慣把所有事都處理好，但可能沒注意到，這樣做其實在透支你的整體狀態。",
+        "你對每件事都很負責，但可能沒注意到，這樣做其實在透支你的整體狀態。"
+      ],
+      "why_it_hits": "指出整體狀態透支而非能力問題，讓高功能型使用者看到全面調整的必要。"
+    }
+  ],
+  "_contentdb_sources": [
+    {
+      "domain": "self",
+      "file": "ContentDB_self.js"
+    },
+    {
+      "domain": "family",
+      "file": "ContentDB_family.js"
+    }
+  ],
+  "_extracted_from_contentdb": true,
+  "_status": "MISSING",
+  "_gate1_checked_sources": [
+    "EXTRACTION_WORKSPACE/raw/questionBank.v1.json",
+    "EXTRACTION_WORKSPACE/raw/p1_question_blueprint_v1.json",
+    "EXTRACTION_WORKSPACE/raw/buildGuidance.js",
+    "EXTRACTION_WORKSPACE/raw/anchor_statements.v1.json",
+    "EXTRACTION_WORKSPACE/raw/consequence_chain_library.v1.json"
+  ],
+  "_gate1_reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package.",
+  "_gate1_marked_at": "2026-01-12T15:00:00+08:00"
+}

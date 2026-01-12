@@ -13,7 +13,7 @@
 
 ### 其他相關規範
 - `AI_ROLES_CURSOR_ARCHITECTURE.md`：AI 角色架構（Cursor 架構版本）
-- `FILE_WRITE_LOCATION_RULE.md`：文件寫入位置規則（硬規則）
+- `CURSOR_FILE_PLACEMENT_RULE.md`：文件寫入位置規則（硬規則）
 - `COMPLETE_TASK_PACKAGE_RULE.md`：完整任務包規則（已整合到本文件）
 
 ---

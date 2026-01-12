@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-01-12T15:00:00+08:00",
+  "missing": [
+    {
+      "facetId": "self_erosion",
+      "artifact": "questions",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/questions/self_erosion.questions.v1.0.json",
+      "reason": "No concrete question items found for this facet in available raw sources; blueprint is placeholder only."
+    },
+    {
+      "facetId": "unprocessed_loss",
+      "artifact": "questions",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/questions/unprocessed_loss.questions.v1.0.json",
+      "reason": "No concrete question items found for this facet in available raw sources; blueprint is placeholder only."
+    },
+    {
+      "facetId": "social_comparison",
+      "artifact": "recommendations",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/recommendations/social_comparison.reco.v1.0.json",
+      "reason": "No recommendation blocks found in available raw sources for this facet."
+    },
+    {
+      "facetId": "emotional_permeability",
+      "artifact": "recommendations",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/recommendations/emotional_permeability.reco.v1.0.json",
+      "reason": "No recommendation blocks found in available raw sources for this facet."
+    },
+    {
+      "facetId": "avoidance_coping",
+      "artifact": "recommendations",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/recommendations/avoidance_coping.reco.v1.0.json",
+      "reason": "No recommendation blocks found in available raw sources for this facet."
+    },
+    {
+      "facetId": "self_erosion",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/self_erosion.narr.v1.0.json",
+      "reason": "Narrative text placeholders present; no ContentDB in package; anchor_statements mother_theme mapping does not provide facet-specific low/mid/high narratives."
+    },
+    {
+      "facetId": "unprocessed_loss",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/unprocessed_loss.narr.v1.0.json",
+      "reason": "Narrative text placeholders present; no ContentDB in package; anchor_statements mother_theme mapping does not provide facet-specific low/mid/high narratives."
+    },
+    {
+      "facetId": "suppressed_needs",
+      "artifact": "riskchains",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/riskchains/suppressed_needs.risk.v1.0.json",
+      "reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains."
+    },
+    {
+      "facetId": "identity_diffusion",
+      "artifact": "riskchains",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/riskchains/identity_diffusion.risk.v1.0.json",
+      "reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains."
+    },
+    {
+      "facetId": "meaning_vacuum",
+      "artifact": "riskchains",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/riskchains/meaning_vacuum.risk.v1.0.json",
+      "reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains."
+    },
+    {
+      "facetId": "self_erosion",
+      "artifact": "riskchains",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/riskchains/self_erosion.risk.v1.0.json",
+      "reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains."
+    },
+    {
+      "facetId": "unprocessed_loss",
+      "artifact": "riskchains",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/riskchains/unprocessed_loss.risk.v1.0.json",
+      "reason": "Riskchain placeholders present; buildGuidance.js does not contain concrete chain mapping for this facet; consequence_chain_library does not provide facet-level chains."
+    },
+    {
+      "facetId": "social_comparison",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/social_comparison.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "suppressed_needs",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/suppressed_needs.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "avoidance_coping",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/avoidance_coping.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "meaning_vacuum",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/meaning_vacuum.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "chronic_depletion",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/chronic_depletion.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "fear_based_stability",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/fear_based_stability.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "emotional_permeability",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/emotional_permeability.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "chronic_alertness",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/chronic_alertness.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "hyper_responsibility",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/hyper_responsibility.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "loss_of_agency",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/loss_of_agency.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    },
+    {
+      "facetId": "identity_diffusion",
+      "artifact": "narratives",
+      "status": "MISSING",
+      "path": "EXTRACTION_WORKSPACE/narratives/identity_diffusion.narr.v1.0.json",
+      "reason": "Narrative contains placeholder segments ('待從 ... 提取'); no fill source present in package."
+    }
+  ]
+}

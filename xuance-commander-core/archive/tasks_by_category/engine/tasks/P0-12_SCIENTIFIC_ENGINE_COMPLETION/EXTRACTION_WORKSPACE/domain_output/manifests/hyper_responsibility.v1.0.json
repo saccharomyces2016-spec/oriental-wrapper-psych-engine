@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "hyper_responsibility",
+  "sources": {
+    "questions": "domain/questions/hyper_responsibility.questions.v1.0.json",
+    "scoring": "domain/facets/hyper_responsibility.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/hyper_responsibility.reco.v1.0.json",
+    "narratives": "domain/narratives/hyper_responsibility.narr.v1.0.json",
+    "riskchains": "domain/riskchains/hyper_responsibility.risk.v1.0.json"
+  }
+}

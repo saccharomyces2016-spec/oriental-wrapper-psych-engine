@@ -33,9 +33,25 @@ export const useI18nStore = create<I18nState>((set, get) => ({
   setDict: (dict) => set({ dict }),
   t: (key) => {
     const { dict, locale } = get();
-    const v = dict[key]?.[locale];
-    // Fail-soft: 找不到就回 key（可被 Gate 掃描抓到）
-    return (typeof v === 'string' && v.trim().length > 0) ? v : key;
+    
+    // 優先使用標準格式：dict[key][locale]
+    let v = dict[key]?.[locale];
+    
+    // 如果找不到，嘗試處理舊格式（dict[locale][key]）- 向後兼容
+    if (!v && typeof dict[locale] === 'object' && dict[locale] !== null) {
+      const localeDict = dict[locale] as Record<string, string>;
+      v = localeDict[key];
+    }
+    
+    // Fail-soft: 找不到就回 key，並在開發環境警告
+    if (!v || typeof v !== 'string' || v.trim().length === 0) {
+      if (process.env.NODE_ENV === 'development') {
+        console.warn(`[i18n] Missing translation for key: "${key}" in locale: "${locale}"`);
+      }
+      return key;
+    }
+    
+    return v;
   },
 }));
 

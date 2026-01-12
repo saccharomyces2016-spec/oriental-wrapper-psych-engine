@@ -1,0 +1,17 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "已從 buildGuidance.js 分析，需要手動提取具體內容",
+  "mid": {
+    "if_not_improve": [
+      "待從 consequence_chain_library 和 buildGuidance.js 提取"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "待從 consequence_chain_library 和 buildGuidance.js 提取"
+    ]
+  },
+  "_raw_chains": [],
+  "_analyzed_from_buildGuidance": true
+}

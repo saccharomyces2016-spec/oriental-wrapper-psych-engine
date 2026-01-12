@@ -1,0 +1,24 @@
+{
+  "_extracted_from": "anchor_statements.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華。ContentDB 內容需要手動分析提取。",
+  "low": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "mid": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": "待從 ContentDB 和 anchor_statements 提取"
+  },
+  "_raw_anchors": [],
+  "_contentdb_sources": [
+    {
+      "domain": "study",
+      "file": "ContentDB_study.js"
+    }
+  ]
+}

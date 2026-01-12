@@ -1,0 +1,12 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json（缺失）",
+  "_extraction_date": "2026-01-12",
+  "_note": "⚠️ 此主題在 guidanceActionTemplates 中沒有對應的模板，需要從其他來源提取或標註缺失",
+  "_status": "MISSING",
+  "theme_id": "social_comparison",
+  "actionTemplates": {
+    "today": [],
+    "week": []
+  },
+  "ageBands": {}
+}

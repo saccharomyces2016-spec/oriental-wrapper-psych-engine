@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "self_erosion",
+  "sources": {
+    "questions": "domain/questions/self_erosion.questions.v1.0.json",
+    "scoring": "domain/facets/self_erosion.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/self_erosion.reco.v1.0.json",
+    "narratives": "domain/narratives/self_erosion.narr.v1.0.json",
+    "riskchains": "domain/riskchains/self_erosion.risk.v1.0.json"
+  }
+}

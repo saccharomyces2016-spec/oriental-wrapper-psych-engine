@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "social_comparison",
+  "sources": {
+    "questions": "domain/questions/social_comparison.questions.v1.0.json",
+    "scoring": "domain/facets/social_comparison.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/social_comparison.reco.v1.0.json",
+    "narratives": "domain/narratives/social_comparison.narr.v1.0.json",
+    "riskchains": "domain/riskchains/social_comparison.risk.v1.0.json"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "L6 Guidance Contract",
+  "type": "object",
+  "required": ["actions", "forecasts", "warnings", "meta", "sources"],
+  "properties": {
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "tags", "title", "tone", "rationale", "actions", "warnings"],
+        "properties": {
+          "id": { "type": "string" },
+          "domain": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "title": { "type": "string" },
+          "tone": { "type": "string", "enum": ["warm", "hard", "neutral"] },
+          "rationale": { "type": "string" },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "label", "steps", "time"],
+              "properties": {
+                "type": { "type": "string" },
+                "label": { "type": "string" },
+                "steps": { "type": "array", "items": { "type": "string" } },
+                "time": { "type": "string" }
+              }
+            }
+          },
+          "warnings": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "forecasts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "triggerTags", "title", "steps"],
+        "properties": {
+          "id": { "type": "string" },
+          "domain": { "type": "string" },
+          "triggerTags": { "type": "array", "items": { "type": "string" } },
+          "title": { "type": "string" },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["tPlus", "event", "why", "watchFor"],
+              "properties": {
+                "tPlus": { "type": "string" },
+                "event": { "type": "string" },
+                "why": { "type": "string" },
+                "watchFor": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "meta": {
+      "type": "object",
+      "required": ["version", "domain", "topElement", "tags", "generatedAt", "note"],
+      "properties": {
+        "version": { "type": "string" },
+        "domain": { "type": "string" },
+        "topElement": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "generatedAt": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    },
+    "sources": { "type": "array", "items": { "type": "object" } }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "internal_only": true,
+  "metadata": {
+    "purpose": "Internal mapping between metaphysical terms and psychological concepts",
+    "usage": "Validation and maintenance only; never exposed to users",
+    "source": "Phase 1 knowledge_base psychological_mapping"
+  },
+  "mappings": {
+    "metaphysical_to_psychological": {
+      "氣滯流塞": {
+        "psychological_concept": "認知阻塞",
+        "english_term": "Cognitive Blockage",
+        "source": "hexagram_64_full.v1.0.json",
+        "validation_note": "Derived from high risk_level obstruction states"
+      },
+      "心神閉塞": {
+        "psychological_concept": "防禦機制啟動",
+        "english_term": "Defense Mechanism Activation",
+        "source": "wuxing_5_elements.v1.0.json",
+        "validation_note": "Symbolic correspondence only"
+      }
+    },
+    "state_mappings": {
+      "通達、順流": {
+        "psychological_state": "Flow State",
+        "risk_level": 0,
+        "source": "mapping_tables.v1.0.json"
+      },
+      "阻塞、孤立": {
+        "psychological_state": "Cognitive Dissonance",
+        "risk_level": 4,
+        "source": "hexagram risk aggregation"
+      }
+    },
+    "relationship_mappings": {
+      "相生": {
+        "psychological_relation": "Positive Reinforcement",
+        "source": "wuxing relationships.generates"
+      },
+      "相剋": {
+        "psychological_relation": "Cognitive Conflict",
+        "source": "wuxing relationships.controls"
+      }
+    }
+  }
+}

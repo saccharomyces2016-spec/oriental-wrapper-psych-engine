@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "unprocessed_loss",
+  "sources": {
+    "questions": "domain/questions/unprocessed_loss.questions.v1.0.json",
+    "scoring": "domain/facets/unprocessed_loss.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/unprocessed_loss.reco.v1.0.json",
+    "narratives": "domain/narratives/unprocessed_loss.narr.v1.0.json",
+    "riskchains": "domain/riskchains/unprocessed_loss.risk.v1.0.json"
+  }
+}

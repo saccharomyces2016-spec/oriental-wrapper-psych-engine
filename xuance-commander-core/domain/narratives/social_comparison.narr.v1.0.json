@@ -1,0 +1,14 @@
+{
+  "low": {
+    "opening": "想靠近又怕失控",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "你不是冷，是怕被否定",
+    "explain": ""
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  }
+}

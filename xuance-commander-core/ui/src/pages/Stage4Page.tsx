@@ -9,7 +9,6 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React from 'react';
 import type { FacetViewModel } from '../adapters/types';
 import { ResultStage } from '../components/results';
 

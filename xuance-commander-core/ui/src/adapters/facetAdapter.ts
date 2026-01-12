@@ -18,7 +18,6 @@ import type { FacetViewModel, RawUmipJson, RiskLevel, CompassTrack, QuestionType
 import {
   safeString,
   safeNumber,
-  safeBoolean,
   safeObject,
   safeArray,
   safeColorCode,
@@ -143,7 +142,8 @@ function adaptTheme(themeConfig: RawUmipJson['theme_config']): FacetViewModel['t
 function adaptCompass(
   compassStage: RawUmipJson['stage2_compass']
 ): FacetViewModel['stages']['compass'] {
-  const symbols = safeArray(compassStage?.symbols, []).map((symbol) => ({
+  type SymbolItem = NonNullable<NonNullable<RawUmipJson['stage2_compass']>['symbols']>[number];
+  const symbols = safeArray<SymbolItem>(compassStage?.symbols, []).map((symbol) => ({
     id: safeString(symbol.symbol_id || symbol.id, ''),
     labelKey: safeString(symbol.label_key, ''),
     svgRef: safeString(symbol.svg_ref, ''),
@@ -170,12 +170,14 @@ function adaptCompass(
 function adaptProjection(
   projectionStage: RawUmipJson['stage3_projection']
 ): FacetViewModel['stages']['projection'] {
-  const questions = safeArray(projectionStage?.questions, []).map((question) => ({
+  type QuestionItem = NonNullable<NonNullable<RawUmipJson['stage3_projection']>['questions']>[number];
+  type OptionItem = NonNullable<QuestionItem['options']>[number];
+  const questions = safeArray<QuestionItem>(projectionStage?.questions, []).map((question) => ({
     id: safeString(question.question_id || question.id, ''),
     titleKey: safeString(question.title_key, ''),
     promptKey: safeString(question.prompt_key || '', ''),
     type: (safeString(question.question_type, 'SINGLE').toUpperCase() as QuestionType) || 'SINGLE',
-    options: safeArray(question.options, []).map((option) => ({
+    options: safeArray<OptionItem>(question.options, []).map((option) => ({
       id: safeString(option.option_id || option.id, ''),
       labelKey: safeString(option.label_key, ''),
       imageRef: option.image_ref ? safeString(option.image_ref) : undefined,
@@ -196,31 +198,37 @@ function adaptResults(
 ): FacetViewModel['stages']['results'] {
   const layers = resultsStage?.layers;
 
+  // 定義 variant 類型（所有層的 variant 結構相同）
+  type VariantItem = { title_key?: string; body_key?: string };
+  
   const l1 = layers?.l1;
+  const l1Variants = Array.isArray(l1?.variants) ? l1.variants : [];
   const l1Adapted = {
     titleKey: safeString(l1?.title_key, 'l1_title'),
     bodyKey: safeString(l1?.body_key, 'l1_body'),
-    variants: safeArray(l1?.variants, []).map((variant) => ({
+    variants: l1Variants.map((variant: VariantItem) => ({
       titleKey: safeString(variant.title_key, ''),
       bodyKey: safeString(variant.body_key, ''),
     })),
   };
 
   const l2 = layers?.l2;
+  const l2Variants = Array.isArray(l2?.variants) ? l2.variants : [];
   const l2Adapted = {
     titleKey: safeString(l2?.title_key, 'l2_title'),
     bodyKey: safeString(l2?.body_key, 'l2_body'),
-    variants: safeArray(l2?.variants, []).map((variant) => ({
+    variants: l2Variants.map((variant: VariantItem) => ({
       titleKey: safeString(variant.title_key, ''),
       bodyKey: safeString(variant.body_key, ''),
     })),
   };
 
   const l3 = layers?.l3;
+  const l3Variants = Array.isArray(l3?.variants) ? l3.variants : [];
   const l3Adapted = {
     titleKey: safeString(l3?.title_key, 'l3_title'),
     bodyKey: safeString(l3?.body_key, 'l3_body'),
-    variants: safeArray(l3?.variants, []).map((variant) => ({
+    variants: l3Variants.map((variant: VariantItem) => ({
       titleKey: safeString(variant.title_key, ''),
       bodyKey: safeString(variant.body_key, ''),
     })),

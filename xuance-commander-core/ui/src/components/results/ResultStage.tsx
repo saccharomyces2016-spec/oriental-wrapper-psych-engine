@@ -12,7 +12,7 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React, { useReducer, useEffect } from 'react';
+import { useReducer, useEffect } from 'react';
 import type { FacetViewModel } from '../../adapters/types';
 import { useI18nStore } from '../../engine/i18n';
 import { resultStateReducer, INITIAL_RESULT_STATE } from './resultStateMachine';

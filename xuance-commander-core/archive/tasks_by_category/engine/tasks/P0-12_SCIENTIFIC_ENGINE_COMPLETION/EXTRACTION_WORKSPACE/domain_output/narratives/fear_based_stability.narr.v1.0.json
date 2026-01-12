@@ -1,0 +1,14 @@
+{
+  "low": {
+    "opening": "你不是不想動，而是把每一步都當成不能輸的考試，所以寧可停在原地。",
+    "explain": ""
+  },
+  "mid": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  },
+  "high": {
+    "opening": "待從 ContentDB 和 anchor_statements 提取",
+    "explain": ""
+  }
+}

@@ -31,6 +31,44 @@
 
 已完成：
 - 初始化資料夾結構與玄策指揮官角色規範
+
+## ENGINE_CORE_FINAL_INTEGRATION_EXECUTION（底層引擎最終整合執行）
+
+**狀態**：🔄 進行中（準備階段）  
+**開始日期**：2026-01-12
+
+**任務目標**：
+基於最終整合任務包，與顧問團隊進行最終整合討論，執行 7 個主要任務，達成「全人類、全年齡、全困擾、全解決策略、全連鎖反應」的終極目標。
+
+**當前進度**：
+- ✅ 任務包已建立並打包完成（`ENGINE_CORE_FINAL_INTEGRATION_PACKAGE_20260112_212851.zip`）
+- ✅ 8 個核心問題已整理完成（最高優先級 3 個）
+- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` 審核完成並整合
+- ⏳ 等待顧問團隊回饋（追問包）
+- ⏳ 準備開始執行 7 個主要任務
+
+**核心問題**（最高優先級 3 個）：
+1. ⭐⭐⭐ 八大領域覆蓋度評估與題庫設計
+2. ⭐⭐⭐ 解決方案與連鎖反應資料庫完整性
+3. ⭐⭐⭐ UI 互動設計的四個回合明確化
+
+**關聯審核**：
+- ✅ `ENGINE_CORE_OMNISCIENT_MATRIX_FINAL.md` 審核完成
+- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` 審核完成並整合（V2）
+- ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_AUDIT.md`
+- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_QUESTIONS.md`（5 個關鍵問題 + 世界級水準增強建議）
+- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_PACKAGE_20260112_220831.zip`（78KB，21 個文件）
+- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md`（GPT V3 處理後版本）審核完成並整合（V3）
+- ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_AUDIT.md`
+- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_QUESTIONS.md`（3 個關鍵問題）
+- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_PACKAGE_*.zip`（83KB，24 個文件）
+- ✅ **V3 實作已整合**：`engine/score_facet.py`（完整 V3 實作）、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`
+
+**相關文件**：
+- `docs/task_packets/advisor/ENGINE_CORE_FINAL_INTEGRATION_TASK_PACKET.md`
+- `docs/ops/analysis/ENGINE_CORE_COMPREHENSIVE_INTEGRATION_ANALYSIS.md`
+- `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_INTEGRATION_SUMMARY.md`
+- `docs/ops/TASK_RECORDS_SUMMARY.md`
 - 建立可擴充 MVP 骨架（domain 分檔、schema、golden tests、build 合併）
 
 下一步（主線）：

@@ -1,0 +1,17 @@
+{
+  "_extracted_from": "consequence_chain_library.v1.json",
+  "_extraction_date": "2026-01-12",
+  "_note": "此為提取的原始資料，需要顧問團隊整合刪減昇華",
+  "mid": {
+    "if_not_improve": [
+      "耐心降低，對人事更易煩躁。"
+    ]
+  },
+  "high": {
+    "if_not_improve": [
+      "恢復期拉長，需要更久才能回到狀態。"
+    ]
+  },
+  "_raw_chains": [],
+  "_updated_from": "chains.json (byTheme.burnout_overload)"
+}

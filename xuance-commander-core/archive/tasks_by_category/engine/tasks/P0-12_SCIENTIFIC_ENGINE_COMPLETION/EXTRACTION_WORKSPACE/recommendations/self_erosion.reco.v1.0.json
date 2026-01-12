@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "self_erosion",
+  "actionTemplates": {
+    "today": [
+      "Today: state one preference out loud to {{principle}}.",
+      "Today: protect energy from one default yes to {{principle}}."
+    ],
+    "week": [
+      "This week: limit one compromise that drains you to {{principle}}.",
+      "This week: take one decision that trusts your own read to {{principle}}."
+    ]
+  },
+  "ageBands": {}
+}

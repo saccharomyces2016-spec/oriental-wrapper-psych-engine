@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-01-11T23:45:00.000Z",
+  "analysis": [
+    {
+      "file": "anchorSelector.js",
+      "kind": "js",
+      "context_detected": {
+        "context": "neutral",
+        "psychHits": 0,
+        "metaphysHits": 0
+      },
+      "usability": "medium",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Extract selection logic & formatting patterns",
+      "js_hints": {
+        "exportsLike": true,
+        "hasSelectors": true,
+        "hasTemplates": false,
+        "mentionsGuidance": true
+      }
+    },
+    {
+      "file": "anchor_statements.v1.json",
+      "kind": "json",
+      "context_detected": {
+        "context": "psych_like",
+        "psychHits": 12,
+        "metaphysHits": 0
+      },
+      "usability": "high",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Use for L2/L3 Narratives (rewrite required)",
+      "json_parse": "ok",
+      "json_shape": {
+        "type": "object",
+        "keys": 2,
+        "sample": {
+          "meta": "{...}",
+          "items": "[...]"
+        }
+      }
+    },
+    {
+      "file": "attribution_error_matrix.v1.json",
+      "kind": "json",
+      "context_detected": {
+        "context": "psych_like",
+        "psychHits": 8,
+        "metaphysHits": 0
+      },
+      "usability": "low",
+      "conversion_difficulty": "hard",
+      "suggested_use": "Conflict with metaphysical constraints; reference only",
+      "json_parse": "ok",
+      "json_shape": {
+        "type": "object",
+        "keys": 2,
+        "sample": {
+          "meta": "{...}",
+          "items": "[...]"
+        }
+      }
+    },
+    {
+      "file": "consequence_chain_library.v1.json",
+      "kind": "json",
+      "context_detected": {
+        "context": "psych_like",
+        "psychHits": 5,
+        "metaphysHits": 0
+      },
+      "usability": "high",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Use for L4 RiskChains (if_not_improve)",
+      "json_parse": "ok",
+      "json_shape": {
+        "type": "object",
+        "keys": 2,
+        "sample": {
+          "meta": "{...}",
+          "items": "[...]"
+        }
+      }
+    },
+    {
+      "file": "intervention_boundary_matrix.v1.json",
+      "kind": "json",
+      "context_detected": {
+        "context": "neutral",
+        "psychHits": 0,
+        "metaphysHits": 0
+      },
+      "usability": "medium",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Logic reference for L4 Action Advice gating",
+      "json_parse": "ok",
+      "json_shape": {
+        "type": "object",
+        "keys": 2,
+        "sample": {
+          "meta": "{...}",
+          "items": "[...]"
+        }
+      }
+    },
+    {
+      "file": "loader.js",
+      "kind": "js",
+      "context_detected": {
+        "context": "neutral",
+        "psychHits": 0,
+        "metaphysHits": 0
+      },
+      "usability": "low",
+      "conversion_difficulty": "easy",
+      "suggested_use": "Glue code; keep for reference only",
+      "js_hints": {
+        "exportsLike": true,
+        "hasSelectors": false,
+        "hasTemplates": false,
+        "mentionsGuidance": false
+      }
+    },
+    {
+      "file": "modifiers.json",
+      "kind": "json",
+      "context_detected": {
+        "context": "neutral",
+        "psychHits": 0,
+        "metaphysHits": 0
+      },
+      "usability": "medium",
+      "conversion_difficulty": "easy",
+      "suggested_use": "Structure helpers / Vocabulary mapping",
+      "json_parse": "ok",
+      "json_shape": {
+        "type": "object",
+        "keys": 3,
+        "sample": {
+          "degree": "{...}",
+          "frequency": "{...}",
+          "tone": "{...}"
+        }
+      }
+    },
+    {
+      "file": "readingOutputV2.js",
+      "kind": "js",
+      "context_detected": {
+        "context": "mixed",
+        "psychHits": 1,
+        "metaphysHits": 0
+      },
+      "usability": "medium",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Extract selection logic & formatting patterns",
+      "js_hints": {
+        "exportsLike": true,
+        "hasSelectors": false,
+        "hasTemplates": true,
+        "mentionsGuidance": true
+      }
+    },
+    {
+      "file": "stateTagExtractor.js",
+      "kind": "js",
+      "context_detected": {
+        "context": "psych_like",
+        "psychHits": 3,
+        "metaphysHits": 0
+      },
+      "usability": "medium",
+      "conversion_difficulty": "medium",
+      "suggested_use": "Extract selection logic & formatting patterns",
+      "js_hints": {
+        "exportsLike": true,
+        "hasSelectors": true,
+        "hasTemplates": false,
+        "mentionsGuidance": false
+      }
+    }
+  ]
+}

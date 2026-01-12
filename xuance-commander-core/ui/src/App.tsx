@@ -10,7 +10,6 @@
  * - 所有設計保持不鎖定、不凍結、可回滾
  */
 
-import React from 'react';
 import { FlowStateProvider, useFlowState } from './state';
 import { useFacetData } from './hooks';
 import { Stage2Page } from './pages/Stage2Page';

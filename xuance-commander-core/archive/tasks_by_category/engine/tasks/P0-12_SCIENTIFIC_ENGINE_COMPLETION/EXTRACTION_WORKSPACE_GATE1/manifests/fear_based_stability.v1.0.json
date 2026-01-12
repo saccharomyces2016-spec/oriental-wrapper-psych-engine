@@ -1,0 +1,11 @@
+{
+  "domainVersion": "1.0",
+  "facetId": "fear_based_stability",
+  "sources": {
+    "questions": "domain/questions/fear_based_stability.questions.v1.0.json",
+    "scoring": "domain/facets/fear_based_stability.scoring.v1.0.json",
+    "recommendations": "domain/recommendations/fear_based_stability.reco.v1.0.json",
+    "narratives": "domain/narratives/fear_based_stability.narr.v1.0.json",
+    "riskchains": "domain/riskchains/fear_based_stability.risk.v1.0.json"
+  }
+}

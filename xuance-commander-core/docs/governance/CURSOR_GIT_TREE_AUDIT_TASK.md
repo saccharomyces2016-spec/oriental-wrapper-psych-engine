@@ -18,7 +18,7 @@
 ## 必查清單（高風險）
 ### A. gem
 - 列出所有名為 gem 的資料夾完整路徑
-- 判斷哪個是 Canon，哪些是 Shadow / Drift（依 GLOBAL_FILE_CANON.md）
+- 判斷哪個是 Canon，哪些是 Shadow / Drift（依 CURSOR_FILE_PLACEMENT_RULE.md）
 
 ### B. governance
 - 列出 governance 相關 folder

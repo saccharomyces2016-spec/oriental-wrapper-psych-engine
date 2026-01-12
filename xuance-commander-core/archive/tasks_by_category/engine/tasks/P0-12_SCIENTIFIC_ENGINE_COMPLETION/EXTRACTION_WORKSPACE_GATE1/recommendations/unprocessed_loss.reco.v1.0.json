@@ -1,0 +1,16 @@
+{
+  "_extracted_from": "guidanceActionTemplates.v1.json",
+  "_extraction_date": "2026-01-12",
+  "theme_id": "unprocessed_loss",
+  "actionTemplates": {
+    "today": [
+      "Today: make a gentle ritual (note, object, song) to {{principle}}.",
+      "Today: set a short window to feel, then close with a soothing act to {{principle}}."
+    ],
+    "week": [
+      "This week: share one safe thread of the story to {{principle}}.",
+      "This week: notice one decision steered by old loss to {{principle}}."
+    ]
+  },
+  "ageBands": {}
+}
