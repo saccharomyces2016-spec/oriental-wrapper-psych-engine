@@ -2,6 +2,35 @@
 
 ## 2026-01-13
 
+### 所有剩餘任務執行計劃建立
+
+**狀態**：✅ 執行計劃已建立，任務包 1 已完成
+
+**完成項目**：
+- ✅ 建立完整執行計劃（`docs/task_packets/advisor/ALL_REMAINING_TASKS_EXECUTION_PLAN.md`）
+- ✅ 建立 5 個詳細任務包（任務包 1-5）
+- ✅ 完成任務包 1：Cursor 直接解決包
+  - 修正 Rigidity 預設值（`engine/score_facet.py`: 0.5 → 0.0）
+  - 更新 CONSTITUTION 文件（`rigidity_default_when_missing`: 0.50 → 0.0）
+  - 更新 ADR_0005（加入標準差模式決策記錄）
+
+**待完成項目**：
+- ⏳ 任務包 2：Legacy Facet 遷移（9 個 Facet）
+- ⏳ 任務包 3：P0-12 階段二-4 規則提取（Legacy 檔案未找到）
+- ⏳ 任務包 4：五行「洩」關係決策（等待 Gemini 裁示）
+- ⏳ 任務包 5：角色原型參數矩陣決策（等待 Gemini 裁示）
+
+**相關文件**：
+- `docs/task_packets/advisor/ALL_REMAINING_TASKS_EXECUTION_PLAN.md` - 執行計劃
+- `docs/task_packets/advisor/ALL_REMAINING_TASKS_MASTER_PACKAGE.md` - 主包
+- `docs/task_packets/advisor/TASK_PACKAGE_2_LEGACY_FACET_MIGRATION.md` - 任務包 2
+- `docs/task_packets/advisor/TASK_PACKAGE_3_P0-12_PHASE2-4_RULES_EXTRACTION.md` - 任務包 3
+- `docs/task_packets/advisor/TASK_PACKAGE_4_WUXING_EXHAUSTION_DECISION.md` - 任務包 4
+- `docs/task_packets/advisor/TASK_PACKAGE_5_ROLE_ARCHETYPE_DECISION.md` - 任務包 5
+- `docs/ops/analysis/ALL_REMAINING_TASKS_COMPREHENSIVE_SCAN.md` - 全案掃描報告
+
+---
+
 ### ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4 審核（GPT V4 處理後版本）
 
 **狀態**：✅ 高度合格，已解決大部分追問問題，但存在關鍵不一致點需要裁示  

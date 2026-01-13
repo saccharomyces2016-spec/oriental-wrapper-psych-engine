@@ -229,17 +229,14 @@ $$Accuracy = Context (Where) \times Attribution (Why) \times State (How)$$
 
 **裁示（最終）**：採用 **DIRECTIVE REV.B 的三層模型（Layer A/B/C）**（選項 A）。
 
-**⚠️ 注意**：缺失 Priors 的 Rigidity 預設值存在不一致，需要裁示：
-- **DIRECTIVE REV.B**：缺失時預設 `Rigidity = 0.0`
-- **CONSTITUTION Section 7.2**：`rigidity_default_when_missing = 0.50`（MIXED default）
-- **engine/score_facet.py**：`default_when_missing` 參數預設值是 0.5
+**裁示（最終）**：採用 DIRECTIVE REV.B 的預設值（0.0）
 
-**建議**：採用 DIRECTIVE REV.B 的預設值（0.0），因為：
+**理由**：
 1. DIRECTIVE REV.B 是技術裁示文件，具有更高的權威性
 2. 缺失 Priors 時，不應該假設使用者的歸因模式
 3. 0.0 是最安全的預設值（避免誤判）
 
-**待裁示**：見 `docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_QUESTIONS.md` 追問 1
+**已解決**：所有文件已統一為 0.0（見 `docs/task_packets/advisor/REMAINING_TASKS_COMPLETE_PACKET.md` 裁示）
 
 #### 3.2.1 Canonical Formula
 

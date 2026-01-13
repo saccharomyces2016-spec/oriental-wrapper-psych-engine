@@ -32,6 +32,35 @@
 已完成：
 - 初始化資料夾結構與玄策指揮官角色規範
 
+## 所有剩餘任務執行計劃
+
+**狀態**：🔄 進行中（任務包 1 已完成，任務包 2-5 等待執行）  
+**開始日期**：2026-01-13
+
+**任務目標**：
+完成所有剩餘任務，依照難易度和執行對象分類，確保所有待辦事項全部完成。
+
+**當前進度**：
+- ✅ 任務包 1：Cursor 直接解決包（已完成）
+  - ✅ 修正 Rigidity 預設值（0.5 → 0.0）
+  - ✅ 更新 ADR_0005 標準差模式
+  - ✅ 更新 CONSTITUTION 文件（Rigidity 預設值）
+- ⏳ 任務包 2：Legacy Facet 遷移（9 個 Facet）— 等待執行
+- ⏳ 任務包 3：P0-12 階段二-4 規則提取（Legacy 檔案未找到）— 等待執行
+- ⏳ 任務包 4：五行「洩」關係決策— 等待 Gemini 裁示
+- ⏳ 任務包 5：角色原型參數矩陣決策— 等待 Gemini 裁示
+
+**相關文件**：
+- `docs/task_packets/advisor/ALL_REMAINING_TASKS_EXECUTION_PLAN.md` - 執行計劃
+- `docs/task_packets/advisor/ALL_REMAINING_TASKS_MASTER_PACKAGE.md` - 主包
+- `docs/task_packets/advisor/TASK_PACKAGE_2_LEGACY_FACET_MIGRATION.md` - 任務包 2
+- `docs/task_packets/advisor/TASK_PACKAGE_3_P0-12_PHASE2-4_RULES_EXTRACTION.md` - 任務包 3
+- `docs/task_packets/advisor/TASK_PACKAGE_4_WUXING_EXHAUSTION_DECISION.md` - 任務包 4
+- `docs/task_packets/advisor/TASK_PACKAGE_5_ROLE_ARCHETYPE_DECISION.md` - 任務包 5
+- `docs/ops/analysis/ALL_REMAINING_TASKS_COMPREHENSIVE_SCAN.md` - 全案掃描報告
+
+---
+
 ## ENGINE_CORE_FINAL_INTEGRATION_EXECUTION（底層引擎最終整合執行）
 
 **狀態**：🔄 進行中（準備階段）  
@@ -44,7 +73,8 @@
 - ✅ 任務包已建立並打包完成（`ENGINE_CORE_FINAL_INTEGRATION_PACKAGE_20260112_212851.zip`）
 - ✅ 8 個核心問題已整理完成（最高優先級 3 個）
 - ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` 審核完成並整合
-- ⏳ 等待顧問團隊回饋（追問包）
+- ✅ **任務包 1 已完成**：Rigidity 預設值修正、ADR_0005 更新、CONSTITUTION 更新
+- ⏳ 等待顧問團隊回饋（追問包：任務包 4 和 5）
 - ⏳ 準備開始執行 7 個主要任務
 
 **核心問題**（最高優先級 3 個）：
@@ -54,20 +84,11 @@
 
 **關聯審核**：
 - ✅ `ENGINE_CORE_OMNISCIENT_MATRIX_FINAL.md` 審核完成
-- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` 審核完成並整合（V2）
-- ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_AUDIT.md`
-- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_QUESTIONS.md`（5 個關鍵問題 + 世界級水準增強建議）
-- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_PACKAGE_20260112_220831.zip`（78KB，21 個文件）
-- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md`（GPT V3 處理後版本）審核完成並整合（V3）
-- ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_AUDIT.md`
-- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_QUESTIONS.md`（3 個關鍵問題）
-- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_PACKAGE_*.zip`（83KB，24 個文件）
-- ✅ **V3 實作已整合**：`engine/score_facet.py`（完整 V3 實作）、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`
-- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md`（GPT V4 處理後版本）審核完成並整合（V4）
+- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` 審核完成並整合（V2/V3/V4）
 - ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_AUDIT.md`
-- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_QUESTIONS.md`（4 個關鍵問題，包含 Rigidity 預設值不一致問題）
-- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_PACKAGE_*.zip`（待建立）
+- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_QUESTIONS.md`（4 個關鍵問題）
 - ✅ **V4 實作已整合**：`engine/score_facet.py`、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`、`schemas/domain_manifest.schema.json`、`schemas/compiled_facet.schema.json`、`domain/domains/bagua.domain_map.v1.0.json`、`domain/cascade/cascade_overrides.v1.0.json`
+- ✅ **任務包 1 已完成**：Rigidity 預設值統一為 0.0、ADR_0005 標準差模式更新
 
 **相關文件**：
 - `docs/task_packets/advisor/ENGINE_CORE_FINAL_INTEGRATION_TASK_PACKET.md`
