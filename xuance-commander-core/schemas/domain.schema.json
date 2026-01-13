@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Domain Schema",
+  "type": "object",
+  "required": ["version", "type", "domains"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["bagua_domain_map"]
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domainKey", "trigram", "element", "labels"],
+        "properties": {
+          "domainKey": {
+            "type": "string",
+            "enum": ["qian", "kun", "zhen", "xun", "kan", "li", "gen", "dui", "center"]
+          },
+          "trigram": {
+            "type": "string"
+          },
+          "element": {
+            "type": ["string", "null"],
+            "enum": ["metal", "wood", "water", "fire", "earth", null]
+          },
+          "labels": {
+            "type": "object",
+            "required": ["zh", "en"],
+            "properties": {
+              "zh": { "type": "string" },
+              "en": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "name": {
+            "type": "object",
+            "properties": {
+              "zh_TW": { "type": "string" },
+              "en_US": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "keywords": {
+            "type": "object",
+            "properties": {
+              "zh_TW": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "en_US": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          },
+          "metaphor_root": {
+            "type": "string"
+          },
+          "routing_hints": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "default_facets": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
