@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_35",
+  "name_zh": "晉",
+  "name_en": "Progress",
+  "structure": "Fire over Earth (火地晉)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "旭日東昇，光明普照。你的氣場正在上升，黑暗退去，前景變得清晰。這是一個『能見度』很高的時刻，你的才華和努力終於被看見。能量是向外擴張的，適合展示自我，爭取認同。你感到充滿希望，但也可能因為太過耀眼而感到灼熱。",
+      "en": "The sun rising in the east, illuminating everything. Your energy is rising, darkness receding, and the prospect becoming clear. This is a moment of high 'visibility'; your talent and efforts are finally being seen. Energy is expanding outward, suitable for self-display and seeking recognition. You feel hopeful, but perhaps also scorching from shining too bright."
+    },
+    "action_guidance": {
+      "zh": "大方展現，接受晉升。不要害羞或隱藏，現在是屬於你的舞台。利用這個上升氣流，去獲取資源，去擴大影響力。就像太陽無私地照耀萬物，大方地分享你的光芒。如果遇到挫折，不要氣餒，持續發光就是你的責任。",
+      "en": "Show yourself generously, accept advancement. Do not be shy or hide; this is your stage. Use this updraft to acquire resources and expand influence. Like the sun selflessly shining on all things, share your light generously. If you encounter setbacks, do not be discouraged; continuing to shine is your duty."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "旭日麗天，諸侯受賞。",
+        "en": "The bright sun in the sky; lords receiving rewards."
+      },
+      "secondary": {
+        "zh": "向日葵追逐陽光。",
+        "en": "Sunflowers chasing the sunlight."
+      }
+    },
+    "contraindications": [
+      "忌畏縮隱藏 (Avoid shrinking and hiding)",
+      "忌吝嗇付出 (Avoid being stingy)",
+      "忌得意忘形 (Avoid getting carried away)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_09",
+  "name_zh": "小畜",
+  "name_en": "Small Taming",
+  "structure": "Wind over Heaven (風天小畜)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "密雲不雨，風吹天上。你感到一種『蓄勢待發』的焦慮，準備了很久，資源似乎都到位了，但關鍵的『東風』遲遲未至。這是一種被輕微阻擋的狀態，如同被陰雲籠罩，雖無大礙，但卻無法盡情施展。你的能量正在積累，但出口尚未打開。",
+      "en": "Dense clouds, no rain; wind blowing over the sky. You feel an anxiety of 'poised to strike'; you've prepared for a long time, resources seem ready, but the crucial 'rain' (release) has not yet come. This is a state of minor obstruction, like being covered by clouds; no major harm, but unable to fully express yourself. Your energy is accumulating, but the outlet is not yet open."
+    },
+    "action_guidance": {
+      "zh": "現在只能做『小』事。不要強求大突破，因為時機未熟。利用這段等待期，去打磨細節，去『養』你的氣場。回到家中，整理環境，修復關係。這種阻礙是暫時的，目的是讓你更細緻地完善自我。耐心是此刻最高的修煉。",
+      "en": "Focus only on 'small' things now. Do not force a major breakthrough, as the time is not ripe. Use this waiting period to polish details and 'nourish' your energy field. Return home, organize your environment, repair relationships. This obstruction is temporary, meant to help you refine yourself more delicately. Patience is the highest cultivation right now."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "密雲不雨，自我蓄養。",
+        "en": "Dense clouds without rain; self-cultivation."
+      },
+      "secondary": {
+        "zh": "農夫在旱季修補水渠。",
+        "en": "A farmer repairing canals during a dry season."
+      }
+    },
+    "contraindications": [
+      "忌強行突破 (Avoid forcing a breakthrough)",
+      "忌焦躁抱怨 (Avoid anxiety and complaining)",
+      "忌忽視細節 (Avoid ignoring details)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_38",
+  "name_zh": "睽",
+  "name_en": "Opposition",
+  "structure": "Fire over Lake (火澤睽)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "火炎上，澤潤下，性情相違。你感到一種強烈的『格格不入』或『背離感』。這不僅是意見不合，而是本質上的互斥。你看什麼都不順眼，覺得被孤立或誤解。這是一種分離的能量，但也意味著獨特性的彰顯。",
+      "en": "Fire burns up, Lake moistens down; natures oppose. You feel a strong sense of 'misfit' or 'estrangement'. This is not just disagreement, but essential mutual exclusion. Nothing looks right to you; you feel isolated or misunderstood. This is separating energy, but also signifies the manifestation of uniqueness."
+    },
+    "action_guidance": {
+      "zh": "求同存異。不要試圖強行融合，因為水火本不相容。接受這份差異，利用這種『對立』來看清事物的兩面。在小事上尋求合作，在大事上保持距離。利用這種張力來激發創意，而不是消耗在無謂的對抗中。",
+      "en": "Seek common ground while reserving differences. Do not force fusion, as Fire and Water are incompatible. Accept this difference and use this 'opposition' to see both sides of things. Seek cooperation in small matters; keep distance in major ones. Use this tension to spark creativity instead of wasting it on pointless confrontation."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "二女同居，其志不同。",
+        "en": "Two women living together, their wills differ."
+      },
+      "secondary": {
+        "zh": "背對背的兩人，視角互補。",
+        "en": "Two people back-to-back, perspectives complementing."
+      }
+    },
+    "contraindications": [
+      "忌強求一致 (Avoid forcing uniformity)",
+      "忌敵視異己 (Avoid hostility toward differences)",
+      "忌過度猜疑 (Avoid excessive suspicion)"
+    ]
+  }
+}

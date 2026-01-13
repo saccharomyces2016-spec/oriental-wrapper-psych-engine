@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_20",
+  "name_zh": "觀",
+  "name_en": "Contemplation",
+  "structure": "Wind over Earth (風地觀)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "風行地上，萬物皆顯。你現在不是『演員』，而是『觀眾』。你的氣場處於一種抽離、觀察的狀態。這可能源於你對現狀的困惑，促使你退後一步尋求全貌。這是一種神聖的停頓，如同祭祀前洗淨雙手的時刻，誠敬而專注。",
+      "en": "Wind blowing over the Earth, revealing all things. You are not an 'actor' now, but a 'spectator'. Your energy field is in a state of detachment and observation. This may stem from confusion about the status quo, prompting you to step back and seek the full picture. This is a sacred pause, like the moment of washing hands before a sacrifice, sincere and focused."
+    },
+    "action_guidance": {
+      "zh": "多看少動。現在不是介入因果的時候，而是洞察規律的時刻。觀察他人的成敗，審視自己的內心。建立一個更高的視角（Metaview），像風一樣遍歷各地但不留痕跡。透過內省與觀察，你會在不動中獲得最大的智慧。",
+      "en": "Watch more, act less. Now is not the time to intervene in causality, but to gain insight into patterns. Observe the successes and failures of others; examine your own heart. Establish a higher perspective (Metaview), traversing everywhere like the wind but leaving no trace. Through introspection and observation, you will gain the greatest wisdom in stillness."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "風行草偃，高塔瞭望。",
+        "en": "The wind blows and the grass bends; looking out from a high tower."
+      },
+      "secondary": {
+        "zh": "祭祀時的莊嚴注視。",
+        "en": "Solemn gaze during a sacred ritual."
+      }
+    },
+    "contraindications": [
+      "忌盲目行動 (Avoid blind action)",
+      "忌沈迷細節忽略大局 (Avoid getting lost in details and missing the big picture)",
+      "忌輕浮不莊重 (Avoid frivolity)"
+    ]
+  }
+}

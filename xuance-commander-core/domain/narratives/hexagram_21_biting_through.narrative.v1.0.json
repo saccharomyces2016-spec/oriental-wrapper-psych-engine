@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_21",
+  "name_zh": "噬嗑",
+  "name_en": "Biting Through",
+  "structure": "Fire over Thunder (火雷噬嗑)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "口中有物，不吐不快。你的氣場顯示出明顯的『梗阻』感，像是咬到了硬骨頭。這代表你面臨著具體的障礙、不公，或是溝通上的隔閡。雷動而火明，你的情緒是激烈的，想要迅速解決這個卡住你喉嚨的問題。",
+      "en": "Something in the mouth; uncomfortable until spat out. Your energy field shows a clear sense of 'obstruction', like biting into a hard bone. This represents a concrete obstacle, injustice, or communication barrier you are facing. Thunder moves and Fire shines; your emotions are intense, wanting to quickly resolve this issue stuck in your throat."
+    },
+    "action_guidance": {
+      "zh": "此卦指向『咬合』。對於障礙，不能迴避，不能溫柔，此卦指向施加足夠的壓力去粉碎它。這是一個需要刑罰與決斷的時刻。明確指出問題，呈現你的界線，清除那些阻礙能量流動的雜質。果斷的行動會帶來亨通。",
+      "en": "You must 'bite through'. Do not avoid or be gentle with the obstacle; apply enough pressure to crush it. This is a moment requiring penalty and decision. Clearly point out the problem, enforce your boundaries, and clear away impurities blocking the energy flow. Decisive action will bring success."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "咬碎硬骨，方能閉口。",
+        "en": "Biting through hard bone so the mouth can close."
+      },
+      "secondary": {
+        "zh": "執法者清除罪惡。",
+        "en": "Law enforcer clearing away crime."
+      }
+    },
+    "contraindications": [
+      "忌優柔寡斷 (Avoid indecision)",
+      "忌姑息養奸 (Avoid tolerating evil)",
+      "忌情緒化發洩 (Avoid emotional venting)"
+    ]
+  }
+}

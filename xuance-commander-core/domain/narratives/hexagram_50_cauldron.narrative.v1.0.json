@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_50",
+  "name_zh": "鼎",
+  "name_en": "The Cauldron",
+  "structure": "Fire over Wind (火風鼎)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "木助火燃，烹飪轉化。這是一個『煉金』的時刻。原本生硬的食材（經歷），正在這口大鍋中被轉化為營養的佳餚（智慧）。你的生命正在經歷一場質變，這是一種神聖的創造過程，象徵著除舊佈新與權威的建立。",
+      "en": "Wood fuels Fire; cooking and transformation. This is a moment of 'alchemy'. Raw ingredients (experiences) are being transformed in this great cauldron into nutritious delicacies (wisdom). Your life is undergoing a qualitative change, a sacred creative process symbolizing discarding the old for the new and establishing authority."
+    },
+    "action_guidance": {
+      "zh": "穩住重心，去蕪存菁。確保你的『鼎足』（基礎）穩固，能夠承受高溫的試煉。把過去的陳腐倒掉，投入新鮮的材料。這是一個建立新秩序、新形象的好時機。透過這場轉化，你將獲得滋養他人的能力與地位。",
+      "en": "Stabilize the center of gravity; remove the weeds to save the essence. Ensure your 'cauldron legs' (foundation) are solid enough to withstand the heat of the trial. Pour out the stale past and put in fresh ingredients. This is a good time to establish a new order and image. Through this transformation, you will gain the ability and status to nourish others."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "烈火烹油，化生為熟。",
+        "en": "Raging fire cooking oil; transforming raw to cooked."
+      },
+      "secondary": {
+        "zh": "鑄造神器的熔爐。",
+        "en": "A furnace forging a divine artifact."
+      }
+    },
+    "contraindications": [
+      "忌基礎不穩 (Avoid unstable foundation)",
+      "忌才不配位 (Avoid talent not matching position)",
+      "忌拒絕轉化 (Avoid refusing transformation)"
+    ]
+  }
+}

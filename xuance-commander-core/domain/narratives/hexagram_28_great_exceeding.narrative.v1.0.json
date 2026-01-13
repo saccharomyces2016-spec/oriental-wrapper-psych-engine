@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_28",
+  "name_zh": "大過",
+  "name_en": "Great Exceeding",
+  "structure": "Lake over Wood (澤風大過)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "澤水淹沒樹木，棟樑受壓彎曲。你正處於『負荷過重』的極限狀態。責任、壓力或情緒已經超過了你當前結構所能支撐的臨界點。這是一種岌岌可危的感覺，彷彿頭頂的屋頂隨時會塌下來。這不是普通的壓力，而是結構性的危機。",
+      "en": "Lake water submerges the trees; the ridgepole sags under pressure. You are in an extreme state of 'overload'. Responsibilities, stress, or emotions have exceeded the critical point your current structure can support. It feels precarious, as if the roof overhead could collapse at any moment. This is not ordinary stress, but a structural crisis."
+    },
+    "action_guidance": {
+      "zh": "此卦指向改變結構。你不能再硬撐了，此卦指向選擇『逃離』或『徹底重建』。這是一個非常的時刻，需要非常的手段。拋棄不必要的負擔，尋找新的支撐點。時機緊迫的狀態，不要留戀舊的穩定，因為舊的穩定已經崩塌了。",
+      "en": "Change the structure immediately. You can no longer tough it out; you must choose to 'flee' or 'rebuild completely'. This is an extraordinary moment requiring extraordinary measures. Discard unnecessary burdens and find new support points. Move fast; do not cling to old stability, for the old stability has already collapsed."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "棺木過重，棟樑彎曲。",
+        "en": "The load is too heavy; the supporting beam bends."
+      },
+      "secondary": {
+        "zh": "洪水滅頂，需尋高地。",
+        "en": "Floodwaters rising above the head; seek high ground."
+      }
+    },
+    "contraindications": [
+      "忌硬撐死扛 (Avoid stubbornly holding on)",
+      "忌猶豫不決 (Avoid indecision)",
+      "忌忽視結構性警訊 (Avoid ignoring structural warning signs)"
+    ]
+  }
+}

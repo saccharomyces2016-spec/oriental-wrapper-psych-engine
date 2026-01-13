@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_07",
+  "name_zh": "師",
+  "name_en": "The Army",
+  "structure": "Earth over Water (地水師)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "地中藏水，看似平靜的地面下，湧動著巨大的潛能與危險。你現在處於一種『聚眾』或『混亂初開』的狀態，內在充滿了未經引導的衝動或外在面臨複雜的糾葛。這是一股強大的力量，但若缺乏紀律與明確的指揮（中心思想），這股力量將會潰散成災。",
+      "en": "Water hidden within the Earth; beneath the seemingly calm surface surges immense potential and danger. You are in a state of 'gathering' or 'initial chaos', filled with unguided internal impulses or facing complex external entanglements. This is a powerful force, but without discipline and clear command (central idea), it will scatter into disaster."
+    },
+    "action_guidance": {
+      "zh": "此卦指向建立『紀律』。這不是放縱情緒的時候，而是像將軍統帥軍隊一樣，整理你的思緒與資源。確立一個核心目標，排除雜音。對於混亂的現狀，需要鐵腕般的秩序感。若無把握掌控局勢，切勿輕易行動，否則會陷入泥沼。",
+      "en": "Discipline must be established. This is not the time for indulging emotions, but for organizing your thoughts and resources like a general commanding an army. Establish a core objective and eliminate noise. The chaotic status quo requires an iron-handed sense of order. If you are not confident in controlling the situation, do not act lightly, or you will sink into the quagmire."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "地下伏流，需引導方能灌溉，否則氾濫。",
+        "en": "Underground current; requires guidance to irrigate, otherwise it floods."
+      },
+      "secondary": {
+        "zh": "統帥萬馬千軍的將領。",
+        "en": "A general commanding thousands of horses and soldiers."
+      }
+    },
+    "contraindications": [
+      "忌無首領（缺乏主見） (Avoid being leaderless/lacking opinion)",
+      "忌猶豫不決 (Avoid indecision)",
+      "忌散漫無紀 (Avoid lack of discipline)"
+    ]
+  }
+}

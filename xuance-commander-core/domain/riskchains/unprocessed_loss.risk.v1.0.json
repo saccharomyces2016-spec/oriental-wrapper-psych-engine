@@ -1,12 +1,59 @@
 {
-  "mid": {
-    "if_not_improve": [
-      "待從 consequence_chain_library 和 buildGuidance.js 提取"
-    ]
-  },
-  "high": {
-    "if_not_improve": [
-      "待從 consequence_chain_library 和 buildGuidance.js 提取"
-    ]
-  }
+  "facetId": "unprocessed_loss",
+  "version": "1.0",
+  "riskchains": [
+    {
+      "chain_id": "ul_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.6,
+        "duration_weeks": 12,
+        "additional_factors": [
+          "rigidity_stagnant"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "frozen_vitality",
+          "probability": 0.6,
+          "timeframe_weeks": 12,
+          "description": {
+            "zh": "陰雨不散，內在空間生苔，生機停滯。",
+            "en": "Endless rain, inner space grows moss, life stalls."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "vessel_fracture",
+          "probability": 0.35,
+          "timeframe_weeks": 24,
+          "description": {
+            "zh": "悲傷侵蝕，結構脆化。",
+            "en": "Grief erodes, structure embrittles."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "不敢觸碰某類物品",
+            "en": "Avoid certain objects"
+          },
+          {
+            "zh": "生活停留在過去",
+            "en": "Life stuck in past"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "舉行「送行儀式」，將信物轉化或封存。",
+              "en": "Farewell ritual, transform/seal tokens."
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

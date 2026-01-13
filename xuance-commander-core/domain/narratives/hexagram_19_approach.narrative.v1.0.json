@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_19",
+  "name_zh": "臨",
+  "name_en": "Approach",
+  "structure": "Earth over Lake (地澤臨)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "地臨於澤，陽氣增長。這是春天來臨前的甦醒時刻，你的能量正在回升，視野變得開闊。你感到一股想要『親身參與』、想要掌控局勢的動力。這是一個充滿希望的階段，就像乾涸的土地重新得到滋潤，機會正在向你靠近。",
+      "en": "Earth approaching the Lake; Yang energy is growing. This is the awakening moment before spring; your energy is rising, and your vision is broadening. You feel a drive to 'participate personally' and take control. This is a hopeful stage, like dry land being moistened again; opportunities are approaching you."
+    },
+    "action_guidance": {
+      "zh": "把握當下，積極介入。現在是推動計畫、建立連結的好時機。展現你的親和力與領導力，去『視察』你的領域。但需注意『八月有凶』的警示，這意味著盛極必衰，在順境中要為未來的消退做好準備，不可得意忘形。",
+      "en": "Seize the moment and intervene actively. Now is a good time to push plans and build connections. Show your affinity and leadership to 'inspect' your domain. But heed the warning of 'misfortune in the eighth month', meaning that peak leads to decline; prepare for future recession while in favorable times, and do not get carried away."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "君王臨視天下，恩澤萬物。",
+        "en": "The sovereign inspecting the realm, bestowing grace upon all."
+      },
+      "secondary": {
+        "zh": "春水初生，萬物萌發。",
+        "en": "Spring waters rising, all things germinating."
+      }
+    },
+    "contraindications": [
+      "忌懈怠懶散 (Avoid laziness)",
+      "忌短視近利 (Avoid shortsightedness)",
+      "忌忘記週期變化 (Avoid forgetting cyclical changes)"
+    ]
+  }
+}

@@ -1,12 +1,164 @@
 {
-  "mid": {
-    "if_not_improve": [
-      "關係進入追逃模式，溝通成本升高。"
-    ]
-  },
-  "high": {
-    "if_not_improve": [
-      "你會相信靠近等於受傷，修復能力下降。"
-    ]
-  }
+  "facetId": "social_comparison",
+  "riskchains": [
+    {
+      "chain_id": "sc_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.7,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "locus_external"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "self_erosion",
+          "probability": 0.65,
+          "timeframe_weeks": 6,
+          "description": {
+            "zh": "自信鏽蝕。",
+            "en": "Confidence corrodes."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "income_expansion_pressure",
+          "probability": 0.45,
+          "timeframe_weeks": 10,
+          "description": {
+            "zh": "資源透支。",
+            "en": "Resources overdraft."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "滑手機後低落",
+            "en": "Down after scrolling"
+          },
+          {
+            "zh": "酸葡萄心態",
+            "en": "Sour grapes"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "數位齋戒。",
+              "en": "Digital fasting."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "sc_rc_002",
+      "trigger_condition": {
+        "severity_threshold": 0.6,
+        "duration_weeks": 8,
+        "additional_factors": [
+          "volatility_high"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "emotional_permeability",
+          "probability": 0.6,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "邊界動搖，隨波逐流。",
+            "en": "Boundary shakes, drifting."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "identity_diffusion",
+          "probability": 0.5,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "忘卻本來面目。",
+            "en": "Forget true self."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "過度模仿",
+            "en": "Over-mimicking"
+          },
+          {
+            "zh": "價值觀混亂",
+            "en": "Values confused"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "核心價值錨定。",
+              "en": "Core value anchor."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "sc_rc_003",
+      "trigger_condition": {
+        "severity_threshold": 0.75,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "rigidity_stagnant"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "avoidance_coping",
+          "probability": 0.7,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "自慚形穢，隱遁避世。",
+            "en": "Ashamed, hiding."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "frozen_vitality",
+          "probability": 0.55,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "心死如灰。",
+            "en": "Heart dead ash."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "拒絕社交",
+            "en": "Refuse social"
+          },
+          {
+            "zh": "自我封閉",
+            "en": "Self-closing"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "感恩筆記。",
+              "en": "Gratitude note."
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

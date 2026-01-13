@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_25",
+  "name_zh": "無妄",
+  "name_en": "Innocence",
+  "structure": "Heaven over Thunder (天雷無妄)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "天雷震動，萬物順應天性。你現在處於一種需要回歸『本真』的狀態。任何的機心、算計、過度規劃，在此刻都會失效甚至帶來災禍。你可能感到事情不如預期，那正是因為你試圖用『大腦』去控制『天命』。",
+      "en": "Heaven and Thunder vibrate; all things follow their nature. You are in a state requiring a return to 'authenticity'. Any scheming, calculation, or over-planning will fail or bring disaster at this moment. You may feel things are not as expected; that is precisely because you are trying to control 'Destiny' with your 'brain'."
+    },
+    "action_guidance": {
+      "zh": "跟隨直覺，順勢而為。不要預設結果，不要為了利益而行動。保持像新生兒一樣的純真與誠實。如果有意外發生，不要驚慌，那是宇宙在自行重組你的軌道。這是一個『無為而無不為』的時刻，放下控制，你才會安全。",
+      "en": "Follow intuition and go with the flow. Do not presuppose results; do not act for profit. Maintain the innocence and honesty of a newborn. If accidents happen, do not panic; it is the universe correcting your trajectory. This is a moment of 'doing nothing yet leaving nothing undone'; let go of control, and you will be safe."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "鳥獸依時而動，不違天性。",
+        "en": "Birds and beasts moving with the seasons, not violating their nature."
+      },
+      "secondary": {
+        "zh": "未經雕琢的璞玉。",
+        "en": "Unpolished jade."
+      }
+    },
+    "contraindications": [
+      "忌投機取巧 (Avoid opportunism)",
+      "忌過度腦補 (Avoid over-thinking)",
+      "忌違背良知 (Avoid violating conscience)"
+    ]
+  }
+}

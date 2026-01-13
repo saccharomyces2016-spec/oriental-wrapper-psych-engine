@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_48",
+  "name_zh": "井",
+  "name_en": "The Well",
+  "structure": "Water over Wind (水風井)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "地中有水，源源不絕。你的外在環境可能變動（邑改），但內在的核心價值與資源（井）是不變的。你擁有深層的智慧與滋養能力，但目前可能面臨『工具不足』或『管道堵塞』的問題，導致無法將這份資源提取出來。",
+      "en": "Water within the Earth; endless source. Your external environment may change (the town moves), but the inner core values and resources (the well) remain unchanged. You possess deep wisdom and nourishing ability, but may currently face problems of 'insufficient tools' or 'blocked channels', preventing extraction of this resource."
+    },
+    "action_guidance": {
+      "zh": "修繕工具，維護根基。不要急著向外求，而是向內挖掘。檢查你的『水桶』和『繩索』（技能、習慣、身心狀態）是否完好。如果井泥濁，就先淘洗；如果繩子斷了，就先接上。只有保持通道的暢通，你的深層潛能才能滋養生命。",
+      "en": "Repair tools, maintain the foundation. Do not rush to seek outward, but dig inward. Check if your 'bucket' and 'rope' (skills, habits, mind-body state) are intact. If the well is muddy, cleanse it; if the rope breaks, mend it. Only by keeping the channel clear can your deep potential nourish life."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "古井無波，養人無窮。",
+        "en": "An ancient well without ripples, nourishing people endlessly."
+      },
+      "secondary": {
+        "zh": "打水的繩索斷裂，功虧一簣。",
+        "en": "The rope breaks while drawing water; falling short of success."
+      }
+    },
+    "contraindications": [
+      "忌半途而廢 (Avoid giving up halfway)",
+      "忌忽視工具/方法 (Avoid ignoring tools/methods)",
+      "忌讓井水染污 (Avoid polluting the well water)"
+    ]
+  }
+}

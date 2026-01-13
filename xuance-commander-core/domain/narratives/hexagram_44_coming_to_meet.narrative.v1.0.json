@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_44",
+  "name_zh": "姤",
+  "name_en": "Coming to Meet",
+  "structure": "Heaven over Wind (天風姤)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "風行天下，無孔不入。你將會經歷一場『意外的相遇』。這可能是一個人、一個機會或一種誘惑，突如其來且強勢。陰氣在底部悄悄生長，這股力量雖然微小但極具穿透力。你感到興奮，但也隱約覺得局面有些失控。",
+      "en": "Wind blowing under Heaven; penetrating everywhere. You are about to experience an 'unexpected encounter'. This could be a person, an opportunity, or a temptation, sudden and dominant. Yin energy quietly grows at the bottom; this force is small but extremely penetrating. You feel excited, but also vaguely sense the situation is getting out of control."
+    },
+    "action_guidance": {
+      "zh": "保持警覺，勿輕易聯結。對於突如其來的好運或緣分，要保持冷靜的判斷。不要被一時的激情沖昏頭。這股力量可能會喧賓奪主，侵蝕你的主導權。適度互動可以，但不要輕易給予承諾或讓其進入核心。",
+      "en": "Stay alert, do not connect lightly. Maintain cool judgment regarding sudden luck or fate. Do not be carried away by momentary passion. This force might take over and erode your dominance. Moderate interaction is fine, but do not easily give promises or let it enter your core."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "強風吹散雲層，偶遇之象。",
+        "en": "Strong wind scattering clouds; symbol of a chance meeting."
+      },
+      "secondary": {
+        "zh": "柔弱卻強韌的藤蔓纏繞大樹。",
+        "en": "Weak but tough vines wrapping around a great tree."
+      }
+    },
+    "contraindications": [
+      "忌沈迷誘惑 (Avoid indulging in temptation)",
+      "忌引狼入室 (Avoid inviting danger in)",
+      "忌輕率結婚/合夥 (Avoid rash marriage/partnership)"
+    ]
+  }
+}

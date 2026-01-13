@@ -1,12 +1,164 @@
 {
-  "mid": {
-    "if_not_improve": [
-      "未完成事項累積，自責感增加。"
-    ]
-  },
-  "high": {
-    "if_not_improve": [
-      "你會把人生停在未開始狀態。"
-    ]
-  }
+  "facetId": "avoidance_coping",
+  "riskchains": [
+    {
+      "chain_id": "ac_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.7,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "volatility_low"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "suppressed_needs",
+          "probability": 0.6,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "問題積壓，壓力內爆。",
+            "en": "Problems pile, pressure implodes."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "chronic_alertness",
+          "probability": 0.45,
+          "timeframe_weeks": 12,
+          "description": {
+            "zh": "雖逃避，心仍懸宕。",
+            "en": "Escaping but heart suspended."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "訊息堆積未讀",
+            "en": "Unread messages pile"
+          },
+          {
+            "zh": "沉迷虛擬",
+            "en": "Addicted to virtual"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "每日一拆。",
+              "en": "Daily unpacking."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "ac_rc_002",
+      "trigger_condition": {
+        "severity_threshold": 0.6,
+        "duration_weeks": 12,
+        "additional_factors": [
+          "rigidity_stagnant"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "frozen_vitality",
+          "probability": 0.55,
+          "timeframe_weeks": 10,
+          "description": {
+            "zh": "長久不動，生機漸凍。",
+            "en": "Long immobility freezes life."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "loss_of_agency",
+          "probability": 0.4,
+          "timeframe_weeks": 16,
+          "description": {
+            "zh": "習得性無助，放棄掌舵。",
+            "en": "Learned helplessness, give up steering."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "拖延成性",
+            "en": "Chronic procrastination"
+          },
+          {
+            "zh": "對未來麻木",
+            "en": "Numb to future"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "微小行動啟動儀式。",
+              "en": "Micro-action activation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "ac_rc_003",
+      "trigger_condition": {
+        "severity_threshold": 0.8,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "locus_external"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "relationship_imbalance",
+          "probability": 0.65,
+          "timeframe_weeks": 6,
+          "description": {
+            "zh": "逃避溝通，關係失衡。",
+            "en": "Avoid communication, relation imbalance."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "unprocessed_loss",
+          "probability": 0.5,
+          "timeframe_weeks": 10,
+          "description": {
+            "zh": "關係斷裂，形成陰影。",
+            "en": "Relation breaks, forms shadow."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "避免眼神接觸",
+            "en": "Avoid eye contact"
+          },
+          {
+            "zh": "慣性沉默",
+            "en": "Habitual silence"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "寫下「真實之書」。",
+              "en": "Write 'Book of Truth'."
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

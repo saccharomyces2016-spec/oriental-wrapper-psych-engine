@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_06",
+  "name_zh": "訟",
+  "name_en": "Conflict",
+  "structure": "Heaven over Water (天水訟)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "天向西轉，水向東流，氣場呈現『背道而馳』之象。這並非單純的外在爭執，而是你的內在頻率與當前環境產生了根本性的錯位。你感覺周遭充滿阻力，彷彿逆水行舟，越是用力辯解，誤解反而越深。這是因為能量流向不合，強行溝通只會引發更大的摩擦。",
+      "en": "Heaven moves west, water flows east; the energy field shows a sign of 'divergence'. This is not merely external dispute, but a fundamental misalignment between your internal frequency and the current environment. You feel resistance everywhere, like rowing upstream; the harder you try to explain, the deeper the misunderstanding. The energy flows are incompatible, and forced communication only creates more friction."
+    },
+    "action_guidance": {
+      "zh": "此時『止』大於『行』。在氣場不合時，尋求勝利只會帶來悔恨。建議暫停所有爭辯與推進，退回到安全邊界內進行觀照。若此卦指向處理事務，請尋找公正的第三方或中間人作為緩衝。不要試圖獨自扭轉局勢，妥協不是認輸，而是為了保存能量。",
+      "en": "At this time, 'stopping' is more important than 'acting'. Seeking victory when energies are misaligned only brings regret. It is recommended to pause all arguments and advancements, retreating to a safe boundary for observation. If you must handle affairs, seek a neutral third party as a buffer. Do not try to turn the tide alone; compromise is not defeat, but a way to preserve energy."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "天水相違，各行其道。",
+        "en": "Heaven and Water moving apart, each following its own course."
+      },
+      "secondary": {
+        "zh": "身處異鄉的孤獨旅人，語言不通。",
+        "en": "A lonely traveler in a foreign land, unable to communicate."
+      }
+    },
+    "contraindications": [
+      "避免開啟新的爭論 (Avoid starting new arguments)",
+      "禁止強行推進計畫 (Forbid forcing plans forward)",
+      "不宜涉險渡河 (Not suitable for crossing great rivers/risks)"
+    ]
+  }
+}

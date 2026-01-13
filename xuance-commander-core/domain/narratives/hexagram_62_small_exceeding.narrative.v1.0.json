@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_62",
+  "name_zh": "小過",
+  "name_en": "Small Exceeding",
+  "structure": "Thunder over Mountain (雷山小過)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "山上有雷，聲音被壓低。你感到一種『飛鳥遺音』的卑微與謹慎。你可能覺得自己力量微薄，或者處境稍微有點『過度』緊張。這不是展翅高飛的時候，而是需要低飛、收斂、關注細節的時刻。你的大志向暫時無法伸展。",
+      "en": "Thunder over the Mountain; sound is suppressed. You feel the humbleness and caution of 'a flying bird leaving a call'. You may feel your strength is meager, or the situation is slightly 'overly' tense. This is not the time to soar high, but to fly low, restrain, and focus on details. Your great ambitions cannot be extended temporarily."
+    },
+    "action_guidance": {
+      "zh": "宜下不宜上，矯枉過正。在處理事情時，寧可做得稍微過分一點（過於恭敬、過於節儉、過於謹慎），也不要冒進。像鳥一樣低飛尋找棲息地。專注於瑣碎的小事，把它們做到極致。現在的安全感來自於『低調』。",
+      "en": "Better to descend than ascend; correct by overcompensating. When handling matters, it is better to be slightly excessive (overly respectful, overly thrifty, overly cautious) than to be rash. Fly low like a bird seeking a perch. Focus on trivial details and perfect them. Security now comes from being 'low profile'."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "飛鳥遺音，不宜上宜下。",
+        "en": "A flying bird leaves its call; suitable to descend, not ascend."
+      },
+      "secondary": {
+        "zh": "行過乎恭，喪過乎哀。",
+        "en": "Excessive respect in conduct; excessive grief in mourning."
+      }
+    },
+    "contraindications": [
+      "忌好高騖遠 (Avoid aiming too high)",
+      "忌粗心大意 (Avoid carelessness)",
+      "忌強出頭 (Avoid forcing yourself into the spotlight)"
+    ]
+  }
+}

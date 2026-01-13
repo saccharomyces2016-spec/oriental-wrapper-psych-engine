@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_26",
+  "name_zh": "大畜",
+  "name_en": "Great Taming",
+  "structure": "Mountain over Heaven (山天大畜)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "山中藏天，能量極度壓縮。你擁有巨大的抱負與才華（天），但目前被環境或時局（山）所阻擋。這不是壞事，這座『山』正在強迫你累積更深厚的底蘊。你感覺到內在有股強大的壓力，像是水庫即將滿溢。",
+      "en": "Heaven hidden within the Mountain; energy is extremely compressed. You possess immense ambition and talent (Heaven), but are currently blocked by the environment or situation (Mountain). This is not bad; this 'Mountain' is forcing you to accumulate deeper reserves. You feel a powerful internal pressure, like a reservoir about to overflow."
+    },
+    "action_guidance": {
+      "zh": "在家修身，出外涉險。利用這段被阻擋的時間，大量吸收知識，磨練技能，甚至研究前人的智慧。不要急著發洩，讓能量繼續增壓。等到時機成熟，這股爆發力將能『涉大川』，克服巨大的挑戰。現在是能量內收、蓄力的階段。",
+      "en": "Cultivate yourself at home, prepare for risks abroad. Use this blocked time to absorb knowledge, hone skills, and study ancient wisdom. Do not rush to vent; let the energy pressure build. When the time is ripe, this explosive power will be able to 'cross great rivers' and overcome huge challenges. Now is the stage for deep breathing and gathering strength."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "高山包容天際，胸懷廣大。",
+        "en": "High mountains embracing the sky; vastness of mind."
+      },
+      "secondary": {
+        "zh": "裝滿穀物的巨大糧倉。",
+        "en": "A massive granary filled with grain."
+      }
+    },
+    "contraindications": [
+      "忌淺嚐輒止 (Avoid stopping after a little taste)",
+      "忌浪費光陰 (Avoid wasting time)",
+      "忌在準備不足時冒進 (Avoid advancing when ill-prepared)"
+    ]
+  }
+}

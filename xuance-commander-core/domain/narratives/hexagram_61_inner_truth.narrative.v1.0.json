@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_61",
+  "name_zh": "中孚",
+  "name_en": "Inner Truth",
+  "structure": "Wind over Lake (風澤中孚)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "澤上有風，感應無礙。你的氣場呈現出一種『誠信』與『通透』的特質。你的內心是空的（虛懷），所以能容納真實。這是一種強大的感召力，能夠跨越障礙，甚至感化頑固之物（信及豚魚）。",
+      "en": "Wind over Lake; unimpeded resonance. Your energy field presents qualities of 'integrity' and 'transparency'. Your heart is empty (humble), so it can contain truth. This is a powerful charisma capable of crossing obstacles and even influencing stubborn things (trust reaching pigs and fish)."
+    },
+    "action_guidance": {
+      "zh": "誠信為本，直覺導航。在這個時刻，邏輯與策略都不如『真心』有效。相信你的直覺，發出你真實的聲音。任何的欺瞞或掩飾都會象徵上被識破並破壞氣場。保持內在的信實，你將能平安渡過大河。",
+      "en": "Integrity as the foundation; intuition as navigation. At this moment, logic and strategy are less effective than a 'true heart'. Trust your intuition and voice your truth. Any deceit or cover-up will be instantly detected and destroy the energy field. Maintain inner faithfulness, and you will safely cross the great river."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "信及豚魚，金石為開。",
+        "en": "Trust reaching even pigs and fish; sincerity splits metal and stone."
+      },
+      "secondary": {
+        "zh": "兩船並行，風力相助。",
+        "en": "Two boats sailing side by side, aided by the wind."
+      }
+    },
+    "contraindications": [
+      "忌虛偽欺騙 (Avoid hypocrisy and deceit)",
+      "忌意志動搖 (Avoid wavering will)",
+      "忌輕諾寡信 (Avoid making light promises)"
+    ]
+  }
+}

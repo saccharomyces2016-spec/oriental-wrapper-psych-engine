@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_45",
+  "name_zh": "萃",
+  "name_en": "Gathering",
+  "structure": "Lake over Earth (澤地萃)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "澤水匯聚於地，滋養萬物。你處於一個『匯聚』的中心，人氣、資源、財富正在向你靠攏。這是一種豐盛的狀態，但也伴隨著混雜與擁擠。當能量高度集中時，若無良好的疏導與防備，容易引發內部的混亂或外來的覬覦。",
+      "en": "Lake water gathers on the Earth, nourishing all things. You are at a center of 'gathering'; popularity, resources, and wealth are moving towards you. This is a state of abundance, but also accompanied by mixture and crowding. When energy is highly concentrated, without good channeling and defense, it easily triggers internal chaos or external coveting."
+    },
+    "action_guidance": {
+      "zh": "修繕武器，防備意外。在聚會與豐收的時刻，更需要建立秩序與邊界（戒備）。如同舉辦大型慶典，需要有明確的流程與安全措施。利用這個聚集的能量去達成大目標，但同時要保持警惕，防止樂極生悲。",
+      "en": "Repair weapons, prepare for accidents. In moments of gathering and harvest, establishing order and boundaries (vigilance) is even more necessary. Like holding a large festival, clear procedures and security measures are needed. Use this gathered energy to achieve big goals, but stay vigilant to prevent joy turning into sorrow."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "鯉魚躍龍門，群英薈萃。",
+        "en": "Carp leaping over the dragon gate; gathering of heroes."
+      },
+      "secondary": {
+        "zh": "豐收的市集，需防小偷。",
+        "en": "A bountiful market; beware of thieves."
+      }
+    },
+    "contraindications": [
+      "忌混亂無序 (Avoid disorder)",
+      "忌毫無防備 (Avoid being defenseless)",
+      "忌因聚生亂 (Avoid chaos born from gathering)"
+    ]
+  }
+}

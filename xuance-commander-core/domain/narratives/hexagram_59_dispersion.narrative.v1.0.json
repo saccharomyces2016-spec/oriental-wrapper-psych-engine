@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_59",
+  "name_zh": "渙",
+  "name_en": "Dispersion",
+  "structure": "Wind over Water (風水渙)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "風吹水面，波紋擴散。你正處於『消融』與『解散』的過程。那些僵化的結構、凝滯的情緒或長期的執著，正在被風吹散。這可能會讓你感到邊界模糊、重心不穩，但這也是打破隔閡、重新流動的必要過程。",
+      "en": "Wind blowing over water; ripples spreading. You are in a process of 'melting' and 'dispersion'. Rigid structures, stagnant emotions, or long-term attachments are being blown away. This may make you feel blurred boundaries and unstable center, but it is a necessary process to break barriers and flow again."
+    },
+    "action_guidance": {
+      "zh": "乘舟涉川，借力使力。不要抗拒這股擴散的力量，利用它來化解心結。這是一個適合『精神整合』的時刻，透過信仰、藝術或大局觀，將分散的人心重新凝聚。讓舊的形式解體，以便新的能量能夠自由流動。",
+      "en": "Ride the boat across the river; leverage the force. Do not resist this dispersing power; use it to dissolve mental knots. This is a moment suitable for 'spiritual integration', reuniting scattered hearts through faith, art, or a big-picture view. Let old forms disintegrate so new energy can flow freely."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "春風解凍，冰雪消融。",
+        "en": "Spring wind thawing; ice and snow melting."
+      },
+      "secondary": {
+        "zh": "揚帆出海，打破疆界。",
+        "en": "Setting sail to sea; breaking boundaries."
+      }
+    },
+    "contraindications": [
+      "忌固步自封 (Avoid self-confinement)",
+      "忌恐懼改變 (Avoid fearing change)",
+      "忌缺乏凝聚核心 (Avoid lacking a cohesive core)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_56",
+  "name_zh": "旅",
+  "name_en": "The Wanderer",
+  "structure": "Fire over Mountain (火山旅)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "山上之火，蔓延不定。你處於『漂泊』的狀態，身心皆不安穩。你可能正在轉換跑道、搬家，或在心理上感到無家可歸。這種狀態雖然自由，但也伴隨著孤獨與脆弱。你像是一個過客，所有的連結都是暫時的。",
+      "en": "Fire on the Mountain; spreading unpredictably. You are in a state of 'wandering', physically and mentally unstable. You may be changing careers, moving, or feeling psychologically homeless. While free, this state brings loneliness and fragility. You are like a passerby; all connections are temporary."
+    },
+    "action_guidance": {
+      "zh": "謹慎自持，勿求久安。作為旅人，最重要的是保護自己並尊重當地的規矩。不要捲入他人的糾紛，不要攜帶過多的行李（執著）。保持機動性，小事可成，大事難為。這是一段過渡期，學習在變動中安頓身心。",
+      "en": "Be cautious and self-controlled; do not seek permanence. As a wanderer, the most important thing is protecting yourself and respecting local rules. Do not get involved in others' disputes; do not carry too much luggage (attachments). Maintain mobility; small things can be achieved, big things are difficult. This is a transition period; learn to settle your body and mind amidst change."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "失巢之鳥，山火燎原。",
+        "en": "A bird losing its nest; mountain fire spreading."
+      },
+      "secondary": {
+        "zh": "異鄉的客棧，暫住一夜。",
+        "en": "An inn in a foreign land; staying for one night."
+      }
+    },
+    "contraindications": [
+      "忌傲慢無禮 (Avoid arrogance and rudeness)",
+      "忌捲入是非 (Avoid getting involved in disputes)",
+      "忌留戀不走 (Avoid lingering)"
+    ]
+  }
+}

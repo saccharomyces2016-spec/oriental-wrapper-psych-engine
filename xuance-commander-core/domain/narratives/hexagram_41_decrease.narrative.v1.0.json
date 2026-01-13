@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_41",
+  "name_zh": "損",
+  "name_en": "Decrease",
+  "structure": "Mountain over Lake (山澤損)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "損下益上，挖低處的土去補高山。你正處於一個『減法』的階段。你可能感到資源減少、情感失落或被迫犧牲。這不是剝削，這是一種為了更長遠目標的必要投資。你的氣場正在收縮，去除雜質，留下精華。",
+      "en": "Decrease the lower to benefit the upper; digging earth from below to augment the mountain. You are in a stage of 'subtraction'. You may feel resource depletion, emotional loss, or forced sacrifice. This is not exploitation, but a necessary investment for a longer-term goal. Your energy field is contracting, removing impurities to leave the essence."
+    },
+    "action_guidance": {
+      "zh": "懲忿窒欲，斷捨離。主動減少不必要的慾望、開支和社交。將能量集中在最核心的事物上。這時候的『損失』其實是轉化，用物質的減少換取精神的提升。誠意勝過豐盛的祭品，簡單就是力量。",
+      "en": "Restrain anger and stifle desire; practice decluttering. Actively reduce unnecessary desires, expenses, and socializing. Concentrate energy on the most core things. The 'loss' at this time is actually transformation, trading material decrease for spiritual elevation. Sincerity outweighs abundant offerings; simplicity is power."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "鑿石見玉，去蕪存菁。",
+        "en": "Chiseling stone to reveal jade; removing weeds to save the essence."
+      },
+      "secondary": {
+        "zh": "虔誠的微薄獻祭。",
+        "en": "A meager offering made with devotion."
+      }
+    },
+    "contraindications": [
+      "忌吝嗇不捨 (Avoid being stingy/unable to let go)",
+      "忌憤世嫉俗 (Avoid cynicism)",
+      "忌過度自我剝削 (Avoid excessive self-exploitation)"
+    ]
+  }
+}

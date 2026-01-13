@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_46",
+  "name_zh": "升",
+  "name_en": "Ascending",
+  "structure": "Earth over Wind (地風升)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "木生於地，順勢而長。你的氣場正在『穩步上升』。不同於『晉』的快速顯耀，『升』是緩慢、有機且扎實的成長。你就像一顆種子破土而出，雖然速度不快，但方向正確，阻力極小。這是一種柔順而堅韌的上升力量。",
+      "en": "Wood growing in the Earth; rising with the flow. Your energy field is 'steadily ascending'. Unlike the rapid dazzle of 'Progress' (Jin), 'Ascending' is slow, organic, and solid growth. You are like a seed breaking through soil; though not fast, the direction is correct and resistance minimal. This is a gentle yet tough rising force."
+    },
+    "action_guidance": {
+      "zh": "積小成大，尋求指引。不要急躁，保持你的步調。向南（光明處）發展有利。尋找一位德高望重的導師或前輩，他們的指引能讓你少走彎路。就像樹木需要陽光，你也需要明確的目標來引導你的生長。",
+      "en": "Accumulate small to become big; seek guidance. Do not be impatient; maintain your pace. Developing towards the South (brightness) is favorable. Find a respected mentor or senior; their guidance can save you from detours. Just as trees need sunlight, you need a clear goal to guide your growth."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "樹木參天，始於毫末。",
+        "en": "A towering tree starts from a tiny sprout."
+      },
+      "secondary": {
+        "zh": "順風而上的風箏。",
+        "en": "A kite rising with the wind."
+      }
+    },
+    "contraindications": [
+      "忌揠苗助長 (Avoid pulling seedlings to help them grow)",
+      "忌猶疑停滯 (Avoid hesitation and stagnation)",
+      "忌拒絕引導 (Avoid refusing guidance)"
+    ]
+  }
+}

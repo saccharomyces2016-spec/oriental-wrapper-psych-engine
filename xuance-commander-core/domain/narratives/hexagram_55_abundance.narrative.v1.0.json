@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_55",
+  "name_zh": "豐",
+  "name_en": "Abundance",
+  "structure": "Thunder over Fire (雷火豐)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "雷電交輝，光芒萬丈。這是你的『巔峰時刻』。能量極度飽滿，資源豐富，行動力與洞察力都達到頂點。你像正午的太陽一樣耀眼。然而，『日中則昃』，盛大之中隱含著衰退的必然。這是一種既輝煌又令人戒慎恐懼的狀態。",
+      "en": "Thunder and lightning intertwine; boundless radiance. This is your 'peak moment'. Energy is extremely full, resources abundant, action and insight at their zenith. You shine like the noon sun. However, 'the sun tilts after reaching the meridian'; inherent in grandeur is the inevitability of decline. This is a state both glorious and awe-inspiringly cautious."
+    },
+    "action_guidance": {
+      "zh": "把握當下，如日中天。不要擔心未來，盡情發揮你的影響力。該做的決斷象徵上做，該呈現的刑罰不要手軟。同時，要在心中保持一份清明，知道這份光芒不會永恆，因此更要珍惜並善用這股力量去照亮他人。",
+      "en": "Seize the moment, like the sun in high heaven. Do not worry about the future; fully exert your influence. Make decisions immediately; execute penalties without mercy. At the same time, keep clarity in your heart, knowing this light is not eternal, so cherish and use this power well to illuminate others."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "日正當中，明察秋毫。",
+        "en": "The sun at high noon; seeing the finest details."
+      },
+      "secondary": {
+        "zh": "盛大的慶典，雷電的威嚴。",
+        "en": "A grand festival; the majesty of thunder and lightning."
+      }
+    },
+    "contraindications": [
+      "忌優柔寡斷 (Avoid indecision)",
+      "忌悲觀擔憂 (Avoid pessimistic worrying)",
+      "忌掩蓋真相 (Avoid covering up the truth)"
+    ]
+  }
+}

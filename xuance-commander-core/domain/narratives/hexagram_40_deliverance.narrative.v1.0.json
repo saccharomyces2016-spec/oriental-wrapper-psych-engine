@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_40",
+  "name_zh": "解",
+  "name_en": "Deliverance",
+  "structure": "Thunder over Water (雷水解)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "雷雨交作，鬱悶之氣頓解。那種長期的壓抑、緊張或危險狀態終於過去了。你感到一種『鬆綁』的輕盈感。雖然問題可能還留有尾巴，但最艱難的時刻已經結束。這是一個釋放的時刻，像是解開了纏繞已久的繩結。",
+      "en": "Thunder and rain acting together; the gloom is suddenly lifted. That long-term repression, tension, or danger has finally passed. You feel a lightness of 'unbinding'. Although the problem may have loose ends, the hardest moment is over. This is a moment of release, like untying a knot that has been tangled for a long time."
+    },
+    "action_guidance": {
+      "zh": "速戰速決，既往不咎。如果有殘留的問題，象徵上處理，不要拖延。如果沒有問題，就休養生息。最重要的是『原諒』與『放下』，不要回頭去糾結過去的恩怨。讓雷雨沖刷掉所有的舊帳，重新開始。",
+      "en": "Act fast, forgive the past. If there are residual problems, handle them immediately; do not delay. If no problems, rest and recuperate. The most important thing is to 'forgive' and 'let go'; do not look back and dwell on past grievances. Let the thunderstorm wash away all old scores and start anew."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "春雷乍響，冬眠驚醒。",
+        "en": "Spring thunder cracks, awakening hibernation."
+      },
+      "secondary": {
+        "zh": "赦免罪犯，解除枷鎖。",
+        "en": "Pardoning criminals, removing shackles."
+      }
+    },
+    "contraindications": [
+      "忌拖泥帶水 (Avoid dragging things out)",
+      "忌記恨往事 (Avoid holding grudges)",
+      "忌製造新的糾葛 (Avoid creating new entanglements)"
+    ]
+  }
+}

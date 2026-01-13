@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_54",
+  "name_zh": "歸妹",
+  "name_en": "Marrying Maiden",
+  "structure": "Thunder over Lake (雷澤歸妹)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "雷動澤上，情慾所至。你可能處於一段關係或職位中，但位置是『次要的』或『非正統的』。就像古代的陪嫁或側室，你無法主導局勢，只能配合。這是一種『錯位』或『名不順』的狀態，充滿了情緒的波動與不確定性。",
+      "en": "Thunder moves over the Lake; driven by desire/emotion. You may be in a relationship or position, but the role is 'secondary' or 'unorthodox'. Like a concubine or accompanying bride in ancient times, you cannot lead the situation, only cooperate. This is a state of 'dislocation' or 'improper title', filled with emotional volatility and uncertainty."
+    },
+    "action_guidance": {
+      "zh": "安於次位，勿求主導。認清當前的局限性，不要強出頭。如果形勢不由人，就學習如何在輔助的位置上發揮價值。這不是一個適合展開宏大計畫的時刻，因為基礎不穩。接受當下的不完美，等待時機轉變。",
+      "en": "Be content with the secondary position; do not seek to lead. Recognize current limitations; do not force yourself to the front. If the situation is not in your control, learn to find value in a supporting role. This is not a moment for grand plans, as the foundation is unstable. Accept the current imperfection and wait for the times to change."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "少女急嫁，名分未定。",
+        "en": "A maiden marrying in haste; status undefined."
+      },
+      "secondary": {
+        "zh": "喧賓奪主，終難長久。",
+        "en": "The guest acting as the host; ultimately unsustainable."
+      }
+    },
+    "contraindications": [
+      "忌強行上位 (Avoid forcing your way to the top)",
+      "忌感情用事 (Avoid acting on emotion)",
+      "忌不切實際的幻想 (Avoid unrealistic fantasies)"
+    ]
+  }
+}

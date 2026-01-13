@@ -1,0 +1,164 @@
+{
+  "facetId": "void_drifting",
+  "riskchains": [
+    {
+      "chain_id": "vd_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.7,
+        "duration_weeks": 6,
+        "additional_factors": [
+          "agency_low"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "frozen_vitality",
+          "probability": 0.6,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "活力封存。",
+            "en": "Vitality sealed."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "loss_of_agency",
+          "probability": 0.4,
+          "timeframe_weeks": 12,
+          "description": {
+            "zh": "落葉隨風。",
+            "en": "Leaf in wind."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "頻繁無聲放棄感",
+            "en": "Silent resignation"
+          },
+          {
+            "zh": "感覺皆是幻影",
+            "en": "All is illusion"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "大地連結勞作。",
+              "en": "Earth connection work."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "vd_rc_002",
+      "trigger_condition": {
+        "severity_threshold": 0.65,
+        "duration_weeks": 8,
+        "additional_factors": [
+          "volatility_high"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "chronic_alertness",
+          "probability": 0.55,
+          "timeframe_weeks": 6,
+          "description": {
+            "zh": "恐懼虛無，過度警戒。",
+            "en": "Fear void, over-alert."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "lamp_oil_exhaustion",
+          "probability": 0.45,
+          "timeframe_weeks": 10,
+          "description": {
+            "zh": "驚惶過久，能量耗盡。",
+            "en": "Panic drains energy."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "深夜警覺感",
+            "en": "Late night alertness"
+          },
+          {
+            "zh": "過度思考",
+            "en": "Overthinking"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "內在覺察儀式。",
+              "en": "Inner awareness ritual."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "vd_rc_003",
+      "trigger_condition": {
+        "severity_threshold": 0.6,
+        "duration_weeks": 10,
+        "additional_factors": [
+          "locus_internal"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "self_erosion",
+          "probability": 0.6,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "自我質疑，價值崩解。",
+            "en": "Self-doubt, value collapse."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "meaning_vacuum",
+          "probability": 0.5,
+          "timeframe_weeks": 12,
+          "description": {
+            "zh": "意義全失。",
+            "en": "Meaning lost."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "反覆自我批判",
+            "en": "Self-criticism"
+          },
+          {
+            "zh": "對成就無感",
+            "en": "Numb to success"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "微意義設定。",
+              "en": "Micro-meaning setting."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

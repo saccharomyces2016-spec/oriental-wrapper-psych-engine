@@ -1,12 +1,164 @@
 {
-  "mid": {
-    "if_not_improve": [
-      "關係進入追逃模式，溝通成本升高。"
-    ]
-  },
-  "high": {
-    "if_not_improve": [
-      "你會相信靠近等於受傷，修復能力下降。"
-    ]
-  }
+  "facetId": "emotional_permeability",
+  "riskchains": [
+    {
+      "chain_id": "ep_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.7,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "volatility_high"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "identity_diffusion",
+          "probability": 0.7,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "籬落破損，人我界線模糊。",
+            "en": "Fence broken, boundaries blurred."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "lamp_oil_exhaustion",
+          "probability": 0.55,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "替人負重，自身能量枯竭。",
+            "en": "Carrying others' load drains energy."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "無故情緒波動",
+            "en": "Unexplained mood swings"
+          },
+          {
+            "zh": "渴望獨處暗室",
+            "en": "Craving dark solitude"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "練習「金鐘罩」觀想。",
+              "en": "Golden Bell visualization."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "ep_rc_002",
+      "trigger_condition": {
+        "severity_threshold": 0.6,
+        "duration_weeks": 8,
+        "additional_factors": [
+          "agency_low"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "relationship_imbalance",
+          "probability": 0.65,
+          "timeframe_weeks": 6,
+          "description": {
+            "zh": "過度共情，陷入單向付出。",
+            "en": "Over-empathy leads to one-way giving."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "self_erosion",
+          "probability": 0.5,
+          "timeframe_weeks": 10,
+          "description": {
+            "zh": "自我需求被淹沒。",
+            "en": "Self needs drowned."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "難以拒絕他人",
+            "en": "Hard to refuse"
+          },
+          {
+            "zh": "常感心力交瘁",
+            "en": "Mentally exhausted"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "建立「能量結界」儀式。",
+              "en": "Energy barrier ritual."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "ep_rc_003",
+      "trigger_condition": {
+        "severity_threshold": 0.8,
+        "duration_weeks": 2,
+        "additional_factors": [
+          "volatility_high"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "chronic_alertness",
+          "probability": 0.75,
+          "timeframe_weeks": 2,
+          "description": {
+            "zh": "感官過載，時刻驚惶。",
+            "en": "Sensory overload, constant panic."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "vessel_fracture",
+          "probability": 0.6,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "系統不堪重負，結構震盪。",
+            "en": "System overload, structure vibrates."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "對聲響光線過敏",
+            "en": "Sensitive to sound/light"
+          },
+          {
+            "zh": "內在節律躁動",
+            "en": "Inner rhythm restless"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "進行「感官齋戒」。",
+              "en": "Sensory fasting."
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

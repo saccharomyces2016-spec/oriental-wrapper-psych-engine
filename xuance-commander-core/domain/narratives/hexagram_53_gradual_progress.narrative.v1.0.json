@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_53",
+  "name_zh": "漸",
+  "name_en": "Gradual Progress",
+  "structure": "Wind over Mountain (風山漸)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "山上有木，生長緩慢但穩固。你正處於一個『循序漸進』的過程。就像候鳥遷徙或樹木生長，一切都有其自然的節奏。你可能覺得進度太慢，但這種慢是必要的。每一步都踩得紮實，未來的成就才不會崩塌。",
+      "en": "Tree on the mountain; growing slowly but solidly. You are in a process of 'gradual progress'. Like migratory birds or growing trees, everything has its natural rhythm. You may feel progress is too slow, but this slowness is necessary. Every step is planted firmly so future achievements will not collapse."
+    },
+    "action_guidance": {
+      "zh": "按部就班，遵循禮制。不要試圖抄捷徑或跳級。尊重既定的流程與儀式。無論是感情還是事業，都需要耐心的培育。保持優雅的姿態，不急不躁。這種穩定的累積，最終會帶你到達高山之巔。",
+      "en": "Follow the steps, observe the rituals. Do not try to take shortcuts or skip levels. Respect established processes and ceremonies. Whether in relationships or career, patient cultivation is needed. Maintain an elegant posture, neither hurried nor impetuous. This stable accumulation will eventually take you to the mountain peak."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "鴻雁高飛，有序遷徙。",
+        "en": "Wild geese flying high, migrating in order."
+      },
+      "secondary": {
+        "zh": "女子出嫁，六禮備至。",
+        "en": "A woman getting married; all six rites prepared."
+      }
+    },
+    "contraindications": [
+      "忌急功近利 (Avoid seeking quick success)",
+      "忌破壞規矩 (Avoid breaking rules)",
+      "忌半途而廢 (Avoid giving up halfway)"
+    ]
+  }
+}

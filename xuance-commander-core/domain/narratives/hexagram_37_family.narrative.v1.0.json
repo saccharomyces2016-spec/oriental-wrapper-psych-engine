@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_37",
+  "name_zh": "家人",
+  "name_en": "The Family",
+  "structure": "Wind over Fire (風火家人)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "風自火出，溫暖而有秩序。你的能量回歸到內部，焦點在於『關係』與『角色』。你可能正在處理與親密夥伴或家人的課題。這裡強調的是各司其職，每個人在系統中都有正確的位置。如果你感到混亂，那是因為角色邊界模糊了。",
+      "en": "Wind coming from Fire; warm and orderly. Your energy returns to the interior, focusing on 'relationships' and 'roles'. You may be dealing with issues involving intimate partners or family. The emphasis is on everyone doing their duty; everyone has a correct place in the system. If you feel chaos, it is because role boundaries have blurred."
+    },
+    "action_guidance": {
+      "zh": "反求諸己，正本清源。解決外部問題前，先安頓內部。確認自己在關係中的角色（是引導者還是跟隨者？），並盡好本分。用溫暖的言語（風）去溝通，用熱情（火）去關懷。修復了內圈的連結，外圈的阻礙自然化解。",
+      "en": "Seek the cause in yourself; purify the source. Before solving external problems, settle the internal first. Confirm your role in the relationship (leader or follower?) and fulfill your duty. Use warm words (Wind) to communicate, and passion (Fire) to care. Once the inner circle connection is repaired, external obstacles will naturally dissolve."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "圍爐夜話，各安其位。",
+        "en": "Talking around the hearth at night; everyone in their place."
+      },
+      "secondary": {
+        "zh": "內熱外溫的火爐。",
+        "en": "A stove hot inside and warm outside."
+      }
+    },
+    "contraindications": [
+      "忌角色錯亂 (Avoid role confusion)",
+      "忌嚴苛冷酷 (Avoid harshness and coldness)",
+      "忌忽視內部需求 (Avoid ignoring internal needs)"
+    ]
+  }
+}

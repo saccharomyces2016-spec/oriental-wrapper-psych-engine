@@ -1,0 +1,31 @@
+{
+  "hexagram_id": "hex_27",
+  "name_zh": "頤",
+  "name_en": "Nourishment",
+  "structure": "Mountain over Thunder (山雷頤)",
+  "narrative": {
+    "diagnostic_insight": {
+      "zh": "外實內虛，如同一張張開的嘴。你現在的焦點在於『供需』與『吞吐』。你可能感到精神或物質上的飢渴，或者正在思考什麼才是真正滋養你的東西。氣場顯示出一種對輸入（Input）的極度敏感，無論是食物、言語還是資訊。",
+      "en": "Solid outside, empty inside, like an open mouth. Your focus now is on 'supply and demand' and 'intake and output'. You may feel spiritual or material hunger, or are pondering what truly nourishes you. The energy field shows extreme sensitivity to Input, whether food, words, or information."
+    },
+    "action_guidance": {
+      "zh": "慎言語，節飲食。審視你正在攝取什麼（包含社群媒體、情緒垃圾），以及你正在產出什麼（抱怨、評論）。這是一個養生的時刻，不僅養身，更要養氣。切斷有毒的來源，尋找純正的滋養。只有把自己養好了，才能去養別人。",
+      "en": "Watch your words, regulate your diet. Examine what you are consuming (including social media, emotional garbage) and what you are producing (complaints, comments). This is a moment for nourishment, not just for the body, but for the Qi. Cut off toxic sources and seek pure nourishment. Only when you nourish yourself well can you nourish others."
+    },
+    "metaphors": {
+      "primary": {
+        "zh": "張口求食，禍福自口入。",
+        "en": "Opening the mouth for food; fortune and misfortune enter through the mouth."
+      },
+      "secondary": {
+        "zh": "生態系統的養分循環。",
+        "en": "Nutrient cycle of an ecosystem."
+      }
+    },
+    "contraindications": [
+      "忌胡亂攝取 (Avoid indiscriminate consumption)",
+      "忌口出惡言 (Avoid speaking evil words)",
+      "忌依賴他人餵養 (Avoid relying on others to feed you)"
+    ]
+  }
+}

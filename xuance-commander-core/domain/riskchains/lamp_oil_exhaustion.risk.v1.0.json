@@ -1,0 +1,164 @@
+{
+  "facetId": "lamp_oil_exhaustion",
+  "riskchains": [
+    {
+      "chain_id": "loe_rc_001",
+      "trigger_condition": {
+        "severity_threshold": 0.8,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "rigidity_stagnant"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "frozen_vitality",
+          "probability": 0.8,
+          "timeframe_weeks": 2,
+          "description": {
+            "zh": "寒氣入侵，生機封凍。",
+            "en": "Cold invades, life frozen."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "vessel_fracture",
+          "probability": 0.65,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "形神分離，載體遲滯。",
+            "en": "Form/spirit split, vessel sluggish."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "感知焦點渙散",
+            "en": "Focus scattered"
+          },
+          {
+            "zh": "行動異常遲滯",
+            "en": "Action sluggish"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "歸隱靜養。",
+              "en": "Retreat."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "loe_rc_002",
+      "trigger_condition": {
+        "severity_threshold": 0.7,
+        "duration_weeks": 6,
+        "additional_factors": [
+          "agency_low"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "loss_of_agency",
+          "probability": 0.7,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "無力掌舵。",
+            "en": "Cannot steer."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "void_drifting",
+          "probability": 0.5,
+          "timeframe_weeks": 8,
+          "description": {
+            "zh": "意識渙散，歸於虛無。",
+            "en": "Consciousness scatters to void."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "對事物失去興趣",
+            "en": "Lost interest"
+          },
+          {
+            "zh": "機械式反應",
+            "en": "Mechanical reaction"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "自然連結。",
+              "en": "Nature connection."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chain_id": "loe_rc_003",
+      "trigger_condition": {
+        "severity_threshold": 0.75,
+        "duration_weeks": 4,
+        "additional_factors": [
+          "volatility_high"
+        ]
+      },
+      "cascade_path": [
+        {
+          "stage": 1,
+          "target_facet": "chronic_alertness",
+          "probability": 0.6,
+          "timeframe_weeks": 4,
+          "description": {
+            "zh": "油盡仍強撐，系統緊繃。",
+            "en": "Dry but forcing, system tight."
+          }
+        },
+        {
+          "stage": 2,
+          "target_facet": "suppressed_needs",
+          "probability": 0.5,
+          "timeframe_weeks": 6,
+          "description": {
+            "zh": "強行壓抑，終將內爆。",
+            "en": "Forced suppression, implosion."
+          }
+        }
+      ],
+      "prevention": {
+        "early_warning_signs": [
+          {
+            "zh": "易怒",
+            "en": "Irritable"
+          },
+          {
+            "zh": "無法放鬆",
+            "en": "Cannot relax"
+          }
+        ],
+        "intervention_points": [
+          {
+            "stage": "before_stage_1",
+            "recommendation": {
+              "zh": "強制停機。",
+              "en": "Forced shutdown."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
