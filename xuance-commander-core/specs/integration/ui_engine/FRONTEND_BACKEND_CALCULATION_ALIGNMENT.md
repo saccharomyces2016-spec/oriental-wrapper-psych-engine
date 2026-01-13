@@ -46,12 +46,10 @@
 
 **當前狀態**：
 - ✅ 支援 `weighted_sum` 模型
-- ✅ **已實作 V3 模型（`vector_state_v3`）**（2026-01-12 GPT V3 更新）
-- ✅ **已實作 Volatility Index 計算**（使用 sample stddev）
-- ✅ **已實作 Rigidity Index 計算**（DIRECTIVE REV.B 三層模型）
+- ✅ **已實作 V3 模型（`vector_state_v3`）**（2026-01-12 GPT V3 更新，2026-01-13 完成 Rigidity 預設值修正）
+- ✅ **已實作 Volatility Index 計算**（使用 sample stddev，SSOT）
+- ✅ **已實作 Rigidity Index 計算**（DIRECTIVE REV.B 三層模型，預設值 0.0）
 - ✅ **已實作 Debug Payload（`_meta`）**（完整可審計）
-- ⚠️ 尚未實作 Rigidity Index 計算
-- ⚠️ 尚未實作 Debug Payload 輸出
 
 **預期升級**：
 - 升級為策略模式（支援 `weighted_sum` 和 `vector_state_v3`）

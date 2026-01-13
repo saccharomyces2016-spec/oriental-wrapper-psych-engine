@@ -144,7 +144,8 @@
 - ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_QUESTIONS.md`（4 個關鍵問題，包含 Rigidity 預設值不一致問題）
 - ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_PACKAGE_*.zip`（86KB，24 個文件）
 - ✅ **V4 實作已整合**：`engine/score_facet.py`、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`、`schemas/domain_manifest.schema.json`、`schemas/compiled_facet.schema.json`、`domain/domains/bagua.domain_map.v1.0.json`、`domain/cascade/cascade_overrides.v1.0.json`
-- ⏳ 等待顧問團隊回饋（追問包：4 個關鍵問題，包含 Rigidity 預設值不一致問題）
+- ✅ **任務包 1 已完成**：Rigidity 預設值統一為 0.0、ADR_0005 標準差模式更新、CONSTITUTION 更新
+- ⏳ 等待顧問團隊回饋（追問包：任務包 4 和 5，五行「洩」關係決策、角色原型參數矩陣決策）
 
 ---
 

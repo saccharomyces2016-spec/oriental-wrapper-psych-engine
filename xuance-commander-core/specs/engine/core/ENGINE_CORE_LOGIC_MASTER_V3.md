@@ -317,7 +317,7 @@ def calculate_rigidity(profile: dict) -> float:
 }
 ```
 
-**⚠️ 注意**：`rigidity_default_when_missing` 的預設值需要裁示（見 3.2 節說明）。
+**✅ 已解決**：`rigidity_default_when_missing` 的預設值已統一為 0.0（見 3.2 節說明，2026-01-13 完成）。
 
 ### 3.8 Debug Payload（追問 2-3）— 必須完整
 
