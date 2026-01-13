@@ -54,9 +54,9 @@
 
 ## 2. 題目數量規範（追問 1｜PRIORITY: HIGH）
 ### 2.1 最終裁示
-- **允許 6–10 題彈性**（符合 ENGINE_CORE_LOGIC_MASTER_V3 的既定規格）  
-- **預設（RECOMMENDED DEFAULT）= 8 題**（可比性最佳、模板最穩定）  
-- **10 題模板**允許（在 6–10 範圍內），但**必須顯式宣告** `question_set="DECET_10"`（禁止推導）  
+- **固定 8 題為最佳實務**（可比性最佳、模板最穩定、波動率計算的數學前提）  
+- **允許擴充至 10 題**（在 6–10 範圍內），但**必須顯式宣告** `question_set="DECET_10"`（禁止推導）  
+- **10 題擴充規則**：新增的 2 題必須是 **Validation** 類型（加強信任），嚴禁破壞 Core/Reaction 的比例  
 - **<6 或 >10**：屬結構性變更，必須 ADR + 指揮官批准  
 
 ### 2.2 模板定義
@@ -159,7 +159,7 @@ DOB 屬 PII：必須提供「短期存留/可刪除」策略；或採 client-onl
 
 ### 7.2 缺失 priors 的行為（必須顯式）
 - `priors.present=false`
-- `rigidity_default_when_missing = 0.50`（MIXED default；寫入 params）
+- `rigidity_default_when_missing = 0.0`（符合 DIRECTIVE REV.B；寫入 params）
 - UX：以玄學語境提示「需補一輪定象」
 
 ---

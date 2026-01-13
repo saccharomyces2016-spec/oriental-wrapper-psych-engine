@@ -49,7 +49,7 @@ _AGENCY_MOD = {
     "LOW": 1.0,
 }
 
-def calculate_rigidity(profile: Optional[Dict[str, Any]], default_when_missing: float = 0.5) -> float:
+def calculate_rigidity(profile: Optional[Dict[str, Any]], default_when_missing: float = 0.0) -> float:
     if not profile:
         return float(default_when_missing)
     locus = str(profile.get("locus", "MIXED")).upper()
@@ -107,7 +107,7 @@ def run_vector_state_v3(scoring: Dict[str, Any], answers: Dict[str, int], priors
     rigidity_weight = float(params.get("rigidity_weight", 0.10))
     frozen_threshold = float(params.get("rigidity_frozen_threshold", 0.70))
     stddev_mode = str(params.get("volatility_stddev_mode", "sample")).lower()
-    rigidity_default_when_missing = float(params.get("rigidity_default_when_missing", 0.5))
+    rigidity_default_when_missing = float(params.get("rigidity_default_when_missing", 0.0))
 
     inputs = scoring.get("inputs", [])
     weighted_sum = 0.0

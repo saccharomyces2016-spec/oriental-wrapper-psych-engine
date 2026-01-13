@@ -170,6 +170,25 @@ def calculate(facet_data, answers, priors):
 
 ---
 
+### 決策 3：Volatility 標準差模式（Volatility StdDev Mode）
+
+**裁示（最終）**：採用 **sample stddev**（樣本標準差）作為 SSOT
+
+**理由**：
+- 符合統計學標準（樣本標準差用於樣本數據）
+- 與 CONSTITUTION Section 3.2 一致
+- 引擎實作預設為 sample stddev
+
+**實作位置**：
+- `engine/score_facet.py`：`volatility_stddev_mode` 參數預設為 `"sample"`
+- 支援切換為 `"population"`，但預設固定為 `"sample"`
+
+**對應 SSOT**：
+- `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md` Section 3.2
+- `engine/score_facet.py` - `run_vector_state_v3` 函數
+
+---
+
 ## Consequences
 
 ### 正面影響
