@@ -1,0 +1,289 @@
+{
+  "facetId": "guilt_accumulation",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ga_core_1",
+      "text": {
+        "zh": "您的背上是否揹負著無形的行囊，裡面裝滿了對他人的虧欠與內疚？",
+        "en": "Do you carry an invisible pack on your back, filled with debts and guilt owed to others?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "步履輕盈",
+            "en": "Light steps"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感負擔",
+            "en": "Slight burden"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "重債壓身",
+            "en": "Crushed by debt"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ga_core_2",
+      "text": {
+        "zh": "對於過去的某個錯誤，您是否覺得自己像是在「服無期徒刑」，永遠無法償還？",
+        "en": "Regarding a past mistake, do you feel like you are serving a 'life sentence', never able to repay?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "早已釋懷",
+            "en": "Let go"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有歉意",
+            "en": "Occasional regret"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "心獄難出",
+            "en": "Trapped in heart prison"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ga_core_3",
+      "text": {
+        "zh": "即使沒有做錯事，您是否也習慣性地覺得「這一切都是我的錯」？",
+        "en": "Even when you've done nothing wrong, do you habitually feel that 'this is all my fault'?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "是非分明",
+            "en": "Clear boundaries"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾攬責",
+            "en": "Occasionally take blame"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "罪疚泛濫",
+            "en": "Overflowing guilt"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ga_val_1",
+      "text": {
+        "zh": "「對不起」是否成了您的口頭禪，即使在不需要道歉的時候？",
+        "en": "Has 'I'm sorry' become your mantra, even when no apology is needed?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "適時道歉",
+            "en": "Apologize when due"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾多禮",
+            "en": "Occasionally over-polite"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "時刻掛懷",
+            "en": "Constantly saying it"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ga_val_2",
+      "text": {
+        "zh": "當好事發生在您身上時，您是否會感到不安，覺得自己不配得到？",
+        "en": "When good things happen to you, do you feel uneasy, feeling you don't deserve it?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "欣然領受",
+            "en": "Happily receive"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感驚訝",
+            "en": "Slightly surprised"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "惶恐不安",
+            "en": "Fearful and uneasy"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ga_react_1",
+      "text": {
+        "zh": "為了贖罪，您是否會傾向於過度付出，直到能量耗盡也不敢喊停？",
+        "en": "To atone, do you tend to over-give, not daring to stop until your energy is depleted?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "量力而為",
+            "en": "Act within means"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾逞強",
+            "en": "Occasionally push hard"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "燃燒殆盡",
+            "en": "Burn out"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ga_react_2",
+      "text": {
+        "zh": "深夜時分，過往的憾事是否如幽靈般浮現，擾亂您的安寧？",
+        "en": "Late at night, do past regrets surface like ghosts, disturbing your peace?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "一夜好眠",
+            "en": "Good sleep"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾入夢",
+            "en": "Occasionally dream"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "夢魘糾纏",
+            "en": "Haunted by nightmares"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ga_res_1",
+      "text": {
+        "zh": "您是否能試著卸下行囊中的一塊石頭，告訴自己「我已經盡力了」？",
+        "en": "Can you put down one stone from your pack and tell yourself 'I did my best'?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "絕無可能",
+            "en": "Impossible"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "艱難嘗試",
+            "en": "Hard to try"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "能夠放下",
+            "en": "Can let go"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

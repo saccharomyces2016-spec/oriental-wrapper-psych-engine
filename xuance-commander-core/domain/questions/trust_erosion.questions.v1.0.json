@@ -1,0 +1,289 @@
+{
+  "facetId": "trust_erosion",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "te_core_1",
+      "text": {
+        "zh": "在人際關係中，您是否像是在佈滿裂痕的薄冰上行走，時刻擔心墜落？",
+        "en": "In relationships, do you feel like walking on cracked thin ice, constantly worried about falling through?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "大地穩固",
+            "en": "Solid ground"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "步步為營",
+            "en": "Step cautiously"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "薄冰危行",
+            "en": "Walking on thin ice"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "te_core_2",
+      "text": {
+        "zh": "您是否在心中築起了一道高牆，任何人想要翻越都會觸發您的警報？",
+        "en": "Have you built a high wall in your heart, where anyone trying to cross triggers your alarm?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "門戶敞開",
+            "en": "Door open"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "設有門禁",
+            "en": "Access control"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "銅牆鐵壁",
+            "en": "Iron wall"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "te_core_3",
+      "text": {
+        "zh": "當別人對您示好時，您的第一反應是否是猜測背後的動機？",
+        "en": "When others are nice to you, is your first reaction to guess the motive behind it?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "欣然接受",
+            "en": "Happily accept"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略帶保留",
+            "en": "Slightly reserved"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "滿腹狐疑",
+            "en": "Full of suspicion"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "te_val_1",
+      "text": {
+        "zh": "您是否經常會設下一些「小測試」來考驗身邊的人是否忠誠？",
+        "en": "Do you often set up 'little tests' to check if those around you are loyal?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "用人不疑",
+            "en": "Trust completely"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾試探",
+            "en": "Occasional probe"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "處處考驗",
+            "en": "Testing everywhere"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "te_val_2",
+      "text": {
+        "zh": "只要對方有一點點「可疑」的跡象，您是否會傾向於立刻切斷信任，退回安全區？",
+        "en": "At the slightest sign of being 'suspicious', do you tend to immediately cut off trust and retreat to safety?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "願意溝通",
+            "en": "Willing to talk"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "提高警覺",
+            "en": "Raise alert"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "立即封鎖",
+            "en": "Immediate block"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "te_react_1",
+      "text": {
+        "zh": "在人群中，您的目光是否總是游移不定，像是在掃描潛在的威脅？",
+        "en": "In a crowd, do your eyes wander constantly, as if scanning for potential threats?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "目光柔和",
+            "en": "Soft gaze"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "提高警戒",
+            "en": "Heightened vigilance"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "草木皆兵",
+            "en": "Paranoid scanning"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "te_react_2",
+      "text": {
+        "zh": "長期的高度防備，是否讓您的精神能量處於耗竭邊緣，卻又不敢鬆懈？",
+        "en": "Has long-term high defense kept your mental energy on the verge of depletion, yet afraid to relax?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "輕鬆自在",
+            "en": "Relaxed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶感疲憊",
+            "en": "Occasionally tired"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "精疲力竭",
+            "en": "Exhausted"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "te_res_1",
+      "text": {
+        "zh": "如果有個人願意在牆外耐心等候，您是否能夠為他開一扇小窗？",
+        "en": "If someone is willing to wait patiently outside the wall, are you able to open a small window for them?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "絕不開窗",
+            "en": "Never open"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "小心窺視",
+            "en": "Peek carefully"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "嘗試開啟",
+            "en": "Try to open"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

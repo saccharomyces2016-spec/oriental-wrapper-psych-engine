@@ -1,0 +1,289 @@
+{
+  "facetId": "perfectionism_paralysis",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "pp_core_1",
+      "text": {
+        "zh": "您是否感覺自己走在懸崖邊的鋼索上，任何一點微小的失誤都是致命的？",
+        "en": "Do you feel like walking on a tightrope by a cliff, where any tiny mistake is fatal?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "腳踏實地",
+            "en": "Solid ground"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "小心翼翼",
+            "en": "Cautious"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "命懸一線",
+            "en": "Hanging by a thread"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pp_core_2",
+      "text": {
+        "zh": "對於「不夠完美」的作品或結果，您的眼裡是否容不下一粒沙子？",
+        "en": "For works or results that are 'not perfect enough', can your eyes tolerate no sand?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "瑕不掩瑜",
+            "en": "Flaws acceptable"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感在意",
+            "en": "Slightly bothered"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全無法忍受",
+            "en": "Intolerable"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pp_core_3",
+      "text": {
+        "zh": "您是否因為擔心做不到最好，而遲遲無法跨出第一步，甚至乾脆放棄？",
+        "en": "Do you hesitate to take the first step, or even give up, because you worry about not being the best?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "先做再說",
+            "en": "Just do it"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "猶豫拖延",
+            "en": "Hesitant delay"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "癱瘓不動",
+            "en": "Paralyzed"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pp_val_1",
+      "text": {
+        "zh": "在您心中，是否有一把嚴苛的尺，不僅丈量自己，也丈量這個世界？",
+        "en": "In your heart, is there a strict ruler that measures not only yourself but also the world?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "彈性包容",
+            "en": "Flexible"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "標準較高",
+            "en": "High standards"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "苛刻量測",
+            "en": "Harsh measuring"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "pp_val_2",
+      "text": {
+        "zh": "即便完成了 99%，您是否只會盯著那缺少的 1% 感到痛苦？",
+        "en": "Even if 99% is done, do you only stare at the missing 1% in pain?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "看見成就",
+            "en": "See achievement"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感遺憾",
+            "en": "Slight regret"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "極度痛苦",
+            "en": "Extreme pain"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "pp_react_1",
+      "text": {
+        "zh": "在面對任務時，您是否會反覆修改細節，直到精力耗盡？",
+        "en": "When facing a task, do you repeatedly revise details until your energy is drained?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "適可而止",
+            "en": "Stop when enough"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些糾結",
+            "en": "Bit tangled"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無盡修改",
+            "en": "Endless revision"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "pp_react_2",
+      "text": {
+        "zh": "那種「必須完美」的緊箍咒，是否讓您時刻處於過度警覺的狀態？",
+        "en": "Does the 'must be perfect' spell keep you constantly in a state of hyper-vigilance?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "鬆弛有度",
+            "en": "Relaxed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "警覺緊繃",
+            "en": "Alert and tense"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "過度警覺",
+            "en": "Hyper-vigilant"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "pp_res_1",
+      "text": {
+        "zh": "您是否能夠欣賞「裂痕之美」，接受缺憾也是生命的一部分？",
+        "en": "Can you appreciate the 'beauty of cracks' and accept that flaws are part of life?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "無法接受",
+            "en": "Cannot accept"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "理智接受",
+            "en": "Rational acceptance"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "悅納缺憾",
+            "en": "Joyfully accept"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

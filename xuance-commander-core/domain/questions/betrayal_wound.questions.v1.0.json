@@ -1,0 +1,289 @@
+{
+  "facetId": "betrayal_wound",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "bw_core_1",
+      "text": {
+        "zh": "那次背叛是否像一把利刃，至今仍插在您的背上，隱隱作痛？",
+        "en": "Was that betrayal like a sharp blade, still stuck in your back, aching dully?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "傷口癒合",
+            "en": "Wound healed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "結痂未脫",
+            "en": "Scab not off"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "利刃未拔",
+            "en": "Blade still in"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "bw_core_2",
+      "text": {
+        "zh": "您的世界觀是否因為那次事件而崩塌，不再相信這世上有永恆的信義？",
+        "en": "Did your worldview collapse because of that event, no longer believing in eternal faith?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "信念重建",
+            "en": "Faith rebuilt"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "動搖疑惑",
+            "en": "Shaken doubt"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "廢墟一片",
+            "en": "Total ruins"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "bw_core_3",
+      "text": {
+        "zh": "您是否感覺自己像驚弓之鳥，對任何類似的情境都反應過度？",
+        "en": "Do you feel like a startled bird, overreacting to any similar situation?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "處變不驚",
+            "en": "Calm"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略微緊張",
+            "en": "Slightly nervous"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "驚恐過度",
+            "en": "Over-terror"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "bw_val_1",
+      "text": {
+        "zh": "在與人交往時，您是否會不由自主地閱讀「字裡行間」，尋找謊言的蛛絲馬跡？",
+        "en": "In interactions, do you involuntarily read 'between the lines', looking for traces of lies?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "直觀信任",
+            "en": "Intuitive trust"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾多疑",
+            "en": "Occasionally suspicious"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "偵探模式",
+            "en": "Detective mode"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "bw_val_2",
+      "text": {
+        "zh": "提到那個背叛者，您的情緒是否會瞬間從平靜轉為強烈的憤怒或悲傷？",
+        "en": "Mentioning that betrayer, does your emotion instantly switch from calm to intense anger or grief?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "心平氣和",
+            "en": "Calm"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "情緒波動",
+            "en": "Emotional fluctuation"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "瞬間引爆",
+            "en": "Instant explosion"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "bw_react_1",
+      "text": {
+        "zh": "當別人對您太好時，您是否會下意識地選擇退縮或保持距離？",
+        "en": "When others are too good to you, do you subconsciously choose to shrink back or keep distance?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "欣然接納",
+            "en": "Happily accept"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些遲疑",
+            "en": "Hesitant"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "恐懼退縮",
+            "en": "Fearful retreat"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "bw_react_2",
+      "text": {
+        "zh": "創傷的記憶是否會突然闖入腦海，讓您的信任機制瞬間凍結？",
+        "en": "Does the trauma memory suddenly intrude, instantly freezing your trust mechanism?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "極少發生",
+            "en": "Rarely happens"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾發生",
+            "en": "Occasionally happens"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "頻繁侵入",
+            "en": "Frequent intrusion"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "bw_res_1",
+      "text": {
+        "zh": "您是否感覺到，傷口周圍正在慢慢長出新的防護，雖然脆弱但已在癒合？",
+        "en": "Do you feel that new protection is slowly growing around the wound, fragile but healing?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "毫無跡象",
+            "en": "No sign"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "緩慢生長",
+            "en": "Slow growth"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "正在癒合",
+            "en": "Healing now"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

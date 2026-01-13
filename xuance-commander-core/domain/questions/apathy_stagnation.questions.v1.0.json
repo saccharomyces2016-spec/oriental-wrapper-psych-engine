@@ -1,0 +1,289 @@
+{
+  "facetId": "apathy_stagnation",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "as_core_1",
+      "text": {
+        "zh": "您的世界是否失去了色彩，變成了一片單調乏味的灰色？",
+        "en": "Has your world lost its color, becoming a monotonous and dull grey?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "色彩斑斕",
+            "en": "Colorful"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "色彩黯淡",
+            "en": "Dimmed colors"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "一片死灰",
+            "en": "Dead grey"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "as_core_2",
+      "text": {
+        "zh": "對於曾經喜愛的事物，您是否再也提不起勁，甚至感到麻木？",
+        "en": "For things you once loved, can you no longer muster interest, or even feel numb?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "熱情依舊",
+            "en": "Passion remains"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "興致缺缺",
+            "en": "Lack of interest"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全麻木",
+            "en": "Totally numb"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "as_core_3",
+      "text": {
+        "zh": "您是否感覺生命之火如風中殘燭，隨時可能熄滅？",
+        "en": "Do you feel the fire of life is like a candle in the wind, ready to go out at any moment?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "生命旺盛",
+            "en": "Vibrant life"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "火光微弱",
+            "en": "Weak flame"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "幾近熄滅",
+            "en": "Almost extinguished"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "as_val_1",
+      "text": {
+        "zh": "日子對您來說，是否只是機械式的重複，沒有期待也沒有驚喜？",
+        "en": "Are days just mechanical repetitions for you, with no expectations or surprises?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "充滿期待",
+            "en": "Full of hope"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "平淡無奇",
+            "en": "Plain"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "機械運轉",
+            "en": "Mechanical"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "as_val_2",
+      "text": {
+        "zh": "面對悲傷或快樂的消息，您的內心是否都像一潭死水，波瀾不驚？",
+        "en": "Facing sad or happy news, is your heart like stagnant water, with no ripples?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "情感流動",
+            "en": "Emotions flow"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "反應遲鈍",
+            "en": "Slow reaction"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "毫無波瀾",
+            "en": "No ripples"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "as_react_1",
+      "text": {
+        "zh": "每天早晨醒來，想到要面對新的一天，您是否傾向於繼續沈睡以逃避現實？",
+        "en": "Waking up every morning, thinking about facing a new day, do you tend to continue sleeping to avoid reality?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "精神煥發",
+            "en": "Refreshed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "賴床拖延",
+            "en": "Procrastinate"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "逃避甦醒",
+            "en": "Avoid waking"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "as_react_2",
+      "text": {
+        "zh": "您的行動意圖是否常被一股遲滯的內在阻力牽制，難以邁開步伐？",
+        "en": "Is your intention to act often held back by a sluggish inner resistance, making it hard to take a step?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "身手矯健",
+            "en": "Agile"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些阻力",
+            "en": "Some resistance"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "寸步難行",
+            "en": "Hard to move"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "as_res_1",
+      "text": {
+        "zh": "在灰燼深處，是否存在一點點微弱的火星，等待著被重新點燃？",
+        "en": "Deep in the ashes, does there exist a tiny faint spark waiting to be rekindled?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "徹底熄滅",
+            "en": "Totally out"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "微弱難辨",
+            "en": "Barely visible"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "隱約可見",
+            "en": "Faintly visible"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

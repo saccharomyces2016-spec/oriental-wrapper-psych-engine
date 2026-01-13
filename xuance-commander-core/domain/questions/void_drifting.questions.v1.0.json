@@ -1,35 +1,35 @@
 {
-  "facetId": "social_comparison",
+  "facetId": "void_drifting",
   "version": "1.0",
   "questionSet": "OCTET_8",
   "questions": [
     {
-      "question_id": "sc_core_1",
+      "question_id": "vd_core_1",
       "text": {
-        "zh": "觀看他人華服盛宴之時，您心中是否常生出「自身黯淡無光」的陰影？",
-        "en": "When viewing others' feasts, does a shadow of 'I am dim' rise in your heart?"
+        "zh": "深夜獨處時，是否常覺自身如無根之草，在廣袤宇宙中不知飄向何方？",
+        "en": "When alone at night, do you feel like rootless grass, drifting nowhere?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "隨喜讚嘆",
-            "en": "Rejoice"
+            "zh": "根基穩固",
+            "en": "Solid roots"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "略感酸楚",
-            "en": "Slightly sour"
+            "zh": "偶感飄搖",
+            "en": "Drifting"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "自慚形穢",
-            "en": "Ashamed"
+            "zh": "虛無縹緲",
+            "en": "Void/Misty"
           }
         }
       ],
@@ -39,32 +39,32 @@
       }
     },
     {
-      "question_id": "sc_core_2",
+      "question_id": "vd_core_2",
       "text": {
-        "zh": "您是否如置身充滿魔鏡的廳堂，時刻透過他人的映照來確認自己的形狀？",
-        "en": "Are you in a hall of magic mirrors, checking your shape through others?"
+        "zh": "對於「生之意義」這類命題，是否常感眼前一片迷霧，深恐踏空？",
+        "en": "Regarding 'meaning of life', do you feel a fog ahead, fearing to step into nothing?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "內觀自照",
-            "en": "Look inward"
+            "zh": "方向明確",
+            "en": "Clear"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶爾照鏡",
-            "en": "Check sometimes"
+            "zh": "迷霧漸起",
+            "en": "Foggy"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "無鏡不活",
-            "en": "Need mirrors"
+            "zh": "深淵凝視",
+            "en": "Abyss gazing"
           }
         }
       ],
@@ -74,32 +74,32 @@
       }
     },
     {
-      "question_id": "sc_core_3",
+      "question_id": "vd_core_3",
       "text": {
-        "zh": "若得知同儕飛黃騰達，您的內在氣機是順暢還是滯悶？",
-        "en": "Upon hearing a peer's success, is your inner energy smooth or stagnant?"
+        "zh": "是否常覺時光飛逝如流沙，驚恐於自身存在的痕跡終將被抹去？",
+        "en": "Do you feel time flying like quicksand, terrified your traces will be erased?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "氣機順暢",
-            "en": "Smooth"
+            "zh": "活在當下",
+            "en": "Live in moment"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "微有滯礙",
-            "en": "Slightly stuck"
+            "zh": "偶有唏噓",
+            "en": "Sigh"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "胸口悶堵",
-            "en": "Blocked"
+            "zh": "極度不安",
+            "en": "Deeply unsettled"
           }
         }
       ],
@@ -109,32 +109,32 @@
       }
     },
     {
-      "question_id": "sc_val_1",
+      "question_id": "vd_val_1",
       "text": {
-        "zh": "您是否容易因社群網絡上的浮光掠影，而擾亂了一整日的修行步調？",
-        "en": "Are you easily disturbed in your daily pace by fleeting online lights?"
+        "zh": "您是否曾在熱鬧歡愉之際，突然被一種「這一切終將成空」的念頭擊中？",
+        "en": "In moments of joy, are you struck by the thought 'all this will be void'?"
       },
       "type": "validation",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "不為所動",
-            "en": "Unmoved"
+            "zh": "未曾有過",
+            "en": "Never"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶受波及",
-            "en": "Affected"
+            "zh": "偶爾閃現",
+            "en": "Flashes"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "心隨境轉",
-            "en": "Moved by scene"
+            "zh": "頻繁侵擾",
+            "en": "Intrudes"
           }
         }
       ],
@@ -145,32 +145,32 @@
       }
     },
     {
-      "question_id": "sc_val_2",
+      "question_id": "vd_val_2",
       "text": {
-        "zh": "旁人是否覺得您過於在意「位階」或「排場」，而忽略了本質？",
-        "en": "Do others feel you care too much about 'rank' or 'spectacle', ignoring essence?"
+        "zh": "旁人是否覺得您思慮過重，常擔憂那些「觸摸不到」的終極問題？",
+        "en": "Do others find you over-thinking about 'untouchable' ultimate questions?"
       },
       "type": "validation",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "樸實無華",
-            "en": "Plain/True"
+            "zh": "務實為重",
+            "en": "Pragmatic"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶爾在意",
-            "en": "Sometimes care"
+            "zh": "偶被提及",
+            "en": "Sometimes"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "逐末忘本",
-            "en": "Chasing ends"
+            "zh": "杞人憂天",
+            "en": "Worrier"
           }
         }
       ],
@@ -181,32 +181,32 @@
       }
     },
     {
-      "question_id": "sc_react_1",
+      "question_id": "vd_react_1",
       "text": {
-        "zh": "當發現自己不如人時，您內心的火候如何變化？",
-        "en": "When finding yourself lesser than others, how does your inner fire change?"
+        "zh": "當思考未來時，您的心神主要呈現何種狀態？",
+        "en": "When thinking of future, what state is your spirit in?"
       },
       "type": "reaction",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "溫火慢燉",
-            "en": "Steady fire"
+            "zh": "期待憧憬",
+            "en": "Expectant"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "焦躁竄火",
-            "en": "Anxious flare"
+            "zh": "茫然無措",
+            "en": "Lost"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "極度拉扯",
-            "en": "Extreme tension"
+            "zh": "深層震動感",
+            "en": "Deep vibration"
           }
         }
       ],
@@ -216,32 +216,32 @@
       }
     },
     {
-      "question_id": "sc_react_2",
+      "question_id": "vd_react_2",
       "text": {
-        "zh": "為了追趕他人的腳步，您是否透支了自身的「存糧」（資源或精力）？",
-        "en": "To catch up with others, have you overdrafted your 'reserves'?"
+        "zh": "若要以一種天候形容您內心的基調，更接近下列何者？",
+        "en": "If describing your inner tone as weather, which is closer?"
       },
       "type": "reaction",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "量入為出",
-            "en": "Within means"
+            "zh": "晴空萬里",
+            "en": "Sunny"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "略有透支",
-            "en": "Slight overdraft"
+            "zh": "陰雨綿綿",
+            "en": "Rainy"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "寅吃卯糧",
-            "en": "Eating next year's"
+            "zh": "虛空黑洞",
+            "en": "Black hole"
           }
         }
       ],
@@ -251,32 +251,32 @@
       }
     },
     {
-      "question_id": "sc_res_1",
+      "question_id": "vd_res_1",
       "text": {
-        "zh": "您是否擁有一套屬於自己的「價值度量衡」，不隨市價波動？",
-        "en": "Do you possess your own 'measure of value', fluctuating not with market?"
+        "zh": "您目前是否有堅定的信仰或哲學觀，能作為靈魂的「定海神針」？",
+        "en": "Do you have a firm belief or philosophy acting as an anchor for your soul?"
       },
       "type": "resource",
       "options": [
         {
           "value": 4,
           "label": {
-            "zh": "隨波逐流",
+            "zh": "漂泊無依",
             "en": "Drifting"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "尚未堅固",
-            "en": "Not solid"
+            "zh": "動搖不定",
+            "en": "Shaking"
           }
         },
         {
           "value": 0,
           "label": {
-            "zh": "心中有尺",
-            "en": "Ruler in heart"
+            "zh": "堅如磐石",
+            "en": "Rock solid"
           }
         }
       ],

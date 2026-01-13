@@ -1,0 +1,289 @@
+{
+  "facetId": "digital_dissociation",
+  "version": "1.0",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "dd_core_1",
+      "text": {
+        "zh": "您是否感覺自己的靈魂已經部分上傳到了網路，實體生活反倒成了虛幻？",
+        "en": "Do you feel your soul has partly uploaded to the web, making physical life seem illusory?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "立足當下",
+            "en": "Grounded now"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "遊走兩端",
+            "en": "Wander between"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "虛實倒置",
+            "en": "Virtual/Real inverted"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "dd_core_2",
+      "text": {
+        "zh": "當斷開網路連結時，您是否會感到莫名的恐慌，彷彿與世界切斷了氧氣？",
+        "en": "When disconnected from the net, do you feel inexplicable panic, as if cut off from oxygen?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "享受離線",
+            "en": "Enjoy offline"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感不安",
+            "en": "Slightly uneasy"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "窒息恐慌",
+            "en": "Suffocating panic"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "dd_core_3",
+      "text": {
+        "zh": "海量的資訊流是否沖刷著您的意識，讓您難以留住片刻的寧靜？",
+        "en": "Does the massive stream of information wash over your consciousness, making it hard to keep a moment of peace?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "意識清明",
+            "en": "Clear mind"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶感嘈雜",
+            "en": "Occasionally noisy"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "資訊淹沒",
+            "en": "Info drowned"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "dd_val_1",
+      "text": {
+        "zh": "您是否習慣用螢幕的光亮來填補獨處時的空白？",
+        "en": "Are you used to filling the void of solitude with the glow of a screen?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "享受留白",
+            "en": "Enjoy the void"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾填補",
+            "en": "Occasionally fill"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無縫填補",
+            "en": "Seamless filling"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "dd_val_2",
+      "text": {
+        "zh": "面對真實的人際互動，您是否反而覺得比線上的文字交流更耗費心神？",
+        "en": "Facing real interactions, do you find them more draining than online text exchanges?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "樂於見面",
+            "en": "Love meeting"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感疲憊",
+            "en": "Slightly tired"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "極度耗能",
+            "en": "Extremely draining"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "dd_react_1",
+      "text": {
+        "zh": "您是否會不自覺地陷入「無盡捲動」的狀態，即使並沒有特定的目的？",
+        "en": "Do you unconsciously fall into 'doom scrolling', even without a specific purpose?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "目標明確",
+            "en": "Clear purpose"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾沈迷",
+            "en": "Occasionally addicted"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無盡捲動",
+            "en": "Endless scrolling"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "dd_react_2",
+      "text": {
+        "zh": "當現實世界的聲音傳來，您是否傾向於忽略，繼續沈浸在數位屏障之後？",
+        "en": "When sounds of the real world come, do you tend to ignore them, staying behind the digital barrier?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "即時回應",
+            "en": "Instant response"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "延遲回應",
+            "en": "Delayed response"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "充耳不聞",
+            "en": "Deaf ear"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "dd_res_1",
+      "text": {
+        "zh": "您是否能輕易地切斷連結，回歸到純粹的感官體驗中（如風聲、觸覺）？",
+        "en": "Can you easily cut the link and return to pure sensory experiences (like wind, touch)?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "難以抽離",
+            "en": "Hard to detach"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "需要努力",
+            "en": "Needs effort"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "自在切換",
+            "en": "Switch freely"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

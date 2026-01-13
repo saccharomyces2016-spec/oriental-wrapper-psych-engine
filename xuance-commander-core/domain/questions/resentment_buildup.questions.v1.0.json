@@ -1,0 +1,289 @@
+{
+  "facetId": "resentment_buildup",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "rb_core_1",
+      "text": {
+        "zh": "您是否感覺像是喝下了毒藥，卻期待對方受傷，結果毒火只燒灼了自己的內在？",
+        "en": "Do you feel like you drank poison expecting the other to be hurt, but the fire only scorched your own insides?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "心無罣礙",
+            "en": "Heart is clear"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有不平",
+            "en": "Occasional grievance"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "毒火攻心",
+            "en": "Poison attacking heart"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "rb_core_2",
+      "text": {
+        "zh": "那份陳年的舊帳，是否在您的記憶中越積越厚，隨時準備翻開清算？",
+        "en": "Is that old score piling up in your memory, ready to be settled at any moment?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "隨風而去",
+            "en": "Gone with the wind"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾翻閱",
+            "en": "Occasionally review"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "歷歷在目",
+            "en": "Vividly remembered"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "rb_core_3",
+      "text": {
+        "zh": "您是否覺得世界對您不公，心中充滿了「憑什麼」的憤懣？",
+        "en": "Do you feel the world is unfair to you, your heart filled with the resentment of 'why me'?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "接納現實",
+            "en": "Accept reality"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶感不公",
+            "en": "Feel slight unfairness"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "憤世嫉俗",
+            "en": "Cynical resentment"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "rb_val_1",
+      "text": {
+        "zh": "在與人對話時，您是否常帶著刺，甚至在沒必要的時候發動攻擊？",
+        "en": "In conversation, are you often prickly, launching attacks even when unnecessary?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "溫和友善",
+            "en": "Gentle and friendly"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶帶鋒芒",
+            "en": "Occasionally sharp"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "渾身是刺",
+            "en": "Covered in thorns"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "rb_val_2",
+      "text": {
+        "zh": "看到曾經傷害您的人過得好，您的心境是否會劇烈翻騰，無法平靜？",
+        "en": "Seeing those who hurt you doing well, does your mind churn violently, unable to calm down?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "淡然處之",
+            "en": "Indifferent"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "心裡發酸",
+            "en": "Sour feeling"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "恨意難平",
+            "en": "Unresolved hatred"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "rb_react_1",
+      "text": {
+        "zh": "想起某些人時，您是否會不自覺地變得表情僵硬，陷入沈默？",
+        "en": "When thinking of certain people, do you unconsciously become rigid in expression and fall into silence?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "放鬆自在",
+            "en": "Relaxed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "輕微緊繃",
+            "en": "Slightly tense"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "僵硬沈默",
+            "en": "Rigid silence"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "rb_react_2",
+      "text": {
+        "zh": "這種怨恨的積累，是否已經讓您的目光變得銳利，難以展露真誠的笑容？",
+        "en": "Has this accumulation of resentment made your gaze sharp, making it hard to show a sincere smile?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "笑顏常開",
+            "en": "Often smiling"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "笑容勉強",
+            "en": "Forced smile"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "面冷心硬",
+            "en": "Cold face hard heart"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "rb_res_1",
+      "text": {
+        "zh": "您是否能試著打開一個小缺口，讓心中的淤泥流出，不再用它滋養仇恨？",
+        "en": "Can you try opening a small gap to let the sludge in your heart flow out, no longer nourishing hatred with it?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "無法開啟",
+            "en": "Cannot open"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "艱難嘗試",
+            "en": "Hard to try"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "能夠疏導",
+            "en": "Can channel out"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

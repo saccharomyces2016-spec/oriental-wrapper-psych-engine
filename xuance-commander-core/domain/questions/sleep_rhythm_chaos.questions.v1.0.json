@@ -1,0 +1,289 @@
+{
+  "facetId": "sleep_rhythm_chaos",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "src_core_1",
+      "text": {
+        "zh": "您的內在時鐘是否已經失靈，分不清晝夜的界線？",
+        "en": "Has your internal clock broken, unable to distinguish the line between day and night?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "規律運轉",
+            "en": "Running regularly"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有時差",
+            "en": "Occasional jetlag"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "徹底混亂",
+            "en": "Total chaos"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "src_core_2",
+      "text": {
+        "zh": "當夜幕低垂，您的意識是否反而變得異常清晰，難以沈潛？",
+        "en": "When night falls, does your consciousness become abnormally clear, unable to submerge?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "自然困倦",
+            "en": "Naturally sleepy"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾興奮",
+            "en": "Occasionally excited"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "晝夜反轉",
+            "en": "Day/night reversal"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "src_core_3",
+      "text": {
+        "zh": "您是否感覺睡眠像是一個難以捉摸的訪客，總是遲到或缺席？",
+        "en": "Do you feel sleep is like an elusive visitor, always late or absent?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "準時造訪",
+            "en": "Visits on time"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "姍姍來遲",
+            "en": "Arrives late"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "經常缺席",
+            "en": "Often absent"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "src_val_1",
+      "text": {
+        "zh": "您是否經常在不該醒著的時候清醒，在該清醒的時候昏沈？",
+        "en": "Are you often awake when you shouldn't be, and drowsy when you should be awake?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "作息同步",
+            "en": "Synced schedule"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾錯亂",
+            "en": "Occasionally mixed"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "時序錯置",
+            "en": "Chronology misplaced"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "src_val_2",
+      "text": {
+        "zh": "為了入睡或提神，您是否必須依賴外在物質的強制介入？",
+        "en": "To sleep or stay awake, must you rely on the forced intervention of external substances?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "自然調節",
+            "en": "Natural regulation"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾輔助",
+            "en": "Occasional aid"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "高度依賴",
+            "en": "Highly dependent"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "src_react_1",
+      "text": {
+        "zh": "當無法入睡時，您是否會反覆計算剩下的睡眠時間，不停查看時間？",
+        "en": "When unable to sleep, do you repeatedly calculate remaining sleep time, checking the clock constantly?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "平靜等待",
+            "en": "Wait calmly"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾查看",
+            "en": "Occasional checking"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "反覆計算",
+            "en": "Repetitive calculation"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "src_react_2",
+      "text": {
+        "zh": "白天時，您的意識狀態是否經常如隔層紗，難以聚焦？",
+        "en": "During the day, is your state of consciousness often veiled, hard to focus?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "清晰明亮",
+            "en": "Clear and bright"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾恍惚",
+            "en": "Occasionally dazed"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "持續游離",
+            "en": "Constantly drifting"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "src_res_1",
+      "text": {
+        "zh": "您是否還保留著某種放鬆儀式，能幫助您慢慢滑入夢鄉？",
+        "en": "Do you still keep a relaxation ritual that helps you slowly slide into dreamland?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全失效",
+            "en": "Totally ineffective"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "效果有限",
+            "en": "Limited effect"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "有效儀式",
+            "en": "Effective ritual"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

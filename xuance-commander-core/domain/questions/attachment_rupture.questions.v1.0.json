@@ -1,0 +1,289 @@
+{
+  "facetId": "attachment_rupture",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ar_core_1",
+      "text": {
+        "zh": "在關係的大海中，您是否常感覺自己像一葉斷了錨的扁舟，無處停靠？",
+        "en": "In the sea of relationships, do you often feel like a boat with a broken anchor, nowhere to dock?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "港灣穩固",
+            "en": "Secure harbor"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有漂泊",
+            "en": "Occasionally drifting"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無根漂流",
+            "en": "Rootless drifting"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ar_core_2",
+      "text": {
+        "zh": "您是否深信，一旦您展示真實的自己，對方就會轉身離去？",
+        "en": "Do you deeply believe that once you show your true self, the other person will turn and leave?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "安心展現",
+            "en": "Safe to show"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有所保留",
+            "en": "Holding back"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "深信必棄",
+            "en": "Certain of abandonment"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ar_core_3",
+      "text": {
+        "zh": "那種「隨時會被拋下」的恐懼，是否如影隨形地跟著您？",
+        "en": "Does the fear of being 'left behind at any moment' follow you like a shadow?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "安全篤定",
+            "en": "Secure and certain"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾擔憂",
+            "en": "Occasionally worried"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "恐懼纏身",
+            "en": "Haunted by fear"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ar_val_1",
+      "text": {
+        "zh": "您是否傾向於緊緊抓住對方，或者乾脆在對方離開前先推開他？",
+        "en": "Do you tend to cling tightly to the other person, or simply push them away before they leave?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "適度依賴",
+            "en": "Moderate reliance"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾極端",
+            "en": "Occasionally extreme"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "推拉反覆",
+            "en": "Push and pull"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ar_val_2",
+      "text": {
+        "zh": "對於他人的承諾，您是否總是抱持著「聽聽就好，別太當真」的懷疑？",
+        "en": "Regarding others' promises, do you always hold the skepticism of 'just listen, don't take it seriously'?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "願意信任",
+            "en": "Willing to trust"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "半信半疑",
+            "en": "Skeptical"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "全盤否定",
+            "en": "Complete denial"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ar_react_1",
+      "text": {
+        "zh": "當聯絡不到重要的人時，您的內在安全感是否會瞬間崩潰，預設最壞的情況？",
+        "en": "When you can't reach someone important, does your inner security instantly collapse, assuming the worst?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "耐心等待",
+            "en": "Wait patiently"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些焦慮",
+            "en": "Somewhat anxious"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "驚恐發作",
+            "en": "Panic attack"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ar_react_2",
+      "text": {
+        "zh": "在需要情感交流時，您是否會不自覺地豎起防禦，難以保持柔軟？",
+        "en": "When emotional exchange is needed, do you unconsciously put up defenses, unable to stay soft?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "柔軟敞開",
+            "en": "Open and soft"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略微緊繃",
+            "en": "Slightly tense"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "防禦全開",
+            "en": "Full defense"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ar_res_1",
+      "text": {
+        "zh": "您是否能在內心深處找到一個穩定的「小錨點」，安撫那個驚慌的自己？",
+        "en": "Can you find a stable 'little anchor' deep inside to soothe that panicked self?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全沒有",
+            "en": "Not at all"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "勉強嘗試",
+            "en": "Barely trying"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "自我安撫",
+            "en": "Self-soothing"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

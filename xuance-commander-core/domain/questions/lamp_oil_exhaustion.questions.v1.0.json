@@ -1,35 +1,35 @@
 {
-  "facetId": "social_comparison",
+  "facetId": "lamp_oil_exhaustion",
   "version": "1.0",
   "questionSet": "OCTET_8",
   "questions": [
     {
-      "question_id": "sc_core_1",
+      "question_id": "loe_core_1",
       "text": {
-        "zh": "觀看他人華服盛宴之時，您心中是否常生出「自身黯淡無光」的陰影？",
-        "en": "When viewing others' feasts, does a shadow of 'I am dim' rise in your heart?"
+        "zh": "近日晨起之時，是否常覺身心如燃盡之燈蕊，雖有火光卻無油可續？",
+        "en": "Upon waking, do you feel like a burnt wick, having spark but no oil?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "隨喜讚嘆",
-            "en": "Rejoice"
+            "zh": "精力充沛",
+            "en": "Energetic"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "略感酸楚",
-            "en": "Slightly sour"
+            "zh": "勉強支撐",
+            "en": "Barely holding"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "自慚形穢",
-            "en": "Ashamed"
+            "zh": "油盡燈枯",
+            "en": "Oil dry"
           }
         }
       ],
@@ -39,32 +39,32 @@
       }
     },
     {
-      "question_id": "sc_core_2",
+      "question_id": "loe_core_2",
       "text": {
-        "zh": "您是否如置身充滿魔鏡的廳堂，時刻透過他人的映照來確認自己的形狀？",
-        "en": "Are you in a hall of magic mirrors, checking your shape through others?"
+        "zh": "對於往日能燃起您熱情之事，如今是否只剩餘燼，難以復燃？",
+        "en": "For things that sparked passion, do only ashes remain, hard to reignite?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "內觀自照",
-            "en": "Look inward"
+            "zh": "熱情依舊",
+            "en": "Passion remains"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶爾照鏡",
-            "en": "Check sometimes"
+            "zh": "忽明忽滅",
+            "en": "Flickering"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "無鏡不活",
-            "en": "Need mirrors"
+            "zh": "心如死灰",
+            "en": "Dead ash"
           }
         }
       ],
@@ -74,32 +74,32 @@
       }
     },
     {
-      "question_id": "sc_core_3",
+      "question_id": "loe_core_3",
       "text": {
-        "zh": "若得知同儕飛黃騰達，您的內在氣機是順暢還是滯悶？",
-        "en": "Upon hearing a peer's success, is your inner energy smooth or stagnant?"
+        "zh": "您是否感覺靈魂與行動逐漸剝離，如同機關人偶般機械運作？",
+        "en": "Do you feel soul peeling from action, working mechanically like a puppet?"
       },
       "type": "core_state",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "氣機順暢",
-            "en": "Smooth"
+            "zh": "身心合一",
+            "en": "United"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "微有滯礙",
-            "en": "Slightly stuck"
+            "zh": "偶有恍惚",
+            "en": "Tranced"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "胸口悶堵",
-            "en": "Blocked"
+            "zh": "形神分離",
+            "en": "Split"
           }
         }
       ],
@@ -109,32 +109,32 @@
       }
     },
     {
-      "question_id": "sc_val_1",
+      "question_id": "loe_val_1",
       "text": {
-        "zh": "您是否容易因社群網絡上的浮光掠影，而擾亂了一整日的修行步調？",
-        "en": "Are you easily disturbed in your daily pace by fleeting online lights?"
+        "zh": "周遭之人是否察覺您感知焦點渙散，不再有往日神采？",
+        "en": "Do people notice your perceptual focus is scattered, losing former luster?"
       },
       "type": "validation",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "不為所動",
-            "en": "Unmoved"
+            "zh": "神采奕奕",
+            "en": "Radiant"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶受波及",
-            "en": "Affected"
+            "zh": "略顯疲態",
+            "en": "Tired"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "心隨境轉",
-            "en": "Moved by scene"
+            "zh": "感知抽離",
+            "en": "Detached"
           }
         }
       ],
@@ -145,32 +145,32 @@
       }
     },
     {
-      "question_id": "sc_val_2",
+      "question_id": "loe_val_2",
       "text": {
-        "zh": "旁人是否覺得您過於在意「位階」或「排場」，而忽略了本質？",
-        "en": "Do others feel you care too much about 'rank' or 'spectacle', ignoring essence?"
+        "zh": "面對日常瑣事，是否比以往更易生出「厭世」與「虛無」之感？",
+        "en": "Facing daily trivia, is it easier to feel 'world-weary' and 'void'?"
       },
       "type": "validation",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "樸實無華",
-            "en": "Plain/True"
+            "zh": "興致盎然",
+            "en": "Interested"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "偶爾在意",
-            "en": "Sometimes care"
+            "zh": "偶感無趣",
+            "en": "Bored"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "逐末忘本",
-            "en": "Chasing ends"
+            "zh": "萬念俱灰",
+            "en": "All grey"
           }
         }
       ],
@@ -181,32 +181,32 @@
       }
     },
     {
-      "question_id": "sc_react_1",
+      "question_id": "loe_react_1",
       "text": {
-        "zh": "當發現自己不如人時，您內心的火候如何變化？",
-        "en": "When finding yourself lesser than others, how does your inner fire change?"
+        "zh": "當被要求承擔新的責任時，您的內在能量場有何變化？",
+        "en": "When asked to take new responsibilities, how does your energy field change?"
       },
       "type": "reaction",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "溫火慢燉",
-            "en": "Steady fire"
+            "zh": "蓄勢待發",
+            "en": "Ready"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "焦躁竄火",
-            "en": "Anxious flare"
+            "zh": "沉重抗拒",
+            "en": "Resistant"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "極度拉扯",
-            "en": "Extreme tension"
+            "zh": "瞬間崩塌",
+            "en": "Collapse"
           }
         }
       ],
@@ -216,32 +216,32 @@
       }
     },
     {
-      "question_id": "sc_react_2",
+      "question_id": "loe_react_2",
       "text": {
-        "zh": "為了追趕他人的腳步，您是否透支了自身的「存糧」（資源或精力）？",
-        "en": "To catch up with others, have you overdrafted your 'reserves'?"
+        "zh": "週末或假期是否已不足以讓您的「內在燭火」重新明亮？",
+        "en": "Are holidays no longer enough to brighten your 'inner candle'?"
       },
       "type": "reaction",
       "options": [
         {
           "value": 0,
           "label": {
-            "zh": "量入為出",
-            "en": "Within means"
+            "zh": "休息即復原",
+            "en": "Rest restores"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "略有透支",
-            "en": "Slight overdraft"
+            "zh": "恢復緩慢",
+            "en": "Slow recovery"
           }
         },
         {
           "value": 4,
           "label": {
-            "zh": "寅吃卯糧",
-            "en": "Eating next year's"
+            "zh": "越睡越累",
+            "en": "More tired"
           }
         }
       ],
@@ -251,32 +251,32 @@
       }
     },
     {
-      "question_id": "sc_res_1",
+      "question_id": "loe_res_1",
       "text": {
-        "zh": "您是否擁有一套屬於自己的「價值度量衡」，不隨市價波動？",
-        "en": "Do you possess your own 'measure of value', fluctuating not with market?"
+        "zh": "您目前是否留有任何「自留地」，是完全屬於自己且不被外界侵擾的？",
+        "en": "Do you keep a 'private plot' that belongs only to you and is undisturbed?"
       },
       "type": "resource",
       "options": [
         {
           "value": 4,
           "label": {
-            "zh": "隨波逐流",
-            "en": "Drifting"
+            "zh": "寸土無存",
+            "en": "No land"
           }
         },
         {
           "value": 2,
           "label": {
-            "zh": "尚未堅固",
-            "en": "Not solid"
+            "zh": "邊界模糊",
+            "en": "Blurred"
           }
         },
         {
           "value": 0,
           "label": {
-            "zh": "心中有尺",
-            "en": "Ruler in heart"
+            "zh": "一方淨土",
+            "en": "Pure land"
           }
         }
       ],

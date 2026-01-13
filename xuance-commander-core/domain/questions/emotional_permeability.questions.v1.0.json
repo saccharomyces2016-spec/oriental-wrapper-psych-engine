@@ -1,79 +1,290 @@
-[
-  {
-    "id": "emotional_permeability_q1",
-    "text": "當伴侶或是親近的人帶著憤怒或沈默回家，家裡氣氛變得很僵時，你的直覺反應是？",
-    "type": "likert_5",
-    "scale": [
-      "立刻檢討自己是否做錯事，試圖安撫對方",
-      "雖然擔心，但告訴自己這是他的情緒課題",
-      "默默離開現場或戴上耳機，以免被颱風尾掃到",
-      "堅持問出原因，想盡辦法要幫他解決問題"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q2",
-    "text": "朋友打電話來抱怨生活，話題無限鬼打牆，讓你感到能量耗竭，你會？",
-    "type": "likert_5",
-    "scale": [
-      "不知不覺聽了很久，掛斷後覺得自己也被吸乾了",
-      "設定時間限制，委婉告訴對方等下有事要忙",
-      "雖然很煩，但覺得聽他說是朋友的義務，硬撐著聽",
-      "找個理由說訊號不好或沒電，趕快結束通話"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q3",
-    "text": "辦公室裡主管剛罵完人，空氣中瀰漫著低氣壓，即使不關你的事，你會怎麼做？",
-    "type": "likert_5",
-    "scale": [
-      "戴上耳機專注工作，在此刻劃出心理界線",
-      "變得小心翼翼，深怕下一個被罵的是自己",
-      "觀察主管臉色，等待氣氛緩和再行動",
-      "主動找主管確認工作狀況，想確認自己是安全的"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q4",
-    "text": "看到災難新聞或社會悲劇的報導，讓你感到強烈的不舒服與共感，你會？",
-    "type": "likert_5",
-    "scale": [
-      "這幾天完全不看新聞或網路，隔絕資訊",
-      "忍不住一直滑相關訊息，越看越焦慮",
-      "限制閱讀時間，只看重點摘要就好",
-      "逼自己看完細節，覺得不能對世界的苦難漠不關心"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q5",
-    "text": "當伴侶或家人興致勃勃地幫你規劃了一個你其實不喜歡的行程，你會？",
-    "type": "likert_5",
-    "scale": [
-      "覺得配合他是我的責任，就算不喜歡也照做",
-      "明確表達我不喜歡這個安排，提出我想去的",
-      "先答應下來，之後再找機會微調行程",
-      "為了不破壞他的興致，把不滿吞下去"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q6",
-    "text": "看到朋友陷入低潮哭泣，你會產生什麼樣的衝動？",
-    "type": "likert_5",
-    "scale": [
-      "想盡辦法逗他笑或提供建議，一定要讓他好起來",
-      "靜靜陪在一旁，觀察他需要什麼再行動",
-      "介紹專業諮商師或書籍給他，尋求外部協助",
-      "覺得他的負能量太強，想先保持距離保護自己"
-    ]
-  },
-  {
-    "id": "emotional_permeability_q7",
-    "text": "長輩用嘆氣或暗示的方式表達對你的生活方式不滿，但沒有明說，你會？",
-    "type": "likert_5",
-    "scale": [
-      "馬上懷疑自己是不是做錯了，試圖修正",
-      "假裝沒聽懂，繼續做自己的事，心裡築起高牆",
-      "直接問清楚他們到底不滿意什麼，把話講開",
-      "告訴自己「這是他的觀點」，盡量不受影響"
-    ]
-  }
-]
+{
+  "facetId": "emotional_permeability",
+  "version": "1.0",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ep_core_1",
+      "text": {
+        "zh": "當處於眾人嘈雜之地，您是否常覺自身氣場如籬落破損，外人之喜怒哀樂易趁虛而入？",
+        "en": "In noisy crowds, do you feel your aura is like a broken fence, allowing others' emotions to easily intrude?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "氣場穩固",
+            "en": "Solid aura"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有滲入",
+            "en": "Occasionally intrudes"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "極易受侵",
+            "en": "Easily invaded"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ep_core_2",
+      "text": {
+        "zh": "與情緒激動者共處後，您是否感覺身上沾染了對方的「氣」，久久難以散去？",
+        "en": "After being with emotional people, do you feel stained by their 'Qi', unable to disperse it?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "過水無痕",
+            "en": "Water over stone"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "需時淨化",
+            "en": "Needs cleansing"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "如影隨形",
+            "en": "Lingering shadow"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ep_core_3",
+      "text": {
+        "zh": "您是否常無故感到心頭沉重，事後才發覺那是他人的重擔？",
+        "en": "Do you often feel sudden heaviness, only to realize later it was someone else's burden?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "未曾如此",
+            "en": "Never"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "間或有之",
+            "en": "Occasionally"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "習以為常",
+            "en": "Habitually"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ep_val_1",
+      "text": {
+        "zh": "親近之人是否形容您如「海綿」一般，總是吸納周遭的氛圍？",
+        "en": "Do close ones describe you as a 'sponge', absorbing the surrounding atmosphere?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "未曾聽聞",
+            "en": "Never heard"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有此說",
+            "en": "Occasionally said"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "眾人皆知",
+            "en": "Widely known"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ep_val_2",
+      "text": {
+        "zh": "在觀看戲劇見人落淚時，您是否比旁人更易隨之氣動神傷？",
+        "en": "When seeing tears in dramas, is your spirit more easily moved to sorrow than others?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "心如止水",
+            "en": "Still water"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "稍有觸動",
+            "en": "Slightly moved"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "感同身受",
+            "en": "Deeply identified"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ep_react_1",
+      "text": {
+        "zh": "當察覺外界紛擾入侵內心時，您的本能反應為何？",
+        "en": "When outside chaos invades, what is your instinct?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "收縮邊界",
+            "en": "Contract boundary"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "混亂逃離",
+            "en": "Confused flee"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "隨波逐流",
+            "en": "Drift with it"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ep_react_2",
+      "text": {
+        "zh": "若要形容您目前心靈邊界的狀態，何者最貼切？",
+        "en": "To describe your spiritual boundary, which fits best?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "厚實城牆",
+            "en": "Thick wall"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "隨風紗簾",
+            "en": "Curtain in wind"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "四面受風",
+            "en": "Open to wind"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ep_res_1",
+      "text": {
+        "zh": "您是否擁有某種儀式或處所，能助您洗淨沾染的雜氣？",
+        "en": "Do you have a ritual or place to cleanse absorbed impurities?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "並無此法",
+            "en": "No method"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "時靈時不靈",
+            "en": "Works sometimes"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "自有妙法",
+            "en": "Have method"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    }
+  ]
+}

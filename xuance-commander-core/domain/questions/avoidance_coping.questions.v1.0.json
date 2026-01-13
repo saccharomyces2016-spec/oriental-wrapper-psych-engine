@@ -1,79 +1,290 @@
-[
-  {
-    "id": "avoidance_coping_q1",
-    "text": "牙齒隱隱作痛或收到健檢紅字通知，但這週工作很忙，你會？",
-    "type": "likert_5",
-    "scale": [
-      "吃止痛藥或保健品壓下去，告訴自己過幾天就好",
-      "馬上預約掛號，不管多忙先處理再說",
-      "問問身邊朋友有沒有類似經驗，聽聽他們怎麼說",
-      "先觀察幾天，如果變嚴重了再決定要不要看醫生"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q2",
-    "text": "收到信用卡帳單或必須處理財務報表時，看著那個數字讓你感到焦慮，你會？",
-    "type": "likert_5",
-    "scale": [
-      "先擱在一旁不打開，專心追劇或打掃房間",
-      "立刻打開記帳軟體，一筆筆核對並制定還款計畫",
-      "跟家人或伴侶討論，看看能不能一起分擔或理清",
-      "到繳費期限最後一刻才匆忙打開去繳"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q3",
-    "text": "明知這段關係（伴侶或朋友）已經出現裂痕，需要坐下來好好談談，你會？",
-    "type": "likert_5",
-    "scale": [
-      "假裝沒事發生，照常過日子，期待問題自己消失",
-      "找個適當的時機，主動約對方把心裡話講開",
-      "問共同朋友的看法，確認是不是自己想太多",
-      "保持距離冷處理，等對方先開口再說"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q4",
-    "text": "手上有一個複雜且具挑戰性的專案要開始，但完全沒有頭緒，你會？",
-    "type": "likert_5",
-    "scale": [
-      "先去整理桌面、回無關緊要的Email，做些簡單的事",
-      "硬著頭皮先寫出大綱，不管好壞先動起來再說",
-      "找有經驗的前輩請教，看有沒有範本可以參考",
-      "先把時程表排出來，拆解成小步驟慢慢做"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q5",
-    "text": "制定了運動計畫，但下班回家覺得好累，心裡出現「明天再做」的聲音，你會？",
-    "type": "likert_5",
-    "scale": [
-      "順從這個聲音，躺在沙發上滑手機放鬆",
-      "告訴自己「只做10分鐘也好」，換上衣服直接開始",
-      "看看別人在社群上打卡的動態，激勵自己跟上",
-      "調整計畫，改成週末再做高強度運動"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q6",
-    "text": "收到一則需要花心力回覆的重要訊息（如主管質問或長輩關切），當下不想處理，你會？",
-    "type": "likert_5",
-    "scale": [
-      "不讀不回把手機丟到一邊，假裝沒看到",
-      "立刻回覆，不想讓這件事掛在心上",
-      "複製貼上官方說法，先簡單應付過去",
-      "設個鬧鐘提醒自己晚點回，現在先做別的事"
-    ]
-  },
-  {
-    "id": "avoidance_coping_q7",
-    "text": "心裡一直有個想嘗試的夢想（如轉職、留學、創業），但充滿不確定性，你會？",
-    "type": "likert_5",
-    "scale": [
-      "告訴自己現在這樣也很好，不要冒險比較安全",
-      "報名相關課程或活動，強迫自己跨出第一步",
-      "上網爬文看別人的失敗案例，證明不動是對的",
-      "列出優缺點分析，評估現在是不是最好的時機"
-    ]
-  }
-]
+{
+  "facetId": "avoidance_coping",
+  "version": "1.0",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ac_core_1",
+      "text": {
+        "zh": "當困厄如巨石擋道，您是否習慣遁入迷霧，繞行而不直視？",
+        "en": "When trouble blocks the way, do you vanish into mist, detouring to avoid looking?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "直面巨石",
+            "en": "Face it"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "暫避其鋒",
+            "en": "Temporary avoid"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "繞行千里",
+            "en": "Long detour"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ac_core_2",
+      "text": {
+        "zh": "是否有某些「信件」或「訊息」，被您封存於意識深處，遲遲不敢開封？",
+        "en": "Are there 'messages' sealed deep in consciousness, which you dare not open?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "皆已拆閱",
+            "en": "All opened"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "積壓少許",
+            "en": "Few piled"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "堆積如山",
+            "en": "Mountain piled"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ac_core_3",
+      "text": {
+        "zh": "您是否常藉由沈溺於幻境（如遊戲、空想），以遺忘現實的風雨？",
+        "en": "Do you indulge in illusions to forget reality's storms?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "僅作消遣",
+            "en": "Pastime"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶作避風",
+            "en": "Occasional shelter"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "以此為家",
+            "en": "Live in it"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ac_val_1",
+      "text": {
+        "zh": "旁人是否曾婉轉提示，您總是在關鍵時刻「顧左右而言他」？",
+        "en": "Have others hinted you always 'speak of other things' at critical moments?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "直言不諱",
+            "en": "Direct"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有此事",
+            "en": "Sometimes"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "常被點破",
+            "en": "Often noted"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ac_val_2",
+      "text": {
+        "zh": "回首過往，是否有許多小患因拖延而釀成大災？",
+        "en": "Looking back, have small troubles turned into disasters due to delay?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "及時止損",
+            "en": "Stopped early"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有失策",
+            "en": "Occasional miss"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "覆轍重蹈",
+            "en": "Repeating patterns"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ac_react_1",
+      "text": {
+        "zh": "當必須面對那件令您恐懼之事，您的能量場有何反應？",
+        "en": "When facing that dreaded thing, how does your energy field react?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "氣定神閒",
+            "en": "Calm"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "氣息紊亂",
+            "en": "Chaotic"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "節律停滯",
+            "en": "Rhythm stalled"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ac_react_2",
+      "text": {
+        "zh": "若將您面對困難的姿態具象化，更像以下何者？",
+        "en": "If visualizing your stance against difficulty, which is it?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "揮劍斬棘",
+            "en": "Slashing thorns"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "築牆自保",
+            "en": "Building walls"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "縮首入殼",
+            "en": "Into shell"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ac_res_1",
+      "text": {
+        "zh": "在您的生命中，是否有人能如燈塔般，指引您穿越迷霧直面現實？",
+        "en": "Is there someone like a lighthouse guiding you through mist to reality?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "孤立無援",
+            "en": "Isolated"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "遠處微光",
+            "en": "Distant light"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "良師益友",
+            "en": "Mentor/Friend"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    }
+  ]
+}

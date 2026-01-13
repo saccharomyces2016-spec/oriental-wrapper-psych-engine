@@ -1,0 +1,289 @@
+{
+  "facetId": "shame_spiral",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ss_core_1",
+      "text": {
+        "zh": "您是否常感覺靈魂深處有一個無法洗淨的污點，讓您不配擁有美好？",
+        "en": "Do you often feel there is an un-washable stain deep in your soul that makes you unworthy of good things?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "坦蕩無愧",
+            "en": "Open and worthy"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有自我懷疑",
+            "en": "Occasional doubt"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "深沈污點",
+            "en": "Deep stain"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ss_core_2",
+      "text": {
+        "zh": "當被他人注視時，您是否有一種想要「鑽進地洞」消失的強烈衝動？",
+        "en": "When observed by others, do you have a strong urge to 'crawl into a hole' and disappear?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "泰然自若",
+            "en": "Composed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些不自在",
+            "en": "A bit uncomfortable"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "只想消失",
+            "en": "Just want to disappear"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ss_core_3",
+      "text": {
+        "zh": "您是否經常反覆回放自己「出醜」的片段，每一次回放都加深一次痛苦？",
+        "en": "Do you often replay moments of your 'humiliation', with each replay deepening the pain?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "過往雲煙",
+            "en": "Past is smoke"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾想起",
+            "en": "Occasionally recall"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無限輪迴",
+            "en": "Infinite loop"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ss_val_1",
+      "text": {
+        "zh": "即使在獨處時，您是否仍感覺有一雙批判的眼睛在盯著您？",
+        "en": "Even when alone, do you still feel a pair of critical eyes staring at you?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "自在獨處",
+            "en": "Comfortably alone"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有幻覺",
+            "en": "Occasional sensation"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "如芒在背",
+            "en": "Eyes burning back"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ss_val_2",
+      "text": {
+        "zh": "面對讚美時，您內心是否覺得那是在嘲諷，或是對方看走了眼？",
+        "en": "When facing praise, do you feel inside that it is mockery, or that they are mistaken?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "欣然接受",
+            "en": "Happily accept"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "半信半疑",
+            "en": "Skeptical"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "深感不安",
+            "en": "Deeply uneasy"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ss_react_1",
+      "text": {
+        "zh": "在社交場合，您是否習慣性地縮小自己的存在感，避免被看見？",
+        "en": "In social situations, do you habitually shrink your presence to avoid being seen?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "自然展現",
+            "en": "Natural presence"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾退縮",
+            "en": "Occasionally shrink"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "隱形匿跡",
+            "en": "Invisible"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ss_react_2",
+      "text": {
+        "zh": "當羞恥感升起時，您是否會感到思緒瞬間空白，只想中斷當下的交流？",
+        "en": "When shame rises, do you feel your mind go instantly blank, just wanting to interrupt the current interaction?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "神色自若",
+            "en": "Composed"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些慌亂",
+            "en": "A bit flustered"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "無地自容",
+            "en": "Nowhere to hide"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ss_res_1",
+      "text": {
+        "zh": "在內心深處，是否存在一小塊地方，能溫柔地接納這個不完美的自己？",
+        "en": "Deep inside, does there exist a small place that can tenderly accept this imperfect self?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全沒有",
+            "en": "Not at all"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "時有時無",
+            "en": "Sometimes"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "溫柔存在",
+            "en": "Tenderly exists"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

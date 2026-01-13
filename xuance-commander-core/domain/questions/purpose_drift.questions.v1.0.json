@@ -1,0 +1,289 @@
+{
+  "facetId": "purpose_drift",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "pd_core_1",
+      "text": {
+        "zh": "您是否感覺自己像一艘在濃霧中失去羅盤的船，不知駛向何方？",
+        "en": "Do you feel like a ship that has lost its compass in dense fog, not knowing where to sail?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "航向清晰",
+            "en": "Clear course"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾迷航",
+            "en": "Occasionally lost"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "徹底迷失",
+            "en": "Totally lost"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pd_core_2",
+      "text": {
+        "zh": "對於「未來」這個詞，您是否只看到一片空白，而非具體的畫面？",
+        "en": "Regarding the word 'future', do you only see a blank void rather than a concrete picture?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "藍圖清晰",
+            "en": "Clear blueprint"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "輪廓模糊",
+            "en": "Blurry outline"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "一片空白",
+            "en": "Blank void"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pd_core_3",
+      "text": {
+        "zh": "您是否常問自己「我到底在忙什麼」，卻聽不到心中的迴響？",
+        "en": "Do you often ask yourself 'what am I busy for', but hear no echo in your heart?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "目標篤定",
+            "en": "Certain goal"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有疑惑",
+            "en": "Occasional doubt"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "寂靜無聲",
+            "en": "Dead silence"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "pd_val_1",
+      "text": {
+        "zh": "您是否頻繁更換跑道或興趣，卻始終找不到「定錨」的感覺？",
+        "en": "Do you frequently change paths or interests, yet never find the feeling of 'anchoring'?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "深耕積累",
+            "en": "Deep cultivation"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "多方嘗試",
+            "en": "Trying many things"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "漂泊無定",
+            "en": "Drifting endlessly"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "pd_val_2",
+      "text": {
+        "zh": "看著別人篤定前行，您是否會感到一種莫名的慌張與空虛？",
+        "en": "Watching others move forward with certainty, do you feel an inexplicable panic and emptiness?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "隨喜祝福",
+            "en": "Happy for them"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感迷惘",
+            "en": "Slight confusion"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "深刻空虛",
+            "en": "Deep emptiness"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "pd_react_1",
+      "text": {
+        "zh": "當需要做生涯決策時，您是否會傾向於拖延，期待命運替您做決定？",
+        "en": "When needing to make career decisions, do you tend to procrastinate, expecting fate to decide for you?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "果斷抉擇",
+            "en": "Decisive"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "猶豫不決",
+            "en": "Hesitant"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "交給天意",
+            "en": "Leave to fate"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "pd_react_2",
+      "text": {
+        "zh": "您是否會在半夜突然驚醒，感到自己正在無意義地漂流？",
+        "en": "Do you wake up suddenly in the middle of the night, feeling you're drifting meaninglessly?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "篤定踏實",
+            "en": "Firmly grounded"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有飄渺",
+            "en": "Occasionally adrift"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "徹底失落",
+            "en": "Completely lost"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "pd_res_1",
+      "text": {
+        "zh": "您是否還保留著某個「曾經熱愛的事物」的種子，可以重新點燃？",
+        "en": "Do you still keep a seed of 'something you once loved' that can be reignited?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "記憶全無",
+            "en": "No memory"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "隱約殘影",
+            "en": "Faint trace"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "種子尚存",
+            "en": "Seed remains"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

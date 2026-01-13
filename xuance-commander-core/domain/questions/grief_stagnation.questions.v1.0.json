@@ -1,0 +1,289 @@
+{
+  "facetId": "grief_stagnation",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "gs_core_1",
+      "text": {
+        "zh": "心中的那場雨，是否已經下了很久，且看不到放晴的跡象？",
+        "en": "Has the rain in your heart been falling for a long time, with no sign of clearing up?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "晴空萬里",
+            "en": "Clear skies"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "陰晴不定",
+            "en": "Intermittent clouds"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "連綿陰雨",
+            "en": "Unceasing rain"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "gs_core_2",
+      "text": {
+        "zh": "您是否感覺某個逝去的人或事，仍像沈重的石頭壓在心田，無法搬移？",
+        "en": "Do you feel that someone or something lost still sits like a heavy stone on your heart, impossible to move?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "輕舟已過",
+            "en": "Moved on"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "隱隱作痛",
+            "en": "Dull ache"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "重石壓心",
+            "en": "Heavy stone"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "gs_core_3",
+      "text": {
+        "zh": "對於那個失落的過往，您的時間感是否凍結了，彷彿仍停留在發生那天？",
+        "en": "Regarding that loss, does your sense of time feel frozen, as if you are still stuck on the day it happened?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "隨波流動",
+            "en": "Flowing with time"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾回溯",
+            "en": "Occasional flashbacks"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "時間凍結",
+            "en": "Time frozen"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "gs_val_1",
+      "text": {
+        "zh": "您是否感覺自己與周遭歡樂的世界隔著一層厚厚的霧玻璃？",
+        "en": "Do you feel separated from the joyful world around you by a thick pane of frosted glass?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "視野清晰",
+            "en": "Clear view"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "霧氣迷濛",
+            "en": "Misty"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "厚霧隔絕",
+            "en": "Thick fog barrier"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "gs_val_2",
+      "text": {
+        "zh": "提起那件往事時，您的表達是否會突然凝滯，言語無法流動？",
+        "en": "When mentioning that past event, does your expression suddenly stagnate, words unable to flow?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "侃侃而談",
+            "en": "Speak freely"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "語帶凝噎",
+            "en": "Choked up"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全失語",
+            "en": "Complete silence"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "gs_react_1",
+      "text": {
+        "zh": "當悲傷來襲，您是否會失去行動的動能，連最簡單的事務都難以開啟？",
+        "en": "When grief strikes, do you lose the momentum to act, finding it hard to start even the simplest tasks?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "行動自如",
+            "en": "Act freely"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感遲滯",
+            "en": "Slightly sluggish"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "完全停擺",
+            "en": "Complete standstill"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "gs_react_2",
+      "text": {
+        "zh": "您是否習慣在深夜獨自反芻那份失落，讓情緒淹沒意識？",
+        "en": "Do you habitually ruminate on that loss alone late at night, letting emotions submerge your consciousness?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "安然入睡",
+            "en": "Sleep peacefully"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾如此",
+            "en": "Occasionally"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "夜夜如此",
+            "en": "Every night"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "gs_res_1",
+      "text": {
+        "zh": "在陰雨的間隙，您是否能看見一絲陽光，感受到短暫的平靜？",
+        "en": "In the breaks between the rain, can you see a ray of sunlight and feel a brief moment of peace?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "漆黑一片",
+            "en": "Pitch black"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "微光閃爍",
+            "en": "Flickering light"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "陽光穿透",
+            "en": "Sunlight piercing through"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

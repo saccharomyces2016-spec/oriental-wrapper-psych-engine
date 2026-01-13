@@ -1,0 +1,289 @@
+{
+  "facetId": "impostor_syndrome",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "is_core_1",
+      "text": {
+        "zh": "您是否戴著一副不屬於您的面具，時刻擔心被人揭穿真面目？",
+        "en": "Do you wear a mask that doesn't belong to you, constantly worrying about being unmasked?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "表裡如一",
+            "en": "Inside out same"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾心虛",
+            "en": "Occasionally hollow"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "隨時露餡",
+            "en": "Any moment exposed"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "is_core_2",
+      "text": {
+        "zh": "對於自己的成就，您是否總覺得是「運氣好」或「騙來的」？",
+        "en": "Regarding your achievements, do you always feel it was 'luck' or 'scammed'?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "實至名歸",
+            "en": "Well deserved"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "運氣成分",
+            "en": "Some luck"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "全是僥倖",
+            "en": "All luck"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "is_core_3",
+      "text": {
+        "zh": "您是否活在一種彷彿「等待審判」的狀態裡，害怕有一天會跌落神壇？",
+        "en": "Do you live in a state as if 'awaiting judgment', afraid of falling from grace one day?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "踏實安穩",
+            "en": "Solid and safe"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有隱憂",
+            "en": "Slight worry"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "審判將至",
+            "en": "Judgment coming"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "is_val_1",
+      "text": {
+        "zh": "當別人稱讚您的能力時，您是否會在心裡默默說「如果你知道真相就不會這麼說了」？",
+        "en": "When others praise your ability, do you silently say 'if you knew the truth you wouldn't say that'?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "感謝肯定",
+            "en": "Thank you"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "有些尷尬",
+            "en": "A bit awkward"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "強烈否認",
+            "en": "Strong denial"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "is_val_2",
+      "text": {
+        "zh": "為了維持這個「虛假」的形象，您是否付出了不成比例的努力？",
+        "en": "To maintain this 'fake' image, do you put in disproportionate effort?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "自然發揮",
+            "en": "Natural effort"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "稍微用力",
+            "en": "Slightly forced"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "過度代償",
+            "en": "Overcompensating"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "is_react_1",
+      "text": {
+        "zh": "當面臨新的挑戰或評估時，您是否會因過度恐懼而傾向於逃避或過度準備？",
+        "en": "When facing new challenges or evaluations, do you tend to flee or over-prepare due to extreme fear?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "興奮期待",
+            "en": "Excited"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略微緊張",
+            "en": "Slightly nervous"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "驚恐逃避",
+            "en": "Terrified flight"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "is_react_2",
+      "text": {
+        "zh": "您是否經常感到虛脫，因為扮演「成功者」耗盡了您的元氣？",
+        "en": "Do you often feel collapsed because playing the 'winner' has drained your vitality?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "精力充沛",
+            "en": "Energetic"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶感疲乏",
+            "en": "Occasionally tired"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "元氣大傷",
+            "en": "Vitality drained"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "is_res_1",
+      "text": {
+        "zh": "您是否能夠相信，您所站的位置，是您一步一腳印走出來的？",
+        "en": "Can you believe that where you stand is where you walked step by step?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "難以置信",
+            "en": "Hard to believe"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "半信半疑",
+            "en": "Half believing"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "深信不疑",
+            "en": "Fully believe"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}

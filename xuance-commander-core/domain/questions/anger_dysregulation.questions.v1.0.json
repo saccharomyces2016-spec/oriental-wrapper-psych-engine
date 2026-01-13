@@ -1,0 +1,289 @@
+{
+  "facetId": "anger_dysregulation",
+  "version": "1.1",
+  "questionSet": "OCTET_8",
+  "questions": [
+    {
+      "question_id": "ad_core_1",
+      "text": {
+        "zh": "您的怒火是否如乾柴遇火，一點即燃，且難以撲滅？",
+        "en": "Does your anger ignite like dry kindling, easily sparked and difficult to extinguish?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "心如止水",
+            "en": "Calm as still water"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有波瀾",
+            "en": "Occasional ripples"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "烈焰狂飆",
+            "en": "Raging flames"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ad_core_2",
+      "text": {
+        "zh": "當情緒風暴來襲，您是否感覺理智的韁繩斷裂，無法駕馭心中的野獸？",
+        "en": "When the emotional storm hits, do you feel the reins of reason snap, unable to control the beast within?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "收放自如",
+            "en": "Full control"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "勉強拉住",
+            "en": "Barely holding on"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "徹底失控",
+            "en": "Complete loss of control"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ad_core_3",
+      "text": {
+        "zh": "激情過後，看著被燒焦的土地（關係或物品），您是否常感灰燼般的懊悔？",
+        "en": "After the passion subsides, looking at the scorched earth (relationships or objects), do you often feel ash-like regret?"
+      },
+      "type": "core_state",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "鮮少如此",
+            "en": "Rarely"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶爾嘆息",
+            "en": "Occasional sighs"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "悔不當初",
+            "en": "Deep regret"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.5
+      }
+    },
+    {
+      "question_id": "ad_val_1",
+      "text": {
+        "zh": "身邊的人與您相處時，是否如履薄冰，深怕驚擾了沈睡的火山？",
+        "en": "Do those around you walk on thin ice, afraid of waking the sleeping volcano?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "氣氛祥和",
+            "en": "Peaceful atmosphere"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "小心翼翼",
+            "en": "Cautious"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "戰戰兢兢",
+            "en": "Walking on eggshells"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ad_val_2",
+      "text": {
+        "zh": "您是否感覺內在有一股躁動的能量流，經常無處宣洩？",
+        "en": "Do you feel a restless energy flow within that often has nowhere to vent?"
+      },
+      "type": "validation",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "能量平穩",
+            "en": "Steady flow"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "偶有躁動",
+            "en": "Occasional restlessness"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "能量亂竄",
+            "en": "Chaotic energy"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.0,
+        "exclude_from_volatility": true
+      }
+    },
+    {
+      "question_id": "ad_react_1",
+      "text": {
+        "zh": "當事情不如意時，您是否傾向於直接衝撞或摧毀眼前的障礙？",
+        "en": "When things go wrong, do you tend to directly crash into or destroy the obstacle before you?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "冷靜繞行",
+            "en": "Calm detour"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "言語抱怨",
+            "en": "Verbal complaint"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "衝動破壞",
+            "en": "Impulsive destruction"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ad_react_2",
+      "text": {
+        "zh": "憤怒發生時，您是否感覺內在壓強急速升高，思緒空間受到強烈擠壓？",
+        "en": "When anger occurs, do you feel internal pressure rising rapidly, strongly compressing your mental space?"
+      },
+      "type": "reaction",
+      "options": [
+        {
+          "value": 0,
+          "label": {
+            "zh": "空間開闊",
+            "en": "Open space"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "略感壓迫",
+            "en": "Slight pressure"
+          }
+        },
+        {
+          "value": 4,
+          "label": {
+            "zh": "幾欲炸裂",
+            "en": "Ready to burst"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "higher_is_worse",
+        "weight": 1.2
+      }
+    },
+    {
+      "question_id": "ad_res_1",
+      "text": {
+        "zh": "您是否擁有某種「冷卻術」，能讓沸騰的心境迅速降溫？",
+        "en": "Do you possess a 'cooling technique' that can quickly lower the temperature of your boiling mind?"
+      },
+      "type": "resource",
+      "options": [
+        {
+          "value": 4,
+          "label": {
+            "zh": "無法調用",
+            "en": "Cannot access"
+          }
+        },
+        {
+          "value": 2,
+          "label": {
+            "zh": "時靈時不靈",
+            "en": "Inconsistent"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "zh": "隨時可用",
+            "en": "Readily available"
+          }
+        }
+      ],
+      "scoring": {
+        "direction": "lower_is_better",
+        "weight": 1.0
+      }
+    }
+  ]
+}
