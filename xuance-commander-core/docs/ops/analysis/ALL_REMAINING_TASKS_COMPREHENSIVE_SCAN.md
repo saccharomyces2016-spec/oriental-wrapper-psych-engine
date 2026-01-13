@@ -377,11 +377,241 @@
 
 ---
 
-### 需要進一步檢查的檔案
+### 已檢查的檔案詳細狀態
 
-1. ⚠️ `domain/facets/` - 需要列出所有 Legacy Facet
-2. ⚠️ Legacy 檔案位置 - 需要找到 Legacy 系統檔案
-3. ⚠️ `docs/adr/ADR_0005_vector_state_scoring_engine.md` - 需要更新
+#### Legacy Facet 檔案（9 個）
+
+| Facet | 檔案 | 模型 | 題數 | `exclude_from_volatility` | `domainKey` | `questionSet` | 狀態 |
+|-------|------|------|------|--------------------------|-------------|---------------|------|
+| `stress_recovery` | `stress_recovery.scoring.v1.0.json` | `weighted_sum` | 2 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移 + 擴充** |
+| `chronic_depletion` | `chronic_depletion.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `identity_diffusion` | `identity_diffusion.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `fear_based_stability` | `fear_based_stability.scoring.v1.0.json` | `weighted_sum` | 3 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移 + 擴充** |
+| `meaning_vacuum` | `meaning_vacuum.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `suppressed_needs` | `suppressed_needs.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `chronic_alertness` | `chronic_alertness.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `hyper_responsibility` | `hyper_responsibility.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+| `loss_of_agency` | `loss_of_agency.scoring.v1.0.json` | `weighted_sum` | 7 | ❌ 無 | ❌ 無 | ❌ 無 | ⚠️ **需遷移** |
+
+**發現**：
+- ✅ 所有 9 個 Facet 都使用 `weighted_sum` 模型
+- ⚠️ 所有 Facet 都缺少 `exclude_from_volatility` 標記
+- ⚠️ 所有 Facet 都缺少 `domainKey` 和 `questionSet`
+- ⚠️ 2 個 Facet 題數不足（需要擴充到 6-10 題）
+
+---
+
+#### Legacy 系統檔案搜尋結果
+
+**P0-12 階段二-4 需要的檔案**：
+1. `intervention_boundary_matrix` - 規則矩陣
+2. `guidancePrinciples` - 指導原則
+3. `buildGuidance.js` - 決策邏輯
+
+**搜尋結果**：
+- ❌ **未找到** `intervention_boundary_matrix` 相關檔案
+- ❌ **未找到** `guidancePrinciples` 相關檔案
+- ❌ **未找到** `buildGuidance.js` 檔案
+
+**可能位置**：
+- `docs/legacy/115_1_3_my-first-app_failed/` - Legacy 失敗版本資料夾（需要檢查）
+- `docs/research/legacy_analysis/` - Legacy 分析文件（已檢查，沒有具體檔案）
+- `docs/governance/LEGACY_REFERENCE_RULES.md` - Legacy 參考規則（已讀取，但沒有具體的檔案位置）
+
+**建議**：
+- 需要檢查 `docs/legacy/115_1_3_my-first-app_failed/` 資料夾
+- 如果找不到，需要標記為「無法定位，待後續處理」
+
+---
+
+#### ADR_0005 標準差模式檢查結果
+
+**檔案**：`docs/adr/ADR_0005_vector_state_scoring_engine.md`
+
+**發現**：
+- Section 1.3（2）提到「Volatility Index｜波動指數」
+- 公式：`StdDev(normalized_answers)`
+- ⚠️ **未明確寫入「sample stddev」作為 SSOT**
+
+**狀態**：⚠️ **需更新**
+
+**建議**：
+- 需要在 ADR_0005 中明確寫入「sample stddev」作為 SSOT
+- 或確認是否已在其他地方明確寫入
+
+---
+
+---
+
+## 📋 完整任務清單（按優先級排序）
+
+### HIGH PRIORITY（阻塞性問題）
+
+1. **Rigidity 預設值衝突解決**
+   - **狀態**：⚠️ **等待裁示**
+   - **問題**：`engine/score_facet.py` 使用 0.5，與所有裁示（0.0）衝突
+   - **檔案**：
+     - `engine/score_facet.py`（Line 52, 110：`default_when_missing = 0.5`）
+     - `docs/task_packets/advisor/REMAINING_TASKS_COMPLETE_PACKET.md`（裁示 0.0）
+     - `docs/task_packets/advisor/GEMINI_CONSTITUTION_QUESTIONS.md`（追問包）
+     - `docs/task_packets/advisor/GPT_CONSTITUTION_AUDIT_REPORT.md`（追問包）
+   - **行動**：需要確認最終裁示（0.0 vs 0.1 vs 0.50），然後更新所有檔案
+
+---
+
+### MEDIUM PRIORITY（功能擴充）
+
+2. **五行「洩」關係實作決策**
+   - **狀態**：⚠️ **等待裁示**
+   - **問題**：Gemini 方案提到「洩」路徑，但現有實作只有「剋」關係
+   - **檔案**：
+     - `engine/cascade_calculator.py`（只有「剋」關係）
+     - `docs/task_packets/advisor/GEMINI_CONSTITUTION_QUESTIONS.md`（追問包）
+   - **行動**：需要裁示是否採納「洩」關係
+
+3. **角色原型參數矩陣實作決策**
+   - **狀態**：⚠️ **等待裁示**
+   - **問題**：Gemini 方案提到角色參數矩陣，但尚未實作
+   - **檔案**：
+     - `docs/task_packets/advisor/GEMINI_CONSTITUTION_QUESTIONS.md`（追問包）
+   - **行動**：需要裁示是否採納角色參數矩陣
+
+4. **P0-12 階段二-4：規則與制度提取**
+   - **狀態**：⚠️ **進行中（受阻）**
+   - **問題**：無法定位 Legacy 檔案（`intervention_boundary_matrix`, `guidancePrinciples`, `buildGuidance.js`）
+   - **檔案**：
+     - `docs/task_packets/advisor/REMAINING_TASKS_COMPLETE_PACKET.md`（任務描述）
+     - `docs/governance/LEGACY_REFERENCE_RULES.md`（Legacy 參考規則，但沒有具體檔案位置）
+   - **行動**：
+     - 需要檢查 `docs/legacy/115_1_3_my-first-app_failed/` 資料夾
+     - 如果找不到，標記為「無法定位，待後續處理」
+
+5. **Legacy Facet 遷移（9 個）**
+   - **狀態**：⚠️ **未開始**
+   - **問題**：9 個 Facet 需要從 `weighted_sum` 遷移到 `vector_state_v3`
+   - **檔案**：
+     - `domain/facets/*.scoring.v1.0.json`（9 個檔案）
+   - **行動**：
+     - 更新 `scoring.model` 為 `"vector_state_v3"`
+     - 加入 `exclude_from_volatility` 標記
+     - 加入 `domainKey` 和 `questionSet`
+     - 2 個 Facet 需要擴充題目（`stress_recovery`: 2→8 題，`fear_based_stability`: 3→8 題）
+
+---
+
+### LOW PRIORITY（文件更新）
+
+6. **更新 CONSTITUTION 文件**
+   - **狀態**：✅ **部分完成**
+   - **問題**：需要整合 Gemini/GPT 方案的通過項目，解決衝突項目
+   - **檔案**：
+     - `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL_V4.md`
+   - **已完成**：
+     - ✅ Domain Schema i18n 結構（已整合）
+     - ✅ 8 題制政策（已更新）
+   - **待完成**：
+     - ⚠️ Rigidity 預設值衝突解決
+     - ⚠️ 五行「洩」關係決策
+     - ⚠️ 角色參數矩陣決策
+
+7. **更新 ADR_0005 標準差模式**
+   - **狀態**：⚠️ **待完成**
+   - **問題**：需要明確寫入「sample stddev」作為 SSOT
+   - **檔案**：
+     - `docs/adr/ADR_0005_vector_state_scoring_engine.md`
+   - **行動**：在 ADR_0005 中明確寫入「sample stddev」作為 SSOT
+
+8. **更新其他相關文件**
+   - **狀態**：⚠️ **待完成**
+   - **檔案**：
+     - `specs/engine/core/ENGINE_CORE_LOGIC_MASTER_V3.md`
+     - `specs/integration/ui_engine/FRONTEND_BACKEND_CALCULATION_ALIGNMENT.md`
+     - `docs/ops/TASK_RECORDS_SUMMARY.md`
+     - `docs/ops/TASK_STATUS.md`
+     - `memory/changes/CHANGELOG.md`
+     - `memory/briefs/CURRENT.md`
+
+---
+
+## 🔍 檔案狀態詳細檢查
+
+### 核心引擎檔案
+
+| 檔案 | 狀態 | 問題 |
+|------|------|------|
+| `engine/score_facet.py` | ⚠️ **需修正** | Line 52, 110：`default_when_missing = 0.5`，與裁示衝突 |
+| `engine/cascade_calculator.py` | ✅ **正常** | 已實作「剋」關係 |
+| `engine/root_element_mapper.py` | ✅ **正常** | 已實作 |
+| `engine/collision_calculator.py` | ✅ **正常** | 已實作 |
+
+---
+
+### Legacy Facet 檔案（9 個）
+
+| Facet | 檔案 | 模型 | 題數 | 狀態 |
+|-------|------|------|------|------|
+| `stress_recovery` | `stress_recovery.scoring.v1.0.json` | `weighted_sum` | 2 | ⚠️ **需遷移 + 擴充**（2 題 < 6 題） |
+| `chronic_depletion` | `chronic_depletion.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `identity_diffusion` | `identity_diffusion.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `fear_based_stability` | `fear_based_stability.scoring.v1.0.json` | `weighted_sum` | 3 | ⚠️ **需遷移 + 擴充**（3 題 < 6 題） |
+| `meaning_vacuum` | `meaning_vacuum.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `suppressed_needs` | `suppressed_needs.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `chronic_alertness` | `chronic_alertness.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `hyper_responsibility` | `hyper_responsibility.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+| `loss_of_agency` | `loss_of_agency.scoring.v1.0.json` | `weighted_sum` | 7 | ⚠️ **需遷移** |
+
+**發現**：
+- ✅ 所有 9 個 Facet 都使用 `weighted_sum` 模型（需要遷移到 `vector_state_v3`）
+- ⚠️ 所有 Facet 都缺少 `exclude_from_volatility` 標記
+- ⚠️ 所有 Facet 都缺少 `domainKey` 和 `questionSet`
+- ⚠️ 2 個 Facet 題數不足（需要擴充到 6-10 題）
+
+---
+
+### Legacy 系統檔案搜尋結果
+
+**P0-12 階段二-4 需要的檔案**：
+1. `intervention_boundary_matrix` - 規則矩陣
+2. `guidancePrinciples` - 指導原則
+3. `buildGuidance.js` - 決策邏輯
+
+**搜尋結果**：
+- ❌ **未找到** `intervention_boundary_matrix` 相關檔案
+- ❌ **未找到** `guidancePrinciples` 相關檔案
+- ❌ **未找到** `buildGuidance.js` 檔案
+
+**可能位置**：
+- `docs/legacy/115_1_3_my-first-app_failed/` - Legacy 失敗版本資料夾（需要檢查）
+- `docs/research/legacy_analysis/` - Legacy 分析文件（已檢查，沒有具體檔案）
+- `docs/governance/LEGACY_REFERENCE_RULES.md` - Legacy 參考規則（已讀取，但沒有具體的檔案位置）
+
+**建議**：
+- 需要檢查 `docs/legacy/115_1_3_my-first-app_failed/` 資料夾
+- 如果找不到，需要標記為「無法定位，待後續處理」
+
+---
+
+### 配置檔案
+
+| 檔案 | 狀態 | 問題 |
+|------|------|------|
+| `domain/domains/bagua.domain_map.v1.0.json` | ✅ **正常** | 已驗證 |
+| `domain/cascade/cascade_overrides.v1.0.json` | ✅ **正常** | 有覆寫模板 |
+| `domain/knowledge_base/wuxing_5_elements.v1.0.json` | ✅ **正常** | 有五行定義 |
+| `schemas/domain.schema.json` | ✅ **正常** | 已建立並驗證 |
+| `schemas/compiled_facet.schema.json` | ✅ **正常** | 包含 element 欄位 |
+
+---
+
+### 文件檔案
+
+| 檔案 | 狀態 | 問題 |
+|------|------|------|
+| `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL_V4.md` | ⚠️ **需更新** | 需要解決衝突項目 |
+| `docs/task_packets/advisor/GEMINI_CONSTITUTION_QUESTIONS.md` | ✅ **正常** | 追問包已建立 |
+| `docs/task_packets/advisor/GPT_CONSTITUTION_AUDIT_REPORT.md` | ✅ **正常** | 審核報告已建立 |
+| `docs/task_packets/advisor/REMAINING_TASKS_COMPLETE_PACKET.md` | ✅ **正常** | 任務包已建立 |
+| `docs/adr/ADR_0005_vector_state_scoring_engine.md` | ⚠️ **需更新** | 需要明確 sample stddev |
 
 ---
 
