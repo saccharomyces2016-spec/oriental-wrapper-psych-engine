@@ -615,6 +615,86 @@
 
 ---
 
+---
+
+## 📊 完整任務統計
+
+### 任務總數
+
+| 優先級 | 任務數量 | 狀態 |
+|--------|----------|------|
+| **HIGH** | 1 | 等待裁示 |
+| **MEDIUM** | 4 | 等待裁示/進行中 |
+| **LOW** | 3 | 部分完成/待完成 |
+| **總計** | **8** | - |
+
+### 檔案檢查總數
+
+| 類別 | 檔案數量 | 狀態 |
+|------|----------|------|
+| **核心引擎** | 4 | 1 個需修正 |
+| **Legacy Facet** | 9 | 全部需遷移 |
+| **配置檔案** | 5 | 全部正常 |
+| **文件檔案** | 5 | 2 個需更新 |
+| **總計** | **23** | - |
+
+---
+
+## 🎯 關鍵發現
+
+### 發現 1：Rigidity 預設值衝突（HIGH PRIORITY）
+
+**問題**：
+- `engine/score_facet.py` Line 52, 110：`default_when_missing = 0.5`
+- 與所有裁示衝突（任務包：0.0，DIRECTIVE REV.B：0.0）
+
+**影響**：
+- 計算結果可能不一致
+- 需要立即修正
+
+---
+
+### 發現 2：Legacy 系統檔案未找到
+
+**問題**：
+- P0-12 階段二-4 需要的檔案（`intervention_boundary_matrix`, `guidancePrinciples`, `buildGuidance.js`）未找到
+- Legacy 資料夾中沒有 `.js` 或相關 JSON 檔案
+
+**影響**：
+- P0-12 階段二-4 任務受阻
+- 需要確認 Legacy 檔案是否已刪除或移動
+
+**建議**：
+- 檢查 `docs/legacy/115_1_3_my-first-app_failed/import/` 資料夾
+- 如果找不到，標記為「無法定位，待後續處理」
+
+---
+
+### 發現 3：所有 Legacy Facet 需要遷移
+
+**問題**：
+- 9 個 Legacy Facet 都使用 `weighted_sum` 模型
+- 所有 Facet 都缺少 `exclude_from_volatility` 標記
+- 所有 Facet 都缺少 `domainKey` 和 `questionSet`
+- 2 個 Facet 題數不足（需要擴充）
+
+**影響**：
+- 無法使用新的 V3 功能（Volatility、Rigidity、Cascade）
+- 需要大量遷移工作
+
+---
+
+### 發現 4：ADR_0005 標準差模式未明確
+
+**問題**：
+- ADR_0005 提到「StdDev(normalized_answers)」，但未明確寫入「sample stddev」作為 SSOT
+
+**影響**：
+- 決策記錄不完整
+- 需要更新 ADR
+
+---
+
 **建立日期**：2026-01-13  
 **掃描者**：Cursor（總指揮）  
 **狀態**：完成全案掃描，等待裁示和行動
