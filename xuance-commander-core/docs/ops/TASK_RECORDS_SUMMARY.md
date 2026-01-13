@@ -84,6 +84,11 @@
 - ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_QUESTIONS.md`
 - ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3_PACKAGE_*.zip`（83KB，24 個文件）
 - ✅ **V3 實作已整合**：`engine/score_facet.py`、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`
+- ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md`（GPT V4 處理後版本）審核完成（V4）
+- ✅ 審核報告：`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_AUDIT.md`
+- ✅ 追問包：`docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_QUESTIONS.md`
+- ✅ 打包檔案：`tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_PACKAGE_*.zip`（待建立）
+- ✅ **V4 實作已整合**：`engine/score_facet.py`、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`、`schemas/domain_manifest.schema.json`、`schemas/compiled_facet.schema.json`、`domain/domains/bagua.domain_map.v1.0.json`、`domain/cascade/cascade_overrides.v1.0.json`
 
 ---
 

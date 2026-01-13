@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## 2026-01-13
+
+### ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4 審核（GPT V4 處理後版本）
+
+**狀態**：✅ 高度合格，已解決大部分追問問題，但存在關鍵不一致點需要裁示  
+**審核日期**：2026-01-13
+
+**審核結果**：
+- ✅ 合格部分（可直接整合）：八大領域覆蓋方案、題目設計聖典（已解決追問 1）、V3 運算引擎核心（已解決追問 2）、跨域擴散引擎（已解決追問 3，已提供完整實作）、使用者背景資料策略（已解決追問 4）、向後相容與遷移（已解決追問 5）、Domain Element 儲存結構（已解決追問 1.1，已提供完整實作）、Schema 更新（已更新 domainKey/questionSet/scoringModel）、V3 引擎實作（已提供完整實作和測試）、新 Facet 範例（已提供 burnout_syndrome 和 deep_depression）、i18n 範例（已提供中英文題目範例）、Volatility 標準差模式（已明確為 sample stddev，寫入 CONSTITUTION）
+- ⚠️ 需要裁示的關鍵不一致點：缺失 Priors 的 Rigidity 預設值不一致（CONSTITUTION Section 7.2：0.50，DIRECTIVE REV.B Section 1.2：0.0，engine/score_facet.py：0.5，GPT V4 的說法與 DIRECTIVE REV.B 的實際內容不一致）
+- ⚠️ 需要補強：Domain Schema 定義（需要建立 domain.schema.json）、ADR_0005 標準差模式更新（需要確認是否已更新）、世界級增強建議的實作細節（需要更詳細的規格）
+
+**關鍵交付物**：
+- ✅ `docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_AUDIT.md` - 審核報告
+- ✅ `docs/task_packets/advisor/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_QUESTIONS.md` - 追問包（4 個關鍵問題）
+- ✅ `tmp/ENGINE_CORE_OMNISCIENT_CONSTITUTION_V4_PACKAGE_*.zip` - 打包檔案（待建立）
+- ✅ **V4 實作已整合**：`engine/score_facet.py`、`engine/cascade_calculator.py`、`engine/narrative_guard.py`、`tests/test_v3_scoring.py`、`schemas/domain_manifest.schema.json`、`schemas/compiled_facet.schema.json`、`domain/domains/bagua.domain_map.v1.0.json`、`domain/cascade/cascade_overrides.v1.0.json`、`docs/ops/analysis/ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL_V4.md`
+
+**關鍵追問問題**（4 個）：
+1. ⭐⭐⭐ 缺失 Priors 的 Rigidity 預設值（應該是 0 還是 0.50？GPT V4 的說法與 DIRECTIVE REV.B 的實際內容不一致）
+2. ⭐⭐ Domain Schema 定義（是否需要建立完整的 Domain Schema？）
+3. ⭐⭐ ADR_0005 標準差模式更新（是否需要更新 ADR_0005？）
+4. ⭐⭐ 世界級增強建議的實作細節（是否需要建立詳細的實作規格？）
+
+**相關文件更新**：
+- `specs/engine/core/ENGINE_CORE_LOGIC_MASTER_V3.md` - 已更新（V3 實作狀態）
+- `specs/integration/ui_engine/FRONTEND_BACKEND_CALCULATION_ALIGNMENT.md` - 已更新實作狀態
+- `docs/ops/TASK_RECORDS_SUMMARY.md` - 更新任務記錄
+- `docs/ops/TASK_STATUS.md` - 更新任務狀態
+
+---
+
 ## 2026-01-12
 
 ### ENGINE_CORE_OMNISCIENT_CONSTITUTION_V3 審核（GPT V3 處理後版本）
