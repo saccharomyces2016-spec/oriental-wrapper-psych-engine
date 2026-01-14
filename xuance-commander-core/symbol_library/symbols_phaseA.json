@@ -1,0 +1,384 @@
+[
+  {
+    "symbol_id": "sym_kan_kun",
+    "character_zh": "困",
+    "character_en": "Trapped",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Water",
+      "bagua_affinity": ["Kan"],
+      "attribution": "mixed",
+      "energy_pattern": "stuck_downward"
+    },
+    "tension_sources": [
+      "external_constraint",
+      "resource_lack",
+      "path_blocked"
+    ],
+    "mood_resonance": "helpless_heavy",
+    "relation_implications": {
+      "官鬼": 0.7,
+      "妻財": 0.2,
+      "父母": 0.3
+    },
+    "candidate_facets": [
+      "chronic_depletion",
+      "loss_of_agency",
+      "avoidance_coping"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.8,
+      "high_stress": 0.7,
+      "internal_blame": 0.4,
+      "external_blame": 0.6
+    },
+    "narrative_hooks": {
+      "象意": "陷於困境，進退維谷",
+      "內勢": "感到無力改變",
+      "外勢": "外在環境制約",
+      "建議": "需先固本培元，不宜強行突破"
+    }
+  },
+  {
+    "symbol_id": "sym_kan_xian",
+    "character_zh": "陷",
+    "character_en": "Sink",
+    "vectors": {
+      "weight": 0.8,
+      "element": "Water",
+      "bagua_affinity": ["Kan"],
+      "attribution": "external",
+      "energy_pattern": "descending"
+    },
+    "tension_sources": [
+      "external_pressure",
+      "situation_overwhelm",
+      "depth_perception"
+    ],
+    "mood_resonance": "overwhelmed",
+    "relation_implications": {
+      "官鬼": 0.8,
+      "父母": 0.5,
+      "妻財": 0.3
+    },
+    "candidate_facets": [
+      "chronic_depletion",
+      "hyper_responsibility"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.9,
+      "high_stress": 0.8,
+      "external_blame": 0.7
+    },
+    "narrative_hooks": {
+      "象意": "陷入深淵，難以自拔",
+      "內勢": "內心恐慌",
+      "外勢": "環境壓迫",
+      "建議": "尋求支援，不宜獨自承擔"
+    }
+  },
+  {
+    "symbol_id": "sym_kan_ni",
+    "character_zh": "溺",
+    "character_en": "Drown",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Water",
+      "bagua_affinity": ["Kan"],
+      "attribution": "mixed",
+      "energy_pattern": "submerged"
+    },
+    "tension_sources": [
+      "emotional_overload",
+      "boundary_violation",
+      "absorption"
+    ],
+    "mood_resonance": "suffocated",
+    "relation_implications": {
+      "妻財": 0.7,
+      "官鬼": 0.4,
+      "兄弟": 0.3
+    },
+    "candidate_facets": [
+      "emotional_permeability",
+      "suppressed_needs"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.6,
+      "high_stress": 0.8,
+      "internal_blame": 0.5
+    },
+    "narrative_hooks": {
+      "象意": "沉溺其中，難以呼吸",
+      "內勢": "情感吸收過度",
+      "外勢": "關係邊界模糊",
+      "建議": "學習設限，保護自我"
+    }
+  },
+  {
+    "symbol_id": "sym_kan_dong",
+    "character_zh": "凍",
+    "character_en": "Frozen",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Water",
+      "bagua_affinity": ["Kan"],
+      "attribution": "internal",
+      "energy_pattern": "paralyzed"
+    },
+    "tension_sources": [
+      "fear_response",
+      "decision_paralysis",
+      "emotional_numbness"
+    ],
+    "mood_resonance": "numb_fearful",
+    "relation_implications": {
+      "官鬼": 0.6,
+      "父母": 0.4,
+      "兄弟": 0.2
+    },
+    "candidate_facets": [
+      "chronic_alertness",
+      "avoidance_coping"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.8,
+      "high_stress": 0.6,
+      "internal_blame": 0.7
+    },
+    "narrative_hooks": {
+      "象意": "冰凍僵硬，行動受限",
+      "內勢": "恐懼讓人停滯",
+      "外勢": "環境變化太快",
+      "建議": "溫暖自我，逐步解凍"
+    }
+  },
+  {
+    "symbol_id": "sym_kan_zhong",
+    "character_zh": "重",
+    "character_en": "Heavy",
+    "vectors": {
+      "weight": 0.6,
+      "element": "Water",
+      "bagua_affinity": ["Kan"],
+      "attribution": "mixed",
+      "energy_pattern": "burdened"
+    },
+    "tension_sources": [
+      "responsibility_load",
+      "emotional_weight",
+      "physical_tiredness"
+    ],
+    "mood_resonance": "exhausted",
+    "relation_implications": {
+      "父母": 0.5,
+      "官鬼": 0.4,
+      "妻財": 0.3
+    },
+    "candidate_facets": [
+      "chronic_depletion",
+      "hyper_responsibility"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.6,
+      "high_stress": 0.7,
+      "internal_blame": 0.5
+    },
+    "narrative_hooks": {
+      "象意": "負重前行，步伐沉重",
+      "內勢": "責任感太強",
+      "外勢": "壓力來源太多",
+      "建議": "學習放手，輕裝上陣"
+    }
+  },
+  {
+    "symbol_id": "sym_zhen_chong",
+    "character_zh": "衝",
+    "character_en": "Rush",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Wood",
+      "bagua_affinity": ["Zhen"],
+      "attribution": "internal",
+      "energy_pattern": "impulsive"
+    },
+    "tension_sources": [
+      "internal_drive",
+      "decision_haste",
+      "action_compulsion"
+    ],
+    "mood_resonance": "restless_urgent",
+    "relation_implications": {
+      "官鬼": 0.6,
+      "兄弟": 0.4,
+      "子孫": 0.3
+    },
+    "candidate_facets": [
+      "hyper_responsibility",
+      "anger_dysregulation"
+    ],
+    "confidence_traits": {
+      "high_agency": 0.6,
+      "high_stress": 0.8,
+      "internal_blame": 0.7
+    },
+    "narrative_hooks": {
+      "象意": "衝動行動，雷聲大雨點小",
+      "內勢": "內心驅動力強",
+      "外勢": "時間壓力大",
+      "建議": "冷靜思考，謀定而後動"
+    }
+  },
+  {
+    "symbol_id": "sym_zhen_jing",
+    "character_zh": "驚",
+    "character_en": "Startled",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Wood",
+      "bagua_affinity": ["Zhen"],
+      "attribution": "external",
+      "energy_pattern": "reactive"
+    },
+    "tension_sources": [
+      "sudden_events",
+      "unexpected_changes",
+      "threat_perception"
+    ],
+    "mood_resonance": "alarmed",
+    "relation_implications": {
+      "官鬼": 0.7,
+      "父母": 0.4,
+      "兄弟": 0.3
+    },
+    "candidate_facets": [
+      "chronic_alertness",
+      "avoidance_coping"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.8,
+      "high_stress": 0.9,
+      "external_blame": 0.8
+    },
+    "narrative_hooks": {
+      "象意": "突如其來，驚心動魄",
+      "內勢": "神經緊繃",
+      "外勢": "環境變化劇烈",
+      "建議": "建立安全感，穩定情緒"
+    }
+  },
+  {
+    "symbol_id": "sym_zhen_zao",
+    "character_zh": "躁",
+    "character_en": "Restless",
+    "vectors": {
+      "weight": 0.6,
+      "element": "Wood",
+      "bagua_affinity": ["Zhen"],
+      "attribution": "internal",
+      "energy_pattern": "unsettled"
+    },
+    "tension_sources": [
+      "internal_tension",
+      "patience_lack",
+      "energy_overflow"
+    ],
+    "mood_resonance": "irritable",
+    "relation_implications": {
+      "兄弟": 0.5,
+      "官鬼": 0.4,
+      "子孫": 0.3
+    },
+    "candidate_facets": [
+      "anger_dysregulation",
+      "hyper_responsibility"
+    ],
+    "confidence_traits": {
+      "high_agency": 0.7,
+      "high_stress": 0.6,
+      "internal_blame": 0.6
+    },
+    "narrative_hooks": {
+      "象意": "躁動不安，如坐針氈",
+      "內勢": "能量無法安放",
+      "外勢": "環境太安靜",
+      "建議": "找到出口，釋放能量"
+    }
+  },
+  {
+    "symbol_id": "sym_zhen_bao",
+    "character_zh": "爆",
+    "character_en": "Explode",
+    "vectors": {
+      "weight": 0.8,
+      "element": "Wood",
+      "bagua_affinity": ["Zhen"],
+      "attribution": "internal",
+      "energy_pattern": "overflow"
+    },
+    "tension_sources": [
+      "accumulation_pressure",
+      "suppressed_emotion",
+      "breaking_point"
+    ],
+    "mood_resonance": "explosive",
+    "relation_implications": {
+      "官鬼": 0.6,
+      "兄弟": 0.5,
+      "父母": 0.4
+    },
+    "candidate_facets": [
+      "anger_dysregulation",
+      "resentment_buildup"
+    ],
+    "confidence_traits": {
+      "high_agency": 0.8,
+      "high_stress": 0.9,
+      "internal_blame": 0.7
+    },
+    "narrative_hooks": {
+      "象意": "積壓已久，一觸即發",
+      "內勢": "情緒累積過多",
+      "外勢": "最後一根稻草",
+      "建議": "及早疏通，避免爆發"
+    }
+  },
+  {
+    "symbol_id": "sym_zhen_san",
+    "character_zh": "散",
+    "character_en": "Scatter",
+    "vectors": {
+      "weight": 0.6,
+      "element": "Wood",
+      "bagua_affinity": ["Zhen"],
+      "attribution": "mixed",
+      "energy_pattern": "dispersed"
+    },
+    "tension_sources": [
+      "focus_loss",
+      "direction_unclear",
+      "energy_dispersion"
+    ],
+    "mood_resonance": "distracted",
+    "relation_implications": {
+      "子孫": 0.4,
+      "兄弟": 0.3,
+      "父母": 0.2
+    },
+    "candidate_facets": [
+      "identity_diffusion",
+      "creative_blockage"
+    ],
+    "confidence_traits": {
+      "low_agency": 0.6,
+      "high_stress": 0.5,
+      "internal_blame": 0.4
+    },
+    "narrative_hooks": {
+      "象意": "四散而去，難以凝聚",
+      "內勢": "注意力不集中",
+      "外勢": "干擾太多",
+      "建議": "聚焦目標，一心一意"
+    }
+  }
+]

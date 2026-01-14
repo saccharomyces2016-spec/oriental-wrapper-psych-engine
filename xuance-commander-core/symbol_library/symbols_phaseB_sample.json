@@ -1,0 +1,352 @@
+[
+  {
+    "symbol_id": "state_kun_nei",
+    "compound_zh": "困內",
+    "compound_en": "Trapped_Inward",
+    "primary_symbol": "困",
+    "secondary_symbol": "內",
+    "vectors": {
+      "severity": 0.75,
+      "attribution": "internal",
+      "agency": 0.4,
+      "mood": "helpless_guilty",
+      "energy_pattern": "stuck_self_blame"
+    },
+    "tension_profile": {
+      "self_judgment": 0.8,
+      "external_constraint": 0.6,
+      "boundary_issues": 0.5
+    },
+    "relation_dynamics": {
+      "官鬼": 0.7,
+      "父母": 0.5,
+      "妻財": 0.3
+    },
+    "facet_alignment": {
+      "chronic_depletion": 0.8,
+      "shame_spiral": 0.7,
+      "loss_of_agency": 0.6
+    },
+    "narrative_template": {
+      "象意": "困於困境，又責怪自己",
+      "內勢": "內心自責，無法解脫",
+      "外勢": "環境制約，進退維谷",
+      "轉機": "接納自我，尋求支援"
+    }
+  },
+  {
+    "symbol_id": "state_yan_ya",
+    "compound_zh": "嚴壓",
+    "compound_en": "Strict_Pressure",
+    "primary_symbol": "嚴",
+    "secondary_symbol": "壓",
+    "vectors": {
+      "severity": 0.80,
+      "attribution": "external",
+      "agency": 0.5,
+      "mood": "overwhelmed_stressed",
+      "energy_pattern": "burdened_compliant"
+    },
+    "tension_profile": {
+      "authority_pressure": 0.9,
+      "self_expectation": 0.7,
+      "resource_burden": 0.6
+    },
+    "relation_dynamics": {
+      "父母": 0.8,
+      "官鬼": 0.6,
+      "妻財": 0.4
+    },
+    "facet_alignment": {
+      "perfectionism_paralysis": 0.8,
+      "hyper_responsibility": 0.7,
+      "chronic_depletion": 0.6
+    },
+    "narrative_template": {
+      "象意": "嚴格要求帶來巨大壓力",
+      "內勢": "自我要求過高",
+      "外勢": "外界期望嚴苛",
+      "轉機": "調整標準，適度放鬆"
+    }
+  },
+  {
+    "symbol_id": "state_lei_tao",
+    "compound_zh": "累逃",
+    "compound_en": "Tired_Escape",
+    "primary_symbol": "累",
+    "secondary_symbol": "逃",
+    "vectors": {
+      "severity": 0.70,
+      "attribution": "mixed",
+      "agency": 0.6,
+      "mood": "exhausted_resigned",
+      "energy_pattern": "withdrawal_tired"
+    },
+    "tension_profile": {
+      "energy_depletion": 0.8,
+      "avoidance_tendency": 0.7,
+      "sustainability_concern": 0.5
+    },
+    "relation_dynamics": {
+      "官鬼": 0.6,
+      "父母": 0.4,
+      "兄弟": 0.3
+    },
+    "facet_alignment": {
+      "chronic_depletion": 0.9,
+      "avoidance_coping": 0.7,
+      "loss_of_agency": 0.5
+    },
+    "narrative_template": {
+      "象意": "累到想逃避一切",
+      "內勢": "精力耗盡，意志消沉",
+      "外勢": "壓力持續，難以承受",
+      "轉機": "適度休息，重新充能"
+    }
+  },
+  {
+    "symbol_id": "state_ju_ze",
+    "compound_zh": "懼責",
+    "compound_en": "Fear_Blame",
+    "primary_symbol": "懼",
+    "secondary_symbol": "責",
+    "vectors": {
+      "severity": 0.75,
+      "attribution": "external",
+      "agency": 0.4,
+      "mood": "fearful_accusatory",
+      "energy_pattern": "defensive_accusative"
+    },
+    "tension_profile": {
+      "threat_perception": 0.8,
+      "blame_projection": 0.7,
+      "vulnerability_exposure": 0.6
+    },
+    "relation_dynamics": {
+      "官鬼": 0.7,
+      "父母": 0.5,
+      "兄弟": 0.4
+    },
+    "facet_alignment": {
+      "chronic_alertness": 0.8,
+      "resentment_buildup": 0.6,
+      "avoidance_coping": 0.5
+    },
+    "narrative_template": {
+      "象意": "恐懼中帶著責備",
+      "內勢": "神經緊繃，心生怨懟",
+      "外勢": "感受到威脅與不公",
+      "轉機": "面對恐懼，化解怨氣"
+    }
+  },
+  {
+    "symbol_id": "state_kong_zui",
+    "compound_zh": "空罪",
+    "compound_en": "Empty_Guilty",
+    "primary_symbol": "空",
+    "secondary_symbol": "罪",
+    "vectors": {
+      "severity": 0.70,
+      "attribution": "internal",
+      "agency": 0.5,
+      "mood": "void_remorseful",
+      "energy_pattern": "hollow_guilty"
+    },
+    "tension_profile": {
+      "meaning_loss": 0.8,
+      "self_reproach": 0.7,
+      "contribution_doubt": 0.6
+    },
+    "relation_dynamics": {
+      "父母": 0.6,
+      "子孫": 0.4,
+      "官鬼": 0.3
+    },
+    "facet_alignment": {
+      "meaning_vacuum": 0.8,
+      "guilt_accumulation": 0.7,
+      "purpose_drift": 0.5
+    },
+    "narrative_template": {
+      "象意": "空虛中感到罪惡",
+      "內勢": "缺乏意義，自責不已",
+      "外勢": "貢獻不足，價值感低",
+      "轉機": "探索新意義，釋放罪感"
+    }
+  },
+  {
+    "symbol_id": "state_leng_yi",
+    "compound_zh": "冷依",
+    "compound_en": "Cold_Dependent",
+    "primary_symbol": "冷",
+    "secondary_symbol": "依",
+    "vectors": {
+      "severity": 0.65,
+      "attribution": "mixed",
+      "agency": 0.5,
+      "mood": "distant_needy",
+      "energy_pattern": "withdrawal_attachment"
+    },
+    "tension_profile": {
+      "emotional_distance": 0.7,
+      "dependency_conflict": 0.6,
+      "vulnerability_fear": 0.5
+    },
+    "relation_dynamics": {
+      "妻財": 0.7,
+      "父母": 0.5,
+      "兄弟": 0.3
+    },
+    "facet_alignment": {
+      "attachment_rupture": 0.8,
+      "suppressed_needs": 0.6,
+      "void_drifting": 0.5
+    },
+    "narrative_template": {
+      "象意": "表面冷淡，內心依賴",
+      "內勢": "怕受傷，築起高牆",
+      "外勢": "關係疏離，缺乏溫暖",
+      "轉機": "學習信任，重建連結"
+    }
+  },
+  {
+    "symbol_id": "state_nu_hen",
+    "compound_zh": "怒恨",
+    "compound_en": "Angry_Hateful",
+    "primary_symbol": "怒",
+    "secondary_symbol": "恨",
+    "vectors": {
+      "severity": 0.85,
+      "attribution": "external",
+      "agency": 0.7,
+      "mood": "furious_bitter",
+      "energy_pattern": "heated_resentful"
+    },
+    "tension_profile": {
+      "injustice_perception": 0.9,
+      "resentment_buildup": 0.8,
+      "revenge_fantasy": 0.6
+    },
+    "relation_dynamics": {
+      "官鬼": 0.7,
+      "兄弟": 0.6,
+      "父母": 0.4
+    },
+    "facet_alignment": {
+      "anger_dysregulation": 0.9,
+      "resentment_buildup": 0.8,
+      "betrayal_wound": 0.6
+    },
+    "narrative_template": {
+      "象意": "憤怒中充滿怨恨",
+      "內勢": "怒火中燒，難以平息",
+      "外勢": "感受到極大不公",
+      "轉機": "轉化憤怒，釋放怨恨"
+    }
+  },
+  {
+    "symbol_id": "state_bei_qi",
+    "compound_zh": "悲棄",
+    "compound_en": "Sad_Abandoned",
+    "primary_symbol": "悲",
+    "secondary_symbol": "棄",
+    "vectors": {
+      "severity": 0.80,
+      "attribution": "external",
+      "agency": 0.4,
+      "mood": "grieving_rejected",
+      "energy_pattern": "heavy_abandoned"
+    },
+    "tension_profile": {
+      "loss_pain": 0.9,
+      "abandonment_fear": 0.8,
+      "trust_betrayal": 0.7
+    },
+    "relation_dynamics": {
+      "妻財": 0.8,
+      "父母": 0.5,
+      "兄弟": 0.3
+    },
+    "facet_alignment": {
+      "grief_stagnation": 0.9,
+      "attachment_rupture": 0.7,
+      "betrayal_wound": 0.6
+    },
+    "narrative_template": {
+      "象意": "悲傷中感到被拋棄",
+      "內勢": "喪失重要連結",
+      "外勢": "信任被背叛",
+      "轉機": "處理悲傷，重建信任"
+    }
+  },
+  {
+    "symbol_id": "state_wei_cheng",
+    "compound_zh": "偽撐",
+    "compound_en": "Fake_Endure",
+    "primary_symbol": "偽",
+    "secondary_symbol": "撐",
+    "vectors": {
+      "severity": 0.75,
+      "attribution": "internal",
+      "agency": 0.6,
+      "mood": "uneasy_pretending",
+      "energy_pattern": "masked_sustaining"
+    },
+    "tension_profile": {
+      "authenticity_cost": 0.8,
+      "endurance_limit": 0.7,
+      "exposure_risk": 0.6
+    },
+    "relation_dynamics": {
+      "父母": 0.6,
+      "官鬼": 0.5,
+      "兄弟": 0.4
+    },
+    "facet_alignment": {
+      "impostor_syndrome": 0.8,
+      "hyper_responsibility": 0.7,
+      "identity_diffusion": 0.5
+    },
+    "narrative_template": {
+      "象意": "偽裝堅強，勉強撐持",
+      "內勢": "不夠真實，消耗精力",
+      "外勢": "社會期望高",
+      "轉機": "放下面具，真實面對"
+    }
+  },
+  {
+    "symbol_id": "state_luan_san",
+    "compound_zh": "亂散",
+    "compound_en": "Chaos_Scatter",
+    "primary_symbol": "亂",
+    "secondary_symbol": "散",
+    "vectors": {
+      "severity": 0.65,
+      "attribution": "mixed",
+      "agency": 0.5,
+      "mood": "confused_dispersed",
+      "energy_pattern": "disordered_scattered"
+    },
+    "tension_profile": {
+      "order_loss": 0.7,
+      "focus_fragmentation": 0.6,
+      "direction_uncertainty": 0.5
+    },
+    "relation_dynamics": {
+      "兄弟": 0.5,
+      "子孫": 0.4,
+      "父母": 0.3
+    },
+    "facet_alignment": {
+      "identity_diffusion": 0.8,
+      "creative_blockage": 0.6,
+      "void_drifting": 0.5
+    },
+    "narrative_template": {
+      "象意": "混亂中四散而去",
+      "內勢": "思緒雜亂，難以集中",
+      "外勢": "干擾太多，無法專注",
+      "轉機": "建立秩序，找回方向"
+    }
+  }
+]
