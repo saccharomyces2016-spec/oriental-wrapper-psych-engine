@@ -7,7 +7,7 @@
 - 定期（每週）整理，移除過期資訊
 - 引用各任務資料夾中的詳細報告，不重複內容
 
-**最後更新**：2026-01-12
+**最後更新**：2026-01-15
 
 ---
 
@@ -39,6 +39,25 @@
 
 ### 下一步
 根據 DIRECTIVE REV.C+ 更新相關文件（Schema、Question Design Guidelines、ENGINE_CORE_LOGIC_MASTER_V3）。
+
+---
+
+## ⚠️ 2026-01-15 任務重置（Rebaseline）
+
+**決策**：封閉所有未完成任務，改由單一主線整合任務統一承接。  
+**新任務**：`SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001`  
+**任務包**：`docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md`  
+**掃描報告**：`docs/ops/analysis/ENGINE_SURFACE_CORE_INTEGRATION_SCAN_2026-01-15.md`
+
+**封閉/取代的任務（摘要）**：
+- ENGINE_CORE_FINAL_INTEGRATION_EXECUTION
+- P0-12 科學運算引擎完善
+- P1-1 使用者監測環境技術設計
+- P0-8 UI 介面改善
+- P0-9 特效動畫設計與實作
+- P0-10 題庫完善
+- P0-13 結果呈現頁面設計
+- P0-14 AI 整合設計
 
 ---
 
@@ -82,16 +101,39 @@
 
 ## 二、進行中的任務
 
+### 2.0 SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE：表層×底層整合主線
+
+**狀態**：🔄 **進行中**  
+**開始日期**：2026-01-15  
+**任務編號**：SURFACE-CORE-INTEGRATION-REBASELINE-001
+
+**任務目標**：
+完成八卦/六十四卦表層與底層引擎的統一整合，補齊資料缺口，建立可執行的端到端輸出。
+
+**核心文件**：
+- `docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md`
+- `docs/ops/analysis/ENGINE_SURFACE_CORE_INTEGRATION_SCAN_2026-01-15.md`
+- `docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_PLAN.md`
+- `docs/ops/analysis/SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_LOG_2026-01-15.md`
+
+**下一步行動**：
+1. 補齊表層詞彙 SSOT（八卦 + 64 卦內圈/中圈/外圈）
+2. 完成八卦領域 → Facet 對應
+3. 建立 64 卦映射規則與引擎接入
+
 ### 2.1 ENGINE_CORE_FINAL_INTEGRATION_EXECUTION：底層引擎最終整合執行
 
-**狀態**：🔄 **進行中（準備階段）**  
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**  
 **開始日期**：2026-01-12  
+**封閉日期**：2026-01-15  
 **任務編號**：ENGINE-CORE-FINAL-INTEGRATION-EXECUTION-001
 
 **任務目標**：
 基於最終整合任務包，與顧問團隊進行最終整合討論，執行 7 個主要任務，達成「全人類、全年齡、全困擾、全解決策略、全連鎖反應」的終極目標。
 
-**當前進度**：
+**替代任務**：`SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001`
+
+**當前進度**（封閉前紀錄）：
 - ✅ 任務包已建立並打包完成
 - ✅ 8 個核心問題已整理完成
 - ✅ `ENGINE_CORE_OMNISCIENT_CONSTITUTION_FINAL.md`（GPT V3 處理後版本）審核完成並整合
@@ -151,7 +193,7 @@
 
 ### 2.2 P0-12：科學運算引擎完善
 
-**狀態**：🔄 **進行中（80% 完成）**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 整合所有資料中有關於現代科學（心理學、人類學、社會學等）的背景資料、學科資料、題型設計、分數計算、結果呈現。
@@ -221,7 +263,7 @@
 
 ### 4.1 P1-1（更新）：使用者監測環境技術設計
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 設計使用者監測環境技術系統
@@ -240,7 +282,7 @@
 
 ### 4.2 P0-8：UI 介面改善
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 改善 UI 介面設計
@@ -256,7 +298,7 @@
 
 ### 4.3 P0-9：特效動畫設計與實作
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 設計特效動畫來增添風格情境氛圍
@@ -272,7 +314,7 @@
 
 ### 4.4 P0-10：題庫完善
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 完善題庫內容
@@ -288,7 +330,7 @@
 
 ### 4.5 P0-13：結果呈現頁面設計
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 決定最後的使用者呈現頁面要呈現哪些資訊
@@ -304,7 +346,7 @@
 
 ### 4.6 P0-14：AI 整合設計
 
-**狀態**：⏳ **PENDING**
+**狀態**：⏹️ **CLOSED（Superseded by SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001）**
 
 **任務目標**：
 - 設計如何連接 AI 呈現資訊
@@ -322,32 +364,14 @@
 
 ### 5.1 立即優先任務（P0 優先級）
 
-**建議任務 1**：**完成 P0-12 階段二-4**
-- **理由**：完成科學運算引擎的最後階段
-- **優先級**：P0（完成當前進行中的任務）
-- **狀態**：進行中（80% 完成）
-
-**建議任務 2**：**P1-1 使用者監測環境技術設計**
-- **理由**：Phase 0 已完成，需要開始使用者驗證階段
-- **優先級**：P0（立即處理，阻斷主線）
-- **狀態**：PENDING（任務包已建立）
+**建議任務 1**：**SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001**
+- **理由**：完成表層八卦/六十四卦與底層引擎的全案整合與缺口補齊
+- **優先級**：P0（新主線）
+- **狀態**：進行中
 
 ### 5.2 後續優先任務
 
-**建議任務 3**：**P0-8 UI 介面改善**
-- **理由**：用戶反饋介面需要改善
-- **優先級**：P0（第一優先）
-- **狀態**：PENDING（任務包待建立）
-
-**建議任務 4**：**P0-9 特效動畫設計與實作**
-- **理由**：提升使用者體驗
-- **優先級**：P0（第一優先）
-- **狀態**：PENDING（任務包待建立）
-
-**建議任務 5**：**P0-10 題庫完善**
-- **理由**：確保題庫完整性
-- **優先級**：P0（第一優先）
-- **狀態**：PENDING（任務包待建立）
+本輪已將所有未完成任務封閉並統一納入主線整合任務；暫無獨立後續優先任務。
 
 ---
 

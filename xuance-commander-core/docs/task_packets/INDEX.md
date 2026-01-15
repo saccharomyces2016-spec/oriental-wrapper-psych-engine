@@ -1,13 +1,24 @@
 # 任務包索引（Task Packets Index）
 
 **建立日期**：2026-01-10  
-**最後更新**：2026-01-10
+**最後更新**：2026-01-15
 
 ---
 
 ## 📋 索引說明
 
 本索引列出所有任務包的位置和類型，方便快速查找。
+
+---
+
+## 🧭 主線總任務（Master Task Packets）
+
+**位置**：`docs/task_packets/`
+
+| 任務包文件 | 任務 | 狀態 | 建立日期 |
+|-----------|------|------|---------|
+| `SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md` | 表層×底層整合主線重置 | ACTIVE | 2026-01-15 |
+| `SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_PLAN.md` | 表層×底層整合執行計劃 | ACTIVE | 2026-01-15 |
 
 ---
 
