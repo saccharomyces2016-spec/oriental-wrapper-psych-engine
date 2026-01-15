@@ -13,6 +13,13 @@
 <!-- XUANCE_RESEARCH_LEGACY_SEPARATION_POINTER_END -->
 
 
+## 任務重置（2026-01-15）
+- 已封閉所有未完成任務，改以單一主線任務承接整合工作。
+- 新主線：SURFACE_CORE_ENGINE_INTEGRATION_REBASELINE_001
+- 任務包：docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md
+- 掃描報告：docs/ops/analysis/ENGINE_SURFACE_CORE_INTEGRATION_SCAN_2026-01-15.md
+
+
 ## P0-2｜Facet 設計語境已確認
 - 題型與結果統一採用東方玄學體系（五行／陰陽／八卦等）
 - 題目、分數、敘事在封板前皆可回調
@@ -28,6 +35,8 @@
 
 
 目標：MVP（最小可行產品）採用「核心引擎穩定、內容外置化、schema 版本化」架構，降低後期衝突。
+
+**注意**：以下舊任務狀態已被「任務重置（2026-01-15）」取代，不再作為主進度依據。
 
 已完成：
 - 初始化資料夾結構與玄策指揮官角色規範
@@ -1656,4 +1665,3 @@ Process Update:
 - Practice: accept-first (DRAFT), debate-later, phase-separated.
 - Status: ACTIVE / NON-BINDING (subject to refinement).
 <!-- ANTI_DRIFT_WORKFLOW_POINTER_END -->
-
