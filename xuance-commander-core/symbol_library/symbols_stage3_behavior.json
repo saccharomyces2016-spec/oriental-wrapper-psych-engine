@@ -1,0 +1,178 @@
+[
+  {
+    "symbol_id": "behavior_attack",
+    "character_zh": "戰",
+    "character_en": "Battle",
+    "stage": "behavior_strategy",
+    "category": "confrontation",
+    "vectors": {
+      "cost_factor": 5,
+      "time_sensitivity": "fast",
+      "action_type": "offensive",
+      "agency_required": 0.8,
+      "risk_level": "high"
+    },
+    "tension_sources": ["active_confrontation"],
+    "mood_resonance": "determined_combative",
+    "candidate_facets": ["hyper_responsibility"],
+    "narrative_hooks": {
+      "象意": "奮力對抗，決一死戰",
+      "行為": "已投入資源，全力以赴",
+      "建議": "若能量充足，可望成功"
+    }
+  },
+  {
+    "symbol_id": "behavior_retreat",
+    "character_zh": "避",
+    "character_en": "Retreat",
+    "stage": "behavior_strategy",
+    "category": "avoidance",
+    "vectors": {
+      "cost_factor": 1,
+      "time_sensitivity": "fast",
+      "action_type": "defensive",
+      "agency_required": 0.3,
+      "risk_level": "low"
+    },
+    "tension_sources": ["strategic_withdrawal"],
+    "mood_resonance": "cautious_prudent",
+    "candidate_facets": ["fear_based_stability"],
+    "narrative_hooks": {
+      "象意": "暫時撤退，避其鋒芒",
+      "行為": "已選擇止損，保存實力",
+      "建議": "適時迴避，等待良機"
+    }
+  },
+  {
+    "symbol_id": "behavior_endure",
+    "character_zh": "忍",
+    "character_en": "Endure",
+    "stage": "behavior_strategy",
+    "category": "sustain",
+    "vectors": {
+      "cost_factor": 4,
+      "time_sensitivity": "slow",
+      "action_type": "passive",
+      "agency_required": 0.5,
+      "risk_level": "medium"
+    },
+    "tension_sources": ["emotional_suppression", "chronic_tolerance"],
+    "mood_resonance": "resigned_patient",
+    "candidate_facets": ["suppressed_needs", "apathy_stagnation"],
+    "narrative_hooks": {
+      "象意": "默默承受，忍耐負荷",
+      "行為": "持續忍耐，內耗嚴重",
+      "建議": "長期而言，恐有隱憂"
+    }
+  },
+  {
+    "symbol_id": "behavior_plan",
+    "character_zh": "謀",
+    "character_en": "Strategize",
+    "stage": "behavior_strategy",
+    "category": "planning",
+    "vectors": {
+      "cost_factor": 2,
+      "time_sensitivity": "slow",
+      "action_type": "analytical",
+      "agency_required": 0.6,
+      "risk_level": "low"
+    },
+    "tension_sources": ["analysis_paralysis"],
+    "mood_resonance": "thoughtful_contemplative",
+    "candidate_facets": ["perfectionism_paralysis"],
+    "narrative_hooks": {
+      "象意": "深思熟慮，謀定而後動",
+      "行為": "尚在規劃，尚未行動",
+      "建議": "宜加快節奏，把握時機"
+    }
+  },
+  {
+    "symbol_id": "behavior_collaborate",
+    "character_zh": "合",
+    "character_en": "Collaborate",
+    "stage": "behavior_strategy",
+    "category": "relational",
+    "vectors": {
+      "cost_factor": 2,
+      "time_sensitivity": "medium",
+      "action_type": "cooperative",
+      "agency_required": 0.7,
+      "risk_level": "medium"
+    },
+    "tension_sources": ["relational_investment"],
+    "mood_resonance": "connected_supported",
+    "candidate_facets": ["trust_erosion"],
+    "narrative_hooks": {
+      "象意": "尋求合作，共渡難關",
+      "行為": "已找人幫忙，引入資源",
+      "建議": "團隊力量，事半功倍"
+    }
+  },
+  {
+    "symbol_id": "behavior_cut",
+    "character_zh": "斷",
+    "character_en": "Sever",
+    "stage": "behavior_strategy",
+    "category": "decisive",
+    "vectors": {
+      "cost_factor": 3,
+      "time_sensitivity": "fast",
+      "action_type": "terminal",
+      "agency_required": 0.8,
+      "risk_level": "high"
+    },
+    "tension_sources": ["radical_change"],
+    "mood_resonance": "liberated_decisive",
+    "candidate_facets": ["attachment_rupture"],
+    "narrative_hooks": {
+      "象意": "斷然切割，另起爐灶",
+      "行為": "已做出決定，快速執行",
+      "建議": "若下定決心，可獲新生"
+    }
+  },
+  {
+    "symbol_id": "behavior_drift",
+    "character_zh": "隨",
+    "character_en": "Drift",
+    "stage": "behavior_strategy",
+    "category": "passive",
+    "vectors": {
+      "cost_factor": 0,
+      "time_sensitivity": "slow",
+      "action_type": "laissez_faire",
+      "agency_required": 0.2,
+      "risk_level": "low"
+    },
+    "tension_sources": ["learned_helplessness"],
+    "mood_resonance": "detached_passive",
+    "candidate_facets": ["void_drifting", "meaning_vacuum"],
+    "narrative_hooks": {
+      "象意": "隨波逐流，任其自然",
+      "行為": "放任自流，缺乏控制",
+      "建議": "缺乏方向，易迷失自我"
+    }
+  },
+  {
+    "symbol_id": "behavior_transform",
+    "character_zh": "轉",
+    "character_en": "Transform",
+    "stage": "behavior_strategy",
+    "category": "adaptive",
+    "vectors": {
+      "cost_factor": 1,
+      "time_sensitivity": "fast",
+      "action_type": "cognitive",
+      "agency_required": 0.6,
+      "risk_level": "low"
+    },
+    "tension_sources": ["cognitive_reframing"],
+    "mood_resonance": "renewed_optimistic",
+    "candidate_facets": ["identity_diffusion"],
+    "narrative_hooks": {
+      "象意": "轉念改變，自我調整",
+      "行為": "已調整心態，重新出發",
+      "建議": "心態決定一切，前景看好"
+    }
+  }
+]

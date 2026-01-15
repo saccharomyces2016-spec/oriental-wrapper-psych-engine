@@ -1,0 +1,178 @@
+[
+  {
+    "symbol_id": "env_scarcity",
+    "character_zh": "匱",
+    "character_en": "Scarce",
+    "stage": "environment_hardness",
+    "category": "resource",
+    "vectors": {
+      "hardness": 5,
+      "urgency": 2,
+      "severity": 0.8,
+      "attribution": "external",
+      "agency_impact": -0.3
+    },
+    "tension_sources": ["resource_depletion", "scarcity_stress"],
+    "mood_resonance": "anxious_deprived",
+    "candidate_facets": ["resource_scarcity_mode", "chronic_depletion"],
+    "narrative_hooks": {
+      "象意": "資源匱乏，捉襟見肘",
+      "外勢": "環境艱困，壓力沉重",
+      "建議": "需謹慎規劃，節約資源"
+    }
+  },
+  {
+    "symbol_id": "env_obstruction",
+    "character_zh": "阻",
+    "character_en": "Blocked",
+    "stage": "environment_hardness",
+    "category": "obstacle",
+    "vectors": {
+      "hardness": 4,
+      "urgency": 1,
+      "severity": 0.7,
+      "attribution": "external",
+      "agency_impact": -0.4
+    },
+    "tension_sources": ["external_barrier", "path_blocked"],
+    "mood_resonance": "frustrated_stuck",
+    "candidate_facets": ["loss_of_agency", "creative_blockage"],
+    "narrative_hooks": {
+      "象意": "障礙重重，前路不通",
+      "外勢": "外在阻力，寸步難行",
+      "建議": "尋找繞道，另闢蹊徑"
+    }
+  },
+  {
+    "symbol_id": "env_conflict",
+    "character_zh": "爭",
+    "character_en": "Conflict",
+    "stage": "environment_hardness",
+    "category": "social",
+    "vectors": {
+      "hardness": 3,
+      "urgency": 5,
+      "severity": 0.8,
+      "attribution": "external",
+      "agency_impact": -0.5
+    },
+    "tension_sources": ["interpersonal_conflict", "authority_pressure"],
+    "mood_resonance": "tense_confrontational",
+    "candidate_facets": ["anger_dysregulation", "trust_erosion"],
+    "narrative_hooks": {
+      "象意": "衝突對立，劍拔弩張",
+      "外勢": "關係緊張，急需處理",
+      "建議": "冷靜應對，尋求調解"
+    }
+  },
+  {
+    "symbol_id": "env_chaos",
+    "character_zh": "亂",
+    "character_en": "Chaos",
+    "stage": "environment_hardness",
+    "category": "systemic",
+    "vectors": {
+      "hardness": 2,
+      "urgency": 3,
+      "severity": 0.6,
+      "attribution": "external",
+      "agency_impact": -0.2
+    },
+    "tension_sources": ["systemic_disorder", "organizational_chaos"],
+    "mood_resonance": "overwhelmed_confused",
+    "candidate_facets": ["identity_diffusion", "sleep_rhythm_chaos"],
+    "narrative_hooks": {
+      "象意": "混亂無序，毫無章法",
+      "外勢": "環境紊亂，難以適應",
+      "建議": "建立秩序，逐步整頓"
+    }
+  },
+  {
+    "symbol_id": "env_crisis",
+    "character_zh": "險",
+    "character_en": "Crisis",
+    "stage": "environment_hardness",
+    "category": "emergency",
+    "vectors": {
+      "hardness": 4,
+      "urgency": 5,
+      "severity": 0.9,
+      "attribution": "external",
+      "agency_impact": -0.6
+    },
+    "tension_sources": ["existential_threat", "critical_situation"],
+    "mood_resonance": "terrified_urgent",
+    "candidate_facets": ["betrayal_wound", "attachment_rupture"],
+    "narrative_hooks": {
+      "象意": "危機四伏，岌岌可危",
+      "外勢": "形勢危急，刻不容緩",
+      "建議": "緊急應變，保全根本"
+    }
+  },
+  {
+    "symbol_id": "env_isolation",
+    "character_zh": "孤",
+    "character_en": "Isolated",
+    "stage": "environment_hardness",
+    "category": "relational",
+    "vectors": {
+      "hardness": 3,
+      "urgency": 1,
+      "severity": 0.7,
+      "attribution": "mixed",
+      "agency_impact": -0.4
+    },
+    "tension_sources": ["social_isolation", "support_lack"],
+    "mood_resonance": "lonely_abandoned",
+    "candidate_facets": ["attachment_rupture", "meaning_vacuum"],
+    "narrative_hooks": {
+      "象意": "孤立無援，形單影隻",
+      "外勢": "缺乏支援，舉步維艱",
+      "建議": "擴展人脈，尋求助力"
+    }
+  },
+  {
+    "symbol_id": "env_delay",
+    "character_zh": "遲",
+    "character_en": "Delayed",
+    "stage": "environment_hardness",
+    "category": "temporal",
+    "vectors": {
+      "hardness": 2,
+      "urgency": 0,
+      "severity": 0.5,
+      "attribution": "external",
+      "agency_impact": -0.3
+    },
+    "tension_sources": ["temporal_pressure", "delayed_gratification"],
+    "mood_resonance": "impatient_restless",
+    "candidate_facets": ["perfectionism_paralysis", "apathy_stagnation"],
+    "narrative_hooks": {
+      "象意": "延宕遲緩，進度緩慢",
+      "外勢": "時間壓力，耐心耗盡",
+      "建議": "調整心態，循序漸進"
+    }
+  },
+  {
+    "symbol_id": "env_erosion",
+    "character_zh": "剝",
+    "character_en": "Erosion",
+    "stage": "environment_hardness",
+    "category": "chronic",
+    "vectors": {
+      "hardness": 3,
+      "urgency": 4,
+      "severity": 0.8,
+      "attribution": "external",
+      "agency_impact": -0.5
+    },
+    "tension_sources": ["chronic_wear", "resource_attrition"],
+    "mood_resonance": "worn_exhausted",
+    "candidate_facets": ["chronic_depletion", "suppressed_needs"],
+    "narrative_hooks": {
+      "象意": "侵蝕耗損，日漸衰弱",
+      "外勢": "長期消耗，難以為繼",
+      "建議": "及早止損，尋求轉機"
+    }
+  }
+]

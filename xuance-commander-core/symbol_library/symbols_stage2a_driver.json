@@ -1,0 +1,186 @@
+[
+  {
+    "symbol_id": "driver_energy_high",
+    "character_zh": "盛",
+    "character_en": "Prosperous",
+    "stage": "driver_status",
+    "category": "energy",
+    "vectors": {
+      "weight": 0.8,
+      "element": "Fire",
+      "attribution": "internal",
+      "agency": 0.9,
+      "clarity": 0.7,
+      "action_potential": 0.8
+    },
+    "tension_sources": ["high_energy"],
+    "mood_resonance": "confident_powerful",
+    "candidate_facets": ["hyper_responsibility"],
+    "narrative_hooks": {
+      "象意": "氣勢旺盛，信心滿滿",
+      "內勢": "能量充沛，行動力強",
+      "建議": "宜把握時機，大展身手"
+    }
+  },
+  {
+    "symbol_id": "driver_energy_low",
+    "character_zh": "虛",
+    "character_en": "Depleted",
+    "stage": "driver_status",
+    "category": "energy",
+    "vectors": {
+      "weight": 0.9,
+      "element": "Water",
+      "attribution": "internal",
+      "agency": -0.8,
+      "clarity": 0.3,
+      "action_potential": -0.9
+    },
+    "tension_sources": ["depletion", "burnout"],
+    "mood_resonance": "exhausted_drained",
+    "candidate_facets": ["chronic_depletion", "loss_of_agency"],
+    "narrative_hooks": {
+      "象意": "精力耗竭，心力交瘁",
+      "內勢": "能量枯竭，行動癱瘓",
+      "建議": "需休養生息，補充能量"
+    }
+  },
+  {
+    "symbol_id": "driver_cognition_clear",
+    "character_zh": "覺",
+    "character_en": "Aware",
+    "stage": "driver_status",
+    "category": "cognition",
+    "vectors": {
+      "weight": 0.6,
+      "element": "Metal",
+      "attribution": "internal",
+      "agency": 0.6,
+      "clarity": 0.9,
+      "action_potential": 0.7
+    },
+    "tension_sources": ["cognitive_clarity"],
+    "mood_resonance": "clear_focused",
+    "candidate_facets": ["creative_blockage"],
+    "narrative_hooks": {
+      "象意": "心裡清明，洞察深刻",
+      "內勢": "認知清晰，決策明快",
+      "建議": "宜把握洞見，理性分析"
+    }
+  },
+  {
+    "symbol_id": "driver_cognition_confused",
+    "character_zh": "惑",
+    "character_en": "Confused",
+    "stage": "driver_status",
+    "category": "cognition",
+    "vectors": {
+      "weight": 0.8,
+      "element": "Earth",
+      "attribution": "mixed",
+      "agency": 0.2,
+      "clarity": -0.7,
+      "action_potential": 0.3
+    },
+    "tension_sources": ["cognitive_dissonance", "information_overload"],
+    "mood_resonance": "confused_uncertain",
+    "candidate_facets": ["identity_diffusion", "ambiguity_tolerance"],
+    "narrative_hooks": {
+      "象意": "資訊混亂，莫衷一是",
+      "內勢": "認知迷茫，猶豫不決",
+      "建議": "需釐清思緒，尋求指引"
+    }
+  },
+  {
+    "symbol_id": "driver_motivation_approach",
+    "character_zh": "攻",
+    "character_en": "Advance",
+    "stage": "driver_status",
+    "category": "intention",
+    "vectors": {
+      "weight": 0.7,
+      "element": "Wood",
+      "attribution": "internal",
+      "agency": 0.8,
+      "clarity": 0.6,
+      "action_potential": 0.8
+    },
+    "tension_sources": ["approach_motivation"],
+    "mood_resonance": "determined_focused",
+    "candidate_facets": ["hyper_responsibility"],
+    "narrative_hooks": {
+      "象意": "積極進取，勇於突破",
+      "內勢": "動機明確，方向清晰",
+      "建議": "宜積極行動，乘勝追擊"
+    }
+  },
+  {
+    "symbol_id": "driver_motivation_avoid",
+    "character_zh": "守",
+    "character_en": "Defend",
+    "stage": "driver_status",
+    "category": "intention",
+    "vectors": {
+      "weight": 0.6,
+      "element": "Earth",
+      "attribution": "mixed",
+      "agency": 0.4,
+      "clarity": 0.5,
+      "action_potential": 0.4
+    },
+    "tension_sources": ["avoidance_tendency"],
+    "mood_resonance": "cautious_stable",
+    "candidate_facets": ["fear_based_stability"],
+    "narrative_hooks": {
+      "象意": "謹慎保守，穩紮穩打",
+      "內勢": "傾向維持，避免風險",
+      "建議": "宜守住陣地，等待時機"
+    }
+  },
+  {
+    "symbol_id": "driver_flow_smooth",
+    "character_zh": "通",
+    "character_en": "Flow",
+    "stage": "driver_status",
+    "category": "flow",
+    "vectors": {
+      "weight": 0.4,
+      "element": "Water",
+      "attribution": "internal",
+      "agency": 0.7,
+      "clarity": 0.8,
+      "action_potential": 0.9
+    },
+    "tension_sources": ["optimal_flow"],
+    "mood_resonance": "harmonious_balanced",
+    "candidate_facets": [],
+    "narrative_hooks": {
+      "象意": "順暢自然，心無罣礙",
+      "內勢": "身心合一，狀態良好",
+      "建議": "宜順勢而為，自然發展"
+    }
+  },
+  {
+    "symbol_id": "driver_flow_stagnant",
+    "character_zh": "滯",
+    "character_en": "Stagnant",
+    "stage": "driver_status",
+    "category": "flow",
+    "vectors": {
+      "weight": 0.9,
+      "element": "Earth",
+      "attribution": "mixed",
+      "agency": -0.6,
+      "clarity": 0.3,
+      "action_potential": -0.8
+    },
+    "tension_sources": ["emotional_stagnation", "blocked_energy"],
+    "mood_resonance": "stuck_frustrated",
+    "candidate_facets": ["apathy_stagnation", "creative_blockage"],
+    "narrative_hooks": {
+      "象意": "阻塞不通，進退兩難",
+      "內勢": "能量淤積，行動受阻",
+      "建議": "需疏通脈絡，打破僵局"
+    }
+  }
+]
