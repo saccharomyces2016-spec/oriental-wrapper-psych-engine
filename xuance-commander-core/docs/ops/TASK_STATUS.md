@@ -114,6 +114,7 @@
 - `docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md`
 - `docs/ops/analysis/ENGINE_SURFACE_CORE_INTEGRATION_SCAN_2026-01-15.md`
 - `docs/task_packets/SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_PLAN.md`
+- `docs/ops/analysis/SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_LOG_2026-01-15.md`
 
 **下一步行動**：
 1. 補齊表層詞彙 SSOT（八卦 + 64 卦內圈/中圈/外圈）
