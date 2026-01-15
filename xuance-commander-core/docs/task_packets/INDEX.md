@@ -18,6 +18,7 @@
 | 任務包文件 | 任務 | 狀態 | 建立日期 |
 |-----------|------|------|---------|
 | `SURFACE_CORE_ENGINE_INTEGRATION_MASTER_TASK_PACKET.md` | 表層×底層整合主線重置 | ACTIVE | 2026-01-15 |
+| `SURFACE_CORE_ENGINE_INTEGRATION_EXECUTION_PLAN.md` | 表層×底層整合執行計劃 | ACTIVE | 2026-01-15 |
 
 ---
 
